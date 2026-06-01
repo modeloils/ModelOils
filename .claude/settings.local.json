@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\\\Users\\\\sarp8\\\\Desktop\\\\Model Oils\\\\src\" /s /b /a:-d)",
+      "PowerShell(Get-Process -Id 14888)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\sarp8\\\\Downloads\" | Where-Object { $_.Extension -match \"\\\\.\\(png|jpg|jpeg|webp|svg\\)\" } | Select-Object Name, LastWriteTime | Sort-Object LastWriteTime -Descending | Select-Object -First 30)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\sarp8\\\\Downloads\" | Where-Object { $_.Extension -match \"\\\\.\\(png|jpg|jpeg|webp\\)\" } | Sort-Object LastWriteTime -Descending | Select-Object -First 15 | Select-Object Name, LastWriteTime)",
+      "Bash(mkdir -p \"c:\\\\Users\\\\sarp8\\\\Desktop\\\\Model Oils\\\\src\\\\app\\\\[locale]\\\\brands\\\\[slug]\")",
+      "Bash(mkdir -p \"c:\\\\Users\\\\sarp8\\\\Desktop\\\\Model Oils\\\\src\\\\app\\\\[locale]\\\\brands\\\\[slug]\\\\[category]\")",
+      "Bash(mkdir -p \"c:\\\\Users\\\\sarp8\\\\Desktop\\\\Model Oils\\\\src\\\\app\\\\[locale]\\\\brands\\\\[slug]\\\\[category]\\\\[product]\")",
+      "PowerShell(Invoke-WebRequest -Uri \"https://www.fluxotic.com.cy/wp-content/uploads/2023/08/SHELL-HELIX-ULTRA-SP-0W-20-TDS-GR.pdf\" -OutFile \"C:\\\\Users\\\\sarp8\\\\Desktop\\\\Model Oils\\\\public\\\\docs\\\\shell\\\\tds\\\\helix-ultra-0w-20.pdf\" -UseBasicParsing; if \\(Test-Path \"C:\\\\Users\\\\sarp8\\\\Desktop\\\\Model Oils\\\\public\\\\docs\\\\shell\\\\tds\\\\helix-ultra-0w-20.pdf\"\\) { $size = \\(Get-Item \"C:\\\\Users\\\\sarp8\\\\Desktop\\\\Model Oils\\\\public\\\\docs\\\\shell\\\\tds\\\\helix-ultra-0w-20.pdf\"\\).Length; Write-Output \"Downloaded: $size bytes\" } else { Write-Output \"Failed\" })",
+      "WebSearch"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\sarp8\\Desktop\\Model Oils\\src\\app\\[locale]\\brands",
+      "c:\\Users\\sarp8\\Desktop\\Model Oils\\src\\app\\[locale]\\brands\\[slug]",
+      "c:\\Users\\sarp8\\Desktop\\Model Oils\\src\\app\\[locale]\\brands\\[slug]\\[category]"
+    ]
+  }
+}

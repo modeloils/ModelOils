@@ -1,0 +1,2025 @@
+{
+  "nav": {
+    "products": "Products",
+    "industries": "Industries",
+    "exportServices": "Export Services",
+    "certifications": "Certifications",
+    "about": "About",
+    "blog": "Blog",
+    "requestQuote": "Request Quote",
+    "motorOils": "Motor Oils",
+    "mineralOils": "Mineral Oils",
+    "industrialLubricants": "Industrial Lubricants",
+    "viewAllProducts": "View All Products",
+    "downloadCatalog": "Download Catalog",
+    "engineOilsPetrol": "Engine Oils (Petrol)",
+    "engineOilsDiesel": "Engine Oils (Diesel)",
+    "synthetic5w30": "SAE 5W-30 Synthetic",
+    "hd15w40": "SAE 15W-40 Heavy Duty",
+    "mineral20w50": "SAE 20W-50 Mineral",
+    "whiteMineralOil": "White Mineral Oil",
+    "processOils": "Process Oils",
+    "transformerOil": "Transformer Oil",
+    "rubberProcessOil": "Rubber Process Oil",
+    "hydraulicOils": "Hydraulic Oils",
+    "compressorOils": "Compressor Oils",
+    "gearOils": "Gear Oils",
+    "metalworkingFluids": "Metalworking Fluids",
+    "greases": "Greases"
+  },
+  "hero": {
+    "preHeadline": "ISO 9001:2015 Certified Exporter",
+    "headline": "Industrial-Grade Lubricants. Export-Ready. 40+ Countries Served.",
+    "subheadline": "Motor oils, mineral oils, and industrial lubricants for automotive, manufacturing, and energy sectors worldwide. Bulk orders from 1,000 liters. Export documentation included.",
+    "primaryCta": "Request a Bulk Quote",
+    "secondaryCta": "Browse Product Catalog",
+    "trustBadge1": "ISO Certified",
+    "trustBadge2": "40+ Countries",
+    "trustBadge3": "24-Hour Response"
+  },
+  "stats": {
+    "countries": "Countries Exported To",
+    "tonnes": "Metric Tons Annually",
+    "clients": "B2B Clients Worldwide",
+    "years": "Years in Operation",
+    "delivery": "On-Time Delivery Rate"
+  },
+  "products": {
+    "eyebrow": "Product Range",
+    "title": "Our Product Range",
+    "subtitle": "500+ products across motor oils, mineral oils, and industrial lubricants. All API certified, ISO compliant.",
+    "viewAll": "View Full Catalog",
+    "requestQuote": "Request Quote",
+    "viewSpecs": "View Specs",
+    "downloadTds": "Download TDS",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock"
+  },
+  "whyUs": {
+    "eyebrow": "Why Choose Us",
+    "title": "What Sets Us Apart From Standard Oil Traders",
+    "subtitle": "We manage the entire export process — from technical product matching to customs documentation and freight coordination.",
+    "downloadProfileBtn": "Download Company Profile",
+    "feature1Title": "Technical Product Matching",
+    "feature1Desc": "Our engineers help you identify the correct specification for your application, engine type, and operating conditions.",
+    "feature2Title": "Full Export Documentation",
+    "feature2Desc": "COA, MSDS, Certificate of Origin, SASO, and country-specific compliance documents prepared in-house.",
+    "feature3Title": "Flexible Packaging",
+    "feature3Desc": "205L drums, 1,000L IBCs, 20L pails, and bulk tanker quantities. All packaging UN-approved for international transit.",
+    "feature4Title": "ISO 9001:2015 Quality Control",
+    "feature4Desc": "Every batch tested against specification before shipment. Certificate of Analysis available on request.",
+    "feature5Title": "Dedicated Export Manager",
+    "feature5Desc": "Single point of contact from order confirmation to delivery. Proactive communication on lead times and documentation.",
+    "feature6Title": "Flexible Payment Terms",
+    "feature6Desc": "T/T and Letter of Credit accepted. USD and EUR invoicing. Net payment terms for verified institutional buyers."
+  },
+  "process": {
+    "eyebrow": "How It Works",
+    "title": "How to Place a Bulk Order",
+    "subtitle": "A straightforward 5-step process from inquiry to delivery.",
+    "step1Title": "Submit Your Requirements",
+    "step1Desc": "Describe product type, volume, destination, and timeline via our quote form or email.",
+    "step2Title": "Technical Review & Proposal",
+    "step2Desc": "Our technical team identifies the correct specifications and prepares a formal quotation within 24–48 hours.",
+    "step3Title": "Order Confirmation & Documentation",
+    "step3Desc": "Upon approval, we generate proforma invoice, COA, MSDS, and all required export documentation.",
+    "step4Title": "Production & Quality Control",
+    "step4Desc": "Batch prepared and ISO 9001:2015 quality tested. Inspection reports available on request.",
+    "step5Title": "Shipment & Delivery",
+    "step5Desc": "Goods shipped via your preferred Incoterm. Tracking and shipping documents provided within 24 hours of dispatch.",
+    "startCta": "Start Your Quote Request"
+  },
+  "industries": {
+    "eyebrow": "Applications",
+    "title": "Industries We Serve",
+    "subtitle": "Specialized lubricant solutions for every industrial application.",
+    "viewProducts": "View Products",
+    "automotive": "Automotive & Fleet",
+    "transport": "Heavy Transport",
+    "industrial": "Industrial Manufacturing",
+    "marine": "Marine & Offshore",
+    "agricultural": "Agricultural Machinery",
+    "mining": "Mining & Earthmoving",
+    "power": "Power Generation",
+    "wholesale": "Export & Wholesale"
+  },
+  "certifications": {
+    "title": "Quality Certifications & Compliance",
+    "downloadDocs": "Download Certification Documents",
+    "requestDocs": "Request Full Documentation Package"
+  },
+  "exportMap": {
+    "title": "Our Global Export Reach",
+    "subtitle": "Serving B2B buyers in 40+ countries across 5 continents.",
+    "cta": "Exporting To Your Country? Get a Quote"
+  },
+  "blog": {
+    "eyebrow": "Technical Insights",
+    "title": "Resources for Industrial Buyers",
+    "subtitle": "Technical guides, export insights, and lubricant knowledge base for procurement managers and importers.",
+    "viewAll": "View All Articles",
+    "minRead": "min read"
+  },
+  "finalCta": {
+    "preHeadline": "Ready to Start?",
+    "title": "Get a Custom Quote for Your Next Bulk Order",
+    "body": "Tell us your product requirements, destination, and volume. Our export team will respond within 24 hours with a competitive quotation and full specification sheet.",
+    "primaryCta": "Request a Quote",
+    "secondaryCta": "Download Product Catalog",
+    "trust1": "No commitment required",
+    "trust2": "24-hour response",
+    "trust3": "ISO 9001 certified"
+  },
+  "footer": {
+    "tagline": "Premium lubricants for industry. Trusted export partner for distributors worldwide.",
+    "products": "Products",
+    "company": "Company",
+    "contact": "Contact",
+    "aboutUs": "About Us",
+    "certifications": "Certifications",
+    "exportRegions": "Export Regions",
+    "blog": "Blog & Insights",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "allRightsReserved": "All rights reserved.",
+    "motorOils": "Motor Oils",
+    "mineralOils": "Mineral Oils",
+    "industrialLubricants": "Industrial Lubricants",
+    "hydraulicOils": "Hydraulic Oils",
+    "gearOils": "Gear Oils",
+    "productCatalog": "Product Catalog",
+    "technicalGuides": "Technical Guides",
+    "exportGuides": "Export Guides",
+    "isoCertified": "ISO 9001:2015 Certified",
+    "registeredExporter": "Registered Exporter",
+    "businessHours": "Mon–Fri: 09:00–17:00 (UTC+3)"
+  },
+  "quote": {
+    "title": "Request a Bulk Quote",
+    "subtitle": "Fill in your requirements and our export team will respond within 24 business hours with pricing and full documentation.",
+    "step1Title": "Tell Us What You Need",
+    "step2Title": "Almost Done — Who Should We Send the Quote To?",
+    "productType": "Product Type",
+    "motorOils": "Motor Oils",
+    "mineralOils": "Mineral Oils",
+    "industrialLubricants": "Industrial Lubricants",
+    "gearOils": "Gear Oils",
+    "other": "Other / Not Sure",
+    "productSpec": "Product Name or Specification",
+    "productSpecPlaceholder": "e.g. SAE 15W-40, API CI-4 or ISO VG 46 Hydraulic Oil",
+    "productSpecHelper": "Enter product name, SAE grade, API spec, or OEM recommendation. Not sure? Leave a description.",
+    "quantity": "Estimated Quantity",
+    "quantityPlaceholder": "e.g. 5000",
+    "unit": "Unit",
+    "liters": "Liters",
+    "metricTons": "Metric Tons",
+    "drums": "Drums (205L)",
+    "ibcs": "IBCs (1,000L)",
+    "packaging": "Packaging Options (select all that apply)",
+    "drum205": "205L Steel Drum",
+    "ibc1000": "1,000L IBC / Flexi-Tank",
+    "pail20": "20L Plastic Pail",
+    "bulkTanker": "Bulk Tanker",
+    "flexPackaging": "Flexible — advise me",
+    "destinationCountry": "Destination Country",
+    "countryPlaceholder": "Search or select your country...",
+    "deliveryDate": "Target Delivery By (approximate)",
+    "continueBtn": "Continue to Contact Details",
+    "fullName": "Your Full Name",
+    "jobTitle": "Your Role",
+    "jobTitlePlaceholder": "e.g. Procurement Manager",
+    "jobTitleHelper": "This helps us route your quote to the right specialist.",
+    "companyName": "Company Name",
+    "businessEmail": "Business Email Address",
+    "emailPlaceholder": "yourname@company.com",
+    "emailHelper": "Your quote and documentation will be sent here. We do not share your information.",
+    "phone": "WhatsApp or Phone Number",
+    "phonePlaceholder": "+1 555 000 0000",
+    "phoneHelper": "Include country code. We prefer WhatsApp for faster communication with international clients.",
+    "howDidYouFind": "How did you find us?",
+    "googleSearch": "Google Search",
+    "linkedin": "LinkedIn",
+    "tradeShow": "Trade Show",
+    "partnerReferral": "Partner Referral",
+    "industryDirectory": "Industry Directory",
+    "notes": "Additional Requirements or Notes",
+    "notesPlaceholder": "Specific certifications required, OEM approvals needed, special labeling, or other information.",
+    "consent": "I agree to the Privacy Policy and consent to being contacted about this quote request.",
+    "submitBtn": "Submit Quote Request — We Respond Within 24 Hours",
+    "backBtn": "Back to product details",
+    "successTitle": "Your Quote Request Has Been Received",
+    "successBody": "Our export team will review your requirements and send a detailed quotation within 24 business hours.",
+    "successCatalog": "Download our full product catalog while you wait.",
+    "successWhatsapp": "Need immediate assistance? Contact us on WhatsApp",
+    "requiredNote": "Fields marked * are required."
+  },
+  "about": {
+    "eyebrow": "About Model Oils",
+    "headline": "15 Years of Industrial Lubricant Export",
+    "subheadline": "A Bursa-based manufacturer and exporter. ISO 9001:2015 certified. 40+ active export markets. We build long-term supply relationships, not one-time transactions.",
+    "breadcrumbHome": "Home",
+    "breadcrumbPage": "About",
+    "whoWeAreTitle": "Who We Are",
+    "para1": "Model Oils is a lubricant manufacturer and bulk exporter headquartered in Bursa, Turkey. We blend and package motor oils, mineral oils, and industrial lubricants at our facility in Nilüfer, Bursa, and export to distributors, importers, fleet operators, and industrial companies worldwide.",
+    "para2": "Founded in 2009, we spent our first years building technical credibility in the Turkish domestic market before expanding internationally in 2012. Today, we export to 40+ countries across MENA, Sub-Saharan Africa, Southeast Asia, Central Asia, and Europe — with active freight lanes and established customs experience in each region.",
+    "para3": "We are not a trading company. Every product we export is blended and packaged at our own facility. This means consistent quality, traceable batches, and a technical team that knows every formulation we sell.",
+    "stat1": "Export Countries",
+    "stat2": "Years in Operation",
+    "stat3": "Metric Tons Annually",
+    "stat4": "Active B2B Clients",
+    "stat5Abbr": "ISO 9001",
+    "stat5Label": ":2015 Certified",
+    "stat6": "On-Time Delivery",
+    "valuesTitle": "What We Stand For",
+    "v1Title": "Technical Integrity",
+    "v1Desc": "Every product claim is backed by independent laboratory test data. We publish TDS and SDS for every product and provide batch-specific COA with every shipment.",
+    "v2Title": "Operational Reliability",
+    "v2Desc": "B2B buyers stake supply chains on our consistency. We maintain strict production schedules, proactive communication, and a 98.6% on-time delivery rate.",
+    "v3Title": "Export Professionalism",
+    "v3Desc": "International buyers deserve the same documentation standards as domestic buyers. We treat customs compliance, language accuracy, and certificate validity as non-negotiables.",
+    "v4Title": "Long-Term Partnerships",
+    "v4Desc": "We do not optimize for one-time transactions. Our pricing, terms, and account management are structured to make long-term partnership commercially logical for both sides.",
+    "historyTitle": "Our History",
+    "m2009": "Founded in Istanbul, initially supplying domestic automotive distributors.",
+    "m2012": "First export contract — 205L drums to Libyan automotive sector.",
+    "m2015": "ISO 9001:2015 certification achieved. Expanded to 12 export markets.",
+    "m2018": "API licensing obtained for motor oil product line. New blending facility commissioned.",
+    "m2021": "Reached 30+ active export countries. ISO 14001 environmental certification added.",
+    "m2024": "40+ countries served. 12,000+ metric tons exported annually. Private label program launched.",
+    "ctaTitle": "Ready to Work With Us?",
+    "ctaBody": "Get a bulk quote or contact our export team to discuss your requirements.",
+    "ctaQuote": "Request a Quote",
+    "ctaCerts": "View Our Certifications"
+  },
+  "contact": {
+    "eyebrow": "Get In Touch",
+    "headline": "Contact Our Export Team",
+    "subheadline": "Whether you need a bulk quote, technical product matching, or export documentation — our team is ready to assist.",
+    "breadcrumbHome": "Home",
+    "breadcrumbPage": "Contact",
+    "inquiriesTitle": "How Can We Help?",
+    "iq1Title": "Request a Bulk Quote",
+    "iq1Desc": "Get pricing for motor oils, mineral oils, or industrial lubricants. Includes full spec sheet and documentation package.",
+    "iq1Cta": "Start Quote Form",
+    "iq2Title": "Technical Product Matching",
+    "iq2Desc": "Not sure which product is right for your application? Our engineers will match the correct specification to your equipment, OEM requirements, and climate.",
+    "iq2Cta": "Request Technical Review",
+    "iq3Title": "Documentation & Compliance",
+    "iq3Desc": "Need ISO certificates, COA, MSDS, Halal certificates, or country-specific compliance documents? We prepare all standard export documentation in-house.",
+    "iq3Cta": "View Certifications",
+    "iq4Title": "Become a Distributor",
+    "iq4Desc": "Interested in exclusive distribution rights for your region? We partner with established lubricant distributors and importers worldwide.",
+    "iq4Cta": "Partner With Us",
+    "directContact": "Direct Contact",
+    "officeTitle": "Office & Operations",
+    "hqTitle": "Headquarters",
+    "hoursTitle": "Business Hours",
+    "weekday": "Monday – Friday: 09:00 – 17:00 (GMT+3)",
+    "saturday": "Saturday: 09:00 – 13:00 (GMT+3)",
+    "sunday": "Sunday & Turkish Public Holidays: Closed",
+    "whatsappNote": "WhatsApp available 24/7 for urgent export inquiries.",
+    "commitmentTitle": "Our Response Commitment",
+    "commitmentBody": "All quote requests submitted via the form are acknowledged within 2 hours during business hours and receive a full quotation within 24–48 business hours.",
+    "ctaTitle": "Ready to Get a Quote?",
+    "ctaBody": "Use our structured quote form for the fastest response from our export team.",
+    "ctaBtn": "Start Quote Request",
+    "cm1Label": "WhatsApp (Fastest)",
+    "cm1Desc": "Preferred channel for international clients. Typically responds within 2 hours.",
+    "cm2Label": "Phone",
+    "cm2Desc": "Mon–Fri, 09:00–17:00 (GMT+3). English and Turkish spoken.",
+    "cm3Label": "General Inquiries",
+    "cm3Desc": "General questions, partnership proposals, media inquiries.",
+    "cm4Label": "Export & Sales",
+    "cm4Desc": "For bulk quotes, shipping logistics, and documentation requests."
+  },
+  "exportSvc": {
+    "eyebrow": "Global Lubricant Export",
+    "headline": "Full-Service Export from Istanbul to 40+ Countries",
+    "subheadline": "We manage everything: FOB/CIF/DAP pricing, full documentation package, quality certification, and freight coordination. Your supply chain, simplified.",
+    "breadcrumbHome": "Home",
+    "breadcrumbPage": "Export Services",
+    "capTitle": "Our Export Capabilities",
+    "c1Title": "Flexible Packaging",
+    "c1Desc": "205L drums, 1,000L IBCs, 20L pails, bulk tanker. All UN-approved for international transit.",
+    "c2Title": "40+ Export Countries",
+    "c2Desc": "Active shipping lanes to MENA, Africa, Europe, Asia. Established freight partnerships for competitive rates.",
+    "c3Title": "In-House Documentation",
+    "c3Desc": "Full export documentation package prepared by our trade compliance team. No third-party delays.",
+    "c4Title": "Logistics Coordination",
+    "c4Desc": "Direct relationships with international freight forwarders from Istanbul port. Weekly sailings to major trade corridors.",
+    "c5Title": "Quality Assurance",
+    "c5Desc": "Every shipment accompanied by batch-specific Certificate of Analysis. ISO 9001:2015 quality management throughout.",
+    "c6Title": "Payment Flexibility",
+    "c6Desc": "T/T (30/70 split or 100% advance), Letters of Credit at sight. USD and EUR invoicing. Institutional net terms available.",
+    "containerTitle": "Container Loading Specifications",
+    "containerNote": "Reference data for planning your container shipment. Actual capacity may vary based on gross weight limits and packing configuration.",
+    "containerFootnote": "Weight limits: Standard 20ft container max payload ~28MT; 40ft max ~28MT. Consult your freight forwarder for port-specific restrictions.",
+    "thPackaging": "Packaging",
+    "th20ft": "20ft Container",
+    "th40ft": "40ft Container",
+    "thVolume": "Net Volume",
+    "incotermsTitle": "Supported Incoterms 2020",
+    "incotermsNote": "We support all major Incoterms. Your preferred trade term should be specified in the quote request.",
+    "exw": "Ex Works",
+    "exwDesc": "Buyer arranges all transport from our Istanbul warehouse.",
+    "fob": "Free On Board",
+    "fobDesc": "We load goods onto the vessel at Port of Istanbul. Most common.",
+    "cfr": "Cost & Freight",
+    "cfrDesc": "We pay freight to destination port. Buyer handles insurance.",
+    "cif": "Cost, Insurance & Freight",
+    "cifDesc": "We cover freight + cargo insurance to destination port.",
+    "dap": "Delivered at Place",
+    "dapDesc": "Goods delivered to buyer's facility — buyer handles import customs.",
+    "ddp": "Delivered Duty Paid",
+    "ddpDesc": "Complete door-to-door service including import customs clearance.",
+    "docTitle": "Standard Documentation Package",
+    "docNote": "Every shipment includes our standard export documentation package. All documents are prepared in English and can be apostilled or legalized on request.",
+    "docCta": "Request a Documentation Quote",
+    "regionsTitle": "Active Export Regions",
+    "regionsNote": "We have established freight lanes and customs experience in the following markets.",
+    "paymentTitle": "Payment Terms",
+    "ttTitle": "T/T Bank Transfer",
+    "ttDesc": "30% advance deposit upon proforma invoice confirmation. 70% balance before shipment release. Preferred for first-time orders.",
+    "lcTitle": "Letter of Credit",
+    "lcDesc": "Irrevocable L/C at sight accepted from established international banks. Confirm L/C requirements prior to order placement.",
+    "netTitle": "Net Terms (Verified Buyers)",
+    "netDesc": "Net-30 and Net-60 payment terms available for institutional buyers with established order history and credit approval.",
+    "currencyNote": "Currency accepted: USD and EUR. Exchange rate risk borne by buyer on non-USD currencies.",
+    "ctaTitle": "Ready to Start Your Export Order?",
+    "ctaBody": "Get a competitive quotation including shipping, documentation, and quality certification within 24 hours.",
+    "ctaBtn": "Request a Quote"
+  },
+  "certPage": {
+    "eyebrow": "Quality & Compliance",
+    "headline": "Certified Quality You Can Verify",
+    "subheadline": "ISO 9001:2015 certified operations. API-licensed motor oils. ACEA-compliant formulations. Full documentation package for procurement approval.",
+    "breadcrumbHome": "Home",
+    "breadcrumbPage": "Certifications",
+    "reqDocPkg": "Request Documentation Package",
+    "reqBulkQuote": "Request a Bulk Quote",
+    "certCompliant": "Certified & Compliant:",
+    "ourCertsTitle": "Our Certifications & Approvals",
+    "scopeLabel": "Scope",
+    "issuingBodyLabel": "Issuing Body",
+    "validUntilLabel": "Valid Until",
+    "requestCopy": "Request Copy",
+    "docsTitle": "Available Compliance Documents",
+    "docsNote": "Our trade compliance team prepares all standard export documentation in-house. Full documentation packages are typically delivered within 24 hours of order confirmation.",
+    "docsCta": "Request a Quote with Documentation",
+    "qaTitle": "Quality Assurance Process",
+    "qa1Title": "Raw Material Incoming QC",
+    "qa1Desc": "Base oils and additives tested against specification on receipt. Non-conforming materials are quarantined and returned to supplier.",
+    "qa2Title": "In-Process Testing",
+    "qa2Desc": "Blending batches are sampled at intervals during production. Viscosity, flash point, and density verified at each stage.",
+    "qa3Title": "Final Product Release",
+    "qa3Desc": "Each finished batch undergoes full specification testing before release. Batch-specific COA generated and archived.",
+    "qa4Title": "Pre-Shipment Inspection",
+    "qa4Desc": "Random sampling from sealed containers before loading. Third-party SGS inspection available on request for large orders."
+  },
+  "brandPage": {
+    "backToHome": "Back to Home",
+    "productRange": "Our Product Range",
+    "motorOilsCard": "Motor Oils",
+    "motorOilsCardDesc": "Fully synthetic, semi-synthetic and mineral motor oils for automotive, heavy duty and passenger vehicles.",
+    "industrialLubsCard": "Industrial Lubricants",
+    "industrialLubsCardDesc": "Industrial lubricants including hydraulic, gear, compressor, grease and metalworking fluids.",
+    "explore": "Explore",
+    "backToBrand": "Back to {brand} Products",
+    "notFoundHelp": "Can't find the product you need? Let our export team help.",
+    "requestQuote": "Request Quote",
+    "productImage": "Product Image",
+    "motorCatDesc": "Motor oils for automotive, heavy duty, and passenger vehicles.",
+    "industrialCatDesc": "Industrial lubricants including hydraulic, gear, compressor, and grease.",
+    "brandsHeadingEyebrow": "Our Product Range",
+    "brandsHeading": "Brands We Represent"
+  },
+  "productPage": {
+    "backToMotor": "Back to {brand} Motor Oils",
+    "backToIndustrial": "Back to {brand} Industrial Lubricants",
+    "productName": "Product Name",
+    "viscosity": "Viscosity Grade",
+    "viscosityIso": "Viscosity / Grade",
+    "productSeries": "Product Series",
+    "oilType": "Oil Type",
+    "apiClass": "API Classification",
+    "aceaClass": "ACEA Classification",
+    "isoStd": "ISO Standard",
+    "addCert": "Additional Certification",
+    "oemApprovals": "OEM Approvals",
+    "techSpecs": "Technical Specifications",
+    "keyFeatures": "Key Features",
+    "documents": "Documents",
+    "tdsLabel": "Technical Data Sheet (TDS)",
+    "tdsNotAvailable": "Technical data sheet not yet available for this product.",
+    "docsNote": "If documents are unavailable, they may be obtained from the authorized distributor portal.",
+    "ctaText": "Want to request a bulk quote for this product?",
+    "ctaBtn": "Request Quote"
+  },
+  "pd": {
+    "helix-ultra-0w-20": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil developed for the most demanding conditions. Its ultra-low viscosity formula delivers superior cold-start protection and improved fuel efficiency.",
+      "f0": "Superior cold start protection",
+      "f1": "Optimized fuel economy",
+      "f2": "Extended engine life",
+      "f3": "Full synthetic formula"
+    },
+    "helix-ultra-0w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil meeting European OEM standards. VW and Mercedes-Benz approved, ideal for modern petrol and diesel engines.",
+      "f0": "VW and MB approved",
+      "f1": "Low-friction technology",
+      "f2": "Extended drain interval protection",
+      "f3": "Fuel-saving formula"
+    },
+    "helix-ultra-0w-40": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil developed for high-performance sports and luxury vehicles. Porsche and Mercedes-Benz approved, delivering maximum engine protection under extreme conditions.",
+      "f0": "Sports and luxury vehicle approved",
+      "f1": "High thermal resistance",
+      "f2": "Maximum engine protection",
+      "f3": "Porsche A40 approved"
+    },
+    "helix-ultra-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "One of the most popular fully synthetic motor oils. BMW and Mercedes-Benz long-drain service approved, delivering excellent protection across a wide range of vehicles.",
+      "f0": "BMW LL-01 approved",
+      "f1": "MB long service approved",
+      "f2": "Multi-vehicle compatibility",
+      "f3": "Superior engine cleanliness"
+    },
+    "helix-ultra-5w-40": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil with excellent performance across a wide temperature range. Volkswagen and Porsche approved, suitable for both daily and high-performance use.",
+      "f0": "VW and Porsche approved",
+      "f1": "Wide temperature range",
+      "f2": "Anti-shear protection",
+      "f3": "Engine cleaning properties"
+    },
+    "helix-ultra-ect-c2-c3-0w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil compatible with DPF and TWC emission control systems. Dual ACEA C2/C3 certification protects modern emission control systems.",
+      "f0": "DPF compatible",
+      "f1": "Low-SAPS formula",
+      "f2": "Catalytic converter protection",
+      "f3": "Renault and Fiat approved"
+    },
+    "helix-ultra-ect-c3-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil specifically approved for BMW, Mercedes-Benz and Volkswagen modern emission control systems. Ideal for vehicles with DPF and GPF filters.",
+      "f0": "BMW LL-04 approved",
+      "f1": "MB 229.51 approved",
+      "f2": "VW 504/507 approved",
+      "f3": "GPF and DPF compatible"
+    },
+    "helix-ultra-professional-ab-l-0w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil developed exclusively for Ford vehicles. Low-viscosity formulation meeting Ford's latest WSS-M2C913-D standard.",
+      "f0": "Ford OEM approved",
+      "f1": "Low viscosity resistance",
+      "f2": "Improved fuel economy",
+      "f3": "EcoBoost engine compatible"
+    },
+    "helix-ultra-professional-af-5w-20": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil specifically designed for Ford EcoBoost and other Ford petrol engines. Low-friction formulation for fuel savings.",
+      "f0": "Ford EcoBoost approved",
+      "f1": "Minimum friction",
+      "f2": "Advanced fuel economy",
+      "f3": "Cold start protection"
+    },
+    "helix-ultra-professional-ag-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A GM dexos2 licensed fully synthetic motor oil for General Motors and Opel vehicles. Meets the high performance standard GM mandates for its global vehicle fleet.",
+      "f0": "GM dexos2 licensed",
+      "f1": "Opel/GM approved",
+      "f2": "Turbo engine protection",
+      "f3": "Extended service intervals"
+    },
+    "helix-ultra-professional-am-l-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil meeting Mercedes-Benz's latest Low-SAPS standard MB 229.52. Provides DPF protection in modern Mercedes diesel and petrol engines.",
+      "f0": "MB 229.52 approved",
+      "f1": "Low-SAPS formula",
+      "f2": "DPF compatible",
+      "f3": "BlueTEC diesel compatible"
+    },
+    "helix-ultra-professional-av-l-0w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil meeting Volkswagen Group's highest standard VW 504 00/507 00. Ideal for VW, Audi, Skoda and Seat diesel vehicles.",
+      "f0": "VW 504/507 approved",
+      "f1": "Porsche C30 approved",
+      "f2": "TDI diesel compatible",
+      "f3": "Extended service intervals"
+    },
+    "helix-ultra-professional-av-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "VW 504/507 approved fully synthetic motor oil for VW Group vehicles. Delivers superior protection and extended service intervals in TSI and TDI engines.",
+      "f0": "VW 504/507 approved",
+      "f1": "TSI and TDI compatible",
+      "f2": "Advanced DPF protection",
+      "f3": "Extended drain intervals"
+    },
+    "helix-hx8-5w-30": {
+      "type": "Synthetic Technology",
+      "description": "A high-performance motor oil produced with Shell's synthetic technology formula. Offers protection comparable to full synthetic with broader application compatibility.",
+      "f0": "Synthetic technology formula",
+      "f1": "Wide application range",
+      "f2": "MB 229.3 approved",
+      "f3": "Superior high-temperature protection"
+    },
+    "helix-hx8-5w-40": {
+      "type": "Synthetic Technology",
+      "description": "A synthetic technology motor oil offering excellent protection across a wide viscosity range. VW and Mercedes-Benz approved, suitable for both petrol and diesel engines.",
+      "f0": "Multi-purpose formula",
+      "f1": "VW and MB approved",
+      "f2": "High thermal stability",
+      "f3": "Engine cleaning properties"
+    },
+    "helix-hx8-10w-40": {
+      "type": "Synthetic Technology",
+      "description": "A synthetic technology motor oil with excellent performance in hot climates and high operating temperatures. Suitable for both new and high-mileage engines.",
+      "f0": "Hot climate performance",
+      "f1": "High-mileage engine protection",
+      "f2": "Anti-wear formula",
+      "f3": "Wide engine compatibility"
+    },
+    "helix-hx8-ect-5w-30": {
+      "type": "Synthetic Technology",
+      "description": "A synthetic technology motor oil for vehicles with emission control systems. Provides low-ash advantage in DPF-equipped diesel and catalytic converter-equipped petrol vehicles.",
+      "f0": "DPF compatible Low-SAPS",
+      "f1": "BMW LL-04 approved",
+      "f2": "Catalytic converter friendly",
+      "f3": "Cost-effective alternative"
+    },
+    "helix-hx7-5w-40": {
+      "type": "Semi-Synthetic",
+      "description": "An ideal semi-synthetic motor oil for a wide range of vehicles. Combines the advantages of mineral and fully synthetic oils for economical and effective protection.",
+      "f0": "Economical semi-synthetic",
+      "f1": "Wide vehicle compatibility",
+      "f2": "High-temperature protection",
+      "f3": "VW and MB approved"
+    },
+    "helix-hx7-10w-40": {
+      "type": "Semi-Synthetic",
+      "description": "A semi-synthetic motor oil suitable for both petrol and diesel engines. Provides reliable engine protection in hot climates and urban driving.",
+      "f0": "Petrol and diesel compatible",
+      "f1": "Urban driving optimized",
+      "f2": "Strong detergent package",
+      "f3": "Multi-brand approvals"
+    },
+    "helix-hx7-15w-40": {
+      "type": "Semi-Synthetic",
+      "description": "A reliable semi-synthetic motor oil designed for hot climates and older generation engines. High-viscosity formulation provides protection at elevated temperatures.",
+      "f0": "Hot climate optimized",
+      "f1": "Older engine protection",
+      "f2": "High viscosity stability",
+      "f3": "Cost-effective choice"
+    },
+    "helix-hx7-av-l-5w-30": {
+      "type": "Semi-Synthetic",
+      "description": "An economical VW 504/507 approved semi-synthetic motor oil for VW Group vehicles. Provides DPF protection in TDI engines while offering a budget-friendly alternative.",
+      "f0": "VW 504/507 approved",
+      "f1": "DPF compatible",
+      "f2": "Budget-friendly alternative",
+      "f3": "TDI engine compatible"
+    },
+    "helix-hx6-10w-40": {
+      "type": "Semi-Synthetic",
+      "description": "A reliable semi-synthetic motor oil developed for everyday use. Wide engine and vehicle compatibility meets standard maintenance requirements.",
+      "f0": "Ideal for everyday use",
+      "f1": "Balanced protection package",
+      "f2": "Wide engine compatibility",
+      "f3": "Economical semi-synthetic"
+    },
+    "helix-hx5-15w-40": {
+      "type": "Mineral",
+      "description": "A reliable mineral motor oil meeting standard maintenance requirements. Provides basic engine protection in older generation petrol and diesel engines.",
+      "f0": "Basic engine protection",
+      "f1": "Older engine compatible",
+      "f2": "Standard viscosity",
+      "f3": "Proven formula"
+    },
+    "helix-hx5-20w-50": {
+      "type": "Mineral",
+      "description": "A high-viscosity mineral motor oil designed for use in high-temperature conditions and high-mileage engines. Provides reliable protection in hot climates.",
+      "f0": "High viscosity reliability",
+      "f1": "Hot climate protection",
+      "f2": "Aging engine support",
+      "f3": "Standard mineral formula"
+    },
+    "helix-hx3-20w-50": {
+      "type": "Mineral",
+      "description": "An economical mineral motor oil. Provides minimum engine protection for standard maintenance programs. Suitable for older and high-mileage engines.",
+      "f0": "Economical mineral oil",
+      "f1": "Standard protection",
+      "f2": "Wide compatibility",
+      "f3": "Ideal for basic maintenance"
+    },
+    "rimula-r2-extra-15w-40": {
+      "type": "Heavy Duty",
+      "description": "A reliable motor oil developed for heavy-duty diesel engines. Multi-additive package delivers reliable protection and extended engine life in diesel vehicles.",
+      "f0": "Heavy-duty diesel protection",
+      "f1": "Multi-additive package",
+      "f2": "MAN and Volvo approved",
+      "f3": "Extended engine life"
+    },
+    "rimula-r3-15w-40": {
+      "type": "Heavy Duty",
+      "description": "A mineral-based motor oil designed for global heavy-duty diesel engines. Cummins, MAN, Volvo and Mercedes-Benz approvals provide an economical solution for large fleets.",
+      "f0": "Wide fleet compatibility",
+      "f1": "Cummins approved",
+      "f2": "Cost-effective fleet solution",
+      "f3": "Strong load protection"
+    },
+    "rimula-r3-multi-10w-30": {
+      "type": "Heavy Duty",
+      "description": "A multi-grade heavy-duty motor oil with excellent performance at both low and high temperatures. Wide operating temperature range ensures cold start and hot protection.",
+      "f0": "Wide temperature range",
+      "f1": "Superior cold start",
+      "f2": "ACEA E7 certified",
+      "f3": "Multi-grade formula"
+    },
+    "rimula-r4-l-15w-40": {
+      "type": "Heavy Duty",
+      "description": "A high-performance motor oil developed for heavy-duty truck and bus engines. Delivers superior deposit control in engines with EGR (Exhaust Gas Recirculation) systems.",
+      "f0": "EGR engine compatible",
+      "f1": "Superior deposit control",
+      "f2": "Extended service intervals",
+      "f3": "Multi-OEM approved"
+    },
+    "rimula-r4-x-15w-40": {
+      "type": "Heavy Duty",
+      "description": "A superior-performance motor oil developed for high-stress heavy-duty engines. Provides extra protection in demanding operating conditions with a stronger additive package than R4 L.",
+      "f0": "Extra stress protection",
+      "f1": "CI-4 Plus certified",
+      "f2": "Enhanced additive package",
+      "f3": "Intensive operation compatible"
+    },
+    "rimula-r5-e-10w-40": {
+      "type": "Heavy Duty",
+      "description": "A synthetic technology heavy-duty motor oil designed for extended service intervals. Delivers outstanding deposit control in modern EGR engines and reliable protection in stop-start operations.",
+      "f0": "Extended service intervals",
+      "f1": "EGR compatible",
+      "f2": "MB 228.5 approved",
+      "f3": "Synthetic technology"
+    },
+    "rimula-r5-le-10w-40": {
+      "type": "Heavy Duty",
+      "description": "A synthetic technology motor oil developed for low-emission advanced heavy-duty engines. Optimized for Euro engines while offering comparable features to R5 E.",
+      "f0": "Low emission compatible",
+      "f1": "Euro engine optimized",
+      "f2": "Synthetic technology",
+      "f3": "Multi-OEM approved"
+    },
+    "rimula-r6-lme-5w-30": {
+      "type": "Heavy Duty",
+      "description": "A fully synthetic motor oil developed for Euro 6 heavy-duty engines equipped with SCR and DPF filters. Environmentally friendly formula with the lowest sulphur content.",
+      "f0": "Euro 6 engine compatible",
+      "f1": "SCR and DPF compatible",
+      "f2": "Low-SAPS formula",
+      "f3": "Maximum emission compliance"
+    },
+    "rimula-r6-me-5w-30": {
+      "type": "Heavy Duty",
+      "description": "A fully synthetic motor oil specifically optimized for Mercedes-Benz heavy-duty vehicles. MB 228.51 approved, delivering the longest service intervals for Actros and other MB trucks.",
+      "f0": "MB 228.51 approved",
+      "f1": "Actros engine compatible",
+      "f2": "Maximum service intervals",
+      "f3": "Full synthetic formula"
+    },
+    "tellus-s2-mx-32": {
+      "type": "Hydraulic Oil",
+      "description": "A high-performance mineral hydraulic oil developed for industrial hydraulic systems. Superior thermal and oxidation stability ensures long system life and equipment protection.",
+      "f0": "Superior oxidation stability",
+      "f1": "Excellent filter compatibility",
+      "f2": "Low foam tendency",
+      "f3": "Wide temperature range performance"
+    },
+    "tellus-s2-mx-46": {
+      "type": "Hydraulic Oil",
+      "description": "A hydraulic oil developed in the most commonly used industrial viscosity grade. Ideal for general-purpose hydraulic systems operating at constant temperatures.",
+      "f0": "General purpose hydraulic systems",
+      "f1": "Superior pump protection",
+      "f2": "Rapid water separation",
+      "f3": "Extended oil life"
+    },
+    "tellus-s2-mx-68": {
+      "type": "Hydraulic Oil",
+      "description": "A mineral hydraulic oil designed for hydraulic systems operating at high temperatures and under heavy loads. Suitable for industrial presses and large construction equipment.",
+      "f0": "High temperature stability",
+      "f1": "Heavy load capacity",
+      "f2": "Superior viscosity index",
+      "f3": "Anti-wear formula"
+    },
+    "tellus-s2-mx-100": {
+      "type": "Hydraulic Oil",
+      "description": "A mineral hydraulic oil developed for large hydraulic systems requiring high viscosity applications and extra load capacity. Ideal for heavy presses and industrial facilities.",
+      "f0": "Extra load capacity",
+      "f1": "Large system compatibility",
+      "f2": "Thermal stability",
+      "f3": "Extended service intervals"
+    },
+    "tellus-s3-m-46": {
+      "type": "Hydraulic Oil (Ash-Free)",
+      "description": "An environmentally friendly hydraulic oil with zinc-free ash-free formulation. Ideal for sensitive hydraulic systems and servo valves containing silver and magnesium alloy components.",
+      "f0": "Zinc-free ZAF formula",
+      "f1": "Silver alloy compatible",
+      "f2": "Servo valve compatible",
+      "f3": "Superior filter compatibility"
+    },
+    "omala-s2-gx-150": {
+      "type": "EP Gear Oil",
+      "description": "A high-pressure (EP) gear oil developed for closed industrial gearboxes. Provides superior gear protection and long-life service under high loads.",
+      "f0": "High-pressure protection",
+      "f1": "Extended gear life",
+      "f2": "David Brown approved",
+      "f3": "Wide gear type compatibility"
+    },
+    "omala-s2-gx-220": {
+      "type": "EP Gear Oil",
+      "description": "A most commonly used EP gear oil in industrial gear viscosity. Provides excellent protection in reducers, conveyor systems and general industrial gearboxes.",
+      "f0": "Most common industrial viscosity",
+      "f1": "Reducer compatibility",
+      "f2": "Wear and corrosion protection",
+      "f3": "Extended change intervals"
+    },
+    "omala-s2-gx-320": {
+      "type": "EP Gear Oil",
+      "description": "A heavy-duty EP gear oil developed for high-load, low-speed applications. Provides reliable protection in large industrial reducers and crane systems.",
+      "f0": "Heavy-duty load capacity",
+      "f1": "Low-speed compatibility",
+      "f2": "Crane system protection",
+      "f3": "Strong EP additive package"
+    },
+    "omala-s2-gx-460": {
+      "type": "EP Gear Oil",
+      "description": "A heavy-viscosity EP gear oil developed for large industrial gear systems operating at very low speeds and very high loads. Ideal for open-pit mining and steel industry applications.",
+      "f0": "Very high load capacity",
+      "f1": "Mining equipment compatibility",
+      "f2": "High film thickness",
+      "f3": "Extreme pressure protection"
+    },
+    "corena-s3-r-46": {
+      "type": "Compressor Oil",
+      "description": "A synthetic technology compressor oil developed for rotary screw and vane compressors. Extended change intervals up to 4,000 hours reduce operating costs.",
+      "f0": "4,000 hour change intervals",
+      "f1": "Rotary screw compressor compatible",
+      "f2": "Low carbon deposits",
+      "f3": "Superior oxidation resistance"
+    },
+    "corena-s4-r-46": {
+      "type": "Compressor Oil (Fully Synthetic)",
+      "description": "A fully synthetic compressor oil developed for rotary screw compressors. Extended change intervals up to 8,000 hours and superior thermal stability make it ideal for high-temperature systems.",
+      "f0": "8,000 hour change intervals",
+      "f1": "Full synthetic formula",
+      "f2": "High temperature stability",
+      "f3": "Minimum sludge formation"
+    },
+    "gadus-s2-v220-2": {
+      "type": "EP Grease",
+      "description": "A general-purpose high-load capacity lithium complex grease. Delivers superior protection across a wide range of industrial applications including rolling bearings, gearboxes and centrifugal pumps.",
+      "f0": "Wide application range",
+      "f1": "High load bearing capacity",
+      "f2": "Water and corrosion resistance",
+      "f3": "Wide temperature range (-20°C to +120°C)"
+    },
+    "morlina-s2-bl-10": {
+      "type": "Circulation / Turbine Oil",
+      "description": "A high-quality lubricating oil developed for steam turbines, gas turbines and circulation systems. Excellent water separation and long-life oxidation stability ensure uninterrupted operation.",
+      "f0": "Turbine-grade water separation",
+      "f1": "Extended oxidation life",
+      "f2": "Low foam tendency",
+      "f3": "Siemens and GE approved"
+    },
+    "tonna-s3-m-68": {
+      "type": "Slideway Oil",
+      "description": "A special slideway oil developed for machine tool slideways and sliding tables. Anti-stick-slip formulation ensures precise feed motion and vibration-free operation.",
+      "f0": "Stick-slip prevention",
+      "f1": "Precise feed control",
+      "f2": "Vibration-free operation",
+      "f3": "CNC machine compatible"
+    },
+    "diala-s4-zx-i": {
+      "type": "Transformer Oil",
+      "description": "An ultra high-performance mineral insulating oil developed for power transformers and high-voltage switching equipment. Superior thermal and electrical properties ensure long equipment life.",
+      "f0": "Superior dielectric strength",
+      "f1": "Low viscosity — enhanced cooling",
+      "f2": "Extended oxidation life",
+      "f3": "ABB and Siemens approved"
+    },
+    "1-esp-x2-0w-20": {
+      "type": "Fully Synthetic",
+      "description": "An ultra-low viscosity fully synthetic motor oil meeting BMW's latest efficiency standard LL-17FE+. Maximizes fuel economy while delivering superior engine protection.",
+      "f0": "BMW LL-17FE+ approved",
+      "f1": "Ultra-low viscosity",
+      "f2": "Maximum fuel economy",
+      "f3": "Hybrid vehicle compatible"
+    },
+    "1-esp-0w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic ESP motor oil developed specifically for Mercedes-Benz and Porsche vehicles. ACEA C3 certification provides superior protection in DPF-equipped vehicles.",
+      "f0": "MB 229.51 approved",
+      "f1": "Porsche A40 approved",
+      "f2": "DPF compatible Low-SAPS",
+      "f3": "Superior cold start"
+    },
+    "1-esp-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic ESP motor oil with the widest OEM approval portfolio. Provides DPF protection and extended service intervals in BMW, Mercedes-Benz and Volkswagen Group vehicles.",
+      "f0": "BMW LL-04 approved",
+      "f1": "MB 229.51 approved",
+      "f2": "VW 504/507 compatible",
+      "f3": "Extended drain intervals"
+    },
+    "1-esp-x4-0w-40": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic ESP motor oil developed for high-performance sports and luxury vehicles. Provides maximum engine protection and fuel efficiency across a wide temperature range.",
+      "f0": "MB 229.5 approved",
+      "f1": "Sports vehicle compatible",
+      "f2": "Wide operating temperature",
+      "f3": "High-load protection"
+    },
+    "1-fs-5w-40": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil trusted by millions of vehicles worldwide. Wide OEM approval portfolio provides excellent protection for both European and global vehicle models.",
+      "f0": "Global OEM approvals",
+      "f1": "Year-round protection",
+      "f2": "VW and Porsche approved",
+      "f3": "Anti-shear formula"
+    },
+    "1-new-life-0w-40": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil that protects your engine from the very first kilometre. Formulation optimized for Mercedes-Benz and Porsche high-performance engines delivers superior oxidation resistance.",
+      "f0": "High-performance engine compatible",
+      "f1": "MB 229.5 approved",
+      "f2": "Zero-kilometre protection",
+      "f3": "Superior oxidation resistance"
+    },
+    "super-3000-fe-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fuel-economy focused fully synthetic motor oil. Low-friction formulation delivering excellent performance in Ford EcoBoost engines makes it ideal for everyday use.",
+      "f0": "Ford EcoBoost compatible",
+      "f1": "Fuel-saving focused",
+      "f2": "A5/B5 certified",
+      "f3": "Easy cold start"
+    },
+    "super-3000-x1-5w-40": {
+      "type": "Fully Synthetic",
+      "description": "A reliable fully synthetic motor oil for a wide range of vehicles. High temperature protection and extended engine cleanliness provide superior performance in heavy urban traffic.",
+      "f0": "Full synthetic formula",
+      "f1": "High thermal protection",
+      "f2": "Engine cleaning properties",
+      "f3": "Wide vehicle compatibility"
+    },
+    "super-2000-10w-40": {
+      "type": "Semi-Synthetic",
+      "description": "A semi-synthetic motor oil providing reliable protection across a wide range of vehicles. Economical formulation meets standard maintenance needs in both petrol and diesel engines.",
+      "f0": "Economical semi-synthetic",
+      "f1": "Wide engine compatibility",
+      "f2": "VW and MB approved",
+      "f3": "Petrol/diesel compatible"
+    },
+    "delvac-1-esp-5w-30": {
+      "type": "Fully Synthetic (Heavy Duty)",
+      "description": "A fully synthetic ESP motor oil developed for latest-generation heavy-duty diesel engines. Fully compatible with SCR and DPF systems with Low-SAPS formulation meeting Euro 6 standards.",
+      "f0": "Euro 6 engine compatible",
+      "f1": "SCR/DPF protection",
+      "f2": "Low-SAPS formula",
+      "f3": "CK-4 certified"
+    },
+    "delvac-1-esp-5w-40": {
+      "type": "Fully Synthetic (Heavy Duty)",
+      "description": "A high-performance fully synthetic motor oil for heavy-duty truck and bus engines. Extended service intervals and superior deposit control reduce operating costs.",
+      "f0": "Extended service intervals",
+      "f1": "EGR compatible",
+      "f2": "Superior deposit control",
+      "f3": "Fuel economy"
+    },
+    "delvac-1300-super-15w-40": {
+      "type": "Mineral (Heavy Duty)",
+      "description": "A reliable and economical mineral motor oil for heavy-duty diesel engines. Wide OEM approval portfolio provides a cost-effective solution for large fleets.",
+      "f0": "Wide fleet compatibility",
+      "f1": "Economical mineral formula",
+      "f2": "Multi-OEM approved",
+      "f3": "Reliable heavy-duty protection"
+    },
+    "super-1000-15w-40": {
+      "type": "Mineral",
+      "description": "A reliable mineral motor oil meeting standard maintenance requirements. Economical choice providing basic protection in older generation petrol and diesel engines.",
+      "f0": "Basic engine protection",
+      "f1": "Economical mineral oil",
+      "f2": "Older engine compatible",
+      "f3": "Reliable standard performance"
+    },
+    "dte-10-excel-32": {
+      "type": "Hydraulic Oil (High VI)",
+      "description": "A premium hydraulic oil delivering consistent performance across a wide temperature range with high viscosity index. Particularly ideal for outdoor machinery and mobile hydraulic systems.",
+      "f0": "Wide temperature range performance",
+      "f1": "Superior viscosity index (VI 150+)",
+      "f2": "Parker Denison HF-0 approved",
+      "f3": "Extended system life"
+    },
+    "dte-10-excel-46": {
+      "type": "Hydraulic Oil (High VI)",
+      "description": "A high VI hydraulic oil in the most commonly used industrial hydraulic system viscosity grade. Provides superior pump protection in both in-plant and mobile equipment.",
+      "f0": "Most common industrial viscosity",
+      "f1": "High VI formula",
+      "f2": "Multiple pump compatibility",
+      "f3": "Superior oxidation resistance"
+    },
+    "dte-10-excel-68": {
+      "type": "Hydraulic Oil (High VI)",
+      "description": "A high VI hydraulic oil designed for heavy-duty hydraulic systems operating at high temperatures. Provides reliable performance in construction and mining equipment.",
+      "f0": "High temperature stability",
+      "f1": "Heavy-duty compatible",
+      "f2": "Low foam tendency",
+      "f3": "High viscosity index"
+    },
+    "dte-10-excel-100": {
+      "type": "Hydraulic Oil (High VI)",
+      "description": "A high-viscosity premium hydraulic oil for large hydraulic systems requiring extra load capacity. Provides reliable protection in heavy presses and large construction equipment.",
+      "f0": "Extra load capacity",
+      "f1": "Large system compatibility",
+      "f2": "Thermal stability",
+      "f3": "Extended service life"
+    },
+    "shc-630": {
+      "type": "Gear Oil (Fully Synthetic)",
+      "description": "A PAO-based fully synthetic industrial gear oil. Delivers much longer service intervals than mineral oils and superior low-temperature performance with superior gear protection in harsh operating conditions.",
+      "f0": "PAO full synthetic formula",
+      "f1": "Extended service intervals",
+      "f2": "Superior low-temperature fluidity",
+      "f3": "High thermal stability"
+    },
+    "shc-632": {
+      "type": "Gear Oil (Fully Synthetic)",
+      "description": "A PAO-based fully synthetic gear oil in the most common industrial gear viscosity grade. Provides 3x longer service life than mineral oils in reducers and closed gearboxes.",
+      "f0": "ISO VG 220 fully synthetic",
+      "f1": "3x extended service life",
+      "f2": "Energy saving",
+      "f3": "Superior low-temperature flow"
+    },
+    "rarus-427": {
+      "type": "Compressor Oil (Mineral)",
+      "description": "A high-performance mineral compressor oil developed for air compressors. Delivers long-life performance and low carbon deposits in reciprocating and rotary screw compressors.",
+      "f0": "Wide compressor type compatibility",
+      "f1": "Low carbon deposits",
+      "f2": "Superior oxidation resistance",
+      "f3": "Economical mineral formula"
+    },
+    "rarus-shc-1024": {
+      "type": "Compressor Oil (Fully Synthetic)",
+      "description": "A PAO-based fully synthetic compressor oil developed for rotary screw compressors. Extended change intervals up to 8,000 hours and zero carbon deposits reduce operating costs.",
+      "f0": "PAO full synthetic formula",
+      "f1": "8,000 hour change intervals",
+      "f2": "Zero carbon deposits",
+      "f3": "Extended eco-friendly service"
+    },
+    "vactra-2": {
+      "type": "Slideway Oil",
+      "description": "A special slideway oil developed for CNC machines and precision machine tools. Eliminates stick-slip vibrations for precise surface finish and feed consistency.",
+      "f0": "Stick-slip prevention",
+      "f1": "CNC machine compatible",
+      "f2": "Precise feed control",
+      "f3": "Water emulsion resistance"
+    },
+    "grease-xhp-222": {
+      "type": "EP Grease",
+      "description": "A high-performance EP grease with lithium complex thickener. Provides superior protection across a wide range of industrial applications including rolling bearings, gearboxes and joint points.",
+      "f0": "High EP capacity",
+      "f1": "Wide temperature range (-20°C to +150°C)",
+      "f2": "Water and rust protection",
+      "f3": "Extended re-greasing intervals"
+    },
+    "edge-0w-20": {
+      "type": "Fully Synthetic",
+      "description": "Castrol's most advanced fully synthetic motor oil. Equipped with Titanium FST technology, EDGE 0W-20 strengthens the film between engine parts for superior wear protection.",
+      "f0": "Titanium FST technology",
+      "f1": "Maximum engine performance",
+      "f2": "Fuel economy optimization",
+      "f3": "Cold start protection"
+    },
+    "edge-0w-30": {
+      "type": "Fully Synthetic",
+      "description": "A BMW and Mercedes-Benz approved fully synthetic motor oil. Low-friction formulation delivers fuel savings while providing superior engine protection.",
+      "f0": "BMW LL-04 approved",
+      "f1": "MB 229.31 approved",
+      "f2": "Low friction technology",
+      "f3": "Extended service intervals"
+    },
+    "edge-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "The most popular Castrol EDGE viscosity. BMW, Mercedes-Benz and Volkswagen approved, a full synthetic formula delivering complete protection across a wide range of vehicles.",
+      "f0": "Three major OEM approved",
+      "f1": "Titanium FST technology",
+      "f2": "High-pressure protection",
+      "f3": "Engine cleaning properties"
+    },
+    "edge-5w-40": {
+      "type": "Fully Synthetic",
+      "description": "An ideal fully synthetic motor oil for high-performance vehicles. MB, VW and Porsche approvals deliver maximum engine protection even under extreme conditions.",
+      "f0": "Porsche A40 approved",
+      "f1": "High temperature resistance",
+      "f2": "Turbo protection",
+      "f3": "Anti-shear technology"
+    },
+    "edge-0w-40": {
+      "type": "Fully Synthetic",
+      "description": "Developed for vehicles requiring performance across extreme temperature variations. Offers rapid cold-start flow combined with film stability at high temperatures.",
+      "f0": "Wide temperature range",
+      "f1": "Fast pumpability",
+      "f2": "High thermal stability",
+      "f3": "Premium fully synthetic"
+    },
+    "edge-10w-60": {
+      "type": "Fully Synthetic",
+      "description": "A heavy-viscosity fully synthetic oil developed specifically for BMW M and Porsche high-performance engines. Maximum protection from the race track to everyday driving.",
+      "f0": "BMW M series approved",
+      "f1": "High viscosity stability",
+      "f2": "Race-grade protection",
+      "f3": "Anti-wear technology"
+    },
+    "magnatec-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil with intelligent molecules that cling to engine parts. Provides superior protection from the very first start, even before oil circulates.",
+      "f0": "Instant start protection",
+      "f1": "Intelligent molecule technology",
+      "f2": "BMW LL-04 compatible",
+      "f3": "Excellent engine cleanliness"
+    },
+    "magnatec-5w-40": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic Castrol Magnatec with superior stop-start protection. Anti-wear molecules adhere to engine surfaces providing protection through all operating phases.",
+      "f0": "Stop-start protection",
+      "f1": "Anti-wear molecule technology",
+      "f2": "Dexos2 compatible",
+      "f3": "Wide vehicle compatibility"
+    },
+    "magnatec-10w-40": {
+      "type": "Semi-Synthetic",
+      "description": "A semi-synthetic Castrol Magnatec for everyday driving. Intelligent molecules provide constant engine protection especially during critical warm-up phases.",
+      "f0": "Warm-up phase protection",
+      "f1": "Intelligent molecule technology",
+      "f2": "VW and MB approved",
+      "f3": "Petrol and diesel compatible"
+    },
+    "gtx-15w-40": {
+      "type": "Mineral",
+      "description": "A highly trusted mineral motor oil used by countless drivers worldwide. Provides reliable engine protection in older generation vehicles with a proven additive package.",
+      "f0": "Proven mineral protection",
+      "f1": "Sludge combat technology",
+      "f2": "Older vehicle compatible",
+      "f3": "API SL/CF certified"
+    },
+    "gtx-20w-50": {
+      "type": "Mineral",
+      "description": "A high-viscosity mineral motor oil for hot climates and older high-mileage vehicles. Provides reliable protection and reduces oil consumption in worn engines.",
+      "f0": "Hot climate protection",
+      "f1": "High-mileage engine support",
+      "f2": "Reduced oil consumption",
+      "f3": "Standard mineral formula"
+    },
+    "vecton-15w-40": {
+      "type": "Heavy Duty",
+      "description": "A professional-grade heavy-duty diesel engine oil for commercial vehicles. System Pro Technology maintains optimum viscosity regardless of operating conditions.",
+      "f0": "System Pro Technology",
+      "f1": "Multi-OEM approved",
+      "f2": "Consistent viscosity",
+      "f3": "Commercial fleet protection"
+    },
+    "vecton-long-drain-10w-40": {
+      "type": "Heavy Duty",
+      "description": "A long-drain capable heavy-duty diesel engine oil. Extended drain intervals reduce downtime and operating costs for commercial vehicle fleets.",
+      "f0": "Extended drain intervals",
+      "f1": "Reduced downtime",
+      "f2": "Volvo and Cummins approved",
+      "f3": "Fleet cost savings"
+    },
+    "hyspin-aws-32": {
+      "type": "Hydraulic Oil",
+      "description": "A high-quality mineral hydraulic oil for industrial hydraulic systems. Excellent anti-wear and oxidation resistance for reliable system performance.",
+      "f0": "Superior anti-wear protection",
+      "f1": "Excellent oxidation stability",
+      "f2": "Low foam tendency",
+      "f3": "Wide system compatibility"
+    },
+    "hyspin-aws-46": {
+      "type": "Hydraulic Oil",
+      "description": "The most commonly used viscosity grade for industrial hydraulic systems. Reliable anti-wear performance and long system life in demanding applications.",
+      "f0": "Most popular viscosity",
+      "f1": "Anti-wear properties",
+      "f2": "Long oil life",
+      "f3": "Good filterability"
+    },
+    "hyspin-aws-68": {
+      "type": "Hydraulic Oil",
+      "description": "A mineral hydraulic oil for heavy-duty systems operating at elevated temperatures. Maintains viscosity stability under high thermal stress.",
+      "f0": "High temperature stability",
+      "f1": "Heavy system compatible",
+      "f2": "Good water separability",
+      "f3": "Strong anti-wear additive"
+    },
+    "hyspin-aws-100": {
+      "type": "Hydraulic Oil",
+      "description": "A high-viscosity hydraulic oil for large hydraulic systems requiring extra protection under heavy loads and elevated temperatures.",
+      "f0": "Extra load capacity",
+      "f1": "High viscosity stability",
+      "f2": "Good thermal resistance",
+      "f3": "Reliable heavy-duty protection"
+    },
+    "optigear-bm-100": {
+      "type": "EP Gear Oil",
+      "description": "A high-quality EP mineral gear oil for closed industrial gearboxes. Delivers reliable gear protection under heavy loads with strong EP additive performance.",
+      "f0": "Strong EP protection",
+      "f1": "Wide gear type compatibility",
+      "f2": "Long oil life",
+      "f3": "Anti-wear properties"
+    },
+    "optigear-bm-220": {
+      "type": "EP Gear Oil",
+      "description": "An EP mineral gear oil in the most popular industrial viscosity for reducers and enclosed gearboxes. Excellent load-carrying capacity and oxidation stability.",
+      "f0": "Most popular industrial viscosity",
+      "f1": "Excellent EP capacity",
+      "f2": "Good oxidation stability",
+      "f3": "Extended drain intervals"
+    },
+    "tribol-1100-220": {
+      "type": "EP Gear Oil",
+      "description": "A high-performance EP gear oil developed for enclosed industrial gear drives. Excellent protection under heavy shock loads and vibration.",
+      "f0": "Shock load protection",
+      "f1": "Vibration resistance",
+      "f2": "Wide gear compatibility",
+      "f3": "Long-term protection"
+    },
+    "aircol-sn-46": {
+      "type": "Compressor Oil",
+      "description": "A mineral-based rotary compressor oil providing reliable protection for air compressors. Designed to minimize carbon deposits and extend service life.",
+      "f0": "Low carbon deposits",
+      "f1": "Rotary compressor compatible",
+      "f2": "Long service life",
+      "f3": "Good oxidation stability"
+    },
+    "molub-alloy-860-220-2-el": {
+      "type": "EP Grease",
+      "description": "A premium EP grease for heavily loaded bearings and open gears. Exceptional load-carrying capacity and adhesion for extreme operating conditions.",
+      "f0": "Exceptional EP capacity",
+      "f1": "Strong adhesion",
+      "f2": "High load-bearing",
+      "f3": "Wide temperature application"
+    },
+    "quartz-9000-energy-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil developed for modern European and Asian vehicles. Fuel economy focus with ACEA A5/B5 certification and broad OEM approvals.",
+      "f0": "ACEA A5/B5 certified",
+      "f1": "Fuel economy focused",
+      "f2": "Low-friction technology",
+      "f3": "Wide vehicle compatibility"
+    },
+    "quartz-9000-energy-5w-40": {
+      "type": "Fully Synthetic",
+      "description": "A high-performance fully synthetic motor oil for modern engines requiring A3/B4 protection. Delivers excellent engine cleanliness and extended protection.",
+      "f0": "ACEA A3/B4 certified",
+      "f1": "Superior engine cleanliness",
+      "f2": "Extended protection",
+      "f3": "VW and MB approved"
+    },
+    "quartz-9000-energy-0w-40": {
+      "type": "Fully Synthetic",
+      "description": "An ultra-low viscosity fully synthetic motor oil for premium European vehicles. Fast cold-start protection combined with robust high-temperature film strength.",
+      "f0": "Ultra-low cold-start viscosity",
+      "f1": "Porsche and MB approved",
+      "f2": "High-temperature film strength",
+      "f3": "Premium synthetic protection"
+    },
+    "quartz-9000-future-nfc-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil meeting latest fuel economy and emission requirements. NFC (New Formula Concept) technology delivers both fuel savings and engine cleanliness.",
+      "f0": "NFC technology",
+      "f1": "Fuel economy optimized",
+      "f2": "Low emission compatible",
+      "f3": "Modern engine protection"
+    },
+    "quartz-9000-future-ecob-5w-20": {
+      "type": "Fully Synthetic",
+      "description": "An ultra-fuel economy fully synthetic motor oil for hybrid and stop-start vehicles. EcoB technology maximizes fuel efficiency while maintaining engine protection.",
+      "f0": "EcoB technology",
+      "f1": "Hybrid vehicle compatible",
+      "f2": "Maximum fuel economy",
+      "f3": "Stop-start system protection"
+    },
+    "quartz-ineo-ecs-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil specifically developed for PSA (Peugeot Citroen) diesel engines with DPF filters. ACEA C2 approved with very low SAPS levels.",
+      "f0": "PSA B71 2290 approved",
+      "f1": "ACEA C2 certified",
+      "f2": "Very low SAPS",
+      "f3": "DPF compatible"
+    },
+    "quartz-7000-10w-40": {
+      "type": "Semi-Synthetic",
+      "description": "A semi-synthetic motor oil for everyday use in both petrol and diesel engines. Provides reliable protection across a wide temperature range with good fuel economy.",
+      "f0": "Petrol and diesel compatible",
+      "f1": "Everyday reliability",
+      "f2": "Wide temperature range",
+      "f3": "Good fuel economy"
+    },
+    "quartz-5000-15w-40": {
+      "type": "Mineral",
+      "description": "A reliable mineral motor oil for older generation petrol and diesel engines. Meets standard maintenance requirements with proven additive technology.",
+      "f0": "Standard API protection",
+      "f1": "Older engine compatible",
+      "f2": "Proven mineral formula",
+      "f3": "Good engine cleanliness"
+    },
+    "rubia-tir-8600-15w-40": {
+      "type": "Heavy Duty",
+      "description": "A high-performance mineral motor oil for Euro 3/4 heavy-duty diesel engines. Multi-OEM approvals provide reliable fleet protection with economical mineral technology.",
+      "f0": "Euro 3/4 engine compatible",
+      "f1": "Multi-OEM approvals",
+      "f2": "Economical mineral technology",
+      "f3": "Reliable fleet protection"
+    },
+    "rubia-tir-9200-5w-30": {
+      "type": "Heavy Duty",
+      "description": "A synthetic technology motor oil for Euro 5/6 heavy-duty diesel engines. Excellent low-temperature performance and extended drain intervals reduce fleet operating costs.",
+      "f0": "Euro 5/6 engine compatible",
+      "f1": "Excellent low-temperature performance",
+      "f2": "Extended drain intervals",
+      "f3": "Synthetic technology"
+    },
+    "evolution-900-sxr-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic Elf motor oil for modern petrol and diesel engines. PSA and Renault approved with excellent fuel economy and emission control.",
+      "f0": "PSA and Renault approved",
+      "f1": "Fuel economy focused",
+      "f2": "Emission control compatible",
+      "f3": "Modern engine protection"
+    },
+    "evolution-900-ft-5w-40": {
+      "type": "Fully Synthetic",
+      "description": "A high-performance fully synthetic Elf motor oil for performance and mainstream vehicles. Wide OEM approvals and excellent high-temperature protection.",
+      "f0": "Wide OEM approvals",
+      "f1": "High temperature protection",
+      "f2": "Turbo engine compatible",
+      "f3": "Excellent engine cleanliness"
+    },
+    "azolla-zs-32": {
+      "type": "Hydraulic Oil",
+      "description": "A zinc-based anti-wear hydraulic oil for industrial hydraulic systems. Reliable protection at ISO VG 32 viscosity for standard industrial applications.",
+      "f0": "Zinc anti-wear additive",
+      "f1": "Excellent demulsibility",
+      "f2": "Good oxidation stability",
+      "f3": "Standard system compatible"
+    },
+    "azolla-zs-46": {
+      "type": "Hydraulic Oil",
+      "description": "A most popular viscosity zinc-based anti-wear hydraulic oil. Reliable performance for general industrial hydraulic systems with excellent pump protection.",
+      "f0": "Most popular viscosity",
+      "f1": "Excellent pump protection",
+      "f2": "Good water separation",
+      "f3": "Long oil life"
+    },
+    "azolla-zs-68": {
+      "type": "Hydraulic Oil",
+      "description": "A zinc anti-wear hydraulic oil for systems operating at higher temperatures and under heavier loads. Good viscosity stability and anti-wear performance.",
+      "f0": "High temperature capable",
+      "f1": "Heavy load compatible",
+      "f2": "Good viscosity stability",
+      "f3": "Anti-wear protection"
+    },
+    "azolla-zs-100": {
+      "type": "Hydraulic Oil",
+      "description": "A high-viscosity zinc anti-wear hydraulic oil for large hydraulic systems and slow-moving machinery. Extra load capacity with reliable long-term protection.",
+      "f0": "Extra load capacity",
+      "f1": "Slow machinery compatible",
+      "f2": "Long-term protection",
+      "f3": "Reliable high-viscosity formula"
+    },
+    "carter-ep-220": {
+      "type": "EP Gear Oil",
+      "description": "A high-performance EP gear oil for enclosed industrial gearboxes. Excellent EP additive protection and long oil life in demanding gear applications.",
+      "f0": "Excellent EP protection",
+      "f1": "Long oil life",
+      "f2": "Wide gear type compatible",
+      "f3": "Anti-wear and anti-corrosion"
+    },
+    "carter-ep-320": {
+      "type": "EP Gear Oil",
+      "description": "A heavy-duty EP gear oil for large industrial gearboxes operating under high loads. Strong EP additive package and good viscosity stability.",
+      "f0": "Heavy-duty load capacity",
+      "f1": "Strong EP additive",
+      "f2": "Good viscosity stability",
+      "f3": "Long drain capable"
+    },
+    "planetelf-acd-46": {
+      "type": "Compressor Oil",
+      "description": "A synthetic compressor oil for refrigeration and air conditioning compressors. Excellent compatibility with refrigerants and long compressor life.",
+      "f0": "Refrigerant compatible",
+      "f1": "AC compressor compatible",
+      "f2": "Long compressor life",
+      "f3": "Good low-temperature properties"
+    },
+    "multis-ep-2": {
+      "type": "EP Grease",
+      "description": "A multipurpose lithium complex EP grease for bearings, chassis and industrial applications. Excellent water resistance and load-carrying capacity.",
+      "f0": "Multipurpose application",
+      "f1": "Water resistance",
+      "f2": "High EP capacity",
+      "f3": "Wide temperature range"
+    },
+    "biohydran-tmp-46": {
+      "type": "Hydraulic Oil (Biodegradable)",
+      "description": "A biodegradable hydraulic oil based on synthetic ester for environmentally sensitive applications. Excellent performance combined with environmental compliance.",
+      "f0": "Biodegradable formula",
+      "f1": "Environmentally sensitive areas",
+      "f2": "Excellent performance",
+      "f3": "Synthetic ester based"
+    },
+    "8100-x-cleanplus-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil meeting the latest Euro 6 emission standards and low-SAPS requirements. Protects DPF and petrol particulate filters while delivering excellent engine cleanliness.",
+      "f0": "Euro 6 compatible",
+      "f1": "Low-SAPS formula",
+      "f2": "DPF and GPF protection",
+      "f3": "BMW LL-04 approved"
+    },
+    "8100-x-cess-gen2-5w-40": {
+      "type": "Fully Synthetic",
+      "description": "A second-generation fully synthetic motor oil developed for performance-oriented modern engines. Wide OEM approvals and excellent high-temperature protection.",
+      "f0": "Gen2 technology",
+      "f1": "Wide OEM compatibility",
+      "f2": "High temperature protection",
+      "f3": "Turbo engine optimized"
+    },
+    "8100-eco-nergy-0w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fuel-economy focused fully synthetic motor oil with ultra-low viscosity. Reduces engine friction to deliver both fuel savings and complete engine protection.",
+      "f0": "Fuel economy focused",
+      "f1": "Ultra-low viscosity",
+      "f2": "Renault approved",
+      "f3": "Cold start superior"
+    },
+    "8100-eco-lite-0w-20": {
+      "type": "Fully Synthetic",
+      "description": "An ultra-low viscosity fully synthetic motor oil for latest-generation fuel-efficient engines. Honda and Toyota approved, maximizing fuel economy without compromising protection.",
+      "f0": "Honda and Toyota approved",
+      "f1": "Maximum fuel economy",
+      "f2": "Ultra-low viscosity",
+      "f3": "Hybrid vehicle compatible"
+    },
+    "300v-competition-5w-40": {
+      "type": "Fully Synthetic (Racing)",
+      "description": "A racing-spec fully synthetic motor oil developed for high-revving competition engines. Ester-based formula delivers exceptional oil film stability under extreme racing conditions.",
+      "f0": "Ester-based racing formula",
+      "f1": "High-RPM protection",
+      "f2": "Thermal stability under race conditions",
+      "f3": "Reduces friction losses"
+    },
+    "300v-high-rpm-0w-20": {
+      "type": "Fully Synthetic (Racing)",
+      "description": "An ultra-low viscosity racing motor oil for high-revving engines. Optimized for maximum power delivery while maintaining film strength at extreme RPM.",
+      "f0": "Maximum power output",
+      "f1": "Ultra-low viscosity",
+      "f2": "High-RPM film stability",
+      "f3": "Ester technology"
+    },
+    "300v-le-mans-20w-60": {
+      "type": "Fully Synthetic (Racing)",
+      "description": "A high-viscosity racing motor oil developed for endurance racing engines. Exceptional film strength and thermal stability for sustained high-load operation.",
+      "f0": "Endurance racing formula",
+      "f1": "High film strength",
+      "f2": "Exceptional thermal stability",
+      "f3": "Sustained high-load protection"
+    },
+    "specific-bmw-ll-04-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil specifically formulated to meet BMW LL-04 requirements. Protects BMW diesel engines with DPF systems while enabling extended drain intervals.",
+      "f0": "BMW LL-04 approved",
+      "f1": "DPF compatible",
+      "f2": "Extended drain intervals",
+      "f3": "BMW diesel optimized"
+    },
+    "specific-vw-50800-0w-20": {
+      "type": "Fully Synthetic",
+      "description": "An ultra-low viscosity fully synthetic motor oil specifically formulated for VW Group's latest fuel economy specification. Delivers maximum fuel efficiency in modern VW Group engines.",
+      "f0": "VW 508 00/509 00 approved",
+      "f1": "Ultra-low viscosity",
+      "f2": "Maximum fuel efficiency",
+      "f3": "Latest VW Group spec"
+    },
+    "truck-and-bus-15w-40": {
+      "type": "Heavy Duty",
+      "description": "A mineral heavy-duty motor oil for light commercial vehicles, trucks and buses. CI-4/SL rated with E7 approval for reliable fleet protection.",
+      "f0": "CI-4/SL rated",
+      "f1": "E7 approved",
+      "f2": "LCV and bus compatible",
+      "f3": "Economical fleet protection"
+    },
+    "gear-300-ls-75w-90": {
+      "type": "Gear Oil (Fully Synthetic)",
+      "description": "A fully synthetic gear oil with limited-slip additive for high-performance differentials and manual gearboxes. Excellent protection under extreme loads.",
+      "f0": "Limited-slip compatible",
+      "f1": "High-performance differential",
+      "f2": "Fully synthetic formula",
+      "f3": "Extreme load protection"
+    },
+    "gear-300-75w-90": {
+      "type": "Gear Oil (Fully Synthetic)",
+      "description": "A fully synthetic gear oil for manual gearboxes and axles. Excellent protection across a wide temperature range with low viscosity for easy shifting.",
+      "f0": "Fully synthetic formula",
+      "f1": "Wide temperature range",
+      "f2": "Easy shifting",
+      "f3": "Long drain capable"
+    },
+    "atf-vi": {
+      "type": "Automatic Transmission Fluid",
+      "description": "A universal automatic transmission fluid meeting the latest ATF VI specification. Compatible with a wide range of automatic transmissions requiring low-viscosity fluid.",
+      "f0": "ATF VI specification",
+      "f1": "Universal compatibility",
+      "f2": "Low-viscosity formula",
+      "f3": "Smooth shifting"
+    },
+    "multi-dctf": {
+      "type": "DCT Fluid",
+      "description": "A multi-purpose dual-clutch transmission fluid for DCT gearboxes. Protects both the clutch pack and gear sets while ensuring smooth power delivery.",
+      "f0": "DCT compatible",
+      "f1": "Clutch pack protection",
+      "f2": "Smooth power delivery",
+      "f3": "Wide DCT compatibility"
+    },
+    "hydraulic-sus-46": {
+      "type": "Hydraulic Oil",
+      "description": "A mineral hydraulic oil for industrial hydraulic systems. Good anti-wear and oxidation stability for reliable system performance at ISO VG 46.",
+      "f0": "Good anti-wear properties",
+      "f1": "Reliable system performance",
+      "f2": "Good oxidation stability",
+      "f3": "Wide system compatibility"
+    },
+    "hydraulic-sus-68": {
+      "type": "Hydraulic Oil",
+      "description": "A mineral hydraulic oil for systems operating at elevated temperatures and under heavier loads. Maintains performance in demanding industrial applications.",
+      "f0": "High temperature capable",
+      "f1": "Heavy load compatible",
+      "f2": "Good viscosity maintenance",
+      "f3": "Reliable protection"
+    },
+    "coolant-ultra-37": {
+      "type": "Engine Coolant",
+      "description": "A G13 compatible engine coolant providing freeze protection to -37°C. Excellent corrosion protection for aluminum and ferrous metals in modern engines.",
+      "f0": "Freeze protection to -37°C",
+      "f1": "G13 compatible",
+      "f2": "Aluminum protection",
+      "f3": "Modern engine compatible"
+    },
+    "inugel-g13-ultra": {
+      "type": "Engine Coolant",
+      "description": "A long-life G13 engine coolant with silicate-free organic acid technology. Excellent protection for all cooling system metals with extended service intervals.",
+      "f0": "G13 long-life formula",
+      "f1": "Silicate-free OAT technology",
+      "f2": "All-metal protection",
+      "f3": "Extended service intervals"
+    },
+    "multisyn-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "Texol's core fully synthetic motor oil for modern petrol and diesel engines. Ford and GM approved formulation delivers fuel savings and superior protection.",
+      "f0": "Ford WSS-M2C913-D approved",
+      "f1": "GM approved",
+      "f2": "Fuel economy optimized",
+      "f3": "Fully synthetic formula"
+    },
+    "multisyn-dpf-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "An Ultra High Performance Low SAPS fully synthetic motor oil for DPF-equipped modern engines. Meets BMW, Mercedes-Benz and Volkswagen Group's highest emission control standards.",
+      "f0": "BMW LL-04 approved",
+      "f1": "MB 229.51 approved",
+      "f2": "VW 504/507 approved",
+      "f3": "Ultra low SAPS formula"
+    },
+    "multisyn-5w-40": {
+      "type": "Fully Synthetic",
+      "description": "An ultra high performance fully synthetic motor oil for a wide range of vehicles. MB 229.3 and GM approved, with exceptional shear stability across a broad temperature range.",
+      "f0": "MB 229.3 approved",
+      "f1": "GM approved",
+      "f2": "Wide temperature range",
+      "f3": "Fully synthetic performance"
+    },
+    "multisyn-10w-40": {
+      "type": "Semi-Synthetic",
+      "description": "A high-performance semi-synthetic motor oil for petrol and diesel engines. VW and Mercedes-Benz approved with reliable everyday protection at an economical price.",
+      "f0": "VW 505.00 approved",
+      "f1": "MB 229.1 approved",
+      "f2": "Petrol and diesel compatible",
+      "f3": "Economical semi-synthetic"
+    },
+    "multisyn-0w-20": {
+      "type": "Fully Synthetic",
+      "description": "A super high performance ultra-low viscosity fully synthetic motor oil. Ford EcoBoost and modern petrol engines benefit from maximum fuel economy and superior cold-start protection.",
+      "f0": "Ford WSS-M2C947-B1 approved",
+      "f1": "ILSAC GF-5 certified",
+      "f2": "Ultra-low viscosity",
+      "f3": "Maximum fuel economy"
+    },
+    "multisyn-c2-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A Low SAPS fully synthetic motor oil for PSA and Renault vehicles with FAP/DPF systems. ACEA C2 certified to extend catalytic converter and particulate filter service life.",
+      "f0": "PSA B71 2290 approved",
+      "f1": "Renault RN 0700 approved",
+      "f2": "ACEA C2 Low SAPS",
+      "f3": "FAP/DPF compatible"
+    },
+    "multisyn-tdx-10w-40": {
+      "type": "Semi-Synthetic (Heavy Duty)",
+      "description": "An ultra high performance semi-synthetic heavy-duty diesel engine oil. Cummins, Mercedes-Benz, MAN, Volvo and Scania multi-OEM approvals provide extended service intervals for commercial fleets.",
+      "f0": "Cummins multi-approved",
+      "f1": "Volvo VDS-3 approved",
+      "f2": "MB 228.5 approved",
+      "f3": "Wide OEM compatibility"
+    },
+    "multisyn-15w-40-premium": {
+      "type": "Heavy Duty",
+      "description": "A premium low SAPS heavy-duty motor oil formulated with TFAS technology. Caterpillar, Cummins and Volvo approvals for the most demanding commercial vehicle conditions.",
+      "f0": "CJ-4 highest standard",
+      "f1": "Caterpillar ECF-3 approved",
+      "f2": "Volvo VDS-4 approved",
+      "f3": "TFAS technology"
+    },
+    "multisyn-tdx-5w-30": {
+      "type": "Fully Synthetic (Heavy Duty)",
+      "description": "A fuel-efficiency focused fully synthetic heavy-duty motor oil. MB, MAN and Volvo approved for Euro V engines delivering reduced fuel consumption and extended service intervals.",
+      "f0": "MB 228.51 approved",
+      "f1": "MAN M 3477 approved",
+      "f2": "Fuel economy focused",
+      "f3": "Full synthetic heavy duty"
+    },
+    "multisyn-10w-60": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic motor oil for extreme performance and high-load conditions. Very high viscosity index provides maximum film protection across a wide temperature range for sport and race engines.",
+      "f0": "Race-grade fully synthetic",
+      "f1": "High viscosity index (178)",
+      "f2": "Extreme load protection",
+      "f3": "Fast cold-start pumpability"
+    },
+    "multisyn-tdx-5w-30-plus": {
+      "type": "Fully Synthetic (Heavy Duty)",
+      "description": "The most comprehensive OEM-approved fully synthetic heavy-duty motor oil for Euro VI engines. Caterpillar, MAN, Volvo, Scania and Cummins — the widest approval portfolio in the segment.",
+      "f0": "CJ-4/ACEA E9 top standard",
+      "f1": "Caterpillar ECF-3 approved",
+      "f2": "Scania LDF-4 approved",
+      "f3": "Euro VI engine compatible"
+    },
+    "hydraulic-32": {
+      "type": "Hydraulic Oil",
+      "description": "A Texol mineral hydraulic oil at ISO VG 32 for light-duty industrial hydraulic systems. Reliable anti-wear protection and good filterability.",
+      "f0": "Light system compatible",
+      "f1": "Good filterability",
+      "f2": "Anti-wear protection",
+      "f3": "Reliable performance"
+    },
+    "hydraulic-46": {
+      "type": "Hydraulic Oil",
+      "description": "A Texol mineral hydraulic oil at ISO VG 46, the most popular hydraulic viscosity grade. Reliable protection for standard industrial hydraulic systems.",
+      "f0": "Most popular viscosity",
+      "f1": "Good pump protection",
+      "f2": "Low foam tendency",
+      "f3": "Long oil life"
+    },
+    "hydraulic-68": {
+      "type": "Hydraulic Oil",
+      "description": "A Texol hydraulic oil for systems operating at elevated temperatures or under heavier loads. Good thermal stability and anti-wear performance.",
+      "f0": "High temperature stable",
+      "f1": "Heavy load compatible",
+      "f2": "Good anti-wear",
+      "f3": "Reliable protection"
+    },
+    "gear-oil-220": {
+      "type": "Gear Oil",
+      "description": "A Texol EP gear oil at ISO VG 220 for enclosed industrial gearboxes and reducers. Reliable EP protection and good oxidation stability.",
+      "f0": "EP protection",
+      "f1": "Enclosed gearbox compatible",
+      "f2": "Good oxidation stability",
+      "f3": "Reliable performance"
+    },
+    "gear-oil-320": {
+      "type": "Gear Oil",
+      "description": "A Texol high-viscosity EP gear oil for heavily loaded slow-speed industrial gearboxes. Strong EP additive and long drain capability.",
+      "f0": "Heavy load capacity",
+      "f1": "Slow-speed compatible",
+      "f2": "Strong EP additive",
+      "f3": "Long drain capable"
+    },
+    "compressor-46": {
+      "type": "Compressor Oil",
+      "description": "A Texol mineral compressor oil for air compressors. Good oxidation stability and low carbon deposit tendency for reliable compressor service life.",
+      "f0": "Air compressor compatible",
+      "f1": "Low carbon deposits",
+      "f2": "Good oxidation stability",
+      "f3": "Reliable service life"
+    },
+    "grease-ep-2": {
+      "type": "EP Grease",
+      "description": "A Texol NLGI 2 lithium EP grease for general industrial bearing and chassis applications. Good water resistance and load-carrying capacity.",
+      "f0": "General purpose",
+      "f1": "Water resistance",
+      "f2": "Good EP capacity",
+      "f3": "Wide temperature application"
+    },
+    "slideway-68": {
+      "type": "Slideway Oil",
+      "description": "A Texol slideway oil at ISO VG 68 for machine tool guideways. Anti-stick-slip properties ensure smooth precise feed motion.",
+      "f0": "Anti-stick-slip",
+      "f1": "Machine tool compatible",
+      "f2": "Precise feed control",
+      "f3": "Good adhesion"
+    },
+    "havoline-prods-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic Texaco Havoline ProDS motor oil for modern petrol and diesel engines. Meets ACEA C3 for DPF-equipped vehicles with broad European OEM approvals.",
+      "f0": "ACEA C3 certified",
+      "f1": "DPF compatible",
+      "f2": "European OEM approvals",
+      "f3": "Full synthetic formula"
+    },
+    "havoline-prods-5w-40": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic Texaco Havoline ProDS motor oil meeting ACEA A3/B4 for high-performance engines. Broad OEM approvals and excellent high-temperature protection.",
+      "f0": "ACEA A3/B4 certified",
+      "f1": "High-performance engine compatible",
+      "f2": "Broad OEM approvals",
+      "f3": "High temperature protection"
+    },
+    "havoline-extra-10w-40": {
+      "type": "Semi-Synthetic",
+      "description": "A semi-synthetic Texaco Havoline motor oil for everyday driving. Reliable protection for both petrol and diesel engines with good fuel economy.",
+      "f0": "Petrol and diesel compatible",
+      "f1": "Everyday protection",
+      "f2": "Good fuel economy",
+      "f3": "Semi-synthetic formula"
+    },
+    "havoline-motor-oil-20w-50": {
+      "type": "Mineral",
+      "description": "A high-viscosity Texaco Havoline mineral motor oil for hot climates and older engines. Provides reliable engine protection where higher viscosity is needed.",
+      "f0": "Hot climate protection",
+      "f1": "Older engine compatible",
+      "f2": "High viscosity stability",
+      "f3": "Reliable mineral formula"
+    },
+    "havoline-synthetic-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "A fully synthetic Texaco Havoline motor oil with broad vehicle compatibility. Meets ACEA A5/B5 for fuel-economy focused applications.",
+      "f0": "ACEA A5/B5 certified",
+      "f1": "Fuel economy focused",
+      "f2": "Wide vehicle compatibility",
+      "f3": "Full synthetic formula"
+    },
+    "havoline-0w-20": {
+      "type": "Fully Synthetic",
+      "description": "An ultra-low viscosity fully synthetic Texaco Havoline motor oil for the latest fuel-efficient engines. Delivers maximum fuel economy while maintaining engine protection.",
+      "f0": "Ultra-low viscosity",
+      "f1": "Maximum fuel economy",
+      "f2": "Latest engine compatible",
+      "f3": "Full synthetic formula"
+    },
+    "ursa-premium-tdx-15w-40": {
+      "type": "Heavy Duty",
+      "description": "A heavy-duty diesel engine oil for trucks and commercial vehicles. Multi-OEM approvals including Volvo VDS-3 and Cummins provide reliable fleet protection.",
+      "f0": "Volvo VDS-3 approved",
+      "f1": "Cummins approved",
+      "f2": "Multi-OEM fleet compatible",
+      "f3": "Reliable heavy-duty protection"
+    },
+    "ursa-super-plus-10w-40": {
+      "type": "Semi-Synthetic (Heavy Duty)",
+      "description": "A semi-synthetic heavy-duty diesel engine oil. Provides reliable protection for mixed fleets with broad OEM approvals and good fuel economy.",
+      "f0": "Broad OEM approvals",
+      "f1": "Semi-synthetic formula",
+      "f2": "Mixed fleet compatible",
+      "f3": "Good fuel economy"
+    },
+    "delo-400-mgx-15w-40": {
+      "type": "Heavy Duty",
+      "description": "A Texaco Delo 400 heavy-duty diesel engine oil with broad OEM approvals. Advanced additive technology for extended drain capability and deposit control.",
+      "f0": "Extended drain capability",
+      "f1": "Deposit control technology",
+      "f2": "Broad OEM approvals",
+      "f3": "CK-4/SN rated"
+    },
+    "delo-400-xsp-5w-40": {
+      "type": "Fully Synthetic (Heavy Duty)",
+      "description": "A fully synthetic Texaco Delo 400 XSP motor oil for heavy-duty engines. Provides maximum protection in the most demanding operating conditions.",
+      "f0": "Full synthetic formula",
+      "f1": "Maximum protection",
+      "f2": "Demanding condition capable",
+      "f3": "Extended drain intervals"
+    },
+    "meropa-xl-220": {
+      "type": "EP Gear Oil",
+      "description": "A Texaco Meropa XL EP gear oil for enclosed industrial gearboxes. Long life and reliable EP protection in demanding industrial applications.",
+      "f0": "Long life formula",
+      "f1": "Reliable EP protection",
+      "f2": "Wide gear compatibility",
+      "f3": "Good oxidation stability"
+    },
+    "meropa-xl-320": {
+      "type": "EP Gear Oil",
+      "description": "A heavy-duty Texaco Meropa XL EP gear oil for large industrial gearboxes. Strong EP additive package for high-load low-speed applications.",
+      "f0": "Heavy-duty load capacity",
+      "f1": "Strong EP additive",
+      "f2": "High-load compatible",
+      "f3": "Long drain capable"
+    },
+    "meropa-xl-460": {
+      "type": "EP Gear Oil",
+      "description": "A very high viscosity Texaco Meropa XL EP gear oil for the most heavily loaded slow-speed gearboxes. Maximum film thickness and EP protection.",
+      "f0": "Maximum film thickness",
+      "f1": "Slow-speed compatible",
+      "f2": "Very high load capacity",
+      "f3": "Extreme pressure protection"
+    },
+    "rando-hdz-32": {
+      "type": "Hydraulic Oil (High VI)",
+      "description": "A Texaco Rando HDZ high VI hydraulic oil for mobile and industrial applications in variable temperature environments. Excellent pump protection and system performance.",
+      "f0": "High viscosity index",
+      "f1": "Wide temperature range",
+      "f2": "Excellent pump protection",
+      "f3": "Mobile equipment compatible"
+    },
+    "rando-hdz-46": {
+      "type": "Hydraulic Oil (High VI)",
+      "description": "A Texaco Rando HDZ high VI hydraulic oil at the most popular industrial viscosity. Reliable performance across temperature variations with excellent anti-wear properties.",
+      "f0": "Most popular viscosity",
+      "f1": "High VI formula",
+      "f2": "Excellent anti-wear",
+      "f3": "Temperature stable"
+    },
+    "rando-hdz-68": {
+      "type": "Hydraulic Oil (High VI)",
+      "description": "A Texaco Rando HDZ high VI hydraulic oil for heavy-duty systems in variable temperature conditions. Strong performance under high loads and temperatures.",
+      "f0": "Heavy-duty compatible",
+      "f1": "High VI performance",
+      "f2": "High temperature stable",
+      "f3": "Anti-wear protection"
+    },
+    "cetus-pao-46": {
+      "type": "Compressor Oil (Fully Synthetic)",
+      "description": "A PAO-based fully synthetic compressor oil for rotary air compressors. Extended service intervals and excellent thermal stability for high-efficiency compressor operation.",
+      "f0": "PAO fully synthetic",
+      "f1": "Extended service intervals",
+      "f2": "Excellent thermal stability",
+      "f3": "High-efficiency operation"
+    },
+    "multifak-ep-2": {
+      "type": "EP Grease",
+      "description": "A Texaco Multifak EP 2 multipurpose lithium EP grease for industrial and automotive applications. Good water resistance and broad temperature capability.",
+      "f0": "Multipurpose formula",
+      "f1": "Good water resistance",
+      "f2": "Industrial and automotive",
+      "f3": "Broad temperature range"
+    },
+    "novatex-gp-2": {
+      "type": "General Purpose Grease",
+      "description": "A Texaco Novatex general-purpose lithium grease for chassis and light industrial applications. Reliable protection and good mechanical stability.",
+      "f0": "General purpose",
+      "f1": "Chassis application",
+      "f2": "Good mechanical stability",
+      "f3": "Reliable protection"
+    }
+  },
+  "quotePage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbContact": "Contact",
+    "breadcrumbPage": "Request a Quote",
+    "eyebrow": "Bulk Export Inquiry",
+    "headline": "Request a Bulk Quote",
+    "subheadline": "Fill in your product requirements below. Our export team responds within 24 business hours with competitive pricing, full specification sheets, and export documentation.",
+    "whatHappensNext": "What Happens Next",
+    "trust1Title": "24-Hour Response",
+    "trust1Desc": "Our export team reviews every inquiry within one business day.",
+    "trust2Title": "Full Documentation Package",
+    "trust2Desc": "COA, MSDS, Certificate of Origin, and country-specific compliance documents included.",
+    "trust3Title": "ISO 9001:2015 Certified",
+    "trust3Desc": "Every batch is tested against specification before shipment.",
+    "trust4Title": "No Commitment Required",
+    "trust4Desc": "A quote is just information. You decide whether to proceed.",
+    "preferDirect": "Prefer to speak directly?",
+    "certifiedSupplier": "Certified Supplier",
+    "availableHours": "Available Mon–Fri, 09:00–17:00 (GMT+3). WhatsApp preferred for international calls.",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1q": "What is the minimum order quantity?",
+    "faq1a": "Our minimum bulk order starts at 1,000 liters (typically 5× 205L drums). For IBC quantities, minimum is 1 unit (1,000L). Bulk tanker from 20,000L.",
+    "faq2q": "How long does it take to receive a quotation?",
+    "faq2a": "Standard turnaround is 24–48 business hours. Complex multi-product or custom spec inquiries may take slightly longer.",
+    "faq3q": "Which Incoterms do you offer?",
+    "faq3a": "We support EXW, FOB, CFR, CIF, DAP, and DDP. Your preferred Incoterm should be noted in the Additional Notes field.",
+    "faq4q": "Can you supply API and ACEA certified products?",
+    "faq4a": "Yes. Our motor oil range carries API SN, SN+, CF, CK-4 and ACEA A3/B4, C3, E7, E9 certifications. Specific approvals are listed on each product page."
+  },
+  "productsPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbPage": "Products",
+    "eyebrow": "Full Catalog",
+    "headline": "Motor Oils, Mineral Oils & Industrial Lubricants",
+    "subheadline": "500+ products across three categories. All ISO certified, API compliant, with full technical documentation.",
+    "viewProducts": "View Products",
+    "customSpecTitle": "Need a Custom Product Specification?",
+    "customSpecBody": "Our technical team can match the correct product to your engine type, OEM specification, and operating conditions.",
+    "customSpecCta": "Request Technical Matching",
+    "cat1Name": "Motor Oils",
+    "cat1Desc": "SAE-graded engine oils for passenger cars, commercial vehicles, and heavy-duty diesel engines. API and ACEA certified.",
+    "cat2Name": "Mineral Oils",
+    "cat2Desc": "White mineral oils, process oils, transformer oils, and specialty mineral base oils for industrial and pharmaceutical applications.",
+    "cat3Name": "Industrial Lubricants",
+    "cat3Desc": "Hydraulic oils, compressor oils, gear oils, metalworking fluids, and greases for industrial machinery and equipment."
+  },
+  "blogPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbPage": "Blog",
+    "eyebrow": "Technical Insights",
+    "headline": "Resources for Industrial Buyers",
+    "subheadline": "Technical guides, export insights, and lubricant knowledge base for procurement managers and importers.",
+    "noPostsTitle": "Articles Coming Soon",
+    "noPostsBody": "We are currently publishing our technical guide series. Check back shortly.",
+    "readMore": "Read Article",
+    "minRead": "min read",
+    "backToBlog": "Back to Blog"
+  },
+  "solutions": {
+    "breadcrumbHome": "Home",
+    "breadcrumbSolutions": "Solutions",
+    "requestQuote": "Request a Quote",
+    "browseCatalog": "Browse Product Catalog",
+    "challengesTitle": "Common Challenges We Solve",
+    "solutionsTitle": "How Model Oils Addresses Them",
+    "recommendedTitle": "Recommended Products for {title}",
+    "viewFullCatalog": "View Full Product Catalog",
+    "faqTitle": "Frequently Asked Questions",
+    "ctaTitle": "Ready to Discuss Your Requirements?",
+    "ctaBody": "Our export team responds within 24 hours with pricing, specifications, and documentation.",
+    "ctaBtn": "Request a Quote",
+    "fleet": {
+      "title": "Fleet Operators",
+      "eyebrow": "Solutions for Fleet Operators",
+      "headline": "Consistent Engine Oil Supply for Commercial Fleets",
+      "subheadline": "Stop managing multiple oil suppliers. We supply SAE-graded motor oils for diesel and petrol fleets in bulk. ISO certified, API rated, consistent across every order.",
+      "p1": "Inconsistent oil quality causing early drain intervals",
+      "p2": "Multiple suppliers with incompatible specifications",
+      "p3": "Rising fleet maintenance costs from premium retail lubricants",
+      "p4": "Documentation requirements from OEM warranty programs",
+      "p5": "No dedicated account manager for re-order coordination",
+      "s1t": "Bulk Pricing That Scales With Your Fleet",
+      "s1d": "From 1,000L trial orders to full bulk tanker quantities. Price per liter drops significantly at IBC and tanker volumes.",
+      "s2t": "API and OEM Specification Matching",
+      "s2d": "Our technical team matches the correct API SN, CJ-4, or CK-4 specification to your fleet's OEM requirements.",
+      "s3t": "Consistent Batch-to-Batch Quality",
+      "s3d": "ISO 9001:2015 quality management and batch-specific COA on every order. Same formulation, same performance, every delivery.",
+      "s4t": "Flexible Delivery Scheduling",
+      "s4d": "Monthly, quarterly, or annual supply agreements. Proactive lead time communication so you never face an unplanned stock-out.",
+      "testimonial": "We switched from three separate local suppliers to Model Oils for our entire 200-vehicle fleet. Pricing improved, documentation improved, and we haven't had a specification mismatch in 18 months.",
+      "testimonialName": "Kwame A.",
+      "testimonialRole": "Fleet Maintenance Director, West Africa",
+      "faq1q": "What is the minimum order for fleet supply?",
+      "faq1a": "Minimum bulk order is 1,000L (typically 5x 205L drums). We recommend starting with a trial order before committing to a supply agreement.",
+      "faq2q": "Can you supply API CK-4 certified oil for modern diesel engines?",
+      "faq2a": "Yes. Our SAE 15W-40 HD diesel oil carries API CK-4 certification, backward compatible with CJ-4 and CI-4.",
+      "faq3q": "Do you offer price-lock agreements for fleet operators?",
+      "faq3a": "Yes. 6-month and 12-month price-lock agreements are available for verified fleet operators committing to minimum quarterly volumes.",
+      "faq4q": "Can I mix products across multiple specifications in one shipment?",
+      "faq4a": "Yes. We regularly ship multi-product orders in a single container with separate COA for each batch."
+    },
+    "distributors": {
+      "title": "Automotive Distributors",
+      "eyebrow": "Solutions for Automotive Distributors",
+      "headline": "Reliable Wholesale Motor Oil Supply for Distributors",
+      "subheadline": "Establish a consistent supply of API and ACEA certified motor oils for your distribution network. Private label, co-packing, and custom formulation available.",
+      "p1": "Unreliable supplier causing stock gaps in your distribution network",
+      "p2": "No private label option from current manufacturer",
+      "p3": "API and ACEA certifications required by automotive sector buyers",
+      "p4": "Inconsistent quality complaints from end customers",
+      "p5": "High cost of maintaining multiple source suppliers",
+      "s1t": "Private Label and Co-Packing",
+      "s1d": "We supply products under your label with your branding on drums and IBCs. Minimum private label run is 5,000L.",
+      "s2t": "Full API and ACEA Certification Portfolio",
+      "s2d": "API SN, SN+, CF, CK-4, and ACEA A3/B4, C3, E7, E9 across our motor oil range.",
+      "s3t": "Distributor Pricing Tiers",
+      "s3d": "Volume-based pricing with additional margin for distributors committing to quarterly minimum orders.",
+      "s4t": "Complete Export Documentation",
+      "s4d": "COA, MSDS, Certificate of Origin, and country-specific compliance documents. Your end customers clear customs without delays.",
+      "testimonial": "We moved our entire product range to Model Oils as our single source supplier 14 months ago. Private label setup was straightforward, and the API documentation satisfied our local trade authority requirements immediately.",
+      "testimonialName": "Rodrigo M.",
+      "testimonialRole": "Import Director, South America",
+      "faq1q": "What is the minimum for private label production?",
+      "faq1a": "Minimum private label run is 5,000L per SKU. Lead time from label artwork approval to dispatch is 10-14 working days.",
+      "faq2q": "Can you supply ACEA A3/B4 for European passenger car distribution?",
+      "faq2a": "Yes. Our 5W-30 and 5W-40 synthetic oils are formulated and tested to ACEA A3/B4 and C3 sequences.",
+      "faq3q": "Do you work with exclusive distributor agreements?",
+      "faq3a": "Yes, for select markets. Exclusive distributor status requires a minimum annual volume commitment, reviewed quarterly.",
+      "faq4q": "How do you handle quality complaints from my end customers?",
+      "faq4a": "All batches are traceable via COA batch numbers. We investigate within 48 hours and provide a written response."
+    },
+    "industrial": {
+      "title": "Industrial Companies",
+      "eyebrow": "Solutions for Industrial Companies",
+      "headline": "Industrial Lubricants for Manufacturing and Processing Plants",
+      "subheadline": "Hydraulic fluids, gear oils, compressor oils, and specialty lubricants for industrial machinery. ISO VG graded, OEM specification matched, available in drums, IBCs, and bulk tanker.",
+      "p1": "Multiple lubricant types from multiple suppliers creating procurement complexity",
+      "p2": "High per-liter cost of branded industrial lubricants from major OEMs",
+      "p3": "Difficulty sourcing ISO VG grades not stocked by local distributors",
+      "p4": "Need for OEM approval documentation for warranty compliance",
+      "p5": "Inconsistent lead times causing unplanned production downtime",
+      "s1t": "Full Industrial Lubricant Range Under One Supplier",
+      "s1d": "Hydraulic oils (ISO VG 32/46/68/100), gear oils (GL-4/GL-5), compressor oils, greases, and metalworking fluids. Consolidate procurement.",
+      "s2t": "ISO VG Grade Matching",
+      "s2d": "We stock or can formulate any ISO VG grade to DIN 51524, ISO 6743, or manufacturer specification.",
+      "s3t": "Long-Term Supply Agreements",
+      "s3d": "Annual supply agreements with quarterly delivery scheduling. Consistent pricing, consistent specification, dedicated account manager.",
+      "s4t": "Technical Expertise",
+      "s4d": "Our lubricants engineers can review your current product slate and identify consolidation opportunities.",
+      "testimonial": "We consolidated from seven separate lubricant suppliers down to two. The cost reduction was significant, and technical support has been excellent.",
+      "testimonialName": "Dmitri K.",
+      "testimonialRole": "Procurement Manager, Eastern European Manufacturing Group",
+      "faq1q": "Do you supply lubricants to ISO 6743 classification?",
+      "faq1a": "Yes. Our industrial lubricant range covers ISO 6743 categories including HLP hydraulic fluids, CKD gear oils, VDL compressor oils, and others.",
+      "faq2q": "Can you cross-reference against major OEM lubricant specifications?",
+      "faq2a": "Yes. Our technical team maintains cross-reference tables against Bosch Rexroth, Parker, Sauer-Danfoss, and other major hydraulic OEM specifications.",
+      "faq3q": "What is the lead time for industrial lubricants?",
+      "faq3a": "Standard grades are available from stock with 5-10 working day lead time. Custom ISO VG grades require 15-20 working days.",
+      "faq4q": "Do you offer a lubricant audit service?",
+      "faq4a": "Yes. For qualified buyers considering a supply agreement, we offer a complimentary lubricant portfolio review."
+    },
+    "importers": {
+      "title": "Lubricant Importers",
+      "eyebrow": "Solutions for Lubricant Importers",
+      "headline": "A Reliable Turkish Export Partner for Lubricant Importers",
+      "subheadline": "Istanbul-based lubricant exporter with 15+ years of international trade experience. Consistent product quality, competitive FOB/CIF pricing, full customs documentation.",
+      "p1": "Difficulty finding a reliable manufacturer that also handles export documentation",
+      "p2": "Quality inconsistency between batches from trading companies",
+      "p3": "Complex import compliance documentation requirements",
+      "p4": "High minimum order quantities from major lubricant brands",
+      "p5": "Limited flexibility on Incoterms and payment terms",
+      "s1t": "Direct Manufacturer, Not a Trading Company",
+      "s1d": "We blend and package lubricants in our Istanbul facility. No intermediary, no margin stacking, no quality variability.",
+      "s2t": "Complete Export Documentation In-House",
+      "s2d": "Our trade compliance team prepares every document required for your import clearance. No third-party delays.",
+      "s3t": "Flexible Incoterms and Payment Terms",
+      "s3d": "EXW, FOB, CFR, CIF, DAP, or DDP. T/T or L/C at sight. First order typically 30/70 T/T; established buyers can negotiate net terms.",
+      "s4t": "Dedicated Export Account Manager",
+      "s4d": "Single point of contact from order confirmation to delivery at destination port. Proactive updates on production, loading, and estimated arrival.",
+      "testimonial": "As an importer handling customs clearance in three different countries, documentation accuracy is critical for us. Model Oils has not had a single documentation error in 23 shipments across 18 months.",
+      "testimonialName": "Priya N.",
+      "testimonialRole": "Import and Logistics Manager, Southeast Asia",
+      "faq1q": "Are you a manufacturer or a trading company?",
+      "faq1a": "We are a manufacturer and exporter. All blending and packaging takes place at our Istanbul facility. We do not resell third-party products.",
+      "faq2q": "What are your typical lead times?",
+      "faq2a": "Standard stock products: 5-7 working days from proforma confirmation. Custom formulations or private label: 15-20 working days.",
+      "faq3q": "Can you prepare documentation for specific country import requirements?",
+      "faq3a": "Yes. We have experience exporting to 40+ countries and maintain current knowledge of country-specific requirements.",
+      "faq4q": "Do you have an existing importer in my country?",
+      "faq4a": "We work directly with importers in most markets. Exclusivity agreements are available for importers committing to minimum annual volumes."
+    },
+    "indexTitle": "Industries We Serve",
+    "indexSubtitle": "Specialized lubricant solutions for automotive fleets, distributors, industrial companies, and importers worldwide."
+  },
+  "productDetailPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbProducts": "Products",
+    "inStock": "In Stock",
+    "contactAvailability": "Contact for Availability",
+    "requestQuoteForProduct": "Request a Quote for This Product",
+    "imageComingSoon": "Product image coming soon",
+    "techSpecs": "Technical Specifications",
+    "thProperty": "Property",
+    "thValue": "Value",
+    "thTestMethod": "Test Method",
+    "applications": "Applications",
+    "packagingExport": "Packaging & Export Options",
+    "thPackage": "Package",
+    "thCapacity": "Capacity",
+    "thUnitsPallet": "Units/Pallet",
+    "thGrossWeight": "Gross Weight",
+    "packagingFallback": "Available in 20L pails, 205L drums, 1,000L IBCs, and bulk tanker. Contact us for container loading specifications.",
+    "incotermsLabel": "Incoterms",
+    "techDocs": "Technical Documentation",
+    "downloadTds": "Download TDS (PDF)",
+    "requestTds": "Request TDS",
+    "downloadSds": "Download SDS/MSDS (PDF)",
+    "requestSds": "Request SDS",
+    "docsNote": "Need documentation in another language or a specific test certificate?",
+    "contactTechTeam": "Contact our technical team.",
+    "faqTitle": "Frequently Asked Questions",
+    "faqFallback": "Please see our full answer on the product page or contact our technical team.",
+    "ctaTitle": "Ready to Place a Bulk Order?",
+    "ctaBody": "Get a competitive quotation for {name} within 24 hours.",
+    "ctaBtn": "Request a Quote"
+  },
+  "blogArticlePage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbBlog": "Blog",
+    "by": "By",
+    "minRead": "min read",
+    "backToBlog": "Back to Blog",
+    "relatedTitle": "Related Articles",
+    "ctaTitle": "Need a Technical Answer?",
+    "ctaBody": "Our export team answers product specification, OEM approval, and application questions directly.",
+    "ctaBtn": "Ask a Technical Question"
+  }
+}

@@ -1,0 +1,2025 @@
+{
+  "nav": {
+    "products": "Ürünler",
+    "industries": "Sektörler",
+    "exportServices": "İhracat Hizmetleri",
+    "certifications": "Sertifikalar",
+    "about": "Hakkımızda",
+    "blog": "Blog",
+    "requestQuote": "Teklif İste",
+    "motorOils": "Motor Yağları",
+    "mineralOils": "Mineral Yağlar",
+    "industrialLubricants": "Endüstriyel Yağlayıcılar",
+    "viewAllProducts": "Tüm Ürünleri Gör",
+    "downloadCatalog": "Katalog İndir",
+    "engineOilsPetrol": "Benzinli Motor Yağları",
+    "engineOilsDiesel": "Dizel Motor Yağları",
+    "synthetic5w30": "SAE 5W-30 Sentetik",
+    "hd15w40": "SAE 15W-40 Ağır Hizmet",
+    "mineral20w50": "SAE 20W-50 Mineral",
+    "whiteMineralOil": "Beyaz Mineral Yağ",
+    "processOils": "Proses Yağları",
+    "transformerOil": "Trafo Yağı",
+    "rubberProcessOil": "Kauçuk Proses Yağı",
+    "hydraulicOils": "Hidrolik Yağlar",
+    "compressorOils": "Kompresör Yağları",
+    "gearOils": "Dişli Yağları",
+    "metalworkingFluids": "Metal İşleme Sıvıları",
+    "greases": "Gresler"
+  },
+  "hero": {
+    "preHeadline": "ISO 9001:2015 Sertifikalı İhracatçı",
+    "headline": "Taşıt Yağları Ve Endüstriyel Yağlar. İhracata Hazır. 40+ Ülkeye Servis.",
+    "subheadline": "Otomotiv, üretim ve enerji sektörlerine dünya genelinde motor yağları, mineral yağlar ve endüstriyel yağlayıcılar. 1.000 litreden başlayan toplu siparişler. İhracat belgeleri dahil.",
+    "primaryCta": "Toplu Fiyat Teklifi İste",
+    "secondaryCta": "Ürün Kataloğunu İncele",
+    "trustBadge1": "ISO Sertifikalı",
+    "trustBadge2": "40+ Ülke",
+    "trustBadge3": "24 Saat İçinde Yanıt"
+  },
+  "stats": {
+    "countries": "İhracat Yapılan Ülke",
+    "tonnes": "Yıllık Metrik Ton",
+    "clients": "Dünya Genelinde B2B Müşteri",
+    "years": "Yıllık Faaliyet",
+    "delivery": "Zamanında Teslimat Oranı"
+  },
+  "products": {
+    "eyebrow": "Ürün Kataloğu",
+    "title": "Ürün Yelpazemiz",
+    "subtitle": "Motor yağları, mineral yağlar ve endüstriyel yağlayıcılar dahil 500'den fazla ürün. Tümü API sertifikalı ve ISO uyumlu.",
+    "viewAll": "Tam Katalog",
+    "requestQuote": "Teklif İste",
+    "viewSpecs": "Teknik Özellikleri Gör",
+    "downloadTds": "TDS İndir",
+    "inStock": "Stokta Mevcut",
+    "outOfStock": "Stokta Yok"
+  },
+  "whyUs": {
+    "eyebrow": "Neden Bizi Seçmelisiniz",
+    "title": "Bizi Standart Yağ Tüccarlarından Ayıran Nedir",
+    "subtitle": "Teknik ürün eşleştirmesinden gümrük belgelerine ve navlun koordinasyonuna kadar tüm ihracat sürecini yönetiyoruz.",
+    "downloadProfileBtn": "Şirket Profilini İndir",
+    "feature1Title": "Teknik Ürün Eşleştirme",
+    "feature1Desc": "Mühendislerimiz, uygulamanız, motor tipiniz ve çalışma koşullarınıza göre doğru teknik özellikleri belirlemenize yardımcı olur.",
+    "feature2Title": "Eksiksiz İhracat Belgeleri",
+    "feature2Desc": "Analiz Sertifikası, MSDS, Menşe Şahadetnamesi, SASO ve ülkeye özel uyumluluk belgeleri bünyemizde hazırlanır.",
+    "feature3Title": "Esnek Ambalaj Seçenekleri",
+    "feature3Desc": "205 litrelik variller, 1.000 litrelik IBC'ler, 20 litrelik kovalar ve dökme tanker miktarları. Tüm ambalajlar uluslararası taşımacılık için BM onaylıdır.",
+    "feature4Title": "ISO 9001:2015 Kalite Kontrol",
+    "feature4Desc": "Her parti, sevkiyat öncesinde teknik özelliklere göre test edilir. Talep üzerine Analiz Sertifikası temin edilir.",
+    "feature5Title": "Özel İhracat Sorumlusu",
+    "feature5Desc": "Sipariş onayından teslimata kadar tek iletişim noktası. Tedarik süreleri ve belgeler konusunda proaktif bilgilendirme.",
+    "feature6Title": "Esnek Ödeme Koşulları",
+    "feature6Desc": "T/T ve Akreditif kabul edilir. USD ve EUR fatura düzenlenir. Doğrulanmış kurumsal alıcılar için vadeli ödeme seçenekleri mevcuttur."
+  },
+  "process": {
+    "eyebrow": "Nasıl Çalışır",
+    "title": "Toplu Sipariş Nasıl Verilir",
+    "subtitle": "Sorgudan teslimata kadar beş adımlı sade bir süreç.",
+    "step1Title": "Gereksinimlerinizi Bildirin",
+    "step1Desc": "Ürün türü, miktar, hedef ülke ve teslimat takvimini teklif formumuz veya e-posta aracılığıyla iletiniz.",
+    "step2Title": "Teknik İnceleme ve Teklif",
+    "step2Desc": "Teknik ekibimiz doğru teknik özellikleri belirleyerek 24-48 saat içinde resmi bir fiyat teklifi hazırlar.",
+    "step3Title": "Sipariş Onayı ve Belgeler",
+    "step3Desc": "Onay üzerine proforma fatura, Analiz Sertifikası, MSDS ve gerekli tüm ihracat belgelerini hazırlıyoruz.",
+    "step4Title": "Üretim ve Kalite Kontrol",
+    "step4Desc": "Parti hazırlanır ve ISO 9001:2015 kalite testinden geçirilir. Talep üzerine muayene raporları temin edilir.",
+    "step5Title": "Sevkiyat ve Teslimat",
+    "step5Desc": "Ürünler tercih ettiğiniz Incoterm ile sevk edilir. Yükleme belgesi ve takip bilgileri sevkiyattan sonraki 24 saat içinde iletilir.",
+    "startCta": "Teklif Talebini Başlat"
+  },
+  "industries": {
+    "eyebrow": "Uygulama Alanları",
+    "title": "Hizmet Verdiğimiz Sektörler",
+    "subtitle": "Her endüstriyel uygulama için özelleştirilmiş yağlayıcı çözümleri.",
+    "viewProducts": "Ürünleri Gör",
+    "automotive": "Otomotiv ve Filo",
+    "transport": "Ağır Taşımacılık",
+    "industrial": "Endüstriyel Üretim",
+    "marine": "Denizcilik ve Açık Deniz",
+    "agricultural": "Tarım Makineleri",
+    "mining": "Madencilik ve Hafriyat",
+    "power": "Enerji Üretimi",
+    "wholesale": "İhracat ve Toptan Satış"
+  },
+  "certifications": {
+    "title": "Kalite Sertifikaları ve Uyumluluk",
+    "downloadDocs": "Sertifika Belgelerini İndir",
+    "requestDocs": "Tam Belge Paketini Talep Et"
+  },
+  "exportMap": {
+    "title": "Küresel İhracat Ağımız",
+    "subtitle": "5 kıtada 40'tan fazla ülkedeki B2B alıcılara hizmet veriyoruz.",
+    "cta": "Ülkenize İhracat Yapıyor Muyuz? Teklif Alın"
+  },
+  "blog": {
+    "eyebrow": "Teknik İçerikler",
+    "title": "Endüstriyel Alıcılar İçin Kaynaklar",
+    "subtitle": "Satın alma yöneticileri ve ithalatçılar için teknik rehberler, ihracat bilgileri ve yağlayıcı bilgi bankası.",
+    "viewAll": "Tüm Makaleleri Gör",
+    "minRead": "dk okuma"
+  },
+  "finalCta": {
+    "preHeadline": "Başlamaya Hazır mısınız?",
+    "title": "Bir Sonraki Toplu Siparişiniz İçin Özel Teklif Alın",
+    "body": "Ürün gereksinimlerinizi, hedef ülkenizi ve miktarı belirtin. İhracat ekibimiz 24 saat içinde rekabetçi bir fiyat teklifi ve eksiksiz teknik belge ile geri dönecektir.",
+    "primaryCta": "Teklif İste",
+    "secondaryCta": "Ürün Kataloğunu İndir",
+    "trust1": "Herhangi bir taahhüt gerekmez",
+    "trust2": "24 saat içinde yanıt",
+    "trust3": "ISO 9001 sertifikalı"
+  },
+  "footer": {
+    "tagline": "Endüstri için premium yağlayıcılar. Dünya genelindeki distribütörler için güvenilir ihracat ortağı.",
+    "products": "Ürünler",
+    "company": "Şirket",
+    "contact": "İletişim",
+    "aboutUs": "Hakkımızda",
+    "certifications": "Sertifikalar",
+    "exportRegions": "İhracat Bölgeleri",
+    "blog": "Blog & Haberler",
+    "privacyPolicy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "allRightsReserved": "Tüm hakları saklıdır.",
+    "motorOils": "Motor Yağları",
+    "mineralOils": "Mineral Yağlar",
+    "industrialLubricants": "Endüstriyel Yağlayıcılar",
+    "hydraulicOils": "Hidrolik Yağlar",
+    "gearOils": "Dişli Yağları",
+    "productCatalog": "Ürün Kataloğu",
+    "technicalGuides": "Teknik Rehberler",
+    "exportGuides": "İhracat Rehberleri",
+    "isoCertified": "ISO 9001:2015 Sertifikalı",
+    "registeredExporter": "Kayıtlı İhracatçı",
+    "businessHours": "Pzt–Cum: 09:00–17:00 (UTC+3)"
+  },
+  "quote": {
+    "title": "Toplu Fiyat Teklifi İste",
+    "subtitle": "Gereksinimlerinizi doldurun; ihracat ekibimiz fiyatlandırma ve eksiksiz belgelerle 24 iş saati içinde geri dönecektir.",
+    "step1Title": "Neye İhtiyacınız Var?",
+    "step2Title": "Neredeyse Bitti — Teklifi Kime Gönderelim?",
+    "productType": "Ürün Tipi",
+    "motorOils": "Motor Yağları",
+    "mineralOils": "Mineral Yağlar",
+    "industrialLubricants": "Endüstriyel Yağlayıcılar",
+    "gearOils": "Dişli Yağları",
+    "other": "Diğer / Emin Değilim",
+    "productSpec": "Ürün Adı veya Teknik Özellik",
+    "productSpecPlaceholder": "Örn: SAE 15W-40, API CI-4 veya ISO VG 46 Hidrolik Yağı",
+    "productSpecHelper": "Ürün adı, SAE sınıfı, API özelliği veya OEM tavsiyesini girin. Emin değil misiniz? Bir açıklama bırakın.",
+    "quantity": "Tahmini Miktar",
+    "quantityPlaceholder": "Örn: 5000",
+    "unit": "Birim",
+    "liters": "Litre",
+    "metricTons": "Metrik Ton",
+    "drums": "Varil (205L)",
+    "ibcs": "IBC (1.000L)",
+    "packaging": "Ambalaj Seçenekleri (birden fazla seçilebilir)",
+    "drum205": "205L Çelik Varil",
+    "ibc1000": "1.000L IBC / Flexitank",
+    "pail20": "20L Plastik Kova",
+    "bulkTanker": "Dökme Tanker",
+    "flexPackaging": "Esnek — bana tavsiye edin",
+    "destinationCountry": "Hedef Ülke",
+    "countryPlaceholder": "Ülke ara veya seç...",
+    "deliveryDate": "Hedef Teslimat Tarihi (yaklaşık)",
+    "continueBtn": "İletişim Bilgilerine Geç",
+    "fullName": "Ad Soyadınız",
+    "jobTitle": "Pozisyonunuz",
+    "jobTitlePlaceholder": "Örn: Satın Alma Müdürü",
+    "jobTitleHelper": "Bu bilgi teklifinizi doğru uzmanımıza yönlendirmemize yardımcı olur.",
+    "companyName": "Şirket Adı",
+    "businessEmail": "Kurumsal E-posta Adresi",
+    "emailPlaceholder": "adiniz@sirket.com",
+    "emailHelper": "Teklifiniz ve belgeleriniz bu adrese gönderilecektir. Bilgileriniz üçüncü taraflarla paylaşılmaz.",
+    "phone": "WhatsApp veya Telefon Numarası",
+    "phonePlaceholder": "+90 555 000 0000",
+    "phoneHelper": "Ülke kodunu dahil edin. Uluslararası müşterilerle daha hızlı iletişim için WhatsApp tercih ediyoruz.",
+    "howDidYouFind": "Bizi nasıl buldunuz?",
+    "googleSearch": "Google Arama",
+    "linkedin": "LinkedIn",
+    "tradeShow": "Fuar",
+    "partnerReferral": "İş Ortağı Yönlendirmesi",
+    "industryDirectory": "Sektör Rehberi",
+    "notes": "Ek Gereksinimler veya Notlar",
+    "notesPlaceholder": "İstenen sertifikalar, OEM onayları, özel etiketleme veya diğer bilgiler.",
+    "consent": "Gizlilik Politikasını kabul ediyor ve bu teklif talebiyle ilgili iletişime geçilmesine onay veriyorum.",
+    "submitBtn": "Teklif Talebini Gönder — 24 Saat İçinde Yanıt Veriyoruz",
+    "backBtn": "Ürün detaylarına dön",
+    "successTitle": "Teklif Talebiniz Alındı",
+    "successBody": "İhracat ekibimiz gereksinimlerinizi inceleyerek 24 iş saati içinde ayrıntılı bir fiyat teklifi gönderecektir.",
+    "successCatalog": "Beklerken tam ürün kataloğumuzu indirin.",
+    "successWhatsapp": "Acil yardıma mı ihtiyacınız var? WhatsApp'tan bize ulaşın",
+    "requiredNote": "* ile işaretli alanlar zorunludur."
+  },
+  "about": {
+    "eyebrow": "Model Oils Hakkında",
+    "headline": "15 Yıllık Endüstriyel Yağlayıcı İhracatı",
+    "subheadline": "Bursa merkezli üretici ve ihracatçı. ISO 9001:2015 sertifikalı. 40'tan fazla aktif ihracat pazarı. Uzun vadeli tedarik ilişkileri kuruyoruz.",
+    "breadcrumbHome": "Ana Sayfa",
+    "breadcrumbPage": "Hakkımızda",
+    "whoWeAreTitle": "Kimiz Biz",
+    "para1": "Model Oils, Türkiye'nin Bursa iline bağlı Nilüfer'deki tesisinde motor yağları, mineral yağlar ve endüstriyel yağlayıcılar harmanlayıp paketleyen ve dünya genelindeki distribütörlere, ithalatçılara, filo operatörlerine ve endüstriyel şirketlere ihracat yapan bir yağlayıcı üreticisi ve toplu ihracatçısıdır.",
+    "para2": "2009 yılında kurulan şirketimiz, ilk yıllarını Türkiye iç pazarında teknik güvenilirlik oluşturmaya ayırdı; ardından 2012'de uluslararası alanda büyümeye başladı. Bugün MENA, Sahra Altı Afrika, Güneydoğu Asya, Orta Asya ve Avrupa genelinde 40'tan fazla ülkeye ihracat yapıyoruz.",
+    "para3": "Bir ticaret şirketi değiliz. İhraç ettiğimiz her ürün kendi tesisimizde harmanlanıp paketlenmektedir. Bu da tutarlı kalite, izlenebilir partiler ve her formülasyonu bilen teknik bir ekip anlamına gelir.",
+    "stat1": "İhracat Ülkesi",
+    "stat2": "Faaliyet Yılı",
+    "stat3": "Yıllık Metrik Ton",
+    "stat4": "Aktif B2B Müşteri",
+    "stat5Abbr": "ISO 9001",
+    "stat5Label": ":2015 Sertifikalı",
+    "stat6": "Zamanında Teslimat",
+    "valuesTitle": "Değerlerimiz",
+    "v1Title": "Teknik Dürüstlük",
+    "v1Desc": "Her ürün iddiası bağımsız laboratuvar test verileriyle desteklenmektedir. Her ürün için TDS ve SDS yayımlıyor, her sevkiyatla birlikte parti bazlı COA sunuyoruz.",
+    "v2Title": "Operasyonel Güvenilirlik",
+    "v2Desc": "B2B alıcılar tedarik zincirlerini tutarlılığımıza dayandırıyor. Katı üretim takvimleri, proaktif iletişim ve %98,6 zamanında teslimat oranı ile çalışıyoruz.",
+    "v3Title": "İhracat Profesyonelliği",
+    "v3Desc": "Uluslararası alıcılar yerli alıcılarla aynı belge standartlarını hak ediyor. Gümrük uyumluluğunu, dil doğruluğunu ve sertifika geçerliliğini vazgeçilmez koşullar olarak görüyoruz.",
+    "v4Title": "Uzun Vadeli Ortaklıklar",
+    "v4Desc": "Tek seferlik işlemlere odaklanmıyoruz. Fiyatlandırmamız, koşullarımız ve hesap yönetimimiz uzun vadeli ortaklığı her iki taraf için ticari olarak mantıklı kılacak şekilde yapılandırılmıştır.",
+    "historyTitle": "Tarihçemiz",
+    "m2009": "İstanbul'da kuruldu; başlangıçta yerli otomotiv distribütörlerine hizmet verdi.",
+    "m2012": "İlk ihracat sözleşmesi — Libya otomotiv sektörüne 205 litrelik variller.",
+    "m2015": "ISO 9001:2015 sertifikası alındı. 12 ihracat pazarına genişledi.",
+    "m2018": "Motor yağı ürün serisi için API lisansı alındı. Yeni harmanlama tesisi devreye alındı.",
+    "m2021": "30'dan fazla aktif ihracat ülkesine ulaşıldı. ISO 14001 çevre sertifikası eklendi.",
+    "m2024": "40'tan fazla ülkeye ihracat. Yıllık 12.000'den fazla metrik ton. Özel etiket programı başlatıldı.",
+    "ctaTitle": "Bizimle Çalışmaya Hazır mısınız?",
+    "ctaBody": "Toplu fiyat teklifi alın veya gereksinimlerinizi görüşmek için ihracat ekibimizle iletişime geçin.",
+    "ctaQuote": "Teklif İste",
+    "ctaCerts": "Sertifikalarımızı Görüntüle"
+  },
+  "contact": {
+    "eyebrow": "İletişime Geçin",
+    "headline": "İhracat Ekibimizle İletişim",
+    "subheadline": "Toplu fiyat teklifi, teknik ürün eşleştirme veya ihracat belgesi konusunda yardıma ihtiyacınız olsun — ekibimiz size destek olmaya hazır.",
+    "breadcrumbHome": "Ana Sayfa",
+    "breadcrumbPage": "İletişim",
+    "inquiriesTitle": "Size Nasıl Yardımcı Olabiliriz?",
+    "iq1Title": "Toplu Fiyat Teklifi İste",
+    "iq1Desc": "Motor yağları, mineral yağlar veya endüstriyel yağlayıcılar için fiyat alın. Tam teknik özellik sayfası ve belge paketi dahil.",
+    "iq1Cta": "Teklif Formunu Başlat",
+    "iq2Title": "Teknik Ürün Eşleştirme",
+    "iq2Desc": "Uygulamanız için hangi ürünün doğru olduğundan emin değil misiniz? Mühendislerimiz ekipmanınıza, OEM gereksinimlerinize ve iklim koşullarınıza göre doğru teknik özellikleri belirleyecektir.",
+    "iq2Cta": "Teknik İnceleme Talep Et",
+    "iq3Title": "Belgeleme ve Uyumluluk",
+    "iq3Desc": "ISO sertifikaları, COA, MSDS, Helal sertifikaları veya ülkeye özel uyumluluk belgeleri gerekiyor mu? Tüm standart ihracat belgelerini bünyemizde hazırlıyoruz.",
+    "iq3Cta": "Sertifikaları Görüntüle",
+    "iq4Title": "Distribütör Olun",
+    "iq4Desc": "Bölgeniz için münhasır distribütörlük haklarıyla ilgileniyor musunuz? Dünya genelinde yerleşik yağlayıcı distribütörleri ve ithalatçılarla ortaklık kuruyoruz.",
+    "iq4Cta": "Bizimle Ortak Olun",
+    "directContact": "Doğrudan İletişim",
+    "officeTitle": "Ofis ve Operasyonlar",
+    "hqTitle": "Genel Merkez",
+    "hoursTitle": "Çalışma Saatleri",
+    "weekday": "Pazartesi – Cuma: 09:00 – 17:00 (GMT+3)",
+    "saturday": "Cumartesi: 09:00 – 13:00 (GMT+3)",
+    "sunday": "Pazar ve Türk Resmi Tatilleri: Kapalı",
+    "whatsappNote": "Acil ihracat sorguları için WhatsApp 7/24 ulaşılabilir.",
+    "commitmentTitle": "Yanıt Taahhüdümüz",
+    "commitmentBody": "Form üzerinden gönderilen tüm teklif talepleri, mesai saatleri içinde 2 saat içinde alındı bildirimine ve 24–48 iş saati içinde tam tekliflerine kavuşur.",
+    "ctaTitle": "Teklif Almaya Hazır mısınız?",
+    "ctaBody": "İhracat ekibimizden en hızlı yanıtı almak için yapılandırılmış teklif formunu kullanın.",
+    "ctaBtn": "Teklif Talebini Başlat",
+    "cm1Label": "WhatsApp (En Hızlı)",
+    "cm1Desc": "Uluslararası müşteriler için tercih edilen kanal. Genellikle 2 saat içinde yanıt.",
+    "cm2Label": "Telefon",
+    "cm2Desc": "Pzt–Cum, 09:00–17:00 (GMT+3). İngilizce ve Türkçe konuşulmaktadır.",
+    "cm3Label": "Genel Sorular",
+    "cm3Desc": "Genel sorular, ortaklık teklifleri, medya sorguları.",
+    "cm4Label": "İhracat ve Satış",
+    "cm4Desc": "Toplu teklifler, sevkiyat lojistiği ve belge talepleri için."
+  },
+  "exportSvc": {
+    "eyebrow": "Küresel Yağlayıcı İhracatı",
+    "headline": "İstanbul'dan 40'tan Fazla Ülkeye Tam Hizmet İhracatı",
+    "subheadline": "Her şeyi biz yönetiyoruz: FOB/CIF/DAP fiyatlandırması, eksiksiz belge paketi, kalite sertifikasyonu ve navlun koordinasyonu.",
+    "breadcrumbHome": "Ana Sayfa",
+    "breadcrumbPage": "İhracat Hizmetleri",
+    "capTitle": "İhracat Kapasitemiz",
+    "c1Title": "Esnek Ambalaj",
+    "c1Desc": "205 litrelik variller, 1.000 litrelik IBC'ler, 20 litrelik kovalar, dökme tanker. Uluslararası taşımacılık için tümü BM onaylı.",
+    "c2Title": "40'tan Fazla İhracat Ülkesi",
+    "c2Desc": "MENA, Afrika, Avrupa, Asya'ya aktif sevkiyat hatları. Rekabetçi fiyatlar için yerleşik navlun ortaklıkları.",
+    "c3Title": "Bünyede Belgeleme",
+    "c3Desc": "Ticaret uyum ekibimiz tarafından hazırlanan eksiksiz ihracat belgesi paketi. Üçüncü taraf gecikmesi yok.",
+    "c4Title": "Lojistik Koordinasyon",
+    "c4Desc": "İstanbul limanından uluslararası nakliyecilerle doğrudan ilişkiler. Büyük ticaret koridorlarına haftalık seferler.",
+    "c5Title": "Kalite Güvencesi",
+    "c5Desc": "Her sevkiyata parti bazlı Analiz Sertifikası eşlik eder. Süreç boyunca ISO 9001:2015 kalite yönetimi.",
+    "c6Title": "Ödeme Esnekliği",
+    "c6Desc": "T/T (%30/%70 veya %100 peşin), görüldüğünde akreditif kabul edilir. USD ve EUR fatura. Kurumsal net ödeme koşulları mevcuttur.",
+    "containerTitle": "Konteyner Yükleme Özellikleri",
+    "containerNote": "Konteyner sevkiyatınızı planlamak için referans veriler. Gerçek kapasite ağırlık sınırları ve ambalaj düzenine bağlı olarak değişebilir.",
+    "containerFootnote": "Ağırlık sınırları: 20 ft konteyner maks. ~28MT; 40 ft maks. ~28MT. Limana özel kısıtlamalar için navlun şirketinizle görüşünüz.",
+    "thPackaging": "Ambalaj",
+    "th20ft": "20 ft Konteyner",
+    "th40ft": "40 ft Konteyner",
+    "thVolume": "Net Hacim",
+    "incotermsTitle": "Desteklenen Incoterms 2020",
+    "incotermsNote": "Tüm büyük Incoterms'leri destekliyoruz. Tercih ettiğiniz ticaret terimi teklif talebinde belirtilmelidir.",
+    "exw": "Ex Works",
+    "exwDesc": "Alıcı, İstanbul depomuzdaki tüm nakliyeyi ayarlar.",
+    "fob": "Free On Board",
+    "fobDesc": "Malları İstanbul Limanı'nda gemiye teslim ediyoruz. En yaygın kullanılan.",
+    "cfr": "Cost & Freight",
+    "cfrDesc": "Varış limanına kadar navlun biz tarafından ödenir. Alıcı sigortayı üstlenir.",
+    "cif": "Cost, Insurance & Freight",
+    "cifDesc": "Varış limanına kadar navlun ve kargo sigortası bizden.",
+    "dap": "Delivered at Place",
+    "dapDesc": "Alıcının tesisine teslimat — alıcı ithalat gümrüğünü yönetir.",
+    "ddp": "Delivered Duty Paid",
+    "ddpDesc": "İthalat gümrük işlemleri dahil kapıdan kapıya eksiksiz hizmet.",
+    "docTitle": "Standart Belge Paketi",
+    "docNote": "Her sevkiyat standart ihracat belgesi paketimizi kapsar. Tüm belgeler İngilizce hazırlanır; talep üzerine apostil veya onaylı suret sunulabilir.",
+    "docCta": "Belgeli Teklif İste",
+    "regionsTitle": "Aktif İhracat Bölgeleri",
+    "regionsNote": "Aşağıdaki pazarlarda yerleşik navlun hatlarımız ve gümrük deneyimimiz mevcuttur.",
+    "paymentTitle": "Ödeme Koşulları",
+    "ttTitle": "T/T Banka Havalesi",
+    "ttDesc": "Proforma fatura onayında %30 avans. Sevkiyat öncesi %70 bakiye. İlk siparişler için tercih edilir.",
+    "lcTitle": "Akreditif",
+    "lcDesc": "Yerleşik uluslararası bankalardan görüldüğünde dönülemez Akreditif kabul edilir. Sipariş öncesinde gereklilikleri teyit ediniz.",
+    "netTitle": "Net Vadeli (Onaylı Alıcılar)",
+    "netDesc": "Kurumsal alıcılar için yerleşik sipariş geçmişi ve kredi onayıyla Net-30 ve Net-60 ödeme koşulları.",
+    "currencyNote": "Kabul edilen para birimi: USD ve EUR. USD dışı dövizlerde kur riski alıcıya aittir.",
+    "ctaTitle": "İhracat Siparişinize Başlamaya Hazır mısınız?",
+    "ctaBody": "24 saat içinde sevkiyat, belgeleme ve kalite sertifikasyonu dahil rekabetçi bir teklif alın.",
+    "ctaBtn": "Teklif İste"
+  },
+  "certPage": {
+    "eyebrow": "Kalite ve Uyumluluk",
+    "headline": "Doğrulanabilir Sertifikalı Kalite",
+    "subheadline": "ISO 9001:2015 sertifikalı operasyonlar. API lisanslı motor yağları. ACEA uyumlu formülasyonlar. Satın alma onayı için eksiksiz belge paketi.",
+    "breadcrumbHome": "Ana Sayfa",
+    "breadcrumbPage": "Sertifikalar",
+    "reqDocPkg": "Belge Paketi Talep Et",
+    "reqBulkQuote": "Toplu Teklif İste",
+    "certCompliant": "Sertifikalı ve Uyumlu:",
+    "ourCertsTitle": "Sertifikalarımız ve Onaylarımız",
+    "scopeLabel": "Kapsam",
+    "issuingBodyLabel": "Veren Kurum",
+    "validUntilLabel": "Geçerlilik",
+    "requestCopy": "Kopya Talep Et",
+    "docsTitle": "Mevcut Uyumluluk Belgeleri",
+    "docsNote": "Ticaret uyum ekibimiz tüm standart ihracat belgelerini bünyemizde hazırlamaktadır. Eksiksiz belge paketleri genellikle sipariş onayından sonraki 24 saat içinde teslim edilir.",
+    "docsCta": "Belgeli Teklif İste",
+    "qaTitle": "Kalite Güvence Süreci",
+    "qa1Title": "Hammadde Giriş Kalite Kontrolü",
+    "qa1Desc": "Taban yağları ve katkı maddeleri teslimatta teknik özelliklerine göre test edilir. Uyumsuz malzemeler karantinaya alınarak tedarikçiye iade edilir.",
+    "qa2Title": "Proses İçi Test",
+    "qa2Desc": "Harmanlama partileri üretim sırasında aralıklı olarak örneklenir. Her aşamada viskozite, parlama noktası ve yoğunluk doğrulanır.",
+    "qa3Title": "Nihai Ürün Serbest Bırakma",
+    "qa3Desc": "Her bitmiş parti serbest bırakmadan önce tam teknik özellik testine tabi tutulur. Parti bazlı COA oluşturulur ve arşivlenir.",
+    "qa4Title": "Sevkiyat Öncesi Muayene",
+    "qa4Desc": "Yükleme öncesinde mühürlü kaplardan rastgele örnekleme yapılır. Büyük siparişler için talep üzerine üçüncü taraf SGS muayenesi sunulmaktadır."
+  },
+  "brandPage": {
+    "backToHome": "Ana Sayfaya Dön",
+    "productRange": "Ürün Yelpazemiz",
+    "motorOilsCard": "Motor Yağları",
+    "motorOilsCardDesc": "Otomotiv, ağır hizmet ve binek araçlar için tam sentetik, yarı sentetik ve mineral motor yağları.",
+    "industrialLubsCard": "Endüstriyel Yağlayıcılar",
+    "industrialLubsCardDesc": "Hidrolik, dişli, kompresör, gres ve metal işleme sıvıları dahil endüstriyel yağlayıcılar.",
+    "explore": "İncele",
+    "backToBrand": "{brand} Ürünlerine Dön",
+    "notFoundHelp": "Aradığınız ürünü bulamıyor musunuz? İhracat ekibimiz yardımcı olsun.",
+    "requestQuote": "Teklif İste",
+    "productImage": "Ürün Görseli",
+    "motorCatDesc": "Otomotiv, ağır hizmet ve binek araçlar için motor yağları.",
+    "industrialCatDesc": "Hidrolik, dişli, kompresör ve gres dahil endüstriyel yağlayıcılar.",
+    "brandsHeadingEyebrow": "Ürün Yelpazemiz",
+    "brandsHeading": "Temsil Ettiğimiz Markalar"
+  },
+  "productPage": {
+    "backToMotor": "{brand} Motor Yağlarına Dön",
+    "backToIndustrial": "{brand} Endüstriyel Yağlayıcılara Dön",
+    "productName": "Ürün Adı",
+    "viscosity": "Viskozite Sınıfı",
+    "viscosityIso": "Viskozite / Sınıf",
+    "productSeries": "Ürün Serisi",
+    "oilType": "Yağ Tipi",
+    "apiClass": "API Sınıfı",
+    "aceaClass": "ACEA Sınıfı",
+    "isoStd": "ISO Standardı",
+    "addCert": "Ek Sertifikasyon",
+    "oemApprovals": "OEM Onayları",
+    "techSpecs": "Teknik Özellikler",
+    "keyFeatures": "Temel Özellikler",
+    "documents": "Dokümanlar",
+    "tdsLabel": "Teknik Veri Sayfası (TDS)",
+    "tdsNotAvailable": "Bu ürün için teknik veri sayfası henüz mevcut değildir.",
+    "docsNote": "Belgeler mevcut değilse yetkili distribütör portalından edinilebilir.",
+    "ctaText": "Bu ürün için toplu fiyat teklifi almak ister misiniz?",
+    "ctaBtn": "Teklif İste"
+  },
+  "pd": {
+    "helix-ultra-0w-20": {
+      "type": "Tam Sentetik",
+      "description": "En zorlu koşullar için geliştirilmiş tam sentetik motor yağı. Düşük viskoziteli formülasyonu sayesinde soğuk hava başlangıçlarında üstün koruma sağlar ve yakıt verimliliğini artırır.",
+      "f0": "Üstün soğuk hava başlangıç koruması",
+      "f1": "Optimize yakıt ekonomisi",
+      "f2": "Uzun motor ömrü",
+      "f3": "Tam sentetik formül"
+    },
+    "helix-ultra-0w-30": {
+      "type": "Tam Sentetik",
+      "description": "Avrupa OEM standartlarını karşılayan tam sentetik motor yağı. VW ve Mercedes-Benz onaylarıyla modern benzinli ve dizel motorlar için ideal.",
+      "f0": "VW ve MB onaylı",
+      "f1": "Düşük sürtünme teknolojisi",
+      "f2": "Uzun ömürlü koruma",
+      "f3": "Yakıt tasarrufu"
+    },
+    "helix-ultra-0w-40": {
+      "type": "Tam Sentetik",
+      "description": "Yüksek performanslı spor ve lüks araçlar için geliştirilmiş tam sentetik motor yağı. Porsche ve Mercedes-Benz onayıyla aşırı koşullarda maksimum motor koruması sunar.",
+      "f0": "Spor ve lüks araç onaylı",
+      "f1": "Yüksek ısı direnci",
+      "f2": "Maksimum motor koruması",
+      "f3": "Porsche A40 onaylı"
+    },
+    "helix-ultra-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "En popüler tam sentetik motor yağlarından biri. BMW ve Mercedes-Benz uzun ömürlü servis onayıyla geniş bir araç yelpazesinde mükemmel koruma sağlar.",
+      "f0": "BMW LL-01 onaylı",
+      "f1": "MB uzun servis onaylı",
+      "f2": "Çok amaçlı kullanım",
+      "f3": "Üstün motor temizliği"
+    },
+    "helix-ultra-5w-40": {
+      "type": "Tam Sentetik",
+      "description": "Geniş sıcaklık aralığında mükemmel performans sunan tam sentetik motor yağı. Volkswagen ve Porsche onayıyla hem günlük hem yüksek performanslı kullanım için uygundur.",
+      "f0": "VW ve Porsche onaylı",
+      "f1": "Geniş sıcaklık aralığı",
+      "f2": "Sürüklenme karşıtı koruma",
+      "f3": "Motor temizleyici özellik"
+    },
+    "helix-ultra-ect-c2-c3-0w-30": {
+      "type": "Tam Sentetik",
+      "description": "DPF ve TWC emisyon kontrol sistemleriyle uyumlu tam sentetik motor yağı. ACEA C2/C3 çift sertifikasyonuyla modern emisyon kontrol sistemlerini korur.",
+      "f0": "DPF uyumlu",
+      "f1": "Düşük kül içeriği (Low SAPS)",
+      "f2": "Katalitik konvertör koruma",
+      "f3": "Renault ve Fiat onaylı"
+    },
+    "helix-ultra-ect-c3-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "BMW, Mercedes-Benz ve Volkswagen'in modern emisyon kontrol sistemleri için özel olarak onaylanmış tam sentetik motor yağı. DPF ve GPF filtreli araçlar için idealdir.",
+      "f0": "BMW LL-04 onaylı",
+      "f1": "MB 229.51 onaylı",
+      "f2": "VW 504/507 onaylı",
+      "f3": "GPF ve DPF uyumlu"
+    },
+    "helix-ultra-professional-ab-l-0w-30": {
+      "type": "Tam Sentetik",
+      "description": "Ford araçları için özel olarak geliştirilmiş tam sentetik motor yağı. Ford'un en güncel WSS-M2C913-D standardını karşılayan düşük viskoziteli formülasyon.",
+      "f0": "Ford OEM onaylı",
+      "f1": "Düşük viskozite direnci",
+      "f2": "Gelişmiş yakıt ekonomisi",
+      "f3": "EcoBoost motor uyumlu"
+    },
+    "helix-ultra-professional-af-5w-20": {
+      "type": "Tam Sentetik",
+      "description": "Ford EcoBoost ve diğer Ford benzinli motorlar için özel olarak tasarlanmış tam sentetik motor yağı. Düşük sürtünmeli formülasyonuyla yakıt tasarrufu sağlar.",
+      "f0": "Ford EcoBoost onaylı",
+      "f1": "Minimum sürtünme",
+      "f2": "İleri yakıt ekonomisi",
+      "f3": "Soğuk başlangıç koruması"
+    },
+    "helix-ultra-professional-ag-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "General Motors ve Opel araçları için GM dexos2 lisanslı tam sentetik motor yağı. GM'in küresel araç filosu için zorunlu kıldığı yüksek performans standardını karşılar.",
+      "f0": "GM dexos2 lisanslı",
+      "f1": "Opel/GM onaylı",
+      "f2": "Turbo motor koruması",
+      "f3": "Uzun servis aralıkları"
+    },
+    "helix-ultra-professional-am-l-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "Mercedes-Benz'in en yeni Low-SAPS standardı MB 229.52'yi karşılayan tam sentetik motor yağı. Modern Mercedes dizel ve benzinli motorlarda DPF koruması sağlar.",
+      "f0": "MB 229.52 onaylı",
+      "f1": "Low-SAPS formülü",
+      "f2": "DPF uyumlu",
+      "f3": "BlueTEC dizel uyumlu"
+    },
+    "helix-ultra-professional-av-l-0w-30": {
+      "type": "Tam Sentetik",
+      "description": "Volkswagen Group'un en yüksek standardı VW 504 00/507 00'ı karşılayan tam sentetik motor yağı. VW, Audi, Skoda ve Seat dizel araçları için idealdir.",
+      "f0": "VW 504/507 onaylı",
+      "f1": "Porsche C30 onaylı",
+      "f2": "TDI dizel uyumlu",
+      "f3": "Uzun ömürlü servis"
+    },
+    "helix-ultra-professional-av-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "VW Group araçları için VW 504/507 onaylı tam sentetik motor yağı. TSI ve TDI motorlarda üstün koruma ve uzun servis aralıkları sunar.",
+      "f0": "VW 504/507 onaylı",
+      "f1": "TSI ve TDI uyumlu",
+      "f2": "Gelişmiş DPF koruması",
+      "f3": "Uzun değişim aralıkları"
+    },
+    "helix-hx8-5w-30": {
+      "type": "Sentetik Teknoloji",
+      "description": "Shell'in sentetik teknoloji formülü ile üretilen yüksek performanslı motor yağı. Tam sentetikle karşılaştırılabilir koruma sunarken daha geniş uygulama alanına sahiptir.",
+      "f0": "Sentetik teknoloji formülü",
+      "f1": "Geniş uygulama yelpazesi",
+      "f2": "MB 229.3 onaylı",
+      "f3": "Üstün yüksek ısı koruması"
+    },
+    "helix-hx8-5w-40": {
+      "type": "Sentetik Teknoloji",
+      "description": "Geniş viskozite aralığında mükemmel koruma sunan sentetik teknoloji motor yağı. VW ve Mercedes-Benz onaylı formülasyonuyla hem benzinli hem dizel motorlarda kullanılır.",
+      "f0": "Çok amaçlı formül",
+      "f1": "VW ve MB onaylı",
+      "f2": "Yüksek ısı stabilitesi",
+      "f3": "Motor temizleme özelliği"
+    },
+    "helix-hx8-10w-40": {
+      "type": "Sentetik Teknoloji",
+      "description": "Sıcak iklimlerde ve yüksek çalışma sıcaklıklarında mükemmel performans gösteren sentetik teknoloji motor yağı. Hem yeni hem yüksek kilometreli motorlar için uygundur.",
+      "f0": "Sıcak iklim performansı",
+      "f1": "Yüksek km motor koruması",
+      "f2": "Aşınma karşıtı formül",
+      "f3": "Geniş motor uyumluluğu"
+    },
+    "helix-hx8-ect-5w-30": {
+      "type": "Sentetik Teknoloji",
+      "description": "Emisyon kontrol sistemli araçlar için sentetik teknoloji motor yağı. DPF filtreli dizel ve katalitik konvertörlü benzinli araçlarda düşük kül avantajı sağlar.",
+      "f0": "DPF uyumlu Low-SAPS",
+      "f1": "BMW LL-04 onaylı",
+      "f2": "Katalitik konvertör dostu",
+      "f3": "Ekonomik alternatif"
+    },
+    "helix-hx7-5w-40": {
+      "type": "Yarı Sentetik",
+      "description": "Geniş bir araç yelpazesi için ideal yarı sentetik motor yağı. Mineral ve tam sentetik yağların avantajlarını birleştirerek ekonomik ve etkili koruma sağlar.",
+      "f0": "Ekonomik yarı sentetik",
+      "f1": "Geniş araç uyumluluğu",
+      "f2": "Yüksek ısı koruması",
+      "f3": "VW ve MB onaylı"
+    },
+    "helix-hx7-10w-40": {
+      "type": "Yarı Sentetik",
+      "description": "Hem benzinli hem dizel motorlar için uygun yarı sentetik motor yağı. Sıcak iklimlerde ve şehir içi sürüşlerde güvenilir motor koruması sunar.",
+      "f0": "Benzinli ve dizel uyumlu",
+      "f1": "Şehir içi sürüş optimizasyonu",
+      "f2": "Güçlü deterjan paketi",
+      "f3": "Çok markalı onay"
+    },
+    "helix-hx7-15w-40": {
+      "type": "Yarı Sentetik",
+      "description": "Sıcak iklimlerde ve eski nesil motorlar için tasarlanmış güvenilir yarı sentetik motor yağı. Yüksek viskoziteli formülasyonuyla yüksek sıcaklık koruması sağlar.",
+      "f0": "Sıcak iklim optimizasyonu",
+      "f1": "Eski motor koruması",
+      "f2": "Yüksek viskozite stabilitesi",
+      "f3": "Ekonomik seçenek"
+    },
+    "helix-hx7-av-l-5w-30": {
+      "type": "Yarı Sentetik",
+      "description": "VW Group araçları için ekonomik VW 504/507 onaylı yarı sentetik motor yağı. TDI motorlarda DPF koruması sağlarken bütçe dostu bir alternatif sunar.",
+      "f0": "VW 504/507 onaylı",
+      "f1": "DPF uyumlu",
+      "f2": "Ekonomik alternatif",
+      "f3": "TDI motor uyumlu"
+    },
+    "helix-hx6-10w-40": {
+      "type": "Yarı Sentetik",
+      "description": "Günlük kullanım için geliştirilmiş güvenilir yarı sentetik motor yağı. Geniş motor ve araç uyumluluğu ile standart bakım gereksinimlerini karşılar.",
+      "f0": "Günlük kullanım için ideal",
+      "f1": "Dengeli koruma paketi",
+      "f2": "Geniş motor uyumu",
+      "f3": "Ekonomik yarı sentetik"
+    },
+    "helix-hx5-15w-40": {
+      "type": "Mineral",
+      "description": "Standart bakım gereksinimlerini karşılayan güvenilir mineral motor yağı. Eski nesil benzinli ve dizel motorlarda temel motor koruması sağlar.",
+      "f0": "Temel motor koruması",
+      "f1": "Eski motor uyumlu",
+      "f2": "Standart viskozite",
+      "f3": "Güvenilir formül"
+    },
+    "helix-hx5-20w-50": {
+      "type": "Mineral",
+      "description": "Yüksek sıcaklıklarda ve yüksek mileajlı motorlarda kullanım için tasarlanmış yüksek viskoziteli mineral motor yağı. Sıcak iklimlerde güvenilir koruma sunar.",
+      "f0": "Yüksek viskozite güvenliği",
+      "f1": "Sıcak iklim koruması",
+      "f2": "Yaşlı motor desteği",
+      "f3": "Standart mineral formül"
+    },
+    "helix-hx3-20w-50": {
+      "type": "Mineral",
+      "description": "Ekonomik mineral motor yağı. Standart bakım programları için minimum düzeyde motor koruması sağlar. Eski ve yüksek kilometreli motorlar için uygundur.",
+      "f0": "Ekonomik mineral yağ",
+      "f1": "Standart koruma",
+      "f2": "Geniş uyumluluk",
+      "f3": "Temel bakım için ideal"
+    },
+    "rimula-r2-extra-15w-40": {
+      "type": "Ağır Hizmet",
+      "description": "Ağır hizmet dizel motorları için geliştirilmiş güvenilir motor yağı. Çoklu katkı paketi sayesinde dizel araçlarda güvenilir koruma ve uzun motor ömrü sağlar.",
+      "f0": "Ağır hizmet dizel koruması",
+      "f1": "Çoklu katkı paketi",
+      "f2": "MAN ve Volvo onaylı",
+      "f3": "Uzun motor ömrü"
+    },
+    "rimula-r3-15w-40": {
+      "type": "Ağır Hizmet",
+      "description": "Global ağır hizmet dizel motorları için tasarlanmış mineral bazlı motor yağı. Cummins, MAN, Volvo ve Mercedes-Benz onaylarıyla geniş filolar için ekonomik çözüm sunar.",
+      "f0": "Geniş filo uyumluluğu",
+      "f1": "Cummins onaylı",
+      "f2": "Ekonomik filo çözümü",
+      "f3": "Güçlü yük altı koruması"
+    },
+    "rimula-r3-multi-10w-30": {
+      "type": "Ağır Hizmet",
+      "description": "Hem düşük hem yüksek sıcaklıklarda üstün performans gösteren çok dereceli ağır hizmet motor yağı. Geniş çalışma sıcaklık aralığı sayesinde soğuk start ve sıcak koruma sağlar.",
+      "f0": "Geniş sıcaklık aralığı",
+      "f1": "Soğuk start üstünlüğü",
+      "f2": "ACEA E7 sertifikalı",
+      "f3": "Çok dereceli formül"
+    },
+    "rimula-r4-l-15w-40": {
+      "type": "Ağır Hizmet",
+      "description": "Ağır hizmet kamyon ve otobüs motorları için geliştirilmiş yüksek performanslı motor yağı. EGR sistemli motorlarda üstün deposit kontrolü sağlar.",
+      "f0": "EGR motor uyumlu",
+      "f1": "Üstün deposit kontrolü",
+      "f2": "Uzun servis aralığı",
+      "f3": "Çok OEM onaylı"
+    },
+    "rimula-r4-x-15w-40": {
+      "type": "Ağır Hizmet",
+      "description": "Yüksek stresli ağır hizmet motorlar için üstün performanslı motor yağı. Daha güçlü katkı paketi ile zorlu çalışma koşullarında ekstra koruma sağlar.",
+      "f0": "Ekstra stres koruması",
+      "f1": "CI-4 Plus sertifikalı",
+      "f2": "Güçlendirilmiş katkı paketi",
+      "f3": "Yoğun çalışma uyumlu"
+    },
+    "rimula-r5-e-10w-40": {
+      "type": "Ağır Hizmet",
+      "description": "Uzun servis aralıkları için tasarlanmış sentetik teknoloji ağır hizmet motor yağı. Modern EGR motorlarda olağanüstü deposit kontrolü sağlar.",
+      "f0": "Uzun servis aralığı",
+      "f1": "EGR uyumlu",
+      "f2": "MB 228.5 onaylı",
+      "f3": "Sentetik teknoloji"
+    },
+    "rimula-r5-le-10w-40": {
+      "type": "Ağır Hizmet",
+      "description": "Düşük emisyonlu gelişmiş ağır hizmet motorları için geliştirilmiş sentetik teknoloji motor yağı. Euro motorlar için optimize edilmiştir.",
+      "f0": "Düşük emisyon uyumlu",
+      "f1": "Euro motor optimizasyonu",
+      "f2": "Sentetik teknoloji",
+      "f3": "Çok OEM onaylı"
+    },
+    "rimula-r6-lme-5w-30": {
+      "type": "Ağır Hizmet",
+      "description": "SCR ve DPF filtreleri ile donatılmış Euro 6 ağır hizmet motorları için geliştirilmiş tam sentetik motor yağı. En düşük sülfür içeriğiyle çevre dostu formül.",
+      "f0": "Euro 6 motor uyumlu",
+      "f1": "SCR ve DPF uyumlu",
+      "f2": "Low-SAPS formülü",
+      "f3": "En üst düzey emisyon uyumu"
+    },
+    "rimula-r6-me-5w-30": {
+      "type": "Ağır Hizmet",
+      "description": "Mercedes-Benz ağır hizmet araçları için özel optimize edilmiş tam sentetik motor yağı. MB 228.51 onayıyla Actros ve diğer MB kamyonlarda en uzun servis aralıklarını sunar.",
+      "f0": "MB 228.51 onaylı",
+      "f1": "Actros motor uyumlu",
+      "f2": "Maksimum servis aralığı",
+      "f3": "Tam sentetik formül"
+    },
+    "tellus-s2-mx-32": {
+      "type": "Hidrolik Yağ",
+      "description": "Endüstriyel hidrolik sistemler için geliştirilmiş yüksek performanslı mineral hidrolik yağı. Üstün termal ve oksidasyon stabilitesi ile uzun sistem ömrü sağlar.",
+      "f0": "Üstün oksidasyon stabilitesi",
+      "f1": "Mükemmel filtre uyumluluğu",
+      "f2": "Düşük köpük eğilimi",
+      "f3": "Geniş sıcaklık aralığı performansı"
+    },
+    "tellus-s2-mx-46": {
+      "type": "Hidrolik Yağ",
+      "description": "En yaygın kullanılan endüstriyel viskozite derecesinde geliştirilmiş hidrolik yağı. Sabit sıcaklıklarda çalışan genel amaçlı hidrolik sistemler için idealdir.",
+      "f0": "Genel amaçlı hidrolik sistemler",
+      "f1": "Üstün pompa koruması",
+      "f2": "Hızlı su ayrışması",
+      "f3": "Uzun yağ ömrü"
+    },
+    "tellus-s2-mx-68": {
+      "type": "Hidrolik Yağ",
+      "description": "Yüksek çalışma sıcaklıklarında ve ağır yük altında çalışan hidrolik sistemler için mineral hidrolik yağı. Sanayi presleri ve büyük inşaat ekipmanları için uygundur.",
+      "f0": "Yüksek sıcaklık stabilitesi",
+      "f1": "Ağır yük kapasitesi",
+      "f2": "Üstün viskozite indeksi",
+      "f3": "Aşınma önleyici formül"
+    },
+    "tellus-s2-mx-100": {
+      "type": "Hidrolik Yağ",
+      "description": "Yüksek viskoziteli uygulamalar gerektiren büyük hidrolik sistemler için mineral hidrolik yağı. Ağır presler ve sanayi tesisleri için idealdir.",
+      "f0": "Ekstra yük kapasitesi",
+      "f1": "Büyük sistem uyumluluğu",
+      "f2": "Termal stabilite",
+      "f3": "Uzun servis aralığı"
+    },
+    "tellus-s3-m-46": {
+      "type": "Hidrolik Yağ (Küllüsüz)",
+      "description": "Çinko içermeyen küllüsüz formülasyonuyla çevre dostu hidrolik yağı. Gümüş ve magnezyum alaşımlı bileşenler içeren hassas hidrolik sistemler için idealdir.",
+      "f0": "Çinko içermeyen ZAF formül",
+      "f1": "Gümüş alaşım uyumlu",
+      "f2": "Servo vana uyumluluğu",
+      "f3": "Üstün filtre uyumluluğu"
+    },
+    "omala-s2-gx-150": {
+      "type": "Dişli Yağı EP",
+      "description": "Kapalı endüstriyel dişli kutular için geliştirilmiş yüksek basınç (EP) dişli yağı. Yüksek yük altında üstün dişli koruması ve uzun ömürlü servis sağlar.",
+      "f0": "Yüksek basınç koruması",
+      "f1": "Uzun dişli ömrü",
+      "f2": "David Brown onaylı",
+      "f3": "Geniş dişli tipi uyumluluğu"
+    },
+    "omala-s2-gx-220": {
+      "type": "Dişli Yağı EP",
+      "description": "En yaygın kullanılan endüstriyel dişli yağı viskozitesinde EP dişli yağı. Redüktörler, konveyör sistemleri ve genel sanayi dişli kutularında mükemmel koruma sağlar.",
+      "f0": "En yaygın sanayi viskozitesi",
+      "f1": "Redüktör uyumluluğu",
+      "f2": "Aşınma ve korozyon koruması",
+      "f3": "Uzun değişim aralığı"
+    },
+    "omala-s2-gx-320": {
+      "type": "Dişli Yağı EP",
+      "description": "Yüksek yük ve düşük devir uygulamaları için geliştirilmiş ağır hizmet EP dişli yağı. Büyük sanayi redüktörleri ve vinç sistemlerinde güvenilir koruma sunar.",
+      "f0": "Ağır hizmet yük kapasitesi",
+      "f1": "Düşük devir uyumluluğu",
+      "f2": "Vinç sistem koruması",
+      "f3": "Güçlü EP katkı paketi"
+    },
+    "omala-s2-gx-460": {
+      "type": "Dişli Yağı EP",
+      "description": "Çok yavaş devir ve çok yüksek yük altında çalışan büyük endüstriyel dişli sistemleri için ağır viskoziteli EP dişli yağı. Madencilik ve çelik sanayi uygulamaları için idealdir.",
+      "f0": "Çok yüksek yük kapasitesi",
+      "f1": "Madencilik ekipman uyumluluğu",
+      "f2": "Yüksek film kalınlığı",
+      "f3": "Ekstrem basınç koruma"
+    },
+    "corena-s3-r-46": {
+      "type": "Kompresör Yağı",
+      "description": "Döner vidalı ve döner paletli kompresörler için sentetik teknoloji kompresör yağı. 4.000 saate kadar uzun değişim aralığıyla işletme maliyetlerini düşürür.",
+      "f0": "4.000 saat değişim aralığı",
+      "f1": "Döner vida kompresör uyumlu",
+      "f2": "Düşük karbon birikimi",
+      "f3": "Üstün oksidasyon direnci"
+    },
+    "corena-s4-r-46": {
+      "type": "Kompresör Yağı (Tam Sentetik)",
+      "description": "Döner vidalı kompresörler için tam sentetik kompresör yağı. 8.000 saate kadar uzatılmış değişim aralığı ve üstün termal stabilite ile yüksek sıcaklıklarda çalışan sistemler için idealdir.",
+      "f0": "8.000 saat değişim aralığı",
+      "f1": "Tam sentetik formül",
+      "f2": "Yüksek sıcaklık stabilitesi",
+      "f3": "Minimum çamur oluşumu"
+    },
+    "gadus-s2-v220-2": {
+      "type": "Gres Yağı EP",
+      "description": "Genel amaçlı yüksek yük kapasiteli lityum kompleks gres yağı. Rulmanlı yataklar, dişli kutular ve santrifüj pompalar dahil geniş endüstriyel uygulamalarda üstün koruma sağlar.",
+      "f0": "Geniş uygulama yelpazesi",
+      "f1": "Yüksek yük taşıma kapasitesi",
+      "f2": "Su ve korozyon direnci",
+      "f3": "Geniş sıcaklık aralığı (-20°C ile +120°C)"
+    },
+    "morlina-s2-bl-10": {
+      "type": "Sirkülasyon / Türbin Yağı",
+      "description": "Buhar türbinleri, gaz türbinleri ve sirkülasyon sistemleri için yüksek kaliteli yağlama yağı. Mükemmel su ayrışma özelliği ve uzun ömürlü oksidasyon stabilitesiyle kesintisiz işletim sağlar.",
+      "f0": "Turbine-grade su ayrışması",
+      "f1": "Uzun oksidasyon ömrü",
+      "f2": "Düşük köpük eğilimi",
+      "f3": "Siemens ve GE onaylı"
+    },
+    "tonna-s3-m-68": {
+      "type": "Kızak Yağı",
+      "description": "Tezgah kızakları ve kayar tablalar için özel kızak yağı. Stick-slip önleyici formülasyonu sayesinde hassas ilerleme hareketi ve titreşimsiz çalışma sağlar.",
+      "f0": "Stick-slip önleme",
+      "f1": "Hassas ilerleme kontrolü",
+      "f2": "Titreşimsiz çalışma",
+      "f3": "CNC tezgah uyumluluğu"
+    },
+    "diala-s4-zx-i": {
+      "type": "Trafo Yağı",
+      "description": "Güç transformatörleri ve yüksek voltajlı şalt ekipmanları için ultra yüksek performanslı mineral izolasyon yağı. Üstün termal ve elektriksel özellikleriyle uzun ekipman ömrü sağlar.",
+      "f0": "Üstün dielektrik dayanımı",
+      "f1": "Düşük viskozite — gelişmiş soğutma",
+      "f2": "Uzun oksidasyon ömrü",
+      "f3": "ABB ve Siemens onaylı"
+    },
+    "1-esp-x2-0w-20": {
+      "type": "Tam Sentetik",
+      "description": "BMW'nin son teknoloji verimlilik standardı LL-17FE+'yı karşılayan ultra düşük viskoziteli tam sentetik motor yağı. Yakıt ekonomisini maksimize ederken üstün motor koruması sağlar.",
+      "f0": "BMW LL-17FE+ onaylı",
+      "f1": "Ultra düşük viskozite",
+      "f2": "Maksimum yakıt ekonomisi",
+      "f3": "Hibrit araç uyumlu"
+    },
+    "1-esp-0w-30": {
+      "type": "Tam Sentetik",
+      "description": "Mercedes-Benz ve Porsche araçları için özel geliştirilmiş tam sentetik ESP motor yağı. ACEA C3 sertifikasyonuyla DPF filtreli araçlarda üstün koruma sağlar.",
+      "f0": "MB 229.51 onaylı",
+      "f1": "Porsche A40 onaylı",
+      "f2": "DPF uyumlu Low-SAPS",
+      "f3": "Soğuk başlangıç üstünlüğü"
+    },
+    "1-esp-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "En geniş OEM onay portföyüne sahip tam sentetik ESP motor yağı. BMW, Mercedes-Benz ve Volkswagen Group araçlarında DPF koruma ve uzun servis aralığı sunar.",
+      "f0": "BMW LL-04 onaylı",
+      "f1": "MB 229.51 onaylı",
+      "f2": "VW 504/507 uyumlu",
+      "f3": "Uzun değişim aralığı"
+    },
+    "1-esp-x4-0w-40": {
+      "type": "Tam Sentetik",
+      "description": "Yüksek performanslı spor ve lüks araçlar için geliştirilmiş tam sentetik ESP motor yağı. Geniş sıcaklık aralığında maksimum motor koruması sağlar.",
+      "f0": "MB 229.5 onaylı",
+      "f1": "Spor araç uyumlu",
+      "f2": "Geniş çalışma sıcaklığı",
+      "f3": "Yüksek yük altı koruması"
+    },
+    "1-fs-5w-40": {
+      "type": "Tam Sentetik",
+      "description": "Dünya çapında milyonlarca araç tarafından güvenilen tam sentetik motor yağı. Geniş OEM onay portföyüyle hem Avrupa hem küresel araç modelleri için mükemmel koruma sağlar.",
+      "f0": "Küresel OEM onayları",
+      "f1": "Yıl boyu koruma",
+      "f2": "VW ve Porsche onaylı",
+      "f3": "Sürüklenme karşıtı formül"
+    },
+    "1-new-life-0w-40": {
+      "type": "Tam Sentetik",
+      "description": "Sıfırdan itibaren motorunuzu koruyan tam sentetik motor yağı. Mercedes-Benz ve Porsche yüksek performanslı motorları için optimize edilmiş formülasyonuyla üstün oksidasyon direnci sağlar.",
+      "f0": "Yüksek performans motor uyumlu",
+      "f1": "MB 229.5 onaylı",
+      "f2": "Sıfır kilometre koruması",
+      "f3": "Üstün oksidasyon direnci"
+    },
+    "super-3000-fe-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "Yakıt ekonomisi odaklı tam sentetik motor yağı. Ford EcoBoost motorlarda mükemmel performans gösteren düşük sürtünmeli formülasyon.",
+      "f0": "Ford EcoBoost uyumlu",
+      "f1": "Yakıt tasarruf odaklı",
+      "f2": "A5/B5 sertifikalı",
+      "f3": "Soğuk başlangıç kolaylığı"
+    },
+    "super-3000-x1-5w-40": {
+      "type": "Tam Sentetik",
+      "description": "Geniş bir araç yelpazesi için güvenilir tam sentetik motor yağı. Yüksek sıcaklık koruması ve uzun motor temizliği ile yoğun şehir trafiğinde üstün performans gösterir.",
+      "f0": "Tam sentetik formül",
+      "f1": "Yüksek ısı koruması",
+      "f2": "Motor temizleyici özellik",
+      "f3": "Geniş araç uyumu"
+    },
+    "super-2000-10w-40": {
+      "type": "Yarı Sentetik",
+      "description": "Geniş bir araç yelpazesinde güvenilir koruma sunan yarı sentetik motor yağı. Hem benzinli hem dizel motorlarda standart bakım ihtiyaçlarını karşılar.",
+      "f0": "Ekonomik yarı sentetik",
+      "f1": "Geniş motor uyumu",
+      "f2": "VW ve MB onaylı",
+      "f3": "Benzinli/dizel uyumlu"
+    },
+    "delvac-1-esp-5w-30": {
+      "type": "Tam Sentetik (Ağır Hizmet)",
+      "description": "Son nesil ağır hizmet dizel motorları için tam sentetik ESP motor yağı. SCR ve DPF sistemleriyle tam uyumlu Low-SAPS formülasyonuyla Euro 6 standartlarını karşılar.",
+      "f0": "Euro 6 motor uyumlu",
+      "f1": "SCR/DPF koruması",
+      "f2": "Low-SAPS formülü",
+      "f3": "CK-4 sertifikalı"
+    },
+    "delvac-1-esp-5w-40": {
+      "type": "Tam Sentetik (Ağır Hizmet)",
+      "description": "Ağır hizmet kamyon ve otobüs motorları için yüksek performanslı tam sentetik motor yağı. Uzun servis aralıkları ve üstün deposit kontrolü ile işletme maliyetlerini düşürür.",
+      "f0": "Uzun servis aralığı",
+      "f1": "EGR uyumlu",
+      "f2": "Üstün deposit kontrolü",
+      "f3": "Yakıt ekonomisi"
+    },
+    "delvac-1300-super-15w-40": {
+      "type": "Mineral (Ağır Hizmet)",
+      "description": "Ağır hizmet dizel motorları için güvenilir ve ekonomik mineral motor yağı. Geniş OEM onay portföyüyle büyük filolar için maliyet etkin çözüm sunar.",
+      "f0": "Geniş filo uyumluluğu",
+      "f1": "Ekonomik mineral formül",
+      "f2": "Çok OEM onaylı",
+      "f3": "Güvenilir ağır hizmet koruması"
+    },
+    "super-1000-15w-40": {
+      "type": "Mineral",
+      "description": "Standart bakım gereksinimlerini karşılayan güvenilir mineral motor yağı. Eski nesil benzinli ve dizel motorlarda temel koruma sağlayan ekonomik seçenek.",
+      "f0": "Temel motor koruması",
+      "f1": "Ekonomik mineral yağ",
+      "f2": "Eski motor uyumlu",
+      "f3": "Güvenilir standart performans"
+    },
+    "dte-10-excel-32": {
+      "type": "Hidrolik Yağ (Yüksek VI)",
+      "description": "Yüksek viskozite indeksiyle geniş sıcaklık aralığında sabit performans sunan premium hidrolik yağı. Dış ortam makineleri ve mobil hidrolik sistemler için idealdir.",
+      "f0": "Geniş sıcaklık aralığı performansı",
+      "f1": "Üstün viskozite indeksi (VI 150+)",
+      "f2": "Parker Denison HF-0 onaylı",
+      "f3": "Uzun sistem ömrü"
+    },
+    "dte-10-excel-46": {
+      "type": "Hidrolik Yağ (Yüksek VI)",
+      "description": "Endüstriyel hidrolik sistemlerin en yaygın viskozite derecesinde yüksek VI hidrolik yağı. Fabrika içi ve mobil ekipmanlarda üstün pompa koruması sağlar.",
+      "f0": "En yaygın sanayi viskozitesi",
+      "f1": "Yüksek VI formülü",
+      "f2": "Çoklu pompa uyumluluğu",
+      "f3": "Üstün oksidasyon direnci"
+    },
+    "dte-10-excel-68": {
+      "type": "Hidrolik Yağ (Yüksek VI)",
+      "description": "Yüksek çalışma sıcaklıklarındaki ağır hizmet hidrolik sistemler için yüksek VI hidrolik yağı. İnşaat ve madencilik ekipmanlarında güvenilir performans sağlar.",
+      "f0": "Yüksek sıcaklık stabilitesi",
+      "f1": "Ağır hizmet uyumlu",
+      "f2": "Düşük köpük eğilimi",
+      "f3": "Yüksek VI indeksi"
+    },
+    "dte-10-excel-100": {
+      "type": "Hidrolik Yağ (Yüksek VI)",
+      "description": "Ekstra yük kapasitesi gerektiren büyük hidrolik sistemler için yüksek viskoziteli premium hidrolik yağı. Ağır presler ve büyük inşaat ekipmanlarında güvenilir koruma sağlar.",
+      "f0": "Ekstra yük kapasitesi",
+      "f1": "Büyük sistem uyumluluğu",
+      "f2": "Termal stabilite",
+      "f3": "Uzun servis ömrü"
+    },
+    "shc-630": {
+      "type": "Dişli Yağı (Tam Sentetik)",
+      "description": "PAO bazlı tam sentetik endüstriyel dişli yağı. Mineral yağlara kıyasla çok daha uzun servis aralıkları ve üstün düşük sıcaklık performansı ile sert koşullarda üstün dişli koruması sağlar.",
+      "f0": "PAO tam sentetik formül",
+      "f1": "Uzun servis aralığı",
+      "f2": "Üstün düşük sıcaklık akışkanlığı",
+      "f3": "Yüksek ısı stabilitesi"
+    },
+    "shc-632": {
+      "type": "Dişli Yağı (Tam Sentetik)",
+      "description": "En yaygın endüstriyel dişli viskozite derecesinde PAO bazlı tam sentetik dişli yağı. Redüktörler ve kapalı dişli kutularında mineral yağlara göre 3 kat daha uzun servis ömrü sağlar.",
+      "f0": "ISO VG 220 tam sentetik",
+      "f1": "3x uzun servis ömrü",
+      "f2": "Enerji tasarrufu",
+      "f3": "Üstün düşük sıcaklık akışı"
+    },
+    "rarus-427": {
+      "type": "Kompresör Yağı (Mineral)",
+      "description": "Hava kompresörleri için geliştirilmiş yüksek performanslı mineral kompresör yağı. Pistonlu ve döner vidalı kompresörlerde uzun ömürlü performans ve düşük karbon birikimi sağlar.",
+      "f0": "Geniş kompresör tipi uyumluluğu",
+      "f1": "Düşük karbon birikimi",
+      "f2": "Üstün oksidasyon direnci",
+      "f3": "Ekonomik mineral formül"
+    },
+    "rarus-shc-1024": {
+      "type": "Kompresör Yağı (Tam Sentetik)",
+      "description": "Döner vidalı kompresörler için PAO bazlı tam sentetik kompresör yağı. 8.000 saate kadar uzatılmış değişim aralığı ve minimum karbon birikimi ile işletme maliyetlerini azaltır.",
+      "f0": "PAO tam sentetik formül",
+      "f1": "8.000 saat değişim aralığı",
+      "f2": "Sıfır karbon birikimi",
+      "f3": "Çevre dostu uzun ömür"
+    },
+    "vactra-2": {
+      "type": "Kızak Yağı",
+      "description": "CNC tezgahları ve hassas takım tezgahları için özel kızak yağı. Stick-slip titreşimlerini elimine ederek hassas yüzey kalitesi ve ilerleme tutarlılığı sağlar.",
+      "f0": "Stick-slip önleme",
+      "f1": "CNC tezgah uyumluluğu",
+      "f2": "Hassas ilerleme kontrolü",
+      "f3": "Su emülsiyonu direnci"
+    },
+    "grease-xhp-222": {
+      "type": "Gres Yağı EP",
+      "description": "Lityum kompleks kıvamlaştırıcılı yüksek performanslı EP gres yağı. Rulmanlı yataklar, dişli kutular ve eklem noktaları dahil geniş endüstriyel uygulamalarda üstün koruma sağlar.",
+      "f0": "Yüksek EP kapasitesi",
+      "f1": "Geniş sıcaklık aralığı (-20°C ile +150°C)",
+      "f2": "Su ve pas koruması",
+      "f3": "Uzun yeniden gres aralıkları"
+    },
+    "edge-0w-20": {
+      "type": "Tam Sentetik",
+      "description": "Castrol'ün en gelişmiş tam sentetik motor yağı. Titanium FST teknolojisiyle motor parçaları arasındaki filmi güçlendirerek aşınmaya karşı üstün koruma sağlar.",
+      "f0": "Titanium FST teknolojisi",
+      "f1": "Maksimum motor performansı",
+      "f2": "Yakıt ekonomisi optimizasyonu",
+      "f3": "Soğuk başlangıç koruması"
+    },
+    "edge-0w-30": {
+      "type": "Tam Sentetik",
+      "description": "BMW ve Mercedes-Benz onaylı tam sentetik motor yağı. Düşük sürtünmeli formülasyonuyla yakıt tasarrufu sağlarken üstün motor koruması sunar.",
+      "f0": "BMW LL-04 onaylı",
+      "f1": "MB 229.31 onaylı",
+      "f2": "Düşük sürtünme teknolojisi",
+      "f3": "Uzun servis aralıkları"
+    },
+    "edge-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "En çok tercih edilen Castrol EDGE viskozitesi. BMW, Mercedes-Benz ve Volkswagen onaylarıyla geniş bir araç yelpazesinde eksiksiz koruma sağlayan tam sentetik formül.",
+      "f0": "Üç büyük OEM onaylı",
+      "f1": "Titanium FST teknolojisi",
+      "f2": "Yüksek basınç koruması",
+      "f3": "Motor temizleyici özellik"
+    },
+    "edge-5w-40": {
+      "type": "Tam Sentetik",
+      "description": "Yüksek performanslı araçlar için ideal tam sentetik motor yağı. MB, VW ve Porsche onaylarıyla aşırı koşullarda bile maksimum motor koruması sunar.",
+      "f0": "Porsche A40 onaylı",
+      "f1": "Yüksek sıcaklık direnci",
+      "f2": "Turbo koruma",
+      "f3": "Sürüklenme karşıtı teknoloji"
+    },
+    "edge-0w-40": {
+      "type": "Tam Sentetik",
+      "description": "Aşırı sıcaklık farklılıklarında performans gerektiren araçlar için geliştirilmiş. Soğuk başlangıçta hızlı akış ile yüksek sıcakta film stabilitesini bir arada sunar.",
+      "f0": "Geniş sıcaklık aralığı",
+      "f1": "Hızlı pompalanabilirlik",
+      "f2": "Yüksek ısı stabilitesi",
+      "f3": "Premium tam sentetik"
+    },
+    "edge-10w-60": {
+      "type": "Tam Sentetik",
+      "description": "BMW M ve Porsche yüksek performanslı motorlar için özel geliştirilmiş ağır viskoziteli tam sentetik yağ. Yarış pistinden günlük kullanıma kadar zorlu koşullarda maksimum koruma.",
+      "f0": "BMW M serisi onaylı",
+      "f1": "Yüksek viskozite stabilitesi",
+      "f2": "Yarış seviyesi koruma",
+      "f3": "Aşınma karşıtı teknoloji"
+    },
+    "magnatec-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "Castrol Magnatec'in akıllı molekülleri motorun kritik parçalarına yapışarak soğuk çalışma koşullarında bile sürekli koruma sağlar. Ford ve Renault onaylı formül.",
+      "f0": "Akıllı molekül teknolojisi",
+      "f1": "Sürekli motor koruması",
+      "f2": "Soğuk çalışma koruması",
+      "f3": "Ford ve Renault onaylı"
+    },
+    "magnatec-5w-40": {
+      "type": "Tam Sentetik",
+      "description": "Volkswagen ve Renault onaylı Magnatec formülü. Akıllı moleküller motorun en hassas bölgelerine tutunarak marş anından itibaren tam koruma sağlar.",
+      "f0": "VW ve Renault onaylı",
+      "f1": "Marş anından itibaren koruma",
+      "f2": "Akıllı moleküller",
+      "f3": "Geniş araç uyumluluğu"
+    },
+    "magnatec-10w-40": {
+      "type": "Yarı Sentetik",
+      "description": "Yarı sentetik Magnatec formülü ile güvenilir günlük motor koruması. Hem eski hem yeni araçlarda üstün performans sunan ekonomik çözüm.",
+      "f0": "Yarı sentetik güvenilirlik",
+      "f1": "Günlük sürüş koruması",
+      "f2": "Geniş araç uyumluluğu",
+      "f3": "Ekonomik seçenek"
+    },
+    "gtx-15w-40": {
+      "type": "Mineral",
+      "description": "Castrol'ün efsanevi GTX serisi. Çamur karşıtı teknolojisiyle motoru çamurun 5 kat daha fazla birikimine karşı korur. Hem benzinli hem dizel motorlar için güvenilir seçim.",
+      "f0": "Çamur karşıtı teknoloji",
+      "f1": "Mineral güvenilirlik",
+      "f2": "Benzinli ve dizel uyumlu",
+      "f3": "Uzun motor ömrü"
+    },
+    "gtx-20w-50": {
+      "type": "Mineral",
+      "description": "Sıcak iklimlerde ve yüksek kilometre araçlarda üstün koruma sağlayan mineral motor yağı. Yüksek viskozitesiyle geniş boşluklarda koruyucu film oluşturur.",
+      "f0": "Sıcak iklim optimizasyonu",
+      "f1": "Yüksek km araç uyumlu",
+      "f2": "Güvenilir mineral formül",
+      "f3": "Ekonomik seçenek"
+    },
+    "vecton-15w-40": {
+      "type": "Mineral Ağır Hizmet",
+      "description": "Ağır hizmet dizel motorları için Vecton serisi. System Pro Technology ile yağın özelliklerini uzun süre boyunca sabit tutar.",
+      "f0": "System Pro Technology",
+      "f1": "Uzun servis aralıkları",
+      "f2": "Volvo ve Cummins onaylı",
+      "f3": "Ağır hizmet koruması"
+    },
+    "vecton-long-drain-10w-40": {
+      "type": "Yarı Sentetik Ağır Hizmet",
+      "description": "Uzun yağ değişim aralıkları için tasarlanmış yarı sentetik ağır hizmet yağı. Filtreler üzerindeki baskıyı azaltır ve aşınma korumayı maksimumda tutar.",
+      "f0": "Uzun değişim aralığı",
+      "f1": "Filtre uyumlu formül",
+      "f2": "Yarı sentetik dayanıklılık",
+      "f3": "Düşük kül içeriği"
+    },
+    "hyspin-aws-32": {
+      "type": "Hidrolik Yağ",
+      "description": "Geniş endüstriyel ve mobil hidrolik sistemler için yüksek kaliteli mineral bazlı hidrolik yağ. Üstün oksidatif ve termal stabilite ile uzun sistem ömrü sağlar.",
+      "f0": "Üstün oksidatif stabilite",
+      "f1": "Yüksek su ayrışma kabiliyeti",
+      "f2": "Pas ve korozyon koruması",
+      "f3": "Pompa uyumluluğu onaylı"
+    },
+    "hyspin-aws-46": {
+      "type": "Hidrolik Yağ",
+      "description": "Endüstride en yaygın kullanılan viskozite sınıfında hidrolik yağ. Yüksek performanslı hidrolik sistemlerde güvenilir ve uzun ömürlü çalışma için optimize edilmiştir.",
+      "f0": "En yaygın hidrolik viskozite",
+      "f1": "Uzun sistem ömrü",
+      "f2": "Çok sayıda OEM onayı",
+      "f3": "Enerji verimliliği"
+    },
+    "hyspin-aws-68": {
+      "type": "Hidrolik Yağ",
+      "description": "Yüksek yük ve sıcaklık koşullarındaki hidrolik sistemler için formüle edilmiş. Ağır endüstriyel uygulamalarda uzun servis ömrü ve güvenilir koruma sunar.",
+      "f0": "Yüksek yük kapasitesi",
+      "f1": "Termal stabilite",
+      "f2": "Viskozite kararlılığı",
+      "f3": "Aşınma koruması"
+    },
+    "hyspin-aws-100": {
+      "type": "Hidrolik Yağ",
+      "description": "Yavaş çalışan veya yüksek basınçlı hidrolik sistemler için ağır viskoziteli hidrolik yağ. Yüksek ortam sıcaklıklarında çalışan sistemler için uygundur.",
+      "f0": "Ağır viskozite stabilitesi",
+      "f1": "Yüksek basınç kapasitesi",
+      "f2": "Sıcak ortam performansı",
+      "f3": "Uzun ömürlü formül"
+    },
+    "optigear-bm-100": {
+      "type": "Dişli Yağı",
+      "description": "Endüstriyel açık ve kapalı dişli kutuları için mineral bazlı dişli yağı. Rust-Blocker teknolojisiyle üstün pas koruması ve uzun dişli ömrü sağlar.",
+      "f0": "Rust-Blocker teknolojisi",
+      "f1": "Siemens ve SEW onaylı",
+      "f2": "Üstün aşınma koruması",
+      "f3": "Yüksek yük kapasitesi"
+    },
+    "optigear-bm-220": {
+      "type": "Dişli Yağı",
+      "description": "Yüksek torklı ve ağır yük altındaki dişli kutuları için ISO VG 220 mineral dişli yağı. Endüstriyel redüktörler ve tahrik sistemlerinde güvenilir performans sunar.",
+      "f0": "Ağır yük kapasitesi",
+      "f1": "Endüstriyel redüktör onaylı",
+      "f2": "Uzun yağ değişim aralığı",
+      "f3": "Köpük karşıtı formül"
+    },
+    "tribol-1100-220": {
+      "type": "Dişli Yağı EP",
+      "description": "Yüksek EP katkılı endüstriyel dişli yağı. Ağır darbe yükleri ve yüksek tork koşullarında dişlileri ve yatakları üstün koruma altına alır.",
+      "f0": "Yüksek EP kapasitesi",
+      "f1": "Darbe yükü koruması",
+      "f2": "Çok sayıda OEM onayı",
+      "f3": "Uzun dişli ömrü"
+    },
+    "aircol-sn-46": {
+      "type": "Kompresör Yağı",
+      "description": "Pistonlu hava kompresörleri için mineral bazlı kompresör yağı. Yüksek yanma noktası ve düşük karbon birikimiyle güvenli çalışma sağlar.",
+      "f0": "Yüksek yanma noktası",
+      "f1": "Düşük karbon birikimi",
+      "f2": "Atlas Copco onaylı",
+      "f3": "Uzun kompresör ömrü"
+    },
+    "molub-alloy-860-220-2-el": {
+      "type": "Gres EP",
+      "description": "Yüksek EP katkılı lityum kompleks tabanlı gres yağı. Ağır yük, yüksek hız ve geniş sıcaklık aralığı gerektiren endüstriyel rulmanlar için idealdir.",
+      "f0": "Lityum kompleks formül",
+      "f1": "Yüksek EP katkısı",
+      "f2": "Geniş sıcaklık aralığı (-20°C/+150°C)",
+      "f3": "SKF ve FAG onaylı"
+    },
+    "quartz-9000-energy-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "Total'ün en prestijli tam sentetik motor yağı serisi. Gelişmiş katkı teknolojisiyle maksimum motor koruması ve üstün temizlik özelliği sunar.",
+      "f0": "BMW LL-01 onaylı",
+      "f1": "MB 229.3 onaylı",
+      "f2": "Maksimum motor koruması",
+      "f3": "Üstün temizlik teknolojisi"
+    },
+    "quartz-9000-energy-5w-40": {
+      "type": "Tam Sentetik",
+      "description": "Yüksek performanslı araçlar için tam sentetik motor yağı. Geniş sıcaklık aralığında üstün viskozite stabilitesi ve aşınma koruması sağlar.",
+      "f0": "Porsche A40 onaylı",
+      "f1": "Geniş sıcaklık stabilitesi",
+      "f2": "Turbo motor koruması",
+      "f3": "Uzun servis ömrü"
+    },
+    "quartz-9000-energy-0w-40": {
+      "type": "Tam Sentetik",
+      "description": "Soğuk başlangıç performansını ön plana çıkaran 0W-40 tam sentetik formül. Geniş sıcaklık aralığında üstün motor koruması ve yakıt verimliliği sunar.",
+      "f0": "Hızlı soğuk başlangıç",
+      "f1": "MB 229.5 onaylı",
+      "f2": "Yüksek ısı dayanımı",
+      "f3": "Tam sentetik güvenilirlik"
+    },
+    "quartz-9000-future-nfc-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "NFC teknolojisiyle donatılmış DPF uyumlu tam sentetik motor yağı. BMW, MB ve VW'nin modern emisyon kontrol sistemleri için özel olarak onaylanmıştır.",
+      "f0": "NFC nano teknolojisi",
+      "f1": "DPF/GPF uyumlu",
+      "f2": "BMW LL-04 onaylı",
+      "f3": "Düşük SAPS formülü"
+    },
+    "quartz-9000-future-ecob-5w-20": {
+      "type": "Tam Sentetik",
+      "description": "Ford ve Jaguar Land Rover için onaylanmış düşük viskoziteli tam sentetik motor yağı. EcoBoost motorlarında yakıt tasarrufunu maksimize eder.",
+      "f0": "Ford EcoBoost uyumlu",
+      "f1": "JLR onaylı",
+      "f2": "Maksimum yakıt ekonomisi",
+      "f3": "Düşük viskozite direnci"
+    },
+    "quartz-ineo-ecs-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "PSA ve Fiat emisyon kontrol sistemleri için özel geliştirilmiş INEO serisi. FAP filtresi ve katalitik konvertör ömrünü uzatmak için optimize edilmiş formül.",
+      "f0": "PSA FAP uyumlu",
+      "f1": "Fiat onaylı",
+      "f2": "Katalitik konvertör koruması",
+      "f3": "ACEA C2 sertifikalı"
+    },
+    "quartz-7000-10w-40": {
+      "type": "Yarı Sentetik",
+      "description": "Yarı sentetik teknolojisiyle günlük sürüş için güvenilir motor koruması sunan Quartz 7000 serisi. Geniş araç uyumluluğuyla popüler bir tercih.",
+      "f0": "Yarı sentetik güvenilirlik",
+      "f1": "Geniş araç uyumluluğu",
+      "f2": "Günlük sürüş optimizasyonu",
+      "f3": "Ekonomik seçenek"
+    },
+    "quartz-5000-15w-40": {
+      "type": "Mineral",
+      "description": "Hem benzinli hem dizel motorlar için uygun mineral bazlı çok amaçlı motor yağı. Güvenilir ve ekonomik günlük sürüş koruması sağlar.",
+      "f0": "Mineral güvenilirlik",
+      "f1": "Benzinli ve dizel uyumlu",
+      "f2": "Ekonomik günlük koruma",
+      "f3": "Geniş motor uyumluluğu"
+    },
+    "rubia-tir-8600-15w-40": {
+      "type": "Mineral Ağır Hizmet",
+      "description": "Uzun mesafe ticari araçlar için mineral bazlı ağır hizmet dizel motor yağı. Volvo, Cummins ve MAN onaylı formülle uzun servis aralıklarında güvenilir koruma.",
+      "f0": "Volvo VDS-3 onaylı",
+      "f1": "Cummins ve MAN onaylı",
+      "f2": "Uzun servis aralığı",
+      "f3": "Ticari araç optimizasyonu"
+    },
+    "rubia-tir-9200-5w-30": {
+      "type": "Tam Sentetik Ağır Hizmet",
+      "description": "En son nesil ağır hizmet dizel motorları için tam sentetik motor yağı. Euro VI emisyon standartlarını karşılayan araçlarda maksimum koruma ve yakıt ekonomisi.",
+      "f0": "Euro VI uyumlu",
+      "f1": "Volvo VDS-4.5 onaylı",
+      "f2": "Tam sentetik ağır hizmet",
+      "f3": "Düşük yakıt tüketimi"
+    },
+    "evolution-900-sxr-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "Elf'in üst segment tam sentetik motor yağı. SXR teknolojisiyle Renault ve Ford araçlarında maksimum yakıt tasarrufu ve motor koruması sunar.",
+      "f0": "SXR teknolojisi",
+      "f1": "Renault OEM onaylı",
+      "f2": "Ford onaylı",
+      "f3": "Yakıt tasarrufu optimizasyonu"
+    },
+    "evolution-900-ft-5w-40": {
+      "type": "Tam Sentetik",
+      "description": "Full Technology formülasyonuyla benzinli ve dizel motorlara eşit koruma sağlayan tam sentetik motor yağı. Geniş OEM onaylarıyla çok amaçlı kullanım için idealdir.",
+      "f0": "Full Technology formülü",
+      "f1": "Benzinli ve dizel uyumlu",
+      "f2": "Çoklu OEM onayı",
+      "f3": "Yüksek sıcaklık stabilitesi"
+    },
+    "azolla-zs-32": {
+      "type": "Hidrolik Yağ",
+      "description": "Yüksek performanslı zinç içerikli hidrolik yağ. Üstün aşınma koruması, oksidatif stabilite ve yüksek su ayrışma kabiliyetiyle geniş endüstriyel uygulama alanına sahiptir.",
+      "f0": "Yüksek su ayrışması",
+      "f1": "Üstün aşınma koruması",
+      "f2": "Çok sayıda pompa onayı",
+      "f3": "Uzun sistem ömrü"
+    },
+    "azolla-zs-46": {
+      "type": "Hidrolik Yağ",
+      "description": "Endüstriyel ve mobil hidrolik sistemlerde en yaygın kullanılan viskozite sınıfında yüksek kaliteli hidrolik yağ. Güvenilir ve uzun ömürlü performans sunar.",
+      "f0": "En yaygın hidrolik viskozite",
+      "f1": "Yüksek termal stabilite",
+      "f2": "Su ve pas direnci",
+      "f3": "Pompa uyumluluğu"
+    },
+    "azolla-zs-68": {
+      "type": "Hidrolik Yağ",
+      "description": "Yüksek sıcaklık ve ağır yük koşullarındaki hidrolik sistemler için formüle edilmiş. Termal açıdan zorlu ortamlarda viskozite stabilitesini korur.",
+      "f0": "Yüksek sıcaklık dayanımı",
+      "f1": "Ağır yük kapasitesi",
+      "f2": "Termal stabilite",
+      "f3": "Uzun değişim aralığı"
+    },
+    "azolla-zs-100": {
+      "type": "Hidrolik Yağ",
+      "description": "Yavaş çalışan veya yüksek basınçlı hidrolik sistemler için ağır viskoziteli hidrolik yağ. Sıcak ortam ve yüksek basınç koşullarında güvenilir performans sunar.",
+      "f0": "Ağır viskozite stabilitesi",
+      "f1": "Yüksek basınç kapasitesi",
+      "f2": "Sıcak ortam uyumlu",
+      "f3": "Uzun ömürlü formül"
+    },
+    "carter-ep-220": {
+      "type": "Dişli Yağı EP",
+      "description": "Yüksek EP katkılı endüstriyel dişli yağı. Ağır yük ve darbe yükü koşullarında dişlileri ve yatakları koruyarak uzun dişli kutusu ömrü sağlar.",
+      "f0": "Yüksek EP kapasitesi",
+      "f1": "David Brown onaylı",
+      "f2": "Darbe yükü koruması",
+      "f3": "Uzun dişli ömrü"
+    },
+    "carter-ep-320": {
+      "type": "Dişli Yağı EP",
+      "description": "Yüksek viskoziteli EP dişli yağı. Düşük hızlı yüksek torklı uygulamalarda ve açık dişlilerde güvenilir yağlama ve koruma sağlar.",
+      "f0": "Yüksek viskozite stabilitesi",
+      "f1": "Düşük hız/yüksek tork uyumlu",
+      "f2": "Çok sayıda OEM onayı",
+      "f3": "Aşınma ve korozyon koruması"
+    },
+    "planetelf-acd-46": {
+      "type": "Kompresör Yağı Sentetik",
+      "description": "Vidalı ve dönüşlü hava kompresörleri için tam sentetik kompresör yağı. Uzun servis aralıkları ve düşük karbon birikimi sunar.",
+      "f0": "Tam sentetik alkylbenzene",
+      "f1": "8000 saat servis ömrü",
+      "f2": "Düşük karbon birikimi",
+      "f3": "Atlas Copco onaylı"
+    },
+    "multis-ep-2": {
+      "type": "Gres EP",
+      "description": "Lityum kompleks kıvamlaştırıcılı çok amaçlı EP gres yağı. Yüksek yük, yüksek sıcaklık ve su koşullarına dayanıklı formülüyle geniş endüstriyel uygulama alanına sahip.",
+      "f0": "Çok amaçlı gres",
+      "f1": "Yüksek EP kapasitesi",
+      "f2": "Su dayanımı",
+      "f3": "SKF ve FAG onaylı"
+    },
+    "biohydran-tmp-46": {
+      "type": "Biyolojik Parçalanabilir Hidrolik Yağ",
+      "description": "Çevre dostu uygulamalar için TMP ester bazlı biyolojik parçalanabilir hidrolik yağ. Nehir yakını, orman ve deniz uygulamalarında tercih edilen ekolojik formül.",
+      "f0": "Biyolojik parçalanabilir",
+      "f1": "Ekolojik sertifikalı",
+      "f2": "TMP ester bazlı",
+      "f3": "Çevre dostu uygulama"
+    },
+    "8100-x-cleanplus-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "Yüksek performanslı Low SAPS tam sentetik motor yağı. BMW, MB, VW ve Porsche onaylı formülüyle DPF/GPF filtreli modern motorlarda maksimum koruma sunar.",
+      "f0": "BMW LL-04 onaylı",
+      "f1": "VW 504/507 onaylı",
+      "f2": "DPF ve GPF uyumlu",
+      "f3": "Düşük SAPS formülü"
+    },
+    "8100-x-cess-gen2-5w-40": {
+      "type": "Tam Sentetik",
+      "description": "İkinci nesil formülasyonuyla güncellenen X-cess serisi. Modern turbo motorlarda maksimum koruma sunan tam sentetik yağ.",
+      "f0": "İkinci nesil formül",
+      "f1": "Turbo motor koruması",
+      "f2": "Çok sayıda OEM onayı",
+      "f3": "Geniş araç uyumluluğu"
+    },
+    "8100-eco-nergy-0w-30": {
+      "type": "Tam Sentetik",
+      "description": "Yakıt ekonomisini ön plana çıkaran düşük viskoziteli tam sentetik motor yağı. Ford ve Renault onaylı Eco-nergy serisi çevre dostu sürüş sağlar.",
+      "f0": "Yakıt ekonomisi odaklı",
+      "f1": "Ford ve Renault onaylı",
+      "f2": "ACEA A5/B5 sertifikalı",
+      "f3": "Düşük emisyon formülü"
+    },
+    "8100-eco-lite-0w-20": {
+      "type": "Tam Sentetik",
+      "description": "Japon ve Asya kökenli araçlar için optimize edilmiş ultra düşük viskoziteli tam sentetik motor yağı. Honda ve Mitsubishi araçlarında maksimum yakıt ekonomisi sağlar.",
+      "f0": "Honda ve Mitsubishi onaylı",
+      "f1": "Ultra düşük viskozite",
+      "f2": "Soğuk çalışma optimizasyonu",
+      "f3": "Asya araç uyumlu"
+    },
+    "300v-competition-5w-40": {
+      "type": "Tam Sentetik Yarış",
+      "description": "Motul'ün efsanevi 300V serisi. Ester Core teknolojisiyle üretilmiş motor sporları yağı, pist araçlarında en zorlu koşullarda bile üstün motor koruması sağlar.",
+      "f0": "Ester Core teknolojisi",
+      "f1": "Yarış pisti koruması",
+      "f2": "Maksimum güç çıkışı",
+      "f3": "FIA onaylı formül"
+    },
+    "300v-high-rpm-0w-20": {
+      "type": "Tam Sentetik Yarış",
+      "description": "Yüksek devirli yarış motorları için ultra düşük viskoziteli 300V serisi. Ester Core teknolojisiyle aşırı yüksek RPM koşullarında dahi yağlama filmini korur.",
+      "f0": "Yüksek RPM optimizasyonu",
+      "f1": "Ester Core teknolojisi",
+      "f2": "Yarış seviyesi koruma",
+      "f3": "Ultra düşük sürtünme"
+    },
+    "300v-le-mans-20w-60": {
+      "type": "Tam Sentetik Yarış",
+      "description": "Le Mans 24 Saat yarışı gibi uzun süreli yüksek yük koşulları için ağır viskoziteli yarış yağı. Ester Core teknolojisiyle uzun maraton yarışlarında motor korumasını sürdürür.",
+      "f0": "Le Mans yarış formülü",
+      "f1": "Uzun süreli yük dayanımı",
+      "f2": "Ester Core teknolojisi",
+      "f3": "Yüksek viskozite stabilitesi"
+    },
+    "specific-bmw-ll-04-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "BMW araçları için özel Low SAPS tam sentetik motor yağı. BMW Longlife-04 standardını tam karşılayan formül, modern BMW motorlarının uzun ömürlü çalışmasını garanti eder.",
+      "f0": "BMW LL-04 OEM onaylı",
+      "f1": "Özel BMW formülü",
+      "f2": "DPF uyumlu",
+      "f3": "Uzun servis aralığı"
+    },
+    "specific-vw-50800-0w-20": {
+      "type": "Tam Sentetik",
+      "description": "Volkswagen Grubu'nun en yeni 508.00/509.00 spesifikasyonları için ultra düşük viskoziteli tam sentetik motor yağı. En yeni VW, Audi, Skoda ve SEAT araçları için zorunlu standart.",
+      "f0": "VW 508.00 OEM onaylı",
+      "f1": "VW 509.00 onaylı",
+      "f2": "Ultra düşük viskozite",
+      "f3": "Audi/Skoda/SEAT uyumlu"
+    },
+    "truck-and-bus-15w-40": {
+      "type": "Mineral Ağır Hizmet",
+      "description": "Ticari araçlar ve otobüsler için mineral bazlı ağır hizmet motor yağı. Uzun rota şartlarında Volvo, MB ve MAN motorlarını güvenilir şekilde korur.",
+      "f0": "Ağır ticari araç onaylı",
+      "f1": "Volvo VDS-3 onaylı",
+      "f2": "Uzun mesafe optimizasyonu",
+      "f3": "Çoklu OEM desteği"
+    },
+    "gear-300-ls-75w-90": {
+      "type": "Şanzıman/Diferansiyel Yağı",
+      "description": "Limited Slip Diferansiyel uyumlu tam sentetik şanzıman ve diferansiyel yağı. Özel sürtünme modifiye edici katkısıyla LSD titremesini ve gıcırtısını önler.",
+      "f0": "Limited Slip uyumlu",
+      "f1": "LSD titreme önleyici",
+      "f2": "ZF onaylı",
+      "f3": "Tam sentetik güvenilirlik"
+    },
+    "gear-300-75w-90": {
+      "type": "Şanzıman/Diferansiyel Yağı",
+      "description": "Yüksek performanslı araçların manuel şanzıman ve diferansiyellerinde üstün koruma sağlayan tam sentetik yağ. ZF ve MAN onaylı formülüyle uzun servis ömrü sunar.",
+      "f0": "ZF multi-onaylı",
+      "f1": "Tam sentetik şanzıman yağı",
+      "f2": "Düşük sürtünme katkısı",
+      "f3": "Uzun dişli ömrü"
+    },
+    "atf-vi": {
+      "type": "Otomatik Şanzıman Yağı",
+      "description": "En geniş uyumluluk aralığına sahip tam sentetik otomatik şanzıman yağı. GM, Ford, ZF ve Toyota onaylı evrensel formülü eski ve yeni otomatik şanzımanlarda güvenilir çalışma sağlar.",
+      "f0": "GM Dexron VI onaylı",
+      "f1": "Ford Mercon LV onaylı",
+      "f2": "Toyota WS uyumlu",
+      "f3": "Evrensel uyumluluk"
+    },
+    "multi-dctf": {
+      "type": "Çift Kavramalı Şanzıman Yağı",
+      "description": "Kuru ve ıslak tipteki çift kavramalı şanzımanlar için özel tam sentetik yağ. VW DSG, BMW ve Ford PowerShift şanzıman uyumlu formül.",
+      "f0": "DSG/DCT uyumlu",
+      "f1": "VW 7/6-vitesli DSG onaylı",
+      "f2": "BMW DCT onaylı",
+      "f3": "Kuru ve ıslak tip uyumlu"
+    },
+    "hydraulic-sus-46": {
+      "type": "Tam Sentetik Hidrolik Yağ",
+      "description": "PAO bazlı tam sentetik hidrolik yağ. Mineral yağlara kıyasla çok daha uzun servis ömrü, daha iyi düşük sıcaklık akışkanlığı ve üstün termal stabilite sunar.",
+      "f0": "PAO tam sentetik bazlı",
+      "f1": "Uzun servis ömrü",
+      "f2": "Üstün düşük sıcaklık akışkanlığı",
+      "f3": "Yüksek termal stabilite"
+    },
+    "hydraulic-sus-68": {
+      "type": "Tam Sentetik Hidrolik Yağ",
+      "description": "Yüksek yük ve sıcaklık koşullarındaki hidrolik sistemler için PAO bazlı tam sentetik hidrolik yağ. Kritik endüstriyel uygulamalarda uzun süre güvenilir performans sağlar.",
+      "f0": "PAO tam sentetik",
+      "f1": "Yüksek sıcaklık dayanımı",
+      "f2": "Uzun değişim aralığı",
+      "f3": "Enerji tasarrufu"
+    },
+    "coolant-ultra-37": {
+      "type": "Motor Soğutma Sıvısı",
+      "description": "OAT formüllü uzun ömürlü motor soğutma sıvısı. -37°C'ye kadar donmaya karşı koruma sağlarken radyatör ve soğutma sistemi metal yüzeylerini korozyondan korur.",
+      "f0": "OAT teknolojisi",
+      "f1": "-37°C don koruması",
+      "f2": "Uzun ömürlü formül",
+      "f3": "Korozyon önleyici"
+    },
+    "inugel-g13-ultra": {
+      "type": "Motor Soğutma Sıvısı",
+      "description": "Propilen glikol bazlı G13 soğutma sıvısı. Etilen glikol içermeyen çevre dostu formülü VW Grubu'nun en yeni G13 standardını karşılar.",
+      "f0": "Propilen glikol bazlı",
+      "f1": "Çevre dostu formül",
+      "f2": "VW G13 onaylı",
+      "f3": "Uzun servis aralığı"
+    },
+    "multisyn-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "Texol Multisyn serisinin temel tam sentetik motor yağı. Ford ve GM onaylı formülüyle yakıt tasarrufu sağlarken benzinli ve hafif dizel motorlarda üstün koruma sunar.",
+      "f0": "Ford WSS-M2C913-D onaylı",
+      "f1": "GM onaylı",
+      "f2": "Yakıt ekonomisi optimizasyonu",
+      "f3": "Tam sentetik formül"
+    },
+    "multisyn-dpf-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "DPF filtreli modern motorlar için Ultra Yüksek Performanslı Low SAPS tam sentetik motor yağı. BMW, Mercedes-Benz ve Volkswagen Group'un en yüksek emisyon kontrol standartlarını karşılar.",
+      "f0": "BMW LL-04 onaylı",
+      "f1": "MB 229.51 onaylı",
+      "f2": "VW 504/507 onaylı",
+      "f3": "Ultra düşük SAPS formülü"
+    },
+    "multisyn-5w-40": {
+      "type": "Tam Sentetik",
+      "description": "Geniş araç yelpazesi için ultra yüksek performanslı tam sentetik motor yağı. Kesme stabilitesi ile geniş sıcaklık aralığında viskozite koruyarak MB ve GM onaylı üstün motor koruması sağlar.",
+      "f0": "Tam sentetik yüksek performans",
+      "f1": "MB 229.3 onaylı",
+      "f2": "GM onaylı",
+      "f3": "Geniş sıcaklık aralığı"
+    },
+    "multisyn-10w-40": {
+      "type": "Yarı Sentetik",
+      "description": "Yüksek performanslı yarı sentetik motor yağı. Volkswagen ve Mercedes-Benz onaylı formülüyle benzinli ve dizel motorlarda güvenilir günlük koruma sunar.",
+      "f0": "Yarı sentetik formül",
+      "f1": "VW 505.00 onaylı",
+      "f2": "MB 229.1 onaylı",
+      "f3": "Geniş motor uyumluluğu"
+    },
+    "multisyn-0w-20": {
+      "type": "Tam Sentetik",
+      "description": "Süper yüksek performanslı ultra düşük viskoziteli tam sentetik motor yağı. Ford EcoBoost ve modern benzinli motorlarda maksimum yakıt ekonomisi ile üstün soğuk başlangıç koruması sunar.",
+      "f0": "Ultra düşük viskozite",
+      "f1": "Ford WSS-M2C947-B1 onaylı",
+      "f2": "ILSAC GF-5 sertifikalı",
+      "f3": "Maksimum yakıt ekonomisi"
+    },
+    "multisyn-c2-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "PSA ve Renault araçlarının FAP/DPF sistemleri için Low SAPS tam sentetik motor yağı. ACEA C2 sertifikasyonuyla katalitik konvertör ve partikül filtresi ömrünü uzatır.",
+      "f0": "PSA B71 2290 onaylı",
+      "f1": "Renault RN 0700 onaylı",
+      "f2": "ACEA C2 Low SAPS",
+      "f3": "FAP/DPF uyumlu"
+    },
+    "multisyn-tdx-10w-40": {
+      "type": "Yarı Sentetik Ağır Hizmet",
+      "description": "Ultra yüksek performanslı yarı sentetik ağır hizmet motor yağı. Cummins, Mercedes-Benz, MAN, Volvo ve Scania çok sayıda OEM onayıyla uzun servis aralığı sağlar.",
+      "f0": "Cummins çok onaylı",
+      "f1": "Volvo VDS-3 onaylı",
+      "f2": "MB 228.5 onaylı",
+      "f3": "Geniş OEM uyumluluğu"
+    },
+    "multisyn-15w-40-premium": {
+      "type": "Ağır Hizmet",
+      "description": "TFAS teknolojisiyle formüle edilmiş premium düşük SAPS ağır hizmet motor yağı. Caterpillar, Cummins ve Volvo başta olmak üzere geniş OEM onay portföyüyle en zorlu koşullarda üstün koruma.",
+      "f0": "CJ-4 en yüksek ağır hizmet standardı",
+      "f1": "Caterpillar ECF-3 onaylı",
+      "f2": "Volvo VDS-4 onaylı",
+      "f3": "TFAS teknolojisi"
+    },
+    "multisyn-tdx-5w-30": {
+      "type": "Tam Sentetik Ağır Hizmet",
+      "description": "Yakıt verimliliği odaklı tam sentetik ağır hizmet motor yağı. Mercedes-Benz, MAN ve Volvo onaylı formülüyle Euro V motorlarda düşük yakıt tüketimi ve uzun servis aralıkları.",
+      "f0": "Tam sentetik ağır hizmet",
+      "f1": "MB 228.51 onaylı",
+      "f2": "MAN M 3477 onaylı",
+      "f3": "Yakıt ekonomisi odaklı"
+    },
+    "multisyn-10w-60": {
+      "type": "Tam Sentetik",
+      "description": "Yüksek yük ve aşırı performans koşulları için tam sentetik motor yağı. Sporatif ve yarış motorlarında geniş sıcaklık aralığında maksimum film koruması sağlar.",
+      "f0": "Yarış seviyesi tam sentetik",
+      "f1": "Yüksek viskozite indeksi (178)",
+      "f2": "Aşırı yük koruması",
+      "f3": "Soğukta hızlı pompalanabilirlik"
+    },
+    "multisyn-tdx-5w-30-plus": {
+      "type": "Tam Sentetik Ağır Hizmet",
+      "description": "Euro VI uyumlu en kapsamlı onay portföyüne sahip tam sentetik ağır hizmet motor yağı. Caterpillar, MAN, Volvo, Scania ve Cummins dahil sektörün en geniş OEM onayları.",
+      "f0": "CJ-4/ACEA E9 en yüksek standart",
+      "f1": "Caterpillar ECF-3 onaylı",
+      "f2": "Scania LDF-4 onaylı",
+      "f3": "Euro VI motor uyumlu"
+    },
+    "hydraulic-32": {
+      "type": "Hidrolik Yağ",
+      "description": "Endüstriyel ve mobil hidrolik sistemler için mineral bazlı hidrolik yağ. Düşük viskoziteli formülü hızlı çalışan ve hassas pompalı sistemlerde üstün performans sağlar.",
+      "f0": "Üstün aşınma koruması",
+      "f1": "Yüksek su ayrışması",
+      "f2": "Pas ve korozyon koruması",
+      "f3": "Düşük köpük eğilimi"
+    },
+    "hydraulic-46": {
+      "type": "Hidrolik Yağ",
+      "description": "Endüstriyel hidrolik sistemlerde en yaygın kullanılan viskozite sınıfında mineral hidrolik yağ. Güvenilir ve uzun ömürlü sistem performansı için optimize edilmiş formül.",
+      "f0": "En yaygın hidrolik viskozite",
+      "f1": "Uzun sistem ömrü",
+      "f2": "Termal stabilite",
+      "f3": "Pompa uyumluluğu"
+    },
+    "hydraulic-68": {
+      "type": "Hidrolik Yağ",
+      "description": "Yüksek yük ve sıcaklık koşullarındaki hidrolik sistemler için ağır viskoziteli mineral hidrolik yağ. Endüstriyel ağır hizmet uygulamalarında güvenilir performans sunar.",
+      "f0": "Yüksek yük kapasitesi",
+      "f1": "Termal stabilite",
+      "f2": "Aşınma koruması",
+      "f3": "Uzun değişim aralığı"
+    },
+    "gear-oil-220": {
+      "type": "Dişli Yağı EP",
+      "description": "Endüstriyel dişli kutuları ve redüktörler için EP katkılı mineral dişli yağı. Ağır yük ve darbe koşullarında dişlileri ve yatakları koruyarak uzun dişli ömrü sağlar.",
+      "f0": "EP katkılı formül",
+      "f1": "Darbe yükü koruması",
+      "f2": "Endüstriyel redüktör uyumlu",
+      "f3": "Uzun dişli ömrü"
+    },
+    "gear-oil-320": {
+      "type": "Dişli Yağı EP",
+      "description": "Düşük hızlı yüksek torklı endüstriyel uygulamalar için yüksek viskoziteli EP dişli yağı. Açık dişliler ve ağır tahrik sistemlerinde maksimum koruma sunar.",
+      "f0": "Yüksek viskozite stabilitesi",
+      "f1": "Yüksek tork kapasitesi",
+      "f2": "Aşınma ve korozyon koruması",
+      "f3": "Uzun servis ömrü"
+    },
+    "compressor-46": {
+      "type": "Kompresör Yağı",
+      "description": "Pistonlu ve vidalı hava kompresörleri için mineral bazlı kompresör yağı. Yüksek yanma noktası ve düşük karbon birikimi özellikleriyle güvenli ve uzun ömürlü çalışma sağlar.",
+      "f0": "Yüksek yanma noktası",
+      "f1": "Düşük karbon birikimi",
+      "f2": "Atlas Copco onaylı",
+      "f3": "Uzun kompresör ömrü"
+    },
+    "grease-ep-2": {
+      "type": "Gres EP",
+      "description": "Lityum bazlı EP katkılı çok amaçlı gres yağı. Yüksek yük, orta hız ve geniş sıcaklık aralığında endüstriyel rulmanlar için güvenilir yağlama sağlar.",
+      "f0": "Lityum bazlı formül",
+      "f1": "Yüksek EP kapasitesi",
+      "f2": "Su dayanımı",
+      "f3": "Çok amaçlı kullanım"
+    },
+    "slideway-68": {
+      "type": "Kızak Yağı",
+      "description": "CNC tezgahları ve hassas takım tezgahlarının kızak yüzeyleri için özel formüle edilmiş yağ. Yapışma-kayma titremesini önleyerek hassas işleme kalitesi sağlar.",
+      "f0": "Yapışma-kayma önleyici",
+      "f1": "CNC tezgah uyumlu",
+      "f2": "Hassas işleme kalitesi",
+      "f3": "Uzun kızak ömrü"
+    },
+    "havoline-prods-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "Havoline ProDS serisi, DPF filtreli modern motorlar için Low SAPS tam sentetik motor yağıdır. BMW, MB ve VW onaylı formülüyle uzun servis aralıkları sağlar.",
+      "f0": "BMW LL-04 onaylı",
+      "f1": "DPF/GPF uyumlu",
+      "f2": "Low SAPS formülü",
+      "f3": "Uzun servis aralığı"
+    },
+    "havoline-prods-5w-40": {
+      "type": "Tam Sentetik",
+      "description": "Yüksek performanslı benzinli ve dizel motorlar için tam sentetik ProDS motor yağı. Turbo motorlarda ve spor araçlarda üstün koruma sağlar.",
+      "f0": "Porsche A40 onaylı",
+      "f1": "Turbo motor koruması",
+      "f2": "Yüksek sıcaklık stabilitesi",
+      "f3": "Çoklu OEM onayı"
+    },
+    "havoline-extra-10w-40": {
+      "type": "Yarı Sentetik",
+      "description": "Günlük sürüş için güvenilir yarı sentetik motor yağı. Hem benzinli hem dizel motorlarda dengeli koruma ve ekonomik kullanım sunar.",
+      "f0": "Yarı sentetik teknoloji",
+      "f1": "Benzinli ve dizel uyumlu",
+      "f2": "Dengeli günlük koruma",
+      "f3": "Ekonomik formül"
+    },
+    "havoline-motor-oil-20w-50": {
+      "type": "Mineral",
+      "description": "Sıcak iklimlerde ve yüksek kilometre araçlarda güvenilir koruma sağlayan mineral motor yağı. Eski motorlarda ve yüksek çalışma sıcaklıklarında yağlama filmini korur.",
+      "f0": "Sıcak iklim optimizasyonu",
+      "f1": "Yüksek km araç uyumlu",
+      "f2": "Güçlü viskozite stabilitesi",
+      "f3": "Ekonomik seçenek"
+    },
+    "havoline-synthetic-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "Geniş araç uyumluluğuyla öne çıkan tam sentetik Havoline motor yağı. Üstün motor temizliği ve aşınma korumasıyla uzun motor ömrü sağlayan güvenilir formül.",
+      "f0": "Geniş OEM uyumluluğu",
+      "f1": "Üstün motor temizliği",
+      "f2": "Tam sentetik dayanıklılık",
+      "f3": "Soğuk başlangıç koruması"
+    },
+    "havoline-0w-20": {
+      "type": "Tam Sentetik",
+      "description": "Japon ve Amerikan araçları için ultra düşük viskoziteli tam sentetik motor yağı. Soğuk hava başlangıçlarında hızlı yağlama sağlayarak yakıt tüketimini minimuma indirir.",
+      "f0": "Honda ve Ford onaylı",
+      "f1": "Ultra düşük viskozite",
+      "f2": "Soğuk başlangıç optimizasyonu",
+      "f3": "Maksimum yakıt ekonomisi"
+    },
+    "ursa-premium-tdx-15w-40": {
+      "type": "Mineral Ağır Hizmet",
+      "description": "Ağır hizmet ticari araçlar için premium mineral motor yağı. TDX teknolojisiyle Volvo, Cummins ve MAN motorlarında üstün koruma sağlar.",
+      "f0": "Volvo VDS-3 onaylı",
+      "f1": "Cummins ve MAN onaylı",
+      "f2": "TDX teknolojisi",
+      "f3": "Uzun servis aralığı"
+    },
+    "ursa-super-plus-10w-40": {
+      "type": "Yarı Sentetik Ağır Hizmet",
+      "description": "Karma ticari araç filolarında kullanım için ideal yarı sentetik ağır hizmet motor yağı. Geniş OEM onaylarıyla farklı marka motorların tek bir yağla korunmasını mümkün kılar.",
+      "f0": "Karma filo uyumluluğu",
+      "f1": "Yarı sentetik ağır hizmet",
+      "f2": "Çok sayıda OEM onayı",
+      "f3": "Yakıt tasarrufu"
+    },
+    "delo-400-mgx-15w-40": {
+      "type": "Mineral Ağır Hizmet",
+      "description": "En son nesil CK-4 ağır hizmet standardını karşılayan Delo 400 MGX. Euro VI uyumlu motorlarda DPF ve EGR sistemlerini korurken yakıt ekonomisi sağlar.",
+      "f0": "CK-4 sertifikalı",
+      "f1": "Euro VI uyumlu",
+      "f2": "Volvo VDS-4.5 onaylı",
+      "f3": "DPF ve EGR koruması"
+    },
+    "delo-400-xsp-5w-40": {
+      "type": "Tam Sentetik Ağır Hizmet",
+      "description": "En yüksek performanslı ağır hizmet motorları için formüle edilmiş tam sentetik Delo 400 XSP. Volvo, MB ve Cummins onaylı formülüyle maksimum motor koruması ve uzun servis aralığı.",
+      "f0": "Tam sentetik ağır hizmet",
+      "f1": "CK-4 sertifikalı",
+      "f2": "Volvo ve MB onaylı",
+      "f3": "Maksimum servis aralığı"
+    },
+    "meropa-xl-220": {
+      "type": "Dişli Yağı EP",
+      "description": "Yüksek EP katkılı endüstriyel dişli kutuları için mineral dişli yağı. XL serisi uzun ömürlü formülüyle dişli sistemi ömrünü ve değişim aralıklarını uzatır.",
+      "f0": "Uzun ömürlü XL formülü",
+      "f1": "Yüksek EP kapasitesi",
+      "f2": "Siemens ve SEW onaylı",
+      "f3": "Uzun değişim aralığı"
+    },
+    "meropa-xl-320": {
+      "type": "Dişli Yağı EP",
+      "description": "Düşük hızlı yüksek torklı endüstriyel uygulamalar için yüksek viskoziteli EP dişli yağı. Ağır yük altında dişli yüzeylerini koruyan XL teknolojisi ile üstün performans.",
+      "f0": "Yüksek viskozite stabilitesi",
+      "f1": "Yüksek tork uyumlu",
+      "f2": "Darbe yükü koruması",
+      "f3": "Uzun dişli ömrü"
+    },
+    "meropa-xl-460": {
+      "type": "Dişli Yağı EP",
+      "description": "Çok ağır yük ve yüksek tork koşullarındaki dişli sistemleri için en yüksek viskoziteli Meropa XL. Sıcak ortamlarda ve yavaş çalışan sistemlerde mükemmel yağlama sağlar.",
+      "f0": "Maksimum viskozite stabilitesi",
+      "f1": "Ağır endüstriyel uygulama",
+      "f2": "Sıcak ortam uyumlu",
+      "f3": "Üstün EP koruması"
+    },
+    "rando-hdz-32": {
+      "type": "Hidrolik Yağ Yüksek VI",
+      "description": "Yüksek Viskozite İndeksli Rando HDZ serisi, geniş sıcaklık aralıklarında viskozite stabilitesini koruyarak hem soğuk hem sıcak ortamlarda üstün hidrolik sistem performansı sağlar.",
+      "f0": "Yüksek Viskozite İndeksi",
+      "f1": "Geniş sıcaklık uyumluluğu",
+      "f2": "Çoklu pompa onayı",
+      "f3": "Uzun sistem ömrü"
+    },
+    "rando-hdz-46": {
+      "type": "Hidrolik Yağ Yüksek VI",
+      "description": "Endüstriyel ve mobil hidrolik sistemlerde en yaygın viskozite sınıfında yüksek VI'li hidrolik yağ. Mevsimsel sıcaklık değişimlerinde güvenilir sistem performansı sunar.",
+      "f0": "En yaygın hidrolik viskozite",
+      "f1": "Yüksek VI stabilite",
+      "f2": "Çok sayıda OEM onayı",
+      "f3": "Mevsimsel uyumluluk"
+    },
+    "rando-hdz-68": {
+      "type": "Hidrolik Yağ Yüksek VI",
+      "description": "Yüksek yük ve sıcaklık koşullarındaki hidrolik sistemler için yüksek VI'li mineral hidrolik yağ. Geniş sıcaklık aralığında güvenilir performans.",
+      "f0": "Yüksek yük kapasitesi",
+      "f1": "Termal stabilite",
+      "f2": "Yüksek VI formülü",
+      "f3": "Aşınma koruması"
+    },
+    "cetus-pao-46": {
+      "type": "Kompresör Yağı Tam Sentetik",
+      "description": "PAO bazlı tam sentetik kompresör yağı. Mineral yağlara kıyasla çok daha uzun servis aralığı, daha düşük karbon birikimi ve daha iyi düşük sıcaklık akışkanlığı.",
+      "f0": "PAO tam sentetik bazlı",
+      "f1": "8000+ saat servis ömrü",
+      "f2": "Düşük karbon birikimi",
+      "f3": "Atlas Copco onaylı"
+    },
+    "multifak-ep-2": {
+      "type": "Gres EP",
+      "description": "Lityum bazlı çok amaçlı EP gres yağı. Endüstriyel rulmanlar, dişliler ve kaymalı yataklar için yüksek yük, orta hız ve geniş sıcaklık aralığında güvenilir yağlama sağlar.",
+      "f0": "Lityum bazlı formül",
+      "f1": "Yüksek EP kapasitesi",
+      "f2": "Su dayanımı",
+      "f3": "SKF ve FAG onaylı"
+    },
+    "novatex-gp-2": {
+      "type": "Gres Genel Amaçlı",
+      "description": "Genel amaçlı lityum bazlı gres yağı. Hafif ve orta yük koşullarındaki endüstriyel rulmanlar ve kaymalı yüzeyler için ekonomik ve güvenilir yağlama çözümü.",
+      "f0": "Genel amaçlı formül",
+      "f1": "Hafif-orta yük uyumlu",
+      "f2": "Geniş uygulama alanı",
+      "f3": "Ekonomik seçenek"
+    }
+  },
+  "quotePage": {
+    "breadcrumbHome": "Ana Sayfa",
+    "breadcrumbContact": "İletişim",
+    "breadcrumbPage": "Teklif İste",
+    "eyebrow": "Toplu İhracat Sorgusu",
+    "headline": "Toplu Fiyat Teklifi İste",
+    "subheadline": "Ürün gereksinimlerinizi aşağıya girin. İhracat ekibimiz 24 iş saati içinde rekabetçi fiyatlandırma, tam teknik özellik sayfaları ve ihracat belgeleriyle yanıt verir.",
+    "whatHappensNext": "Sırada Ne Var",
+    "trust1Title": "24 Saatte Yanıt",
+    "trust1Desc": "İhracat ekibimiz her sorguyu bir iş günü içinde inceler.",
+    "trust2Title": "Eksiksiz Belge Paketi",
+    "trust2Desc": "COA, MSDS, Menşe Şahadetnamesi ve ülkeye özel uyumluluk belgeleri dahil.",
+    "trust3Title": "ISO 9001:2015 Sertifikalı",
+    "trust3Desc": "Her parti, sevkiyat öncesinde teknik özelliklere göre test edilir.",
+    "trust4Title": "Taahhüt Gerekmez",
+    "trust4Desc": "Bir teklif sadece bilgidir. Devam edip etmemeye siz karar verirsiniz.",
+    "preferDirect": "Doğrudan görüşmeyi mi tercih edersiniz?",
+    "certifiedSupplier": "Sertifikalı Tedarikçi",
+    "availableHours": "Pzt–Cum, 09:00–17:00 (GMT+3) arası ulaşılabilir. Uluslararası aramalar için WhatsApp tercih edilir.",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faq1q": "Minimum sipariş miktarı nedir?",
+    "faq1a": "Minimum toplu siparişimiz 1.000 litreden (genellikle 5× 205 litrelik varil) başlar. IBC miktarları için minimum 1 birim (1.000 litre). Dökme tankerden 20.000 litre.",
+    "faq2q": "Fiyat teklifi almak ne kadar sürer?",
+    "faq2a": "Standart süre 24-48 iş saatidir. Karmaşık çok ürünlü veya özel teknik özellik sorguları biraz daha uzun sürebilir.",
+    "faq3q": "Hangi Incoterms şartlarını sunuyorsunuz?",
+    "faq3a": "EXW, FOB, CFR, CIF, DAP ve DDP destekliyoruz. Tercih ettiğiniz Incoterm Ek Notlar alanına belirtilmelidir.",
+    "faq4q": "API ve ACEA sertifikalı ürünler tedarik edebilir misiniz?",
+    "faq4a": "Evet. Motor yağı serimiz API SN, SN+, CF, CK-4 ve ACEA A3/B4, C3, E7, E9 sertifikalarını taşır. Spesifik onaylar her ürün sayfasında listelenmektedir."
+  },
+  "productsPage": {
+    "breadcrumbHome": "Ana Sayfa",
+    "breadcrumbPage": "Ürünler",
+    "eyebrow": "Tam Katalog",
+    "headline": "Motor Yağları, Mineral Yağlar ve Endüstriyel Yağlayıcılar",
+    "subheadline": "Üç kategoride 500'den fazla ürün. Tümü ISO sertifikalı, API uyumlu ve eksiksiz teknik belge ile birlikte.",
+    "viewProducts": "Ürünleri Gör",
+    "customSpecTitle": "Özel Ürün Teknik Özelliği mi Gerekiyor?",
+    "customSpecBody": "Teknik ekibimiz motor tipiniz, OEM teknik özelliğiniz ve çalışma koşullarınıza uygun ürünü belirleyebilir.",
+    "customSpecCta": "Teknik Eşleştirme İste",
+    "cat1Name": "Motor Yağları",
+    "cat1Desc": "Binek araçlar, ticari araçlar ve ağır hizmet dizel motorları için SAE sınıflı motor yağları. API ve ACEA sertifikalı.",
+    "cat2Name": "Mineral Yağlar",
+    "cat2Desc": "Endüstriyel ve farmasötik uygulamalar için beyaz mineral yağlar, proses yağları, trafo yağları ve özel mineral baz yağlar.",
+    "cat3Name": "Endüstriyel Yağlayıcılar",
+    "cat3Desc": "Endüstriyel makine ve ekipmanlar için hidrolik yağlar, kompresör yağları, dişli yağları, metal işleme sıvıları ve gresler."
+  },
+  "blogPage": {
+    "breadcrumbHome": "Ana Sayfa",
+    "breadcrumbPage": "Blog",
+    "eyebrow": "Teknik İçerikler",
+    "headline": "Endüstriyel Alıcılar İçin Kaynaklar",
+    "subheadline": "Satın alma yöneticileri ve ithalatçılar için teknik rehberler, ihracat bilgileri ve yağlayıcı bilgi bankası.",
+    "noPostsTitle": "Makaleler Yakında",
+    "noPostsBody": "Teknik rehber serimizi yayımlamaktayız. Kısa süre içinde geri dönün.",
+    "readMore": "Makaleyi Oku",
+    "minRead": "dk okuma",
+    "backToBlog": "Bloga Dön"
+  },
+  "solutions": {
+    "breadcrumbHome": "Ana Sayfa",
+    "breadcrumbSolutions": "Çözümler",
+    "requestQuote": "Teklif İste",
+    "browseCatalog": "Ürün Kataloğunu İncele",
+    "challengesTitle": "Çözdüğümüz Yaygın Sorunlar",
+    "solutionsTitle": "Model Oils Bunları Nasıl Çözüyor",
+    "recommendedTitle": "{title} İçin Önerilen Ürünler",
+    "viewFullCatalog": "Tam Ürün Kataloğunu Gör",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "ctaTitle": "Gereksinimlerinizi Görüşmeye Hazır mısınız?",
+    "ctaBody": "İhracat ekibimiz fiyatlandırma, teknik özellikler ve belgelerle 24 saat içinde yanıt verir.",
+    "ctaBtn": "Teklif İste",
+    "fleet": {
+      "title": "Filo Operatörleri",
+      "eyebrow": "Filo Operatörleri İçin Çözümler",
+      "headline": "Ticari Filolar İçin Tutarlı Motor Yağı Temini",
+      "subheadline": "Birden fazla yağ tedarikçisini yönetmeyi bırakın. Dizel ve benzinli filolar için dökme SAE motor yağları tedarik ediyoruz.",
+      "p1": "Erken yağ değişim aralıklarına neden olan tutarsız kalite",
+      "p2": "Uyumsuz teknik özelliklerle birden fazla tedarikçi",
+      "p3": "Premium perakende yağlardan artan bakım maliyetleri",
+      "p4": "OEM garanti programlarından belgeleme gereksinimleri",
+      "p5": "Yeniden sipariş koordinasyonu için özel hesap yöneticisi yok",
+      "s1t": "Filonuzla Ölçeklenen Toplu Fiyatlandırma",
+      "s1d": "1.000 litrelik deneme siparişlerinden dökme tankere. IBC ve tanker hacimlerinde litre başına fiyat önemli ölçüde düşer.",
+      "s2t": "API ve OEM Teknik Özellik Eşleştirme",
+      "s2d": "Teknik ekibimiz filonuzun OEM gereksinimlerine göre doğru API SN, CJ-4 veya CK-4 teknik özelliğini belirler.",
+      "s3t": "Partiden Partiye Tutarlı Kalite",
+      "s3d": "Her siparişte ISO 9001:2015 kalite yönetimi ve parti bazlı COA. Aynı formülasyon, aynı performans.",
+      "s4t": "Esnek Teslimat Planlaması",
+      "s4d": "Aylık, üç aylık veya yıllık tedarik anlaşmaları. Proaktif temin süresi bildirimi.",
+      "testimonial": "200 araçlık filomuz için üç ayrı yerel tedarikçiden Model Oils'e geçtik. Fiyatlandırma ve belgeler iyileşti, 18 aydır uyumsuzluk yaşamadık.",
+      "testimonialName": "Kwame A.",
+      "testimonialRole": "Filo Bakım Direktörü, Batı Afrika",
+      "faq1q": "Filo tedariki için minimum sipariş nedir?",
+      "faq1a": "Minimum 1.000 litredir. Tedarik anlaşması yapmadan önce deneme siparişiyle başlamanızı öneririz.",
+      "faq2q": "Modern dizel motorlar için API CK-4 sertifikalı yağ tedarik edebilir misiniz?",
+      "faq2a": "Evet. SAE 15W-40 HD dizel yağımız API CK-4 sertifikalıdır. Her sevkiyatla COA sağlanır.",
+      "faq3q": "Fiyat sabitleme anlaşmaları sunuyor musunuz?",
+      "faq3a": "Evet. Minimum üç aylık hacme taahhüt eden doğrulanmış filo operatörleri için 6 ve 12 aylık fiyat sabitleme anlaşmaları mevcuttur.",
+      "faq4q": "Tek sevkiyatta birden fazla teknik özellik için ürünleri karıştırabilir miyim?",
+      "faq4a": "Evet. Her parti için ayrı COA ile tek konteyner içinde çok ürünlü siparişleri düzenli olarak sevk ediyoruz."
+    },
+    "distributors": {
+      "title": "Otomotiv Distribütörleri",
+      "eyebrow": "Otomotiv Distribütörleri İçin Çözümler",
+      "headline": "Distribütörler İçin Güvenilir Toplu Motor Yağı Temini",
+      "subheadline": "Dağıtım ağınız için API ve ACEA sertifikalı motor yağlarının tutarlı tedarikini sağlayın. Özel etiket ve birlikte paketleme mevcuttur.",
+      "p1": "Stok boşluklarına neden olan güvenilmez tedarikçi",
+      "p2": "Mevcut üreticiden özel etiket seçeneği yok",
+      "p3": "Otomotiv sektörü alıcılarının API ve ACEA sertifikaları gerektirmesi",
+      "p4": "Son müşterilerden tutarsız kalite şikayetleri",
+      "p5": "Birden fazla kaynak tedarikçi sürdürmenin yüksek maliyeti",
+      "s1t": "Özel Etiket ve Birlikte Paketleme",
+      "s1d": "Etiketinizle, varil ve IBC'lerde markanızın baskısıyla ürün tedarik edebiliriz. Minimum 5.000 litre.",
+      "s2t": "Tam API ve ACEA Sertifika Portföyü",
+      "s2d": "Motor yağı serimizde API SN, SN+, CF, CK-4 ve ACEA A3/B4, C3, E7, E9.",
+      "s3t": "Distribütör Fiyat Kademeleri",
+      "s3d": "Üç aylık minimum siparişe taahhüt eden distribütörler için ek marjla hacim bazlı fiyatlandırma.",
+      "s4t": "Eksiksiz İhracat Belgeleme",
+      "s4d": "COA, MSDS, Menşe Şahadetnamesi ve ülkeye özel uyumluluk belgeleri dahil.",
+      "testimonial": "Tüm ürün serimizi 14 ay önce Model Oils'e taşıdık. Özel etiket kurulumu basitti ve API belgeleri yerel ticaret otoritesi gereksinimlerini anında karşıladı.",
+      "testimonialName": "Rodrigo M.",
+      "testimonialRole": "İthalat Direktörü, Güney Amerika",
+      "faq1q": "Özel etiket üretimi için minimum nedir?",
+      "faq1a": "SKU başına 5.000 litredir. Etiket baskı onayından sevkiyata 10–14 iş günü.",
+      "faq2q": "Avrupa binek araç dağıtımı için ACEA A3/B4 tedarik edebilir misiniz?",
+      "faq2a": "Evet. 5W-30 ve 5W-40 sentetik yağlarımız ACEA A3/B4 ve C3 için test edilmiştir.",
+      "faq3q": "Münhasır distribütörlük anlaşmalarıyla çalışıyor musunuz?",
+      "faq3a": "Evet, seçili pazarlarda. Minimum yıllık hacim taahhüdü gerekir, üç ayda bir gözden geçirilir.",
+      "faq4q": "Son müşterilerimin kalite şikayetlerini nasıl ele alıyorsunuz?",
+      "faq4a": "COA parti numaraları aracılığıyla tüm partiler izlenebilir. 48 saat içinde inceliyoruz ve yazılı yanıt veriyoruz."
+    },
+    "industrial": {
+      "title": "Endüstriyel Şirketler",
+      "eyebrow": "Endüstriyel Şirketler İçin Çözümler",
+      "headline": "Üretim ve İşleme Tesisleri İçin Endüstriyel Yağlayıcılar",
+      "subheadline": "Endüstriyel makineler için hidrolik sıvılar, dişli yağları, kompresör yağları ve özel yağlayıcılar. ISO VG sınıflandırmalı, OEM teknik özelliği eşleştirilmiş.",
+      "p1": "Birden fazla tedarikçiden birden fazla yağlayıcı türü — tedarik karmaşıklığı",
+      "p2": "Büyük OEM'lerden yüksek litre başına maliyet",
+      "p3": "Yerel distribütörlerin stoklamadığı ISO VG sınıflarını tedarik etme zorluğu",
+      "p4": "Garanti uyumluluğu için OEM onay belgeleme ihtiyacı",
+      "p5": "Planlanmamış üretim duruşlarına neden olan tutarsız temin süreleri",
+      "s1t": "Tek Tedarikçi Altında Tam Endüstriyel Yağlayıcı Yelpazesi",
+      "s1d": "Hidrolik yağlar (ISO VG 32/46/68/100), dişli yağları (GL-4/GL-5), kompresör yağları, gresler ve metal işleme sıvıları.",
+      "s2t": "ISO VG Sınıf Eşleştirme",
+      "s2d": "DIN 51524, ISO 6743 veya üretici teknik özelliğine uygun herhangi bir ISO VG sınıfını stokluyor veya formüle edebiliyoruz.",
+      "s3t": "Uzun Vadeli Tedarik Anlaşmaları",
+      "s3d": "Üç aylık teslimat planlamalı yıllık tedarik anlaşmaları. Tutarlı fiyatlandırma, tutarlı teknik özellik, özel hesap yöneticisi.",
+      "s4t": "Teknik Uzmanlık",
+      "s4d": "Mühendislerimiz mevcut ürün listenizi inceleyerek konsolidasyon fırsatlarını belirleyebilir.",
+      "testimonial": "Yedi ayrı yağlayıcı tedarikçisini ikiye indirdik. Maliyet düşüşü önemli oldu ve teknik destek mükemmeldi.",
+      "testimonialName": "Dmitri K.",
+      "testimonialRole": "Satın Alma Müdürü, Doğu Avrupa Üretim Grubu",
+      "faq1q": "ISO 6743 sınıflandırmasına göre yağlayıcı tedarik ediyor musunuz?",
+      "faq1a": "Evet. HLP hidrolik sıvılar, CKD dişli yağları, VDL kompresör yağları dahil ISO 6743 kategorilerini kapsıyoruz.",
+      "faq2q": "Büyük OEM yağlayıcı teknik özelliklerine göre çapraz referans yapabilir misiniz?",
+      "faq2a": "Evet. Bosch Rexroth, Parker ve diğer büyük hidrolik OEM'lere karşı çapraz referans tabloları tutuyoruz.",
+      "faq3q": "Endüstriyel yağlayıcılar için temin süresi nedir?",
+      "faq3a": "Standart sınıflar stoktan 5–10 iş günüdür. Özel ISO VG sınıflar 15–20 iş günü gerektirir.",
+      "faq4q": "Yağlayıcı denetim hizmeti sunuyor musunuz?",
+      "faq4a": "Evet. Tedarik anlaşması değerlendiren nitelikli alıcılar için ücretsiz portföy değerlendirmesi sunuyoruz."
+    },
+    "importers": {
+      "title": "Yağlayıcı İthalatçıları",
+      "eyebrow": "Yağlayıcı İthalatçıları İçin Çözümler",
+      "headline": "Yağlayıcı İthalatçıları İçin Güvenilir Türk İhracat Ortağı",
+      "subheadline": "15 yılı aşkın uluslararası ticaret deneyimiyle İstanbul merkezli yağlayıcı ihracatçısı. Tutarlı kalite, rekabetçi FOB/CIF fiyatlandırması, eksiksiz gümrük belgeleme.",
+      "p1": "İhracat belgelemesini de üstlenen güvenilir üretici bulmada zorluk",
+      "p2": "Ticaret şirketlerinden partiler arasında kalite tutarsızlığı",
+      "p3": "Karmaşık ithalat uyumluluk belgeleme gereksinimleri",
+      "p4": "Büyük yağlayıcı markalarının yüksek minimum sipariş miktarları",
+      "p5": "Incoterms ve ödeme koşullarında sınırlı esneklik",
+      "s1t": "Ticaret Şirketi Değil, Doğrudan Üretici",
+      "s1d": "Yağlayıcıları İstanbul tesisimizde harmanlar ve paketleriz. Aracı yok, marj ekleme yok.",
+      "s2t": "Bünyede Eksiksiz İhracat Belgeleme",
+      "s2d": "Özel ticaret uyum ekibimiz ithalat gümrüğü için gereken her belgeyi hazırlar.",
+      "s3t": "Esnek Incoterms ve Ödeme Koşulları",
+      "s3d": "EXW, FOB, CFR, CIF, DAP veya DDP. T/T veya görüldüğünde Akreditif.",
+      "s4t": "Özel İhracat Hesap Yöneticisi",
+      "s4d": "Sipariş onayından varış limanında teslimata kadar tek iletişim noktası.",
+      "testimonial": "Üç farklı ülkede gümrük işlemlerini yöneten bir ithalatçı olarak belge doğruluğu kritik. Model Oils 18 ayda 23 sevkiyatta tek hata yapmadı.",
+      "testimonialName": "Priya N.",
+      "testimonialRole": "İthalat ve Lojistik Müdürü, Güneydoğu Asya",
+      "faq1q": "Üretici misiniz yoksa ticaret şirketi mi?",
+      "faq1a": "Üretici ve ihracatçıyız. Tüm harmanlamanın ve paketlemenin yapıldığı yer İstanbul tesisimizdir.",
+      "faq2q": "Tipik temin süreleriniz nedir?",
+      "faq2a": "Standart stok ürünleri: proforma onayından 5–7 iş günü. Özel formülasyonlar: 15–20 iş günü.",
+      "faq3q": "Belirli ülke ithalat gereksinimleri için belgeleme hazırlayabilir misiniz?",
+      "faq3a": "Evet. 40'tan fazla ülkeye ihracat deneyimimiz var ve ülkeye özel gereksinimleri güncel tutuyoruz.",
+      "faq4q": "Ülkemizde mevcut bir ithalatçınız var mı?",
+      "faq4a": "Çoğu pazarda doğrudan ithalatçılarla çalışıyoruz. Münhasırlık anlaşmaları minimum yıllık hacim taahhüdü ile mevcuttur."
+    },
+    "indexTitle": "Hizmet Verdiğimiz Sektörler",
+    "indexSubtitle": "Otomotiv filoları, distribütörler, endüstriyel şirketler ve ithalatçılar için özelleştirilmiş yağlayıcı çözümleri."
+  },
+  "productDetailPage": {
+    "breadcrumbHome": "Ana Sayfa",
+    "breadcrumbProducts": "Ürünler",
+    "inStock": "Stokta Mevcut",
+    "contactAvailability": "Uygunluk İçin İletişime Geçin",
+    "requestQuoteForProduct": "Bu Ürün İçin Teklif İste",
+    "imageComingSoon": "Ürün görseli çok yakında",
+    "techSpecs": "Teknik Özellikler",
+    "thProperty": "Özellik",
+    "thValue": "Değer",
+    "thTestMethod": "Test Yöntemi",
+    "applications": "Uygulama Alanları",
+    "packagingExport": "Ambalaj ve İhracat Seçenekleri",
+    "thPackage": "Ambalaj",
+    "thCapacity": "Kapasite",
+    "thUnitsPallet": "Palet/Birim",
+    "thGrossWeight": "Brüt Ağırlık",
+    "packagingFallback": "20 litrelik kovalar, 205 litrelik variller, 1.000 litrelik IBC'ler ve dökme tanker olarak mevcuttur. Konteyner yükleme özellikleri için bizimle iletişime geçin.",
+    "incotermsLabel": "Incoterms",
+    "techDocs": "Teknik Dokümantasyon",
+    "downloadTds": "TDS İndir (PDF)",
+    "requestTds": "TDS Talep Et",
+    "downloadSds": "SDS/MSDS İndir (PDF)",
+    "requestSds": "SDS Talep Et",
+    "docsNote": "Farklı bir dilde belge veya özel test sertifikasına mı ihtiyacınız var?",
+    "contactTechTeam": "Teknik ekibimizle iletişime geçin.",
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqFallback": "Tam yanıt için ürün sayfasını inceleyin veya teknik ekibimizle iletişime geçin.",
+    "ctaTitle": "Toplu Sipariş Vermeye Hazır mısınız?",
+    "ctaBody": "{name} için 24 saat içinde rekabetçi bir fiyat teklifi alın.",
+    "ctaBtn": "Teklif İste"
+  },
+  "blogArticlePage": {
+    "breadcrumbHome": "Ana Sayfa",
+    "breadcrumbBlog": "Blog",
+    "by": "Yazar:",
+    "minRead": "dk okuma",
+    "backToBlog": "Bloga Dön",
+    "relatedTitle": "İlgili Makaleler",
+    "ctaTitle": "Teknik Bir Sorunuz mu Var?",
+    "ctaBody": "İhracat ekibimiz ürün teknik özellikleri, OEM onayları ve uygulama sorularını doğrudan yanıtlar.",
+    "ctaBtn": "Teknik Soru Sor"
+  }
+}

@@ -1,0 +1,8 @@
+@import "../styles/tokens.css";
+
+body {
+  background-color: var(--color-bg-light);
+  color: var(--color-brand-900);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+}

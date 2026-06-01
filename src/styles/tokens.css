@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@theme {
+  /* ─── Brand Colors ─── */
+  --color-brand-950: #080f17;
+  --color-brand-900: #0d1b2a;
+  --color-brand-800: #152333;
+  --color-brand-700: #1b3a5c;
+  --color-brand-600: #2a3f55;
+  --color-brand-500: #4a6b8a;
+  --color-brand-400: #5a7a94;
+  --color-brand-300: #8aa8c0;
+  --color-brand-200: #b8d0e8;
+  --color-brand-100: #e8edf2;
+  --color-brand-50: #f4f6f9;
+
+  /* ─── Accent – Petroleum Amber ─── */
+  --color-accent-700: #8b4513;
+  --color-accent-600: #c47b1f;
+  --color-accent-500: #e8992b;
+  --color-accent-400: #f0b050;
+  --color-accent-100: #fff4e0;
+
+  /* ─── Semantic ─── */
+  --color-success: #2a6b4a;
+  --color-warning: #8b4513;
+  --color-whatsapp: #25d366;
+
+  /* ─── Surfaces ─── */
+  --color-surface-dark: #152333;
+  --color-surface-light: #ffffff;
+  --color-bg-dark: #080f17;
+  --color-bg-light: #f4f6f9;
+  --color-border-dark: #2a3f55;
+  --color-border-light: #d1d9e0;
+
+  /* ─── Typography ─── */
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-mono: "Inter Mono", "Fira Code", monospace;
+
+  /* ─── Type Scale ─── */
+  --text-stat: 4.5rem;
+
+  /* ─── Spacing ─── */
+  --spacing-section: 5rem;
+  --spacing-section-sm: 3rem;
+
+  /* ─── Border Radius ─── */
+  --radius-card: 6px;
+  --radius-btn: 6px;
+  --radius-badge: 4px;
+
+  /* ─── Shadows ─── */
+  --shadow-card: 0 2px 8px rgba(13, 27, 42, 0.08);
+  --shadow-card-hover: 0 8px 24px rgba(13, 27, 42, 0.16);
+  --shadow-header: 0 2px 16px rgba(8, 15, 23, 0.32);
+  --shadow-modal: 0 24px 64px rgba(8, 15, 23, 0.56);
+  --shadow-cta-amber: 0 4px 16px rgba(196, 123, 31, 0.4);
+
+  /* ─── Z-index ─── */
+  --z-sticky-bar: 9000;
+  --z-header: 1000;
+  --z-dropdown: 1100;
+  --z-modal: 2000;
+  --z-toast: 3000;
+}
+
+/* ─── Global Base ─── */
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Focus visible ring – Amber for accessibility */
+  *:focus-visible {
+    outline: 3px solid var(--color-accent-500);
+    outline-offset: 3px;
+  }
+
+  /* RTL support – use logical properties globally */
+  [dir="rtl"] {
+    direction: rtl;
+  }
+}
+
+/* ─── Utility classes ─── */
+@layer utilities {
+  .text-gradient-amber {
+    background: linear-gradient(135deg, var(--color-accent-600), var(--color-accent-500));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-dark-section {
+    background-color: var(--color-bg-dark);
+  }
+
+  .bg-light-section {
+    background-color: var(--color-bg-light);
+  }
+
+  .section-padding {
+    padding-top: var(--spacing-section);
+    padding-bottom: var(--spacing-section);
+  }
+
+  .container-xl {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+
+  .container-lg {
+    max-width: 1024px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+
+  /* Hexagonal grid background texture */
+  .hex-texture {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66 L0 50 0 17 28 0 56 17 56 50Z' fill='none' stroke='%23E8EDF2' stroke-width='0.5' opacity='0.04'/%3E%3Cpath d='M28 100 L0 84 0 50 28 34 56 50 56 84Z' fill='none' stroke='%23E8EDF2' stroke-width='0.5' opacity='0.04'/%3E%3C/svg%3E");
+  }
+
+  /* Amber glow effect */
+  .amber-glow {
+    background: radial-gradient(ellipse at bottom right, rgba(196, 123, 31, 0.18) 0%, transparent 65%);
+  }
+
+  /* Specification data panel */
+  .data-panel {
+    background-color: var(--color-surface-dark);
+    border-left: 3px solid var(--color-accent-600);
+    font-family: var(--font-mono);
+  }
+
+  /* Screen reader only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}
