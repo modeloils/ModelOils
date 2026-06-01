@@ -23,22 +23,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   };
 }
 
-const CATEGORY_LABELS: Record<string, string> = {
-  "technical-guides": "Technical Guide",
-  "export-guides": "Export Guide",
-  "industry-news": "Industry News",
-};
-
-function formatDate(dateStr: string): string {
-  return new Date(dateStr).toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
-}
-
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const { slug } = await params;
+  const { slug, locale } = await params;
   const [post, relatedPosts] = await Promise.all([
     getBlogPostBySlug(slug).catch(() => null),
     getBlogPosts(4).catch(() => []),
@@ -48,7 +34,17 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const t = await getTranslations("blogArticlePage");
   const tn = await getTranslations("nav");
-  const categoryLabel = post.category ? (CATEGORY_LABELS[post.category] ?? post.category) : null;
+  const tb = await getTranslations("blog");
+  const categoryLabels = tb.raw("categoryLabels") as Record<string, string>;
+  const categoryLabel = post.category ? (categoryLabels[post.category] ?? post.category) : null;
+
+  function formatDate(dateStr: string): string {
+    return new Date(dateStr).toLocaleDateString(locale === "en" ? "en-GB" : locale, {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+  }
 
   const articleSchema = {
     "@context": "https://schema.org",

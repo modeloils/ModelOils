@@ -13,29 +13,25 @@ export const metadata: Metadata = {
     "Technical guides on API oil classifications, viscosity grades, ACEA standards, and export regulations for lubricant importers. Written by Model Oils export specialists.",
 };
 
-const SAMPLE_POSTS = [
-  { _id: "1", title: "What Is API SN Plus? The New Standard for GDI Engine Protection", slug: "api-sn-plus-explained", excerpt: "API SN Plus was introduced specifically for engines equipped with Gasoline Direct Injection (GDI) and turbocharged GDI systems. Here is what lubricant buyers need to know.", publishedAt: "2026-04-01", category: "technical-guides", readingTimeMinutes: 8, author: "Model Oils Technical Team", coverImage: null },
-  { _id: "2", title: "Importing Lubricants to Nigeria: Regulations, HS Codes & NAFDAC Requirements", slug: "importing-lubricants-nigeria", excerpt: "A complete guide to importing motor oils and industrial lubricants into Nigeria — covering NAFDAC registration, SON certification, HS code classification, and port clearance procedures.", publishedAt: "2026-03-15", category: "export-guides", readingTimeMinutes: 12, author: "Model Oils Export Team", coverImage: null },
-  { _id: "3", title: "How to Read a Lubricant Technical Data Sheet: A Buyer's Field Guide", slug: "how-to-read-lubricant-tds", excerpt: "A TDS contains everything needed to evaluate a lubricant — if you know how to read it. This guide explains every section of a typical motor oil or hydraulic fluid TDS.", publishedAt: "2026-03-01", category: "technical-guides", readingTimeMinutes: 10, author: "Model Oils Technical Team", coverImage: null },
-  { _id: "4", title: "5W-30 vs 10W-40: Which Engine Oil Is Right for Your Fleet?", slug: "5w30-vs-10w40-fleet-comparison", excerpt: "Viscosity grade selection affects fuel economy, cold start wear, and engine life. We compare 5W-30 and 10W-40 across the key decision factors.", publishedAt: "2026-02-15", category: "technical-guides", readingTimeMinutes: 7, author: "Model Oils Technical Team", coverImage: null },
-  { _id: "5", title: "Incoterms 2020 Explained for Lubricant Importers: FOB, CIF, DAP Compared", slug: "incoterms-lubricant-importers", excerpt: "FOB, CIF, DAP — which Incoterm protects you and which leaves you exposed? We break down the most commonly used trade terms for lubricant imports.", publishedAt: "2026-02-01", category: "export-guides", readingTimeMinutes: 9, author: "Model Oils Export Team", coverImage: null },
-  { _id: "6", title: "ACEA Engine Oil Sequences Explained: A3/B4, C3, E7, E9 for Buyers", slug: "acea-classification-guide", excerpt: "ACEA classifications determine whether a motor oil meets European OEM requirements. This guide explains each sequence and which vehicles they cover.", publishedAt: "2026-01-15", category: "technical-guides", readingTimeMinutes: 11, author: "Model Oils Technical Team", coverImage: null },
-];
-
-const CATEGORY_LABELS: Record<string, string> = {
-  "technical-guides": "Technical Guide",
-  "export-guides": "Export Guide",
-  "industry-news": "Industry News",
-};
-
-function formatDate(dateStr: string): string {
-  return new Date(dateStr).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+interface BlogPageProps {
+  params: Promise<{ locale: string }>;
 }
 
-export default async function BlogPage() {
+export default async function BlogPage({ params }: BlogPageProps) {
+  const { locale } = await params;
   const t = await getTranslations("blogPage");
+  const tb = await getTranslations("blog");
   const posts = await getBlogPosts(20).catch(() => []);
-  const displayPosts = posts.length > 0 ? posts : SAMPLE_POSTS;
+
+  const categoryLabels = tb.raw("categoryLabels") as Record<string, string>;
+
+  function formatDate(dateStr: string): string {
+    return new Date(dateStr).toLocaleDateString(locale === "en" ? "en-GB" : locale, {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+  }
 
   const breadcrumb = {
     "@context": "https://schema.org",
@@ -71,62 +67,67 @@ export default async function BlogPage() {
         </div>
       </section>
 
-      {/* Posts grid */}
+      {/* Posts grid or no-posts state */}
       <section className="bg-brand-50 section-padding">
         <div className="container-xl">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {displayPosts.map((post) => (
-              <Link
-                key={post._id}
-                href={`/resources/blog/${post.slug}`}
-                className="group bg-white border border-brand-200 rounded-xl overflow-hidden hover:border-accent-600 hover:shadow-[0_8px_24px_rgba(13,27,42,0.1)] transition-all"
-              >
-                <div className="aspect-[16/9] bg-brand-900 flex items-center justify-center relative overflow-hidden">
-                  <div className="hex-texture absolute inset-0 opacity-30" />
-                  <span className="text-accent-400 font-mono text-xs font-semibold z-10 px-3 text-center">
-                    {post.category ? (CATEGORY_LABELS[post.category] ?? post.category) : "Article"}
-                  </span>
-                </div>
-                <div className="p-5">
-                  {post.category && (
-                    <Badge variant="amber" className="mb-3">
-                      {CATEGORY_LABELS[post.category] ?? post.category}
-                    </Badge>
-                  )}
-                  <h2 className="text-sm font-bold text-brand-900 leading-snug mb-2 group-hover:text-accent-600 transition-colors line-clamp-2">
-                    {post.title}
-                  </h2>
-                  {post.excerpt && (
-                    <p className="text-xs text-brand-600 leading-relaxed mb-4 line-clamp-3">{post.excerpt}</p>
-                  )}
-                  <div className="flex items-center justify-between text-xs text-brand-500">
-                    <span>{formatDate(post.publishedAt)}</span>
-                    {post.readingTimeMinutes && (
-                      <span className="flex items-center gap-1">
-                        <Clock className="h-3 w-3" aria-hidden="true" />
-                        {post.readingTimeMinutes} {t("minRead")}
-                      </span>
-                    )}
+          {posts.length > 0 ? (
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {posts.map((post) => (
+                <Link
+                  key={post._id}
+                  href={`/resources/blog/${post.slug}`}
+                  className="group bg-white border border-brand-200 rounded-xl overflow-hidden hover:border-accent-600 hover:shadow-[0_8px_24px_rgba(13,27,42,0.1)] transition-all"
+                >
+                  <div className="aspect-[16/9] bg-brand-900 flex items-center justify-center relative overflow-hidden">
+                    <div className="hex-texture absolute inset-0 opacity-30" />
+                    <span className="text-accent-400 font-mono text-xs font-semibold z-10 px-3 text-center">
+                      {post.category ? (categoryLabels[post.category] ?? post.category) : "Article"}
+                    </span>
                   </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+                  <div className="p-5">
+                    {post.category && (
+                      <Badge variant="amber" className="mb-3">
+                        {categoryLabels[post.category] ?? post.category}
+                      </Badge>
+                    )}
+                    <h2 className="text-sm font-bold text-brand-900 leading-snug mb-2 group-hover:text-accent-600 transition-colors line-clamp-2">
+                      {post.title}
+                    </h2>
+                    {post.excerpt && (
+                      <p className="text-xs text-brand-600 leading-relaxed mb-4 line-clamp-3">{post.excerpt}</p>
+                    )}
+                    <div className="flex items-center justify-between text-xs text-brand-500">
+                      <span>{formatDate(post.publishedAt)}</span>
+                      {post.readingTimeMinutes && (
+                        <span className="flex items-center gap-1">
+                          <Clock className="h-3 w-3" aria-hidden="true" />
+                          {post.readingTimeMinutes} {t("minRead")}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-20">
+              <p className="text-lg font-semibold text-brand-900 mb-2">{t("noPostsTitle")}</p>
+              <p className="text-brand-500 text-sm">{t("noPostsBody")}</p>
+            </div>
+          )}
         </div>
       </section>
 
       {/* CTA */}
       <section className="bg-brand-900 py-10 hex-texture">
         <div className="container-lg text-center">
-          <h2 className="text-lg font-bold text-white mb-2">Need a Specific Technical Answer?</h2>
-          <p className="text-brand-300 text-sm mb-5">
-            Our technical team answers product specification, OEM approval, and application questions directly.
-          </p>
+          <h2 className="text-lg font-bold text-white mb-2">{t("ctaTitle")}</h2>
+          <p className="text-brand-300 text-sm mb-5">{t("ctaBody")}</p>
           <Link
             href="/contact/request-quote"
             className="inline-flex items-center gap-2 text-accent-400 font-semibold text-sm hover:text-accent-300 transition-colors"
           >
-            Ask a Technical Question <ArrowRight className="h-4 w-4" />
+            {t("ctaBtn")} <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </section>

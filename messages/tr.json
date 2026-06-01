@@ -118,7 +118,29 @@
     "title": "Endüstriyel Alıcılar İçin Kaynaklar",
     "subtitle": "Satın alma yöneticileri ve ithalatçılar için teknik rehberler, ihracat bilgileri ve yağlayıcı bilgi bankası.",
     "viewAll": "Tüm Makaleleri Gör",
-    "minRead": "dk okuma"
+    "minRead": "dk okuma",
+    "categoryLabels": {
+      "technical-guides": "Teknik Rehber",
+      "export-guides": "İhracat Rehberi",
+      "industry-news": "Sektör Haberleri"
+    },
+    "samplePosts": [
+      {
+        "title": "API Yağ Sınıflandırmaları Açıklandı: 2026 Kapsamlı Alıcı Rehberi",
+        "excerpt": "Tedarik yöneticileri için SA'dan SP'ye kadar API servis kategorilerine kapsamlı bir referans — uyumluluk rehberi ve uygulama önerileriyle.",
+        "category": "technical-guides"
+      },
+      {
+        "title": "Nijerya'ya Motor Yağı İthalatı: Düzenlemeler, HS Kodları ve NAFDAC Gereksinimleri",
+        "excerpt": "Yağlayıcı ithalatçıları için Nijerya gümrük HS kodları, NAFDAC kayıt gereksinimleri ve sorunsuz gümrükleme için gerekli belgeler.",
+        "category": "export-guides"
+      },
+      {
+        "title": "SAE Viskozite Dereceleri Açıklandı: İklime Göre Doğru Derece Seçimi",
+        "excerpt": "SAE J300 viskozite dereceleri için mühendislik düzeyinde rehber — 40°C ve 100°C'de kinematik viskozite, HTHS gereksinimleri ve iklime göre seçim.",
+        "category": "technical-guides"
+      }
+    ]
   },
   "finalCta": {
     "preHeadline": "Başlamaya Hazır mısınız?",
@@ -1841,7 +1863,10 @@
     "noPostsBody": "Teknik rehber serimizi yayımlamaktayız. Kısa süre içinde geri dönün.",
     "readMore": "Makaleyi Oku",
     "minRead": "dk okuma",
-    "backToBlog": "Bloga Dön"
+    "backToBlog": "Bloga Dön",
+    "ctaTitle": "Teknik Bir Sorunuz mu Var?",
+    "ctaBody": "Teknik ekibimiz ürün teknik özellikleri, OEM onayları ve uygulama sorularını doğrudan yanıtlar.",
+    "ctaBtn": "Teknik Soru Sor"
   },
   "solutions": {
     "breadcrumbHome": "Ana Sayfa",

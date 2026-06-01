@@ -22,7 +22,8 @@ interface HomePageProps {
   params: Promise<{ locale: string }>;
 }
 
-export default async function HomePage({ params: _params }: HomePageProps) {
+export default async function HomePage({ params }: HomePageProps) {
+  const { locale } = await params;
   const [certifications, posts] = await Promise.all([
     getCertifications().catch(() => []),
     getBlogPosts(3).catch(() => []),
@@ -93,7 +94,7 @@ export default async function HomePage({ params: _params }: HomePageProps) {
       <CertificationsBar certifications={certifications} />
 
       {/* 8. Blog Preview */}
-      <BlogPreviewSection posts={posts} />
+      <BlogPreviewSection posts={posts} locale={locale} />
 
       {/* 9. Final CTA */}
       <FinalCTASection />

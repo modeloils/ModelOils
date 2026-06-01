@@ -118,7 +118,29 @@
     "title": "Resources for Industrial Buyers",
     "subtitle": "Technical guides, export insights, and lubricant knowledge base for procurement managers and importers.",
     "viewAll": "View All Articles",
-    "minRead": "min read"
+    "minRead": "min read",
+    "categoryLabels": {
+      "technical-guides": "Technical Guide",
+      "export-guides": "Export Guide",
+      "industry-news": "Industry News"
+    },
+    "samplePosts": [
+      {
+        "title": "API Oil Classifications Explained: Complete Buyer Guide 2026",
+        "excerpt": "A comprehensive reference for procurement managers on API service categories — from SA through SP — with compatibility guidance and application recommendations.",
+        "category": "technical-guides"
+      },
+      {
+        "title": "Importing Motor Oil to Nigeria: Regulations, HS Codes & NAFDAC Requirements",
+        "excerpt": "A practical guide for lubricant importers covering Nigerian customs HS codes, NAFDAC registration requirements, and documentation needed for smooth clearance.",
+        "category": "export-guides"
+      },
+      {
+        "title": "SAE Viscosity Grades Explained: Selecting the Right Grade for Your Climate",
+        "excerpt": "An engineer-level guide to SAE J300 viscosity grades — covering kinematic viscosity at 40°C and 100°C, HTHS requirements, and selection for tropical and cold climates.",
+        "category": "technical-guides"
+      }
+    ]
   },
   "finalCta": {
     "preHeadline": "Ready to Start?",
@@ -1841,7 +1863,10 @@
     "noPostsBody": "We are currently publishing our technical guide series. Check back shortly.",
     "readMore": "Read Article",
     "minRead": "min read",
-    "backToBlog": "Back to Blog"
+    "backToBlog": "Back to Blog",
+    "ctaTitle": "Need a Specific Technical Answer?",
+    "ctaBody": "Our technical team answers product specification, OEM approval, and application questions directly.",
+    "ctaBtn": "Ask a Technical Question"
   },
   "solutions": {
     "breadcrumbHome": "Home",
