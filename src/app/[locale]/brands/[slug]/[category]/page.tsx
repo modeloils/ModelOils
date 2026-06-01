@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
@@ -308,11 +310,20 @@ const BRAND_OVERRIDES: Record<string, string[]> = {
 
 interface CardColors { primary: string; secondary: string; accent: string; accentText: string }
 
+function getProductImage(brandSlug: string, productSlug: string): string | null {
+  for (const ext of ["jpg", "png"]) {
+    const abs = path.join(process.cwd(), "public", "images", "products", brandSlug, `${productSlug}.${ext}`);
+    if (fs.existsSync(abs)) return `/images/products/${brandSlug}/${productSlug}.${ext}`;
+  }
+  return null;
+}
+
 function BrandedProductCard({
   name, categorySlug, brandSlug, colors,
 }: { name: string; categorySlug: string; brandSlug: string; colors: CardColors }) {
   const { series, grade } = parseProductName(name);
   const productSlug = toSlug(name);
+  const imageSrc = getProductImage(brandSlug, productSlug);
 
   return (
     <Link
@@ -320,28 +331,41 @@ function BrandedProductCard({
       className="rounded-[var(--radius-card)] overflow-hidden border hover:shadow-[0_8px_24px_rgba(0,0,0,0.18)] hover:-translate-y-1 transition-all duration-200 flex flex-col"
       style={{ borderColor: colors.primary + "40" }}
     >
-      {/* Colored header */}
-      <div
-        className="relative flex flex-col items-center justify-center px-4 pt-6 pb-5 gap-1 overflow-hidden"
-        style={{ background: `linear-gradient(145deg, ${colors.primary} 0%, ${colors.secondary} 100%)` }}
-      >
-        <svg viewBox="0 0 120 60" className="absolute bottom-0 left-0 w-full opacity-10" aria-hidden="true">
-          {[...Array(7)].map((_, i) => (
-            <line key={i} x1="60" y1="60" x2={10 + i * 17} y2="0"
-              stroke={colors.accent} strokeWidth="6" strokeLinecap="round" />
-          ))}
-        </svg>
-
-        {grade && (
-          <span className="text-2xl font-black tracking-tight leading-none relative z-10"
-            style={{ color: colors.accent }}>
-            {grade}
+      {/* Header: product image if available, otherwise brand gradient */}
+      {imageSrc ? (
+        <div className="relative bg-white flex items-center justify-center overflow-hidden" style={{ height: 140 }}>
+          <Image src={imageSrc} alt={name} fill className="object-contain p-3" sizes="220px" />
+          {/* Grade pill at bottom */}
+          {grade && (
+            <span
+              className="absolute bottom-2 left-1/2 -translate-x-1/2 text-xs font-black px-2.5 py-0.5 rounded-full whitespace-nowrap z-10"
+              style={{ background: colors.primary, color: colors.accent }}
+            >
+              {grade}
+            </span>
+          )}
+        </div>
+      ) : (
+        <div
+          className="relative flex flex-col items-center justify-center px-4 pt-6 pb-5 gap-1 overflow-hidden"
+          style={{ background: `linear-gradient(145deg, ${colors.primary} 0%, ${colors.secondary} 100%)` }}
+        >
+          <svg viewBox="0 0 120 60" className="absolute bottom-0 left-0 w-full opacity-10" aria-hidden="true">
+            {[...Array(7)].map((_, i) => (
+              <line key={i} x1="60" y1="60" x2={10 + i * 17} y2="0"
+                stroke={colors.accent} strokeWidth="6" strokeLinecap="round" />
+            ))}
+          </svg>
+          {grade && (
+            <span className="text-2xl font-black tracking-tight leading-none relative z-10" style={{ color: colors.accent }}>
+              {grade}
+            </span>
+          )}
+          <span className="text-2xl font-black tracking-tight leading-none text-white text-center relative z-10">
+            {series}
           </span>
-        )}
-        <span className="text-2xl font-black tracking-tight leading-none text-white text-center relative z-10">
-          {series}
-        </span>
-      </div>
+        </div>
+      )}
 
       {/* White body */}
       <div className="bg-white p-3 flex flex-col flex-1 gap-3">
