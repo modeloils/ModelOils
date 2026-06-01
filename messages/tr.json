@@ -2057,6 +2057,7 @@
     "selectBrand": "Ürün kataloglarını görüntülemek ve indirmek için aşağıdan bir marka seçin.",
     "backToCatalogs": "Kataloglara Dön",
     "downloadBtn": "PDF İndir",
+    "openBtn": "PDF Görüntüle",
     "fileSizeLabel": "Dosya boyutu",
     "updatedLabel": "Güncellendi",
     "ctaTitle": "Özel Belge mi Gerekiyor?",

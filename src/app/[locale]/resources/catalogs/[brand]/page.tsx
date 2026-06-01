@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
-import { Download, FileText, ArrowLeft, ArrowRight } from "lucide-react";
+import { ExternalLink, FileText, ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 const BRANDS: Record<string, { name: string; logo: string; blend: boolean }> = {
@@ -151,8 +151,8 @@ export default async function BrandCatalogsPage({ params }: BrandCatalogsPagePro
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-accent-600 hover:bg-accent-700 text-white text-sm font-semibold px-5 py-2.5 rounded-[var(--radius-btn)] transition-colors"
                     >
-                      <Download className="h-4 w-4" />
-                      {t("downloadBtn")}
+                      <ExternalLink className="h-4 w-4" />
+                      {t("openBtn")}
                     </a>
                   </div>
                 </div>

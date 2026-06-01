@@ -2057,6 +2057,7 @@
     "selectBrand": "Select a brand below to view and download its product catalogs.",
     "backToCatalogs": "Back to Catalogs",
     "downloadBtn": "Download PDF",
+    "openBtn": "Open PDF",
     "fileSizeLabel": "File size",
     "updatedLabel": "Updated",
     "ctaTitle": "Need Custom Documentation?",
