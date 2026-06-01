@@ -100,32 +100,6 @@ export function HeroSection() {
                   animation: "spin 20s linear infinite",
                 }}
               />
-              {/* Product illustration placeholder */}
-              <div className="absolute inset-8 rounded-xl bg-brand-800/60 border border-brand-700 flex flex-col items-center justify-center gap-4">
-                <div className="w-24 h-32 rounded-lg bg-gradient-to-b from-accent-600 to-amber-900 shadow-2xl flex items-end justify-center pb-4">
-                  <span className="text-white text-xs font-bold tracking-widest">SAE 15W-40</span>
-                </div>
-                <div className="flex gap-3">
-                  {["SAE 5W-30", "ISO VG 46", "GL-5"].map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-[10px] font-semibold text-accent-400 border border-accent-600/40 rounded-sm px-2 py-0.5"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex gap-2 mt-2">
-                  {["API CI-4", "ISO 9001", "ACEA E7"].map((cert) => (
-                    <span
-                      key={cert}
-                      className="text-[9px] font-bold text-brand-300 bg-brand-900/70 rounded-sm px-1.5 py-0.5"
-                    >
-                      {cert}
-                    </span>
-                  ))}
-                </div>
-              </div>
             </div>
           </motion.div>
         </div>
