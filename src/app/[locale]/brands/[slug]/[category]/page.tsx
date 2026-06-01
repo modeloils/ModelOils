@@ -1,5 +1,3 @@
-import fs from "fs";
-import path from "path";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
@@ -310,12 +308,37 @@ const BRAND_OVERRIDES: Record<string, string[]> = {
 
 interface CardColors { primary: string; secondary: string; accent: string; accentText: string }
 
+const PRODUCT_IMAGES: Record<string, string> = {
+  "shell:helix-ultra-sp-0w-20":        "/images/products/shell/helix-ultra-sp-0w-20.jpg",
+  "shell:helix-ultra-ect-c2-c3-0w-30": "/images/products/shell/helix-ultra-ect-c2-c3-0w-30.jpg",
+  "shell:helix-ultra-pro-af-5w-30":    "/images/products/shell/helix-ultra-pro-af-5w-30.jpg",
+  "shell:helix-ultra-pro-ag-5w-30":    "/images/products/shell/helix-ultra-pro-ag-5w-30.jpg",
+  "shell:helix-ultra-pro-ar-l-5w-30":  "/images/products/shell/helix-ultra-pro-ar-l-5w-30.jpg",
+  "shell:helix-ultra-pro-am-l-5w-30":  "/images/products/shell/helix-ultra-pro-am-l-5w-30.jpg",
+  "shell:helix-ultra-pro-ap-l-5w-30":  "/images/products/shell/helix-ultra-pro-ap-l-5w-30.png",
+  "shell:helix-ultra-ect-multi-5w-30": "/images/products/shell/helix-ultra-ect-multi-5w-30.jpg",
+  "shell:helix-ultra-5w-40":           "/images/products/shell/helix-ultra-5w-40.jpg",
+  "shell:helix-hx8-5w-30":             "/images/products/shell/helix-hx8-5w-30.jpg",
+  "shell:helix-hx8-5w-40":             "/images/products/shell/helix-hx8-5w-40.jpg",
+  "shell:helix-hx7-10w-40":            "/images/products/shell/helix-hx7-10w-40.jpg",
+  "shell:helix-hx6-10w-40":            "/images/products/shell/helix-hx6-10w-40.jpg",
+  "shell:helix-hx3-20w-50":            "/images/products/shell/helix-hx3-20w-50.jpg",
+  "shell:rimula-r6-lme-5w-30":         "/images/products/shell/rimula-r6-lme-5w-30.jpg",
+  "shell:rimula-r6-m-10w-40":          "/images/products/shell/rimula-r6-m-10w-40.png",
+  "shell:rimula-r6-lm-10w-40":         "/images/products/shell/rimula-r6-lm-10w-40.png",
+  "shell:rimula-r5-e-10w-40":          "/images/products/shell/rimula-r5-e-10w-40.png",
+  "shell:rimula-r4-x-15w-40":          "/images/products/shell/rimula-r4-x-15w-40.jpg",
+  "shell:rimula-r4-l-15w-40":          "/images/products/shell/rimula-r4-l-15w-40.png",
+  "shell:rimula-r3plus-10w":           "/images/products/shell/rimula-r3plus-10w.jpg",
+  "shell:rimula-r3plus-30":            "/images/products/shell/rimula-r3plus-30.jpg",
+  "shell:rimula-r3plus-40":            "/images/products/shell/rimula-r3plus-40.jpg",
+  "shell:rimula-r3-50":                "/images/products/shell/rimula-r3-50.jpg",
+  "shell:rimula-r2-extra-15w-40":      "/images/products/shell/rimula-r2-extra-15w-40.jpg",
+  "shell:spirax-s6-txme":              "/images/products/shell/spirax-s6-txme.jpg",
+};
+
 function getProductImage(brandSlug: string, productSlug: string): string | null {
-  for (const ext of ["jpg", "png"]) {
-    const abs = path.join(process.cwd(), "public", "images", "products", brandSlug, `${productSlug}.${ext}`);
-    if (fs.existsSync(abs)) return `/images/products/${brandSlug}/${productSlug}.${ext}`;
-  }
-  return null;
+  return PRODUCT_IMAGES[`${brandSlug}:${productSlug}`] ?? null;
 }
 
 function BrandedProductCard({
