@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
 import { getTranslations,
@@ -25,6 +26,7 @@ interface ProductSpec {
   approvals: string[];
   description: string;
   features: string[];
+  image?: string;
 }
 
 const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
@@ -34,6 +36,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: [],
     description: "API SP ve ACEA C5 sertifikalı, PurePlus teknolojisiyle doğal gazdan sentezlenen tam sentetik motor yağı. Pistonları endüstri standardına göre %50 daha temiz tutar ve yakıt ekonomisini artırır.",
     features: ["API SP sertifikalı", "PurePlus Teknolojisi", "ACEA C5 uyumlu", "Maksimum yakıt tasarrufu"],
+      image: "/images/products/shell/helix-ultra-sp-0w-20.jpg",
   },
   "helix-ultra-ect-c2-c3-0w-30": {
     name: "Shell Helix Ultra ECT C2-C3 0W-30", grade: "0W-30", series: "Helix Ultra ECT C2-C3", type: "Tam Sentetik",
@@ -41,6 +44,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["VW 504.00/507.00", "MB 229.52/229.51/229.31", "Fiat 9.55535-GS1/DS1", "Porsche C30"],
     description: "VW 504/507, MB 229.52, Fiat GS1/DS1 ve Porsche C30 onaylı tam sentetik motor yağı. DPF ve katalitik konvertör uyumlu düşük SAPS formülasyonu ile emisyon sistemlerini korur.",
     features: ["VW 504.00/507.00 onaylı", "MB 229.52/229.31 onaylı", "Porsche C30 onaylı", "Düşük SAPS / DPF uyumlu"],
+      image: "/images/products/shell/helix-ultra-ect-c2-c3-0w-30.jpg",
   },
   "helix-ultra-pro-af-5w-30": {
     name: "Shell Helix Ultra Pro AF 5W-30", grade: "5W-30", series: "Helix Ultra Pro AF", type: "Tam Sentetik",
@@ -48,6 +52,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Ford WSS-M2C913-C", "Ford WSS-M2C913-D", "Jaguar Land Rover STJLR.03.5003"],
     description: "Ford WSS-M2C913-C/D ve Jaguar Land Rover STJLR.03.5003 onaylı tam sentetik motor yağı. Ford ve Jaguar/Land Rover araçlarında uzun servis aralığı ve üstün koruma sağlar.",
     features: ["Ford WSS-M2C913-C/D onaylı", "Jaguar Land Rover onaylı", "A5/B5 uyumlu", "Uzun değişim aralığı"],
+      image: "/images/products/shell/helix-ultra-pro-af-5w-30.jpg",
   },
   "helix-ultra-pro-ag-5w-30": {
     name: "Shell Helix Ultra Pro AG 5W-30", grade: "5W-30", series: "Helix Ultra Pro AG", type: "Tam Sentetik",
@@ -55,6 +60,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["GMW16177 (dexos2™)"],
     description: "GMW16177 (dexos2™) onaylı tam sentetik motor yağı. GM araçları için özel olarak formüle edilmiş; emisyon sonrası sistemleri korurken üstün motor temizliği ve yakıt ekonomisi sağlar.",
     features: ["dexos2™ onaylı", "ACEA C3 uyumlu", "GM araçları için özel", "Emisyon sistemi koruması"],
+      image: "/images/products/shell/helix-ultra-pro-ag-5w-30.jpg",
   },
   "helix-ultra-pro-ar-l-5w-30": {
     name: "Shell Helix Ultra Pro AR-L 5W-30", grade: "5W-30", series: "Helix Ultra Pro AR-L", type: "Tam Sentetik",
@@ -62,6 +68,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Renault RN0720"],
     description: "Renault RN0720 onaylı ve ACEA C4 uyumlu tam sentetik motor yağı. DPF filtreli Renault ve Nissan benzinli/dizel motorlar için özel olarak formüle edilmiştir.",
     features: ["Renault RN0720 onaylı", "ACEA C4 uyumlu", "DPF filtreli motorlar için", "Renault/Nissan özel"],
+      image: "/images/products/shell/helix-ultra-pro-ar-l-5w-30.jpg",
   },
   "helix-ultra-pro-am-l-5w-30": {
     name: "Shell Helix Ultra Pro AM-L 5W-30", grade: "5W-30", series: "Helix Ultra Pro AM-L", type: "Tam Sentetik",
@@ -69,6 +76,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["BMW LL-04", "MB 229.51", "Maserati"],
     description: "BMW LL-04 ve MB 229.51 onaylı tam sentetik motor yağı. BMW ve Mercedes-Benz premium araçlarında üst düzey motor koruması ve uzun değişim aralığı sağlar.",
     features: ["BMW LL-04 onaylı", "MB 229.51 onaylı", "Premium araç formülasyonu", "Uzun değişim aralığı"],
+      image: "/images/products/shell/helix-ultra-pro-am-l-5w-30.jpg",
   },
   "helix-ultra-pro-ap-l-5w-30": {
     name: "Shell Helix Ultra Pro AP-L 5W-30", grade: "5W-30", series: "Helix Ultra Pro AP-L", type: "Tam Sentetik",
@@ -76,6 +84,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["PSA B71 2290", "Fiat 9.55535-S1", "IVECO 18-1811 SP"],
     description: "PSA B71 2290, Fiat 9.55535-S1 ve IVECO 18-1811 SP onaylı tam sentetik motor yağı. PSA grubu ve IVECO ticari araçlarında emisyon sistemi koruması sağlar.",
     features: ["PSA B71 2290 onaylı", "Fiat 9.55535-S1 onaylı", "IVECO onaylı", "ACEA C2 uyumlu"],
+      image: "/images/products/shell/helix-ultra-pro-ap-l-5w-30.png",
   },
   "helix-ultra-ect-multi-5w-30": {
     name: "Shell Helix Ultra ECT Multi 5W-30", grade: "5W-30", series: "Helix Ultra ECT Multi", type: "Tam Sentetik",
@@ -83,6 +92,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["BMW LL-04", "MB 229.51", "VW 504.00/507.00", "PSA Service Fill"],
     description: "BMW LL-04, MB 229.51 ve VW 504.00/507.00 onaylı katalitik konvertör ve DPF uyumlu tam sentetik motor yağı. Aktif temizleme teknolojisi mineral yağlara göre 5 kat daha etkin çalışır.",
     features: ["BMW LL-04 onaylı", "VW 504.00/507.00 onaylı", "Düşük SAPS formülasyon", "DPF koruması"],
+      image: "/images/products/shell/helix-ultra-ect-multi-5w-30.jpg",
   },
   "rimula-r6-lme-5w-30": {
     name: "Shell Rimula R6 LME 5W-30", grade: "5W-30", series: "Rimula R6 LME", type: "Tam Sentetik",
@@ -90,6 +100,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["MB 228.5", "MAN 3277", "Volvo VDS-3", "Scania LDF-2", "Renault Trucks RXD", "Cummins CES 20072", "MTU Category 3"],
     description: "MB 228.5, MAN 3277, Volvo VDS-3 ve Scania LDF-2 onaylı tam sentetik ağır hizmet dizel motor yağı. Düşük emisyonlu motorlarda uzatılmış değişim aralığı sağlar.",
     features: ["MB 228.5 onaylı", "Scania LDF-2 onaylı", "Volvo VDS-3 onaylı", "Uzatılmış değişim aralığı"],
+      image: "/images/products/shell/rimula-r6-lme-5w-30.jpg",
   },
   "helix-ultra-5w-40": {
     name: "Shell Helix Ultra 5W-40", grade: "5W-40", series: "Helix Ultra", type: "Tam Sentetik",
@@ -97,6 +108,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Ferrari", "Porsche", "BMW Longlife '98", "MB 229.3", "VW 500.00/502.00/505.00", "SAAB"],
     description: "Ferrari, Porsche, BMW LL-98 ve MB 229.3 onaylı üst segment tam sentetik motor yağı. Benzinli, dizel ve LPG motorlarda yüksek performans ve kapsamlı koruma sağlar.",
     features: ["Ferrari ve Porsche onaylı", "BMW LL-98 onaylı", "MB 229.3 onaylı", "Çok yakıt tipi uyumlu"],
+      image: "/images/products/shell/helix-ultra-5w-40.jpg",
   },
   "helix-hx8-5w-30": {
     name: "Shell Helix HX8 5W-30", grade: "5W-30", series: "Helix HX8", type: "Tam Sentetik",
@@ -104,6 +116,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["BMW LL-01", "MB 229.5", "VW 502.00/505.00", "Renault RN0700/RN0710"],
     description: "BMW LL-01, MB 229.5 ve VW 502.00/505.00 onaylı tam sentetik motor yağı. Aktif temizleme teknolojisiyle kiri konvansiyonel yağlara göre 4 kat daha etkin giderir.",
     features: ["BMW LL-01 onaylı", "MB 229.5 onaylı", "VW 502/505 onaylı", "Aktif temizleme teknolojisi"],
+      image: "/images/products/shell/helix-hx8-5w-30.jpg",
   },
   "helix-hx8-5w-40": {
     name: "Shell Helix HX8 5W-40", grade: "5W-40", series: "Helix HX8", type: "Tam Sentetik",
@@ -111,6 +124,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["MB 229.3", "VW 502.00/505.00", "Renault RN0700/RN0710", "Fiat 9.55535-N2", "Fiat 9.55535-M2"],
     description: "MB 229.3, VW 502.00/505.00 ve Fiat 9.55535-N2/M2 onaylı tam sentetik motor yağı. Benzinli, dizel ve LPG motorlarda geniş sıcaklık yelpazesinde üstün koruma sağlar.",
     features: ["MB 229.3 onaylı", "Fiat 9.55535-N2/M2 onaylı", "Benzinli/Dizel/LPG uyumlu", "Üstün aşınma koruması"],
+      image: "/images/products/shell/helix-hx8-5w-40.jpg",
   },
   "rimula-r6-m-10w-40": {
     name: "Shell Rimula R6 M 10W-40", grade: "10W-40", series: "Rimula R6 M", type: "Tam Sentetik",
@@ -118,6 +132,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Cummins CES 20072", "MAN 3277", "MB 228.5", "MTU Category 3", "Renault Trucks RXD", "Scania LDF-2", "Volvo VDS-3"],
     description: "Cummins, MAN 3277, MB 228.5, Scania LDF-2 ve Volvo VDS-3 onaylı tam sentetik ağır hizmet dizel motor yağı. Euro 2-4 motorlar için uzatılmış servis aralığı ve yakıt tasarrufu.",
     features: ["Volvo VDS-3 onaylı", "Scania LDF-2 onaylı", "MB 228.5 onaylı", "Uzatılmış değişim aralığı"],
+      image: "/images/products/shell/rimula-r6-m-10w-40.png",
   },
   "rimula-r6-lm-10w-40": {
     name: "Shell Rimula R6 LM 10W-40", grade: "10W-40", series: "Rimula R6 LM", type: "Tam Sentetik",
@@ -125,6 +140,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Caterpillar ECF-1-A", "Cummins CES 20077", "MAN 3477/3271", "MB 228.51/226.9", "MTU Category 3.1", "Renault Trucks RD-2", "Volvo VDS-2"],
     description: "Cat ECF-1-A, Cummins CES 20077, MAN 3477, MB 228.51 ve Volvo VDS-2 onaylı düşük SAPS tam sentetik motor yağı. DPF uyumlu; emisyon sonrası arıtma sistemli araçlar için idealdir.",
     features: ["Cat ECF-1-A onaylı", "MB 228.51 onaylı", "Düşük SAPS / DPF uyumlu", "Volvo VDS-2 onaylı"],
+      image: "/images/products/shell/rimula-r6-lm-10w-40.png",
   },
   "rimula-r5-e-10w-40": {
     name: "Shell Rimula R5 E 10W-40", grade: "10W-40", series: "Rimula R5 E", type: "Yarı Sentetik",
@@ -132,6 +148,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: [],
     description: "Enerji tasarrufu sağlayan yarı sentetik ağır hizmet dizel motor yağı. Modern motor teknolojisine uygun çoklu filo uyumluluğu ile tüm basınç ve sıcaklık koşullarında üstün koruma.",
     features: ["Enerji tasarrufu teknolojisi", "Çoklu filo uyumluluğu", "Üstün aşınma koruması", "Uzun motor ömrü"],
+      image: "/images/products/shell/rimula-r5-e-10w-40.png",
   },
   "helix-hx7-10w-40": {
     name: "Shell Helix HX7 10W-40", grade: "10W-40", series: "Helix HX7", type: "Yarı Sentetik",
@@ -139,6 +156,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: [],
     description: "API SM/CF ve ACEA A3/B3/B4 sertifikalı yarı sentetik motor yağı. Özel aktif temizleme teknolojisi ile kir ve çamur oluşumunu sürekli olarak önler, motor yanıt süresini iyileştirir.",
     features: ["Aktif temizleme teknolojisi", "A3/B3/B4 uyumlu", "Benzinli/Dizel uyumlu", "Geliştirilmiş motor yanıtı"],
+      image: "/images/products/shell/helix-hx7-10w-40.jpg",
   },
   "helix-hx6-10w-40": {
     name: "Shell Helix HX6 10W-40", grade: "10W-40", series: "Helix HX6", type: "Yarı Sentetik",
@@ -146,6 +164,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["MB 229.3", "VW 502.00/505.00", "Renault RN0700"],
     description: "MB 229.3, VW 502.00/505.00 ve Renault RN0700 onaylı yarı sentetik motor yağı. Çamur ve aşınmaya karşı üstün koruma; modern benzinli ve dizel motorlar için uygundur.",
     features: ["MB 229.3 onaylı", "VW 502/505 onaylı", "Renault RN0700 onaylı", "Çamur ve aşınma koruması"],
+      image: "/images/products/shell/helix-hx6-10w-40.jpg",
   },
   "rimula-r3plus-10w": {
     name: "Shell Rimula R3+ 10W", grade: "10W", series: "Rimula R3+", type: "Mineral",
@@ -153,6 +172,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Caterpillar ECF-1-A", "Cummins CES 20078/20077", "DDC 93K215", "MACK EO-M/EO-M+", "MAN 3275", "MB 228.3", "Renault Trucks RLD-2", "Volvo VDS-3"],
     description: "CI-4 ve ACEA E7/E5/E3 sertifikalı tek dereceli mineral ağır hizmet dizel motor yağı. Cat ECF-1-A, MB 228.3 ve Volvo VDS-3 onaylı; inşaat ve maden uygulamaları için.",
     features: ["Cat ECF-1-A onaylı", "MB 228.3 onaylı", "Volvo VDS-3 onaylı", "Yüksek sıcaklık stabilitesi"],
+      image: "/images/products/shell/rimula-r3plus-10w.jpg",
   },
   "rimula-r3plus-30": {
     name: "Shell Rimula R3+ 30", grade: "SAE 30", series: "Rimula R3+", type: "Mineral",
@@ -160,6 +180,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Caterpillar ECF-1-A", "Cummins CES 20078/20077", "DDC 93K215", "MACK EO-M/EO-M+", "MAN 3275", "MB 228.3", "Renault Trucks RLD-2", "Volvo VDS-3"],
     description: "SAE 30 tek dereceli mineral ağır hizmet dizel motor yağı. CI-4 ve ACEA E7/E5/E3 sertifikalı; yüksek sıcaklıklı çalışma ortamları ve büyük hacimli motorlar için optimize edilmiştir.",
     features: ["CI-4 sertifikalı", "E7/E5/E3 uyumlu", "MB 228.3 onaylı", "Volvo VDS-3 onaylı"],
+      image: "/images/products/shell/rimula-r3plus-30.jpg",
   },
   "spirax-s6-txme": {
     name: "Shell Spirax S6 TXME", grade: "SAE 30", series: "Spirax S6 TXME", type: "Transmisyon Yağı",
@@ -167,6 +188,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Ford MERCON", "GM Allison C-4", "MB 236.5/236.6", "ZF TE-ML 03D/04D/09/11A/14A/17C", "Voith 55.6335", "MAN 339 Type D"],
     description: "Ford MERCON, GM Allison C-4, MB 236.5/236.6 ve ZF TE-ML onaylı transmisyon yağı. Otomatik şanzımanlar, hidrolik sistemler ve seçili direksiyon sistemleri için tasarlanmıştır.",
     features: ["Ford MERCON onaylı", "GM Allison C-4 onaylı", "ZF TE-ML onaylı", "MB 236.5/236.6 onaylı"],
+      image: "/images/products/shell/spirax-s6-txme.jpg",
   },
   "rimula-r3plus-40": {
     name: "Shell Rimula R3+ 40", grade: "SAE 40", series: "Rimula R3+", type: "Mineral",
@@ -174,6 +196,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Caterpillar ECF-1-A", "Cummins CES 20078/20077", "MACK EO-M/EO-M+", "MAN 3275", "MB 228.3", "Volvo VDS-3"],
     description: "SAE 40 tek dereceli mineral ağır hizmet dizel motor yağı. CI-4 ve ACEA E7/E5/E3 sertifikalı; sıcak iklimlerde ve yüksek çalışma sıcaklıklarında büyük hacimli motorlar için idealdir.",
     features: ["CI-4 sertifikalı", "Sıcak iklim uyumlu", "Cat ECF-1-A onaylı", "MB 228.3 onaylı"],
+      image: "/images/products/shell/rimula-r3plus-40.jpg",
   },
   "rimula-r4-x-15w-40": {
     name: "Shell Rimula R4 X 15W-40", grade: "15W-40", series: "Rimula R4 X", type: "Mineral",
@@ -181,6 +204,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Global DHD-1", "Caterpillar ECF-1-A", "Cummins CES 20078/20077", "DDC 93K215", "MACK EO-M+", "MAN 3275", "MB 228.3", "Renault Trucks RLD-2", "Volvo VDS-3"],
     description: "Cat ECF-1-A, Cummins CES 20078, MAN 3275, MB 228.3 ve Volvo VDS-3 onaylı dört mevsimlik mineral ağır hizmet motor yağı. İnşaat, maden ve ağır taşımacılık uygulamaları için.",
     features: ["Global DHD-1 uyumlu", "Cummins CES 20078 onaylı", "Volvo VDS-3 onaylı", "İnşaat/maden uygulamaları"],
+      image: "/images/products/shell/rimula-r4-x-15w-40.jpg",
   },
   "rimula-r4-l-15w-40": {
     name: "Shell Rimula R4 L 15W-40", grade: "15W-40", series: "Rimula R4 L", type: "Mineral",
@@ -188,6 +212,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Caterpillar ECF-1-A", "Cummins CES 20078/20077", "MACK EO-M/EO-M+", "MB 228.3", "Volvo VDS-3"],
     description: "Cat ECF-1-A, Cummins CES 20078, MACK EO-M+, MB 228.3 ve Volvo VDS-3 onaylı dört mevsimlik ağır hizmet dizel motor yağı. Zorlu koşullarda mükemmel motor temizliği ve koruma.",
     features: ["Cat ECF-1-A onaylı", "Cummins CES 20078 onaylı", "MB 228.3 onaylı", "Volvo VDS-3 onaylı"],
+      image: "/images/products/shell/rimula-r4-l-15w-40.png",
   },
   "rimula-r2-extra-15w-40": {
     name: "Shell Rimula R2 Extra 15W-40", grade: "15W-40", series: "Rimula R2 Extra", type: "Mineral",
@@ -195,6 +220,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["MAN 271", "MB 228.1", "Volvo VDS"],
     description: "MAN 271, MB 228.1 ve VDS onaylı mineral ağır hizmet dizel motor yağı. Üç bileşenli Multi Energy Protection formülü ile asit kontrolü, depo kontrolü ve aşınma koruması sağlar.",
     features: ["MAN 271 onaylı", "MB 228.1 onaylı", "Multi Energy Protection", "ACEA E2 uyumlu"],
+      image: "/images/products/shell/rimula-r2-extra-15w-40.jpg",
   },
   "rimula-r3-50": {
     name: "Shell Rimula R3 50", grade: "SAE 50", series: "Rimula R3", type: "Mineral",
@@ -202,6 +228,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Caterpillar ECF-1-A", "Cummins CES 20078/20077", "MACK EO-M/EO-M+", "MAN 3275", "MB 228.3", "Volvo VDS-3"],
     description: "SAE 50 tek dereceli mineral ağır hizmet dizel motor yağı. CI-4 ve ACEA E7/E5/E3 sertifikalı; en yüksek çalışma sıcaklıklarında ve ağır yük koşullarında üstün motor koruması.",
     features: ["CI-4 sertifikalı", "ACEA E7/E5/E3 uyumlu", "Maksimum yük koşulları", "Yüksek sıcaklık stabilitesi"],
+      image: "/images/products/shell/rimula-r3-50.jpg",
   },
   "helix-hx3-20w-50": {
     name: "Shell Helix HX3 20W-50", grade: "20W-50", series: "Helix HX3", type: "Mineral",
@@ -209,6 +236,7 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: [],
     description: "API SJ/CF sertifikalı mineral motor yağı. Karbüratörlü motorlar, doğal emişli dizel motorlar ve eski model araçlar için aktif temizleme teknolojisi ve oksidasyona karşı koruma sağlar.",
     features: ["API SJ/CF sertifikalı", "Karbüratörlü motor uyumlu", "Aktif temizleme teknolojisi", "Eski model araç uyumlu"],
+      image: "/images/products/shell/helix-hx3-20w-50.jpg",
   },
 };
 
@@ -1835,7 +1863,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
         <div className="container-xl relative z-10">
           <div className="flex flex-col md:flex-row items-center md:items-end gap-8">
 
-            {/* Styled product "image" */}
+            {/* Product image */}
+            {spec.image ? (
+              <div className="shrink-0 w-52 h-64 rounded-2xl overflow-hidden border-4 shadow-2xl bg-white flex items-center justify-center" style={{ borderColor: accent }}>
+                <Image src={spec.image} alt={spec.name} width={208} height={256} className="object-contain w-full h-full p-3" priority />
+              </div>
+            ) : (
             <div
               className="shrink-0 w-52 h-64 rounded-2xl flex flex-col items-center justify-center border-4 shadow-2xl"
               style={{ borderColor: accent, background: `linear-gradient(170deg, ${primary} 0%, ${secondary} 100%)` }}
@@ -1859,6 +1892,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 {translatedType}
               </span>
             </div>
+            )}
 
             <div className="text-white flex-1">
               <p className="text-sm font-semibold tracking-widest uppercase mb-2 opacity-70">{brandConfig.name}</p>
