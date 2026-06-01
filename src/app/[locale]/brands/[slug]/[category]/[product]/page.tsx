@@ -1817,9 +1817,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
   try {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const key = product as any;
-    translatedType = pd(`${key}.type`);
-    translatedDesc = pd(`${key}.description`);
-    translatedFeatures = [pd(`${key}.f0`), pd(`${key}.f1`), pd(`${key}.f2`), pd(`${key}.f3`)];
+    const maybeType = pd(`${key}.type`);
+    // next-intl returns the key path string when the key is missing instead of throwing
+    if (maybeType !== `${key}.type`) {
+      translatedType = maybeType;
+      translatedDesc = pd(`${key}.description`);
+      translatedFeatures = [pd(`${key}.f0`), pd(`${key}.f1`), pd(`${key}.f2`), pd(`${key}.f3`)];
+    }
   } catch {
     // fallback already set above
   }
