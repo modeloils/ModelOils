@@ -3,8 +3,9 @@ import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
 import { getTranslations,
   setRequestLocale} from "next-intl/server";
-import { ArrowLeft, ArrowRight, CheckCircle2, FileText } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import ProductImageLightbox from "./ProductImageLightbox";
 
 function toSlug(name: string) {
   return name
@@ -27,6 +28,7 @@ interface ProductSpec {
   description: string;
   features: string[];
   image?: string;
+  fullDescription?: string;
 }
 
 const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
@@ -36,7 +38,19 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: [],
     description: "API SP ve ACEA C5 sertifikalı, PurePlus teknolojisiyle doğal gazdan sentezlenen tam sentetik motor yağı. Pistonları endüstri standardına göre %50 daha temiz tutar ve yakıt ekonomisini artırır.",
     features: ["API SP sertifikalı", "PurePlus Teknolojisi", "ACEA C5 uyumlu", "Maksimum yakıt tasarrufu"],
-      image: "/images/products/shell/helix-ultra-sp-0w-20.jpg",
+    image: "/images/products/shell/helix-ultra-sp-0w-20.jpg",
+    fullDescription: `Motor üreticilerinin özel gereksinimlerini karşılamak üzere tasarlandı. Günümüz araçlarının, değişen taleplere ayak uyduran, performansı ve motor ömrünü artırmak için daha fazlasını yapan bir motor yağına ihtiyacı var. Bu nedenle Shell, patentli Shell PurePlus Teknolojisi ile doğal gazdan üretilen sentetik baz yağlar üretmenin tamamen yeni bir yolunu buldu.
+
+Shell Helix Ultra, benzersiz Shell PurePlus Teknolojisi kullanılarak formüle edilmiş, motorları temiz tutmaya aktif olarak yardımcı olan üst düzey bir motor yağı serisidir. Aktif Temizleme Teknolojisi her zaman Shell Helix'in kalbinde yer almıştır. Eşsiz Shell PurePlus Teknolojisi ile başlamak, ürünün daha da yüksek düzeyde temizlik ve koruma sağlamasına olanak tanır.
+
+PERFORMANS ÖZELLİKLERİ
+• Benzersiz aşınma ve çamur koruması
+• Pistonları endüstri standardına göre %50 daha temiz bırakır
+• Emisyonlarda buna karşılık gelen azalmayla birlikte gelişmiş yakıt ekonomisi
+
+STANDARTLAR VE SPESİFİKASYONLAR
+ACEA C5
+API SP`,
   },
   "helix-ultra-ect-c2-c3-0w-30": {
     name: "Shell Helix Ultra ECT C2-C3 0W-30", grade: "0W-30", series: "Helix Ultra ECT C2-C3", type: "Tam Sentetik",
@@ -44,7 +58,28 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["VW 504.00/507.00", "MB 229.52/229.51/229.31", "Fiat 9.55535-GS1/DS1", "Porsche C30"],
     description: "VW 504/507, MB 229.52, Fiat GS1/DS1 ve Porsche C30 onaylı tam sentetik motor yağı. DPF ve katalitik konvertör uyumlu düşük SAPS formülasyonu ile emisyon sistemlerini korur.",
     features: ["VW 504.00/507.00 onaylı", "MB 229.52/229.31 onaylı", "Porsche C30 onaylı", "Düşük SAPS / DPF uyumlu"],
-      image: "/images/products/shell/helix-ultra-ect-c2-c3-0w-30.jpg",
+    image: "/images/products/shell/helix-ultra-ect-c2-c3-0w-30.jpg",
+    fullDescription: `Tam sentetik motor yağı – Shell'den egzoz emisyon sistemleri için üstün koruma.
+
+Bu güne kadar en gelişmiş formülümüz olan Shell Helix Ultra ECT C2/C3 0W-30 ile motorunuza üstün performans ve koruma sağlayın. Yüksek kaliteli tam sentetik motor yağları portföyümüzün en yenisi, her zamankinden daha fazla performans sağladığı kanıtlandı. Emisyon Uyumlu Teknolojimiz (ECT) sayesinde Shell Helix Ultra ECT C2/C3 modern dizel ve benzinli motorların çoğunluğunda kirliliğin ve tortu birikmesinin önlenmesine yardımcı olmak için geliştirildi.
+
+Shell PurePlus Teknolojisiyle yüksek performanslı katık paketini birleştiren Shell Helix Ultra ECT C2/C3 daha da yüksek seviyede temizleme ve koruma sağlıyor.
+
+PERFORMANS ÖZELLİKLERİ
+• %2,6'ya kadar daha fazla yakıt ekonomisi
+• Korozyon aşınmasına karşı sektörün en son standardından 3 kata kadar daha iyi, eşsiz koruma
+• Aşınmaya karşı sektörün en son standardından 4 kata kadar daha iyi koruma
+• Sektör standardından %45'e kadar daha temiz pistonlar
+• Dizel partikül filtrelerini temiz tutmaya yardımcı olarak emisyon sistemlerini korur
+• Çamurlaşmaya karşı eşsiz koruma
+
+STANDARTLAR VE SPESİFİKASYONLAR
+ACEA C2, ACEA C3
+API SN
+VW 504.00/507.00
+MB 229.52, MB 229.51, MB 229.31
+Fiat 955535.GS1 & Fiat 955535.DS1
+Porsche C30`,
   },
   "helix-ultra-pro-af-5w-30": {
     name: "Shell Helix Ultra Pro AF 5W-30", grade: "5W-30", series: "Helix Ultra Pro AF", type: "Tam Sentetik",
@@ -52,7 +87,21 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Ford WSS-M2C913-C", "Ford WSS-M2C913-D", "Jaguar Land Rover STJLR.03.5003"],
     description: "Ford WSS-M2C913-C/D ve Jaguar Land Rover STJLR.03.5003 onaylı tam sentetik motor yağı. Ford ve Jaguar/Land Rover araçlarında uzun servis aralığı ve üstün koruma sağlar.",
     features: ["Ford WSS-M2C913-C/D onaylı", "Jaguar Land Rover onaylı", "A5/B5 uyumlu", "Uzun değişim aralığı"],
-      image: "/images/products/shell/helix-ultra-pro-af-5w-30.jpg",
+    image: "/images/products/shell/helix-ultra-pro-af-5w-30.jpg",
+    fullDescription: `Tam sentetik motor yağı – Motor üreticilerinin özel gereksinimlerini karşılamak üzere geliştirilmiştir.
+
+Özellikle yüksek performanslı motorların zor gereksinimlerini karşılayacak şekilde geliştirilmiştir. Buna Ford ve ACEA A5/B5 gereksinimleri dahildir.
+
+Shell ve Ford birçok ülkede yerel ilişkilere sahiptir ve Shell, Hindistan ve ABD'de Ford için önde gelen tedarikçidir.
+
+WSS-M2C913-C motor yağı spesifikasyonuna uygunluk için kapsamlı performans testlerinden geçmiştir.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+ACEA A5/B5
+API SL
+Ford WSS-M2C913-C
+Ford WSS-M2C913-D
+Jaguar Land Rover STJLR.03.5003`,
   },
   "helix-ultra-pro-ag-5w-30": {
     name: "Shell Helix Ultra Pro AG 5W-30", grade: "5W-30", series: "Helix Ultra Pro AG", type: "Tam Sentetik",
@@ -60,7 +109,22 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["GMW16177 (dexos2™)"],
     description: "GMW16177 (dexos2™) onaylı tam sentetik motor yağı. GM araçları için özel olarak formüle edilmiş; emisyon sonrası sistemleri korurken üstün motor temizliği ve yakıt ekonomisi sağlar.",
     features: ["dexos2™ onaylı", "ACEA C3 uyumlu", "GM araçları için özel", "Emisyon sistemi koruması"],
-      image: "/images/products/shell/helix-ultra-pro-ag-5w-30.jpg",
+    image: "/images/products/shell/helix-ultra-pro-ag-5w-30.jpg",
+    fullDescription: `Tam sentetik motor yağı – Motor üreticilerinin özel gereksinimlerini karşılamak üzere geliştirilmiştir.
+
+Günümüzün yüksek performanslı motorları, değişen ihtiyaçlara ayak uyduran ve motor performansını artırıp motor ömrünü uzatan bir motor yağına ihtiyaç duymaktadır. Shell'in, sentetik baz yağ üretiminde kullandığı patentli Shell PurePlus Teknolojisi ile doğal gazdan motor yağı geliştirmesinin nedeni budur.
+
+Shell Helix Ultra, motorların temiz kalmasına aktif olarak yardımcı olan bir motor yağı üretilmesini sağlayan eşsiz Shell PurePlus Teknolojisi ile geliştirilen yüksek performanslı motor yağı yelpazesidir. Aktif Temizleme Teknolojisi, Shell Helix'in her zaman merkezinde yer almıştır. Eşsiz Shell PurePlus Teknolojisi ile başlamak, ürünün çok daha yüksek temizleme ve koruma düzeyleri sağlamasını mümkün kılar.
+
+PERFORMANS ÖZELLİKLERİ
+• General Motors ile API SN veya ACEA C3 gerektirenler de dahil olmak üzere, özellikle yüksek performanslı motorların zorlu gereksinimlerini karşılayacak şekilde geliştirilmiştir
+• Shell ile General Motors arasındaki yıllar süren teknolojik işbirliği ve yağlayıcı araştırma çalışmalarıyla geliştirilmiştir
+• GMW16177 (dexos2™) motor yağı spesifikasyonuna uygunluk için kapsamlı performans testlerinden geçmiştir
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SN
+ACEA C3
+GMW16177 (dexos2™)`,
   },
   "helix-ultra-pro-ar-l-5w-30": {
     name: "Shell Helix Ultra Pro AR-L 5W-30", grade: "5W-30", series: "Helix Ultra Pro AR-L", type: "Tam Sentetik",
@@ -68,7 +132,23 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Renault RN0720"],
     description: "Renault RN0720 onaylı ve ACEA C4 uyumlu tam sentetik motor yağı. DPF filtreli Renault ve Nissan benzinli/dizel motorlar için özel olarak formüle edilmiştir.",
     features: ["Renault RN0720 onaylı", "ACEA C4 uyumlu", "DPF filtreli motorlar için", "Renault/Nissan özel"],
-      image: "/images/products/shell/helix-ultra-pro-ar-l-5w-30.jpg",
+    image: "/images/products/shell/helix-ultra-pro-ar-l-5w-30.jpg",
+    fullDescription: `Dizel partikül filtreli olanlar da dahil, tüm Renault ve Nissan benzinli ve dizel motorlara en yüksek koruma sağlamak üzere özel olarak dizayn edilmiş en son nesil tam sentetik motor yağıdır. Üretiminde kullanılan aktif temizleme teknolojisi, kurum ve tortu oluşumunu engellediğinden, motor performansını bir sonraki yağ değişimine kadar maksimum seviyede tutar.
+
+Shell şu anda Renault-Nissan ittifakının bir numaralı küresel madeni yağ tedarikçisidir. Motor yağı spesifikasyonu Renault RN0720 karşılamak için kapsamlı performans testlerinden geçmiştir.
+
+PERFORMANS ÖZELLİKLERİ
+• Emisyon sistemini korur: Düşük SAPS özelliği sayesinde, üç yollu katalizör sistemine sahip benzinli motorların ömrünü uzatır. Partikül filtreli dizel motorlar için de uygundur.
+• Aktif temizleme teknolojisiyle üretilmiştir: Kirli motorlardan tortu birikimini temizlemede mineral yağlardan daha etkilidir.
+• Yüksek oksidasyon kararlılığı: Bir sonraki yağ değişimine kadar yağdaki bozunmayı önler.
+• Özel olarak seçilmiş sentetik baz yağ: Yağın uçuculuğunu, dolayısıyla yağ tüketimini azaltır.
+• Yüksek yırtılma direnci: Bir sonraki yağ değişimine kadar viskozitesini ve sınıfının özelliklerini korur.
+• Çevre koruma: CO2 egzoz emisyonlarını azaltmak üzere özel olarak formüle edilmiştir.
+• Titreşimi ve motor gürültüsünü en aza indirir: Daha pürüzsüz, daha sessiz bir sürüş.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+ACEA C4
+Renault RN0720`,
   },
   "helix-ultra-pro-am-l-5w-30": {
     name: "Shell Helix Ultra Pro AM-L 5W-30", grade: "5W-30", series: "Helix Ultra Pro AM-L", type: "Tam Sentetik",
@@ -76,7 +156,24 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["BMW LL-04", "MB 229.51", "Maserati"],
     description: "BMW LL-04 ve MB 229.51 onaylı tam sentetik motor yağı. BMW ve Mercedes-Benz premium araçlarında üst düzey motor koruması ve uzun değişim aralığı sağlar.",
     features: ["BMW LL-04 onaylı", "MB 229.51 onaylı", "Premium araç formülasyonu", "Uzun değişim aralığı"],
-      image: "/images/products/shell/helix-ultra-pro-am-l-5w-30.jpg",
+    image: "/images/products/shell/helix-ultra-pro-am-l-5w-30.jpg",
+    fullDescription: `Tam sentetik motor yağı – Motor üreticilerinin özel gereksinimlerine uygun olarak geliştirilmiştir.
+
+Otomotiv teknolojisindeki güncel gelişmeler nedeniyle günümüzün araçları, motor ömrünü uzatmak ve performansı artırmak gibi farklı taleplere yanıt verebilecek motor yağlarına ihtiyaç duyuyorlar.
+
+Shell Helix Ultra, motorların temiz kalmasına yardımcı olan bir motor yağı üretilmesini sağlayan eşsiz Shell PurePlus Teknolojisi ile geliştirilen yüksek performanslı bir ürün grubudur. Aktif Temizleme Teknolojisinin Shell PurePlus Teknolojisi ile eşsiz birleşimi sonucu üstün temizlik ve koruma sağlayan bir motor yağı üretiriz.
+
+PERFORMANS ÖZELLİKLERİ
+• Mercedes-Benz ve BMW ile API SN/CF veya ACEA C3 dahil olmak üzere, özellikle yüksek performanslı motorların zorlu gereksinimlerini karşılayacak şekilde geliştirilmiştir
+• Shell ve Mercedes-Benz arasında teknik iş birlikteliği olup araştırma ve geliştirme projeleri yürütülmektedir
+• MB 229.51 spesifikasyonuna uygunluk için kapsamlı performans testlerinden geçmiştir
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SN/CF
+ACEA C3
+BMW LL-04
+MB 229.51
+Maserati`,
   },
   "helix-ultra-pro-ap-l-5w-30": {
     name: "Shell Helix Ultra Pro AP-L 5W-30", grade: "5W-30", series: "Helix Ultra Pro AP-L", type: "Tam Sentetik",
@@ -84,7 +181,23 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["PSA B71 2290", "Fiat 9.55535-S1", "IVECO 18-1811 SP"],
     description: "PSA B71 2290, Fiat 9.55535-S1 ve IVECO 18-1811 SP onaylı tam sentetik motor yağı. PSA grubu ve IVECO ticari araçlarında emisyon sistemi koruması sağlar.",
     features: ["PSA B71 2290 onaylı", "Fiat 9.55535-S1 onaylı", "IVECO onaylı", "ACEA C2 uyumlu"],
-      image: "/images/products/shell/helix-ultra-pro-ap-l-5w-30.png",
+    image: "/images/products/shell/helix-ultra-pro-ap-l-5w-30.png",
+    fullDescription: `Tam sentetik motor yağı – motor üreticilerinin özel gereksinimlerine uygun olarak geliştirilmiştir.
+
+Günümüzün yüksek performanslı motorları, değişen ihtiyaçlara ayak uyduran ve motor performansını artırıp motor ömrünü uzatan bir motor yağına ihtiyaç duymaktadır. Shell'in, sentetik baz yağ üretiminde kullandığı patentli Shell PurePlus Teknolojisi ile doğal gazdan motor yağı geliştirmesinin nedeni budur.
+
+Shell Helix Ultra, motorların temiz kalmasına aktif olarak yardımcı olan bir motor yağı üretilmesini sağlayan eşsiz Shell PurePlus Teknolojisi ile geliştirilen birinci kalite motor yağı yelpazesidir. Aktif Temizleme Teknolojisi, Shell Helix'in her zaman odağında yer almıştır.
+
+PERFORMANS ÖZELLİKLERİ
+• Peugeot, Citroën ve Fiat ile ACEA C2 gereksinimleri dahil olmak üzere, özellikle yüksek performanslı motorların zor gereksinimlerini karşılayacak şekilde geliştirilmiştir
+• Shell, Avrupa ve Hindistan'da birçok PSA servisinde servis dolum motor yağları tedarik etmektedir
+• Fiat 9.55535-S1 ve PSA B71 2290 motor yağı spesifikasyonlarına uygunluk için kapsamlı performans testlerinden geçmiştir
+
+STANDARTLAR VE SPESİFİKASYONLAR
+ACEA C2
+PSA B71 2290
+Fiat 9.55535-S1
+IVECO 18-1811 SP`,
   },
   "helix-ultra-ect-multi-5w-30": {
     name: "Shell Helix Ultra ECT Multi 5W-30", grade: "5W-30", series: "Helix Ultra ECT Multi", type: "Tam Sentetik",
@@ -92,7 +205,30 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["BMW LL-04", "MB 229.51", "VW 504.00/507.00", "PSA Service Fill"],
     description: "BMW LL-04, MB 229.51 ve VW 504.00/507.00 onaylı katalitik konvertör ve DPF uyumlu tam sentetik motor yağı. Aktif temizleme teknolojisi mineral yağlara göre 5 kat daha etkin çalışır.",
     features: ["BMW LL-04 onaylı", "VW 504.00/507.00 onaylı", "Düşük SAPS formülasyon", "DPF koruması"],
-      image: "/images/products/shell/helix-ultra-ect-multi-5w-30.jpg",
+    image: "/images/products/shell/helix-ultra-ect-multi-5w-30.jpg",
+    fullDescription: `Shell Helix Ultra ECT 5W-30 (eski adıyla Shell Helix Ultra Extra 5W-30), egzoz gazı resirkülasyon sistemleri, pozitif karter havalandırması, katalitik konverterler ve partiküler filtreler ile donatılmış tüm yakıt enjeksiyonlu motorlar için üretilmiştir.
+
+Partiküler filtreler, geleneksel motor yağları tarafından hasar görebilir. Bu ürün, kir ve çamur birikimini sürekli önleyen Shell'nin premium aktif temizleme teknolojisine sahipken filtreleri korur ve maksimum performans ile koruma sağlar. Formül, mineral yağlara kıyasla çamur giderimi konusunda 5 kat daha etkilidir.
+
+PERFORMANS ÖZELLİKLERİ
+• Düşük SAP (Sülfatlı Kül, Fosfor, Kükürt) formülasyonu emisyon sistemlerini korur
+• Shell'nin üstün aktif temizleme teknolojisi
+• Uzatılmış oksidasyon stabilitesi
+• Düşük viskozite sayesinde hızlı yağ akışı ve azaltılmış sürtünme
+• Yüksek aşınma direnci
+• Özel olarak seçilmiş sentetik baz yağlar
+• Titreşim ve motor gürültüsünü azaltır
+• Egzoz sonrası arıtma sistemlerinin ömrünü uzatır
+• Rakip sentetik markalarla karşılaştırıldığında yaklaşık %37 daha fazla koruma
+• Geliştirilmiş yakıt verimliliği ve iyileştirilmiş soğuk çalışma
+• Yağ değişim aralıkları boyunca viskoziteyi korur
+
+STANDARTLAR VE SPESİFİKASYONLAR
+ACEA C2/C3
+BMW LL-04
+MB 229.51
+VW 504.00/507.00
+PSA Service Fill`,
   },
   "rimula-r6-lme-5w-30": {
     name: "Shell Rimula R6 LME 5W-30", grade: "5W-30", series: "Rimula R6 LME", type: "Tam Sentetik",
@@ -100,7 +236,28 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["MB 228.5", "MAN 3277", "Volvo VDS-3", "Scania LDF-2", "Renault Trucks RXD", "Cummins CES 20072", "MTU Category 3"],
     description: "MB 228.5, MAN 3277, Volvo VDS-3 ve Scania LDF-2 onaylı tam sentetik ağır hizmet dizel motor yağı. Düşük emisyonlu motorlarda uzatılmış değişim aralığı sağlar.",
     features: ["MB 228.5 onaylı", "Scania LDF-2 onaylı", "Volvo VDS-3 onaylı", "Uzatılmış değişim aralığı"],
-      image: "/images/products/shell/rimula-r6-lme-5w-30.jpg",
+    image: "/images/products/shell/rimula-r6-lme-5w-30.jpg",
+    fullDescription: `Düşük emisyon, bakım masraflarından tasarruf ve enerji tasarrufu.
+
+Shell Rimula ağır hizmet dizel motor yağlarının Enerjili Koruması üç ayrı kritik alanda faaliyet gösterir:
+1. Asit kontrolü – kesin olarak kanıtlanmış performans katkıları, yakıt yandığı zaman oluşan asitlerden kaynaklanan korozyona karşı koruma sağlar.
+2. Tortu kontrolü – motoru sürekli performans ve uzun ömür sağlayacak şekilde temiz tutar.
+3. Aşınma kontrolü – hareketli metal motor parçalarını birbirinden ayrı tutarak motor ömrünü uzatır.
+
+Shell Rimula R6 LME, motorun değişen ihtiyaçlarına karşılık verecek şekilde kimyasal ve fiziksel olarak adapte olan eşsiz bir teknolojiden yararlanmaktadır. Sentetik baz yağ teknolojisi, eşsiz katkı teknolojisi ve özel bir aşınma önleyici takviye sisteminin birleşimi, dayanıklılıktan ödün vermeden üstün performans, uzun yağ değiştirme aralığı ve yakıt tasarrufu kapasitesi sağlar.
+
+ENERJI TASARRUFU
+İngiltere'nin lider süpermarketlerinden birisindeki kamyon filosuyla yapılan denemelerde müşteri, Shell Rimula R6 LME'nin tipik bir 10W-40 yağına kıyasla 100.000 km'lik bir yağ değiştirme aralığında %2,0'ye kadar yakıt tasarrufu gerçekleştirdiğini teyit etmiştir.
+
+BAKIM TASARRUFLARI
+MB OM501 motor testinde referans yağın piston temizliğinden %25 daha iyi bir temizlik sağlamıştır. Mercedes-Benz ve diğerleri tarafından uzun yağ değiştirme uygulaması için onaylanmıştır.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+SAE 5W-30
+ACEA E6, E7
+Cummins CES 20077
+MAN M3477
+MB 228.51`,
   },
   "helix-ultra-5w-40": {
     name: "Shell Helix Ultra 5W-40", grade: "5W-40", series: "Helix Ultra", type: "Tam Sentetik",
@@ -108,7 +265,38 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Ferrari", "Porsche", "BMW Longlife '98", "MB 229.3", "VW 500.00/502.00/505.00", "SAAB"],
     description: "Ferrari, Porsche, BMW LL-98 ve MB 229.3 onaylı üst segment tam sentetik motor yağı. Benzinli, dizel ve LPG motorlarda yüksek performans ve kapsamlı koruma sağlar.",
     features: ["Ferrari ve Porsche onaylı", "BMW LL-98 onaylı", "MB 229.3 onaylı", "Çok yakıt tipi uyumlu"],
-      image: "/images/products/shell/helix-ultra-5w-40.jpg",
+    image: "/images/products/shell/helix-ultra-5w-40.jpg",
+    fullDescription: `Kullanıcılarına yüksek performanslı sürüş sağlayan eşsiz bir formülasyona sahip tam sentetik motor yağıdır. Shell'in Formula 1 yarışlarındaki deneyimleri ile geliştirilmiş, en zorlu sürüş şartlarında test edilmiş ve performansı onaylanmıştır. Shell Helix Ultra, Ferrari tarafından onay verilen tek motor yağıdır.
+
+UYGULAMALAR
+• Benzinli, dizel ve LPG ile çalışan tüm doğal aspirasyonlu, enjeksiyonlu, turboşarjlı ve çok valfli motorlarda kullanılabilir.
+
+PERFORMANS ÖZELLİKLERİ
+• Çok yüksek koruma, mükemmel temizleme ve uzun motor ömrü
+• Formula 1 teknolojisi ile geliştirilmiş
+• Geliştirilmiş yakıt ekonomisi ve düşük sıcaklık performansı
+• Düşük yağ tüketimi: özel sentetik baz yağı sayesinde düşük uçuculuk
+• Katalitik konvertörlü ve turboşarjlı araçlarda etkin koruma
+• Çok yüksek devirli sürüş şartlarında ve şehir içi dur-kalk kullanımında üstün performans
+
+TİPİK FİZİKSEL ÖZELLİKLER
+Kinematik Viskozite @ 40°C: 75,4 mm²/s
+Kinematik Viskozite @ 100°C: 13,16 mm²/s
+Viskozite İndeksi: 178
+Yoğunluk @ 15°C: 851 kg/m³
+Parlama Noktası: 217°C
+Akma Noktası: -39°C
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SL/CF
+ACEA A3/B3/B4-98
+Ferrari Onaylı
+VW 500.00, 502.00, 505.00
+Porsche Onaylı
+BMW Longlife '98
+Peugeot-Citroën PSA E ve D
+Mercedes-Benz 229.3
+SAAB`,
   },
   "helix-hx8-5w-30": {
     name: "Shell Helix HX8 5W-30", grade: "5W-30", series: "Helix HX8", type: "Tam Sentetik",
@@ -116,7 +304,25 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["BMW LL-01", "MB 229.5", "VW 502.00/505.00", "Renault RN0700/RN0710"],
     description: "BMW LL-01, MB 229.5 ve VW 502.00/505.00 onaylı tam sentetik motor yağı. Aktif temizleme teknolojisiyle kiri konvansiyonel yağlara göre 4 kat daha etkin giderir.",
     features: ["BMW LL-01 onaylı", "MB 229.5 onaylı", "VW 502/505 onaylı", "Aktif temizleme teknolojisi"],
-      image: "/images/products/shell/helix-hx8-5w-30.jpg",
+    image: "/images/products/shell/helix-hx8-5w-30.jpg",
+    fullDescription: `Tam sentetik motor yağı – modern araçlarda maksimum performans için mühendislik.
+
+Shell Helix HX8 5W-30, yaklaşık 4 kat daha etkili olan üstün aktif temizleme teknolojisi ile kirli motorlardan tortu ve kiri temizler. Uzatılmış oksidasyon stabilitesi ile uzun servis aralıklarında üstün oksidasyon direnci ve uzatılmış koruma sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Rakip tam sentetik ürünlere kıyasla yaklaşık %35 daha yüksek koruma
+• Hızlı yağ akışını kolaylaştırır ve soğuk startları iyileştirmek için sürtünmeyi azaltır
+• Zararlı tortu birikintilerini (soot, vernik, yüksek sıcaklık kalıntıları) motor bileşenlerine birikmeden önler
+• Koruyucu film katmanı oluştururken yanma artıklarından kaynaklanan asidik yan ürünleri nötralize eder
+• Geliştirilmiş yakıt ekonomisi
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SM/CF
+ACEA A3/B3/B4
+BMW LL-01
+Mercedes-Benz 229.5
+VW 502.00/505.00
+Renault RN0700, RN0710`,
   },
   "helix-hx8-5w-40": {
     name: "Shell Helix HX8 5W-40", grade: "5W-40", series: "Helix HX8", type: "Tam Sentetik",
@@ -124,7 +330,21 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["MB 229.3", "VW 502.00/505.00", "Renault RN0700/RN0710", "Fiat 9.55535-N2", "Fiat 9.55535-M2"],
     description: "MB 229.3, VW 502.00/505.00 ve Fiat 9.55535-N2/M2 onaylı tam sentetik motor yağı. Benzinli, dizel ve LPG motorlarda geniş sıcaklık yelpazesinde üstün koruma sağlar.",
     features: ["MB 229.3 onaylı", "Fiat 9.55535-N2/M2 onaylı", "Benzinli/Dizel/LPG uyumlu", "Üstün aşınma koruması"],
-      image: "/images/products/shell/helix-hx8-5w-40.jpg",
+    image: "/images/products/shell/helix-hx8-5w-40.jpg",
+    fullDescription: `Tam sentetik motor yağı – üstün performans, temizlik ve motor koruması.
+
+• En zorlu sürüş şartlarında bile aşınmaya karşı koruma sağlayarak motor ömrünün uzatılmasına yardımcı olur
+• Araç üreticileri tarafından tavsiye edilen tüm yağ değiştirme aralıklarına uygundur
+• Düşük yağ tüketimi sağlar
+• Benzinli, dizel ve gazlı motorlarda kullanılabilir; biyodizel ve benzin/etanol karışımları için de uygundur
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SN/CF
+ACEA A3/B3, A3/B4
+MB 229.3
+VW 502.00/505.00
+Renault RN0700, RN0710
+Fiat 9.55535-N2 ve 9.55535-M2`,
   },
   "rimula-r6-m-10w-40": {
     name: "Shell Rimula R6 M 10W-40", grade: "10W-40", series: "Rimula R6 M", type: "Tam Sentetik",
@@ -132,7 +352,30 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Cummins CES 20072", "MAN 3277", "MB 228.5", "MTU Category 3", "Renault Trucks RXD", "Scania LDF-2", "Volvo VDS-3"],
     description: "Cummins, MAN 3277, MB 228.5, Scania LDF-2 ve Volvo VDS-3 onaylı tam sentetik ağır hizmet dizel motor yağı. Euro 2-4 motorlar için uzatılmış servis aralığı ve yakıt tasarrufu.",
     features: ["Volvo VDS-3 onaylı", "Scania LDF-2 onaylı", "MB 228.5 onaylı", "Uzatılmış değişim aralığı"],
-      image: "/images/products/shell/rimula-r6-m-10w-40.png",
+    image: "/images/products/shell/rimula-r6-m-10w-40.png",
+    fullDescription: `Tam Sentetik Ağır Hizmet Dizel Motor Yağı.
+
+UYGULAMALAR
+Mercedes-Benz, MAN, DAF, Volvo ve diğer düşük emisyonlu motorlara sahip araçların taşımacılık uygulamalarında kullanılır. Ayrıca Volvo, Renault, DAF, Scania gibi Avrupalı üreticilerin; Cummins, Mack gibi Amerikalı üreticilerin ve birçok Japon motor üreticisinin performans kriterlerini karşılar veya aşar.
+
+Shell Rimula R6 M, birçok Avrupalı motor üreticisinin Euro 2, Euro 3 ve bazı Euro 4 motor uygulamalarının gereksinimlerini karşılar. Özellikle dizel partikül filtresi (DPF) ile donatılmış motorlar için Shell Rimula R6 LM/LME'nin kullanımı tavsiye edilmektedir.
+
+PERFORMANS ÖZELLİKLERİ
+• Bakım maliyetlerinde azalma
+• Üstün piston temizliği: Geliştirilmiş katık teknolojisi ile uzun motor ömrü için yüksek seviyede piston temizliği sağlanır
+• Düşük aşınma – uzun motor ömrü: Silindir yüzeyi perdahlanmasını ve supap grubu aşınmasını kontrol eder
+• Yakıt ekonomisi: Yüksek viskozite sınıfındaki yağlarla kıyaslandığında yakıt tüketimini azaltır
+
+STANDARTLAR VE SPESİFİKASYONLAR
+ACEA E7, E4
+API CF
+Cummins CES 20072
+MAN 3277
+Mercedes-Benz 228.5
+MTU Category 3
+Renault Trucks RXD
+Scania LDF-2
+VOLVO VDS-3`,
   },
   "rimula-r6-lm-10w-40": {
     name: "Shell Rimula R6 LM 10W-40", grade: "10W-40", series: "Rimula R6 LM", type: "Tam Sentetik",
@@ -140,7 +383,30 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Caterpillar ECF-1-A", "Cummins CES 20077", "MAN 3477/3271", "MB 228.51/226.9", "MTU Category 3.1", "Renault Trucks RD-2", "Volvo VDS-2"],
     description: "Cat ECF-1-A, Cummins CES 20077, MAN 3477, MB 228.51 ve Volvo VDS-2 onaylı düşük SAPS tam sentetik motor yağı. DPF uyumlu; emisyon sonrası arıtma sistemli araçlar için idealdir.",
     features: ["Cat ECF-1-A onaylı", "MB 228.51 onaylı", "Düşük SAPS / DPF uyumlu", "Volvo VDS-2 onaylı"],
-      image: "/images/products/shell/rimula-r6-lm-10w-40.png",
+    image: "/images/products/shell/rimula-r6-lm-10w-40.png",
+    fullDescription: `Shell Rimula R6 LM, ağır yük dizel motorları için tasarlanmış yenilikçi bir teknoloji çözümüdür. Üç kritik alanda koruma sağlar:
+
+1. Asit kontrolü – yakıt yanması sırasında oluşan asitlerden kaynaklanan korozyona karşı koruma
+2. Tortu kontrolü – motoru temiz tutarak sürekli performans ve uzun ömür sağlama
+3. Aşınma kontrolü – hareketli metal parçaları birbirinden ayrı tutarak motor ömrünü uzatma
+
+BAŞLICA ÖZELLİKLER
+• Düşük Emisyon: Egzoz sistemi performansını ve ömrünü koruyan katalist ve parçacık filtresi uyumluluğu
+• Bakım Masraflarından Tasarruf: Uzun yağ değiştirme kapasitesi ve çok yönlülük sayesinde işletme maliyetlerini azaltma
+• Koruyucu Güç: Sentetik baz yağlar, eşsiz katkı teknolojisi ve özel aşınma önleyici desteği kombinasyonu
+
+Ürün, kamyon ve otobüs filosu işletmecilerinin ihtiyaçlarını karşılamak üzere tasarlanmıştır. Dizel ve CNG motorları ile çalışan araçlar için uygun olup, dizel parçacık filtresi (DPF) takılı taşıtlar için özellikle önerilir.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+SAE 10W-40
+ACEA E7, E6, E4-99
+API CI-4, CH-4, CG-4, CF-4
+Caterpillar ECF-1-A
+Cummins CES 20077
+Mercedes-Benz 228.51, 226.9
+MAN 3477, 3271-1
+Volvo CNG, VDS-2
+Mack EO-M+`,
   },
   "rimula-r5-e-10w-40": {
     name: "Shell Rimula R5 E 10W-40", grade: "10W-40", series: "Rimula R5 E", type: "Yarı Sentetik",
@@ -148,7 +414,20 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: [],
     description: "Enerji tasarrufu sağlayan yarı sentetik ağır hizmet dizel motor yağı. Modern motor teknolojisine uygun çoklu filo uyumluluğu ile tüm basınç ve sıcaklık koşullarında üstün koruma.",
     features: ["Enerji tasarrufu teknolojisi", "Çoklu filo uyumluluğu", "Üstün aşınma koruması", "Uzun motor ömrü"],
-      image: "/images/products/shell/rimula-r5-e-10w-40.png",
+    image: "/images/products/shell/rimula-r5-e-10w-40.png",
+    fullDescription: `Dinamik Koruma (Energised Protection) yağları, modern motorlardaki tüm basınç ve sıcaklık aralıklarına uyum göstererek koruma sağlayacak yüksek performanslı katıklardan formüle edilmiştir.
+
+Özellikle farklı markalarda araçlara sahip filolar için tek tip bir yağ olup sentetik baz yağ teknolojisi ile geliştirilmiş olması sayesinde enerji tasarrufu, yakıt ekonomisi, aşınmaya karşı üstün koruma ve mükemmel kurum ve viskozite kontrolü özelliklerine sahiptir.
+
+PERFORMANS ÖZELLİKLERİ
+• Enerji tasarrufu yeteneği ve geliştirilmiş yakıt ekonomisi
+• Üstün aşınma koruması
+• Mükemmel tortu ve viskozite kontrolü
+• Çoklu filo uyumluluğu – farklı marka araçlar için tek yağ
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CI-4
+ACEA E7`,
   },
   "helix-hx7-10w-40": {
     name: "Shell Helix HX7 10W-40", grade: "10W-40", series: "Helix HX7", type: "Yarı Sentetik",
@@ -156,7 +435,16 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: [],
     description: "API SM/CF ve ACEA A3/B3/B4 sertifikalı yarı sentetik motor yağı. Özel aktif temizleme teknolojisi ile kir ve çamur oluşumunu sürekli olarak önler, motor yanıt süresini iyileştirir.",
     features: ["Aktif temizleme teknolojisi", "A3/B3/B4 uyumlu", "Benzinli/Dizel uyumlu", "Geliştirilmiş motor yanıtı"],
-      image: "/images/products/shell/helix-hx7-10w-40.jpg",
+    image: "/images/products/shell/helix-hx7-10w-40.jpg",
+    fullDescription: `Shell Helix HX7, özel aktif temizleme teknolojisi ile formüle edilmiştir. Geleneksel motor yağlarına kıyasla üstün koruma sağlayarak kir ve çamur oluşumunu sürekli olarak engeller, sonraki planlanan yağ değişimine kadar daha iyi motor tepkisine izin verir.
+
+UYGULAMALAR
+• API SM/CF ve ACEA A3/B3/B4 performans sınıflandırmaları gerektiren araçlar için uygundur
+• Pozitif karter havalandırmalı ve katalitik dönüştürücü takılmış gazlı ya da yakıt enjeksiyonlu benzinli motorlar
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SM/CF
+ACEA A3/B3/B4`,
   },
   "helix-hx6-10w-40": {
     name: "Shell Helix HX6 10W-40", grade: "10W-40", series: "Helix HX6", type: "Yarı Sentetik",
@@ -164,7 +452,17 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["MB 229.3", "VW 502.00/505.00", "Renault RN0700"],
     description: "MB 229.3, VW 502.00/505.00 ve Renault RN0700 onaylı yarı sentetik motor yağı. Çamur ve aşınmaya karşı üstün koruma; modern benzinli ve dizel motorlar için uygundur.",
     features: ["MB 229.3 onaylı", "VW 502/505 onaylı", "Renault RN0700 onaylı", "Çamur ve aşınma koruması"],
-      image: "/images/products/shell/helix-hx6-10w-40.jpg",
+    image: "/images/products/shell/helix-hx6-10w-40.jpg",
+    fullDescription: `Sentetik teknoloji motor yağı – tortu ve aşınmaya karşı koruma sağlamaya yardımcı olur.
+
+Tek başına mineral yağlardan elde edilemeyecek yüksek performans seviyelerine ulaşmak için hem sentetik hem de mineral baz yağlardan yararlanılır. Aşınmaya karşı koruma sağlayarak motor ömrünü uzatmaya yardımcı olur. Yağ değiştirme aralığının tamamında korumanın devam etmesine yardımcı olur. Benzinli, dizel ve gazlı motorlarda kullanılabilir; biyodizel ve benzin/etanol karışımları için de uygundur.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SN/CF
+ACEA A3/B3, A3/B4
+MB 229.3
+VW 502.00/505.00
+Renault RN0700`,
   },
   "rimula-r3plus-10w": {
     name: "Shell Rimula R3+ 10W", grade: "10W", series: "Rimula R3+", type: "Mineral",
@@ -172,7 +470,34 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Caterpillar ECF-1-A", "Cummins CES 20078/20077", "DDC 93K215", "MACK EO-M/EO-M+", "MAN 3275", "MB 228.3", "Renault Trucks RLD-2", "Volvo VDS-3"],
     description: "CI-4 ve ACEA E7/E5/E3 sertifikalı tek dereceli mineral ağır hizmet dizel motor yağı. Cat ECF-1-A, MB 228.3 ve Volvo VDS-3 onaylı; inşaat ve maden uygulamaları için.",
     features: ["Cat ECF-1-A onaylı", "MB 228.3 onaylı", "Volvo VDS-3 onaylı", "Yüksek sıcaklık stabilitesi"],
-      image: "/images/products/shell/rimula-r3plus-10w.jpg",
+    image: "/images/products/shell/rimula-r3plus-10w.jpg",
+    fullDescription: `Dört Mevsimlik Ağır Hizmet Dizel Motor Yağı
+• BENZERSİZ AKTİF TEKNOLOJİ
+• GELİŞMİŞ MOTORLAR YÜKSEK GÜÇ KULLANIMI
+
+Shell Rimula R3 10W, Dinamik Koruma (Energised Protection) yağları, gelişmiş motorlarda bulunan tüm basınç ve sıcaklık aralıklarında - pistonlardaki yüksek sıcaklıklardan, supap gruplarındaki son derece ağır yüklere kadar - motoru koruyacak ve şartlara uyum sağlayacak yüksek performanslı katıkları içermektedir. Özellikle farklı marka araçlara sahip filolar için tek tip yağ olup ekstra aktif katıklar sayesinde yüksek performanslı motorlarda oluşabilen zararlı kurumu ve partikülleri kontrol edip uzaklaştırarak mükemmel kurum ve viskozite kontrolü, aşınmaya karşı üstün koruma sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel Koruma: Özel katık teknolojisi ile Euro 3, US 2002 ve diğer geliştirilmiş motorlarda kuruma karşı maksimum koruma, mükemmel aşınma koruması ve uzun yağ ömrü sağlar.
+• Tüm Uygulamalar için İspatlanmış Performans: Madencilik ve inşaat uygulamalarından ağır hizmet nakliyecilik uygulamalarına kadar dünyanın en zorlu ortamlarında test edilmiştir.
+• Geliştirilmiş Motor Temizliği: Özel katık sistemi, piston depozitlerine karşı geliştirilmiş motor temizliği ve koruması sağlar.
+
+UYGULAMALAR
+Zorlu Şartlar - Ağır Hizmet Dizel Motorlar: Shell Rimula R3 10W, Avrupa, ABD ve Japonya üretimi olan son teknoloji, yüksek güçlü, ağır hizmet dizel motorların karayolu ve iş makinası uygulamalarında üstün koruma ve performans sağlar.
+Yüksek Teknolojili Düşük Emisyonlu Motorlar: Euro 2, Euro 3 ve US 2002 gibi birçok gelişmiş, düşük emisyonlu motorlarda kullanıma uygundur.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CI-4, CH-4, CG-4, CF-4, CF
+ACEA E7, E5, E3
+Global DHD-1
+Caterpillar ECF-1-A
+Cummins CES 20078, 77, 76, 75, 72, 71
+DDC 93K215
+MACK EO-M, EO-M+
+MAN 3275
+Mercedes-Benz 228.3
+Renault Trucks RLD-2
+VOLVO VDS-3`,
   },
   "rimula-r3plus-30": {
     name: "Shell Rimula R3+ 30", grade: "SAE 30", series: "Rimula R3+", type: "Mineral",
@@ -180,7 +505,34 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Caterpillar ECF-1-A", "Cummins CES 20078/20077", "DDC 93K215", "MACK EO-M/EO-M+", "MAN 3275", "MB 228.3", "Renault Trucks RLD-2", "Volvo VDS-3"],
     description: "SAE 30 tek dereceli mineral ağır hizmet dizel motor yağı. CI-4 ve ACEA E7/E5/E3 sertifikalı; yüksek sıcaklıklı çalışma ortamları ve büyük hacimli motorlar için optimize edilmiştir.",
     features: ["CI-4 sertifikalı", "E7/E5/E3 uyumlu", "MB 228.3 onaylı", "Volvo VDS-3 onaylı"],
-      image: "/images/products/shell/rimula-r3plus-30.jpg",
+    image: "/images/products/shell/rimula-r3plus-30.jpg",
+    fullDescription: `Dört Mevsimlik Ağır Hizmet Dizel Motor Yağı
+• BENZERSİZ AKTİF TEKNOLOJİ
+• GELİŞMİŞ MOTORLAR YÜKSEK GÜÇ KULLANIMI
+
+Shell Rimula R3 +30, Dinamik Koruma (Energised Protection) yağları, gelişmiş motorlarda bulunan tüm basınç ve sıcaklık aralıklarında - pistonlardaki yüksek sıcaklıklardan, supap gruplarındaki son derece ağır yüklere kadar - motoru koruyacak ve şartlara uyum sağlayacak yüksek performanslı katıkları içermektedir. Özellikle farklı marka araçlara sahip filolar için tek tip yağ olup ekstra aktif katıklar sayesinde yüksek performanslı motorlarda oluşabilen zararlı kurumu ve partikülleri kontrol edip uzaklaştırarak mükemmel kurum ve viskozite kontrolü, aşınmaya karşı üstün koruma sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel Koruma: Shell Rimula R3 +30, özel katık teknolojisi ile Euro 3, US 2002 ve diğer geliştirilmiş motorlarda kuruma karşı maksimum koruma, mükemmel aşınma koruması ve uzun yağ ömrü sağlar.
+• Tüm Uygulamalar için İspatlanmış Performans: Madencilik ve inşaat uygulamalarından ağır hizmet nakliyecilik uygulamalarına kadar dünyanın en zorlu ortamlarında test edilmiştir.
+• Geliştirilmiş Motor Temizliği: Özel katık sistemi, piston depozitlerine karşı geliştirilmiş motor temizliği ve koruması sağlayarak Shell Rimula R3 +30'in birçok OEM gereksinimlerini aşmasını sağlar.
+
+UYGULAMALAR
+Zorlu Şartlar - Ağır Hizmet Dizel Motorlar: Shell Rimula R3 +30, Avrupa, ABD ve Japonya üretimi olan son teknoloji, yüksek güçlü, ağır hizmet dizel motorların karayolu ve iş makinası uygulamalarında üstün koruma ve performans sağlar.
+Yüksek Teknolojili Düşük Emisyonlu Motorlar: Shell Rimula R3 +30, Euro 2, Euro 3 ve US 2002 gibi birçok gelişmiş, düşük emisyonlu motorlarda kullanıma uygundur. Özellikle dizel partikül filtresi (DPF) ile donatılmış motorlar için uygundur.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CI-4, CH-4, CG-4, CF-4, CF
+ACEA E7, E5, E3
+Global DHD-1
+Caterpillar ECF-1-A
+Cummins CES 20078, 77, 76, 75, 72, 71
+DDC 93K215
+MACK EO-M, EO-M+
+MAN 3275
+Mercedes-Benz 228.3
+Renault Trucks RLD-2
+VOLVO VDS-3`,
   },
   "spirax-s6-txme": {
     name: "Shell Spirax S6 TXME", grade: "SAE 30", series: "Spirax S6 TXME", type: "Transmisyon Yağı",
@@ -188,7 +540,36 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Ford MERCON", "GM Allison C-4", "MB 236.5/236.6", "ZF TE-ML 03D/04D/09/11A/14A/17C", "Voith 55.6335", "MAN 339 Type D"],
     description: "Ford MERCON, GM Allison C-4, MB 236.5/236.6 ve ZF TE-ML onaylı transmisyon yağı. Otomatik şanzımanlar, hidrolik sistemler ve seçili direksiyon sistemleri için tasarlanmıştır.",
     features: ["Ford MERCON onaylı", "GM Allison C-4 onaylı", "ZF TE-ML onaylı", "MB 236.5/236.6 onaylı"],
-      image: "/images/products/shell/spirax-s6-txme.jpg",
+    image: "/images/products/shell/spirax-s6-txme.jpg",
+    fullDescription: `Shell Spirax S6 TXME (eski adı Shell Donax TDS), binek araçların ve ağır vasıtaların otomatik şanzımanlarında, hidrolik direksiyonlarında ve bazı hidrolik sistemlerde kullanılan bir üründür.
+
+PERFORMANS ÖZELLİKLERİ
+• Geliştirilmiş sürtünmeyi önleme: Otomatik şanzımanlarda sürekli olarak sessiz, sorunsuz ve güvenilir çalışma şartları sağlar.
+• Yüksek oksidasyona dayanım: Yağ bozunmasına karşı gösterdiği direnç sürekli performans sağlar.
+• Yırtılmaya karşı maksimum direnç: Özel Viskozite İndeksi artırıcı katıklar en zorlu şartlarda dahi kırılmaya uğramayarak yağın uzun süre yüksek sıcaklıklarda performanslı çalışmasını sağlar.
+• Aşınmaya karşı güvenilir koruma: Dişli ve hidrolik pompa uygulamalarda sorunsuz çalışma ve uzun ekipman ömrü sağlar.
+
+TİPİK FİZİKSEL ÖZELLİKLER
+Kinematik Viskozite @ 40°C: 34,6 mm²/s
+Kinematik Viskozite @ 100°C: 7,1 mm²/s
+Viskozite İndeksi: 174
+Yoğunluk @ 15°C: 874 kg/m³
+Parlama Noktası: 180°C
+Akma Noktası: -45°C
+
+UYGULAMALAR
+• Binek araçların otomatik şanzımanları
+• Ağır vasıtaların otomatik şanzımanları
+• Hidrolik direksiyonlar
+• Hidrolik güç sistemleri
+
+STANDARTLAR VE SPESİFİKASYONLAR
+Ford MERCON
+General Motors Allison C-4
+Mercedes-Benz 236.5, 236.6
+ZF TE-ML 03D-04D-09-11A-14A-17C
+Voith 55.6335
+MAN 339 Type D`,
   },
   "rimula-r3plus-40": {
     name: "Shell Rimula R3+ 40", grade: "SAE 40", series: "Rimula R3+", type: "Mineral",
@@ -196,7 +577,34 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Caterpillar ECF-1-A", "Cummins CES 20078/20077", "MACK EO-M/EO-M+", "MAN 3275", "MB 228.3", "Volvo VDS-3"],
     description: "SAE 40 tek dereceli mineral ağır hizmet dizel motor yağı. CI-4 ve ACEA E7/E5/E3 sertifikalı; sıcak iklimlerde ve yüksek çalışma sıcaklıklarında büyük hacimli motorlar için idealdir.",
     features: ["CI-4 sertifikalı", "Sıcak iklim uyumlu", "Cat ECF-1-A onaylı", "MB 228.3 onaylı"],
-      image: "/images/products/shell/rimula-r3plus-40.jpg",
+    image: "/images/products/shell/rimula-r3plus-40.jpg",
+    fullDescription: `Dört Mevsimlik Ağır Hizmet Dizel Motor Yağı
+• BENZERSİZ AKTİF TEKNOLOJİ
+• GELİŞMİŞ MOTORLAR YÜKSEK GÜÇ KULLANIMI
+
+Shell Rimula R3 +40, Dinamik Koruma (Energised Protection) yağları, gelişmiş motorlarda bulunan tüm basınç ve sıcaklık aralıklarında - pistonlardaki yüksek sıcaklıklardan, supap gruplarındaki son derece ağır yüklere kadar - motoru koruyacak ve şartlara uyum sağlayacak yüksek performanslı katıkları içermektedir. Özellikle farklı marka araçlara sahip filolar için tek tip yağ olup ekstra aktif katıklar sayesinde yüksek performanslı motorlarda oluşabilen zararlı kurumu ve partikülleri kontrol edip uzaklaştırarak mükemmel kurum ve viskozite kontrolü, aşınmaya karşı üstün koruma sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel Koruma: Özel katık teknolojisi ile Euro 3, US 2002 ve diğer geliştirilmiş motorlarda kuruma karşı maksimum koruma, mükemmel aşınma koruması ve uzun yağ ömrü sağlar.
+• Tüm Uygulamalar için İspatlanmış Performans: Madencilik ve inşaat uygulamalarından ağır hizmet nakliyecilik uygulamalarına kadar dünyanın en zorlu ortamlarında test edilmiştir.
+• Geliştirilmiş Motor Temizliği: Özel katık sistemi, piston depozitlerine karşı geliştirilmiş motor temizliği ve koruması sağlar.
+
+UYGULAMALAR
+Zorlu Şartlar - Ağır Hizmet Dizel Motorlar: Avrupa, ABD ve Japonya üretimi yüksek güçlü ağır hizmet dizel motorların karayolu ve iş makinası uygulamalarında üstün koruma sağlar.
+Yüksek Teknolojili Düşük Emisyonlu Motorlar: Euro 2, Euro 3 ve US 2002 gibi gelişmiş düşük emisyonlu motorlarda ve dizel partikül filtresi (DPF) donatılmış motorlarda kullanıma uygundur.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CI-4, CH-4, CG-4, CF-4, CF
+ACEA E7, E5, E3
+Global DHD-1
+Caterpillar ECF-1-A
+Cummins CES 20078, 77, 76, 75, 72, 71
+DDC 93K215
+MACK EO-M, EO-M+
+MAN 3275
+Mercedes-Benz 228.3
+Renault Trucks RLD-2
+VOLVO VDS-3`,
   },
   "rimula-r4-x-15w-40": {
     name: "Shell Rimula R4 X 15W-40", grade: "15W-40", series: "Rimula R4 X", type: "Mineral",
@@ -204,7 +612,34 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Global DHD-1", "Caterpillar ECF-1-A", "Cummins CES 20078/20077", "DDC 93K215", "MACK EO-M+", "MAN 3275", "MB 228.3", "Renault Trucks RLD-2", "Volvo VDS-3"],
     description: "Cat ECF-1-A, Cummins CES 20078, MAN 3275, MB 228.3 ve Volvo VDS-3 onaylı dört mevsimlik mineral ağır hizmet motor yağı. İnşaat, maden ve ağır taşımacılık uygulamaları için.",
     features: ["Global DHD-1 uyumlu", "Cummins CES 20078 onaylı", "Volvo VDS-3 onaylı", "İnşaat/maden uygulamaları"],
-      image: "/images/products/shell/rimula-r4-x-15w-40.jpg",
+    image: "/images/products/shell/rimula-r4-x-15w-40.jpg",
+    fullDescription: `Dört Mevsimlik Ağır Hizmet Dizel Motor Yağı
+• BENZERSİZ AKTİF TEKNOLOJİ
+• GELİŞMİŞ MOTORLAR YÜKSEK GÜÇ KULLANIMI
+
+Shell Rimula R4, Dinamik Koruma (Energised Protection) yağları, gelişmiş motorlarda bulunan tüm basınç ve sıcaklık aralıklarında - pistonlardaki yüksek sıcaklıklardan, supap gruplarındaki son derece ağır yüklere kadar - motoru koruyacak ve şartlara uyum sağlayacak yüksek performanslı katıkları içermektedir. Özellikle farklı marka araçlara sahip filolar için tek tip yağ olup ekstra aktif katıklar sayesinde yüksek performanslı motorlarda oluşabilen zararlı kurumu ve partikülleri kontrol edip uzaklaştırarak mükemmel kurum ve viskozite kontrolü, aşınmaya karşı üstün koruma sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel Koruma: Özel katık teknolojisi ile Euro 3, US 2002 ve diğer gelişmiş motorlarda kuruma karşı maksimum koruma, mükemmel aşınma koruması ve uzun yağ ömrü sağlar.
+• Tüm Uygulamalar için İspatlanmış Performans: Madencilik ve inşaat uygulamalarından ağır hizmet nakliyecilik uygulamalarına kadar dünyanın en zorlu ortamlarında test edilmiştir.
+• Geliştirilmiş Motor Temizliği: Özel katık sistemi, piston depozitlerine karşı geliştirilmiş motor temizliği ve koruması sağlar.
+
+UYGULAMALAR
+Zorlu Şartlar - Ağır Hizmet Dizel Motorlar: Avrupa, ABD ve Japonya üretimi olan son teknoloji, yüksek güçlü, ağır hizmet dizel motorların karayolu ve iş makinası uygulamalarında üstün koruma ve performans sağlar.
+Yüksek Teknolojili Düşük Emisyonlu Motorlar: Euro 2, Euro 3 ve US 2002 gibi birçok gelişmiş, düşük emisyonlu motorlarda kullanıma uygundur.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CI-4, CH-4, CG-4, CF-4, CF
+ACEA E7, E5, E3
+Global DHD-1
+Caterpillar ECF-1-A
+Cummins CES 20078, 77, 76, 75, 72, 71
+DDC 93K215
+MACK EO-M, EO-M+
+MAN 3275
+Mercedes-Benz 228.3
+Renault Trucks RLD-2
+VOLVO VDS-3`,
   },
   "rimula-r4-l-15w-40": {
     name: "Shell Rimula R4 L 15W-40", grade: "15W-40", series: "Rimula R4 L", type: "Mineral",
@@ -212,7 +647,34 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Caterpillar ECF-1-A", "Cummins CES 20078/20077", "MACK EO-M/EO-M+", "MB 228.3", "Volvo VDS-3"],
     description: "Cat ECF-1-A, Cummins CES 20078, MACK EO-M+, MB 228.3 ve Volvo VDS-3 onaylı dört mevsimlik ağır hizmet dizel motor yağı. Zorlu koşullarda mükemmel motor temizliği ve koruma.",
     features: ["Cat ECF-1-A onaylı", "Cummins CES 20078 onaylı", "MB 228.3 onaylı", "Volvo VDS-3 onaylı"],
-      image: "/images/products/shell/rimula-r4-l-15w-40.png",
+    image: "/images/products/shell/rimula-r4-l-15w-40.png",
+    fullDescription: `Dört Mevsimlik Ağır Hizmet Dizel Motor Yağı
+• BENZERSİZ AKTİF TEKNOLOJİ
+• GELİŞMİŞ MOTORLAR YÜKSEK GÜÇ KULLANIMI
+
+Shell Rimula R4, Dinamik Koruma (Energised Protection) yağları, gelişmiş motorlarda bulunan tüm basınç ve sıcaklık aralıklarında - pistonlardaki yüksek sıcaklıklardan, supap gruplarındaki son derece ağır yüklere kadar - motoru koruyacak ve şartlara uyum sağlayacak yüksek performanslı katıkları içermektedir. Özellikle farklı marka araçlara sahip filolar için tek tip yağ olup ekstra aktif katıklar sayesinde yüksek performanslı motorlarda oluşabilen zararlı kurumu ve partikülleri kontrol edip uzaklaştırarak mükemmel kurum ve viskozite kontrolü, aşınmaya karşı üstün koruma sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel Koruma: Özel katık teknolojisi ile Euro 3, US 2002 ve diğer gelişmiş motorlarda kuruma karşı maksimum koruma, mükemmel aşınma koruması ve uzun yağ ömrü sağlar.
+• Tüm Uygulamalar için İspatlanmış Performans: Madencilik ve inşaat uygulamalarından ağır hizmet nakliyecilik uygulamalarına kadar dünyanın en zorlu ortamlarında test edilmiştir.
+• Geliştirilmiş Motor Temizliği: Özel katık sistemi, piston depozitlerine karşı geliştirilmiş motor temizliği sağlar.
+
+UYGULAMALAR
+Zorlu Şartlar - Ağır Hizmet Dizel Motorlar: Avrupa, ABD ve Japonya üretimi olan son teknoloji, yüksek güçlü, ağır hizmet dizel motorların karayolu ve iş makinası uygulamalarında üstün koruma sağlar.
+Yüksek Teknolojili Düşük Emisyonlu Motorlar: Euro 2, Euro 3 ve US 2002 gibi birçok gelişmiş, düşük emisyonlu motorlarda kullanıma uygundur.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CI-4, CH-4, CG-4, CF-4, CF
+ACEA E7, E5, E3
+Global DHD-1
+Caterpillar ECF-1-A
+Cummins CES 20078, 77, 76, 75, 72, 71
+DDC 93K215
+MACK EO-M, EO-M+
+MAN 3275
+Mercedes-Benz 228.3
+Renault Trucks RLD-2
+VOLVO VDS-3`,
   },
   "rimula-r2-extra-15w-40": {
     name: "Shell Rimula R2 Extra 15W-40", grade: "15W-40", series: "Rimula R2 Extra", type: "Mineral",
@@ -220,7 +682,28 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["MAN 271", "MB 228.1", "Volvo VDS"],
     description: "MAN 271, MB 228.1 ve VDS onaylı mineral ağır hizmet dizel motor yağı. Üç bileşenli Multi Energy Protection formülü ile asit kontrolü, depo kontrolü ve aşınma koruması sağlar.",
     features: ["MAN 271 onaylı", "MB 228.1 onaylı", "Multi Energy Protection", "ACEA E2 uyumlu"],
-      image: "/images/products/shell/rimula-r2-extra-15w-40.jpg",
+    image: "/images/products/shell/rimula-r2-extra-15w-40.jpg",
+    fullDescription: `Shell Rimula R2 Extra 15W-40, tortulara karşı ek koruma sağlayan ağır hizmet dizel motor yağıdır. Çalışma şartlarının ne kadar sıcak, soğuk, eğimli, tozlu, çamurlu veya uzun olursa olsun, motorunuzu korumak üzere tasarlanmıştır.
+
+ENERJİLİ KORUMA
+Shell Rimula ağır hizmet dizel motor yağları üç ayrı kritik alanda faaliyet gösterir:
+1. Asit kontrolü – yakıt yandığı zaman oluşan asitlerden kaynaklanan korozyona karşı koruma sağlar.
+2. Tortu kontrolü – motoru sürekli performans ve uzun ömür sağlayacak şekilde temiz tutar.
+3. Aşınma kontrolü – hareketli metal motor parçalarını birbirinden ayrı tutarak motor ömrünü uzatır.
+
+Shell Rimula R2 Extra Multi, pislikleri uzaklaştırıp motorunuzu temiz tutmak için kanıtlanmış katkı maddesi bileşimlerini kullanır. Daha yüksek güçlü veya turboşarjlı motorlarda, API CF-4'ye uygun yağlara göre yaklaşık "%20'ye kadar daha fazla aktif tortu kontrollü katkı maddesi" içerir. Mercedes-Benz, MAN ve Volvo gibi motor üreticilerinin gerektirdiği testlere uygunluğu ölçülmüştür.
+
+KULLANIM ALANLARI
+• Turboşarjlı motorlarda birikinti oluşumuna karşı güçlü koruma sağlar; kısa ve uzun mesafeli nakliye için idealdir.
+• Daha eski turboşarjlı motorlara sahip ağır yük otobüs işletmecileri için uygundur.
+• Birçok tarım uygulamasında çok yönlü yüksek performanslı koruma sağlar.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CF-4, CF
+ACEA E2
+MAN 271
+MB 228.1
+Volvo VDS`,
   },
   "rimula-r3-50": {
     name: "Shell Rimula R3 50", grade: "SAE 50", series: "Rimula R3", type: "Mineral",
@@ -228,7 +711,34 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Caterpillar ECF-1-A", "Cummins CES 20078/20077", "MACK EO-M/EO-M+", "MAN 3275", "MB 228.3", "Volvo VDS-3"],
     description: "SAE 50 tek dereceli mineral ağır hizmet dizel motor yağı. CI-4 ve ACEA E7/E5/E3 sertifikalı; en yüksek çalışma sıcaklıklarında ve ağır yük koşullarında üstün motor koruması.",
     features: ["CI-4 sertifikalı", "ACEA E7/E5/E3 uyumlu", "Maksimum yük koşulları", "Yüksek sıcaklık stabilitesi"],
-      image: "/images/products/shell/rimula-r3-50.jpg",
+    image: "/images/products/shell/rimula-r3-50.jpg",
+    fullDescription: `Dört Mevsimlik Ağır Hizmet Dizel Motor Yağı
+• BENZERSİZ AKTİF TEKNOLOJİ
+• GELİŞMİŞ MOTORLAR YÜKSEK GÜÇ KULLANIMI
+
+Shell Rimula R3, Dinamik Koruma (Energised Protection) yağları, gelişmiş motorlarda bulunan tüm basınç ve sıcaklık aralıklarında - pistonlardaki yüksek sıcaklıklardan, supap gruplarındaki son derece ağır yüklere kadar - motoru koruyacak ve şartlara uyum sağlayacak yüksek performanslı katıkları içermektedir. Özellikle farklı marka araçlara sahip filolar için tek tip yağ olup ekstra aktif katıklar sayesinde yüksek performanslı motorlarda oluşabilen zararlı kurumu ve partikülleri kontrol edip uzaklaştırarak mükemmel kurum ve viskozite kontrolü, aşınmaya karşı üstün koruma sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel Koruma: Özel katık teknolojisi ile Euro 3, US 2002 ve diğer geliştirilmiş motorlarda kuruma karşı maksimum koruma, mükemmel aşınma koruması ve uzun yağ ömrü sağlar.
+• Tüm Uygulamalar için İspatlanmış Performans: Madencilik ve inşaat uygulamalarından ağır hizmet nakliyecilik uygulamalarına kadar dünyanın en zorlu ortamlarında test edilmiştir.
+• Geliştirilmiş Motor Temizliği: Özel katık sistemi, piston depozitlerine karşı geliştirilmiş motor temizliği sağlar.
+
+UYGULAMALAR
+Zorlu Şartlar - Ağır Hizmet Dizel Motorlar: Avrupa, ABD ve Japonya üretimi olan son teknoloji, yüksek güçlü, ağır hizmet dizel motorların karayolu ve iş makinası uygulamalarında üstün koruma ve performans sağlar.
+Yüksek Teknolojili Düşük Emisyonlu Motorlar: Euro 2, Euro 3 ve US 2002 gibi birçok gelişmiş, düşük emisyonlu motorlarda kullanıma uygundur.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CI-4, CH-4, CG-4, CF-4, CF
+ACEA E7, E5, E3
+Global DHD-1
+Caterpillar ECF-1-A
+Cummins CES 20078, 77, 76, 75, 72, 71
+DDC 93K215
+MACK EO-M, EO-M+
+MAN 3275
+Mercedes-Benz 228.3
+Renault Trucks RLD-2
+VOLVO VDS-3`,
   },
   "helix-hx3-20w-50": {
     name: "Shell Helix HX3 20W-50", grade: "20W-50", series: "Helix HX3", type: "Mineral",
@@ -236,7 +746,28 @@ const SHELL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: [],
     description: "API SJ/CF sertifikalı mineral motor yağı. Karbüratörlü motorlar, doğal emişli dizel motorlar ve eski model araçlar için aktif temizleme teknolojisi ve oksidasyona karşı koruma sağlar.",
     features: ["API SJ/CF sertifikalı", "Karbüratörlü motor uyumlu", "Aktif temizleme teknolojisi", "Eski model araç uyumlu"],
-      image: "/images/products/shell/helix-hx3-20w-50.jpg",
+    image: "/images/products/shell/helix-hx3-20w-50.jpg",
+    fullDescription: `Shell Helix HX3 20W-50, özel aktif temizleme teknolojisiyle formüle edildiğinden kurum ve tortu birikimini önler, böylece motoru korur ve ömrünü uzatır.
+
+UYGULAMALAR
+• Benzinli ve Dizel Motorlar
+• Karbüratörlü ve benzinli motorlar
+• Doğal aspirasyonlu dizel motorlar
+
+PERFORMANS ÖZELLİKLERİ
+• 3 Aktif temizleyici katık teknolojisiyle formüle edilmiştir: Kurum ve tortu birikmesini önlemeye yardımcı olur, bu sayede motoru korur ve ömrünü uzatır.
+• Oksidasyon direnci: Bir sonraki yağ değişimine kadar yağdaki bozunmayı önler.
+
+TİPİK FİZİKSEL ÖZELLİKLER
+Kinematik Viskozite @ 40°C: 157,0 cSt
+Kinematik Viskozite @ 100°C: 19,0 cSt
+Viskozite İndeksi: 137
+Yoğunluk @ 15°C: 0,888 kg/l
+Parlama Noktası: 215°C
+Akma Noktası: -27°C
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SJ/CF`,
   },
 };
 
@@ -355,139 +886,6 @@ const SHELL_INDUSTRIAL_PRODUCTS: Record<string, ProductSpec> = {
   },
 };
 
-const SHELL_INDUSTRIAL_TDS: Record<string, string> = {
-  "tellus-s2-mx-32":  "https://shop.sclubricants.com/pub/media/pds/shell/Shell-Tellus-S2-MX-32-datasheet.pdf",
-  "tellus-s2-mx-46":  "https://shop.sclubricants.com/pub/media/pds/shell/Shell-Tellus-S2-MX-46-datasheet.pdf",
-  "tellus-s2-mx-68":  "https://www.shell-livedocs.com/data/published/en-US/8f37ea23-3102-469c-b713-d626763986eb.pdf",
-  "tellus-s2-mx-100": "https://www.shell-livedocs.com/data/published/en/19df5d2e-25af-4dc3-8146-c9bd59f3aef6.pdf",
-  "tellus-s3-m-46":   "https://shell-livedocs.com/data/published/en-US/bd4fbbf9-1e0e-4e04-b94c-1b7c57d9dcef.pdf",
-  "omala-s2-gx-150":  "https://www.shell-livedocs.com/data/published/en-IN/0530261d-8c39-4a0c-b6d9-264e70c2feb5.pdf",
-  "omala-s2-gx-220":  "https://www.shell-livedocs.com/data/published/en-US/bc85410c-fb55-471a-85c3-db729dddf42b.pdf",
-  "omala-s2-gx-320":  "https://industrialfluidsmfg.twinoils.com/Asset/Omala%20S2%20GX%20320.pdf",
-  "omala-s2-gx-460":  "https://www.shell.com.mx/business-customers/lubricants-for-business/factory/omala-s2-gx/_jcr_content/root/main/section_copy_copy_co/simple_copy/text.multi.stream/1718106832203/ad3b822dcc66d975652dcd2a378f7dc3fcc1c3c5/omala-s2-gx-460-ing-1.pdf",
-  "corena-s3-r-46":   "https://www.shell-livedocs.com/data/published/en-US/dc6df9c2-06a8-4400-9ee2-fb21567f3405.pdf",
-  "corena-s4-r-46":   "https://www.shell-livedocs.com/data/published/en-CA/68bcf258-084d-486a-8943-b1844971b4d4.pdf",
-  "gadus-s2-v220-2":  "https://shop.sclubricants.com/pub/media/pds/shell/Shell-Gadus-S2-V220-2-datasheet.pdf",
-  "morlina-s2-bl-10": "https://www.lubefinder.com/document/Shell_Morlina_S2_BL_10_TDS_v1.4.pdf",
-  "tonna-s3-m-68":    "https://fandl.com/content/tds/tonnas3m68_tds.pdf",
-  "diala-s4-zx-i":    "https://www.shell.com/business-customers/lubricants-for-business/sector-expertise/power-industry/wind-power/windeurope-electric-city/_jcr_content/root/main/section/simple_2118681472/text.multi.stream/1726581236629/30ce6e8d9d69ebdcb19c946c00e1644ec7507965/shell-diala-s4-zx-i-tds.pdf",
-};
-
-// ── Motor & industrial TDS maps — non-Shell brands ───────────────────────
-
-// Motor TDS are served from local /public/docs/[brand]/tds/ files (same pattern as Shell motor).
-
-const MOBIL_INDUSTRIAL_TDS: Record<string, string> = {
-  "dte-10-excel-32":   "https://hascooil.com/wp-content/uploads/2016/05/Mobil-DTE-10-Excel%E2%84%A2-Series-pds.pdf",
-  "dte-10-excel-46":   "https://www.e-lubritec.com/docs/PROD/MOBIL/MB10468/FT_MB_Mobil_DTE_10_Excel_46.pdf",
-  "dte-10-excel-68":   "https://hascooil.com/wp-content/uploads/2016/05/Mobil-DTE-10-Excel%E2%84%A2-Series-pds.pdf",
-  "dte-10-excel-100":  "https://hascooil.com/wp-content/uploads/2016/05/Mobil-DTE-10-Excel%E2%84%A2-Series-pds.pdf",
-  "shc-630":           "https://www.ulei-mobil.ro/pdf/MobilIndustrieDataSheet/SHC%20600%20Series%20pds.pdf",
-  "shc-632":           "https://www.ulei-mobil.ro/pdf/MobilIndustrieDataSheet/SHC%20600%20Series%20pds.pdf",
-  "rarus-427":         "http://www.ulei-mobil.ro/pdf/MobilIndustrieDataSheet/mobil_rarus%20427.pdf",
-  "rarus-shc-1024":    "https://petroleumservicecompany.com/content/pdfs/MOBIL_SHC_RARUS_PDS.pdf",
-  "vactra-2":          "https://www.lubefinder.com/document/Mobil_Vactra_Oil_Numbered_Series_TDS.pdf",
-  "grease-xhp-222":    "https://www.perma-tec.com/_Resources/Lubricants/Exxon%20Mobil/MOBILGREASE_XHP_222_TDS_en.pdf",
-};
-
-
-const CASTROL_INDUSTRIAL_TDS: Record<string, string> = {
-  "hyspin-aws-32":          "https://msdspds.castrol.com/bpglis/FusionPDS.nsf/Files/6E9106BC3CB9751880257796002FD14E/$File/456615_GB_en.pdf",
-  "hyspin-aws-46":          "https://msdspds.castrol.com/bpglis/FusionPDS.nsf/Files/984C9A119EA7634280258A690009B4F4/$File/bpxe-9cg55e.pdf",
-  "hyspin-aws-68":          "https://msdspds.castrol.com/bpglis/FusionPDS.nsf/Files/5E7B172C092D6A5480257796002FD252/$File/456618_GB_en.pdf",
-  "hyspin-aws-100":         "https://msdspds.castrol.com/bpglis/FusionPDS.nsf/Files/820FBAB013280A1C8025825E003A3F1C/$File/Hyspin%20AWS.pdf",
-  "optigear-bm-100":        "https://msdspds.castrol.com/bpglis/FusionPDS.nsf/Files/335864C2836FA61A8025779600300F80/$File/450750_DE_en.pdf",
-  "optigear-bm-220":        "https://msdspds.castrol.com/bpglis/FusionPDS.nsf/Files/3D12EB87C8DE0A158025779600301067/$File/450752_DE_en.pdf",
-  "tribol-1100-220":        "https://msdspds.castrol.com/bpglis/FusionPDS.nsf/Files/95F8CB74C474E513802577960030489F/$File/Tribol%201100.pdf",
-  "aircol-sn-46":           "#",
-  "molub-alloy-860-220-2-el":"https://msdspds.castrol.com/bpglis/FusionPDS.nsf/Files/5B441A56917A0C9180257796002FFF73/$File/Molub-Alloy%20860-220.pdf",
-};
-
-
-const TOTAL_INDUSTRIAL_TDS: Record<string, string> = {
-  "azolla-zs-32":      "https://totalenergies.com.au/system/files/atoms/files/tds_total_azolla_zs_68_164_202010_en.pdf",
-  "azolla-zs-46":      "https://totalenergies.com.au/system/files/atoms/files/tds_total_azolla_zs_68_164_202010_en.pdf",
-  "azolla-zs-68":      "https://totalenergies.com.au/system/files/atoms/files/tds_total_azolla_zs_68_164_202010_en.pdf",
-  "azolla-zs-100":     "https://totaloilnz.co.nz/technical-documents/4063.pdf",
-  "carter-ep-220":     "https://totalenergies.com.au/system/files/atoms/files/tds_total_carter_ep_68_100_150_220_320_460_680_1000_186_201907_en.pdf",
-  "carter-ep-320":     "https://totalenergies.com.au/system/files/atoms/files/tds_total_carter_ep_68_100_150_220_320_460_680_1000_186_201907_en.pdf",
-  "planetelf-acd-46":  "https://totalenergies.com.au/system/files/atoms/files/tds_total_planetelf_acd_32_46_68_100fy_ggm_202008_en.pdf",
-  "multis-ep-2":       "https://totaloilnz.co.nz/technical-documents/4172.pdf",
-  "biohydran-tmp-46":  "https://www.totallubmarine.com/sites/default/files/products/tds/TDS_BIOHYDRAN_TMP_32_46_68_100_R1.pdf",
-};
-
-
-const MOTUL_INDUSTRIAL_TDS: Record<string, string> = {
-  "gear-300-ls-75w-90":  "https://azupim01.motul.com/media/motulData/DO/base/gear_300_ls_75w-90_en_fr_motultech.pdf",
-  "gear-300-75w-90":     "https://azupim01.motul.com/media/motulData/DO/base/GEAR_300_75W-90_en_FR_motul_34200_20211021.pdf",
-  "atf-vi":              "https://azupim01.motul.com/media/motulData/DO/base/ATF_VI_en_FR_motul_19280_20210809.pdf",
-  "multi-dctf":          "https://azupim01.motul.com/media/motulData/DO/base/MULTI_DCTF_en_FR_motul_45611_20210712.pdf",
-  "hydraulic-sus-46":    "#",
-  "hydraulic-sus-68":    "#",
-  "coolant-ultra-37":    "https://azupim01.motul.com/media/motulData/DO/base/auto_cool_g13_-37_en_fr_motul_20200519.pdf",
-  "inugel-g13-ultra":    "https://azupim01.motul.com/media/motulData/DO/base/inugel_g13_ultra_es_es_motul_20191127.pdf",
-};
-
-
-const TEXACO_INDUSTRIAL_TDS: Record<string, string> = {
-  "meropa-xl-220":  "https://cglapps.chevron.com/sdspds/PDSDetailPage.aspx?docDataId=453209&docFormat=PDF",
-  "meropa-xl-320":  "https://cglapps.chevron.com/sdspds/PDSDetailPage.aspx?docDataId=453209&docFormat=PDF",
-  "meropa-xl-460":  "https://cglapps.chevron.com/sdspds/PDSDetailPage.aspx?docDataId=453209&docFormat=PDF",
-  "rando-hdz-32":   "https://cglapps.chevron.com/sdspds/PDSDetailPage.aspx?docDataId=323788&docFormat=PDF",
-  "rando-hdz-46":   "https://cglapps.chevron.com/sdspds/PDSDetailPage.aspx?docDataId=323788&docFormat=PDF",
-  "rando-hdz-68":   "https://cglapps.chevron.com/sdspds/PDSDetailPage.aspx?docDataId=323788&docFormat=PDF",
-  "cetus-pao-46":   "https://www.chevronmarineproducts.com/content/dam/chevron-marine/pds-2020/Chevron_PDS_Compressor%20Oils_CetusPAO_v0920.pdf",
-  "multifak-ep-2":  "https://cglapps.chevron.com/sdspds/PDSDetailPage.aspx?docDataId=338116&docFormat=PDF",
-  "novatex-gp-2":   "https://cglapps.chevron.com/msdspds/PDSDetailPage.aspx?docDataId=579359&docFormat=PDF",
-};
-
-// ── PETROL OFİSİ TDS ──────────────────────────────────────────────────────
-
-const PETROL_OFISI_MOTOR_TDS: Record<string, string> = {
-  "maxima-cx-0w-20-plus":               "https://www.petrolofisi.com.tr/medium/Product/Document/ac33cbf2-f3d9-41b6-8588-23cde0d3c3ca",
-  "maxima-cx-0w-30-plus":               "https://www.petrolofisi.com.tr/medium/Product/Document/565a7a92-535f-4cff-93d9-b9678943227d",
-  "maxima-cx-5w-30-plus":               "https://www.petrolofisi.com.tr/medium/Product/Document/5cdb10e6-0be9-4df2-8ef2-ee68d233da1a",
-  "maxima-hybrid-0w-20":                "https://www.petrolofisi.com.tr/medium/Product/Document/0a50cd82-fd6d-4b3d-ae2c-a9b1ffde9fb2",
-  "maxima-hybrid-tech-0w-20":           "https://www.petrolofisi.com.tr/medium/Product/Document/4b052c1f-daa8-46aa-bb13-7f3052e574db",
-  "maxima-ll-5w-30":                    "https://www.petrolofisi.com.tr/medium/Product/Document/4d286490-c9c9-424a-bd28-e0a9d7d0fb3a",
-  "maxima-vsa-0w-20":                   "https://www.petrolofisi.com.tr/medium/Product/Document/2f0332fd-4f98-4227-8c17-2b30f0e505ee",
-  "maxima-k-0w-20":                     "https://www.petrolofisi.com.tr/medium/Product/Document/94685989-7cce-4c2e-9af4-2dbabca37e71",
-  "maxima-0w-20":                       "https://www.petrolofisi.com.tr/medium/Product/Document/d94679f0-6f49-4bde-be5d-4389e3b4465b",
-  "maxima-0w-30":                       "https://www.petrolofisi.com.tr/medium/Product/Document/8e0ab975-75d6-4444-8e54-ad80600c50bd",
-  "maximus-la-5w-30":                   "https://www.petrolofisi.com.tr/medium/Product/Document/282259a0-0715-4db7-9cc5-3a5805f00bfe",
-  "maximus-la-10w-40":                  "https://www.petrolofisi.com.tr/medium/Product/Document/bf98d7cc-ffcc-46d0-aca2-22ee990093b1",
-  "maximus-hd-e-5w-30":                 "https://www.petrolofisi.com.tr/medium/Product/Document/5744e376-9048-4ad8-8896-cf9782f2a2f4",
-  "maximus-hd-m-5w-30":                 "https://www.petrolofisi.com.tr/medium/Product/Document/91ec2bf3-584d-4c2e-a17d-3276cb4e8053",
-  "maximus-m-5w-30":                    "https://www.petrolofisi.com.tr/medium/Product/Document/3f276ba1-ddac-4853-ac2e-8b3c4fad508d",
-  "maximus-hd-15w-40":                  "https://www.petrolofisi.com.tr/medium/Product/Document/ca4e9318-e563-4edf-b19b-18c722cd728a",
-  "maximus-hd-10w-40":                  "https://www.petrolofisi.com.tr/medium/Product/Document/b306b1cc-2501-43e8-8185-267db19a39fd",
-  "maximus-hd-e-10w-40":                "https://www.petrolofisi.com.tr/medium/Product/Document/c80a5c4c-c9ef-4780-b35d-f5a085ebb6d1",
-  "maximus-10w-40":                     "https://www.petrolofisi.com.tr/medium/Product/Document/0639b9d9-2838-4890-895f-c936a8cc7de4",
-  "maximus-turbo-diesel-extra-15w-40":  "https://www.petrolofisi.com.tr/medium/Product/Document/2594f318-44fe-4118-b877-a7d133aac7c1",
-};
-
-const PETROL_OFISI_INDUSTRIAL_TDS: Record<string, string> = {
-  "hydro-oil-hd-32":      "https://www.petrolofisi.com.tr/medium/Product/Document/75cafc48-4a2a-40f3-8fe0-33fb55b1c137",
-  "hydro-oil-hd-46":      "https://www.petrolofisi.com.tr/medium/Product/Document/39cef6d8-b2d1-4aed-979a-caf05cbef2ec",
-  "hydro-oil-hd-68":      "https://www.petrolofisi.com.tr/medium/Product/Document/38d2b44f-44da-4a1e-98dc-1a324aef68f3",
-  "hydro-oil-hd-100":     "https://www.petrolofisi.com.tr/medium/Product/Document/11dd5743-711c-4364-822a-937de0d2adf1",
-  "hydro-tech-hvi-32":    "https://www.petrolofisi.com.tr/medium/Product/Document/5d882d12-d615-44be-aa65-65451539b2ff",
-  "hydro-tech-hvi-46":    "https://www.petrolofisi.com.tr/medium/Product/Document/8562f88b-1c80-4df5-9712-164abb8a7bfe",
-  "hydro-tech-hvi-68":    "https://www.petrolofisi.com.tr/medium/Product/Document/149d5539-43f9-495c-8270-942f377059dd",
-  "gravis-m-220":         "https://www.petrolofisi.com.tr/medium/Product/Document/38d5ddca-43cf-4fce-849b-60d86542b94e",
-  "gravis-m-320":         "https://www.petrolofisi.com.tr/medium/Product/Document/35ee0b2e-5425-49dd-a4ec-a89f4fce82e4",
-  "gravis-m-460":         "https://www.petrolofisi.com.tr/medium/Product/Document/f94bd3ca-48c5-4e62-a85e-5172cd6f30fe",
-  "gravis-mp-150":        "https://www.petrolofisi.com.tr/medium/Product/Document/044260b6-64ec-4707-aec2-357c6f8d67b8",
-  "gravis-mp-220":        "https://www.petrolofisi.com.tr/medium/Product/Document/2a04a9f1-e309-4d93-88d0-1944b255f209",
-  "gravis-mp-320":        "https://www.petrolofisi.com.tr/medium/Product/Document/615b99f5-fcdd-4204-a33c-2b9b1d2dbd32",
-  "compressor-oil-xt-46": "https://www.petrolofisi.com.tr/medium/Product/Document/d72b212d-2f11-4c31-b8af-e6f8a6610ce4",
-  "compressor-oil-xt-68": "https://www.petrolofisi.com.tr/medium/Product/Document/d7ae610e-652e-451b-8730-6a3e35675738",
-  "compressor-oil-sp-46": "https://www.petrolofisi.com.tr/medium/Product/Document/1c3d4647-f8f4-40ce-94a5-ba0e57adfe2d",
-  "compressor-oil-sp-68": "https://www.petrolofisi.com.tr/medium/Product/Document/edac8181-b8a8-4237-b099-5eb6dc1aaa59",
-  "turbine-oil-tx-46":    "https://www.petrolofisi.com.tr/medium/Product/Document/8c7cb321-ef4b-45ed-b13a-ce3e29e8fdcd",
-  "super-gres-ep-2":      "https://www.petrolofisi.com.tr/medium/Product/Document/b8fac51c-f632-44a4-8b27-fe0e49247210",
-  "molibdenli-gres-2":    "https://www.petrolofisi.com.tr/medium/Product/Document/747dfec6-4523-4a59-8fc9-c285d085c48e",
-};
 
 // ── Brand configs ─────────────────────────────────────────────────────────
 
@@ -1718,29 +2116,6 @@ const BRAND_INDUSTRIAL_PRODUCTS: Record<string, Record<string, ProductSpec>> = {
   "petrol-ofisi": PETROL_OFISI_INDUSTRIAL_PRODUCTS,
 };
 
-function getTdsUrl(brandSlug: string, category: string, product: string): string {
-  if (brandSlug === "petrol-ofisi") {
-    const isInd = category === "endustriyel-yaglar";
-    return isInd
-      ? (PETROL_OFISI_INDUSTRIAL_TDS[product] ?? "#")
-      : (PETROL_OFISI_MOTOR_TDS[product]      ?? "#");
-  }
-  const isIndustrial = category === "endustriyel-yaglar";
-  if (!isIndustrial) {
-    // Motor oils — served from local public/docs/[brand]/tds/ files
-    return `/docs/${brandSlug}/tds/${product}.pdf`;
-  }
-  // Industrial oils — external URL maps
-  switch (brandSlug) {
-    case "shell":   return SHELL_INDUSTRIAL_TDS[product]   ?? "#";
-    case "mobil":   return MOBIL_INDUSTRIAL_TDS[product]   ?? "#";
-    case "castrol": return CASTROL_INDUSTRIAL_TDS[product] ?? "#";
-    case "total":   return TOTAL_INDUSTRIAL_TDS[product]   ?? "#";
-    case "motul":   return MOTUL_INDUSTRIAL_TDS[product]   ?? "#";
-    case "texaco":  return TEXACO_INDUSTRIAL_TDS[product]  ?? "#";
-    default:        return "#";
-  }
-}
 
 interface ProductPageProps {
   params: Promise<{ locale: string; slug: string; category: string; product: string }>;
@@ -1807,9 +2182,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
     ? t("backToIndustrial", { brand: brandConfig.name })
     : t("backToMotor", { brand: brandConfig.name });
 
-  const tdsUrl = getTdsUrl(brandSlug, category, product);
-  const tdsAvailable = tdsUrl !== "#";
-
   const specRows = isIndustrial
     ? [
         { label: t("productName"),    value: spec.name },
@@ -1865,9 +2237,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
             {/* Product image */}
             {spec.image ? (
-              <div className="shrink-0 w-52 h-64 rounded-2xl overflow-hidden border-4 shadow-2xl bg-white flex items-center justify-center" style={{ borderColor: accent }}>
-                <Image src={spec.image} alt={spec.name} width={208} height={256} className="object-contain w-full h-full p-3" priority />
-              </div>
+              <ProductImageLightbox src={spec.image} alt={spec.name} accent={accent} borderColor={accent} />
             ) : (
             <div
               className="shrink-0 w-52 h-64 rounded-2xl flex flex-col items-center justify-center border-4 shadow-2xl"
@@ -1949,37 +2319,31 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </div>
       </section>
 
-      {/* Documents */}
-      <section className="pb-8">
-        <div className="container-xl">
-          <div className="bg-white border border-brand-200 rounded-[var(--radius-card)] p-6">
-            <h2 className="text-xl font-bold text-brand-900 mb-5">{t("documents")}</h2>
-            {tdsAvailable ? (
-              <div className="flex flex-wrap gap-4">
-                <a
-                  href={tdsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 border border-brand-200 rounded-[var(--radius-card)] px-5 py-4 hover:border-brand-400 hover:bg-brand-50 transition-colors group"
-                >
-                  <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style={{ background: primary }}>
-                    <FileText className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-brand-900 text-sm group-hover:text-brand-700 transition-colors">
-                      {t("tdsLabel")}
-                    </p>
-                    <p className="text-brand-400 text-xs">PDF — {spec.name}</p>
-                  </div>
-                </a>
+      {/* Full description */}
+      {spec.fullDescription && (
+        <section className="pb-8">
+          <div className="container-xl">
+            <div className="bg-white border border-brand-200 rounded-[var(--radius-card)] p-6">
+              <h2 className="text-xl font-bold text-brand-900 mb-5">Ürün Açıklaması</h2>
+              <div className="space-y-1">
+                {spec.fullDescription.split("\n").map((line, i) => {
+                  const trimmed = line.trim();
+                  if (!trimmed) return <div key={i} className="h-3" />;
+                  const isHeader = /^[A-ZÇĞİÖŞÜ\s]{4,}$/.test(trimmed) || /^(PERFORMANS|UYGULAMALAR|STANDARTLAR|TİPİK|BAŞLICA|ENERJİ|BAKIM|KULLANIM|KORUYUCU)/.test(trimmed);
+                  const isBullet = trimmed.startsWith("•") || /^\d+\.\s/.test(trimmed);
+                  if (isHeader) return (
+                    <p key={i} className="font-bold text-brand-900 text-sm uppercase tracking-wide mt-4 mb-1">{trimmed}</p>
+                  );
+                  if (isBullet) return (
+                    <p key={i} className="text-brand-700 text-sm pl-4">{trimmed}</p>
+                  );
+                  return <p key={i} className="text-brand-700 text-sm leading-relaxed">{trimmed}</p>;
+                })}
               </div>
-            ) : (
-              <p className="text-brand-400 text-sm">{t("tdsNotAvailable")}</p>
-            )}
-            <p className="text-brand-400 text-xs mt-4">{t("docsNote")}</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="py-12">
