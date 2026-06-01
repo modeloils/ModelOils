@@ -111,11 +111,11 @@ export function Header({ locale = "en" }: HeaderProps) {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-1" aria-label="Primary navigation">
+        <nav className="hidden lg:flex items-center gap-0" aria-label="Primary navigation">
           {/* Products mega-menu trigger */}
           <div className="relative">
             <button
-              className="flex items-center gap-1 text-brand-200 hover:text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-white/6 transition-colors"
+              className="flex items-center gap-1 text-brand-200 hover:text-white text-sm font-medium px-3 py-2 rounded-md hover:bg-white/6 transition-colors"
               onMouseEnter={() => setProductMenuOpen(true)}
               onMouseLeave={() => setProductMenuOpen(false)}
               aria-expanded={productMenuOpen}
@@ -169,7 +169,7 @@ export function Header({ locale = "en" }: HeaderProps) {
             <Link
               key={item.href}
               href={item.href}
-              className="text-brand-200 hover:text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-white/6 transition-colors"
+              className="text-brand-200 hover:text-white text-sm font-medium px-3 py-2 rounded-md hover:bg-white/6 transition-colors"
             >
               {item.label}
             </Link>
@@ -177,7 +177,7 @@ export function Header({ locale = "en" }: HeaderProps) {
         </nav>
 
         {/* Right: locale + phone + CTA */}
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-2">
           {/* Locale selector */}
           <div className="relative">
             <button
@@ -213,14 +213,14 @@ export function Header({ locale = "en" }: HeaderProps) {
 
           <a
             href="tel:+905334567975"
-            className="flex items-center gap-1.5 text-brand-300 hover:text-white text-sm transition-colors"
+            className="flex items-center gap-1.5 text-brand-300 hover:text-white text-sm transition-colors whitespace-nowrap"
           >
-            <Phone className="h-3.5 w-3.5" />
-            <span>+90 533 456 7975</span>
+            <Phone className="h-3.5 w-3.5 shrink-0" />
+            <span className="whitespace-nowrap">+90 533 456 7975</span>
           </a>
 
           <Button asChild size="sm">
-            <Link href="/contact/request-quote">{t("requestQuote")}</Link>
+            <Link href="/contact/request-quote" className="whitespace-nowrap">{t("requestQuote")}</Link>
           </Button>
         </div>
 
