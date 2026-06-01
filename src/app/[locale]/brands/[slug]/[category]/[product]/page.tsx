@@ -3,8 +3,6 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { ArrowLeft, ArrowRight, CheckCircle2, FileText } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { existsSync } from "fs";
-import { join } from "path";
 
 function toSlug(name: string) {
   return name
@@ -1486,10 +1484,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
     : t("backToMotor", { brand: brandConfig.name });
 
   const tdsUrl = getTdsUrl(brandSlug, category, product);
-  const tdsAvailable = tdsUrl !== "#" && (
-    tdsUrl.startsWith("http") ||
-    existsSync(join(process.cwd(), "public", tdsUrl))
-  );
+  const tdsAvailable = tdsUrl !== "#";
 
   const specRows = isIndustrial
     ? [
