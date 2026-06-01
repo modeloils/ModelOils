@@ -53,6 +53,45 @@ const CATEGORIES: Record<string, {
       "Kompresör Yağı 46", "Gres Yağı EP2", "Metal İşleme Sıvısı",
     ],
   },
+  "antifriz": {
+    label: "Antifriz",
+    description: "Motor soğutma sistemleri için antifriz ve soğutma sıvıları",
+    icon: "droplets",
+    products: [
+      "Antifriz -25°C", "Antifriz -40°C", "Uzun Ömürlü Antifriz OAT", "Organik Antifriz HOAT",
+      "Motor Soğutma Sıvısı Konsantre", "Hazır Karışım Antifriz 50/50",
+    ],
+  },
+  "sanziman-disli-yaglari": {
+    label: "Şanzıman Dişli Yağları",
+    description: "Manuel ve otomatik şanzımanlar, diferansiyel ve akslar için yağlar",
+    icon: "flask",
+    products: [
+      "ATF Otomatik Şanzıman Yağı", "Manuel Şanzıman Yağı MTF", "Diferansiyel Yağı GL-5 SAE 90",
+      "Diferansiyel Yağı GL-5 75W-90", "Transfer Kutusu Yağı", "CVT Vites Yağı",
+      "DSG / DCT Şanzıman Yağı",
+    ],
+  },
+  "gres-yaglari": {
+    label: "Gres Yağları",
+    description: "Rulmanlar, şasi ve endüstriyel uygulamalar için gres yağları",
+    icon: "flask",
+    products: [
+      "Çok Amaçlı Gres EP2", "Lityum Bazlı Gres EP2", "Molibdenli Gres EP2",
+      "Yüksek Sıcaklık Gresi", "Su Dirençli Gres", "Biyobozunur Gres",
+      "Gres EP0 Yarı Akışkan",
+    ],
+  },
+  "motosiklet-tekne-yaglari": {
+    label: "Motosiklet ve Tekne Yağları",
+    description: "Motosikletler, dıştan takma motorlar ve deniz motorları için özel yağlar",
+    icon: "truck",
+    products: [
+      "4T Motosiklet Yağı 10W-40", "4T Motosiklet Yağı 20W-50", "4T Motosiklet Yağı 15W-50",
+      "2T Karışım Yağı", "Denizel Motor Yağı 4T", "Dıştan Takma Motor Yağı",
+      "Motosiklet Dişli Yağı",
+    ],
+  },
 };
 
 // Card background colors per brand
@@ -260,6 +299,9 @@ const BRAND_OVERRIDES: Record<string, string[]> = {
     "Texaco Multifak EP 2",
     "Texaco Novatex GP 2",
   ],
+
+  /* ── NEW CATEGORIES — brand-specific overrides can be added here later ── */
+  /* All brands fall back to the generic CATEGORIES products above for now   */
 };
 
 interface CardColors { primary: string; secondary: string; accent: string; accentText: string }
