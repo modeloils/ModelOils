@@ -21,21 +21,38 @@ const BRANDS: Record<string, { name: string; logo: string; blend: boolean }> = {
 interface CatalogEntry {
   id: string;
   title: string;
-  descKey: string;
-  pagesKey: string;
   file: string;
   updated: string;
 }
 
 const BRAND_CATALOGS: Record<string, CatalogEntry[]> = {
-  Shell:          [],
-  mobil:          [],
-  castrol:        [],
-  total:          [],
-  motul:          [],
-  texol:          [{ id: "texol-genel", title: "Texol Genel Ürün Kataloğu", descKey: "catalog1Desc", pagesKey: "catalog1Pages", file: "/docs/catalogs/general-product-catalog.pdf", updated: "2026" }],
-  texaco:         [],
-  "petrol-ofisi": [],
+  Shell: [
+    { id: "shell-helix",  title: "Shell Helix Ürün Kataloğu",       file: "/docs/catalogs/shell-helix-catalogue.pdf",       updated: "2024" },
+  ],
+  mobil: [
+    { id: "mobil-1",      title: "Mobil Madeni Yağlar Kataloğu",     file: "/docs/catalogs/mobil-madeni-yaglar-katalog.pdf", updated: "2024" },
+    { id: "mobil-2",      title: "Mobil Katalog",                    file: "/docs/catalogs/mobil-katalog.pdf",               updated: "2024" },
+  ],
+  castrol: [],
+  total: [
+    { id: "elf-2021",     title: "Elf Ürün Kataloğu 2021",           file: "/docs/catalogs/elf-katalog-2021.pdf",            updated: "2021" },
+    { id: "total-maxcar", title: "Total Lubricants Guide — Maxcar",  file: "/docs/catalogs/total-maxcar-guide.pdf",          updated: "2024" },
+  ],
+  motul: [
+    { id: "motul-2024",   title: "Motul Catalogue 2024",             file: "/docs/catalogs/motul-catalogue-2024.pdf",        updated: "2024" },
+  ],
+  texol: [
+    { id: "texol-genel",  title: "Texol Genel Ürün Kataloğu",        file: "/docs/catalogs/general-product-catalog.pdf",     updated: "2026" },
+  ],
+  texaco: [
+    { id: "texaco-main",  title: "Texaco Ürün Kataloğu",             file: "/docs/catalogs/texaco-katalog.pdf",              updated: "2024" },
+    { id: "texaco-hav",   title: "Havoline Teknik Özellikler",        file: "/docs/catalogs/texaco-havoline.pdf",             updated: "2024" },
+    { id: "texaco-delo1", title: "Delo — İnşaat & Maden",            file: "/docs/catalogs/texaco-delo-insaat-maden.pdf",    updated: "2024" },
+    { id: "texaco-delo2", title: "Delo — Tarım & Traktör",           file: "/docs/catalogs/texaco-delo-tarim-traktor.pdf",   updated: "2024" },
+  ],
+  "petrol-ofisi": [
+    { id: "po-katalog",   title: "Petrol Ofisi Madeni Yağ Kataloğu", file: "/docs/catalogs/petrol-ofisi-katalog.pdf",        updated: "2024" },
+  ],
 };
 
 interface BrandCatalogsPageProps {
@@ -141,12 +158,10 @@ export default async function BrandCatalogsPage({ params }: BrandCatalogsPagePro
                   {/* Content */}
                   <div className="flex-1 min-w-0">
                     <h2 className="text-base font-bold text-brand-900 mb-2">{catalog.title}</h2>
-                    <p className="text-sm text-brand-600 leading-relaxed mb-3">{t(catalog.descKey as "catalog1Desc")}</p>
                     <div className="flex flex-wrap gap-4 text-xs text-brand-500">
                       <span>
                         <span className="font-medium text-brand-700">{t("updatedLabel")}:</span> {catalog.updated}
                       </span>
-                      <span>{t(catalog.pagesKey as "catalog1Pages")}</span>
                     </div>
                   </div>
 
