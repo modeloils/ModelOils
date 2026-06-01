@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 
 function toSlug(name: string) {
   return name
-    .replace(/^(Shell|Mobil|Castrol|Total|Elf|Motul|Texol|Texaco)\s+/i, "")
+    .replace(/^(Shell|Mobil|Castrol|Total|Elf|Motul|Texol|Texaco|Petrol Ofisi)\s+/i, "")
     .toLowerCase()
     .replace(/\+/g, "plus")
     .replace(/\//g, "-")
@@ -467,6 +467,54 @@ const TEXACO_INDUSTRIAL_TDS: Record<string, string> = {
   "cetus-pao-46":   "https://www.chevronmarineproducts.com/content/dam/chevron-marine/pds-2020/Chevron_PDS_Compressor%20Oils_CetusPAO_v0920.pdf",
   "multifak-ep-2":  "https://cglapps.chevron.com/sdspds/PDSDetailPage.aspx?docDataId=338116&docFormat=PDF",
   "novatex-gp-2":   "https://cglapps.chevron.com/msdspds/PDSDetailPage.aspx?docDataId=579359&docFormat=PDF",
+};
+
+// ── PETROL OFİSİ TDS ──────────────────────────────────────────────────────
+
+const PETROL_OFISI_MOTOR_TDS: Record<string, string> = {
+  "maxima-cx-0w-20-plus":               "https://www.petrolofisi.com.tr/medium/Product/Document/ac33cbf2-f3d9-41b6-8588-23cde0d3c3ca",
+  "maxima-cx-0w-30-plus":               "https://www.petrolofisi.com.tr/medium/Product/Document/565a7a92-535f-4cff-93d9-b9678943227d",
+  "maxima-cx-5w-30-plus":               "https://www.petrolofisi.com.tr/medium/Product/Document/5cdb10e6-0be9-4df2-8ef2-ee68d233da1a",
+  "maxima-hybrid-0w-20":                "https://www.petrolofisi.com.tr/medium/Product/Document/0a50cd82-fd6d-4b3d-ae2c-a9b1ffde9fb2",
+  "maxima-hybrid-tech-0w-20":           "https://www.petrolofisi.com.tr/medium/Product/Document/4b052c1f-daa8-46aa-bb13-7f3052e574db",
+  "maxima-ll-5w-30":                    "https://www.petrolofisi.com.tr/medium/Product/Document/4d286490-c9c9-424a-bd28-e0a9d7d0fb3a",
+  "maxima-vsa-0w-20":                   "https://www.petrolofisi.com.tr/medium/Product/Document/2f0332fd-4f98-4227-8c17-2b30f0e505ee",
+  "maxima-k-0w-20":                     "https://www.petrolofisi.com.tr/medium/Product/Document/94685989-7cce-4c2e-9af4-2dbabca37e71",
+  "maxima-0w-20":                       "https://www.petrolofisi.com.tr/medium/Product/Document/d94679f0-6f49-4bde-be5d-4389e3b4465b",
+  "maxima-0w-30":                       "https://www.petrolofisi.com.tr/medium/Product/Document/8e0ab975-75d6-4444-8e54-ad80600c50bd",
+  "maximus-la-5w-30":                   "https://www.petrolofisi.com.tr/medium/Product/Document/282259a0-0715-4db7-9cc5-3a5805f00bfe",
+  "maximus-la-10w-40":                  "https://www.petrolofisi.com.tr/medium/Product/Document/bf98d7cc-ffcc-46d0-aca2-22ee990093b1",
+  "maximus-hd-e-5w-30":                 "https://www.petrolofisi.com.tr/medium/Product/Document/5744e376-9048-4ad8-8896-cf9782f2a2f4",
+  "maximus-hd-m-5w-30":                 "https://www.petrolofisi.com.tr/medium/Product/Document/91ec2bf3-584d-4c2e-a17d-3276cb4e8053",
+  "maximus-m-5w-30":                    "https://www.petrolofisi.com.tr/medium/Product/Document/3f276ba1-ddac-4853-ac2e-8b3c4fad508d",
+  "maximus-hd-15w-40":                  "https://www.petrolofisi.com.tr/medium/Product/Document/ca4e9318-e563-4edf-b19b-18c722cd728a",
+  "maximus-hd-10w-40":                  "https://www.petrolofisi.com.tr/medium/Product/Document/b306b1cc-2501-43e8-8185-267db19a39fd",
+  "maximus-hd-e-10w-40":                "https://www.petrolofisi.com.tr/medium/Product/Document/c80a5c4c-c9ef-4780-b35d-f5a085ebb6d1",
+  "maximus-10w-40":                     "https://www.petrolofisi.com.tr/medium/Product/Document/0639b9d9-2838-4890-895f-c936a8cc7de4",
+  "maximus-turbo-diesel-extra-15w-40":  "https://www.petrolofisi.com.tr/medium/Product/Document/2594f318-44fe-4118-b877-a7d133aac7c1",
+};
+
+const PETROL_OFISI_INDUSTRIAL_TDS: Record<string, string> = {
+  "hydro-oil-hd-32":      "https://www.petrolofisi.com.tr/medium/Product/Document/75cafc48-4a2a-40f3-8fe0-33fb55b1c137",
+  "hydro-oil-hd-46":      "https://www.petrolofisi.com.tr/medium/Product/Document/39cef6d8-b2d1-4aed-979a-caf05cbef2ec",
+  "hydro-oil-hd-68":      "https://www.petrolofisi.com.tr/medium/Product/Document/38d2b44f-44da-4a1e-98dc-1a324aef68f3",
+  "hydro-oil-hd-100":     "https://www.petrolofisi.com.tr/medium/Product/Document/11dd5743-711c-4364-822a-937de0d2adf1",
+  "hydro-tech-hvi-32":    "https://www.petrolofisi.com.tr/medium/Product/Document/5d882d12-d615-44be-aa65-65451539b2ff",
+  "hydro-tech-hvi-46":    "https://www.petrolofisi.com.tr/medium/Product/Document/8562f88b-1c80-4df5-9712-164abb8a7bfe",
+  "hydro-tech-hvi-68":    "https://www.petrolofisi.com.tr/medium/Product/Document/149d5539-43f9-495c-8270-942f377059dd",
+  "gravis-m-220":         "https://www.petrolofisi.com.tr/medium/Product/Document/38d5ddca-43cf-4fce-849b-60d86542b94e",
+  "gravis-m-320":         "https://www.petrolofisi.com.tr/medium/Product/Document/35ee0b2e-5425-49dd-a4ec-a89f4fce82e4",
+  "gravis-m-460":         "https://www.petrolofisi.com.tr/medium/Product/Document/f94bd3ca-48c5-4e62-a85e-5172cd6f30fe",
+  "gravis-mp-150":        "https://www.petrolofisi.com.tr/medium/Product/Document/044260b6-64ec-4707-aec2-357c6f8d67b8",
+  "gravis-mp-220":        "https://www.petrolofisi.com.tr/medium/Product/Document/2a04a9f1-e309-4d93-88d0-1944b255f209",
+  "gravis-mp-320":        "https://www.petrolofisi.com.tr/medium/Product/Document/615b99f5-fcdd-4204-a33c-2b9b1d2dbd32",
+  "compressor-oil-xt-46": "https://www.petrolofisi.com.tr/medium/Product/Document/d72b212d-2f11-4c31-b8af-e6f8a6610ce4",
+  "compressor-oil-xt-68": "https://www.petrolofisi.com.tr/medium/Product/Document/d7ae610e-652e-451b-8730-6a3e35675738",
+  "compressor-oil-sp-46": "https://www.petrolofisi.com.tr/medium/Product/Document/1c3d4647-f8f4-40ce-94a5-ba0e57adfe2d",
+  "compressor-oil-sp-68": "https://www.petrolofisi.com.tr/medium/Product/Document/edac8181-b8a8-4237-b099-5eb6dc1aaa59",
+  "turbine-oil-tx-46":    "https://www.petrolofisi.com.tr/medium/Product/Document/8c7cb321-ef4b-45ed-b13a-ce3e29e8fdcd",
+  "super-gres-ep-2":      "https://www.petrolofisi.com.tr/medium/Product/Document/b8fac51c-f632-44a4-8b27-fe0e49247210",
+  "molibdenli-gres-2":    "https://www.petrolofisi.com.tr/medium/Product/Document/747dfec6-4523-4a59-8fc9-c285d085c48e",
 };
 
 // ── Brand configs ─────────────────────────────────────────────────────────
@@ -1386,6 +1434,294 @@ const TEXACO_INDUSTRIAL_PRODUCTS: Record<string, ProductSpec> = {
   },
 };
 
+// ── PETROL OFİSİ ─────────────────────────────────────────────────────────
+
+const PETROL_OFISI_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
+  "maxima-cx-0w-20-plus": {
+    name: "Petrol Ofisi Maxima CX 0W-20 Plus", grade: "0W-20", series: "Maxima CX", type: "Tam Sentetik",
+    api: "SP", acea: "C5",
+    approvals: ["Fiat 9.55535-DM1"],
+    description: "Katalitik konvertör uyumlu (Low-SAPS) tam sentetik motor yağı. Düşük SAPS içeriği sayesinde modern emisyon sonrası arıtma sistemlerini korur ve yakıt ekonomisini maksimize eder.",
+    features: ["Low-SAPS formülasyon", "DPF ve TWC koruması", "API SP sertifikalı", "Fiat onaylı"],
+  },
+  "maxima-cx-0w-30-plus": {
+    name: "Petrol Ofisi Maxima CX 0W-30 Plus", grade: "0W-30", series: "Maxima CX", type: "Tam Sentetik",
+    api: "—", acea: "C2, C3",
+    approvals: ["Fiat 9.55535-DS1", "Fiat 9.55535-GS1"],
+    description: "ACEA C2/C3 uyumlu düşük viskoziteli tam sentetik motor yağı. Modern dizel ve benzinli motorlarda DPF ve TWC sistemlerini etkin biçimde korurken düşük yakıt tüketimi sağlar.",
+    features: ["ACEA C2/C3 uyumlu", "DPF koruması", "Düşük viskozite", "Fiat DS1/GS1 onaylı"],
+  },
+  "maxima-cx-5w-30-plus": {
+    name: "Petrol Ofisi Maxima CX 5W-30 Plus", grade: "5W-30", series: "Maxima CX", type: "Tam Sentetik",
+    api: "SP/CF", acea: "C2, C3",
+    approvals: ["MB 229.31", "Fiat 9.55535-S1"],
+    description: "API SP/CF ve ACEA C2/C3 sertifikalı tam sentetik motor yağı. MB 229.31 ve Fiat S1 onaylarıyla geniş bir araç yelpazesinde üstün motor koruması ve yakıt ekonomisi sağlar.",
+    features: ["API SP/CF sertifikalı", "MB 229.31 onaylı", "ACEA C2/C3 uyumlu", "Yakıt tasarrufu"],
+  },
+  "maxima-hybrid-0w-20": {
+    name: "Petrol Ofisi Maxima Hybrid 0W-20", grade: "0W-20", series: "Maxima Hybrid", type: "Tam Sentetik",
+    api: "SN", acea: "C5",
+    approvals: [],
+    description: "Hibrit araçlar için özel olarak formüle edilmiş tam sentetik motor yağı. Sık soğuk motor başlangıçlarının yaşandığı hibrit sistemlerde minimum aşınma ve maksimum koruma sunar.",
+    features: ["Hibrit araç özel formülü", "Soğuk başlangıç koruması", "ACEA C5 uyumlu", "Düşük sürtünme"],
+  },
+  "maxima-hybrid-tech-0w-20": {
+    name: "Petrol Ofisi Maxima Hybrid Tech 0W-20", grade: "0W-20", series: "Maxima Hybrid Tech", type: "Tam Sentetik",
+    api: "SP", acea: "—",
+    approvals: ["ILSAC GF-6A"],
+    description: "API SP ve ILSAC GF-6A onaylı hibrit araç motor yağı. Gelişmiş yakıt tasarrufu teknolojisi ile hibrit sistemlerde üstün motor performansı ve uzatılmış değişim aralığı sağlar.",
+    features: ["ILSAC GF-6A onaylı", "Hibrit sistem uyumlu", "Maksimum yakıt tasarrufu", "Uzatılmış değişim aralığı"],
+  },
+  "maxima-ll-5w-30": {
+    name: "Petrol Ofisi Maxima LL 5W-30", grade: "5W-30", series: "Maxima LL", type: "Tam Sentetik",
+    api: "SL", acea: "A3/B4",
+    approvals: ["BMW LL-01", "MB 229.5", "MB 229.3", "VW 502.00/505.00"],
+    description: "Uzun değişim aralıklı (Long Life) tam sentetik motor yağı. BMW LL-01 ve MB 229.5 onaylarıyla premium Avrupa araçlarında üstün motor koruması ve optimize yakıt verimliliği sağlar.",
+    features: ["BMW LL-01 onaylı", "MB 229.5 onaylı", "Uzun değişim aralığı", "Premium Avrupa araç uyumlu"],
+  },
+  "maxima-vsa-0w-20": {
+    name: "Petrol Ofisi Maxima VSA 0W-20", grade: "0W-20", series: "Maxima VSA", type: "Tam Sentetik",
+    api: "SP", acea: "C5",
+    approvals: ["VW 508.00/509.00", "Porsche C20", "Fiat 9.55535-DM1"],
+    description: "VW 508.00/509.00 ve Porsche C20 onaylı tam sentetik motor yağı. Son nesil Volkswagen ve Porsche araçlarında uzun değişim aralığı ve üstün yakıt tasarrufu sağlar.",
+    features: ["VW 508.00/509.00 onaylı", "Porsche C20 onaylı", "Ultra düşük viskozite", "Maksimum yakıt ekonomisi"],
+  },
+  "maxima-k-0w-20": {
+    name: "Petrol Ofisi Maxima K 0W-20", grade: "0W-20", series: "Maxima K", type: "Tam Sentetik",
+    api: "SP", acea: "—",
+    approvals: ["ILSAC GF-6A"],
+    description: "KIA araçları için API SP ve ILSAC GF-6A onaylı tam sentetik motor yağı. Ultra düşük viskoziteli formülasyonu ile sıfır atıklı sürüş konseptine uygun ve üstün yakıt tasarrufu.",
+    features: ["KIA araçları için tasarlandı", "ILSAC GF-6A onaylı", "Ultra düşük viskozite", "Yakıt tasarrufu"],
+  },
+  "maxima-0w-20": {
+    name: "Petrol Ofisi Maxima 0W-20", grade: "0W-20", series: "Maxima", type: "Tam Sentetik",
+    api: "SN/CF", acea: "A5/B5",
+    approvals: [],
+    description: "API SN/CF ve ACEA A5/B5 sertifikalı geniş kullanım yelpazeli tam sentetik motor yağı. Düşük viskoziteli formülü sayesinde soğuk başlangıçlarda hızlı yağ dolaşımı ve üstün motor koruması sağlar.",
+    features: ["API SN/CF sertifikalı", "ACEA A5/B5 uyumlu", "Hızlı yağ dolaşımı", "Soğuk başlangıç koruması"],
+  },
+  "maxima-0w-30": {
+    name: "Petrol Ofisi Maxima 0W-30", grade: "0W-30", series: "Maxima", type: "Tam Sentetik",
+    api: "SN", acea: "A5/B5, C2",
+    approvals: ["Ford WSS-M2C950-A", "Fiat 9.55535-GS1/DS1"],
+    description: "Ford WSS-M2C950-A ve Fiat GS1/DS1 onaylı tam sentetik motor yağı. Uzun değişim aralığı ve geniş sıcaklık yelpazesinde stabil viskozite performansı.",
+    features: ["Ford onaylı", "Fiat GS1/DS1 onaylı", "Uzun değişim aralığı", "Geniş sıcaklık stabilitesi"],
+  },
+  "maximus-la-5w-30": {
+    name: "Petrol Ofisi Maximus LA 5W-30", grade: "5W-30", series: "Maximus LA", type: "Tam Sentetik",
+    api: "CJ-4/SN", acea: "E6/E7/E9",
+    approvals: ["MB 228.51", "MAN M3677"],
+    description: "MB 228.51 ve MAN M3677 onaylı düşük küllü (Low-SAPS) tam sentetik ağır hizmet motor yağı. Euro V/VI dizel motorlarda DPF koruması ve uzun değişim aralığı sağlar.",
+    features: ["Low-SAPS formülasyon", "DPF koruması", "MB 228.51 onaylı", "Euro V/VI uyumlu"],
+  },
+  "maximus-la-10w-40": {
+    name: "Petrol Ofisi Maximus LA 10W-40", grade: "10W-40", series: "Maximus LA", type: "Yarı Sentetik",
+    api: "CI-4", acea: "E6/E7/E8/E9/E11",
+    approvals: ["Volvo VDS-3", "MAN 3477/M3271", "Scania Low Ash", "DEUTZ DQC IV-18 LA"],
+    description: "ACEA E6/E7/E8/E9/E11 uyumlu düşük küllü yarı sentetik ağır hizmet motor yağı. Çok sayıda OEM onayıyla düşük emisyonlu ağır ticari araçlarda uzun değişim aralığı sağlar.",
+    features: ["ACEA E6/E7/E9/E11 uyumlu", "Volvo VDS-3 onaylı", "Scania Low Ash onaylı", "Uzun değişim aralığı"],
+  },
+  "maximus-hd-e-5w-30": {
+    name: "Petrol Ofisi Maximus HD-E 5W-30", grade: "5W-30", series: "Maximus HD-E", type: "Tam Sentetik",
+    api: "CK-4/SN", acea: "E4/E7/E8/E11",
+    approvals: ["Volvo VDS-4.5", "MAN M3777", "Scania LDF-4", "JASO DH-2"],
+    description: "API CK-4 ve ACEA E4/E7/E11 sertifikalı tam sentetik ağır hizmet motor yağı. Volvo VDS-4.5 ve Scania LDF-4 onaylarıyla Euro VI emisyon motorlarında üstün koruma ve maksimum yakıt verimliliği.",
+    features: ["API CK-4 sertifikalı", "Volvo VDS-4.5 onaylı", "Euro VI uyumlu", "JASO DH-2 onaylı"],
+  },
+  "maximus-hd-m-5w-30": {
+    name: "Petrol Ofisi Maximus HD-M 5W-30", grade: "5W-30", series: "Maximus HD-M", type: "Tam Sentetik",
+    api: "FA-4", acea: "—",
+    approvals: ["Cummins CES 20087", "Detroit Diesel 93K223"],
+    description: "API FA-4 sınıfı, yeni nesil ABD ağır ticari araç motorları için geliştirilmiş tam sentetik motor yağı. Cummins CES 20087 ve Detroit Diesel 93K223 onaylıdır; iyileştirilmiş yakıt ekonomisi sağlar.",
+    features: ["API FA-4 sertifikalı", "Cummins CES 20087 onaylı", "Detroit Diesel onaylı", "Üstün yakıt ekonomisi"],
+  },
+  "maximus-m-5w-30": {
+    name: "Petrol Ofisi Maximus M 5W-30", grade: "5W-30", series: "Maximus M", type: "Tam Sentetik",
+    api: "CI-4", acea: "E4/E7",
+    approvals: ["MB 228.5", "Volvo VDS-3", "MAN M3277/M3377", "Scania LDF"],
+    description: "MB 228.5, Volvo VDS-3, MAN M3277/3377 ve Scania LDF onaylı çok markalı tam sentetik ağır hizmet motor yağı. Euro V motorlarda uzun değişim aralığı ve düşük yakıt tüketimi.",
+    features: ["MB 228.5 onaylı", "Volvo VDS-3 onaylı", "Scania LDF onaylı", "Çok markalı uyumluluk"],
+  },
+  "maximus-hd-15w-40": {
+    name: "Petrol Ofisi Maximus HD 15W-40", grade: "15W-40", series: "Maximus HD", type: "Mineral",
+    api: "CK-4/SN", acea: "E7/E9",
+    approvals: ["Volvo VDS-4.5", "MAN M3775", "Cummins CES 20086", "Mack EOS 4.5", "CAT ECF-3", "DEUTZ DQC III-18 LA"],
+    description: "API CK-4/SN ve ACEA E7/E9 sertifikalı mineral bazlı ağır hizmet motor yağı. Geniş OEM onay yelpazesiyle çeşitli ağır ticari araç motorlarında güvenilir ve ekonomik koruma.",
+    features: ["API CK-4/SN sertifikalı", "Volvo VDS-4.5 onaylı", "Cummins CES 20086 onaylı", "CAT ECF-3 onaylı"],
+  },
+  "maximus-hd-10w-40": {
+    name: "Petrol Ofisi Maximus HD 10W-40", grade: "10W-40", series: "Maximus HD", type: "Yarı Sentetik",
+    api: "CK-4/SN", acea: "E9",
+    approvals: ["Volvo VDS-4.5", "MAN M3775", "Cummins CES 20086", "DEUTZ DQC III-18 LA"],
+    description: "API CK-4/SN ve ACEA E9 uyumlu yarı sentetik ağır hizmet motor yağı. Volvo, MAN ve Cummins onaylarıyla Euro V/VI motorlarda motor ömrünü uzatan gelişmiş yağlama sağlar.",
+    features: ["API CK-4 sertifikalı", "ACEA E9 uyumlu", "Volvo VDS-4.5 onaylı", "Uzatılmış motor ömrü"],
+  },
+  "maximus-hd-e-10w-40": {
+    name: "Petrol Ofisi Maximus HD-E 10W-40", grade: "10W-40", series: "Maximus HD-E", type: "Tam Sentetik",
+    api: "CK-4", acea: "E6/E7/E8/E9/E11",
+    approvals: ["MB 228.31/228.51", "Volvo VDS-4.5", "MAN M3775", "CAT ECF-3"],
+    description: "API CK-4 ve ACEA E6/E7/E8/E9/E11 sertifikalı tam sentetik ağır hizmet motor yağı. MB 228.31/228.51 ve Volvo VDS-4.5 onaylarıyla Euro VI motorlarda maksimum performans.",
+    features: ["API CK-4 sertifikalı", "ACEA E6/E9/E11 uyumlu", "MB 228.51 onaylı", "Volvo VDS-4.5 onaylı"],
+  },
+  "maximus-10w-40": {
+    name: "Petrol Ofisi Maximus 10W-40", grade: "10W-40", series: "Maximus", type: "Yarı Sentetik",
+    api: "CI-4", acea: "E4/E7",
+    approvals: ["MB DTFR 15B120", "Volvo VDS-3", "Renault VI RLD-2", "Mack EO-N", "DEUTZ DQC III-18"],
+    description: "ACEA E4/E7 uyumlu yarı sentetik ağır ticari araç motor yağı. Çok sayıda OEM onayıyla Euro IV/V motorlarda kapsamlı motor koruması ve güvenilir performans sağlar.",
+    features: ["ACEA E4/E7 uyumlu", "Volvo VDS-3 onaylı", "Mack EO-N onaylı", "Çok markalı uyumluluk"],
+  },
+  "maximus-turbo-diesel-extra-15w-40": {
+    name: "Petrol Ofisi Maximus Turbo Diesel Extra 15W-40", grade: "15W-40", series: "Maximus Turbo Diesel Extra", type: "Mineral",
+    api: "CI-4/SL/SC", acea: "E7",
+    approvals: ["Volvo VDS-3", "Mack EO-N", "MB DTFR 15B110", "MAN M3275", "Cummins CES 20077/78"],
+    description: "API CI-4/SL/SC ve ACEA E7 sertifikalı yüksek performanslı mineral dizel motor yağı. Geniş OEM onay yelpazesiyle Euro III/IV motorlarda ve eski nesil ağır hizmet araçlarında güvenilir koruma.",
+    features: ["API CI-4 sertifikalı", "ACEA E7 uyumlu", "Volvo VDS-3 onaylı", "Cummins CES 20077/78 onaylı"],
+  },
+};
+
+const PETROL_OFISI_INDUSTRIAL_PRODUCTS: Record<string, ProductSpec> = {
+  "hydro-oil-hd-32": {
+    name: "Petrol Ofisi Hydro Oil HD 32", grade: "ISO VG 32", series: "Hydro Oil HD", type: "Hidrolik Yağ HLP",
+    api: "ISO 11158 HL/HM", acea: "DIN 51524 Pt.II HLP",
+    approvals: ["Bosch Rexroth RDE 90235", "Cincinnati P-68/P-69/P-70", "Eaton M-2950", "Parker HF-0/HF-1/HF-2", "JCMAS P041"],
+    description: "DIN 51524 Pt.II (HLP) standardını karşılayan mineral bazlı hidrolik yağ. Bosch Rexroth ve Eaton onaylı; yüksek basınçlı endüstriyel sabit ve mobil hidrolik sistemlerde uzun servis ömrü.",
+    features: ["DIN 51524 HLP uyumlu", "Bosch Rexroth onaylı", "Eaton M-2950 onaylı", "Parker HF-0/1/2 onaylı"],
+  },
+  "hydro-oil-hd-46": {
+    name: "Petrol Ofisi Hydro Oil HD 46", grade: "ISO VG 46", series: "Hydro Oil HD", type: "Hidrolik Yağ HLP",
+    api: "ISO 11158 HL/HM", acea: "DIN 51524 Pt.II HLP",
+    approvals: ["Bosch Rexroth RDE 90235", "Cincinnati P-68/P-69/P-70", "Eaton M-2950", "Parker HF-0/HF-1/HF-2", "JCMAS P041"],
+    description: "Endüstriyel hidrolik sistemlerde en yaygın kullanılan viskozite derecesinde HLP mineral hidrolik yağ. Cincinnati, Parker ve JCMAS P041 onaylı; fabrika içi makine ve pres sistemlerinde üstün performans.",
+    features: ["En yaygın hidrolik viskozite", "Cincinnati onaylı", "Parker HF-0/1/2 onaylı", "JCMAS P041 onaylı"],
+  },
+  "hydro-oil-hd-68": {
+    name: "Petrol Ofisi Hydro Oil HD 68", grade: "ISO VG 68", series: "Hydro Oil HD", type: "Hidrolik Yağ HLP",
+    api: "ISO 11158 HL/HM", acea: "DIN 51524 Pt.II HLP",
+    approvals: ["Bosch Rexroth RDE 90235", "Cincinnati P-68/P-69/P-70", "Eaton M-2950", "Parker HF-0/HF-2"],
+    description: "Orta-yüksek viskoziteli mineral bazlı HLP hidrolik yağ. Yüksek basınçlı endüstriyel sistemler, büyük piston pompaları ve daha ağır yüklü ekipmanlar için tercih edilen viskozite sınıfı.",
+    features: ["Yüksek viskozite stabilitesi", "Büyük pompa uyumlu", "Yüksek basınç koruması", "Uzun servis ömrü"],
+  },
+  "hydro-oil-hd-100": {
+    name: "Petrol Ofisi Hydro Oil HD 100", grade: "ISO VG 100", series: "Hydro Oil HD", type: "Hidrolik Yağ HLP",
+    api: "ISO 11158 HL/HM", acea: "DIN 51524 Pt.II HLP",
+    approvals: ["Bosch Rexroth RDE 90235", "Cincinnati P-68/P-69/P-70", "Eaton M-2950", "Parker HF-0/HF-2"],
+    description: "Yüksek viskoziteli HLP mineral hidrolik yağ. Yavaş çalışan büyük kapasiteli silindir ve piston pompalı sistemler için uygun; ağır yük altında güvenilir film kalınlığı sağlar.",
+    features: ["Yüksek viskozite", "Ağır yük uyumlu", "Güvenilir film kalınlığı", "Büyük sistemler için"],
+  },
+  "hydro-tech-hvi-32": {
+    name: "Petrol Ofisi Hydro Tech HVI 32", grade: "ISO VG 32", series: "Hydro Tech HVI", type: "Hidrolik Yağ HVLP",
+    api: "ISO 11158 HV", acea: "DIN 51524 Pt.III HVLP",
+    approvals: ["Bosch Rexroth RDE 90220", "Cincinnati P-68/P-69/P-70", "Eaton M-2950", "Parker HF-0/HF-1/HF-2", "JCMAS P041"],
+    description: "DIN 51524 Pt.III (HVLP) standardını karşılayan yüksek viskozite indeksli mineral hidrolik yağ. Geniş çalışma sıcaklığı aralığında stabil viskozite; mevsimsel ve dış ortam uygulamalar için ideal.",
+    features: ["DIN 51524 HVLP uyumlu", "Yüksek VI formülasyonu", "Bosch Rexroth RDE 90220 onaylı", "JCMAS P041 onaylı"],
+  },
+  "hydro-tech-hvi-46": {
+    name: "Petrol Ofisi Hydro Tech HVI 46", grade: "ISO VG 46", series: "Hydro Tech HVI", type: "Hidrolik Yağ HVLP",
+    api: "ISO 11158 HV", acea: "DIN 51524 Pt.III HVLP",
+    approvals: ["Bosch Rexroth RDE 90220", "Cincinnati P-68/P-69/P-70", "Eaton M-2950", "Parker HF-0/HF-1/HF-2"],
+    description: "Geniş sıcaklık yelpazesinde stabil viskozite sunan HVLP mineral hidrolik yağ. Mevsimsel değişimlere maruz kalan dış ortam makineleri ve mobil iş makineleri için ideal seçim.",
+    features: ["HVLP yüksek VI", "Mevsimsel uyumluluk", "Mobil iş makinesi uyumlu", "Stabil viskozite"],
+  },
+  "hydro-tech-hvi-68": {
+    name: "Petrol Ofisi Hydro Tech HVI 68", grade: "ISO VG 68", series: "Hydro Tech HVI", type: "Hidrolik Yağ HVLP",
+    api: "ISO 11158 HV", acea: "DIN 51524 Pt.III HVLP",
+    approvals: ["Bosch Rexroth RDE 90220", "Cincinnati P-68/P-69/P-70", "Eaton M-2950", "Parker HF-0/HF-2"],
+    description: "Yüksek viskozite indeksli HVLP mineral hidrolik yağ. Büyük kapasiteli endüstriyel sistemlerde hem yaz hem kış koşullarında güvenilir performans; yavaş çalışan ağır yüklü sistemler için tercih edilir.",
+    features: ["Yüksek VI stabilitesi", "Yaz/kış uyumlu", "Ağır yük kapasitesi", "HVLP uyumlu"],
+  },
+  "gravis-m-220": {
+    name: "Petrol Ofisi Gravis M 220", grade: "ISO VG 220", series: "Gravis M", type: "Dişli Yağı CLP",
+    api: "ISO 12925-1 CKC", acea: "DIN 51517-3 CLP",
+    approvals: ["AGMA 9005-E02", "AIST 224", "David Brown S1.53.101"],
+    description: "DIN 51517 Pt.3 uyumlu mineral bazlı endüstriyel CLP dişli yağı. AGMA 9005-E02 ve David Brown S1.53.101 onaylı; kapalı dişli kutularında yüksek EP koruması ve uzun servis ömrü.",
+    features: ["DIN 51517-3 CLP uyumlu", "AGMA 9005-E02 onaylı", "David Brown onaylı", "Yüksek EP koruması"],
+  },
+  "gravis-m-320": {
+    name: "Petrol Ofisi Gravis M 320", grade: "ISO VG 320", series: "Gravis M", type: "Dişli Yağı CLP",
+    api: "ISO 12925-1 CKC", acea: "DIN 51517-3 CLP",
+    approvals: ["AGMA 9005-E02", "AIST 224", "David Brown S1.53.101"],
+    description: "Orta-yüksek viskoziteli mineral CLP endüstriyel dişli yağı. AGMA 9005-E02 ve AIST 224 onaylı; ağır yük altında çalışan endüstriyel redüktör ve dişli kutularında güvenilir uzun ömürlü koruma.",
+    features: ["AGMA 9005-E02 onaylı", "AIST 224 onaylı", "Ağır yük uyumlu", "Uzun servis ömrü"],
+  },
+  "gravis-m-460": {
+    name: "Petrol Ofisi Gravis M 460", grade: "ISO VG 460", series: "Gravis M", type: "Dişli Yağı CLP",
+    api: "ISO 12925-1 CKC", acea: "DIN 51517-3 CLP",
+    approvals: ["AGMA 9005-E02", "AIST 224", "David Brown S1.53.101"],
+    description: "Yüksek viskoziteli mineral CLP endüstriyel dişli yağı. Düşük hızlı ve yüksek torklı sistemler için tasarlanmış; David Brown ve AGMA onaylarıyla çeşitli endüstriyel redüktör uygulamaları için.",
+    features: ["Yüksek viskozite", "Düşük hız-yüksek tork uyumlu", "David Brown onaylı", "Uzun sistem ömrü"],
+  },
+  "gravis-mp-150": {
+    name: "Petrol Ofisi Gravis MP 150", grade: "ISO VG 150", series: "Gravis MP", type: "Dişli Yağı CLP EP",
+    api: "ISO 12925-1 CKD", acea: "DIN 51517-3 CLP",
+    approvals: ["AGMA 9005-E02", "Flender Rev.16.2", "SEB 181226"],
+    description: "DIN 51517 Pt.3 uyumlu Flender Rev.16.2 onaylı EP dişli yağı. Micropitting direnci güçlendirilmiş formülasyonu sayesinde yüksek hızlı heliks dişlilerde ve rüzgar türbini dişli kutularında uzun ömür.",
+    features: ["Flender Rev.16.2 onaylı", "Micropitting direnci", "Rüzgar türbini uyumlu", "Yüksek hız kapasitesi"],
+  },
+  "gravis-mp-220": {
+    name: "Petrol Ofisi Gravis MP 220", grade: "ISO VG 220", series: "Gravis MP", type: "Dişli Yağı CLP EP",
+    api: "ISO 12925-1 CKD", acea: "DIN 51517-3 CLP",
+    approvals: ["AGMA 9005-E02", "Flender Rev.16.2", "SEB 181226"],
+    description: "AGMA 9005-E02 ve Flender Rev.16.2 onaylı mineral bazlı EP dişli yağı. Yüksek yük kapasitesi ve micropitting direnciyle endüstriyel redüktörlerde ve konveyör sistemlerinde uzun değişim aralığı.",
+    features: ["Flender Rev.16.2 onaylı", "AGMA 9005-E02 onaylı", "Micropitting direnci", "Uzun değişim aralığı"],
+  },
+  "gravis-mp-320": {
+    name: "Petrol Ofisi Gravis MP 320", grade: "ISO VG 320", series: "Gravis MP", type: "Dişli Yağı CLP EP",
+    api: "ISO 12925-1 CKD", acea: "DIN 51517-3 CLP",
+    approvals: ["AGMA 9005-E02", "Flender Rev.16.2", "SEB 181226"],
+    description: "Flender Rev.16.2 ve SEB 181226 (Siemens) onaylı yüksek viskoziteli EP dişli yağı. Ağır yük ve yüksek tork altında çalışan endüstriyel dişli kutularında maksimum güvenilirlik ve uzun servis ömrü.",
+    features: ["Flender Rev.16.2 onaylı", "Siemens SEB 181226 onaylı", "Yüksek tork uyumlu", "Maksimum EP koruması"],
+  },
+  "compressor-oil-xt-46": {
+    name: "Petrol Ofisi Compressor Oil XT 46", grade: "ISO VG 46", series: "Compressor Oil XT", type: "Kompresör Yağı Mineral",
+    api: "ISO 6743-3 DAA/DAH", acea: "DIN 51506 VDL",
+    approvals: ["DIN 51517-1 C", "DIN 51517-2 CL"],
+    description: "DIN 51506 VDL standardını karşılayan mineral bazlı kompresör yağı. Pistonlu ve vidalı kompresörler için; yüksek oksidasyon direnci ve karbon oluşum riskini minimize eden formülasyon.",
+    features: ["DIN 51506 VDL uyumlu", "Pistonlu ve vidalı kompresör uyumlu", "Düşük karbon birikimi", "Yüksek oksidasyon direnci"],
+  },
+  "compressor-oil-xt-68": {
+    name: "Petrol Ofisi Compressor Oil XT 68", grade: "ISO VG 68", series: "Compressor Oil XT", type: "Kompresör Yağı Mineral",
+    api: "ISO 6743-3 DAA/DAH", acea: "DIN 51506 VDL",
+    approvals: ["DIN 51517-1 C"],
+    description: "Yüksek sıcaklıklarda çalışan pistonlu kompresörler için yüksek oksidasyon stabiliteli mineral bazlı kompresör yağı. DIN 51506 VDL onaylı; uzun servis aralığı ve güvenilir sistem performansı.",
+    features: ["Yüksek sıcaklık stabilitesi", "DIN 51506 VDL uyumlu", "Uzun servis aralığı", "Pistonlu kompresör uyumlu"],
+  },
+  "compressor-oil-sp-46": {
+    name: "Petrol Ofisi Compressor Oil SP 46", grade: "ISO VG 46", series: "Compressor Oil SP", type: "Kompresör Yağı Tam Sentetik",
+    api: "ISO 6743-3 DAA/DAH", acea: "DIN 51506 VDL",
+    approvals: ["DIN 51524 HLP", "GM LJ", "SAE MS1003-2"],
+    description: "PAO/ester bazlı sentetik kompresör yağı. Mineral yağlara kıyasla çok daha uzun değişim aralığı, düşük buharlaşma ve üstün termal stabilite sağlar. Vidalı ve döner kompresörler için idealdir.",
+    features: ["Tam sentetik formül", "Uzun değişim aralığı", "Düşük buharlaşma", "GM LJ onaylı"],
+  },
+  "compressor-oil-sp-68": {
+    name: "Petrol Ofisi Compressor Oil SP 68", grade: "ISO VG 68", series: "Compressor Oil SP", type: "Kompresör Yağı Tam Sentetik",
+    api: "ISO 6743-3 DAA/DAH", acea: "DIN 51506 VDL",
+    approvals: ["DIN 51524 HLP", "GM LJ", "SAE MS1003-2"],
+    description: "Yüksek sıcaklık uygulamaları için PAO/ester bazlı sentetik kompresör yağı. DIN 51506 VDL onaylı; uzun servis ömrü, yüksek oksidasyon kararlılığı ve düşük karbon birikimi sağlar.",
+    features: ["PAO/ester bazlı", "DIN 51506 VDL uyumlu", "Yüksek oksidasyon stabilitesi", "Uzun servis ömrü"],
+  },
+  "turbine-oil-tx-46": {
+    name: "Petrol Ofisi Turbine Oil TX 46", grade: "ISO VG 46", series: "Turbine Oil TX", type: "Türbin Yağı",
+    api: "ISO 8068 L-TSA/L-TGA", acea: "DIN 51515 Pts I & II",
+    approvals: ["Siemens TLV 9013", "ALSTOM HTGD 90117", "GE GEK32568G/46506E", "BS 489:1999"],
+    description: "ISO 8068:2006 L-TSA/L-TGA standardını karşılayan yüksek kaliteli türbin yağı. Siemens, ALSTOM ve GE onaylarıyla büyük endüstriyel buhar ve gaz türbinlerinde güvenilir uzun ömürlü yağlama sağlar.",
+    features: ["Siemens TLV 9013 onaylı", "ALSTOM HTGD 90117 onaylı", "GE onaylı", "Uzun ömürlü yağlama"],
+  },
+  "super-gres-ep-2": {
+    name: "Petrol Ofisi Super Gres EP 2", grade: "NLGI 2", series: "Super Gres EP", type: "Gres EP",
+    api: "NLGI 2", acea: "DIN 51825 KP 2 K-20",
+    approvals: ["TS 11584"],
+    description: "DIN 51825 KP 2 K-20 ve TS 11584 standardını karşılayan lityum bazlı EP gres. Yüksek basınç ve orta çalışma sıcaklıklarında rulman, bilyalı yatak ve dişli maşalarında güvenilir yağlama sağlar.",
+    features: ["Lityum bazlı EP formül", "DIN 51825 KP 2 K-20 uyumlu", "TS 11584 onaylı", "Yüksek yük kapasitesi"],
+  },
+  "molibdenli-gres-2": {
+    name: "Petrol Ofisi Molibdenli Gres 2", grade: "NLGI 2", series: "Molibdenli Gres", type: "Gres MoS₂",
+    api: "NLGI 2", acea: "DIN 51825 KP 2 N-20",
+    approvals: ["TS 11584"],
+    description: "MoS₂ (molibden disülfür) katkılı lityum bazlı EP gres. Yüksek spesifik basınç ve titreşimli çalışma koşullarında üstün kayma yüzeyi koruması; sık yağlamaya erişimin güç olduğu uygulamalar için idealdir.",
+    features: ["MoS₂ katkılı formül", "Yüksek basınç koruması", "Titreşim direnci", "Uzun yeniden yağlama aralığı"],
+  },
+};
+
 // ── Brand product lookup maps ──────────────────────────────────────────────
 
 const BRAND_MOTOR_PRODUCTS: Record<string, Record<string, ProductSpec>> = {
@@ -1396,7 +1732,7 @@ const BRAND_MOTOR_PRODUCTS: Record<string, Record<string, ProductSpec>> = {
   motul: MOTUL_MOTOR_PRODUCTS,
   texol: TEXOL_MOTOR_PRODUCTS,
   texaco: TEXACO_MOTOR_PRODUCTS,
-  "petrol-ofisi": {},
+  "petrol-ofisi": PETROL_OFISI_MOTOR_PRODUCTS,
 };
 
 const BRAND_INDUSTRIAL_PRODUCTS: Record<string, Record<string, ProductSpec>> = {
@@ -1407,10 +1743,16 @@ const BRAND_INDUSTRIAL_PRODUCTS: Record<string, Record<string, ProductSpec>> = {
   motul: MOTUL_INDUSTRIAL_PRODUCTS,
   texol: TEXOL_INDUSTRIAL_PRODUCTS,
   texaco: TEXACO_INDUSTRIAL_PRODUCTS,
-  "petrol-ofisi": {},
+  "petrol-ofisi": PETROL_OFISI_INDUSTRIAL_PRODUCTS,
 };
 
 function getTdsUrl(brandSlug: string, category: string, product: string): string {
+  if (brandSlug === "petrol-ofisi") {
+    const isInd = category === "endustriyel-yaglar";
+    return isInd
+      ? (PETROL_OFISI_INDUSTRIAL_TDS[product] ?? "#")
+      : (PETROL_OFISI_MOTOR_TDS[product]      ?? "#");
+  }
   const isIndustrial = category === "endustriyel-yaglar";
   if (!isIndustrial) {
     // Motor oils — served from local public/docs/[brand]/tds/ files

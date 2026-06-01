@@ -219,6 +219,30 @@ const BRAND_OVERRIDES: Record<string, string[]> = {
     "Texol Slideway 68",
   ],
 
+  /* ── PETROL OFİSİ ──────────────────────────────────────────────── */
+  "petrol-ofisi:motor-yaglari": [
+    "Petrol Ofisi Maxima CX 0W-20 Plus", "Petrol Ofisi Maxima CX 0W-30 Plus", "Petrol Ofisi Maxima CX 5W-30 Plus",
+    "Petrol Ofisi Maxima Hybrid 0W-20", "Petrol Ofisi Maxima Hybrid Tech 0W-20",
+    "Petrol Ofisi Maxima LL 5W-30", "Petrol Ofisi Maxima VSA 0W-20",
+    "Petrol Ofisi Maxima K 0W-20", "Petrol Ofisi Maxima 0W-20", "Petrol Ofisi Maxima 0W-30",
+    "Petrol Ofisi Maximus LA 5W-30", "Petrol Ofisi Maximus LA 10W-40",
+    "Petrol Ofisi Maximus HD-E 5W-30", "Petrol Ofisi Maximus HD-M 5W-30", "Petrol Ofisi Maximus M 5W-30",
+    "Petrol Ofisi Maximus HD 15W-40", "Petrol Ofisi Maximus HD 10W-40",
+    "Petrol Ofisi Maximus HD-E 10W-40", "Petrol Ofisi Maximus 10W-40",
+    "Petrol Ofisi Maximus Turbo Diesel Extra 15W-40",
+  ],
+  "petrol-ofisi:endustriyel-yaglar": [
+    "Petrol Ofisi Hydro Oil HD 32", "Petrol Ofisi Hydro Oil HD 46",
+    "Petrol Ofisi Hydro Oil HD 68", "Petrol Ofisi Hydro Oil HD 100",
+    "Petrol Ofisi Hydro Tech HVI 32", "Petrol Ofisi Hydro Tech HVI 46", "Petrol Ofisi Hydro Tech HVI 68",
+    "Petrol Ofisi Gravis M 220", "Petrol Ofisi Gravis M 320", "Petrol Ofisi Gravis M 460",
+    "Petrol Ofisi Gravis MP 150", "Petrol Ofisi Gravis MP 220", "Petrol Ofisi Gravis MP 320",
+    "Petrol Ofisi Compressor Oil XT 46", "Petrol Ofisi Compressor Oil XT 68",
+    "Petrol Ofisi Compressor Oil SP 46", "Petrol Ofisi Compressor Oil SP 68",
+    "Petrol Ofisi Turbine Oil TX 46",
+    "Petrol Ofisi Super Gres EP 2", "Petrol Ofisi Molibdenli Gres 2",
+  ],
+
   /* ── TEXACO ─────────────────────────────────────────────────────── */
   "texaco:motor-yaglari": [
     "Texaco Havoline ProDS 5W-30", "Texaco Havoline ProDS 5W-40",
