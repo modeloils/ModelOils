@@ -33,7 +33,9 @@ const BRAND_CATALOGS: Record<string, CatalogEntry[]> = {
     { id: "mobil-1",      title: "Mobil Madeni Yağlar Kataloğu",     file: "/docs/catalogs/mobil-madeni-yaglar-katalog.pdf", updated: "2024" },
     { id: "mobil-2",      title: "Mobil Katalog",                    file: "/docs/catalogs/mobil-katalog.pdf",               updated: "2024" },
   ],
-  castrol: [],
+  castrol: [
+    { id: "castrol-katalog", title: "Castrol Ürün Kataloğu", file: "/docs/catalogs/castrol-katalog.pdf", updated: "2024" },
+  ],
   total: [
     { id: "elf-2021",     title: "Elf Ürün Kataloğu 2021",           file: "/docs/catalogs/elf-katalog-2021.pdf",            updated: "2021" },
     { id: "total-maxcar", title: "Total Lubricants Guide — Maxcar",  file: "/docs/catalogs/total-maxcar-guide.pdf",          updated: "2024" },
