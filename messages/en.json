@@ -6,6 +6,7 @@
     "certifications": "Certifications",
     "about": "About",
     "blog": "Blog",
+    "catalogs": "Catalogs",
     "requestQuote": "Request Quote",
     "motorOils": "Motor Oils",
     "mineralOils": "Mineral Oils",
@@ -2046,5 +2047,21 @@
     "ctaTitle": "Need a Technical Answer?",
     "ctaBody": "Our export team answers product specification, OEM approval, and application questions directly.",
     "ctaBtn": "Ask a Technical Question"
+  },
+  "catalogsPage": {
+    "breadcrumbHome": "Home",
+    "breadcrumbPage": "Catalogs",
+    "eyebrow": "Product Documentation",
+    "headline": "Product Catalogs & Technical Documentation",
+    "subheadline": "Download our complete product catalog, technical data sheets, and export documentation. All files are available in PDF format.",
+    "downloadBtn": "Download PDF",
+    "fileSizeLabel": "File size",
+    "updatedLabel": "Updated",
+    "ctaTitle": "Need Custom Documentation?",
+    "ctaBody": "Our export team can provide COA, MSDS, TDS, and other compliance documents tailored to your destination country.",
+    "ctaBtn": "Contact Our Export Team",
+    "catalog1Title": "Model Oils General Product Catalog",
+    "catalog1Desc": "Complete overview of our motor oil, mineral oil, and industrial lubricant product range. Includes specifications, viscosity grades, and OEM approvals for all brands we export.",
+    "catalog1Pages": "Full product range — all brands & grades"
   }
 }

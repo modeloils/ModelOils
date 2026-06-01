@@ -163,6 +163,7 @@ export function Header({ locale = "en" }: HeaderProps) {
             { label: t("certifications"), href: "/certifications" },
             { label: t("about"), href: "/about" },
             { label: t("blog"), href: "/resources/blog" },
+            { label: t("catalogs"), href: "/resources/catalogs" },
           ].map((item) => (
             <Link
               key={item.href}
@@ -303,6 +304,7 @@ export function Header({ locale = "en" }: HeaderProps) {
             { label: t("certifications"), href: "/certifications" },
             { label: t("about"), href: "/about" },
             { label: t("blog"), href: "/resources/blog" },
+            { label: t("catalogs"), href: "/resources/catalogs" },
           ].map((item) => (
             <Link
               key={item.href}
