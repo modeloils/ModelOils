@@ -495,7 +495,7 @@ export default async function BrandCategoryPage({ params }: CategoryPageProps) {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {products.map((name) =>
               hasBrandedCards
-                ? <BrandedProductCard key={name} name={name} categorySlug={category} brandSlug={slug} colors={colors!} />
+                ? <BrandedProductCard key={name} name={name} categorySlug={category} brandSlug={slug.toLowerCase()} colors={colors!} />
                 : <PlaceholderCard key={name} name={name} />
             )}
           </div>
