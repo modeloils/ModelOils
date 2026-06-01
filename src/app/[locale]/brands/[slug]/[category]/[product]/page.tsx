@@ -1808,24 +1808,25 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   const t = await getTranslations("productPage");
 
-  // Use message-file translations when available; fall back to TypeScript data
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const pd = await getTranslations("pd" as any);
+  // Use message-file translations when available; fall back to TypeScript data.
+  // Only brands with entries in the pd namespace are looked up — others use the
+  // TypeScript spec data directly (already in the correct language).
   let translatedType = spec.type;
   let translatedDesc = spec.description;
   let translatedFeatures = spec.features;
-  try {
+  const BRANDS_WITH_PD = new Set(["shell", "mobil", "castrol", "total", "motul", "texol", "texaco"]);
+  if (BRANDS_WITH_PD.has(brandSlug)) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const key = product as any;
-    const maybeType = pd(`${key}.type`);
-    // next-intl returns the key path string when the key is missing instead of throwing
-    if (maybeType !== `${key}.type`) {
-      translatedType = maybeType;
+    const pd = await getTranslations("pd" as any);
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const key = product as any;
+      translatedType = pd(`${key}.type`);
       translatedDesc = pd(`${key}.description`);
       translatedFeatures = [pd(`${key}.f0`), pd(`${key}.f1`), pd(`${key}.f2`), pd(`${key}.f3`)];
+    } catch {
+      // fallback already set above
     }
-  } catch {
-    // fallback already set above
   }
 
   const { series, grade, api, acea, approvals } = spec;
