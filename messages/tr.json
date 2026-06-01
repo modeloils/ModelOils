@@ -2054,6 +2054,8 @@
     "eyebrow": "Ürün Dokümantasyonu",
     "headline": "Ürün Katalogları ve Teknik Dokümantasyon",
     "subheadline": "Ürün katalogumuzu, teknik veri sayfalarını ve ihracat belgelerini indirin. Tüm dosyalar PDF formatında mevcuttur.",
+    "selectBrand": "Ürün kataloglarını görüntülemek ve indirmek için aşağıdan bir marka seçin.",
+    "backToCatalogs": "Kataloglara Dön",
     "downloadBtn": "PDF İndir",
     "fileSizeLabel": "Dosya boyutu",
     "updatedLabel": "Güncellendi",
