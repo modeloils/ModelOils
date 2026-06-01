@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations,
+  setRequestLocale} from "next-intl/server";
 import { getBlogPosts } from "@/lib/sanity/queries";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -19,6 +20,7 @@ interface BlogPageProps {
 
 export default async function BlogPage({ params }: BlogPageProps) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("blogPage");
   const tb = await getTranslations("blog");
   const posts = await getBlogPosts(20).catch(() => []);

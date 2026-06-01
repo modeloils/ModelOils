@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations,
+  setRequestLocale} from "next-intl/server";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const BRANDS: Record<string, { name: string; logo: string }> = {
@@ -23,7 +24,8 @@ export async function generateStaticParams() {
 }
 
 export default async function BrandPage({ params }: BrandPageProps) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
   const brand = BRANDS[slug.toLowerCase()];
   if (!brand) notFound();
 

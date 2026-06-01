@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations,
+  setRequestLocale} from "next-intl/server";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -12,7 +13,14 @@ export const metadata: Metadata = {
     "Model Oils is an Istanbul-based lubricant manufacturer and exporter with 15+ years of experience. ISO 9001:2015 certified. Serving B2B buyers in 40+ countries across MENA, Africa, and Europe.",
 };
 
-export default async function AboutPage() {
+
+interface AboutPageProps {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function AboutPage({ params }: AboutPageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("about");
 
   const breadcrumb = {

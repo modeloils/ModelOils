@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations,
+  setRequestLocale} from "next-intl/server";
 import { getProductCategories } from "@/lib/sanity/queries";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ArrowRight } from "lucide-react";
@@ -13,7 +14,14 @@ export const metadata: Metadata = {
     "Wholesale supplier of motor oils, mineral oils, and industrial lubricants. ISO certified, API rated. Drum, IBC & bulk tanker available. Export to MENA, Africa, Europe. Request pricing.",
 };
 
-export default async function ProductsPage() {
+
+interface ProductsPageProps {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function ProductsPage({ params }: ProductsPageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("productsPage");
 
   const FALLBACK_CATEGORIES = [

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations,
+  setRequestLocale} from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
 
@@ -18,7 +19,14 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function SolutionsIndexPage() {
+
+interface SolutionsIndexPageProps {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function SolutionsIndexPage({ params }: SolutionsIndexPageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("solutions");
 
   const cards = await Promise.all(

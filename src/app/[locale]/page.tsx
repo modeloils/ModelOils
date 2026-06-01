@@ -10,6 +10,7 @@ import { CertificationsBar } from "@/components/features/certifications/Certific
 import { BlogPreviewSection } from "@/components/features/blog/BlogPreviewSection";
 import { getCertifications, getBlogPosts } from "@/lib/sanity/queries";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { setRequestLocale } from "next-intl/server";
 
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ interface HomePageProps {
 
 export default async function HomePage({ params }: HomePageProps) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const [certifications, posts] = await Promise.all([
     getCertifications().catch(() => []),
     getBlogPosts(3).catch(() => []),

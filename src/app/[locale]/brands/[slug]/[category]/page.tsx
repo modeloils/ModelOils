@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations,
+  setRequestLocale} from "next-intl/server";
 import { ArrowLeft, ArrowRight, FlaskConical, Truck, Droplets } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
@@ -316,7 +317,8 @@ export async function generateStaticParams() {
 }
 
 export default async function BrandCategoryPage({ params }: CategoryPageProps) {
-  const { slug, category } = await params;
+  const { locale, slug, category } = await params;
+  setRequestLocale(locale);
   const brand = BRANDS[slug.toLowerCase()];
   const cat = CATEGORIES[category];
 

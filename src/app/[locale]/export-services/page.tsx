@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations,
+  setRequestLocale} from "next-intl/server";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -44,7 +45,14 @@ const EXPORT_REGIONS = [
   { region: "Latin America", countries: "Colombia, Chile, Peru, Ecuador, Bolivia — ongoing expansion", highlight: false },
 ];
 
-export default async function ExportServicesPage() {
+
+interface ExportServicesPageProps {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function ExportServicesPage({ params }: ExportServicesPageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("exportSvc");
 
   const capabilities = [

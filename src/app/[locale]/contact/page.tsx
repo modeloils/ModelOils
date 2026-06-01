@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations,
+  setRequestLocale} from "next-intl/server";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, MessageCircle, Phone, Mail, MapPin, Clock } from "lucide-react";
@@ -11,7 +12,14 @@ export const metadata: Metadata = {
     "Contact Model Oils for bulk lubricant inquiries, technical product matching, or export documentation support. WhatsApp, email, and phone. 24-hour response guaranteed.",
 };
 
-export default async function ContactPage() {
+
+interface ContactPageProps {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function ContactPage({ params }: ContactPageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("contact");
 
   const breadcrumb = {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations,
+  setRequestLocale} from "next-intl/server";
 import { getCertifications } from "@/lib/sanity/queries";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
@@ -103,7 +104,14 @@ const COMPLIANCE_DOCS = [
   { label: "Phytosanitary / ISPM-15 Declaration", available: true },
 ];
 
-export default async function CertificationsPage() {
+
+interface CertificationsPageProps {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function CertificationsPage({ params }: CertificationsPageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("certPage");
   const certifications = await getCertifications().catch(() => []);
   const displayCerts = certifications.length > 0 ? certifications : FALLBACK_CERTS;

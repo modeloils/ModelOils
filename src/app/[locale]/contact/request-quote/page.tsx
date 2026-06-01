@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations,
+  setRequestLocale} from "next-intl/server";
 import { QuoteForm } from "@/components/features/quote/QuoteForm";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { CheckCircle, Clock, FileText, Shield, MessageCircle, Phone } from "lucide-react";
@@ -12,10 +13,13 @@ export const metadata: Metadata = {
 };
 
 interface Props {
+  params: Promise<{ locale: string }>;
   searchParams: Promise<{ product?: string }>;
 }
 
-export default async function RequestQuotePage({ searchParams }: Props) {
+export default async function RequestQuotePage({ params, searchParams }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const { product } = await searchParams;
   const t = await getTranslations("quotePage");
 

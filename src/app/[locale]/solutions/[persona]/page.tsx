@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations,
+  setRequestLocale} from "next-intl/server";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -197,7 +198,8 @@ export async function generateMetadata({ params }: SolutionPageProps): Promise<M
 }
 
 export default async function SolutionPage({ params }: SolutionPageProps) {
-  const { persona } = await params;
+  const { locale, persona } = await params;
+  setRequestLocale(locale);
   const data = PERSONAS[persona];
   if (!data) notFound();
 

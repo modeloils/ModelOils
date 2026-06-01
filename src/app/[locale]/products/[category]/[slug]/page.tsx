@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations,
+  setRequestLocale} from "next-intl/server";
 import { getProductBySlug, getFAQItems } from "@/lib/sanity/queries";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
@@ -25,6 +26,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
 export default async function ProductDetailPage({ params }: ProductPageProps) {
   const { locale, category, slug } = await params;
+  setRequestLocale(locale);
 
   const [product, faqs] = await Promise.all([
     getProductBySlug(slug, locale).catch(() => null),

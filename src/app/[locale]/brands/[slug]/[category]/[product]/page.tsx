@@ -1,6 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations,
+  setRequestLocale} from "next-intl/server";
 import { ArrowLeft, ArrowRight, CheckCircle2, FileText } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
@@ -1444,7 +1445,8 @@ export async function generateStaticParams() {
 }
 
 export default async function ProductPage({ params }: ProductPageProps) {
-  const { slug, category, product } = await params;
+  const { locale, slug, category, product } = await params;
+  setRequestLocale(locale);
 
   const brandSlug = slug.toLowerCase();
   const isIndustrial = category === "endustriyel-yaglar";
