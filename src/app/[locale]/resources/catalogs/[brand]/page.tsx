@@ -44,7 +44,8 @@ const BRAND_CATALOGS: Record<string, CatalogEntry[]> = {
     { id: "motul-2024",   title: "Motul Catalogue 2024",             file: "/docs/catalogs/motul-catalogue-2024.pdf",        updated: "2024" },
   ],
   texol: [
-    { id: "texol-genel",  title: "Texol Genel Ürün Kataloğu",        file: "/docs/catalogs/general-product-catalog.pdf",     updated: "2026" },
+    { id: "texol-genel",  title: "Texol Genel Ürün Kataloğu",        file: "/docs/catalogs/general-product-catalog.pdf",          updated: "2026" },
+    { id: "texol-2019",   title: "Texol Ürün Kataloğu 2019",         file: "/docs/catalogs/texol-urun-katalogu-2019.pdf",          updated: "2019" },
   ],
   texaco: [
     { id: "texaco-main",  title: "Texaco Ürün Kataloğu",             file: "/docs/catalogs/texaco-katalog.pdf",              updated: "2024" },
