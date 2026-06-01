@@ -27,14 +27,14 @@ interface CatalogEntry {
 }
 
 const BRAND_CATALOGS: Record<string, CatalogEntry[]> = {
-  Shell:          [{ id: "general", titleKey: "catalog1Title", descKey: "catalog1Desc", pagesKey: "catalog1Pages", file: "/docs/catalogs/general-product-catalog.pdf", updated: "2026" }],
-  mobil:          [{ id: "general", titleKey: "catalog1Title", descKey: "catalog1Desc", pagesKey: "catalog1Pages", file: "/docs/catalogs/general-product-catalog.pdf", updated: "2026" }],
-  castrol:        [{ id: "general", titleKey: "catalog1Title", descKey: "catalog1Desc", pagesKey: "catalog1Pages", file: "/docs/catalogs/general-product-catalog.pdf", updated: "2026" }],
-  total:          [{ id: "general", titleKey: "catalog1Title", descKey: "catalog1Desc", pagesKey: "catalog1Pages", file: "/docs/catalogs/general-product-catalog.pdf", updated: "2026" }],
-  motul:          [{ id: "general", titleKey: "catalog1Title", descKey: "catalog1Desc", pagesKey: "catalog1Pages", file: "/docs/catalogs/general-product-catalog.pdf", updated: "2026" }],
+  Shell:          [],
+  mobil:          [],
+  castrol:        [],
+  total:          [],
+  motul:          [],
   texol:          [{ id: "general", titleKey: "catalog1Title", descKey: "catalog1Desc", pagesKey: "catalog1Pages", file: "/docs/catalogs/general-product-catalog.pdf", updated: "2026" }],
-  texaco:         [{ id: "general", titleKey: "catalog1Title", descKey: "catalog1Desc", pagesKey: "catalog1Pages", file: "/docs/catalogs/general-product-catalog.pdf", updated: "2026" }],
-  "petrol-ofisi": [{ id: "general", titleKey: "catalog1Title", descKey: "catalog1Desc", pagesKey: "catalog1Pages", file: "/docs/catalogs/general-product-catalog.pdf", updated: "2026" }],
+  texaco:         [],
+  "petrol-ofisi": [],
 };
 
 interface BrandCatalogsPageProps {
@@ -114,45 +114,51 @@ export default async function BrandCatalogsPage({ params }: BrandCatalogsPagePro
             {t("backToCatalogs")}
           </Link>
 
-          <div className="grid gap-6">
-            {catalogs.map((catalog) => (
-              <div
-                key={catalog.id}
-                className="bg-white border border-brand-200 rounded-xl p-6 sm:p-8 flex flex-col sm:flex-row sm:items-start gap-6"
-              >
-                {/* Icon */}
-                <div className="w-16 h-16 rounded-xl bg-brand-900 border border-brand-700 flex items-center justify-center shrink-0">
-                  <FileText className="h-7 w-7 text-accent-400" aria-hidden="true" />
-                </div>
+          {catalogs.length === 0 ? (
+            <div className="bg-white border border-brand-200 rounded-xl p-10 text-center">
+              <FileText className="h-10 w-10 text-brand-300 mx-auto mb-4" aria-hidden="true" />
+              <p className="text-brand-500 text-sm">{t("ctaBody")}</p>
+            </div>
+          ) : (
+            <div className="grid gap-6">
+              {catalogs.map((catalog) => (
+                <div
+                  key={catalog.id}
+                  className="bg-white border border-brand-200 rounded-xl p-6 sm:p-8 flex flex-col sm:flex-row sm:items-start gap-6"
+                >
+                  {/* Icon */}
+                  <div className="w-16 h-16 rounded-xl bg-brand-900 border border-brand-700 flex items-center justify-center shrink-0">
+                    <FileText className="h-7 w-7 text-accent-400" aria-hidden="true" />
+                  </div>
 
-                {/* Content */}
-                <div className="flex-1 min-w-0">
-                  <h2 className="text-base font-bold text-brand-900 mb-2">{t(catalog.titleKey as "catalog1Title")}</h2>
-                  <p className="text-sm text-brand-600 leading-relaxed mb-3">{t(catalog.descKey as "catalog1Desc")}</p>
-                  <div className="flex flex-wrap gap-4 text-xs text-brand-500">
-                    <span>
-                      <span className="font-medium text-brand-700">{t("updatedLabel")}:</span> {catalog.updated}
-                    </span>
-                    <span>{t(catalog.pagesKey as "catalog1Pages")}</span>
+                  {/* Content */}
+                  <div className="flex-1 min-w-0">
+                    <h2 className="text-base font-bold text-brand-900 mb-2">{t(catalog.titleKey as "catalog1Title")}</h2>
+                    <p className="text-sm text-brand-600 leading-relaxed mb-3">{t(catalog.descKey as "catalog1Desc")}</p>
+                    <div className="flex flex-wrap gap-4 text-xs text-brand-500">
+                      <span>
+                        <span className="font-medium text-brand-700">{t("updatedLabel")}:</span> {catalog.updated}
+                      </span>
+                      <span>{t(catalog.pagesKey as "catalog1Pages")}</span>
+                    </div>
+                  </div>
+
+                  {/* Open in browser */}
+                  <div className="shrink-0">
+                    <a
+                      href={catalog.file}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-accent-600 hover:bg-accent-700 text-white text-sm font-semibold px-5 py-2.5 rounded-[var(--radius-btn)] transition-colors"
+                    >
+                      <Download className="h-4 w-4" />
+                      {t("downloadBtn")}
+                    </a>
                   </div>
                 </div>
-
-                {/* Download */}
-                <div className="shrink-0">
-                  <a
-                    href={catalog.file}
-                    download
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-accent-600 hover:bg-accent-700 text-white text-sm font-semibold px-5 py-2.5 rounded-[var(--radius-btn)] transition-colors"
-                  >
-                    <Download className="h-4 w-4" />
-                    {t("downloadBtn")}
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
