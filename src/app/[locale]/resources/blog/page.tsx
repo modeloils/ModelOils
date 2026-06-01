@@ -27,6 +27,18 @@ export default async function BlogPage({ params }: BlogPageProps) {
 
   const categoryLabels = tb.raw("categoryLabels") as Record<string, string>;
 
+  const staticPosts = [
+    {
+      _id: "static-madeni-yag-tanimi",
+      title: "Madeni Yağ: Tanımı, Çeşitleri ve Bilinmesi Gerekenler",
+      slug: "madeni-yag-tanimi",
+      excerpt: "Madeni yağlar nedir, çeşitleri nelerdir, nasıl seçilir? Viskozite, kalite faktörleri, yağ türleri karşılaştırması ve yaygın yanılgılar hakkında kapsamlı teknik rehber.",
+      category: "technical-guides",
+      publishedAt: "2026-06-01T00:00:00.000Z",
+      readingTimeMinutes: 8,
+    },
+  ];
+
   function formatDate(dateStr: string): string {
     return new Date(dateStr).toLocaleDateString(locale === "en" ? "en-GB" : locale, {
       day: "numeric",
@@ -61,62 +73,54 @@ export default async function BlogPage({ params }: BlogPageProps) {
           </nav>
           <SectionHeader
             eyebrow={t("eyebrow")}
-            headline={t("headline")}
-            subheadline={t("subheadline")}
+            headline=""
             alignment="left"
             dark
           />
         </div>
       </section>
 
-      {/* Posts grid or no-posts state */}
+      {/* Posts grid */}
       <section className="bg-brand-50 section-padding">
         <div className="container-xl">
-          {posts.length > 0 ? (
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {posts.map((post) => (
-                <Link
-                  key={post._id}
-                  href={`/resources/blog/${post.slug}`}
-                  className="group bg-white border border-brand-200 rounded-xl overflow-hidden hover:border-accent-600 hover:shadow-[0_8px_24px_rgba(13,27,42,0.1)] transition-all"
-                >
-                  <div className="aspect-[16/9] bg-brand-900 flex items-center justify-center relative overflow-hidden">
-                    <div className="hex-texture absolute inset-0 opacity-30" />
-                    <span className="text-accent-400 font-mono text-xs font-semibold z-10 px-3 text-center">
-                      {post.category ? (categoryLabels[post.category] ?? post.category) : "Article"}
-                    </span>
-                  </div>
-                  <div className="p-5">
-                    {post.category && (
-                      <Badge variant="amber" className="mb-3">
-                        {categoryLabels[post.category] ?? post.category}
-                      </Badge>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[...staticPosts, ...posts].map((post) => (
+              <Link
+                key={post._id}
+                href={`/resources/blog/${post.slug}`}
+                className="group bg-white border border-brand-200 rounded-xl overflow-hidden hover:border-accent-600 hover:shadow-[0_8px_24px_rgba(13,27,42,0.1)] transition-all"
+              >
+                <div className="aspect-[16/9] bg-brand-900 flex items-center justify-center relative overflow-hidden">
+                  <div className="hex-texture absolute inset-0 opacity-30" />
+                  <span className="text-accent-400 font-mono text-xs font-semibold z-10 px-3 text-center">
+                    {post.category ? (categoryLabels[post.category] ?? post.category) : "Article"}
+                  </span>
+                </div>
+                <div className="p-5">
+                  {post.category && (
+                    <Badge variant="amber" className="mb-3">
+                      {categoryLabels[post.category] ?? post.category}
+                    </Badge>
+                  )}
+                  <h2 className="text-sm font-bold text-brand-900 leading-snug mb-2 group-hover:text-accent-600 transition-colors line-clamp-2">
+                    {post.title}
+                  </h2>
+                  {"excerpt" in post && post.excerpt && (
+                    <p className="text-xs text-brand-600 leading-relaxed mb-4 line-clamp-3">{post.excerpt as string}</p>
+                  )}
+                  <div className="flex items-center justify-between text-xs text-brand-500">
+                    <span>{formatDate(post.publishedAt)}</span>
+                    {post.readingTimeMinutes && (
+                      <span className="flex items-center gap-1">
+                        <Clock className="h-3 w-3" aria-hidden="true" />
+                        {post.readingTimeMinutes} {t("minRead")}
+                      </span>
                     )}
-                    <h2 className="text-sm font-bold text-brand-900 leading-snug mb-2 group-hover:text-accent-600 transition-colors line-clamp-2">
-                      {post.title}
-                    </h2>
-                    {post.excerpt && (
-                      <p className="text-xs text-brand-600 leading-relaxed mb-4 line-clamp-3">{post.excerpt}</p>
-                    )}
-                    <div className="flex items-center justify-between text-xs text-brand-500">
-                      <span>{formatDate(post.publishedAt)}</span>
-                      {post.readingTimeMinutes && (
-                        <span className="flex items-center gap-1">
-                          <Clock className="h-3 w-3" aria-hidden="true" />
-                          {post.readingTimeMinutes} {t("minRead")}
-                        </span>
-                      )}
-                    </div>
                   </div>
-                </Link>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-20">
-              <p className="text-lg font-semibold text-brand-900 mb-2">{t("noPostsTitle")}</p>
-              <p className="text-brand-500 text-sm">{t("noPostsBody")}</p>
-            </div>
-          )}
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
