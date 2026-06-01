@@ -19,7 +19,7 @@ const BRANDS: Record<string, { name: string; logo: string; blend: boolean }> = {
 
 interface CatalogEntry {
   id: string;
-  titleKey: string;
+  title: string;
   descKey: string;
   pagesKey: string;
   file: string;
@@ -32,7 +32,7 @@ const BRAND_CATALOGS: Record<string, CatalogEntry[]> = {
   castrol:        [],
   total:          [],
   motul:          [],
-  texol:          [{ id: "general", titleKey: "catalog1Title", descKey: "catalog1Desc", pagesKey: "catalog1Pages", file: "/docs/catalogs/general-product-catalog.pdf", updated: "2026" }],
+  texol:          [{ id: "texol-genel", title: "Texol Genel Ürün Kataloğu", descKey: "catalog1Desc", pagesKey: "catalog1Pages", file: "/docs/catalogs/general-product-catalog.pdf", updated: "2026" }],
   texaco:         [],
   "petrol-ofisi": [],
 };
@@ -133,7 +133,7 @@ export default async function BrandCatalogsPage({ params }: BrandCatalogsPagePro
 
                   {/* Content */}
                   <div className="flex-1 min-w-0">
-                    <h2 className="text-base font-bold text-brand-900 mb-2">{t(catalog.titleKey as "catalog1Title")}</h2>
+                    <h2 className="text-base font-bold text-brand-900 mb-2">{catalog.title}</h2>
                     <p className="text-sm text-brand-600 leading-relaxed mb-3">{t(catalog.descKey as "catalog1Desc")}</p>
                     <div className="flex flex-wrap gap-4 text-xs text-brand-500">
                       <span>
