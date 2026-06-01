@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import { ExternalLink, FileText, ArrowLeft, ArrowRight } from "lucide-react";
+
 import { Button } from "@/components/ui/Button";
 
 const BRANDS: Record<string, { name: string; logo: string; blend: boolean }> = {
@@ -126,9 +127,15 @@ export default async function BrandCatalogsPage({ params }: BrandCatalogsPagePro
                   key={catalog.id}
                   className="bg-white border border-brand-200 rounded-xl p-6 sm:p-8 flex flex-col sm:flex-row sm:items-start gap-6"
                 >
-                  {/* Icon */}
-                  <div className="w-16 h-16 rounded-xl bg-brand-900 border border-brand-700 flex items-center justify-center shrink-0">
-                    <FileText className="h-7 w-7 text-accent-400" aria-hidden="true" />
+                  {/* Brand logo */}
+                  <div className="w-16 h-16 rounded-xl bg-white border border-brand-200 flex items-center justify-center shrink-0 p-2">
+                    <Image
+                      src={brandInfo.logo}
+                      alt={brandInfo.name}
+                      width={56}
+                      height={56}
+                      className={`object-contain w-full h-full ${brandInfo.blend ? "mix-blend-multiply" : ""}`}
+                    />
                   </div>
 
                   {/* Content */}
