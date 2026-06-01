@@ -27,11 +27,16 @@ interface CatalogEntry {
 
 const BRAND_CATALOGS: Record<string, CatalogEntry[]> = {
   Shell: [
-    { id: "shell-helix",  title: "Shell Helix Ürün Kataloğu",       file: "/docs/catalogs/shell-helix-catalogue.pdf",       updated: "2024" },
+    { id: "shell-helix",    title: "Shell Helix Ürün Kataloğu",           file: "/docs/catalogs/shell-helix-catalogue.pdf",     updated: "2024" },
+    { id: "shell-coolant",  title: "Shell Coolant Europe Products",        file: "/docs/catalogs/shell-coolant-europe.pdf",      updated: "2024" },
+    { id: "shell-marine",   title: "Shell Marine Digital Pocketbook 2025", file: "/docs/catalogs/shell-marine-2025.pdf",         updated: "2025" },
+    { id: "shell-services", title: "Shell Services Product Guide",         file: "/docs/catalogs/shell-services-guide.pdf",      updated: "2024" },
   ],
   mobil: [
-    { id: "mobil-1",      title: "Mobil Madeni Yağlar Kataloğu",     file: "/docs/catalogs/mobil-madeni-yaglar-katalog.pdf", updated: "2024" },
-    { id: "mobil-2",      title: "Mobil Katalog",                    file: "/docs/catalogs/mobil-katalog.pdf",               updated: "2024" },
+    { id: "mobil-1",        title: "Mobil Madeni Yağlar Kataloğu",         file: "/docs/catalogs/mobil-madeni-yaglar-katalog.pdf",  updated: "2024" },
+    { id: "mobil-2",        title: "Mobil Katalog",                        file: "/docs/catalogs/mobil-katalog.pdf",                updated: "2024" },
+    { id: "mobil-delvac",   title: "Mobil Delvac Broşür 2024",             file: "/docs/catalogs/mobil-delvac-2024.pdf",            updated: "2024" },
+    { id: "mobil-1-guide",  title: "Mobil 1 Engine Oils Product Guide",    file: "/docs/catalogs/mobil-1-engine-oils-guide-2022.pdf", updated: "2022" },
   ],
   castrol: [
     { id: "castrol-katalog", title: "Castrol Ürün Kataloğu", file: "/docs/catalogs/castrol-katalog.pdf", updated: "2024" },
