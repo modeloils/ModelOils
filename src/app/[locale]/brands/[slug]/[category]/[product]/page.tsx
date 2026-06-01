@@ -1786,7 +1786,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   let translatedType = spec.type;
   let translatedDesc = spec.description;
   let translatedFeatures = spec.features;
-  const BRANDS_WITH_PD = new Set(["shell", "mobil", "castrol", "total", "motul", "texol", "texaco"]);
+  const BRANDS_WITH_PD = new Set(["mobil", "castrol", "total", "motul", "texol", "texaco"]);
   if (BRANDS_WITH_PD.has(brandSlug)) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const pd = await getTranslations("pd" as any);
