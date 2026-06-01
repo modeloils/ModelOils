@@ -54,9 +54,6 @@ const BRAND_CATALOGS: Record<string, CatalogEntry[]> = {
   ],
   texaco: [
     { id: "texaco-main",  title: "Texaco Ürün Kataloğu",             file: "/docs/catalogs/texaco-katalog.pdf",              updated: "2024" },
-    { id: "texaco-hav",   title: "Havoline Teknik Özellikler",        file: "/docs/catalogs/texaco-havoline.pdf",             updated: "2024" },
-    { id: "texaco-delo1", title: "Delo — İnşaat & Maden",            file: "/docs/catalogs/texaco-delo-insaat-maden.pdf",    updated: "2024" },
-    { id: "texaco-delo2", title: "Delo — Tarım & Traktör",           file: "/docs/catalogs/texaco-delo-tarim-traktor.pdf",   updated: "2024" },
   ],
   "petrol-ofisi": [
     { id: "po-katalog",   title: "Petrol Ofisi Madeni Yağ Kataloğu", file: "/docs/catalogs/petrol-ofisi-katalog.pdf",        updated: "2024" },
