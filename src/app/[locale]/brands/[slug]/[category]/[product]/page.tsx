@@ -480,7 +480,8 @@ const BRAND_CONFIGS: Record<string, BrandConfig> = {
   total:   { name: "Elf / Total", primary: "#EE1C25", secondary: "#aa1019", accent: "#FFD100", accentText: "#aa1019" },
   motul:   { name: "Motul",       primary: "#1a1a1a", secondary: "#000000", accent: "#E8192C", accentText: "#ffffff" },
   texol:   { name: "Texol",       primary: "#0052A1", secondary: "#002d6b", accent: "#7EC8E3", accentText: "#002d6b" },
-  texaco:  { name: "Texaco",      primary: "#CC0000", secondary: "#880000", accent: "#ffffff", accentText: "#CC0000" },
+  texaco:         { name: "Texaco",       primary: "#CC0000", secondary: "#880000", accent: "#ffffff",  accentText: "#CC0000" },
+  "petrol-ofisi": { name: "Petrol Ofisi", primary: "#CC2229", secondary: "#8c0f13", accent: "#ffffff",  accentText: "#CC2229" },
 };
 
 // ── MOBIL ─────────────────────────────────────────────────────────────────
@@ -1395,6 +1396,7 @@ const BRAND_MOTOR_PRODUCTS: Record<string, Record<string, ProductSpec>> = {
   motul: MOTUL_MOTOR_PRODUCTS,
   texol: TEXOL_MOTOR_PRODUCTS,
   texaco: TEXACO_MOTOR_PRODUCTS,
+  "petrol-ofisi": {},
 };
 
 const BRAND_INDUSTRIAL_PRODUCTS: Record<string, Record<string, ProductSpec>> = {
@@ -1405,6 +1407,7 @@ const BRAND_INDUSTRIAL_PRODUCTS: Record<string, Record<string, ProductSpec>> = {
   motul: MOTUL_INDUSTRIAL_PRODUCTS,
   texol: TEXOL_INDUSTRIAL_PRODUCTS,
   texaco: TEXACO_INDUSTRIAL_PRODUCTS,
+  "petrol-ofisi": {},
 };
 
 function getTdsUrl(brandSlug: string, category: string, product: string): string {

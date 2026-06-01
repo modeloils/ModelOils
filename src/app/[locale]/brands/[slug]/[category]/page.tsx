@@ -13,7 +13,8 @@ const BRANDS: Record<string, { name: string; logo: string }> = {
   shell:   { name: "Shell",       logo: "/brands/Shell.png"   },
   total:   { name: "Elf / Total", logo: "/brands/total.png"   },
   motul:   { name: "Motul",       logo: "/brands/motul.jpg"   },
-  mobil:   { name: "Mobil",       logo: "/brands/mobil.png"   },
+  mobil:          { name: "Mobil",        logo: "/brands/mobil.png"        },
+  "petrol-ofisi": { name: "Petrol Ofisi", logo: "/brands/petrol-ofisi.png" },
 };
 
 const CATEGORIES: Record<string, {
@@ -64,13 +65,14 @@ const BRAND_CARD_COLORS: Record<string, {
   total:   { primary: "#EE1C25", secondary: "#aa1019", accent: "#FFD100",  accentText: "#aa1019" },
   motul:   { primary: "#1a1a1a", secondary: "#000000", accent: "#E8192C",  accentText: "#ffffff" },
   texol:   { primary: "#0052A1", secondary: "#002d6b", accent: "#7EC8E3",  accentText: "#002d6b" },
-  texaco:  { primary: "#CC0000", secondary: "#880000", accent: "#ffffff",  accentText: "#CC0000" },
+  texaco:         { primary: "#CC0000", secondary: "#880000", accent: "#ffffff",  accentText: "#CC0000" },
+  "petrol-ofisi": { primary: "#CC2229", secondary: "#8c0f13", accent: "#ffffff",  accentText: "#CC2229" },
 };
 
 // Strips any known brand prefix then slugifies
 function toSlug(name: string) {
   return name
-    .replace(/^(Shell|Mobil|Castrol|Total|Elf|Motul|Texol|Texaco)\s+/i, "")
+    .replace(/^(Shell|Mobil|Castrol|Total|Elf|Motul|Texol|Texaco|Petrol Ofisi)\s+/i, "")
     .toLowerCase()
     .replace(/\+/g, "plus")
     .replace(/\//g, "-")

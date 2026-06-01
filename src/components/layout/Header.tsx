@@ -16,7 +16,8 @@ const BRANDS_MENU = [
   { name: "Elf / Total", slug: "total"   },
   { name: "Motul",       slug: "motul"   },
   { name: "Texol",       slug: "texol"   },
-  { name: "Texaco",      slug: "texaco"  },
+  { name: "Texaco",       slug: "texaco"       },
+  { name: "Petrol Ofisi", slug: "petrol-ofisi" },
 ];
 
 const BRAND_CATEGORY_PATHS = [

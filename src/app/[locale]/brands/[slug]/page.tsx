@@ -12,7 +12,8 @@ const BRANDS: Record<string, { name: string; logo: string }> = {
   shell:   { name: "Shell",       logo: "/brands/Shell.png"   },
   total:   { name: "Elf / Total", logo: "/brands/total.png"   },
   motul:   { name: "Motul",       logo: "/brands/motul.jpg"   },
-  mobil:   { name: "Mobil",       logo: "/brands/mobil.png"   },
+  mobil:          { name: "Mobil",        logo: "/brands/mobil.png"        },
+  "petrol-ofisi": { name: "Petrol Ofisi", logo: "/brands/petrol-ofisi.png" },
 };
 
 interface BrandPageProps {

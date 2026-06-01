@@ -9,7 +9,8 @@ const BRANDS = [
   { id: 4, name: "Elf / Total", logo: "/brands/total.png",   slug: "total",   scale: "scale-[1.3]", blend: true  },
   { id: 5, name: "Motul",       logo: "/brands/motul.jpg",   slug: "motul",   scale: "",            blend: true  },
   { id: 6, name: "Texol",       logo: "/brands/texol.jpg",   slug: "texol",   scale: "",            blend: true  },
-  { id: 7, name: "Texaco",      logo: "/brands/texaco.png",  slug: "texaco",  scale: "",            blend: true  },
+  { id: 7, name: "Texaco",      logo: "/brands/texaco.png",       slug: "texaco",       scale: "",            blend: true  },
+  { id: 8, name: "Petrol Ofisi", logo: "/brands/petrol-ofisi.png", slug: "petrol-ofisi", scale: "",            blend: true  },
 ];
 
 export function BrandsSection() {
