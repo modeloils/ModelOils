@@ -753,12 +753,12 @@
       "f3": "Uzun servis aralığı"
     },
     "tellus-s3-m-46": {
-      "type": "Hidrolik Yağ (Küllüsüz)",
-      "description": "Çinko içermeyen küllüsüz formülasyonuyla çevre dostu hidrolik yağı. Gümüş ve magnezyum alaşımlı bileşenler içeren hassas hidrolik sistemler için idealdir.",
-      "f0": "Çinko içermeyen ZAF formül",
-      "f1": "Gümüş alaşım uyumlu",
-      "f2": "Servo vana uyumluluğu",
-      "f3": "Üstün filtre uyumluluğu"
+      "type": "Küllüsüz Hidrolik Yağ",
+      "description": "Çinko içermeyen küllüsüz formülasyonuyla hassas servo vanaları ve alaşımlı bileşenleri koruyan hidrolik yağ. En yaygın endüstriyel viskozite sınıfı.",
+      "f0": "Küllüsüz formül",
+      "f1": "Servo vana uyumlu",
+      "f2": "Üstün oksidasyon stabilitesi",
+      "f3": "Hassas filtre uyumlu"
     },
     "omala-s2-gx-150": {
       "type": "Dişli Yağı EP",
@@ -793,20 +793,20 @@
       "f3": "Ekstrem basınç koruma"
     },
     "corena-s3-r-46": {
-      "type": "Kompresör Yağı",
-      "description": "Döner vidalı ve döner paletli kompresörler için sentetik teknoloji kompresör yağı. 4.000 saate kadar uzun değişim aralığıyla işletme maliyetlerini düşürür.",
-      "f0": "4.000 saat değişim aralığı",
-      "f1": "Döner vida kompresör uyumlu",
-      "f2": "Düşük karbon birikimi",
-      "f3": "Üstün oksidasyon direnci"
+      "type": "Vidalı/Kanatlı Kompresör Yağı",
+      "description": "Yağ banyolu vidalı ve kanatlı kompresörler için yüksek kaliteli kompresör yağı. 8000 saate kadar uzayan yağ değişim ömrü ve düşük karbon birikimi.",
+      "f0": "8000 saat yağ ömrü",
+      "f1": "Düşük karbon birikimi",
+      "f2": "Olağanüstü oksidasyon direnci",
+      "f3": "Düşük uçuculuk"
     },
     "corena-s4-r-46": {
-      "type": "Kompresör Yağı (Tam Sentetik)",
-      "description": "Döner vidalı kompresörler için tam sentetik kompresör yağı. 8.000 saate kadar uzatılmış değişim aralığı ve üstün termal stabilite ile yüksek sıcaklıklarda çalışan sistemler için idealdir.",
-      "f0": "8.000 saat değişim aralığı",
-      "f1": "Tam sentetik formül",
+      "type": "Vidalı/Kanatlı Kompresör Yağı (Sentetik)",
+      "description": "Tam sentetik vidalı ve kanatlı kompresör yağı. 8000 saate kadar yağ ömrü, yüksek sıcaklık stabilitesi ve minimum karbon birikimi.",
+      "f0": "Tam sentetik",
+      "f1": "8000 saat yağ ömrü",
       "f2": "Yüksek sıcaklık stabilitesi",
-      "f3": "Minimum çamur oluşumu"
+      "f3": "Minimum karbon birikimi"
     },
     "gadus-s2-v220-2": {
       "type": "Gres Yağı EP",
@@ -818,26 +818,26 @@
     },
     "morlina-s2-bl-10": {
       "type": "Sirkülasyon / Türbin Yağı",
-      "description": "Buhar türbinleri, gaz türbinleri ve sirkülasyon sistemleri için yüksek kaliteli yağlama yağı. Mükemmel su ayrışma özelliği ve uzun ömürlü oksidasyon stabilitesiyle kesintisiz işletim sağlar.",
-      "f0": "Turbine-grade su ayrışması",
+      "description": "Çinko içermeyen düşük viskoziteli sirkülasyon yağı. Buhar türbinleri, gaz türbinleri ve yüksek devirli sirkülasyon sistemleri için üstün oksidasyon stabilitesi.",
+      "f0": "Türbin sınıfı su ayrışması",
       "f1": "Uzun oksidasyon ömrü",
-      "f2": "Düşük köpük eğilimi",
-      "f3": "Siemens ve GE onaylı"
+      "f2": "Siemens ve GE onaylı",
+      "f3": "Köpük önleyici"
     },
     "tonna-s3-m-68": {
       "type": "Kızak Yağı",
-      "description": "Tezgah kızakları ve kayar tablalar için özel kızak yağı. Stick-slip önleyici formülasyonu sayesinde hassas ilerleme hareketi ve titreşimsiz çalışma sağlar.",
+      "description": "Tezgah kızakları ve kayar tablalar için özel kızak yağı. Stick-slip titreşimleri elimine ederek hassas ilerleme hareketi ve yüzey kalitesi sağlar.",
       "f0": "Stick-slip önleme",
       "f1": "Hassas ilerleme kontrolü",
-      "f2": "Titreşimsiz çalışma",
-      "f3": "CNC tezgah uyumluluğu"
+      "f2": "CNC tezgah uyumlu",
+      "f3": "Korozyon önleme"
     },
     "diala-s4-zx-i": {
       "type": "Trafo Yağı",
-      "description": "Güç transformatörleri ve yüksek voltajlı şalt ekipmanları için ultra yüksek performanslı mineral izolasyon yağı. Üstün termal ve elektriksel özellikleriyle uzun ekipman ömrü sağlar.",
-      "f0": "Üstün dielektrik dayanımı",
-      "f1": "Düşük viskozite — gelişmiş soğutma",
-      "f2": "Uzun oksidasyon ömrü",
+      "description": "GTL teknolojisiyle üretilen yeni nesil trafo yağı. Sıfır kükürt içeriği, endüstri standardının 5 katı oksidasyon stabilitesi ve uzun ekipman ömrü. Güç transformatörleri ve yüksek voltajlı şalt ekipmanları için.",
+      "f0": "GTL teknolojisi",
+      "f1": "Sıfır kükürt içeriği",
+      "f2": "5x oksidasyon stabilitesi",
       "f3": "ABB ve Siemens onaylı"
     },
     "1-esp-x2-0w-20": {
@@ -1815,6 +1815,454 @@
       "f1": "Hafif-orta yük uyumlu",
       "f2": "Geniş uygulama alanı",
       "f3": "Ekonomik seçenek"
+    },
+    "tellus-s2-m-32": {
+      "type": "Hidrolik Yağ",
+      "description": "ISO 11158 HM sertifikalı yüksek performanslı hidrolik yağ. Termal kararlılık, mükemmel oksidasyon direnci ve olağanüstü aşınma önleme özellikleriyle endüstriyel hidrolik sistemler için idealdir.",
+      "f0": "Termal kararlılık",
+      "f1": "Oksidasyon direnci",
+      "f2": "Aşınma önleme",
+      "f3": "Mükemmel filtrelenebilme"
+    },
+    "tellus-s2-m-46": {
+      "type": "Hidrolik Yağ",
+      "description": "ISO 11158 HM sertifikalı yüksek performanslı hidrolik yağ. En yaygın kullanılan viskozite sınıfında üstün termal kararlılık, oksidasyon ve aşınma koruması sağlar.",
+      "f0": "Termal kararlılık",
+      "f1": "Olağanüstü aşınma önleme",
+      "f2": "Mükemmel filtrelenebilme",
+      "f3": "Sudan ayrılma"
+    },
+    "tellus-s2-m-68": {
+      "type": "Hidrolik Yağ",
+      "description": "ISO 11158 HM sertifikalı yüksek performanslı hidrolik yağ. Yüksek sıcaklık ve ağır yük koşullarında üstün termal kararlılık ve aşınma koruması.",
+      "f0": "Yüksek sıcaklık stabilitesi",
+      "f1": "Olağanüstü aşınma önleme",
+      "f2": "Mükemmel filtrelenebilme",
+      "f3": "Sudan ayrılma"
+    },
+    "tellus-s2-m-100": {
+      "type": "Hidrolik Yağ",
+      "description": "ISO 11158 HM sertifikalı yüksek viskoziteli hidrolik yağ. Vakum pompaları ve yüksek basınçlı sistemlerde üstün koruma sağlar.",
+      "f0": "Yüksek viskozite stabilitesi",
+      "f1": "Oksidasyon direnci",
+      "f2": "Aşınma önleme",
+      "f3": "Sudan ayrılma"
+    },
+    "tellus-s2-v-15": {
+      "type": "Yüksek VI Hidrolik Yağ",
+      "description": "Geniş sıcaklık aralığında kararlı viskozite performansı sağlayan yüksek VI hidrolik yağ. Soğuk ortamlar ve hassas kontrol sistemleri için idealdir.",
+      "f0": "Yüksek viskozite indeksi",
+      "f1": "Geniş sıcaklık aralığı",
+      "f2": "Termal kararlılık",
+      "f3": "Mükemmel filtrelenebilme"
+    },
+    "tellus-s2-v-22": {
+      "type": "Yüksek VI Hidrolik Yağ",
+      "description": "Geniş sıcaklık aralığında sabit viskozite sağlayan yüksek VI hidrolik yağ. Değişken sıcaklık koşullarındaki endüstriyel ve mobil hidrolik sistemler için uygundur.",
+      "f0": "Yüksek viskozite indeksi",
+      "f1": "Geniş sıcaklık performansı",
+      "f2": "Aşınma önleme",
+      "f3": "Oksidasyon direnci"
+    },
+    "tellus-s2-v-32": {
+      "type": "Yüksek VI Hidrolik Yağ",
+      "description": "Yüksek viskozite indeksiyle geniş sıcaklık aralığında sabit performans sağlayan hidrolik yağ. Dış ortam makineleri ve mobil sistemler için uygundur.",
+      "f0": "Yüksek VI",
+      "f1": "Geniş sıcaklık aralığı",
+      "f2": "Denison HF-0 onaylı",
+      "f3": "Sudan ayrılma"
+    },
+    "tellus-s2-v-46": {
+      "type": "Yüksek VI Hidrolik Yağ",
+      "description": "En yaygın hidrolik viskozite sınıfında yüksek VI formülü. Hem endüstriyel hem mobil sistemlerde üstün pompa koruması ve kararlı performans sağlar.",
+      "f0": "Yüksek viskozite indeksi",
+      "f1": "En yaygın hidrolik viskozite",
+      "f2": "Üstün pompa koruması",
+      "f3": "Mükemmel filtrelenebilme"
+    },
+    "tellus-s2-v-68": {
+      "type": "Yüksek VI Hidrolik Yağ",
+      "description": "Yüksek sıcaklıklı ağır hizmet sistemleri için yüksek VI hidrolik yağ. İnşaat ve madencilik ekipmanlarında güvenilir performans.",
+      "f0": "Yüksek sıcaklık stabilitesi",
+      "f1": "Ağır hizmet uyumlu",
+      "f2": "Yüksek viskozite indeksi",
+      "f3": "Aşınma önleme"
+    },
+    "tellus-s2-v-100": {
+      "type": "Yüksek VI Hidrolik Yağ",
+      "description": "Ekstra yük kapasitesi gerektiren büyük hidrolik sistemler için yüksek VI hidrolik yağ. Yavaş çalışan büyük sistemlerde kararlı viskozite.",
+      "f0": "Ekstra yük kapasitesi",
+      "f1": "Yüksek VI",
+      "f2": "Büyük sistem uyumlu",
+      "f3": "Termal stabilite"
+    },
+    "tellus-s3-m-32": {
+      "type": "Küllüsüz Hidrolik Yağ",
+      "description": "Çinko (ZAF) içermeyen küllüsüz formülasyonuyla çevre dostu hidrolik yağ. Hassas servo vanalar ve gümüş/magnezyum alaşımlı bileşenler içeren sistemler için.",
+      "f0": "Çinko içermeyen formül",
+      "f1": "Servo vana uyumlu",
+      "f2": "Hassas filtre uyumlu",
+      "f3": "Geniş sistem uyumu"
+    },
+    "tellus-s3-m-68": {
+      "type": "Küllüsüz Hidrolik Yağ",
+      "description": "Yüksek sıcaklık ve ağır yüklerde çinko içermeyen küllüsüz hidrolik yağ. Sanayi presleri ve inşaat ekipmanları için uygundur.",
+      "f0": "Çinko içermeyen formül",
+      "f1": "Yüksek sıcaklık stabilitesi",
+      "f2": "Ağır yük kapasitesi",
+      "f3": "Aşınma önleyici"
+    },
+    "tellus-s3-m-100": {
+      "type": "Küllüsüz Hidrolik Yağ",
+      "description": "Çinko içermeyen küllüsüz formülasyonla yüksek viskoziteli büyük hidrolik sistemler için üstün koruma. Ağır presler ve sanayi tesisleri için.",
+      "f0": "Çinko içermeyen formül",
+      "f1": "Ekstra yük kapasitesi",
+      "f2": "Büyük sistem uyumlu",
+      "f3": "Uzun servis aralığı"
+    },
+    "tellus-s4-me-32": {
+      "type": "Enerji Tasarruflu Hidrolik Yağ",
+      "description": "Enerji tasarrufu özellikli sentetik teknoloji hidrolik yağ. Gelişmiş formülasyonuyla sistem verimliliğini artırırken uzun yağ ömrü sağlar.",
+      "f0": "Enerji tasarrufu",
+      "f1": "Sentetik teknoloji",
+      "f2": "Uzun yağ ömrü",
+      "f3": "Üstün oksidasyon direnci"
+    },
+    "tellus-s4-me-46": {
+      "type": "Enerji Tasarruflu Hidrolik Yağ",
+      "description": "Enerji tasarruflu sentetik teknoloji hidrolik yağ. En yaygın viskozite sınıfında sistem verimliliğini artırır ve yağ değişim aralıklarını uzatır.",
+      "f0": "Enerji tasarrufu",
+      "f1": "Sentetik teknoloji",
+      "f2": "Uzun değişim aralığı",
+      "f3": "Üstün aşınma önleme"
+    },
+    "tellus-s4-vx-32": {
+      "type": "Geniş Sıcaklık Aralığı Hidrolik Yağ",
+      "description": "Çok geniş sıcaklık aralığında sabit viskozite sağlayan sentetik teknoloji hidrolik yağ. Arktik koşullardan yüksek sıcaklıklara kadar üstün performans.",
+      "f0": "Çok geniş sıcaklık aralığı",
+      "f1": "Sentetik teknoloji",
+      "f2": "Yüksek VI indeksi",
+      "f3": "Soğuk başlangıç üstünlüğü"
+    },
+    "morlina-s2-bl-5": {
+      "type": "Sirkülasyon / Türbin Yağı",
+      "description": "Çinko içermeyen ultra düşük viskoziteli sirkülasyon yağı. Yüksek devirli yataklar ve hassas sirkülasyon sistemleri için; -60°C akma noktasıyla soğuk ortamlarda avantajlı.",
+      "f0": "Çinko içermeyen formül",
+      "f1": "Ultra düşük viskozite",
+      "f2": "Düşük akma noktası -60°C",
+      "f3": "Oksidasyon direnci"
+    },
+    "morlina-s2-bl-22": {
+      "type": "Sirkülasyon / Türbin Yağı",
+      "description": "Çinko içermeyen ISO VG 22 sirkülasyon yağı. Düz ve rulmanlı yataklar ile hassas sirkülasyon sistemleri için yüksek oksidasyon direnci ve korozyon koruması.",
+      "f0": "Çinko içermeyen formül",
+      "f1": "Yüksek oksidasyon direnci",
+      "f2": "Korozyon koruması",
+      "f3": "Düşük köpük eğilimi"
+    },
+    "morlina-s2-b-46": {
+      "type": "Sirkülasyon / Rulman Yağı",
+      "description": "Çinko içermeyen ISO VG 46 sirkülasyon ve rulman yağı. Sirkülasyon sistemleri, rulmanlı yataklar ve düşük yüklü dişli kutuları için üstün oksidasyon direnci ve korozyon koruması.",
+      "f0": "Çinko içermeyen formül",
+      "f1": "Oksidasyon direnci",
+      "f2": "Korozyon koruması",
+      "f3": "Düşük köpük"
+    },
+    "morlina-s2-b-68": {
+      "type": "Sirkülasyon / Rulman Yağı",
+      "description": "Çinko içermeyen ISO VG 68 sirkülasyon yağı. Parlama noktası 240°C ile yüksek sıcaklıklarda güvenli çalışma; rulmanlı yataklar ve sirkülasyon sistemleri için.",
+      "f0": "Yüksek parlama noktası 240°C",
+      "f1": "Çinko içermeyen formül",
+      "f2": "Oksidasyon direnci",
+      "f3": "Korozyon koruması"
+    },
+    "morlina-s2-b-100": {
+      "type": "Sirkülasyon / Rulman Yağı",
+      "description": "Çinko içermeyen ISO VG 100 sirkülasyon yağı. Parlama noktası 250°C; orta-yüksek viskoziteli sirkülasyon sistemleri ve rulman uygulamaları için.",
+      "f0": "Parlama noktası 250°C",
+      "f1": "Çinko içermeyen formül",
+      "f2": "Uzun servis aralığı",
+      "f3": "Korozyon koruması"
+    },
+    "morlina-s2-b-150": {
+      "type": "Sirkülasyon / Rulman Yağı",
+      "description": "Çinko içermeyen ISO VG 150 sirkülasyon yağı. Ağır yük rulmanlar ve geniş endüstriyel sirkülasyon sistemleri için yüksek oksidasyon stabilitesi.",
+      "f0": "ISO VG 150 sirkülasyon",
+      "f1": "Çinko içermeyen formül",
+      "f2": "Yüksek sıcaklık stabilitesi",
+      "f3": "Korozyon koruması"
+    },
+    "morlina-s2-b-220": {
+      "type": "Sirkülasyon / Rulman Yağı",
+      "description": "Çinko içermeyen ISO VG 220 sirkülasyon yağı. Parlama noktası 280°C ile ağır sanayi uygulamalarında ve yüksek sıcaklıklarda güvenilir koruma.",
+      "f0": "Parlama noktası 280°C",
+      "f1": "Çinko içermeyen formül",
+      "f2": "Ağır sanayi uyumu",
+      "f3": "Korozyon koruması"
+    },
+    "morlina-s2-b-320": {
+      "type": "Sirkülasyon / Rulman Yağı",
+      "description": "Çinko içermeyen ISO VG 320 sirkülasyon yağı. Parlama noktası 282°C ile çok ağır yüklü rulman ve sirkülasyon uygulamaları için en yüksek viskoziteli Morlina S2 B.",
+      "f0": "En yüksek viskozite sınıfı",
+      "f1": "Parlama noktası 282°C",
+      "f2": "Çinko içermeyen formül",
+      "f3": "Ağır yük kapasitesi"
+    },
+    "corena-s2-p-68": {
+      "type": "Pistonlu Kompresör Yağı",
+      "description": "Pistonlu hava kompresörleri için özel geliştirilmiş yüksek performanslı kompresör yağı. 220°C hava çıkış sıcaklığına kadar güvenilir koruma ve uzatılmış servis aralıkları.",
+      "f0": "Pistonlu kompresör uzmanı",
+      "f1": "Yüksek sıcaklık koruması",
+      "f2": "Uzun servis aralığı",
+      "f3": "Karbon birikimini önler"
+    },
+    "corena-s2-p-100": {
+      "type": "Pistonlu Kompresör Yağı",
+      "description": "Pistonlu tip hava kompresörleri için ISO VG 100 kompresör yağı. 220°C hava çıkış sıcaklığında dahi üstün koruma; oksidasyona karşı yüksek direnç.",
+      "f0": "Pistonlu kompresör uzmanı",
+      "f1": "Yüksek oksidasyon direnci",
+      "f2": "Servis aralığı uzatma",
+      "f3": "Sudan kolay ayrışma"
+    },
+    "corena-s2-p-150": {
+      "type": "Pistonlu Kompresör Yağı",
+      "description": "Pistonlu hava kompresörleri için yüksek viskoziteli kompresör yağı. Karbon birikim önleme, güvenilir hava hattı koruması ve uzun servis aralıkları.",
+      "f0": "Yüksek viskozite",
+      "f1": "Karbon birikimini önler",
+      "f2": "Güvenilir hava hatları",
+      "f3": "Servis aralığı uzatma"
+    },
+    "corena-s3-r-68": {
+      "type": "Vidalı/Kanatlı Kompresör Yağı",
+      "description": "Yağ banyolu vidalı ve kanatlı kompresörler için ISO VG 68 kompresör yağı. 8000 saat yağ ömrü, düşük uçuculuk ve mükemmel soğutma performansı.",
+      "f0": "8000 saat yağ ömrü",
+      "f1": "Düşük uçuculuk",
+      "f2": "Mükemmel soğutma",
+      "f3": "Pas ve korozyon koruması"
+    },
+    "corena-s4-r-68": {
+      "type": "Vidalı/Kanatlı Kompresör Yağı (Sentetik)",
+      "description": "Tam sentetik ISO VG 68 vidalı kompresör yağı. Yüksek sıcaklıklarda çalışan sistemlerde 8000 saat yağ ömrü ve üstün termal stabilite.",
+      "f0": "Tam sentetik",
+      "f1": "Yüksek sıcaklık kompresörleri",
+      "f2": "8000 saat yağ ömrü",
+      "f3": "Üstün oksidasyon direnci"
+    },
+    "refrigeration-s4-fr-f-32": {
+      "type": "Soğutma Kompresör Yağı (Alkil Benzen)",
+      "description": "Alkil benzen esaslı sentetik soğutma kompresör yağı. Amonyak (R717) ve HCFC sistemleri için özel; -39°C akma noktası ve mükemmel düşük sıcaklık performansı.",
+      "f0": "Amonyak sistemi uzmanı",
+      "f1": "Alkil benzen sentetik",
+      "f2": "Mükemmel düşük sıcaklık",
+      "f3": "-39°C akma noktası"
+    },
+    "refrigeration-s4-fr-f-68": {
+      "type": "Soğutma Kompresör Yağı (Alkil Benzen)",
+      "description": "Alkil benzen esaslı ISO VG 68 sentetik soğutma kompresör yağı. Amonyak ve HCFC sistemlerinde yüksek oksidasyon kararlılığı ve uzun yağ değişim aralığı.",
+      "f0": "Alkil benzen sentetik",
+      "f1": "Yüksek oksidasyon kararlılığı",
+      "f2": "Amonyak sistemi uyumlu",
+      "f3": "Uzun yağ ömrü"
+    },
+    "refrigeration-s4-fr-f-100": {
+      "type": "Soğutma Kompresör Yağı (Alkil Benzen)",
+      "description": "Alkil benzen esaslı ISO VG 100 sentetik soğutma kompresör yağı. Amonyak sistemlerinde -33°C altı buharlaşma sıcaklıklarında üstün performans.",
+      "f0": "Yüksek viskozite soğutma yağı",
+      "f1": "Alkil benzen sentetik",
+      "f2": "Amonyak sistemi uzmanı",
+      "f3": "Mineral yağla karışabilir"
+    },
+    "refrigeration-s4-fr-v-32": {
+      "type": "Soğutma Kompresör Yağı (Alkil Benzen)",
+      "description": "Alkil benzen esaslı sentetik soğutma yağı. CFC/HCFC ve amonyak sistemleri için; düşük sıcaklıklarda mineral yağlara üstün karışma performansı.",
+      "f0": "CFC/HCFC uyumlu",
+      "f1": "Üstün düşük sıcaklık karışımı",
+      "f2": "Alkil benzen sentetik",
+      "f3": "Mineral yağla karışabilir"
+    },
+    "refrigeration-s4-fr-v-46": {
+      "type": "Soğutma Kompresör Yağı (Alkil Benzen)",
+      "description": "Alkil benzen esaslı ISO VG 46 sentetik soğutma yağı. CFC/HCFC ve amonyak sistemlerinde düşük sıcaklık karışma üstünlüğü ve uzun yağ değişim aralığı.",
+      "f0": "CFC/HCFC uyumlu",
+      "f1": "Alkil benzen sentetik",
+      "f2": "Uzun yağ ömrü",
+      "f3": "Amonyak sistemi uyumlu"
+    },
+    "refrigeration-s4-fr-v-68": {
+      "type": "Soğutma Kompresör Yağı (Alkil Benzen)",
+      "description": "Alkil benzen esaslı ISO VG 68 sentetik soğutma yağı. Amonyak ve HCFC sistemlerinde yüksek oksidasyon kararlılığı ve mükemmel sızdırmazlık uyumu.",
+      "f0": "Yüksek oksidasyon kararlılığı",
+      "f1": "CFC/HCFC uyumlu",
+      "f2": "Alkil benzen sentetik",
+      "f3": "Uzun yağ ömrü"
+    },
+    "tonna-s3-m-220": {
+      "type": "Kızak Yağı",
+      "description": "Ağır kızak uygulamaları için ISO VG 220 kızak yağı. Yavaş ilerleme mekanizmalarında stick-slip önleme ve üstün yüzey kalitesi için yüksek viskoziteli formül.",
+      "f0": "Ağır kızak uygulamaları",
+      "f1": "Stick-slip önleme",
+      "f2": "Yüksek viskozite kararlılığı",
+      "f3": "Su ayrışması"
+    },
+    "turbo-t-32": {
+      "type": "Türbin Yağı",
+      "description": "Yüksek güçlü buhar türbinleri için geliştirilmiş endüstriyel türbin yağı. Siemens, ABB ve Alstom onaylı; mükemmel oksidasyon kararlılığı ve su ayrışma performansı.",
+      "f0": "Siemens ve ABB onaylı",
+      "f1": "Mükemmel oksidasyon kararlılığı",
+      "f2": "Üstün sudan ayrılma",
+      "f3": "Mükemmel filtrelenebilme"
+    },
+    "turbo-t-46": {
+      "type": "Türbin Yağı",
+      "description": "Buhar türbinleri için ISO VG 46 endüstriyel türbin yağı. Korozyon önleme, mükemmel su ayrışma ve filtrasyon özellikleriyle uzun sistem ömrü.",
+      "f0": "Siemens ve ABB onaylı",
+      "f1": "Korozyon önleme",
+      "f2": "Mükemmel sudan ayrılma",
+      "f3": "Turbo kompresör uyumlu"
+    },
+    "turbo-t-68": {
+      "type": "Türbin Yağı",
+      "description": "Yüksek güçlü buhar türbinleri için ISO VG 68 türbin yağı. Yüksek pas ve oksidasyon koruması gereken endüstriyel uygulamalar ve turbo kompresörler için.",
+      "f0": "Yüksek oksidasyon koruması",
+      "f1": "Siemens ve ABB onaylı",
+      "f2": "Mükemmel filtrelenebilme",
+      "f3": "Havayı defetme özelliği"
+    },
+    "turbo-cc-32": {
+      "type": "Kombine Çevrim Türbin Yağı",
+      "description": "Kombine çevrim sistemleri için özel endüstriyel türbin yağı. Siemens, ABB, GE ve Westinghouse onaylı; ağır yük dişli kapasitesi ve mükemmel oksidasyon kararlılığı.",
+      "f0": "Kombine çevrim türbinleri",
+      "f1": "Ağır yük dişli kapasitesi",
+      "f2": "Siemens/GE/ABB onaylı",
+      "f3": "Mükemmel oksidasyon kararlılığı"
+    },
+    "turbo-cc-46": {
+      "type": "Kombine Çevrim Türbin Yağı",
+      "description": "Kombine çevrim sistemleri için ISO VG 46 türbin yağı. Buhar ve gaz türbinlerinde ağır yük dişli sistemi dahil tek tip yağ olarak kullanılabilir.",
+      "f0": "Kombine çevrim uzmanlığı",
+      "f1": "Tek tip sistem yağı",
+      "f2": "Çok sayıda OEM onayı",
+      "f3": "Mükemmel sudan ayrılma"
+    },
+    "turbo-fluid-dr-46": {
+      "type": "Türbin / Sirkülasyon Yağı",
+      "description": "Yüksek performanslı endüstriyel türbin ve sirkülasyon yağı. Özel formülasyonuyla türbin sistemlerinde uzun servis ömrü ve güvenilir koruma.",
+      "f0": "Türbin ve sirkülasyon uygulamaları",
+      "f1": "Yüksek termal stabilite",
+      "f2": "Oksidasyon direnci",
+      "f3": "Uzun servis ömrü"
+    },
+    "turbo-j-32": {
+      "type": "Türbin Yağı",
+      "description": "Endüstriyel buhar türbinleri için ISO VG 32 türbin yağı. Ana mil yatakları, mekanik dişliler ve kontrol valfleri için yüksek oksidasyon ve pas koruması.",
+      "f0": "Yüksek oksidasyon koruması",
+      "f1": "Siemens ve ABB onaylı",
+      "f2": "Mükemmel sudan ayrılma",
+      "f3": "Turbo kompresör uyumlu"
+    },
+    "heat-transfer-oil-s2": {
+      "type": "Isı Transfer Yağı",
+      "description": "Kapalı ısı transfer sistemleri için 320°C'ye kadar çalışabilen yüksek performanslı ısı transfer yağı. Düşük buhar basıncı, yüksek ısı transfer katsayısı ve termal kararlılık.",
+      "f0": "320°C çalışma sıcaklığı",
+      "f1": "Yüksek termal kararlılık",
+      "f2": "Düşük buhar basıncı",
+      "f3": "Geniş uygulama yelpazesi"
+    },
+    "naturelle-hf-e": {
+      "type": "Biyolojik Parçalanabilir Hidrolik Yağ",
+      "description": "Çevre dostu biyolojik parçalanabilir hidrolik yağ. Yüksek viskozite indeksi ile geniş sıcaklık aralığında performans; nehir kenarı, orman ve deniz uygulamaları için.",
+      "f0": "Biyolojik parçalanabilir",
+      "f1": "Çevre dostu",
+      "f2": "Yüksek viskozite indeksi",
+      "f3": "Denison HF-0 onaylı"
+    },
+    "tequla-v-32": {
+      "type": "Yüksek VI Hidrolik Yağ",
+      "description": "Yüksek viskozite indeksli endüstriyel hidrolik yağ. Değişken sıcaklık koşullarındaki sistemlerde sabit viskozite performansı ve üstün aşınma koruması.",
+      "f0": "Yüksek viskozite indeksi",
+      "f1": "Termal kararlılık",
+      "f2": "Olağanüstü aşınma önleme",
+      "f3": "Mükemmel filtrelenebilme"
+    },
+    "textile-needle-s2-m-32": {
+      "type": "Tekstil Makina Yağı",
+      "description": "Tekstil endüstrisi için geliştirilmiş iğne mekanizması yağı. Yıkanabilir formülasyon; boyama öncesi çabuk yıkama özelliği ve haşıl birikimini önleme.",
+      "f0": "Yıkanabilir formülasyon",
+      "f1": "Haşıl birikimini önler",
+      "f2": "Boyahane uyumlu",
+      "f3": "Korozyon koruması"
+    },
+    "air-tool-s2-a-100": {
+      "type": "Pnömatik Alet Yağı",
+      "description": "Darbe tipi matkap ve pnömatik alet yağı. Özel mineral bazyağı ve katıklar ile darbe yükü koşullarında üstün aşınma koruması ve soğuk ortam akışkanlığı.",
+      "f0": "Darbe yükü koruması",
+      "f1": "Üstün aşınma önleme",
+      "f2": "Soğuk ortam akışkanlığı",
+      "f3": "Yüksek oksidasyon direnci"
+    },
+    "edelex-956": {
+      "type": "Naftanik Proses Yağı",
+      "description": "Yüksek çözücü özellikli naftanik proses yağı. Lastik, plastik ve termoplastik elastomer üretiminde ekstender; tekstil ve deri işlemede taşıyıcı sıvı olarak kullanılır.",
+      "f0": "Yüksek naftanik çözücülük",
+      "f1": "Lastik/plastik ekstender",
+      "f2": "FDA uyumlu",
+      "f3": "Düşük aromatik içerik"
+    },
+    "catenex-s-321": {
+      "type": "Parafinik Proses Yağı",
+      "description": "Yüksek parlama noktalı parafinik proses yağı. Otomotiv lastiği, sentetik kauçuk ve yapıştırıcı üretiminde ekstender; kauçuk formülasyonlarında referans yağ olarak kullanılır.",
+      "f0": "Yüksek parlama noktası",
+      "f1": "Parafinik proses yağı",
+      "f2": "Kauçuk formülasyonları referansı",
+      "f3": "FDA uyumlu"
+    },
+    "ondina-x-415": {
+      "type": "Beyaz Mineral Yağ (Farmasötik)",
+      "description": "Farmasötik kalitede beyaz mineral yağ. Kozmetik, ilaç ve gıda sektöründe; aroma içermeyen, renksiz ve kokusuz formülasyon. Polisiklik aromatik hidrokarbonlar uzaklaştırılmış.",
+      "f0": "Farmasötik kalite",
+      "f1": "Renksiz ve kokusuz",
+      "f2": "FDA §172.878 onaylı",
+      "f3": "PCA uzaklaştırılmış"
+    },
+    "ondina-x-432": {
+      "type": "Beyaz Mineral Yağ (Farmasötik)",
+      "description": "Farmasötik kalitede beyaz mineral yağ. Kozmetik, ilaç ve gıda ambalajında kullanılan renksiz, kokusuz formülasyon; FDA ve Avrupa Farmakopesi uyumlu.",
+      "f0": "Farmasötik kalite",
+      "f1": "FDA §172.878 onaylı",
+      "f2": "Renksiz/kokusuz",
+      "f3": "Avrupa Farmakopesi uyumlu"
+    },
+    "ondina-x-420": {
+      "type": "Beyaz Mineral Yağ (Farmasötik)",
+      "description": "Farmasötik kalitede beyaz mineral yağ. Kozmetik, ilaç ve gıda sektöründe kullanılan renksiz, kokusuz formülasyon; FDA ve Avrupa Farmakopesi uyumlu.",
+      "f0": "Farmasötik kalite",
+      "f1": "FDA uyumlu",
+      "f2": "Renksiz/kokusuz",
+      "f3": "Avrupa Farmakopesi uyumlu"
+    },
+    "ensis-engine-oil-30": {
+      "type": "Motor Koruma / Konservasyon Yağı",
+      "description": "Uzun süreli depolama ve nakliye sırasında motor koruması için konservasyon yağı. Paslanma ve korozyona karşı güçlü bariyer oluşturur.",
+      "f0": "Motor konservasyon",
+      "f1": "Pas ve korozyon koruması",
+      "f2": "Uzun depolama uyumlu",
+      "f3": "SAE 30"
+    },
+    "ensis-dw-2462": {
+      "type": "Konservasyon / Pas Önleyici Yağ",
+      "description": "Endüstriyel ekipman ve metal yüzeylerin uzun süreli korunması için özel pas önleyici konservasyon yağı.",
+      "f0": "Pas önleyici",
+      "f1": "Metal yüzey koruması",
+      "f2": "Uzun süreli koruma",
+      "f3": "Endüstriyel konservasyon"
+    },
+    "irus-fluid-c": {
+      "type": "Özel Endüstriyel Sıvı",
+      "description": "Özel endüstriyel uygulamalar için geliştirilmiş yüksek performanslı endüstriyel sıvı.",
+      "f0": "Özel endüstriyel formülasyon",
+      "f1": "Yüksek performans",
+      "f2": "Endüstriyel sistemler",
+      "f3": "Güvenilir koruma"
     }
   },
   "quotePage": {
