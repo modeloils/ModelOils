@@ -9,8 +9,15 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   const enMessages = (await import("../../messages/en.json")).default as Record<string, unknown>;
 
+  const fallbackConfig = {
+    onError() { /* suppress */ },
+    getMessageFallback({ namespace, key }: { namespace?: string; key: string }) {
+      return [namespace, key].filter(Boolean).join(".");
+    },
+  };
+
   if (locale === "en") {
-    return { locale, messages: enMessages };
+    return { locale, messages: enMessages, ...fallbackConfig };
   }
 
   const localeRaw = (await import(`../../messages/${locale}.json`)).default as Record<string, unknown>;
@@ -28,5 +35,5 @@ export default getRequestConfig(async ({ requestLocale }) => {
     },
   };
 
-  return { locale, messages };
+  return { locale, messages, ...fallbackConfig };
 });
