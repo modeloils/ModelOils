@@ -506,13 +506,232 @@ INDIVIDUAL = {
     },
 }
 
-for slug in ["edelex-956","catenex-s-321","ondina-x-415","ondina-x-432","ondina-x-420",
-             "ensis-engine-oil-30","ensis-dw-2462","irus-fluid-c"]:
-    INDIVIDUAL[slug] = {
-        "en": None,  # will use description as fd fallback
-        "ru": None,
-        "fa": None,
-    }
+INDIVIDUAL["edelex-956"] = {
+    "en": (
+        "Shell Edelex oils are high-quality naphthenic process oils used in applications requiring light colour, low odour and high solvency.\n\n"
+        "APPLICATIONS\n"
+        "• Extender and plasticiser: Production of high-quality rubber, plastics, TPE and technical elastomer materials\n"
+        "• Carrier fluid: Oil additives, textile auxiliaries, leather processing oils, defoamers and paints\n"
+        "• Applications requiring stability and superior solvency\n\n"
+        "PERFORMANCE CHARACTERISTICS\n"
+        "• High-quality naphthenic oil processed through intensive refining\n"
+        "• Harmless formulation not classified under EU hazardous substances directive\n"
+        "• High solvency due to naphthenic content\n"
+        "• Light colour and improved stability\n\n"
+        "STANDARDS AND SPECIFICATIONS\nUS FDA §178.3620(c), §175.105, §176.200, §177.2600, §177.2800, §178.3570"
+    ),
+    "ru": (
+        "Масла Shell Edelex — высококачественные нафтеновые технологические масла для применений, требующих светлого цвета, низкого запаха и высокой растворяющей способности.\n\n"
+        "ОБЛАСТИ ПРИМЕНЕНИЯ\n"
+        "• Масло-наполнитель и пластификатор: производство резины, пластиков, ТПЭ и технических эластомеров\n"
+        "• Несущая жидкость: масляные присадки, текстильные вспомогательные вещества, масла для обработки кожи, пеногасители, краски\n"
+        "• Применения, требующие стабильности и высокой растворяющей способности\n\n"
+        "ЭКСПЛУАТАЦИОННЫЕ ХАРАКТЕРИСТИКИ\n"
+        "• Высококачественное нафтеновое масло глубокой очистки\n"
+        "• Безвредная рецептура, не классифицируемая по директиве ЕС об опасных веществах\n"
+        "• Высокая растворяющая способность благодаря нафтеновому составу\n"
+        "• Светлый цвет и улучшенная стабильность\n\n"
+        "СТАНДАРТЫ И СПЕЦИФИКАЦИИ\nUS FDA §178.3620(c), §175.105, §176.200, §177.2600, §177.2800, §178.3570"
+    ),
+    "fa": (
+        "روغن‌های Shell Edelex روغن‌های فرایندی نفتنیک باکیفیت برای کاربردهایی هستند که نیاز به رنگ روشن، بوی کم و قدرت حل‌پذیری بالا دارند.\n\n"
+        "کاربردها\n"
+        "• امتدادده و نرم‌کننده: تولید لاستیک، پلاستیک، TPE و مواد الاستومر فنی باکیفیت بالا\n"
+        "• سیال حامل: افزودنی‌های روغن، مواد کمکی نساجی، روغن‌های پردازش چرم، کف‌زداها و رنگ‌ها\n"
+        "• کاربردهایی که نیاز به ثبات و قدرت حل‌پذیری برتر دارند\n\n"
+        "ویژگی‌های عملکردی\n"
+        "• روغن نفتنیک باکیفیت که از تصفیه فشرده عبور داده شده\n"
+        "• فرمولاسیون بی‌ضرر که طبق دستورالعمل مواد خطرناک اتحادیه اروپا طبقه‌بندی نمی‌شود\n"
+        "• قدرت حل‌پذیری بالا به دلیل محتوای نفتنیک\n"
+        "• رنگ روشن و ثبات بهبودیافته\n\n"
+        "استانداردها و مشخصات\nUS FDA §178.3620(c), §175.105, §176.200, §177.2600, §177.2800, §178.3570"
+    ),
+}
+
+INDIVIDUAL["catenex-s-321"] = {
+    "en": (
+        "Shell Catenex is a high-quality industrial oil classified as a paraffinic process oil.\n\n"
+        "APPLICATIONS\n"
+        "• Extender and plasticiser: Production of synthetic and natural rubber, automotive tyres, gaskets and adhesives\n"
+        "• Carrier fluid: Oil additives, textile auxiliaries, leather and fur processing oils\n"
+        "• Various applications where paraffinic oils are appropriate\n\n"
+        "PERFORMANCE CHARACTERISTICS\n"
+        "• High flash point: Higher than naphthenic oils\n"
+        "• Stable product through intensive refining\n"
+        "• Primary ingredient in many approved formulations\n"
+        "• Wide viscosity range\n\n"
+        "STANDARDS AND SPECIFICATIONS\nParaffinic process oils (VGC < 0.820)\nUS FDA §178.3620(c), §175.105, §176.200, §177.2260, §177.2600, §177.2800"
+    ),
+    "ru": (
+        "Shell Catenex — высококачественное промышленное масло, классифицируемое как парафиновое технологическое масло.\n\n"
+        "ОБЛАСТИ ПРИМЕНЕНИЯ\n"
+        "• Масло-наполнитель и пластификатор: производство синтетического и натурального каучука, автомобильных шин, уплотнений и адгезивов\n"
+        "• Несущая жидкость: масляные присадки, текстильные вспомогательные вещества, масла для обработки кожи и меха\n"
+        "• Различные применения, где подходят парафиновые масла\n\n"
+        "ЭКСПЛУАТАЦИОННЫЕ ХАРАКТЕРИСТИКИ\n"
+        "• Высокая температура вспышки: выше, чем у нафтеновых масел\n"
+        "• Стабильный продукт благодаря интенсивной очистке\n"
+        "• Основной компонент во многих утверждённых рецептурах\n"
+        "• Широкий диапазон вязкости\n\n"
+        "СТАНДАРТЫ И СПЕЦИФИКАЦИИ\nПарафиновые технологические масла (VGC < 0.820)\nUS FDA §178.3620(c), §175.105, §176.200, §177.2260, §177.2600, §177.2800"
+    ),
+    "fa": (
+        "Shell Catenex یک روغن صنعتی باکیفیت است که به‌عنوان روغن فرایندی پارافینیک طبقه‌بندی می‌شود.\n\n"
+        "کاربردها\n"
+        "• امتدادده و پلاستیک‌کننده: تولید لاستیک سنتتیک و طبیعی، تایر خودرو، واشرها و چسب‌ها\n"
+        "• سیال حامل: افزودنی‌های روغن، مواد کمکی نساجی، روغن‌های پردازش چرم و خز\n"
+        "• کاربردهای مختلفی که روغن‌های پارافینیک در آن‌ها مناسب هستند\n\n"
+        "ویژگی‌های عملکردی\n"
+        "• نقطه اشتعال بالا: بالاتر از روغن‌های نفتنیک\n"
+        "• محصول پایدار از طریق تصفیه فشرده\n"
+        "• ماده اصلی در بسیاری از فرمولاسیون‌های تأییدشده\n"
+        "• دامنه ویسکوزیته گسترده\n\n"
+        "استانداردها و مشخصات\nروغن‌های فرایندی پارافینیک (VGC < 0.820)\nUS FDA §178.3620(c), §175.105, §176.200, §177.2260, §177.2600, §177.2800"
+    ),
+}
+
+_ondina_en_base = (
+    "Shell Ondina oils are highly refined white mineral oils meeting the pharmaceutical specifications of the UK, Germany and the USA. They are colourless, tasteless and odourless. Polycyclic aromatic hydrocarbons have been removed.\n\n"
+    "APPLICATIONS\n"
+    "• Cosmetics and pharmaceuticals: Creams, lotions, sunscreen oils\n"
+    "• Food sector packaging: Plastic material production\n"
+    "• Technical applications: Carrier fluid in TPE elastomers\n"
+    "• Toys: SBS and SEBS type TPE elastomers\n\n"
+    "PERFORMANCE CHARACTERISTICS\n"
+    "• High purity: Aromatic compounds completely removed\n"
+    "• Superior quality control\n"
+    "• Excellent oxidation stability\n"
+    "• Wide product range (naphthenic and paraffinic)\n\n"
+    "STANDARDS AND SPECIFICATIONS\n"
+    "European Pharmacopoeia 3rd Edition | US Pharmacopoeia 23rd Edition\n"
+    "US FDA §172.878, §178.3620(a) | UK Mineral Hydrocarbon Regulations 1966 | BGA Bulletins 38 and 155"
+)
+_ondina_ru_base = (
+    "Масла Shell Ondina — высокоочищенные белые минеральные масла, соответствующие фармацевтическим спецификациям Великобритании, Германии и США. Бесцветные, безвкусные и без запаха. Полициклические ароматические углеводороды удалены.\n\n"
+    "ОБЛАСТИ ПРИМЕНЕНИЯ\n"
+    "• Косметика и фармацевтика: Кремы, лосьоны, солнцезащитные масла\n"
+    "• Упаковка пищевой промышленности: Производство пластиков\n"
+    "• Технические применения: Несущая жидкость в ТПЭ эластомерах\n"
+    "• Игрушки: ТПЭ эластомеры типа SBS и SEBS\n\n"
+    "ЭКСПЛУАТАЦИОННЫЕ ХАРАКТЕРИСТИКИ\n"
+    "• Высокая чистота: Ароматические соединения полностью удалены\n"
+    "• Превосходный контроль качества\n"
+    "• Отличная окислительная стабильность\n\n"
+    "СТАНДАРТЫ И СПЕЦИФИКАЦИИ\n"
+    "Европейская фармакопея 3-е изд. | Фармакопея США 23-е изд.\n"
+    "US FDA §172.878, §178.3620(a) | Регламент Великобритании о минеральных углеводородах 1966 г."
+)
+_ondina_fa_base = (
+    "روغن‌های Shell Ondina روغن‌های معدنی سفید تصفیه‌شده با درجه خلوص بالا هستند که مشخصات دارویی انگلستان، آلمان و آمریکا را برآورده می‌کنند. بی‌رنگ، بی‌مزه و بی‌بو هستند. هیدروکربن‌های آروماتیک چندحلقه‌ای حذف شده‌اند.\n\n"
+    "کاربردها\n"
+    "• آرایشی و داروسازی: کرم‌ها، لوسیون‌ها، روغن‌های ضدآفتاب\n"
+    "• بسته‌بندی صنعت غذایی: تولید مواد پلاستیکی\n"
+    "• کاربردهای فنی: سیال حامل در الاستومرهای TPE\n"
+    "• اسباب‌بازی‌ها: الاستومرهای TPE از نوع SBS و SEBS\n\n"
+    "ویژگی‌های عملکردی\n"
+    "• خلوص بالا: ترکیبات آروماتیک کاملاً حذف شده\n"
+    "• کنترل کیفیت برتر\n"
+    "• ثبات اکسیداسیون عالی\n\n"
+    "استانداردها و مشخصات\n"
+    "فارماکوپه اروپایی ویرایش سوم | فارماکوپه آمریکا ویرایش 23\n"
+    "US FDA §172.878, §178.3620(a) | مقررات هیدروکربن‌های معدنی انگلستان 1966"
+)
+
+for slug in ["ondina-x-415","ondina-x-432","ondina-x-420"]:
+    INDIVIDUAL[slug] = {"en": _ondina_en_base, "ru": _ondina_ru_base, "fa": _ondina_fa_base}
+
+INDIVIDUAL["ensis-engine-oil-30"] = {
+    "en": (
+        "Shell Ensis Engine Oil 30 is a specialty conservation oil that provides protection against rust and corrosion during long-term storage and transportation of engines.\n\n"
+        "APPLICATIONS\n"
+        "• Engine and machine storage protection\n"
+        "• Long-term transportation protection\n\n"
+        "PERFORMANCE CHARACTERISTICS\n"
+        "• Strong rust and corrosion prevention\n"
+        "• Long-lasting surface protection film that remains stable throughout the storage period"
+    ),
+    "ru": (
+        "Shell Ensis Engine Oil 30 — специальное консервационное масло для защиты от ржавчины и коррозии при длительном хранении и транспортировке двигателей.\n\n"
+        "ОБЛАСТИ ПРИМЕНЕНИЯ\n"
+        "• Защита двигателей и машин при хранении\n"
+        "• Защита при длительной транспортировке\n\n"
+        "ЭКСПЛУАТАЦИОННЫЕ ХАРАКТЕРИСТИКИ\n"
+        "• Надёжная защита от ржавчины и коррозии\n"
+        "• Долговечная защитная плёнка на поверхности, стабильная в течение всего периода хранения"
+    ),
+    "fa": (
+        "Shell Ensis Engine Oil 30 یک روغن کنسرواسیون ویژه است که در طول انبارداری طولانی‌مدت و حمل‌ونقل موتورها، محافظت در برابر زنگ‌زدگی و خوردگی فراهم می‌کند.\n\n"
+        "کاربردها\n"
+        "• محافظت از موتور و ماشین در حین انبارداری\n"
+        "• محافظت در طول حمل‌ونقل طولانی‌مدت\n\n"
+        "ویژگی‌های عملکردی\n"
+        "• جلوگیری قوی از زنگ‌زدگی و خوردگی\n"
+        "• فیلم محافظ سطح با دوام که در تمام دوره انبارداری پایدار می‌ماند"
+    ),
+}
+
+INDIVIDUAL["ensis-dw-2462"] = {
+    "en": (
+        "Shell Ensis DW 2462 is a conservation oil developed to protect metal surfaces and industrial equipment during long-term storage and transportation.\n\n"
+        "APPLICATIONS\n"
+        "• Metal surface protection\n"
+        "• Industrial equipment storage\n"
+        "• Long-term conservation\n\n"
+        "PERFORMANCE CHARACTERISTICS\n"
+        "• Effective rust and corrosion prevention\n"
+        "• Long-lasting protection film that maintains barrier properties throughout the conservation period"
+    ),
+    "ru": (
+        "Shell Ensis DW 2462 — консервационное масло для защиты металлических поверхностей и промышленного оборудования при длительном хранении и транспортировке.\n\n"
+        "ОБЛАСТИ ПРИМЕНЕНИЯ\n"
+        "• Защита металлических поверхностей\n"
+        "• Хранение промышленного оборудования\n"
+        "• Длительная консервация\n\n"
+        "ЭКСПЛУАТАЦИОННЫЕ ХАРАКТЕРИСТИКИ\n"
+        "• Эффективная защита от ржавчины и коррозии\n"
+        "• Долговечная защитная плёнка, сохраняющая барьерные свойства в течение всего периода консервации"
+    ),
+    "fa": (
+        "Shell Ensis DW 2462 روغن کنسرواسیونی است که برای محافظت از سطوح فلزی و تجهیزات صنعتی در طول انبارداری و حمل‌ونقل طولانی‌مدت توسعه یافته است.\n\n"
+        "کاربردها\n"
+        "• محافظت از سطوح فلزی\n"
+        "• انبارداری تجهیزات صنعتی\n"
+        "• کنسرواسیون طولانی‌مدت\n\n"
+        "ویژگی‌های عملکردی\n"
+        "• جلوگیری مؤثر از زنگ‌زدگی و خوردگی\n"
+        "• فیلم محافظ با دوام که خواص سدکنندگی را در تمام دوره کنسرواسیون حفظ می‌کند"
+    ),
+}
+
+INDIVIDUAL["irus-fluid-c"] = {
+    "en": (
+        "Shell Irus Fluid C is a high-performance industrial fluid developed for specialised industrial applications.\n\n"
+        "APPLICATIONS\n"
+        "• Specialised industrial systems\n"
+        "• Industrial processes requiring precision fluid performance\n\n"
+        "PERFORMANCE CHARACTERISTICS\n"
+        "• High-performance industrial formulation designed for demanding conditions\n"
+        "• Reliable system protection ensuring consistent operational performance"
+    ),
+    "ru": (
+        "Shell Irus Fluid C — высокоэффективная промышленная жидкость для специализированных промышленных применений.\n\n"
+        "ОБЛАСТИ ПРИМЕНЕНИЯ\n"
+        "• Специализированные промышленные системы\n"
+        "• Промышленные процессы, требующие точных характеристик жидкости\n\n"
+        "ЭКСПЛУАТАЦИОННЫЕ ХАРАКТЕРИСТИКИ\n"
+        "• Высокоэффективная промышленная рецептура для тяжёлых условий\n"
+        "• Надёжная защита системы, обеспечивающая стабильную эксплуатационную производительность"
+    ),
+    "fa": (
+        "Shell Irus Fluid C یک سیال صنعتی پرکارایی است که برای کاربردهای صنعتی تخصصی توسعه یافته است.\n\n"
+        "کاربردها\n"
+        "• سیستم‌های صنعتی تخصصی\n"
+        "• فرآیندهای صنعتی نیازمند عملکرد دقیق سیال\n\n"
+        "ویژگی‌های عملکردی\n"
+        "• فرمولاسیون صنعتی پرکارایی طراحی‌شده برای شرایط سخت\n"
+        "• حفاظت قابل اطمینان از سیستم که عملکرد عملیاتی یکنواخت را تضمین می‌کند"
+    ),
+}
 
 # ── Build fd entries per locale ───────────────────────────────────────────────
 

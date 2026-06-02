@@ -2398,7 +2398,8 @@
       "f0": "High naphthenic solvency",
       "f1": "Rubber/plastic extender",
       "f2": "FDA compliant",
-      "f3": "Low aromatic content"
+      "f3": "Low aromatic content",
+      "fd": "Shell Edelex oils are high-quality naphthenic process oils used in applications requiring light colour, low odour and high solvency.\n\nAPPLICATIONS\n• Extender and plasticiser: Production of high-quality rubber, plastics, TPE and technical elastomer materials\n• Carrier fluid: Oil additives, textile auxiliaries, leather processing oils, defoamers and paints\n• Applications requiring stability and superior solvency\n\nPERFORMANCE CHARACTERISTICS\n• High-quality naphthenic oil processed through intensive refining\n• Harmless formulation not classified under EU hazardous substances directive\n• High solvency due to naphthenic content\n• Light colour and improved stability\n\nSTANDARDS AND SPECIFICATIONS\nUS FDA §178.3620(c), §175.105, §176.200, §177.2600, §177.2800, §178.3570"
     },
     "catenex-s-321": {
       "type": "Paraffinic Process Oil",
@@ -2406,7 +2407,8 @@
       "f0": "High flash point",
       "f1": "Paraffinic process oil",
       "f2": "Reference for rubber formulations",
-      "f3": "FDA compliant"
+      "f3": "FDA compliant",
+      "fd": "Shell Catenex is a high-quality industrial oil classified as a paraffinic process oil.\n\nAPPLICATIONS\n• Extender and plasticiser: Production of synthetic and natural rubber, automotive tyres, gaskets and adhesives\n• Carrier fluid: Oil additives, textile auxiliaries, leather and fur processing oils\n• Various applications where paraffinic oils are appropriate\n\nPERFORMANCE CHARACTERISTICS\n• High flash point: Higher than naphthenic oils\n• Stable product through intensive refining\n• Primary ingredient in many approved formulations\n• Wide viscosity range\n\nSTANDARDS AND SPECIFICATIONS\nParaffinic process oils (VGC < 0.820)\nUS FDA §178.3620(c), §175.105, §176.200, §177.2260, §177.2600, §177.2800"
     },
     "ondina-x-415": {
       "type": "White Mineral Oil (Pharmaceutical)",
@@ -2414,7 +2416,8 @@
       "f0": "Pharmaceutical grade",
       "f1": "Colorless and odorless",
       "f2": "FDA §172.878 approved",
-      "f3": "Polycyclic aromatics removed"
+      "f3": "Polycyclic aromatics removed",
+      "fd": "Shell Ondina oils are highly refined white mineral oils meeting the pharmaceutical specifications of the UK, Germany and the USA. They are colourless, tasteless and odourless. Polycyclic aromatic hydrocarbons have been removed.\n\nAPPLICATIONS\n• Cosmetics and pharmaceuticals: Creams, lotions, sunscreen oils\n• Food sector packaging: Plastic material production\n• Technical applications: Carrier fluid in TPE elastomers\n• Toys: SBS and SEBS type TPE elastomers\n\nPERFORMANCE CHARACTERISTICS\n• High purity: Aromatic compounds completely removed\n• Superior quality control\n• Excellent oxidation stability\n• Wide product range (naphthenic and paraffinic)\n\nSTANDARDS AND SPECIFICATIONS\nEuropean Pharmacopoeia 3rd Edition | US Pharmacopoeia 23rd Edition\nUS FDA §172.878, §178.3620(a) | UK Mineral Hydrocarbon Regulations 1966 | BGA Bulletins 38 and 155"
     },
     "ondina-x-432": {
       "type": "White Mineral Oil (Pharmaceutical)",
@@ -2422,7 +2425,8 @@
       "f0": "Pharmaceutical grade",
       "f1": "FDA §172.878 approved",
       "f2": "Colorless/odorless",
-      "f3": "European Pharmacopoeia compliant"
+      "f3": "European Pharmacopoeia compliant",
+      "fd": "Shell Ondina oils are highly refined white mineral oils meeting the pharmaceutical specifications of the UK, Germany and the USA. They are colourless, tasteless and odourless. Polycyclic aromatic hydrocarbons have been removed.\n\nAPPLICATIONS\n• Cosmetics and pharmaceuticals: Creams, lotions, sunscreen oils\n• Food sector packaging: Plastic material production\n• Technical applications: Carrier fluid in TPE elastomers\n• Toys: SBS and SEBS type TPE elastomers\n\nPERFORMANCE CHARACTERISTICS\n• High purity: Aromatic compounds completely removed\n• Superior quality control\n• Excellent oxidation stability\n• Wide product range (naphthenic and paraffinic)\n\nSTANDARDS AND SPECIFICATIONS\nEuropean Pharmacopoeia 3rd Edition | US Pharmacopoeia 23rd Edition\nUS FDA §172.878, §178.3620(a) | UK Mineral Hydrocarbon Regulations 1966 | BGA Bulletins 38 and 155"
     },
     "ondina-x-420": {
       "type": "White Mineral Oil (Pharmaceutical)",
@@ -2430,7 +2434,8 @@
       "f0": "Pharmaceutical grade",
       "f1": "FDA compliant",
       "f2": "Colorless/odorless",
-      "f3": "European Pharmacopoeia compliant"
+      "f3": "European Pharmacopoeia compliant",
+      "fd": "Shell Ondina oils are highly refined white mineral oils meeting the pharmaceutical specifications of the UK, Germany and the USA. They are colourless, tasteless and odourless. Polycyclic aromatic hydrocarbons have been removed.\n\nAPPLICATIONS\n• Cosmetics and pharmaceuticals: Creams, lotions, sunscreen oils\n• Food sector packaging: Plastic material production\n• Technical applications: Carrier fluid in TPE elastomers\n• Toys: SBS and SEBS type TPE elastomers\n\nPERFORMANCE CHARACTERISTICS\n• High purity: Aromatic compounds completely removed\n• Superior quality control\n• Excellent oxidation stability\n• Wide product range (naphthenic and paraffinic)\n\nSTANDARDS AND SPECIFICATIONS\nEuropean Pharmacopoeia 3rd Edition | US Pharmacopoeia 23rd Edition\nUS FDA §172.878, §178.3620(a) | UK Mineral Hydrocarbon Regulations 1966 | BGA Bulletins 38 and 155"
     },
     "ensis-engine-oil-30": {
       "type": "Engine Protection / Conservation Oil",
@@ -2438,7 +2443,8 @@
       "f0": "Engine conservation",
       "f1": "Rust and corrosion protection",
       "f2": "Long-term storage compatible",
-      "f3": "SAE 30"
+      "f3": "SAE 30",
+      "fd": "Shell Ensis Engine Oil 30 is a specialty conservation oil that provides protection against rust and corrosion during long-term storage and transportation of engines.\n\nAPPLICATIONS\n• Engine and machine storage protection\n• Long-term transportation protection\n\nPERFORMANCE CHARACTERISTICS\n• Strong rust and corrosion prevention\n• Long-lasting surface protection film that remains stable throughout the storage period"
     },
     "ensis-dw-2462": {
       "type": "Conservation / Anti-Rust Oil",
@@ -2446,7 +2452,8 @@
       "f0": "Anti-rust protection",
       "f1": "Metal surface protection",
       "f2": "Long-term protection",
-      "f3": "Industrial conservation"
+      "f3": "Industrial conservation",
+      "fd": "Shell Ensis DW 2462 is a conservation oil developed to protect metal surfaces and industrial equipment during long-term storage and transportation.\n\nAPPLICATIONS\n• Metal surface protection\n• Industrial equipment storage\n• Long-term conservation\n\nPERFORMANCE CHARACTERISTICS\n• Effective rust and corrosion prevention\n• Long-lasting protection film that maintains barrier properties throughout the conservation period"
     },
     "irus-fluid-c": {
       "type": "Special Industrial Fluid",
@@ -2454,7 +2461,8 @@
       "f0": "Specialized industrial formulation",
       "f1": "High performance",
       "f2": "Industrial systems",
-      "f3": "Reliable protection"
+      "f3": "Reliable protection",
+      "fd": "Shell Irus Fluid C is a high-performance industrial fluid developed for specialised industrial applications.\n\nAPPLICATIONS\n• Specialised industrial systems\n• Industrial processes requiring precision fluid performance\n\nPERFORMANCE CHARACTERISTICS\n• High-performance industrial formulation designed for demanding conditions\n• Reliable system protection ensuring consistent operational performance"
     }
   },
   "quotePage": {
