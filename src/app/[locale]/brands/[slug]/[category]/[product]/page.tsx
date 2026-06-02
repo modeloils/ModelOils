@@ -2161,7 +2161,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
   let translatedType = spec.type;
   let translatedDesc = spec.description;
   let translatedFeatures = spec.features;
-  const BRANDS_WITH_PD = new Set(["mobil", "castrol", "total", "motul", "texol", "texaco"]);
+  let translatedFullDesc = spec.fullDescription;
+  const BRANDS_WITH_PD = new Set(["shell", "mobil", "castrol", "total", "motul", "texol", "texaco"]);
   if (BRANDS_WITH_PD.has(brandSlug)) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const pd = await getTranslations("pd" as any);
@@ -2171,6 +2172,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
       translatedType = pd(`${key}.type`);
       translatedDesc = pd(`${key}.description`);
       translatedFeatures = [pd(`${key}.f0`), pd(`${key}.f1`), pd(`${key}.f2`), pd(`${key}.f3`)];
+      try { translatedFullDesc = pd(`${key}.fd`); } catch { /* keep spec fallback */ }
     } catch {
       // fallback already set above
     }
@@ -2320,13 +2322,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
       </section>
 
       {/* Full description */}
-      {spec.fullDescription && (
+      {translatedFullDesc && (
         <section className="pb-8">
           <div className="container-xl">
             <div className="bg-white border border-brand-200 rounded-[var(--radius-card)] p-6">
               <h2 className="text-xl font-bold text-brand-900 mb-5">Ürün Açıklaması</h2>
               <div className="space-y-1">
-                {spec.fullDescription.split("\n").map((line, i) => {
+                {translatedFullDesc.split("\n").map((line, i) => {
                   const trimmed = line.trim();
                   if (!trimmed) return <div key={i} className="h-3" />;
                   const isHeader = /^[A-ZÇĞİÖŞÜ\s]{4,}$/.test(trimmed) || /^(PERFORMANS|UYGULAMALAR|STANDARTLAR|TİPİK|BAŞLICA|ENERJİ|BAKIM|KULLANIM|KORUYUCU)/.test(trimmed);

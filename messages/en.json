@@ -481,19 +481,21 @@
     },
     "helix-ultra-5w-40": {
       "type": "Fully Synthetic",
-      "description": "A fully synthetic motor oil with excellent performance across a wide temperature range. Volkswagen and Porsche approved, suitable for both daily and high-performance use.",
-      "f0": "VW and Porsche approved",
-      "f1": "Wide temperature range",
-      "f2": "Anti-shear protection",
-      "f3": "Engine cleaning properties"
+      "description": "Top-tier fully synthetic motor oil approved by Ferrari, Porsche, BMW LL-98 and MB 229.3. Delivers high performance and comprehensive protection in petrol, diesel and LPG engines.",
+      "f0": "Ferrari and Porsche approved",
+      "f1": "BMW LL-98 approved",
+      "f2": "MB 229.3 approved",
+      "f3": "Multi-fuel compatible",
+      "fd": "Fully synthetic motor oil delivering high-performance driving, developed with Shell's Formula 1 racing expertise and tested in the most demanding driving conditions. The only motor oil approved by Ferrari.\n\nAPPLICATIONS\n• Suitable for all naturally aspirated, injected, turbocharged and multi-valve petrol, diesel and LPG engines.\n\nPERFORMANCE FEATURES\n• Very high protection, excellent cleanliness and long engine life\n• Formula 1 technology development\n• Improved fuel economy and low-temperature performance\n• Low oil consumption through specially selected synthetic base stocks\n• Effective protection in turbocharged and catalytic converter-equipped vehicles\n\nTYPICAL PHYSICAL PROPERTIES\nKinematic Viscosity @ 40°C: 75.4 mm²/s\nKinematic Viscosity @ 100°C: 13.16 mm²/s\nViscosity Index: 178\nDensity @ 15°C: 851 kg/m³\nFlash Point: 217°C\nPour Point: -39°C\n\nSTANDARDS AND SPECIFICATIONS\nAPI SL/CF\nACEA A3/B3/B4-98\nFerrari Approved\nVW 500.00, 502.00, 505.00\nPorsche Approved\nBMW Longlife '98\nPeugeot-Citroën PSA E and D\nMercedes-Benz 229.3\nSAAB"
     },
     "helix-ultra-ect-c2-c3-0w-30": {
       "type": "Fully Synthetic",
-      "description": "A fully synthetic motor oil compatible with DPF and TWC emission control systems. Dual ACEA C2/C3 certification protects modern emission control systems.",
-      "f0": "DPF compatible",
-      "f1": "Low-SAPS formula",
-      "f2": "Catalytic converter protection",
-      "f3": "Renault and Fiat approved"
+      "description": "Fully synthetic motor oil approved by VW 504/507, MB 229.52, Fiat GS1/DS1 and Porsche C30. Low SAPS formulation compatible with DPF and catalytic converters protects emission systems.",
+      "f0": "VW 504.00/507.00 approved",
+      "f1": "MB 229.52/229.31 approved",
+      "f2": "Porsche C30 approved",
+      "f3": "Low SAPS / DPF compatible",
+      "fd": "Fully synthetic motor oil — superior protection for exhaust emission systems from Shell.\n\nOur most advanced formula, Shell Helix Ultra ECT C2/C3 0W-30, has been proven to deliver more performance than ever before. Thanks to our Emission Compatible Technology (ECT), it has been developed to help prevent pollution and sludge build-up in modern diesel and petrol engines. Shell PurePlus Technology combined with a high-performance additive package delivers an even higher level of cleansing and protection.\n\nPERFORMANCE FEATURES\n• Up to 2.6% more fuel economy\n• Up to 3x better protection against corrosion wear vs latest industry standard\n• Up to 4x better protection against wear vs latest industry standard\n• Up to 45% cleaner pistons vs industry baseline\n• Helps keep diesel particulate filters clean, protecting emission systems\n• Unique protection against sludge\n\nSTANDARDS AND SPECIFICATIONS\nACEA C2, ACEA C3\nAPI SN\nVW 504.00/507.00\nMB 229.52, MB 229.51, MB 229.31\nFiat 955535.GS1 & Fiat 955535.DS1\nPorsche C30"
     },
     "helix-ultra-ect-c3-5w-30": {
       "type": "Fully Synthetic",
@@ -552,20 +554,22 @@
       "f3": "Extended drain intervals"
     },
     "helix-hx8-5w-30": {
-      "type": "Synthetic Technology",
-      "description": "A high-performance motor oil produced with Shell's synthetic technology formula. Offers protection comparable to full synthetic with broader application compatibility.",
-      "f0": "Synthetic technology formula",
-      "f1": "Wide application range",
-      "f2": "MB 229.3 approved",
-      "f3": "Superior high-temperature protection"
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic motor oil approved by BMW LL-01, MB 229.5 and VW 502.00/505.00. Active cleaning technology removes dirt 4 times more effectively than conventional oils.",
+      "f0": "BMW LL-01 approved",
+      "f1": "MB 229.5 approved",
+      "f2": "VW 502/505 approved",
+      "f3": "Active cleaning technology",
+      "fd": "Fully synthetic motor oil engineered for maximum performance in modern vehicles.\n\nShell Helix HX8 5W-30 features superior active cleaning technology that works approximately 4x more effectively at removing sludge and dirt from dirty engines. Extended oxidation stability provides superior protection across long service intervals.\n\nPERFORMANCE FEATURES\n• Approximately 4x more effective sludge removal vs conventional oils\n• Approximately 35% greater protection vs competing synthetic products\n• Quick oil flow and reduced friction for better cold starts and fuel efficiency\n• Prevents harmful deposit build-up on engine components\n• Neutralises acidic combustion by-products while forming a protective film\n• Reduces motor vibration and noise\n\nSTANDARDS AND SPECIFICATIONS\nAPI SM/CF\nACEA A3/B3/B4\nBMW LL-01\nMercedes-Benz 229.5\nVW 502.00/505.00\nRenault RN0700, RN0710"
     },
     "helix-hx8-5w-40": {
-      "type": "Synthetic Technology",
-      "description": "A synthetic technology motor oil offering excellent protection across a wide viscosity range. VW and Mercedes-Benz approved, suitable for both petrol and diesel engines.",
-      "f0": "Multi-purpose formula",
-      "f1": "VW and MB approved",
-      "f2": "High thermal stability",
-      "f3": "Engine cleaning properties"
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic motor oil approved by MB 229.3, VW 502.00/505.00 and Fiat 9.55535-N2/M2. Provides superior protection across a wide temperature range in petrol, diesel and LPG engines.",
+      "f0": "MB 229.3 approved",
+      "f1": "Fiat 9.55535-N2/M2 approved",
+      "f2": "Petrol/Diesel/LPG compatible",
+      "f3": "Superior wear protection",
+      "fd": "Fully synthetic motor oil — outstanding performance, cleanliness and protection.\n\n• Helps protect against wear even in the most demanding driving conditions, helping extend engine life\n• Suitable for all oil drain intervals recommended by vehicle manufacturers\n• Provides low oil consumption\n• Suitable for petrol, diesel and gas engines; also for biodiesel and petrol/ethanol blends\n\nSTANDARDS AND SPECIFICATIONS\nAPI SN/CF\nACEA A3/B3, A3/B4\nMB 229.3\nVW 502.00/505.00\nRenault RN0700, RN0710\nFiat 9.55535-N2 and 9.55535-M2"
     },
     "helix-hx8-10w-40": {
       "type": "Synthetic Technology",
@@ -593,11 +597,12 @@
     },
     "helix-hx7-10w-40": {
       "type": "Semi-Synthetic",
-      "description": "A semi-synthetic motor oil suitable for both petrol and diesel engines. Provides reliable engine protection in hot climates and urban driving.",
-      "f0": "Petrol and diesel compatible",
-      "f1": "Urban driving optimized",
-      "f2": "Strong detergent package",
-      "f3": "Multi-brand approvals"
+      "description": "Semi-synthetic motor oil certified to API SM/CF and ACEA A3/B3/B4. Special active cleaning technology continuously prevents dirt and sludge formation, improving engine response.",
+      "f0": "Active cleaning technology",
+      "f1": "A3/B3/B4 compatible",
+      "f2": "Petrol/Diesel compatible",
+      "f3": "Improved engine response",
+      "fd": "Shell Helix HX7 is formulated with special active cleaning technology. Provides superior protection compared to conventional motor oils by continuously preventing dirt and sludge formation, enabling better engine response until the next scheduled oil change.\n\nAPPLICATIONS\n• Suitable for vehicles requiring API SM/CF and ACEA A3/B3/B4 performance classifications\n• Petrol engines with positive crankcase ventilation and catalytic converters\n• Fuel-injected petrol engines\n\nSTANDARDS AND SPECIFICATIONS\nAPI SM/CF\nACEA A3/B3/B4"
     },
     "helix-hx7-15w-40": {
       "type": "Semi-Synthetic",
@@ -617,11 +622,12 @@
     },
     "helix-hx6-10w-40": {
       "type": "Semi-Synthetic",
-      "description": "A reliable semi-synthetic motor oil developed for everyday use. Wide engine and vehicle compatibility meets standard maintenance requirements.",
-      "f0": "Ideal for everyday use",
-      "f1": "Balanced protection package",
-      "f2": "Wide engine compatibility",
-      "f3": "Economical semi-synthetic"
+      "description": "Semi-synthetic motor oil approved by MB 229.3, VW 502.00/505.00 and Renault RN0700. Superior protection against sludge and wear; suitable for modern petrol and diesel engines.",
+      "f0": "MB 229.3 approved",
+      "f1": "VW 502/505 approved",
+      "f2": "Renault RN0700 approved",
+      "f3": "Sludge and wear protection",
+      "fd": "Semi-synthetic technology motor oil that helps protect against sludge and wear. Uses both synthetic and mineral base oils to achieve performance levels not possible with mineral oils alone.\n\n• Helps extend engine life through wear protection\n• Continues protection throughout the full oil change interval\n• Suitable for petrol, diesel and gas engines; also for biodiesel and petrol/ethanol blends\n\nSTANDARDS AND SPECIFICATIONS\nAPI SN/CF\nACEA A3/B3, A3/B4\nMB 229.3\nVW 502.00/505.00\nRenault RN0700"
     },
     "helix-hx5-15w-40": {
       "type": "Mineral",
@@ -641,19 +647,21 @@
     },
     "helix-hx3-20w-50": {
       "type": "Mineral",
-      "description": "An economical mineral motor oil. Provides minimum engine protection for standard maintenance programs. Suitable for older and high-mileage engines.",
-      "f0": "Economical mineral oil",
-      "f1": "Standard protection",
-      "f2": "Wide compatibility",
-      "f3": "Ideal for basic maintenance"
+      "description": "API SJ/CF certified mineral motor oil. Provides active cleaning technology and protection against oxidation for carburettor engines, naturally aspirated diesel engines and older vehicles.",
+      "f0": "API SJ/CF certified",
+      "f1": "Carburettor engine compatible",
+      "f2": "Active cleaning technology",
+      "f3": "Older vehicle compatible",
+      "fd": "Shell Helix HX3 20W-50 is formulated with special active cleaning technology to prevent sludge and deposit build-up, protecting the engine and extending its life.\n\nAPPLICATIONS\n• Petrol and Diesel Engines\n• Carburettor and fuel-injected petrol engines\n• Naturally aspirated diesel engines\n\nPERFORMANCE FEATURES\n• Formulated with 3 active detergent additive technology: helps prevent sludge and deposit build-up, protecting the engine and extending its life\n• Resists oxidation: prevents oil degradation until the next oil change\n\nTYPICAL PHYSICAL PROPERTIES\nKinematic Viscosity @ 40°C: 157.0 cSt\nKinematic Viscosity @ 100°C: 19.0 cSt\nViscosity Index: 137\nDensity @ 15°C: 0.888 kg/l\nFlash Point: 215°C\nPour Point: -27°C\n\nSTANDARDS AND SPECIFICATIONS\nAPI SJ/CF"
     },
     "rimula-r2-extra-15w-40": {
-      "type": "Heavy Duty",
-      "description": "A reliable motor oil developed for heavy-duty diesel engines. Multi-additive package delivers reliable protection and extended engine life in diesel vehicles.",
-      "f0": "Heavy-duty diesel protection",
-      "f1": "Multi-additive package",
-      "f2": "MAN and Volvo approved",
-      "f3": "Extended engine life"
+      "type": "Mineral",
+      "description": "Mineral heavy-duty diesel engine oil approved by MAN 271, MB 228.1 and VDS. Three-component Multi Energy Protection formula provides acid control, deposit control and wear protection.",
+      "f0": "MAN 271 approved",
+      "f1": "MB 228.1 approved",
+      "f2": "Multi Energy Protection",
+      "f3": "ACEA E2 compatible",
+      "fd": "Shell Rimula R2 Extra 15W-40 is a heavy-duty diesel engine oil with extra protection against deposits. Designed to protect your engine regardless of operating conditions — hot, cold, steep gradient, dusty, muddy or long distance.\n\nENERGISED PROTECTION\nShell Rimula operates in three critical areas:\n1. Acid control — proven additives protect against corrosion from acids formed during combustion\n2. Deposit control — keeps the engine clean for consistent performance and long life\n3. Wear control — separates moving metal engine parts to extend engine life\n\nContains approximately 20% more active deposit-control additives vs API CF-4 oils in higher-powered or turbocharged engines. Tested for compliance with Mercedes-Benz, MAN and Volvo requirements.\n\nAPPLICATIONS\n• Strong protection against deposit build-up in turbocharged engines; ideal for short and long-haul transport\n• Suitable for heavy-duty bus operators with older turbocharged engines at high operating temperatures\n• Versatile high-performance protection for agricultural applications\n\nSTANDARDS AND SPECIFICATIONS\nAPI CF-4, CF\nACEA E2\nMAN 271\nMB 228.1\nVolvo VDS"
     },
     "rimula-r3-15w-40": {
       "type": "Heavy Duty",
@@ -672,28 +680,31 @@
       "f3": "Multi-grade formula"
     },
     "rimula-r4-l-15w-40": {
-      "type": "Heavy Duty",
-      "description": "A high-performance motor oil developed for heavy-duty truck and bus engines. Delivers superior deposit control in engines with EGR (Exhaust Gas Recirculation) systems.",
-      "f0": "EGR engine compatible",
-      "f1": "Superior deposit control",
-      "f2": "Extended service intervals",
-      "f3": "Multi-OEM approved"
+      "type": "Mineral",
+      "description": "All-season heavy-duty diesel engine oil approved by Cat ECF-1-A, Cummins CES 20078, MACK EO-M+, MB 228.3 and Volvo VDS-3. Excellent engine cleanliness and protection in demanding conditions.",
+      "f0": "Cat ECF-1-A approved",
+      "f1": "Cummins CES 20078 approved",
+      "f2": "MB 228.3 approved",
+      "f3": "Volvo VDS-3 approved",
+      "fd": "All-Season Heavy-Duty Diesel Motor Oil\n• UNIQUE ACTIVE TECHNOLOGY\n• HIGH-PERFORMANCE ADVANCED ENGINES\n\nShell Rimula R4 Energised Protection oils contain high-performance additives that protect and adapt to all pressure and temperature ranges in advanced engines. Single oil for mixed-brand fleets with excellent soot and viscosity control.\n\nPERFORMANCE FEATURES\n• Excellent Protection: maximum soot protection, wear protection and long oil life in Euro 3, US 2002 and other advanced engines\n• Proven Performance for All Applications: tested in demanding conditions globally\n• Improved Engine Cleanliness: special additive system exceeds many OEM requirements\n\nAPPLICATIONS\nDemanding Conditions: outstanding protection for high-powered heavy-duty diesel engines.\nAdvanced Low-Emission Engines: suitable for Euro 2, Euro 3, US 2002 and DPF-equipped engines.\n\nSTANDARDS AND SPECIFICATIONS\nAPI CI-4, CH-4, CG-4, CF-4, CF\nACEA E7, E5, E3\nGlobal DHD-1\nCaterpillar ECF-1-A\nCummins CES 20078, 77, 76, 75, 72, 71\nDDC 93K215\nMACK EO-M, EO-M+\nMAN 3275\nMercedes-Benz 228.3\nRenault Trucks RLD-2\nVOLVO VDS-3"
     },
     "rimula-r4-x-15w-40": {
-      "type": "Heavy Duty",
-      "description": "A superior-performance motor oil developed for high-stress heavy-duty engines. Provides extra protection in demanding operating conditions with a stronger additive package than R4 L.",
-      "f0": "Extra stress protection",
-      "f1": "CI-4 Plus certified",
-      "f2": "Enhanced additive package",
-      "f3": "Intensive operation compatible"
+      "type": "Mineral",
+      "description": "All-season mineral heavy-duty engine oil approved by Cat ECF-1-A, Cummins CES 20078, MAN 3275, MB 228.3 and Volvo VDS-3. For construction, mining and heavy transport applications.",
+      "f0": "Global DHD-1 compatible",
+      "f1": "Cummins CES 20078 approved",
+      "f2": "Volvo VDS-3 approved",
+      "f3": "Construction/mining applications",
+      "fd": "All-Season Heavy-Duty Diesel Motor Oil\n• UNIQUE ACTIVE TECHNOLOGY\n• HIGH-PERFORMANCE ADVANCED ENGINES\n\nShell Rimula R4 Energised Protection oils contain high-performance additives that protect and adapt to all pressure and temperature ranges — from high piston temperatures to severe valve train loads. A single oil for mixed-brand fleets with extra active additives for excellent soot and viscosity control.\n\nPERFORMANCE FEATURES\n• Excellent Protection: maximum soot protection, wear protection and long oil life in Euro 3, US 2002 and other advanced engines\n• Proven Performance for All Applications: tested in demanding conditions from mining to heavy-duty trucking\n• Improved Engine Cleanliness: special additive system exceeds many OEM requirements\n\nAPPLICATIONS\nDemanding Conditions: protection for European, US and Japanese high-powered heavy-duty diesel engines in road and off-highway applications.\nAdvanced Low-Emission Engines: suitable for Euro 2, Euro 3, US 2002 and DPF-equipped engines.\n\nSTANDARDS AND SPECIFICATIONS\nAPI CI-4, CH-4, CG-4, CF-4, CF\nACEA E7, E5, E3\nGlobal DHD-1\nCaterpillar ECF-1-A\nCummins CES 20078, 77, 76, 75, 72, 71\nDDC 93K215\nMACK EO-M, EO-M+\nMAN 3275\nMercedes-Benz 228.3\nRenault Trucks RLD-2\nVOLVO VDS-3"
     },
     "rimula-r5-e-10w-40": {
-      "type": "Heavy Duty",
-      "description": "A synthetic technology heavy-duty motor oil designed for extended service intervals. Delivers outstanding deposit control in modern EGR engines and reliable protection in stop-start operations.",
-      "f0": "Extended service intervals",
-      "f1": "EGR compatible",
-      "f2": "MB 228.5 approved",
-      "f3": "Synthetic technology"
+      "type": "Semi-Synthetic",
+      "description": "Energy-saving semi-synthetic heavy-duty diesel engine oil. Multi-fleet compatibility with modern engine technology provides superior protection across all pressure and temperature conditions.",
+      "f0": "Energy saving technology",
+      "f1": "Multi-fleet compatibility",
+      "f2": "Superior wear protection",
+      "f3": "Long engine life",
+      "fd": "Energised Protection oils formulated with high-performance additives that adapt to all pressure and temperature ranges in modern engines.\n\nA single oil for fleets with different vehicle brands, featuring energy savings, fuel economy, superior wear protection and excellent soot and viscosity control through synthetic base oil technology.\n\nPERFORMANCE FEATURES\n• Energy saving capability and improved fuel economy\n• Superior wear protection\n• Excellent soot and viscosity control\n• Multi-fleet compatibility — one oil for different vehicle brands\n\nSTANDARDS AND SPECIFICATIONS\nAPI CI-4\nACEA E7"
     },
     "rimula-r5-le-10w-40": {
       "type": "Heavy Duty",
@@ -704,12 +715,13 @@
       "f3": "Multi-OEM approved"
     },
     "rimula-r6-lme-5w-30": {
-      "type": "Heavy Duty",
-      "description": "A fully synthetic motor oil developed for Euro 6 heavy-duty engines equipped with SCR and DPF filters. Environmentally friendly formula with the lowest sulphur content.",
-      "f0": "Euro 6 engine compatible",
-      "f1": "SCR and DPF compatible",
-      "f2": "Low-SAPS formula",
-      "f3": "Maximum emission compliance"
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic heavy-duty diesel engine oil approved by MB 228.5, MAN 3277, Volvo VDS-3 and Scania LDF-2. Provides extended drain intervals in low-emission engines.",
+      "f0": "MB 228.5 approved",
+      "f1": "Scania LDF-2 approved",
+      "f2": "Volvo VDS-3 approved",
+      "f3": "Extended drain interval",
+      "fd": "Low emission, maintenance cost savings and energy savings.\n\nShell Rimula's Energised Protection operates in three critical areas:\n1. Acid control — proven additives protect against corrosion from acids formed during combustion\n2. Deposit control — keeps the engine clean for consistent performance and long life\n3. Wear control — separates moving metal parts to extend engine life\n\nIndependently verified fuel savings of up to 2.0% versus typical 10W-40 oils over 100,000 km. MB OM501 engine test showed 25% better piston cleanliness than reference oil. Approved for extended drain intervals by Mercedes-Benz and other leading manufacturers.\n\nShell Rimula R6 LME is suitable for Mercedes-Benz, MAN, DAF and other Euro 2-5 mixed fleets, and is ideal for DPF-equipped vehicles. The low SAPS formulation protects exhaust system catalysts and filters in the latest vehicles.\n\nSTANDARDS AND SPECIFICATIONS\nSAE 5W-30\nACEA E6, E7\nCummins CES 20077\nMAN M3477\nMB 228.51"
     },
     "rimula-r6-me-5w-30": {
       "type": "Heavy Duty",
@@ -1814,6 +1826,132 @@
       "f1": "Chassis application",
       "f2": "Good mechanical stability",
       "f3": "Reliable protection"
+    },
+    "helix-ultra-sp-0w-20": {
+      "type": "Fully Synthetic",
+      "description": "API SP and ACEA C5 certified fully synthetic motor oil synthesized from natural gas using PurePlus technology. Keeps pistons 50% cleaner than industry standards and improves fuel economy.",
+      "f0": "API SP certified",
+      "f1": "PurePlus Technology",
+      "f2": "ACEA C5 compatible",
+      "f3": "Maximum fuel savings",
+      "fd": "Designed to meet the specific requirements of engine manufacturers. Today's vehicles need a motor oil that adapts to changing demands, enhancing performance and extending engine life. Shell developed an entirely new way to produce synthetic base oils from natural gas using patented Shell PurePlus Technology.\n\nShell Helix Ultra is a premium motor oil range formulated using unique Shell PurePlus Technology, enabling a motor oil that actively helps keep engines clean. Active Cleansing Technology has always been at the heart of Shell Helix.\n\nPERFORMANCE FEATURES\n• Unique wear and sludge protection\n• Leaves pistons 50% cleaner than the industry standard\n• Improved fuel economy with corresponding reduction in emissions\n\nSTANDARDS AND SPECIFICATIONS\nACEA C5\nAPI SP"
+    },
+    "helix-ultra-pro-af-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic motor oil approved by Ford WSS-M2C913-C/D and Jaguar Land Rover STJLR.03.5003. Provides extended service intervals and superior protection in Ford and Jaguar/Land Rover vehicles.",
+      "f0": "Ford WSS-M2C913-C/D approved",
+      "f1": "Jaguar Land Rover approved",
+      "f2": "A5/B5 compatible",
+      "f3": "Extended drain interval",
+      "fd": "Fully synthetic motor oil developed to meet the specific requirements of Ford and ACEA A5/B5 specifications.\n\nShell is the leading supplier for Ford in several countries. Subjected to extensive performance tests for WSS-M2C913-C motor oil specification compliance.\n\nSTANDARDS AND SPECIFICATIONS\nACEA A5/B5\nAPI SL\nFord WSS-M2C913-C\nFord WSS-M2C913-D\nJaguar Land Rover STJLR.03.5003"
+    },
+    "helix-ultra-pro-ag-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "GMW16177 (dexos2™) approved fully synthetic motor oil. Specially formulated for GM vehicles; delivers superior engine cleanliness and fuel economy while protecting aftertreatment systems.",
+      "f0": "dexos2™ approved",
+      "f1": "ACEA C3 compatible",
+      "f2": "Specially for GM vehicles",
+      "f3": "Emission system protection",
+      "fd": "Fully synthetic motor oil developed to meet the specific requirements of engine manufacturers.\n\nToday's high-performance engines need a motor oil that adapts to changing demands and enhances performance while extending engine life. Shell PurePlus Technology produces synthetic base oils from natural gas, enabling active cleaning technology at the heart of Shell Helix Ultra.\n\nPERFORMANCE FEATURES\n• Developed to meet the demanding requirements of General Motors and ACEA C3\n• Developed through years of technological partnership between Shell and General Motors\n• Passed comprehensive performance tests for GMW16177 (dexos2™) compliance\n\nSTANDARDS AND SPECIFICATIONS\nAPI SN\nACEA C3\nGMW16177 (dexos2™)"
+    },
+    "helix-ultra-pro-ar-l-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "Renault RN0720 approved and ACEA C4 compatible fully synthetic motor oil. Specially formulated for Renault and Nissan petrol/diesel engines with DPF filters.",
+      "f0": "Renault RN0720 approved",
+      "f1": "ACEA C4 compatible",
+      "f2": "For DPF-equipped engines",
+      "f3": "Renault/Nissan specialist",
+      "fd": "Latest generation fully synthetic motor oil specially designed to provide maximum protection for all Renault and Nissan petrol and diesel engines, including those with diesel particulate filters. Active cleansing technology prevents sludge and deposit build-up, maintaining engine performance until the next oil change.\n\nShell is the number one global lubricant supplier to the Renault-Nissan Alliance. Passed comprehensive performance tests for Renault RN0720 compliance.\n\nPERFORMANCE FEATURES\n• Protects emission systems: Low SAPS formula extends life of catalytic systems and DPF-equipped engines\n• Active cleansing technology: more effective than mineral oils at removing deposits\n• High oxidation stability: prevents oil degradation between drain intervals\n• Specially selected synthetic base oil: reduces oil volatility and consumption\n• High shear resistance: maintains viscosity throughout drain interval\n• Reduces CO2 exhaust emissions\n• Minimises vibration and engine noise\n\nSTANDARDS AND SPECIFICATIONS\nACEA C4\nRenault RN0720"
+    },
+    "helix-ultra-pro-am-l-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "BMW LL-04 and MB 229.51 approved fully synthetic motor oil. Provides top-level engine protection and extended drain intervals in BMW and Mercedes-Benz premium vehicles.",
+      "f0": "BMW LL-04 approved",
+      "f1": "MB 229.51 approved",
+      "f2": "Premium vehicle formulation",
+      "f3": "Extended drain interval",
+      "fd": "Fully synthetic motor oil developed to meet the specific requirements of engine manufacturers.\n\nShell Helix Ultra is a high-performance product range formulated with unique Shell PurePlus Technology. The unique combination of Active Cleansing Technology and Shell PurePlus Technology delivers outstanding cleanliness and protection.\n\nPERFORMANCE FEATURES\n• Developed to meet the demanding requirements of Mercedes-Benz and BMW, including API SN/CF and ACEA C3\n• Technical collaboration between Shell and Mercedes-Benz including research and development projects\n• Passed comprehensive performance tests for MB 229.51 specification compliance\n\nSTANDARDS AND SPECIFICATIONS\nAPI SN/CF\nACEA C3\nBMW LL-04\nMB 229.51\nMaserati"
+    },
+    "helix-ultra-pro-ap-l-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic motor oil approved by PSA B71 2290, Fiat 9.55535-S1 and IVECO 18-1811 SP. Provides emission system protection in PSA group and IVECO commercial vehicles.",
+      "f0": "PSA B71 2290 approved",
+      "f1": "Fiat 9.55535-S1 approved",
+      "f2": "IVECO approved",
+      "f3": "ACEA C2 compatible",
+      "fd": "Fully synthetic motor oil developed using Shell PurePlus Technology to meet ACEA C2 requirements and the demanding specifications of Peugeot, Citroën, Fiat and IVECO engines.\n\nShell supplies service-fill motor oils to many PSA service locations across Europe and India. Passed extensive tests for Fiat 9.55535-S1 and PSA B71 2290 compliance.\n\nPERFORMANCE FEATURES\n• Developed for Peugeot, Citroën and Fiat with ACEA C2 requirements\n• Shell supplies PSA service-fill products across multiple markets\n• Comprehensive performance testing for Fiat and PSA specifications\n\nSTANDARDS AND SPECIFICATIONS\nACEA C2\nPSA B71 2290\nFiat 9.55535-S1\nIVECO 18-1811 SP"
+    },
+    "helix-ultra-ect-multi-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic motor oil approved by BMW LL-04, MB 229.51 and VW 504.00/507.00, compatible with catalytic converters and DPF. Active cleaning technology works 5 times more effectively than mineral oils.",
+      "f0": "BMW LL-04 approved",
+      "f1": "VW 504.00/507.00 approved",
+      "f2": "Low SAPS formulation",
+      "f3": "DPF protection",
+      "fd": "Shell Helix Ultra ECT 5W-30 (formerly Shell Helix Ultra Extra 5W-30) is engineered for all fuel-injected engines equipped with exhaust gas recirculation systems, positive crankcase ventilation, catalytic converters and particulate filters. Five times more effective than mineral oils at removing sludge.\n\nPERFORMANCE FEATURES\n• Low SAP (Sulphated Ash, Phosphorus, Sulphur) formulation protecting emission systems\n• Shell's superior active cleaning technology\n• Extended oxidation stability\n• Low viscosity enabling quick oil flow and reduced friction\n• Approximately 37% more protection than competing synthetic brands\n• Enhanced fuel efficiency and improved cold-start capability\n• Maintains viscosity throughout oil change intervals\n• Reduces oil consumption and volatility\n\nSTANDARDS AND SPECIFICATIONS\nACEA C2/C3\nBMW LL-04\nMB 229.51\nVW 504.00/507.00\nPSA Service Fill"
+    },
+    "rimula-r6-m-10w-40": {
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic heavy-duty diesel engine oil approved by Cummins, MAN 3277, MB 228.5, Scania LDF-2 and Volvo VDS-3. Extended service intervals and fuel savings for Euro 2-4 engines.",
+      "f0": "Volvo VDS-3 approved",
+      "f1": "Scania LDF-2 approved",
+      "f2": "MB 228.5 approved",
+      "f3": "Extended drain interval",
+      "fd": "Fully Synthetic Heavy-Duty Diesel Engine Oil.\n\nAPPLICATIONS\nUsed in transport applications for Mercedes-Benz, MAN, DAF, Volvo and other low-emission engine vehicles. Meets or exceeds performance criteria of European, American and Japanese manufacturers including Volvo, Renault, DAF, Scania, Cummins and Mack. Not recommended for Caterpillar engines.\n\nShell Rimula R6 M meets the requirements of many European manufacturers for Euro 2, Euro 3 and some Euro 4 engine applications. For DPF-equipped engines, Shell Rimula R6 LM/LME is recommended.\n\nPERFORMANCE FEATURES\n• Reduced maintenance costs\n• Outstanding piston cleanliness through advanced additive technology\n• Low wear — long engine life: controls cylinder bore polishing and valve train wear\n• Fuel economy: reduces fuel consumption vs higher viscosity grade oils\n\nSTANDARDS AND SPECIFICATIONS\nACEA E7, E4\nAPI CF\nCummins CES 20072\nMAN 3277\nMercedes-Benz 228.5\nMTU Category 3\nRenault Trucks RXD\nScania LDF-2\nVOLVO VDS-3"
+    },
+    "rimula-r6-lm-10w-40": {
+      "type": "Fully Synthetic",
+      "description": "Low SAPS fully synthetic motor oil approved by Cat ECF-1-A, Cummins CES 20077, MAN 3477, MB 228.51 and Volvo VDS-2. DPF compatible; ideal for vehicles with aftertreatment systems.",
+      "f0": "Cat ECF-1-A approved",
+      "f1": "MB 228.51 approved",
+      "f2": "Low SAPS / DPF compatible",
+      "f3": "Volvo VDS-2 approved",
+      "fd": "Shell Rimula R6 LM is an innovative technology solution for heavy-duty diesel engines providing protection in three critical areas:\n\n1. Acid control — protects against corrosion from acids formed during combustion\n2. Deposit control — keeps the engine clean for consistent performance and long life\n3. Wear control — separates moving metal parts to extend engine life\n\nKEY FEATURES\n• Low Emission: catalyst and particulate filter compatibility protecting exhaust system performance and life\n• Maintenance Cost Savings: extended drain capability and versatility reduce operating costs\n• Protective Power: synthetic base oils, unique additive technology and special anti-wear reinforcement\n\nSuitable for truck and bus fleet operators. Compatible with diesel and CNG engines. Particularly recommended for DPF-equipped vehicles.\n\nSTANDARDS AND SPECIFICATIONS\nSAE 10W-40\nACEA E7, E6, E4-99\nAPI CI-4, CH-4, CG-4, CF-4\nCaterpillar ECF-1-A\nCummins CES 20077\nMercedes-Benz 228.51, 226.9\nMAN 3477, 3271-1\nVolvo CNG, VDS-2\nMack EO-M+"
+    },
+    "rimula-r3plus-10w": {
+      "type": "Mineral",
+      "description": "Single-grade mineral heavy-duty diesel engine oil certified to CI-4 and ACEA E7/E5/E3. Cat ECF-1-A, MB 228.3 and Volvo VDS-3 approved; for construction and mining applications.",
+      "f0": "Cat ECF-1-A approved",
+      "f1": "MB 228.3 approved",
+      "f2": "Volvo VDS-3 approved",
+      "f3": "High temperature stability",
+      "fd": "All-Season Heavy-Duty Diesel Motor Oil\n• UNIQUE ACTIVE TECHNOLOGY\n• HIGH-PERFORMANCE ADVANCED ENGINES\n\nShell Rimula R3+ 10W Energised Protection oils contain high-performance additives that protect and adapt to all pressure and temperature ranges in advanced engines — from high piston temperatures to severe valve train loads. A single oil for mixed-brand fleets that controls and removes harmful soot through extra active additives.\n\nPERFORMANCE FEATURES\n• Excellent Protection: maximum soot protection, excellent wear protection and long oil life in Euro 3, US 2002 and other advanced engines\n• Proven Performance for All Applications: tested in demanding real-world conditions from mining and construction to heavy-duty trucking\n• Improved Engine Cleanliness: special additive system exceeds many OEM requirements\n\nAPPLICATIONS\nDemanding Conditions — Heavy-Duty Diesel Engines: outstanding protection for high-powered engines from European, US and Japanese manufacturers in road and off-highway applications.\nAdvanced Low-Emission Engines: suitable for Euro 2, Euro 3, US 2002 and DPF-equipped engines.\n\nSTANDARDS AND SPECIFICATIONS\nAPI CI-4, CH-4, CG-4, CF-4, CF\nACEA E7, E5, E3\nGlobal DHD-1\nCaterpillar ECF-1-A\nCummins CES 20078, 77, 76, 75, 72, 71\nDDC 93K215\nMACK EO-M, EO-M+\nMAN 3275\nMercedes-Benz 228.3\nRenault Trucks RLD-2\nVOLVO VDS-3"
+    },
+    "rimula-r3plus-30": {
+      "type": "Mineral",
+      "description": "SAE 30 single-grade mineral heavy-duty diesel engine oil certified to CI-4 and ACEA E7/E5/E3. Optimised for high-temperature operating environments and large-displacement engines.",
+      "f0": "CI-4 certified",
+      "f1": "E7/E5/E3 compatible",
+      "f2": "MB 228.3 approved",
+      "f3": "Volvo VDS-3 approved",
+      "fd": "All-Season Heavy-Duty Diesel Motor Oil\n• UNIQUE ACTIVE TECHNOLOGY\n• HIGH-PERFORMANCE ADVANCED ENGINES\n\nShell Rimula R3 +30 Energised Protection oils contain high-performance additives that protect and adapt to all pressure and temperature ranges in advanced engines. A single oil for mixed-brand fleets with extra active additives for excellent soot and viscosity control.\n\nPERFORMANCE FEATURES\n• Excellent Protection: maximum soot protection, excellent wear protection and long oil life in Euro 3, US 2002 and other advanced engines\n• Proven Performance for All Applications: tested in demanding real-world conditions from mining to heavy-duty trucking\n• Improved Engine Cleanliness: enables Shell Rimula R3 +30 to exceed many OEM requirements\n\nAPPLICATIONS\nDemanding Conditions: outstanding protection in high-powered heavy-duty diesel engines from European, US and Japanese manufacturers.\nAdvanced Low-Emission Engines: suitable for Euro 2, Euro 3, US 2002 and DPF-equipped engines.\n\nSTANDARDS AND SPECIFICATIONS\nAPI CI-4, CH-4, CG-4, CF-4, CF\nACEA E7, E5, E3\nGlobal DHD-1\nCaterpillar ECF-1-A\nCummins CES 20078, 77, 76, 75, 72, 71\nDDC 93K215\nMACK EO-M, EO-M+\nMAN 3275\nMercedes-Benz 228.3\nRenault Trucks RLD-2\nVOLVO VDS-3"
+    },
+    "spirax-s6-txme": {
+      "type": "Transmission Oil",
+      "description": "Transmission oil approved by Ford MERCON, GM Allison C-4, MB 236.5/236.6 and ZF TE-ML. Designed for automatic transmissions, hydraulic systems and selected steering systems.",
+      "f0": "Ford MERCON approved",
+      "f1": "GM Allison C-4 approved",
+      "f2": "ZF TE-ML approved",
+      "f3": "MB 236.5/236.6 approved",
+      "fd": "Shell Spirax S6 TXME (formerly Shell Donax TDS) is used in automatic transmissions, power steering and some hydraulic systems of passenger cars and heavy vehicles.\n\nPERFORMANCE FEATURES\n• Enhanced friction reduction: ensures continuously quiet, smooth and reliable operation in automatic transmissions\n• High oxidation resistance: resistance to oil degradation delivers consistent performance\n• Maximum shear resistance: special viscosity index improver additives resist breakdown even under demanding conditions\n• Reliable wear protection: ensures smooth operation and long equipment life in gear and hydraulic pump applications\n\nTYPICAL PHYSICAL PROPERTIES\nKinematic Viscosity @ 40°C: 34.6 mm²/s\nKinematic Viscosity @ 100°C: 7.1 mm²/s\nViscosity Index: 174\nDensity @ 15°C: 874 kg/m³\nFlash Point: 180°C\nPour Point: -45°C\n\nAPPLICATIONS\n• Automatic transmissions of passenger cars\n• Automatic transmissions of heavy vehicles\n• Power steering systems\n• Hydraulic power systems\n\nSTANDARDS AND SPECIFICATIONS\nFord MERCON\nGeneral Motors Allison C-4\nMercedes-Benz 236.5, 236.6\nZF TE-ML 03D-04D-09-11A-14A-17C\nVoith 55.6335\nMAN 339 Type D"
+    },
+    "rimula-r3plus-40": {
+      "type": "Mineral",
+      "description": "SAE 40 single-grade mineral heavy-duty diesel engine oil certified to CI-4 and ACEA E7/E5/E3. Ideal for large-displacement engines in hot climates and at high operating temperatures.",
+      "f0": "CI-4 certified",
+      "f1": "Hot climate compatible",
+      "f2": "Cat ECF-1-A approved",
+      "f3": "MB 228.3 approved",
+      "fd": "All-Season Heavy-Duty Diesel Motor Oil\n• UNIQUE ACTIVE TECHNOLOGY\n• HIGH-PERFORMANCE ADVANCED ENGINES\n\nShell Rimula R3 +40 Energised Protection oils contain high-performance additives that protect and adapt to all pressure and temperature ranges in advanced engines. Extra active additives control and remove harmful soot and particles in high-performance engines.\n\nPERFORMANCE FEATURES\n• Excellent Protection: maximum soot protection and excellent wear protection in Euro 3, US 2002 and other advanced engines\n• Proven Performance for All Applications: tested in the most demanding environments worldwide\n• Improved Engine Cleanliness: special additive system exceeds many OEM requirements\n\nAPPLICATIONS\nDemanding Conditions: outstanding protection for high-powered heavy-duty diesel engines in road and off-highway applications.\nAdvanced Low-Emission Engines: suitable for Euro 2, Euro 3, US 2002 and DPF-equipped engines.\n\nSTANDARDS AND SPECIFICATIONS\nAPI CI-4, CH-4, CG-4, CF-4, CF\nACEA E7, E5, E3\nGlobal DHD-1\nCaterpillar ECF-1-A\nCummins CES 20078, 77, 76, 75, 72, 71\nDDC 93K215\nMACK EO-M, EO-M+\nMAN 3275\nMercedes-Benz 228.3\nRenault Trucks RLD-2\nVOLVO VDS-3"
+    },
+    "rimula-r3-50": {
+      "type": "Mineral",
+      "description": "SAE 50 single-grade mineral heavy-duty diesel engine oil certified to CI-4 and ACEA E7/E5/E3. Superior engine protection at the highest operating temperatures and heavy load conditions.",
+      "f0": "CI-4 certified",
+      "f1": "ACEA E7/E5/E3 compatible",
+      "f2": "Maximum load conditions",
+      "f3": "High temperature stability",
+      "fd": "All-Season Heavy-Duty Diesel Motor Oil\n• UNIQUE ACTIVE TECHNOLOGY\n• HIGH-PERFORMANCE ADVANCED ENGINES\n\nShell Rimula R3 Energised Protection oils contain high-performance additives that protect and adapt to all pressure and temperature ranges — from high piston temperatures to severe valve train loads. Single oil for mixed-brand fleets with excellent soot and viscosity control.\n\nPERFORMANCE FEATURES\n• Excellent Protection: maximum soot protection and excellent wear protection in Euro 3, US 2002 and other advanced engines\n• Proven Performance for All Applications: tested in demanding conditions from mining to trucking globally\n• Improved Engine Cleanliness: special additive system provides improved piston deposit protection\n\nAPPLICATIONS\nDemanding Conditions: protection for high-powered heavy-duty diesel engines worldwide.\nAdvanced Low-Emission Engines: suitable for Euro 2, Euro 3, US 2002 and DPF-equipped engines.\n\nSTANDARDS AND SPECIFICATIONS\nAPI CI-4, CH-4, CG-4, CF-4, CF\nACEA E7, E5, E3\nGlobal DHD-1\nCaterpillar ECF-1-A\nCummins CES 20078, 77, 76, 75, 72, 71\nDDC 93K215\nMACK EO-M, EO-M+\nMAN 3275\nMercedes-Benz 228.3\nRenault Trucks RLD-2\nVOLVO VDS-3"
     }
   },
   "quotePage": {
