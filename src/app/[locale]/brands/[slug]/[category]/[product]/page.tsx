@@ -2326,20 +2326,24 @@ export default async function ProductPage({ params }: ProductPageProps) {
         <section className="pb-8">
           <div className="container-xl">
             <div className="bg-white border border-brand-200 rounded-[var(--radius-card)] p-6">
-              <h2 className="text-xl font-bold text-brand-900 mb-5">Ürün Açıklaması</h2>
+              <h2 className="text-xl font-bold text-brand-900 mb-5">{t("productDesc")}</h2>
               <div className="space-y-1">
                 {translatedFullDesc.split("\n").map((line, i) => {
                   const trimmed = line.trim();
                   if (!trimmed) return <div key={i} className="h-3" />;
-                  const isHeader = /^[A-ZÇĞİÖŞÜ\s]{4,}$/.test(trimmed) || /^(PERFORMANS|UYGULAMALAR|STANDARTLAR|TİPİK|BAŞLICA|ENERJİ|BAKIM|KULLANIM|KORUYUCU)/.test(trimmed);
+                  const isHeader =
+                    trimmed.startsWith("###") ||
+                    /^[A-ZА-ЯЁÇĞİÖŞÜ][A-ZА-ЯЁÇĞİÖŞÜ\s]{3,}$/.test(trimmed) ||
+                    /^(PERFORMANS|UYGULAMALAR|STANDARTLAR|TİPİK|BAŞLICA|ENERJİ|BAKIM|KULLANIM|KORUYUCU)/.test(trimmed);
                   const isBullet = trimmed.startsWith("•") || /^\d+\.\s/.test(trimmed);
+                  const display = trimmed.startsWith("###") ? trimmed.replace(/^###\s*/, "") : trimmed;
                   if (isHeader) return (
-                    <p key={i} className="font-bold text-brand-900 text-sm uppercase tracking-wide mt-4 mb-1">{trimmed}</p>
+                    <p key={i} className="font-bold text-brand-900 text-sm uppercase tracking-wide mt-4 mb-1">{display}</p>
                   );
                   if (isBullet) return (
-                    <p key={i} className="text-brand-700 text-sm pl-4">{trimmed}</p>
+                    <p key={i} className="text-brand-700 text-sm pl-4">{display}</p>
                   );
-                  return <p key={i} className="text-brand-700 text-sm leading-relaxed">{trimmed}</p>;
+                  return <p key={i} className="text-brand-700 text-sm leading-relaxed">{display}</p>;
                 })}
               </div>
             </div>

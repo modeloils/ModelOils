@@ -444,7 +444,8 @@
     "tdsNotAvailable": "Bu ürün için teknik veri sayfası henüz mevcut değildir.",
     "docsNote": "Belgeler mevcut değilse yetkili distribütör portalından edinilebilir.",
     "ctaText": "Bu ürün için toplu fiyat teklifi almak ister misiniz?",
-    "ctaBtn": "Teklif İste"
+    "ctaBtn": "Teklif İste",
+    "productDesc": "Ürün Açıklaması"
   },
   "pd": {
     "helix-ultra-0w-20": {

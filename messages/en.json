@@ -444,7 +444,8 @@
     "tdsNotAvailable": "Technical data sheet not yet available for this product.",
     "docsNote": "If documents are unavailable, they may be obtained from the authorized distributor portal.",
     "ctaText": "Want to request a bulk quote for this product?",
-    "ctaBtn": "Request Quote"
+    "ctaBtn": "Request Quote",
+    "productDesc": "Product Description"
   },
   "pd": {
     "helix-ultra-0w-20": {
