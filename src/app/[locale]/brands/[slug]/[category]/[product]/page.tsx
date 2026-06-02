@@ -2169,10 +2169,21 @@ export default async function ProductPage({ params }: ProductPageProps) {
     try {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const key = product as any;
-      translatedType = pd(`${key}.type`);
-      translatedDesc = pd(`${key}.description`);
-      translatedFeatures = [pd(`${key}.f0`), pd(`${key}.f1`), pd(`${key}.f2`), pd(`${key}.f3`)];
-      try { translatedFullDesc = pd(`${key}.fd`); } catch { /* keep spec fallback */ }
+      const pType     = pd(`${key}.type`);
+      const pDesc     = pd(`${key}.description`);
+      const pF0       = pd(`${key}.f0`);
+      const pF1       = pd(`${key}.f1`);
+      const pF2       = pd(`${key}.f2`);
+      const pF3       = pd(`${key}.f3`);
+      // next-intl returns the key path when a key is missing — detect and skip
+      const missing = (v: string, field: string) => v.endsWith(`.${field}`);
+      if (!missing(pType, "type"))           translatedType     = pType;
+      if (!missing(pDesc, "description"))    translatedDesc     = pDesc;
+      if (!missing(pF0,  "f0"))              translatedFeatures = [pF0, pF1, pF2, pF3];
+      try {
+        const pFd = pd(`${key}.fd`);
+        if (!missing(pFd, "fd"))             translatedFullDesc = pFd;
+      } catch { /* keep spec fallback */ }
     } catch {
       // fallback already set above
     }
