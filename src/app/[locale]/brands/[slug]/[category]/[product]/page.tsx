@@ -797,6 +797,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s2-m-32.jpg",
   },
   "tellus-s2-m-46": {
     name: "Shell Tellus S2 M 46", grade: "ISO VG 46", series: "Tellus S2 M", type: "Hidrolik Yağ",
@@ -823,6 +824,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s2-m-46.jpg",
   },
   "tellus-s2-m-68": {
     name: "Shell Tellus S2 M 68", grade: "ISO VG 68", series: "Tellus S2 M", type: "Hidrolik Yağ",
@@ -849,6 +851,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s2-m-68.jpg",
   },
   "tellus-s2-m-100": {
     name: "Shell Tellus S2 M 100", grade: "ISO VG 100", series: "Tellus S2 M", type: "Hidrolik Yağ",
@@ -875,6 +878,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s2-m-100.jpg",
   },
   "tellus-s2-v-15": {
     name: "Shell Tellus S2 V 15", grade: "ISO VG 15", series: "Tellus S2 V", type: "Yüksek VI Hidrolik Yağ",
@@ -901,6 +905,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s2-v-15.jpg",
   },
   "tellus-s2-v-22": {
     name: "Shell Tellus S2 V 22", grade: "ISO VG 22", series: "Tellus S2 V", type: "Yüksek VI Hidrolik Yağ",
@@ -927,6 +932,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s2-v-22.jpg",
   },
   "tellus-s2-v-32": {
     name: "Shell Tellus S2 V 32", grade: "ISO VG 32", series: "Tellus S2 V", type: "Yüksek VI Hidrolik Yağ",
@@ -953,6 +959,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s2-v-32.jpg",
   },
   "tellus-s2-v-46": {
     name: "Shell Tellus S2 V 46", grade: "ISO VG 46", series: "Tellus S2 V", type: "Yüksek VI Hidrolik Yağ",
@@ -979,6 +986,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s2-v-46.jpg",
   },
   "tellus-s2-v-68": {
     name: "Shell Tellus S2 V 68", grade: "ISO VG 68", series: "Tellus S2 V", type: "Yüksek VI Hidrolik Yağ",
@@ -1005,6 +1013,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s2-v-68.jpg",
   },
   "tellus-s2-v-100": {
     name: "Shell Tellus S2 V 100", grade: "ISO VG 100", series: "Tellus S2 V", type: "Yüksek VI Hidrolik Yağ",
@@ -1031,6 +1040,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s2-v-100.jpg",
   },
   "tellus-s3-m-32": {
     name: "Shell Tellus S3 M 32", grade: "ISO VG 32", series: "Tellus S3 M", type: "Küllüsüz Hidrolik Yağ",
@@ -1057,6 +1067,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s3-m-32.jpg",
   },
   "tellus-s3-m-46": {
     name: "Shell Tellus S3 M 46", grade: "ISO VG 46", series: "Tellus S3 M", type: "Küllüsüz Hidrolik Yağ",
@@ -1083,6 +1094,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s3-m-46.jpg",
   },
   "tellus-s3-m-68": {
     name: "Shell Tellus S3 M 68", grade: "ISO VG 68", series: "Tellus S3 M", type: "Küllüsüz Hidrolik Yağ",
@@ -1109,6 +1121,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s3-m-68.jpg",
   },
   "tellus-s3-m-100": {
     name: "Shell Tellus S3 M 100", grade: "ISO VG 100", series: "Tellus S3 M", type: "Küllüsüz Hidrolik Yağ",
@@ -1135,6 +1148,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s3-m-100.jpg",
   },
   "tellus-s4-me-32": {
     name: "Shell Tellus S4 ME 32", grade: "ISO VG 32", series: "Tellus S4 ME", type: "Enerji Tasarruflu Hidrolik Yağ",
@@ -1161,6 +1175,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s4-me-32.jpg",
   },
   "tellus-s4-me-46": {
     name: "Shell Tellus S4 ME 46", grade: "ISO VG 46", series: "Tellus S4 ME", type: "Enerji Tasarruflu Hidrolik Yağ",
@@ -1187,6 +1202,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s4-me-46.jpg",
   },
   "tellus-s4-vx-32": {
     name: "Shell Tellus S4 VX 32", grade: "ISO VG 32", series: "Tellus S4 VX", type: "Geniş Sıcaklık Aralığı Hidrolik Yağ",
@@ -1213,6 +1229,7 @@ Eaton (Vickers) M-2950 S, I-286 S
 DIN 51524 PART 2
 ISO 11158
 Mannesman Rexroth RE 90 220-1`,
+    image: "/images/products/shell/tellus-s4-vx-32.jpg",
   },
   "morlina-s2-bl-5": {
     name: "Shell Morlina S2 BL 5", grade: "ISO VG 5", series: "Morlina S2 BL", type: "Sirkülasyon / Türbin Yağı",
@@ -1234,6 +1251,7 @@ PERFORMANS ÖZELLİKLERİ
 • Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
 • Düşük akma noktası: Düşük sıcaklıklı uygulamalarda avantaj sağlar.
 • Havayı hızlı defetme ve köpük önleme: Özel katkı paketi ile hava hızla uzaklaştırılır.`,
+    image: "/images/products/shell/morlina-s2-bl-5.jpg",
   },
   "morlina-s2-bl-10": {
     name: "Shell Morlina S2 BL 10", grade: "ISO VG 10", series: "Morlina S2 BL", type: "Sirkülasyon / Türbin Yağı",
@@ -1255,6 +1273,7 @@ PERFORMANS ÖZELLİKLERİ
 • Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
 • Düşük akma noktası: Düşük sıcaklıklı uygulamalarda avantaj sağlar.
 • Havayı hızlı defetme ve köpük önleme: Özel katkı paketi ile hava hızla uzaklaştırılır.`,
+    image: "/images/products/shell/morlina-s2-bl-10.jpg",
   },
   "morlina-s2-bl-22": {
     name: "Shell Morlina S2 BL 22", grade: "ISO VG 22", series: "Morlina S2 BL", type: "Sirkülasyon / Türbin Yağı",
@@ -1276,6 +1295,7 @@ PERFORMANS ÖZELLİKLERİ
 • Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
 • Düşük akma noktası: Düşük sıcaklıklı uygulamalarda avantaj sağlar.
 • Havayı hızlı defetme ve köpük önleme: Özel katkı paketi ile hava hızla uzaklaştırılır.`,
+    image: "/images/products/shell/morlina-s2-bl-22.jpg",
   },
   "morlina-s2-b-46": {
     name: "Shell Morlina S2 B 46", grade: "ISO VG 46", series: "Morlina S2 B", type: "Sirkülasyon / Rulman Yağı",
@@ -1295,6 +1315,7 @@ PERFORMANS ÖZELLİKLERİ
 • Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
 • Düşük akma noktası: Düşük sıcaklıklı endüstriyel uygulamalarda avantaj.
 • Havayı hızlı defetme ve köpük önleme: Kavitasyonu önler.`,
+    image: "/images/products/shell/morlina-s2-b-46.jpg",
   },
   "morlina-s2-b-68": {
     name: "Shell Morlina S2 B 68", grade: "ISO VG 68", series: "Morlina S2 B", type: "Sirkülasyon / Rulman Yağı",
@@ -1314,6 +1335,7 @@ PERFORMANS ÖZELLİKLERİ
 • Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
 • Düşük akma noktası: Düşük sıcaklıklı endüstriyel uygulamalarda avantaj.
 • Havayı hızlı defetme ve köpük önleme: Kavitasyonu önler.`,
+    image: "/images/products/shell/morlina-s2-b-68.jpg",
   },
   "morlina-s2-b-100": {
     name: "Shell Morlina S2 B 100", grade: "ISO VG 100", series: "Morlina S2 B", type: "Sirkülasyon / Rulman Yağı",
@@ -1333,6 +1355,7 @@ PERFORMANS ÖZELLİKLERİ
 • Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
 • Düşük akma noktası: Düşük sıcaklıklı endüstriyel uygulamalarda avantaj.
 • Havayı hızlı defetme ve köpük önleme: Kavitasyonu önler.`,
+    image: "/images/products/shell/morlina-s2-b-100.jpg",
   },
   "morlina-s2-b-150": {
     name: "Shell Morlina S2 B 150", grade: "ISO VG 150", series: "Morlina S2 B", type: "Sirkülasyon / Rulman Yağı",
@@ -1352,6 +1375,7 @@ PERFORMANS ÖZELLİKLERİ
 • Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
 • Düşük akma noktası: Düşük sıcaklıklı endüstriyel uygulamalarda avantaj.
 • Havayı hızlı defetme ve köpük önleme: Kavitasyonu önler.`,
+    image: "/images/products/shell/morlina-s2-b-150.jpg",
   },
   "morlina-s2-b-220": {
     name: "Shell Morlina S2 B 220", grade: "ISO VG 220", series: "Morlina S2 B", type: "Sirkülasyon / Rulman Yağı",
@@ -1371,6 +1395,7 @@ PERFORMANS ÖZELLİKLERİ
 • Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
 • Düşük akma noktası: Düşük sıcaklıklı endüstriyel uygulamalarda avantaj.
 • Havayı hızlı defetme ve köpük önleme: Kavitasyonu önler.`,
+    image: "/images/products/shell/morlina-s2-b-220.jpg",
   },
   "morlina-s2-b-320": {
     name: "Shell Morlina S2 B 320", grade: "ISO VG 320", series: "Morlina S2 B", type: "Sirkülasyon / Rulman Yağı",
@@ -1390,6 +1415,7 @@ PERFORMANS ÖZELLİKLERİ
 • Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
 • Düşük akma noktası: Düşük sıcaklıklı endüstriyel uygulamalarda avantaj.
 • Havayı hızlı defetme ve köpük önleme: Kavitasyonu önler.`,
+    image: "/images/products/shell/morlina-s2-b-320.jpg",
   },
   "corena-s2-p-68": {
     name: "Shell Corena S2 P 68", grade: "ISO VG 68", series: "Corena S2 P", type: "Pistonlu Kompresör Yağı",
@@ -1411,6 +1437,7 @@ PERFORMANS ÖZELLİKLERİ
 STANDARTLAR VE SPESİFİKASYONLAR
 DIN 51506 VDL
 ISO 6743-3A-DAB`,
+    image: "/images/products/shell/corena-s2-p-68.jpg",
   },
   "corena-s2-p-100": {
     name: "Shell Corena S2 P 100", grade: "ISO VG 100", series: "Corena S2 P", type: "Pistonlu Kompresör Yağı",
@@ -1432,6 +1459,7 @@ PERFORMANS ÖZELLİKLERİ
 STANDARTLAR VE SPESİFİKASYONLAR
 DIN 51506 VDL
 ISO 6743-3A-DAB`,
+    image: "/images/products/shell/corena-s2-p-100.jpg",
   },
   "corena-s2-p-150": {
     name: "Shell Corena S2 P 150", grade: "ISO VG 150", series: "Corena S2 P", type: "Pistonlu Kompresör Yağı",
@@ -1453,6 +1481,7 @@ PERFORMANS ÖZELLİKLERİ
 STANDARTLAR VE SPESİFİKASYONLAR
 DIN 51506 VDL
 ISO 6743-3A-DAB`,
+    image: "/images/products/shell/corena-s2-p-150.jpg",
   },
   "corena-s3-r-46": {
     name: "Shell Corena S3 R 46", grade: "ISO VG 46", series: "Corena S3 R", type: "Vidalı/Kanatlı Kompresör Yağı",
@@ -1470,6 +1499,7 @@ PERFORMANS ÖZELLİKLERİ
 • Mükemmel soğutma: Kritik soğutma görevini eksiksiz yerine getirir.
 • Pas ve korozyona karşı etkin koruma: Servis aralıklarını uzatır.
 • Sızdırmazlık uyumu: Hava kompresörlerindeki tüm elemanlarla uyumlu.`,
+    image: "/images/products/shell/corena-s3-r-46.jpg",
   },
   "corena-s3-r-68": {
     name: "Shell Corena S3 R 68", grade: "ISO VG 68", series: "Corena S3 R", type: "Vidalı/Kanatlı Kompresör Yağı",
@@ -1487,6 +1517,7 @@ PERFORMANS ÖZELLİKLERİ
 • Mükemmel soğutma: Kritik soğutma görevini eksiksiz yerine getirir.
 • Pas ve korozyona karşı etkin koruma: Servis aralıklarını uzatır.
 • Sızdırmazlık uyumu: Hava kompresörlerindeki tüm elemanlarla uyumlu.`,
+    image: "/images/products/shell/corena-s3-r-68.jpg",
   },
   "corena-s4-r-46": {
     name: "Shell Corena S4 R 46", grade: "ISO VG 46", series: "Corena S4 R", type: "Vidalı/Kanatlı Kompresör Yağı (Sentetik)",
@@ -1504,6 +1535,7 @@ PERFORMANS ÖZELLİKLERİ
 • Mükemmel soğutma: Kritik soğutma görevini eksiksiz yerine getirir.
 • Pas ve korozyona karşı etkin koruma: Servis aralıklarını uzatır.
 • Sızdırmazlık uyumu: Hava kompresörlerindeki tüm elemanlarla uyumlu.`,
+    image: "/images/products/shell/corena-s4-r-46.png",
   },
   "corena-s4-r-68": {
     name: "Shell Corena S4 R 68", grade: "ISO VG 68", series: "Corena S4 R", type: "Vidalı/Kanatlı Kompresör Yağı (Sentetik)",
@@ -1521,6 +1553,7 @@ PERFORMANS ÖZELLİKLERİ
 • Mükemmel soğutma: Kritik soğutma görevini eksiksiz yerine getirir.
 • Pas ve korozyona karşı etkin koruma: Servis aralıklarını uzatır.
 • Sızdırmazlık uyumu: Hava kompresörlerindeki tüm elemanlarla uyumlu.`,
+    image: "/images/products/shell/corena-s4-r-68.png",
   },
   "refrigeration-s4-fr-f-32": {
     name: "Shell Refrigeration Oil S4 FR-F 32", grade: "ISO VG 32", series: "Refrigeration S4 FR-F", type: "Soğutma Kompresör Yağı (Alkil Benzen)",
@@ -1545,6 +1578,7 @@ PERFORMANS ÖZELLİKLERİ
 
 STANDARTLAR VE SPESİFİKASYONLAR
 DIN 51503 KAA, KC`,
+    image: "/images/products/shell/refrigeration-s4-fr-f-32.jpg",
   },
   "refrigeration-s4-fr-f-68": {
     name: "Shell Refrigeration Oil S4 FR-F 68", grade: "ISO VG 68", series: "Refrigeration S4 FR-F", type: "Soğutma Kompresör Yağı (Alkil Benzen)",
@@ -1569,6 +1603,7 @@ PERFORMANS ÖZELLİKLERİ
 
 STANDARTLAR VE SPESİFİKASYONLAR
 DIN 51503 KAA, KC`,
+    image: "/images/products/shell/refrigeration-s4-fr-f-68.jpg",
   },
   "refrigeration-s4-fr-f-100": {
     name: "Shell Refrigeration Oil S4 FR-F 100", grade: "ISO VG 100", series: "Refrigeration S4 FR-F", type: "Soğutma Kompresör Yağı (Alkil Benzen)",
@@ -1593,6 +1628,7 @@ PERFORMANS ÖZELLİKLERİ
 
 STANDARTLAR VE SPESİFİKASYONLAR
 DIN 51503 KAA, KC`,
+    image: "/images/products/shell/refrigeration-s4-fr-f-100.jpg",
   },
   "refrigeration-s4-fr-v-32": {
     name: "Shell Refrigeration Oil S4 FR-V 32", grade: "ISO VG 32", series: "Refrigeration S4 FR-V", type: "Soğutma Kompresör Yağı (Alkil Benzen)",
@@ -1617,6 +1653,7 @@ PERFORMANS ÖZELLİKLERİ
 
 STANDARTLAR VE SPESİFİKASYONLAR
 DIN 51503 KAA, KC`,
+    image: "/images/products/shell/refrigeration-s4-fr-v-32.jpg",
   },
   "refrigeration-s4-fr-v-46": {
     name: "Shell Refrigeration Oil S4 FR-V 46", grade: "ISO VG 46", series: "Refrigeration S4 FR-V", type: "Soğutma Kompresör Yağı (Alkil Benzen)",
@@ -1641,6 +1678,7 @@ PERFORMANS ÖZELLİKLERİ
 
 STANDARTLAR VE SPESİFİKASYONLAR
 DIN 51503 KAA, KC`,
+    image: "/images/products/shell/refrigeration-s4-fr-v-46.jpg",
   },
   "refrigeration-s4-fr-v-68": {
     name: "Shell Refrigeration Oil S4 FR-V 68", grade: "ISO VG 68", series: "Refrigeration S4 FR-V", type: "Soğutma Kompresör Yağı (Alkil Benzen)",
@@ -1665,6 +1703,7 @@ PERFORMANS ÖZELLİKLERİ
 
 STANDARTLAR VE SPESİFİKASYONLAR
 DIN 51503 KAA, KC`,
+    image: "/images/products/shell/refrigeration-s4-fr-v-68.jpg",
   },
   "tonna-s3-m-68": {
     name: "Shell Tonna S3 M 68", grade: "ISO VG 68", series: "Tonna S3 M", type: "Kızak Yağı",
@@ -1691,6 +1730,7 @@ STANDARTLAR VE SPESİFİKASYONLAR
 ISO 11158/6743-4 HM
 DIN CGLP
 Cincinnati Machine P-47 (ISO VG68) / P-50 (ISO VG220)`,
+    image: "/images/products/shell/tonna-s3-m-68.jpg",
   },
   "tonna-s3-m-220": {
     name: "Shell Tonna S3 M 220", grade: "ISO VG 220", series: "Tonna S3 M", type: "Kızak Yağı",
@@ -1717,6 +1757,7 @@ STANDARTLAR VE SPESİFİKASYONLAR
 ISO 11158/6743-4 HM
 DIN CGLP
 Cincinnati Machine P-47 (ISO VG68) / P-50 (ISO VG220)`,
+    image: "/images/products/shell/tonna-s3-m-220.jpg",
   },
   "turbo-t-32": {
     name: "Shell Turbo T 32", grade: "ISO VG 32", series: "Turbo T", type: "Türbin Yağı",
@@ -1744,6 +1785,7 @@ ISO 8068
 SIEMENS TLV 9013 04
 ABB HTGD 90117R
 ALSTOM NPA P5001`,
+    image: "/images/products/shell/turbo-t-32.jpg",
   },
   "turbo-t-46": {
     name: "Shell Turbo T 46", grade: "ISO VG 46", series: "Turbo T", type: "Türbin Yağı",
@@ -1771,6 +1813,7 @@ ISO 8068
 SIEMENS TLV 9013 04
 ABB HTGD 90117R
 ALSTOM NPA P5001`,
+    image: "/images/products/shell/turbo-t-46.jpg",
   },
   "turbo-t-68": {
     name: "Shell Turbo T 68", grade: "ISO VG 68", series: "Turbo T", type: "Türbin Yağı",
@@ -1798,6 +1841,7 @@ ISO 8068
 SIEMENS TLV 9013 04
 ABB HTGD 90117R
 ALSTOM NPA P5001`,
+    image: "/images/products/shell/turbo-t-68.jpg",
   },
   "turbo-cc-32": {
     name: "Shell Turbo CC 32", grade: "ISO VG 32", series: "Turbo CC", type: "Kombine Çevrim Türbin Yağı",
@@ -1830,6 +1874,7 @@ ABB HTGD 90117R
 ALSTOM NPA P5001
 SOLAR ES 9-224U
 MHI 600 87182`,
+    image: "/images/products/shell/turbo-cc-32.jpg",
   },
   "turbo-cc-46": {
     name: "Shell Turbo CC 46", grade: "ISO VG 46", series: "Turbo CC", type: "Kombine Çevrim Türbin Yağı",
@@ -1862,6 +1907,7 @@ ABB HTGD 90117R
 ALSTOM NPA P5001
 SOLAR ES 9-224U
 MHI 600 87182`,
+    image: "/images/products/shell/turbo-cc-46.jpg",
   },
   "turbo-fluid-dr-46": {
     name: "Shell Turbo S5 DR 46", grade: "ISO VG 46", series: "Turbo S5 DR", type: "Türbin / Sirkülasyon Yağı",
@@ -1889,6 +1935,7 @@ ISO 8068
 SIEMENS TLV 9013 04
 ABB HTGD 90117R
 ALSTOM NPA P5001`,
+    image: "/images/products/shell/turbo-fluid-dr-46.jpg",
   },
   "turbo-j-32": {
     name: "Shell Turbo J 32", grade: "ISO VG 32", series: "Turbo J", type: "Türbin Yağı",
@@ -1916,6 +1963,7 @@ ISO 8068
 SIEMENS TLV 9013 04
 ABB HTGD 90117R
 ALSTOM NPA P5001`,
+    image: "/images/products/shell/turbo-j-32.jpg",
   },
   "diala-s4-zx-i": {
     name: "Shell Diala S4 ZX-I", grade: "Sınıf II İnhibisyonlu", series: "Diala S4 ZX-I", type: "Trafo Yağı",
@@ -1942,6 +1990,7 @@ ABB, Siemens, Schneider Electric onaylı
 Parlama Noktası: 191°C
 Akma Noktası: -30°C
 Kükürt İçeriği: 0`,
+    image: "/images/products/shell/diala-s4-zx-i.jpg",
   },
   "heat-transfer-oil-s2": {
     name: "Shell Heat Transfer Oil S2", grade: "—", series: "Heat Transfer S2", type: "Isı Transfer Yağı",
@@ -1972,6 +2021,7 @@ Kaynama Noktası Başlangıcı: >355°C
 STANDARTLAR VE SPESİFİKASYONLAR
 ISO 6743-12 Q
 DIN 51522`,
+    image: "/images/products/shell/heat-transfer-oil-s2.jpg",
   },
   "naturelle-hf-e": {
     name: "Shell Naturelle HF-E", grade: "ISO VG 46", series: "Naturelle HF-E", type: "Biyolojik Parçalanabilir Hidrolik Yağ",
@@ -1997,6 +2047,7 @@ STANDARTLAR VE SPESİFİKASYONLAR
 ISO 15380 HEES
 DENISON HF-0, HF-1, HF-2
 Eaton (Vickers) M-2950-S`,
+    image: "/images/products/shell/naturelle-hf-e.jpg",
   },
   "tequla-v-32": {
     name: "Shell Tequla V 32", grade: "ISO VG 32", series: "Tequla V", type: "Yüksek VI Hidrolik Yağ",
@@ -2019,6 +2070,7 @@ PERFORMANS ÖZELLİKLERİ
 • Mükemmel havayı defetme ve köpüğü önleme.
 • İyi sudan ayrılma: Emülsiyon oluşumuna direnç.
 • Sızdırmazlık elemanları ve boya uyumluluğu.`,
+    image: "/images/products/shell/tequla-v-32.jpg",
   },
   "textile-needle-s2-m-32": {
     name: "Shell Textile Needle S2 M 32", grade: "ISO VG 32", series: "Textile Needle S2 M", type: "Tekstil Makina Yağı",
@@ -2037,6 +2089,7 @@ PERFORMANS ÖZELLİKLERİ
 • Haşıl birikimini önler: Örgü işleminde temiz çalışma
 • Oksidasyon direnci
 • Ekipmana korozyon koruması`,
+    image: "/images/products/shell/textile-needle-s2-m-32.jpg",
   },
   "air-tool-s2-a-100": {
     name: "Shell Air Tool S2 A 100", grade: "ISO VG 100", series: "Air Tool S2 A", type: "Pnömatik Alet Yağı",
@@ -2063,6 +2116,7 @@ Kinematik Viskozite @ 40°C: 100 mm²/s | @ 100°C: 11,8 mm²/s
 Viskozite İndeksi: 107
 Parlama Noktası (COC): 232°C | Akma Noktası: -30°C
 Yoğunluk @ 15°C: 895 kg/m³`,
+    image: "/images/products/shell/air-tool-s2-a-100.jpg",
   },
   "edelex-956": {
     name: "Shell Edelex 956", grade: "—", series: "Edelex", type: "Naftanik Proses Yağı",
@@ -2085,6 +2139,7 @@ PERFORMANS ÖZELLİKLERİ
 
 STANDARTLAR VE SPESİFİKASYONLAR
 US FDA §178.3620(c), §175.105, §176.200, §177.2600, §177.2800, §178.3570`,
+    image: "/images/products/shell/edelex-956.jpg",
   },
   "catenex-s-321": {
     name: "Shell Catenex S 321", grade: "—", series: "Catenex", type: "Parafinik Proses Yağı",
@@ -2108,6 +2163,7 @@ PERFORMANS ÖZELLİKLERİ
 STANDARTLAR VE SPESİFİKASYONLAR
 Parafinik proses yağları (VGC < 0.820)
 US FDA §178.3620(c), §175.105, §176.200, §177.2260, §177.2600, §177.2800`,
+    image: "/images/products/shell/catenex-s-321.jpg",
   },
   "ondina-x-415": {
     name: "Shell Ondina X 415", grade: "—", series: "Ondina", type: "Beyaz Mineral Yağ (Farmasötik)",
@@ -2135,6 +2191,7 @@ ABD Farmakopesi 23. Baskı
 US FDA §172.878, §178.3620(a)
 İngiltere Mineral Hidrokarbon Yönetmelikleri 1966
 BGA Bülten 38 ve 155`,
+    image: "/images/products/shell/ondina-x-415.jpg",
   },
   "ondina-x-432": {
     name: "Shell Ondina X 432", grade: "—", series: "Ondina", type: "Beyaz Mineral Yağ (Farmasötik)",
@@ -2161,6 +2218,7 @@ Avrupa Farmakopesi 3. Baskı
 ABD Farmakopesi 23. Baskı
 US FDA §172.878, §178.3620
 İngiltere Mineral Hidrokarbon Yönetmelikleri 1966`,
+    image: "/images/products/shell/ondina-x-432.jpg",
   },
   "ondina-x-420": {
     name: "Shell Ondina X 420", grade: "—", series: "Ondina", type: "Beyaz Mineral Yağ (Farmasötik)",
@@ -2173,6 +2231,7 @@ US FDA §172.878, §178.3620
 STANDARTLAR VE SPESİFİKASYONLAR
 Avrupa Farmakopesi | ABD Farmakopesi
 US FDA §172.878, §178.3620`,
+    image: "/images/products/shell/ondina-x-420.jpg",
   },
   "ensis-engine-oil-30": {
     name: "Shell Ensis Engine Oil 30", grade: "SAE 30", series: "Ensis Engine Oil", type: "Motor Koruma / Konservasyon Yağı",
@@ -2189,6 +2248,7 @@ UYGULAMALAR
 PERFORMANS ÖZELLİKLERİ
 • Güçlü pas ve korozyon önleme
 • Uzun süreli yüzey koruma filmi`,
+    image: "/images/products/shell/ensis-engine-oil-30.jpg",
   },
   "ensis-dw-2462": {
     name: "Shell Ensis DW 2462", grade: "—", series: "Ensis DW", type: "Konservasyon / Pas Önleyici Yağ",
@@ -2206,6 +2266,7 @@ UYGULAMALAR
 PERFORMANS ÖZELLİKLERİ
 • Etkili pas ve korozyon önleme
 • Uzun ömürlü koruma filmi`,
+    image: "/images/products/shell/ensis-dw-2462.jpg",
   },
   "irus-fluid-c": {
     name: "Shell Irus Fluid C", grade: "—", series: "Irus Fluid", type: "Özel Endüstriyel Sıvı",
@@ -2222,6 +2283,7 @@ UYGULAMALAR
 PERFORMANS ÖZELLİKLERİ
 • Yüksek performanslı endüstriyel formülasyon
 • Güvenilir sistem koruması`,
+    image: "/images/products/shell/irus-fluid-c.jpg",
   },
 };
 
