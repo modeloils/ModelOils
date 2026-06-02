@@ -772,117 +772,1456 @@ API SJ/CF`,
 };
 
 const SHELL_INDUSTRIAL_PRODUCTS: Record<string, ProductSpec> = {
-  // ── Tellus — Hydraulic oils ───────────────────────────────────────
-  "tellus-s2-mx-32": {
-    name: "Shell Tellus S2 MX 32", grade: "ISO VG 32", series: "Tellus S2 MX", type: "Hidrolik Yağ",
-    api: "ISO 11158 HM", acea: "DIN 51524-2 HLP",
-    approvals: ["Bosch Rexroth RE 90220", "Parker Denison HF-2", "Eaton (Vickers) I-286-S"],
-    description: "Endüstriyel hidrolik sistemler için geliştirilmiş yüksek performanslı mineral hidrolik yağı. Üstün termal ve oksidasyon stabilitesi ile uzun sistem ömrü ve ekipman koruması sağlar.",
-    features: ["Üstün oksidasyon stabilitesi", "Mükemmel filtre uyumluluğu", "Düşük köpük eğilimi", "Geniş sıcaklık aralığı performansı"],
+  "tellus-s2-m-32": {
+    name: "Shell Tellus S2 M 32", grade: "ISO VG 32", series: "Tellus S2 M", type: "Hidrolik Yağ",
+    api: "ISO 11158 HM", acea: "DIN 51524 Part 2",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Eaton Vickers M-2950-S", "CINCINNATI P-68"],
+    description: "ISO 11158 HM sertifikalı yüksek performanslı hidrolik yağ. Termal kararlılık, mükemmel oksidasyon direnci ve olağanüstü aşınma önleme özellikleriyle endüstriyel hidrolik sistemler için idealdir.",
+    features: ["Termal kararlılık", "Oksidasyon direnci", "Aşınma önleme", "Mükemmel filtrelenebilme"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
   },
-  "tellus-s2-mx-46": {
-    name: "Shell Tellus S2 MX 46", grade: "ISO VG 46", series: "Tellus S2 MX", type: "Hidrolik Yağ",
-    api: "ISO 11158 HM", acea: "DIN 51524-2 HLP",
-    approvals: ["Bosch Rexroth RE 90220", "Parker Denison HF-2", "Eaton (Vickers) I-286-S", "Cincinnati Machine P-68/P-69/P-70"],
-    description: "En yaygın kullanılan endüstriyel viskozite derecesinde geliştirilmiş hidrolik yağı. Sabit sıcaklıklarda çalışan genel amaçlı hidrolik sistemler için idealdir.",
-    features: ["Genel amaçlı hidrolik sistemler", "Üstün pompa koruması", "Hızlı su ayrışması", "Uzun yağ ömrü"],
+  "tellus-s2-m-46": {
+    name: "Shell Tellus S2 M 46", grade: "ISO VG 46", series: "Tellus S2 M", type: "Hidrolik Yağ",
+    api: "ISO 11158 HM", acea: "DIN 51524 Part 2",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Eaton Vickers M-2950-S", "CINCINNATI P-70"],
+    description: "ISO 11158 HM sertifikalı yüksek performanslı hidrolik yağ. En yaygın kullanılan viskozite sınıfında üstün termal kararlılık, oksidasyon ve aşınma koruması sağlar.",
+    features: ["Termal kararlılık", "Olağanüstü aşınma önleme", "Mükemmel filtrelenebilme", "Sudan ayrılma"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
   },
-  "tellus-s2-mx-68": {
-    name: "Shell Tellus S2 MX 68", grade: "ISO VG 68", series: "Tellus S2 MX", type: "Hidrolik Yağ",
-    api: "ISO 11158 HM", acea: "DIN 51524-2 HLP",
-    approvals: ["Bosch Rexroth RE 90220", "Parker Denison HF-2", "Eaton (Vickers) I-286-S"],
-    description: "Yüksek çalışma sıcaklıklarında ve ağır yük altında çalışan hidrolik sistemler için tasarlanmış mineral hidrolik yağı. Sanayi presleri ve büyük inşaat ekipmanları için uygundur.",
-    features: ["Yüksek sıcaklık stabilitesi", "Ağır yük kapasitesi", "Üstün viskozite indeksi", "Aşınma önleyici formül"],
+  "tellus-s2-m-68": {
+    name: "Shell Tellus S2 M 68", grade: "ISO VG 68", series: "Tellus S2 M", type: "Hidrolik Yağ",
+    api: "ISO 11158 HM", acea: "DIN 51524 Part 2",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Eaton Vickers M-2950-S", "CINCINNATI P-69"],
+    description: "ISO 11158 HM sertifikalı yüksek performanslı hidrolik yağ. Yüksek sıcaklık ve ağır yük koşullarında üstün termal kararlılık ve aşınma koruması.",
+    features: ["Yüksek sıcaklık stabilitesi", "Olağanüstü aşınma önleme", "Mükemmel filtrelenebilme", "Sudan ayrılma"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
   },
-  "tellus-s2-mx-100": {
-    name: "Shell Tellus S2 MX 100", grade: "ISO VG 100", series: "Tellus S2 MX", type: "Hidrolik Yağ",
-    api: "ISO 11158 HM", acea: "DIN 51524-2 HLP",
-    approvals: ["Bosch Rexroth RE 90220", "Parker Denison HF-2"],
-    description: "Yüksek viskoziteli uygulamalar ve ekstra yük kapasitesi gerektiren büyük hidrolik sistemler için geliştirilmiş mineral hidrolik yağı. Ağır presler ve sanayi tesisleri için idealdir.",
-    features: ["Ekstra yük kapasitesi", "Büyük sistem uyumluluğu", "Termal stabilite", "Uzun servis aralığı"],
+  "tellus-s2-m-100": {
+    name: "Shell Tellus S2 M 100", grade: "ISO VG 100", series: "Tellus S2 M", type: "Hidrolik Yağ",
+    api: "ISO 11158 HM", acea: "DIN 51524 Part 2",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Eaton Vickers M-2950-S"],
+    description: "ISO 11158 HM sertifikalı yüksek viskoziteli hidrolik yağ. Vakum pompaları ve yüksek basınçlı sistemlerde üstün koruma sağlar.",
+    features: ["Yüksek viskozite stabilitesi", "Oksidasyon direnci", "Aşınma önleme", "Sudan ayrılma"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
+  },
+  "tellus-s2-v-15": {
+    name: "Shell Tellus S2 V 15", grade: "ISO VG 15", series: "Tellus S2 V", type: "Yüksek VI Hidrolik Yağ",
+    api: "ISO 11158 HV", acea: "DIN 51524 Part 3",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Eaton Vickers M-2950-S"],
+    description: "Geniş sıcaklık aralığında kararlı viskozite performansı sağlayan yüksek VI hidrolik yağ. Soğuk ortamlar ve hassas kontrol sistemleri için idealdir.",
+    features: ["Yüksek viskozite indeksi", "Geniş sıcaklık aralığı", "Termal kararlılık", "Mükemmel filtrelenebilme"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
+  },
+  "tellus-s2-v-22": {
+    name: "Shell Tellus S2 V 22", grade: "ISO VG 22", series: "Tellus S2 V", type: "Yüksek VI Hidrolik Yağ",
+    api: "ISO 11158 HV", acea: "DIN 51524 Part 3",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Eaton Vickers M-2950-S"],
+    description: "Geniş sıcaklık aralığında sabit viskozite sağlayan yüksek VI hidrolik yağ. Değişken sıcaklık koşullarındaki endüstriyel ve mobil hidrolik sistemler için uygundur.",
+    features: ["Yüksek viskozite indeksi", "Geniş sıcaklık performansı", "Aşınma önleme", "Oksidasyon direnci"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
+  },
+  "tellus-s2-v-32": {
+    name: "Shell Tellus S2 V 32", grade: "ISO VG 32", series: "Tellus S2 V", type: "Yüksek VI Hidrolik Yağ",
+    api: "ISO 11158 HV", acea: "DIN 51524 Part 3",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Eaton Vickers M-2950-S"],
+    description: "Yüksek viskozite indeksiyle geniş sıcaklık aralığında sabit performans sağlayan hidrolik yağ. Dış ortam makineleri ve mobil sistemler için uygundur.",
+    features: ["Yüksek VI", "Geniş sıcaklık aralığı", "Denison HF-0 onaylı", "Sudan ayrılma"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
+  },
+  "tellus-s2-v-46": {
+    name: "Shell Tellus S2 V 46", grade: "ISO VG 46", series: "Tellus S2 V", type: "Yüksek VI Hidrolik Yağ",
+    api: "ISO 11158 HV", acea: "DIN 51524 Part 3",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Eaton Vickers M-2950-S"],
+    description: "En yaygın hidrolik viskozite sınıfında yüksek VI formülü. Hem endüstriyel hem mobil sistemlerde üstün pompa koruması ve kararlı performans sağlar.",
+    features: ["Yüksek viskozite indeksi", "En yaygın hidrolik viskozite", "Üstün pompa koruması", "Mükemmel filtrelenebilme"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
+  },
+  "tellus-s2-v-68": {
+    name: "Shell Tellus S2 V 68", grade: "ISO VG 68", series: "Tellus S2 V", type: "Yüksek VI Hidrolik Yağ",
+    api: "ISO 11158 HV", acea: "DIN 51524 Part 3",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Eaton Vickers M-2950-S"],
+    description: "Yüksek sıcaklıklı ağır hizmet sistemleri için yüksek VI hidrolik yağ. İnşaat ve madencilik ekipmanlarında güvenilir performans.",
+    features: ["Yüksek sıcaklık stabilitesi", "Ağır hizmet uyumlu", "Yüksek viskozite indeksi", "Aşınma önleme"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
+  },
+  "tellus-s2-v-100": {
+    name: "Shell Tellus S2 V 100", grade: "ISO VG 100", series: "Tellus S2 V", type: "Yüksek VI Hidrolik Yağ",
+    api: "ISO 11158 HV", acea: "DIN 51524 Part 3",
+    approvals: ["DENISON HF-0/HF-1/HF-2"],
+    description: "Ekstra yük kapasitesi gerektiren büyük hidrolik sistemler için yüksek VI hidrolik yağ. Yavaş çalışan büyük sistemlerde kararlı viskozite.",
+    features: ["Ekstra yük kapasitesi", "Yüksek VI", "Büyük sistem uyumlu", "Termal stabilite"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
+  },
+  "tellus-s3-m-32": {
+    name: "Shell Tellus S3 M 32", grade: "ISO VG 32", series: "Tellus S3 M", type: "Küllüsüz Hidrolik Yağ",
+    api: "ISO 11158 HM", acea: "DIN 51524 Part 2",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Parker Denison", "Eaton Vickers"],
+    description: "Çinko (ZAF) içermeyen küllüsüz formülasyonuyla çevre dostu hidrolik yağ. Hassas servo vanalar ve gümüş/magnezyum alaşımlı bileşenler içeren sistemler için.",
+    features: ["Çinko içermeyen formül", "Servo vana uyumlu", "Hassas filtre uyumlu", "Geniş sistem uyumu"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
   },
   "tellus-s3-m-46": {
-    name: "Shell Tellus S3 M 46", grade: "ISO VG 46", series: "Tellus S3 M", type: "Hidrolik Yağ (Küllüsüz)",
-    api: "ISO 11158 HM", acea: "DIN 51524-2 HLPD",
-    approvals: ["Parker Denison HF-0", "Bosch Rexroth RE 90220", "Eaton (Vickers) I-286-S", "Cincinnati Machine P-68/P-69/P-70"],
-    description: "Çinko (ZAF) içermeyen küllüsüz formülasyonuyla çevre dostu hidrolik yağı. Gümüş ve magnezyum alaşımlı bileşenler içeren hassas hidrolik sistemler ve servo vanalar için idealdir.",
-    features: ["Çinko içermeyen ZAF formül", "Gümüş alaşım uyumlu", "Servo vana uyumluluğu", "Üstün filtre uyumluluğu"],
+    name: "Shell Tellus S3 M 46", grade: "ISO VG 46", series: "Tellus S3 M", type: "Küllüsüz Hidrolik Yağ",
+    api: "ISO 11158 HM", acea: "DIN 51524 Part 2",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Parker Denison", "Eaton Vickers"],
+    description: "Çinko içermeyen küllüsüz formülasyonuyla hassas servo vanaları ve alaşımlı bileşenleri koruyan hidrolik yağ. En yaygın endüstriyel viskozite sınıfı.",
+    features: ["Küllüsüz formül", "Servo vana uyumlu", "Üstün oksidasyon stabilitesi", "Hassas filtre uyumlu"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
   },
-  // ── Omala — Industrial gear oils ─────────────────────────────────
-  "omala-s2-gx-150": {
-    name: "Shell Omala S2 GX 150", grade: "ISO VG 150", series: "Omala S2 GX", type: "Dişli Yağı EP",
-    api: "ISO 12925-1 CKC", acea: "DIN 51517-3 CLP",
-    approvals: ["David Brown S1.53.101", "US Steel 224", "AGMA 9005-E02"],
-    description: "Kapalı endüstriyel dişli kutular için geliştirilmiş yüksek basınç (EP) dişli yağı. Yüksek yük altında üstün dişli koruması ve uzun ömürlü servis sağlar.",
-    features: ["Yüksek basınç koruması", "Uzun dişli ömrü", "David Brown onaylı", "Geniş dişli tipi uyumluluğu"],
+  "tellus-s3-m-68": {
+    name: "Shell Tellus S3 M 68", grade: "ISO VG 68", series: "Tellus S3 M", type: "Küllüsüz Hidrolik Yağ",
+    api: "ISO 11158 HM", acea: "DIN 51524 Part 2",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Parker Denison"],
+    description: "Yüksek sıcaklık ve ağır yüklerde çinko içermeyen küllüsüz hidrolik yağ. Sanayi presleri ve inşaat ekipmanları için uygundur.",
+    features: ["Çinko içermeyen formül", "Yüksek sıcaklık stabilitesi", "Ağır yük kapasitesi", "Aşınma önleyici"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
   },
-  "omala-s2-gx-220": {
-    name: "Shell Omala S2 GX 220", grade: "ISO VG 220", series: "Omala S2 GX", type: "Dişli Yağı EP",
-    api: "ISO 12925-1 CKC/CKD", acea: "DIN 51517-3 CLP",
-    approvals: ["David Brown S1.53.101", "US Steel 224", "AGMA 9005-E02", "Cincinnati Machine P-74"],
-    description: "En yaygın kullanılan endüstriyel dişli yağı viskozitesinde geliştirilmiş EP dişli yağı. Redüktörler, konveyör sistemleri ve genel sanayi dişli kutularında mükemmel koruma sağlar.",
-    features: ["En yaygın sanayi viskozitesi", "Redüktör uyumluluğu", "Aşınma ve korozyon koruması", "Uzun değişim aralığı"],
+  "tellus-s3-m-100": {
+    name: "Shell Tellus S3 M 100", grade: "ISO VG 100", series: "Tellus S3 M", type: "Küllüsüz Hidrolik Yağ",
+    api: "ISO 11158 HM", acea: "DIN 51524 Part 2",
+    approvals: ["DENISON HF-0/HF-1/HF-2"],
+    description: "Çinko içermeyen küllüsüz formülasyonla yüksek viskoziteli büyük hidrolik sistemler için üstün koruma. Ağır presler ve sanayi tesisleri için.",
+    features: ["Çinko içermeyen formül", "Ekstra yük kapasitesi", "Büyük sistem uyumlu", "Uzun servis aralığı"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
   },
-  "omala-s2-gx-320": {
-    name: "Shell Omala S2 GX 320", grade: "ISO VG 320", series: "Omala S2 GX", type: "Dişli Yağı EP",
-    api: "ISO 12925-1 CKC/CKD", acea: "DIN 51517-3 CLP",
-    approvals: ["David Brown S1.53.101", "US Steel 224", "AGMA 9005-E02"],
-    description: "Yüksek yük ve düşük devir uygulamaları için geliştirilmiş ağır hizmet EP dişli yağı. Büyük sanayi redüktörleri ve vinç sistemlerinde güvenilir koruma sunar.",
-    features: ["Ağır hizmet yük kapasitesi", "Düşük devir uyumluluğu", "Vinç sistem koruması", "Güçlü EP katkı paketi"],
+  "tellus-s4-me-32": {
+    name: "Shell Tellus S4 ME 32", grade: "ISO VG 32", series: "Tellus S4 ME", type: "Enerji Tasarruflu Hidrolik Yağ",
+    api: "ISO 11158 HM", acea: "DIN 51524 Part 2",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Eaton Vickers", "CINCINNATI"],
+    description: "Enerji tasarrufu özellikli sentetik teknoloji hidrolik yağ. Gelişmiş formülasyonuyla sistem verimliliğini artırırken uzun yağ ömrü sağlar.",
+    features: ["Enerji tasarrufu", "Sentetik teknoloji", "Uzun yağ ömrü", "Üstün oksidasyon direnci"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
   },
-  "omala-s2-gx-460": {
-    name: "Shell Omala S2 GX 460", grade: "ISO VG 460", series: "Omala S2 GX", type: "Dişli Yağı EP",
-    api: "ISO 12925-1 CKC/CKD", acea: "DIN 51517-3 CLP",
-    approvals: ["David Brown S1.53.101", "US Steel 224", "AGMA 9005-E02"],
-    description: "Çok yavaş devir ve çok yüksek yük altında çalışan büyük endüstriyel dişli sistemleri için geliştirilmiş ağır viskoziteli EP dişli yağı. Açık ocak madenciliği ve çelik sanayi uygulamaları için idealdir.",
-    features: ["Çok yüksek yük kapasitesi", "Madencilik ekipman uyumluluğu", "Yüksek film kalınlığı", "Ekstrem basınç koruma"],
+  "tellus-s4-me-46": {
+    name: "Shell Tellus S4 ME 46", grade: "ISO VG 46", series: "Tellus S4 ME", type: "Enerji Tasarruflu Hidrolik Yağ",
+    api: "ISO 11158 HM", acea: "DIN 51524 Part 2",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Eaton Vickers", "CINCINNATI"],
+    description: "Enerji tasarruflu sentetik teknoloji hidrolik yağ. En yaygın viskozite sınıfında sistem verimliliğini artırır ve yağ değişim aralıklarını uzatır.",
+    features: ["Enerji tasarrufu", "Sentetik teknoloji", "Uzun değişim aralığı", "Üstün aşınma önleme"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
   },
-  // ── Corena — Compressor oils ──────────────────────────────────────
-  "corena-s3-r-46": {
-    name: "Shell Corena S3 R 46", grade: "ISO VG 46", series: "Corena S3 R", type: "Kompresör Yağı",
-    api: "ISO 6743-3A DAJ", acea: "DIN 51506 VDL",
-    approvals: ["Atlas Copco", "Kaeser", "Ingersoll Rand", "Sullair"],
-    description: "Döner vidalı ve döner paletli kompresörler için geliştirilmiş sentetik teknoloji kompresör yağı. 4.000 saate kadar uzun değişim aralığıyla işletme maliyetlerini düşürür.",
-    features: ["4.000 saat değişim aralığı", "Döner vida kompresör uyumlu", "Düşük karbon birikimi", "Üstün oksidasyon direnci"],
+  "tellus-s4-vx-32": {
+    name: "Shell Tellus S4 VX 32", grade: "ISO VG 32", series: "Tellus S4 VX", type: "Geniş Sıcaklık Aralığı Hidrolik Yağ",
+    api: "ISO 11158 HV", acea: "DIN 51524 Part 3",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Eaton Vickers"],
+    description: "Çok geniş sıcaklık aralığında sabit viskozite sağlayan sentetik teknoloji hidrolik yağ. Arktik koşullardan yüksek sıcaklıklara kadar üstün performans.",
+    features: ["Çok geniş sıcaklık aralığı", "Sentetik teknoloji", "Yüksek VI indeksi", "Soğuk başlangıç üstünlüğü"],
+    fullDescription: `Yüksek viskozite indeksli mineral yağlar ve üstün katık paketi kullanılarak imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Modern hidrolik sistemlerde yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında yüksek oksidasyon direnci. TOST testlerinde mükemmel sonuçlar.
+• Suya karşı dayanıklılık: Yüksek nemde kimyasal kararlılık; paslanma ve korozyon riskini minimize eder.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş katık paketi.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun; su ve kalsiyum karışmasında özelliklerini korur.
+• Mükemmel havayı defetme ve köpüğü önleme: Kavitasyonu önler, oksidasyonu yavaşlatır.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç; sistem ve pompaları korur.
+• Sızdırmazlık elemanları ve boya uyumluluğu: Mineral yağlarla kullanılan tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+CINCINNATI P-68 (ISO 32) / P-70 (ISO 46) / P-69 (ISO 68)
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950 S, I-286 S
+DIN 51524 PART 2
+ISO 11158
+Mannesman Rexroth RE 90 220-1`,
   },
-  "corena-s4-r-46": {
-    name: "Shell Corena S4 R 46", grade: "ISO VG 46", series: "Corena S4 R", type: "Kompresör Yağı (Tam Sentetik)",
-    api: "ISO 6743-3A DAJ/DAH", acea: "DIN 51506 VDL",
-    approvals: ["Atlas Copco", "Kaeser", "Ingersoll Rand", "Sullair", "Gardner Denver"],
-    description: "Döner vidalı kompresörler için geliştirilmiş tam sentetik kompresör yağı. 8.000 saate kadar uzatılmış değişim aralığı ve üstün termal stabilite ile yüksek sıcaklıklarda çalışan sistemler için idealdir.",
-    features: ["8.000 saat değişim aralığı", "Tam sentetik formül", "Yüksek sıcaklık stabilitesi", "Minimum çamur oluşumu"],
+  "morlina-s2-bl-5": {
+    name: "Shell Morlina S2 BL 5", grade: "ISO VG 5", series: "Morlina S2 BL", type: "Sirkülasyon / Türbin Yağı",
+    api: "ISO 8068 TSA", acea: "DIN 51515-1 L-TD",
+    approvals: ["Siemens TLV", "General Electric GEK"],
+    description: "Çinko içermeyen ultra düşük viskoziteli sirkülasyon yağı. Yüksek devirli yataklar ve hassas sirkülasyon sistemleri için; -60°C akma noktasıyla soğuk ortamlarda avantajlı.",
+    features: ["Çinko içermeyen formül", "Ultra düşük viskozite", "Düşük akma noktası -60°C", "Oksidasyon direnci"],
+    fullDescription: `Yüksek viskozite indeksli bazyağı ve çinko içermeyen formülasyonu ile pasa, korozyona ve aşınmaya karşı yüksek seviyede koruma sağlayan yüksek kaliteli sirkülasyon yağı.
+
+UYGULAMALAR
+• Sirkülasyon sistemleri
+• Düz ya da rulmanlı yataklar
+• Yüksek devirli noktalar
+• Düşük yükte çalışan dişli kutuları
+• Çelik-bronz ve gümüş yüzeyler içeren kontrol ve hidrolik sistemler
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel oksidasyon direnci: Su, hava ve metal katalistler varlığında yüksek sıcaklıklarda dirençli.
+• Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
+• Düşük akma noktası: Düşük sıcaklıklı uygulamalarda avantaj sağlar.
+• Havayı hızlı defetme ve köpük önleme: Özel katkı paketi ile hava hızla uzaklaştırılır.`,
   },
-  // ── Gadus — Greases ──────────────────────────────────────────────
-  "gadus-s2-v220-2": {
-    name: "Shell Gadus S2 V220 2", grade: "NLGI 2", series: "Gadus S2 V220", type: "Gres Yağı EP",
-    api: "ISO 6743-9 L-XBCHB 2", acea: "DIN 51825 KP2K-20",
-    approvals: ["SKF EMGB", "FAG Arcanol"],
-    description: "Genel amaçlı yüksek yük kapasiteli lityum kompleks gres yağı. Rulmanlı yataklar, dişli kutular ve santrifüj pompalar dahil geniş bir endüstriyel uygulama yelpazesinde üstün koruma sağlar.",
-    features: ["Geniş uygulama yelpazesi", "Yüksek yük taşıma kapasitesi", "Su ve korozyon direnci", "Geniş sıcaklık aralığı (-20°C ile +120°C)"],
-  },
-  // ── Morlina — Bearing and circulating oils ────────────────────────
   "morlina-s2-bl-10": {
     name: "Shell Morlina S2 BL 10", grade: "ISO VG 10", series: "Morlina S2 BL", type: "Sirkülasyon / Türbin Yağı",
-    api: "ISO 8068 TSA/TGA", acea: "DIN 51515-1 L-TD",
+    api: "ISO 8068 TSA", acea: "DIN 51515-1 L-TD",
     approvals: ["Siemens TLV 9013 04", "General Electric GEK-32568"],
-    description: "Buhar türbinleri, gaz türbinleri ve sirkülasyon sistemleri için geliştirilmiş yüksek kaliteli yağlama yağı. Mükemmel su ayrışma özelliği ve uzun ömürlü oksidasyon stabilitesiyle kesintisiz işletim sağlar.",
-    features: ["Turbine-grade su ayrışması", "Uzun oksidasyon ömrü", "Düşük köpük eğilimi", "Siemens ve GE onaylı"],
+    description: "Çinko içermeyen düşük viskoziteli sirkülasyon yağı. Buhar türbinleri, gaz türbinleri ve yüksek devirli sirkülasyon sistemleri için üstün oksidasyon stabilitesi.",
+    features: ["Türbin sınıfı su ayrışması", "Uzun oksidasyon ömrü", "Siemens ve GE onaylı", "Köpük önleyici"],
+    fullDescription: `Yüksek viskozite indeksli bazyağı ve çinko içermeyen formülasyonu ile pasa, korozyona ve aşınmaya karşı yüksek seviyede koruma sağlayan yüksek kaliteli sirkülasyon yağı.
+
+UYGULAMALAR
+• Sirkülasyon sistemleri
+• Düz ya da rulmanlı yataklar
+• Yüksek devirli noktalar
+• Düşük yükte çalışan dişli kutuları
+• Çelik-bronz ve gümüş yüzeyler içeren kontrol ve hidrolik sistemler
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel oksidasyon direnci: Su, hava ve metal katalistler varlığında yüksek sıcaklıklarda dirençli.
+• Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
+• Düşük akma noktası: Düşük sıcaklıklı uygulamalarda avantaj sağlar.
+• Havayı hızlı defetme ve köpük önleme: Özel katkı paketi ile hava hızla uzaklaştırılır.`,
   },
-  // ── Tonna — Slideway oils ─────────────────────────────────────────
+  "morlina-s2-bl-22": {
+    name: "Shell Morlina S2 BL 22", grade: "ISO VG 22", series: "Morlina S2 BL", type: "Sirkülasyon / Türbin Yağı",
+    api: "ISO 8068 TSA", acea: "DIN 51515-1 L-TD",
+    approvals: ["Siemens TLV", "General Electric GEK"],
+    description: "Çinko içermeyen ISO VG 22 sirkülasyon yağı. Düz ve rulmanlı yataklar ile hassas sirkülasyon sistemleri için yüksek oksidasyon direnci ve korozyon koruması.",
+    features: ["Çinko içermeyen formül", "Yüksek oksidasyon direnci", "Korozyon koruması", "Düşük köpük eğilimi"],
+    fullDescription: `Yüksek viskozite indeksli bazyağı ve çinko içermeyen formülasyonu ile pasa, korozyona ve aşınmaya karşı yüksek seviyede koruma sağlayan yüksek kaliteli sirkülasyon yağı.
+
+UYGULAMALAR
+• Sirkülasyon sistemleri
+• Düz ya da rulmanlı yataklar
+• Yüksek devirli noktalar
+• Düşük yükte çalışan dişli kutuları
+• Çelik-bronz ve gümüş yüzeyler içeren kontrol ve hidrolik sistemler
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel oksidasyon direnci: Su, hava ve metal katalistler varlığında yüksek sıcaklıklarda dirençli.
+• Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
+• Düşük akma noktası: Düşük sıcaklıklı uygulamalarda avantaj sağlar.
+• Havayı hızlı defetme ve köpük önleme: Özel katkı paketi ile hava hızla uzaklaştırılır.`,
+  },
+  "morlina-s2-b-46": {
+    name: "Shell Morlina S2 B 46", grade: "ISO VG 46", series: "Morlina S2 B", type: "Sirkülasyon / Rulman Yağı",
+    api: "ISO 8068", acea: "DIN 51515-1",
+    approvals: [],
+    description: "Çinko içermeyen ISO VG 46 sirkülasyon ve rulman yağı. Sirkülasyon sistemleri, rulmanlı yataklar ve düşük yüklü dişli kutuları için üstün oksidasyon direnci ve korozyon koruması.",
+    features: ["Çinko içermeyen formül", "Oksidasyon direnci", "Korozyon koruması", "Düşük köpük"],
+    fullDescription: `Yüksek viskozite indeksli bazyağı ve çinko içermeyen formülasyonu ile pasa, korozyona ve aşınmaya karşı yüksek seviyede koruma sağlayan yüksek kaliteli sirkülasyon yağı.
+
+UYGULAMALAR
+• Sirkülasyon sistemleri ve rulmanlı yataklar
+• Düşük yükte çalışan dişli kutuları
+• Çelik-bronz ve gümüş yüzeyler içeren kontrol ve hidrolik sistemler
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel oksidasyon direnci: Su, hava ve metal katalistler varlığında yüksek sıcaklıkta dirençli.
+• Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
+• Düşük akma noktası: Düşük sıcaklıklı endüstriyel uygulamalarda avantaj.
+• Havayı hızlı defetme ve köpük önleme: Kavitasyonu önler.`,
+  },
+  "morlina-s2-b-68": {
+    name: "Shell Morlina S2 B 68", grade: "ISO VG 68", series: "Morlina S2 B", type: "Sirkülasyon / Rulman Yağı",
+    api: "ISO 8068", acea: "DIN 51515-1",
+    approvals: [],
+    description: "Çinko içermeyen ISO VG 68 sirkülasyon yağı. Parlama noktası 240°C ile yüksek sıcaklıklarda güvenli çalışma; rulmanlı yataklar ve sirkülasyon sistemleri için.",
+    features: ["Yüksek parlama noktası 240°C", "Çinko içermeyen formül", "Oksidasyon direnci", "Korozyon koruması"],
+    fullDescription: `Yüksek viskozite indeksli bazyağı ve çinko içermeyen formülasyonu ile pasa, korozyona ve aşınmaya karşı yüksek seviyede koruma sağlayan yüksek kaliteli sirkülasyon yağı.
+
+UYGULAMALAR
+• Sirkülasyon sistemleri ve rulmanlı yataklar
+• Düşük yükte çalışan dişli kutuları
+• Çelik-bronz ve gümüş yüzeyler içeren kontrol ve hidrolik sistemler
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel oksidasyon direnci: Su, hava ve metal katalistler varlığında yüksek sıcaklıkta dirençli.
+• Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
+• Düşük akma noktası: Düşük sıcaklıklı endüstriyel uygulamalarda avantaj.
+• Havayı hızlı defetme ve köpük önleme: Kavitasyonu önler.`,
+  },
+  "morlina-s2-b-100": {
+    name: "Shell Morlina S2 B 100", grade: "ISO VG 100", series: "Morlina S2 B", type: "Sirkülasyon / Rulman Yağı",
+    api: "ISO 8068", acea: "DIN 51515-1",
+    approvals: [],
+    description: "Çinko içermeyen ISO VG 100 sirkülasyon yağı. Parlama noktası 250°C; orta-yüksek viskoziteli sirkülasyon sistemleri ve rulman uygulamaları için.",
+    features: ["Parlama noktası 250°C", "Çinko içermeyen formül", "Uzun servis aralığı", "Korozyon koruması"],
+    fullDescription: `Yüksek viskozite indeksli bazyağı ve çinko içermeyen formülasyonu ile pasa, korozyona ve aşınmaya karşı yüksek seviyede koruma sağlayan yüksek kaliteli sirkülasyon yağı.
+
+UYGULAMALAR
+• Sirkülasyon sistemleri ve rulmanlı yataklar
+• Düşük yükte çalışan dişli kutuları
+• Çelik-bronz ve gümüş yüzeyler içeren kontrol ve hidrolik sistemler
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel oksidasyon direnci: Su, hava ve metal katalistler varlığında yüksek sıcaklıkta dirençli.
+• Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
+• Düşük akma noktası: Düşük sıcaklıklı endüstriyel uygulamalarda avantaj.
+• Havayı hızlı defetme ve köpük önleme: Kavitasyonu önler.`,
+  },
+  "morlina-s2-b-150": {
+    name: "Shell Morlina S2 B 150", grade: "ISO VG 150", series: "Morlina S2 B", type: "Sirkülasyon / Rulman Yağı",
+    api: "ISO 8068", acea: "DIN 51515-1",
+    approvals: [],
+    description: "Çinko içermeyen ISO VG 150 sirkülasyon yağı. Ağır yük rulmanlar ve geniş endüstriyel sirkülasyon sistemleri için yüksek oksidasyon stabilitesi.",
+    features: ["ISO VG 150 sirkülasyon", "Çinko içermeyen formül", "Yüksek sıcaklık stabilitesi", "Korozyon koruması"],
+    fullDescription: `Yüksek viskozite indeksli bazyağı ve çinko içermeyen formülasyonu ile pasa, korozyona ve aşınmaya karşı yüksek seviyede koruma sağlayan yüksek kaliteli sirkülasyon yağı.
+
+UYGULAMALAR
+• Sirkülasyon sistemleri ve rulmanlı yataklar
+• Düşük yükte çalışan dişli kutuları
+• Çelik-bronz ve gümüş yüzeyler içeren kontrol ve hidrolik sistemler
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel oksidasyon direnci: Su, hava ve metal katalistler varlığında yüksek sıcaklıkta dirençli.
+• Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
+• Düşük akma noktası: Düşük sıcaklıklı endüstriyel uygulamalarda avantaj.
+• Havayı hızlı defetme ve köpük önleme: Kavitasyonu önler.`,
+  },
+  "morlina-s2-b-220": {
+    name: "Shell Morlina S2 B 220", grade: "ISO VG 220", series: "Morlina S2 B", type: "Sirkülasyon / Rulman Yağı",
+    api: "ISO 8068", acea: "DIN 51515-1",
+    approvals: [],
+    description: "Çinko içermeyen ISO VG 220 sirkülasyon yağı. Parlama noktası 280°C ile ağır sanayi uygulamalarında ve yüksek sıcaklıklarda güvenilir koruma.",
+    features: ["Parlama noktası 280°C", "Çinko içermeyen formül", "Ağır sanayi uyumu", "Korozyon koruması"],
+    fullDescription: `Yüksek viskozite indeksli bazyağı ve çinko içermeyen formülasyonu ile pasa, korozyona ve aşınmaya karşı yüksek seviyede koruma sağlayan yüksek kaliteli sirkülasyon yağı.
+
+UYGULAMALAR
+• Sirkülasyon sistemleri ve rulmanlı yataklar
+• Düşük yükte çalışan dişli kutuları
+• Çelik-bronz ve gümüş yüzeyler içeren kontrol ve hidrolik sistemler
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel oksidasyon direnci: Su, hava ve metal katalistler varlığında yüksek sıcaklıkta dirençli.
+• Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
+• Düşük akma noktası: Düşük sıcaklıklı endüstriyel uygulamalarda avantaj.
+• Havayı hızlı defetme ve köpük önleme: Kavitasyonu önler.`,
+  },
+  "morlina-s2-b-320": {
+    name: "Shell Morlina S2 B 320", grade: "ISO VG 320", series: "Morlina S2 B", type: "Sirkülasyon / Rulman Yağı",
+    api: "ISO 8068", acea: "DIN 51515-1",
+    approvals: [],
+    description: "Çinko içermeyen ISO VG 320 sirkülasyon yağı. Parlama noktası 282°C ile çok ağır yüklü rulman ve sirkülasyon uygulamaları için en yüksek viskoziteli Morlina S2 B.",
+    features: ["En yüksek viskozite sınıfı", "Parlama noktası 282°C", "Çinko içermeyen formül", "Ağır yük kapasitesi"],
+    fullDescription: `Yüksek viskozite indeksli bazyağı ve çinko içermeyen formülasyonu ile pasa, korozyona ve aşınmaya karşı yüksek seviyede koruma sağlayan yüksek kaliteli sirkülasyon yağı.
+
+UYGULAMALAR
+• Sirkülasyon sistemleri ve rulmanlı yataklar
+• Düşük yükte çalışan dişli kutuları
+• Çelik-bronz ve gümüş yüzeyler içeren kontrol ve hidrolik sistemler
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel oksidasyon direnci: Su, hava ve metal katalistler varlığında yüksek sıcaklıkta dirençli.
+• Korozyona karşı koruma: Özel katkılar korozyon önleme performansını artırır.
+• Düşük akma noktası: Düşük sıcaklıklı endüstriyel uygulamalarda avantaj.
+• Havayı hızlı defetme ve köpük önleme: Kavitasyonu önler.`,
+  },
+  "corena-s2-p-68": {
+    name: "Shell Corena S2 P 68", grade: "ISO VG 68", series: "Corena S2 P", type: "Pistonlu Kompresör Yağı",
+    api: "ISO 6743-3A DAB", acea: "DIN 51506 VDL",
+    approvals: ["Atlas Copco", "Ingersoll Rand", "Gardner Denver"],
+    description: "Pistonlu hava kompresörleri için özel geliştirilmiş yüksek performanslı kompresör yağı. 220°C hava çıkış sıcaklığına kadar güvenilir koruma ve uzatılmış servis aralıkları.",
+    features: ["Pistonlu kompresör uzmanı", "Yüksek sıcaklık koruması", "Uzun servis aralığı", "Karbon birikimini önler"],
+    fullDescription: `Shell Corena P, pistonlu tip kompresörler için özel olarak geliştirilmiş kompresör yağıdır. Hava çıkış sıcaklıklarının 220°C'ye kadar yükseldiği durumlarda dahi yüksek performans sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Servis aralıklarında uzama: Valf ve piston bakım aralıklarını uzatarak yüksek verimli uzun çalışma ömrü.
+• Güvenilir hava hatları: Karbon depozitler ve pas artıklarından kaynaklanan tehlikeli ekzotermik reaksiyonları minimize eder.
+• Oksidasyona karşı yüksek direnç: Karbon birikimini minimize eder, kompresör verimliliğini maksimize eder.
+• Pas ve korozyona karşı etkin koruma: Servis aralıklarını uzatır.
+• Havadan iyi ayrılma: Köpük oluşumuna sebebiyet vermez.
+• Sudan kolay ayrışma: Yağ suyu iterek oksidasyon ve viskozite artışını önler.
+• Sızdırmazlık uyumu: Hava kompresörlerindeki tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+DIN 51506 VDL
+ISO 6743-3A-DAB`,
+  },
+  "corena-s2-p-100": {
+    name: "Shell Corena S2 P 100", grade: "ISO VG 100", series: "Corena S2 P", type: "Pistonlu Kompresör Yağı",
+    api: "ISO 6743-3A DAB", acea: "DIN 51506 VDL",
+    approvals: ["Atlas Copco", "Ingersoll Rand"],
+    description: "Pistonlu tip hava kompresörleri için ISO VG 100 kompresör yağı. 220°C hava çıkış sıcaklığında dahi üstün koruma; oksidasyona karşı yüksek direnç.",
+    features: ["Pistonlu kompresör uzmanı", "Yüksek oksidasyon direnci", "Servis aralığı uzatma", "Sudan kolay ayrışma"],
+    fullDescription: `Shell Corena P, pistonlu tip kompresörler için özel olarak geliştirilmiş kompresör yağıdır. Hava çıkış sıcaklıklarının 220°C'ye kadar yükseldiği durumlarda dahi yüksek performans sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Servis aralıklarında uzama: Valf ve piston bakım aralıklarını uzatarak yüksek verimli uzun çalışma ömrü.
+• Güvenilir hava hatları: Karbon depozitler ve pas artıklarından kaynaklanan tehlikeli ekzotermik reaksiyonları minimize eder.
+• Oksidasyona karşı yüksek direnç: Karbon birikimini minimize eder, kompresör verimliliğini maksimize eder.
+• Pas ve korozyona karşı etkin koruma: Servis aralıklarını uzatır.
+• Havadan iyi ayrılma: Köpük oluşumuna sebebiyet vermez.
+• Sudan kolay ayrışma: Yağ suyu iterek oksidasyon ve viskozite artışını önler.
+• Sızdırmazlık uyumu: Hava kompresörlerindeki tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+DIN 51506 VDL
+ISO 6743-3A-DAB`,
+  },
+  "corena-s2-p-150": {
+    name: "Shell Corena S2 P 150", grade: "ISO VG 150", series: "Corena S2 P", type: "Pistonlu Kompresör Yağı",
+    api: "ISO 6743-3A DAB", acea: "DIN 51506 VDL",
+    approvals: ["Atlas Copco", "Ingersoll Rand"],
+    description: "Pistonlu hava kompresörleri için yüksek viskoziteli kompresör yağı. Karbon birikim önleme, güvenilir hava hattı koruması ve uzun servis aralıkları.",
+    features: ["Yüksek viskozite", "Karbon birikimini önler", "Güvenilir hava hatları", "Servis aralığı uzatma"],
+    fullDescription: `Shell Corena P, pistonlu tip kompresörler için özel olarak geliştirilmiş kompresör yağıdır. Hava çıkış sıcaklıklarının 220°C'ye kadar yükseldiği durumlarda dahi yüksek performans sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Servis aralıklarında uzama: Valf ve piston bakım aralıklarını uzatarak yüksek verimli uzun çalışma ömrü.
+• Güvenilir hava hatları: Karbon depozitler ve pas artıklarından kaynaklanan tehlikeli ekzotermik reaksiyonları minimize eder.
+• Oksidasyona karşı yüksek direnç: Karbon birikimini minimize eder, kompresör verimliliğini maksimize eder.
+• Pas ve korozyona karşı etkin koruma: Servis aralıklarını uzatır.
+• Havadan iyi ayrılma: Köpük oluşumuna sebebiyet vermez.
+• Sudan kolay ayrışma: Yağ suyu iterek oksidasyon ve viskozite artışını önler.
+• Sızdırmazlık uyumu: Hava kompresörlerindeki tüm elemanlarla uyumlu.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+DIN 51506 VDL
+ISO 6743-3A-DAB`,
+  },
+  "corena-s3-r-46": {
+    name: "Shell Corena S3 R 46", grade: "ISO VG 46", series: "Corena S3 R", type: "Vidalı/Kanatlı Kompresör Yağı",
+    api: "ISO 6743-3A DAJ", acea: "DIN 51506 VDL",
+    approvals: ["Atlas Copco", "Kaeser", "Ingersoll Rand", "Sullair"],
+    description: "Yağ banyolu vidalı ve kanatlı kompresörler için yüksek kaliteli kompresör yağı. 8000 saate kadar uzayan yağ değişim ömrü ve düşük karbon birikimi.",
+    features: ["8000 saat yağ ömrü", "Düşük karbon birikimi", "Olağanüstü oksidasyon direnci", "Düşük uçuculuk"],
+    fullDescription: `Yağ banyolu vidalı ve kanatlı hava kompresörlerinde mükemmel performans sağlayan üstün kaliteli ürün. Özel sentetik bazyağı ve formülasyonu ile en zorlu şartlarda uzun ömür ve sorunsuz operasyon.
+
+PERFORMANS ÖZELLİKLERİ
+• Oksidasyona karşı olağanüstü direnç: Ekipmanda karbon kalıntı oluşumunu önler.
+• Yağ değişim periyodlarında artış: 8000 saate kadar uzayan yağ ömrü.
+• Düşük uçuculuk: Yağ tüketimini ve eklemeleri azaltır.
+• Yüksek viskozite indeksi: Her çalışma şartında yüksek performans.
+• Mükemmel soğutma: Kritik soğutma görevini eksiksiz yerine getirir.
+• Pas ve korozyona karşı etkin koruma: Servis aralıklarını uzatır.
+• Sızdırmazlık uyumu: Hava kompresörlerindeki tüm elemanlarla uyumlu.`,
+  },
+  "corena-s3-r-68": {
+    name: "Shell Corena S3 R 68", grade: "ISO VG 68", series: "Corena S3 R", type: "Vidalı/Kanatlı Kompresör Yağı",
+    api: "ISO 6743-3A DAJ", acea: "DIN 51506 VDL",
+    approvals: ["Atlas Copco", "Kaeser", "Ingersoll Rand", "Sullair"],
+    description: "Yağ banyolu vidalı ve kanatlı kompresörler için ISO VG 68 kompresör yağı. 8000 saat yağ ömrü, düşük uçuculuk ve mükemmel soğutma performansı.",
+    features: ["8000 saat yağ ömrü", "Düşük uçuculuk", "Mükemmel soğutma", "Pas ve korozyon koruması"],
+    fullDescription: `Yağ banyolu vidalı ve kanatlı hava kompresörlerinde mükemmel performans sağlayan üstün kaliteli ürün. Özel sentetik bazyağı ve formülasyonu ile en zorlu şartlarda uzun ömür ve sorunsuz operasyon.
+
+PERFORMANS ÖZELLİKLERİ
+• Oksidasyona karşı olağanüstü direnç: Ekipmanda karbon kalıntı oluşumunu önler.
+• Yağ değişim periyodlarında artış: 8000 saate kadar uzayan yağ ömrü.
+• Düşük uçuculuk: Yağ tüketimini ve eklemeleri azaltır.
+• Yüksek viskozite indeksi: Her çalışma şartında yüksek performans.
+• Mükemmel soğutma: Kritik soğutma görevini eksiksiz yerine getirir.
+• Pas ve korozyona karşı etkin koruma: Servis aralıklarını uzatır.
+• Sızdırmazlık uyumu: Hava kompresörlerindeki tüm elemanlarla uyumlu.`,
+  },
+  "corena-s4-r-46": {
+    name: "Shell Corena S4 R 46", grade: "ISO VG 46", series: "Corena S4 R", type: "Vidalı/Kanatlı Kompresör Yağı (Sentetik)",
+    api: "ISO 6743-3A DAJ", acea: "DIN 51506 VDL",
+    approvals: ["Atlas Copco", "Kaeser", "Ingersoll Rand", "Sullair", "Gardner Denver"],
+    description: "Tam sentetik vidalı ve kanatlı kompresör yağı. 8000 saate kadar yağ ömrü, yüksek sıcaklık stabilitesi ve minimum karbon birikimi.",
+    features: ["Tam sentetik", "8000 saat yağ ömrü", "Yüksek sıcaklık stabilitesi", "Minimum karbon birikimi"],
+    fullDescription: `Yağ banyolu vidalı ve kanatlı hava kompresörlerinde mükemmel performans sağlayan üstün kaliteli ürün. Özel sentetik bazyağı ve formülasyonu ile en zorlu şartlarda uzun ömür ve sorunsuz operasyon.
+
+PERFORMANS ÖZELLİKLERİ
+• Oksidasyona karşı olağanüstü direnç: Ekipmanda karbon kalıntı oluşumunu önler.
+• Yağ değişim periyodlarında artış: 8000 saate kadar uzayan yağ ömrü.
+• Düşük uçuculuk: Yağ tüketimini ve eklemeleri azaltır.
+• Yüksek viskozite indeksi: Her çalışma şartında yüksek performans.
+• Mükemmel soğutma: Kritik soğutma görevini eksiksiz yerine getirir.
+• Pas ve korozyona karşı etkin koruma: Servis aralıklarını uzatır.
+• Sızdırmazlık uyumu: Hava kompresörlerindeki tüm elemanlarla uyumlu.`,
+  },
+  "corena-s4-r-68": {
+    name: "Shell Corena S4 R 68", grade: "ISO VG 68", series: "Corena S4 R", type: "Vidalı/Kanatlı Kompresör Yağı (Sentetik)",
+    api: "ISO 6743-3A DAJ", acea: "DIN 51506 VDL",
+    approvals: ["Atlas Copco", "Kaeser", "Ingersoll Rand", "Sullair"],
+    description: "Tam sentetik ISO VG 68 vidalı kompresör yağı. Yüksek sıcaklıklarda çalışan sistemlerde 8000 saat yağ ömrü ve üstün termal stabilite.",
+    features: ["Tam sentetik", "Yüksek sıcaklık kompresörleri", "8000 saat yağ ömrü", "Üstün oksidasyon direnci"],
+    fullDescription: `Yağ banyolu vidalı ve kanatlı hava kompresörlerinde mükemmel performans sağlayan üstün kaliteli ürün. Özel sentetik bazyağı ve formülasyonu ile en zorlu şartlarda uzun ömür ve sorunsuz operasyon.
+
+PERFORMANS ÖZELLİKLERİ
+• Oksidasyona karşı olağanüstü direnç: Ekipmanda karbon kalıntı oluşumunu önler.
+• Yağ değişim periyodlarında artış: 8000 saate kadar uzayan yağ ömrü.
+• Düşük uçuculuk: Yağ tüketimini ve eklemeleri azaltır.
+• Yüksek viskozite indeksi: Her çalışma şartında yüksek performans.
+• Mükemmel soğutma: Kritik soğutma görevini eksiksiz yerine getirir.
+• Pas ve korozyona karşı etkin koruma: Servis aralıklarını uzatır.
+• Sızdırmazlık uyumu: Hava kompresörlerindeki tüm elemanlarla uyumlu.`,
+  },
+  "refrigeration-s4-fr-f-32": {
+    name: "Shell Refrigeration Oil S4 FR-F 32", grade: "ISO VG 32", series: "Refrigeration S4 FR-F", type: "Soğutma Kompresör Yağı (Alkil Benzen)",
+    api: "ISO 6743-3A", acea: "DIN 51503 KAA/KC",
+    approvals: [],
+    description: "Alkil benzen esaslı sentetik soğutma kompresör yağı. Amonyak (R717) ve HCFC sistemleri için özel; -39°C akma noktası ve mükemmel düşük sıcaklık performansı.",
+    features: ["Amonyak sistemi uzmanı", "Alkil benzen sentetik", "Mükemmel düşük sıcaklık", "-39°C akma noktası"],
+    fullDescription: `Alkil benzen esaslı sentetik soğutma kompresör yağı. Özellikle soğutma gazı olarak Amonyak ve HCFC'nin kullanıldığı sistemler için tavsiye edilmektedir.
+
+UYGULAMALAR
+• Açık, yarı açık ve hermetik tipteki soğutucu kompresörlerde ticari, endüstriyel ve bireysel kullanım
+• Vidalı ve pistonlu tipte kompresörlerde kullanılabilir
+• Amonyaklı (R717) sistemlerde yüksek sıcaklıklarda ve -33°C altındaki buharlaşma sıcaklıklarında mükemmel performans
+• Halojene edilmiş gazlar (CFC, HCFC), hidrokarbonlar ve R402A/B ile uyumlu
+
+PERFORMANS ÖZELLİKLERİ
+• Tam sentetik formülasyon: Alkil benzen esaslı yüksek teknoloji.
+• Olağanüstü kararlılık: Mineral yağlara oranla çok yüksek oksidasyon ve sıcaklık kararlılığı.
+• Mükemmel temizlik: Depozit ve çamurumsu atık oluşumunu kontrol altında tutar. Yağ değişim aralıkları mineral yağlardan çok daha uzun.
+• Mükemmel uyum: Soğutma sistemlerindeki sızdırmazlık elemanlarıyla tamamen uyumlu; mineral yağlarla karışabilir.
+• Çok iyi karışma performansı: CFC/HCFC kullanımında düşük sıcaklıklarda üstün karışma.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+DIN 51503 KAA, KC`,
+  },
+  "refrigeration-s4-fr-f-68": {
+    name: "Shell Refrigeration Oil S4 FR-F 68", grade: "ISO VG 68", series: "Refrigeration S4 FR-F", type: "Soğutma Kompresör Yağı (Alkil Benzen)",
+    api: "ISO 6743-3A", acea: "DIN 51503 KAA/KC",
+    approvals: [],
+    description: "Alkil benzen esaslı ISO VG 68 sentetik soğutma kompresör yağı. Amonyak ve HCFC sistemlerinde yüksek oksidasyon kararlılığı ve uzun yağ değişim aralığı.",
+    features: ["Alkil benzen sentetik", "Yüksek oksidasyon kararlılığı", "Amonyak sistemi uyumlu", "Uzun yağ ömrü"],
+    fullDescription: `Alkil benzen esaslı sentetik soğutma kompresör yağı. Özellikle soğutma gazı olarak Amonyak ve HCFC'nin kullanıldığı sistemler için tavsiye edilmektedir.
+
+UYGULAMALAR
+• Açık, yarı açık ve hermetik tipteki soğutucu kompresörlerde ticari, endüstriyel ve bireysel kullanım
+• Vidalı ve pistonlu tipte kompresörlerde kullanılabilir
+• Amonyaklı (R717) sistemlerde yüksek sıcaklıklarda ve -33°C altındaki buharlaşma sıcaklıklarında mükemmel performans
+• Halojene edilmiş gazlar (CFC, HCFC), hidrokarbonlar ve R402A/B ile uyumlu
+
+PERFORMANS ÖZELLİKLERİ
+• Tam sentetik formülasyon: Alkil benzen esaslı yüksek teknoloji.
+• Olağanüstü kararlılık: Mineral yağlara oranla çok yüksek oksidasyon ve sıcaklık kararlılığı.
+• Mükemmel temizlik: Depozit ve çamurumsu atık oluşumunu kontrol altında tutar. Yağ değişim aralıkları mineral yağlardan çok daha uzun.
+• Mükemmel uyum: Soğutma sistemlerindeki sızdırmazlık elemanlarıyla tamamen uyumlu; mineral yağlarla karışabilir.
+• Çok iyi karışma performansı: CFC/HCFC kullanımında düşük sıcaklıklarda üstün karışma.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+DIN 51503 KAA, KC`,
+  },
+  "refrigeration-s4-fr-f-100": {
+    name: "Shell Refrigeration Oil S4 FR-F 100", grade: "ISO VG 100", series: "Refrigeration S4 FR-F", type: "Soğutma Kompresör Yağı (Alkil Benzen)",
+    api: "ISO 6743-3A", acea: "DIN 51503 KAA/KC",
+    approvals: [],
+    description: "Alkil benzen esaslı ISO VG 100 sentetik soğutma kompresör yağı. Amonyak sistemlerinde -33°C altı buharlaşma sıcaklıklarında üstün performans.",
+    features: ["Yüksek viskozite soğutma yağı", "Alkil benzen sentetik", "Amonyak sistemi uzmanı", "Mineral yağla karışabilir"],
+    fullDescription: `Alkil benzen esaslı sentetik soğutma kompresör yağı. Özellikle soğutma gazı olarak Amonyak ve HCFC'nin kullanıldığı sistemler için tavsiye edilmektedir.
+
+UYGULAMALAR
+• Açık, yarı açık ve hermetik tipteki soğutucu kompresörlerde ticari, endüstriyel ve bireysel kullanım
+• Vidalı ve pistonlu tipte kompresörlerde kullanılabilir
+• Amonyaklı (R717) sistemlerde yüksek sıcaklıklarda ve -33°C altındaki buharlaşma sıcaklıklarında mükemmel performans
+• Halojene edilmiş gazlar (CFC, HCFC), hidrokarbonlar ve R402A/B ile uyumlu
+
+PERFORMANS ÖZELLİKLERİ
+• Tam sentetik formülasyon: Alkil benzen esaslı yüksek teknoloji.
+• Olağanüstü kararlılık: Mineral yağlara oranla çok yüksek oksidasyon ve sıcaklık kararlılığı.
+• Mükemmel temizlik: Depozit ve çamurumsu atık oluşumunu kontrol altında tutar. Yağ değişim aralıkları mineral yağlardan çok daha uzun.
+• Mükemmel uyum: Soğutma sistemlerindeki sızdırmazlık elemanlarıyla tamamen uyumlu; mineral yağlarla karışabilir.
+• Çok iyi karışma performansı: CFC/HCFC kullanımında düşük sıcaklıklarda üstün karışma.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+DIN 51503 KAA, KC`,
+  },
+  "refrigeration-s4-fr-v-32": {
+    name: "Shell Refrigeration Oil S4 FR-V 32", grade: "ISO VG 32", series: "Refrigeration S4 FR-V", type: "Soğutma Kompresör Yağı (Alkil Benzen)",
+    api: "ISO 6743-3A", acea: "DIN 51503 KAA/KC",
+    approvals: [],
+    description: "Alkil benzen esaslı sentetik soğutma yağı. CFC/HCFC ve amonyak sistemleri için; düşük sıcaklıklarda mineral yağlara üstün karışma performansı.",
+    features: ["CFC/HCFC uyumlu", "Üstün düşük sıcaklık karışımı", "Alkil benzen sentetik", "Mineral yağla karışabilir"],
+    fullDescription: `Alkil benzen esaslı sentetik soğutma kompresör yağı. Özellikle soğutma gazı olarak Amonyak ve HCFC'nin kullanıldığı sistemler için tavsiye edilmektedir.
+
+UYGULAMALAR
+• Açık, yarı açık ve hermetik tipteki soğutucu kompresörlerde ticari, endüstriyel ve bireysel kullanım
+• Vidalı ve pistonlu tipte kompresörlerde kullanılabilir
+• Amonyaklı (R717) sistemlerde yüksek sıcaklıklarda ve -33°C altındaki buharlaşma sıcaklıklarında mükemmel performans
+• Halojene edilmiş gazlar (CFC, HCFC), hidrokarbonlar ve R402A/B ile uyumlu
+
+PERFORMANS ÖZELLİKLERİ
+• Tam sentetik formülasyon: Alkil benzen esaslı yüksek teknoloji.
+• Olağanüstü kararlılık: Mineral yağlara oranla çok yüksek oksidasyon ve sıcaklık kararlılığı.
+• Mükemmel temizlik: Depozit ve çamurumsu atık oluşumunu kontrol altında tutar. Yağ değişim aralıkları mineral yağlardan çok daha uzun.
+• Mükemmel uyum: Soğutma sistemlerindeki sızdırmazlık elemanlarıyla tamamen uyumlu; mineral yağlarla karışabilir.
+• Çok iyi karışma performansı: CFC/HCFC kullanımında düşük sıcaklıklarda üstün karışma.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+DIN 51503 KAA, KC`,
+  },
+  "refrigeration-s4-fr-v-46": {
+    name: "Shell Refrigeration Oil S4 FR-V 46", grade: "ISO VG 46", series: "Refrigeration S4 FR-V", type: "Soğutma Kompresör Yağı (Alkil Benzen)",
+    api: "ISO 6743-3A", acea: "DIN 51503 KAA/KC",
+    approvals: [],
+    description: "Alkil benzen esaslı ISO VG 46 sentetik soğutma yağı. CFC/HCFC ve amonyak sistemlerinde düşük sıcaklık karışma üstünlüğü ve uzun yağ değişim aralığı.",
+    features: ["CFC/HCFC uyumlu", "Alkil benzen sentetik", "Uzun yağ ömrü", "Amonyak sistemi uyumlu"],
+    fullDescription: `Alkil benzen esaslı sentetik soğutma kompresör yağı. Özellikle soğutma gazı olarak Amonyak ve HCFC'nin kullanıldığı sistemler için tavsiye edilmektedir.
+
+UYGULAMALAR
+• Açık, yarı açık ve hermetik tipteki soğutucu kompresörlerde ticari, endüstriyel ve bireysel kullanım
+• Vidalı ve pistonlu tipte kompresörlerde kullanılabilir
+• Amonyaklı (R717) sistemlerde yüksek sıcaklıklarda ve -33°C altındaki buharlaşma sıcaklıklarında mükemmel performans
+• Halojene edilmiş gazlar (CFC, HCFC), hidrokarbonlar ve R402A/B ile uyumlu
+
+PERFORMANS ÖZELLİKLERİ
+• Tam sentetik formülasyon: Alkil benzen esaslı yüksek teknoloji.
+• Olağanüstü kararlılık: Mineral yağlara oranla çok yüksek oksidasyon ve sıcaklık kararlılığı.
+• Mükemmel temizlik: Depozit ve çamurumsu atık oluşumunu kontrol altında tutar. Yağ değişim aralıkları mineral yağlardan çok daha uzun.
+• Mükemmel uyum: Soğutma sistemlerindeki sızdırmazlık elemanlarıyla tamamen uyumlu; mineral yağlarla karışabilir.
+• Çok iyi karışma performansı: CFC/HCFC kullanımında düşük sıcaklıklarda üstün karışma.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+DIN 51503 KAA, KC`,
+  },
+  "refrigeration-s4-fr-v-68": {
+    name: "Shell Refrigeration Oil S4 FR-V 68", grade: "ISO VG 68", series: "Refrigeration S4 FR-V", type: "Soğutma Kompresör Yağı (Alkil Benzen)",
+    api: "ISO 6743-3A", acea: "DIN 51503 KAA/KC",
+    approvals: [],
+    description: "Alkil benzen esaslı ISO VG 68 sentetik soğutma yağı. Amonyak ve HCFC sistemlerinde yüksek oksidasyon kararlılığı ve mükemmel sızdırmazlık uyumu.",
+    features: ["Yüksek oksidasyon kararlılığı", "CFC/HCFC uyumlu", "Alkil benzen sentetik", "Uzun yağ ömrü"],
+    fullDescription: `Alkil benzen esaslı sentetik soğutma kompresör yağı. Özellikle soğutma gazı olarak Amonyak ve HCFC'nin kullanıldığı sistemler için tavsiye edilmektedir.
+
+UYGULAMALAR
+• Açık, yarı açık ve hermetik tipteki soğutucu kompresörlerde ticari, endüstriyel ve bireysel kullanım
+• Vidalı ve pistonlu tipte kompresörlerde kullanılabilir
+• Amonyaklı (R717) sistemlerde yüksek sıcaklıklarda ve -33°C altındaki buharlaşma sıcaklıklarında mükemmel performans
+• Halojene edilmiş gazlar (CFC, HCFC), hidrokarbonlar ve R402A/B ile uyumlu
+
+PERFORMANS ÖZELLİKLERİ
+• Tam sentetik formülasyon: Alkil benzen esaslı yüksek teknoloji.
+• Olağanüstü kararlılık: Mineral yağlara oranla çok yüksek oksidasyon ve sıcaklık kararlılığı.
+• Mükemmel temizlik: Depozit ve çamurumsu atık oluşumunu kontrol altında tutar. Yağ değişim aralıkları mineral yağlardan çok daha uzun.
+• Mükemmel uyum: Soğutma sistemlerindeki sızdırmazlık elemanlarıyla tamamen uyumlu; mineral yağlarla karışabilir.
+• Çok iyi karışma performansı: CFC/HCFC kullanımında düşük sıcaklıklarda üstün karışma.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+DIN 51503 KAA, KC`,
+  },
   "tonna-s3-m-68": {
     name: "Shell Tonna S3 M 68", grade: "ISO VG 68", series: "Tonna S3 M", type: "Kızak Yağı",
     api: "ISO 6743-13 G", acea: "DIN 51502 CGLP",
     approvals: ["Cincinnati Machine P-47", "Mori Seiki", "Mazak"],
-    description: "Tezgah kızakları ve kayar tablalar için geliştirilmiş özel kızak yağı. Stick-slip önleyici formülasyonu sayesinde hassas ilerleme hareketi ve titreşimsiz çalışma sağlar.",
-    features: ["Stick-slip önleme", "Hassas ilerleme kontrolü", "Titreşimsiz çalışma", "CNC tezgah uyumluluğu"],
+    description: "Tezgah kızakları ve kayar tablalar için özel kızak yağı. Stick-slip titreşimleri elimine ederek hassas ilerleme hareketi ve yüzey kalitesi sağlar.",
+    features: ["Stick-slip önleme", "Hassas ilerleme kontrolü", "CNC tezgah uyumlu", "Korozyon önleme"],
+    fullDescription: `Shell Tonna S3 M yağları, tezgah kızakları ve tablalarının yağlanması için özel olarak tasarlanmıştır. Yüksek oranda rafine edilmiş mineral yağ temeli ile yüzeye tutunma, aşınma önleme ve kayma önleme katıkları içerir.
+
+UYGULAMALAR
+• Tezgahların kızak, tabla ve besleme mekanizmaları (döküm ve sentetik malzemeler dahil)
+• Tezgahların hidrolik sistemleri (kızak ve hidrolik için tek tip yağ)
+• Tezgah dişli kutuları ve milleri
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel sürtünme özellikleri: Yavaş hareket eden sistemlerde stick-slip önleme, kesintisiz hareket ve yüzey kalitesi sağlar.
+• Gelişmiş teknoloji: Tezgah üreticileriyle işbirliğinde geliştirilmiştir.
+• Güçlü yapışma: Kesme sıvılarıyla kolayca yıkanıp gitmez.
+• Su ayrışması: Suda çözünen sıvılardan kolaylıkla ayrılır.
+• Aşınma önleme: Kızaklar, dişliler, rulmanlar ve hidrolik elemanlar için koruma.
+• Korozyon önleme: Suda çözünen kesme sıvısı kullanımında yüzeyleri korur.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+ISO 11158/6743-4 HM
+DIN CGLP
+Cincinnati Machine P-47 (ISO VG68) / P-50 (ISO VG220)`,
   },
-  // ── Diala — Transformer oils ──────────────────────────────────────
+  "tonna-s3-m-220": {
+    name: "Shell Tonna S3 M 220", grade: "ISO VG 220", series: "Tonna S3 M", type: "Kızak Yağı",
+    api: "ISO 6743-13 G", acea: "DIN 51502 CGLP",
+    approvals: ["Cincinnati Machine P-50", "Mori Seiki", "Mazak"],
+    description: "Ağır kızak uygulamaları için ISO VG 220 kızak yağı. Yavaş ilerleme mekanizmalarında stick-slip önleme ve üstün yüzey kalitesi için yüksek viskoziteli formül.",
+    features: ["Ağır kızak uygulamaları", "Stick-slip önleme", "Yüksek viskozite kararlılığı", "Su ayrışması"],
+    fullDescription: `Shell Tonna S3 M yağları, tezgah kızakları ve tablalarının yağlanması için özel olarak tasarlanmıştır. Yüksek oranda rafine edilmiş mineral yağ temeli ile yüzeye tutunma, aşınma önleme ve kayma önleme katıkları içerir.
+
+UYGULAMALAR
+• Tezgahların kızak, tabla ve besleme mekanizmaları (döküm ve sentetik malzemeler dahil)
+• Tezgahların hidrolik sistemleri (kızak ve hidrolik için tek tip yağ)
+• Tezgah dişli kutuları ve milleri
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel sürtünme özellikleri: Yavaş hareket eden sistemlerde stick-slip önleme, kesintisiz hareket ve yüzey kalitesi sağlar.
+• Gelişmiş teknoloji: Tezgah üreticileriyle işbirliğinde geliştirilmiştir.
+• Güçlü yapışma: Kesme sıvılarıyla kolayca yıkanıp gitmez.
+• Su ayrışması: Suda çözünen sıvılardan kolaylıkla ayrılır.
+• Aşınma önleme: Kızaklar, dişliler, rulmanlar ve hidrolik elemanlar için koruma.
+• Korozyon önleme: Suda çözünen kesme sıvısı kullanımında yüzeyleri korur.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+ISO 11158/6743-4 HM
+DIN CGLP
+Cincinnati Machine P-47 (ISO VG68) / P-50 (ISO VG220)`,
+  },
+  "turbo-t-32": {
+    name: "Shell Turbo T 32", grade: "ISO VG 32", series: "Turbo T", type: "Türbin Yağı",
+    api: "ISO 8068 TSA", acea: "DIN 51515-1 L-TD",
+    approvals: ["Siemens TLV 9013 04", "ABB HTGD 90117R", "Alstom NPA P5001"],
+    description: "Yüksek güçlü buhar türbinleri için geliştirilmiş endüstriyel türbin yağı. Siemens, ABB ve Alstom onaylı; mükemmel oksidasyon kararlılığı ve su ayrışma performansı.",
+    features: ["Siemens ve ABB onaylı", "Mükemmel oksidasyon kararlılığı", "Üstün sudan ayrılma", "Mükemmel filtrelenebilme"],
+    fullDescription: `Yüksek Performanslı Endüstriyel Türbin Yağı. Shell Turbo T ürünleri, günümüzün ve gelecekteki yüksek güçlü buhar türbinlerinin gereksinimlerini karşılayacak şekilde geliştirilmiştir.
+
+UYGULAMALAR
+• Endüstriyel buhar türbinleri: Ana mil yatakları, mekanik dişliler, kontrol valfleri
+• Daha geniş endüstriyel uygulamalar: Yüksek pas ve oksidasyon koruması gereken sistemler
+• Turbo kompresörler
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel termal ve oksidasyon kararlılığı: Çamurumsu ürünlerin ve zararlı yan ürünlerin oluşumunu önler.
+• Mükemmel sudan ayrılma: Suyu sistemi güvenli hale getirmek için kolayca dreyn eder.
+• Mükemmel filtrelenebilirlik: Su veya kontaminasyon varlığında dahi üstün filtrasyon.
+• Korozyona karşı koruma: Yüksek kaliteli bazyağ ve katıklar metal yüzeyleri korur.
+• Mükemmel havayı defetme: Havanın hızlı uzaklaştırılması; köpük oluşumunu önler.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+DIN 51515-1
+ISO 8068
+SIEMENS TLV 9013 04
+ABB HTGD 90117R
+ALSTOM NPA P5001`,
+  },
+  "turbo-t-46": {
+    name: "Shell Turbo T 46", grade: "ISO VG 46", series: "Turbo T", type: "Türbin Yağı",
+    api: "ISO 8068 TSA", acea: "DIN 51515-1 L-TD",
+    approvals: ["Siemens TLV 9013 04", "ABB HTGD 90117R", "Alstom NPA P5001"],
+    description: "Buhar türbinleri için ISO VG 46 endüstriyel türbin yağı. Korozyon önleme, mükemmel su ayrışma ve filtrasyon özellikleriyle uzun sistem ömrü.",
+    features: ["Siemens ve ABB onaylı", "Korozyon önleme", "Mükemmel sudan ayrılma", "Turbo kompresör uyumlu"],
+    fullDescription: `Yüksek Performanslı Endüstriyel Türbin Yağı. Shell Turbo T ürünleri, günümüzün ve gelecekteki yüksek güçlü buhar türbinlerinin gereksinimlerini karşılayacak şekilde geliştirilmiştir.
+
+UYGULAMALAR
+• Endüstriyel buhar türbinleri: Ana mil yatakları, mekanik dişliler, kontrol valfleri
+• Daha geniş endüstriyel uygulamalar: Yüksek pas ve oksidasyon koruması gereken sistemler
+• Turbo kompresörler
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel termal ve oksidasyon kararlılığı: Çamurumsu ürünlerin ve zararlı yan ürünlerin oluşumunu önler.
+• Mükemmel sudan ayrılma: Suyu sistemi güvenli hale getirmek için kolayca dreyn eder.
+• Mükemmel filtrelenebilirlik: Su veya kontaminasyon varlığında dahi üstün filtrasyon.
+• Korozyona karşı koruma: Yüksek kaliteli bazyağ ve katıklar metal yüzeyleri korur.
+• Mükemmel havayı defetme: Havanın hızlı uzaklaştırılması; köpük oluşumunu önler.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+DIN 51515-1
+ISO 8068
+SIEMENS TLV 9013 04
+ABB HTGD 90117R
+ALSTOM NPA P5001`,
+  },
+  "turbo-t-68": {
+    name: "Shell Turbo T 68", grade: "ISO VG 68", series: "Turbo T", type: "Türbin Yağı",
+    api: "ISO 8068 TSA", acea: "DIN 51515-1 L-TD",
+    approvals: ["Siemens TLV 9013 04", "ABB HTGD 90117R", "Alstom NPA P5001"],
+    description: "Yüksek güçlü buhar türbinleri için ISO VG 68 türbin yağı. Yüksek pas ve oksidasyon koruması gereken endüstriyel uygulamalar ve turbo kompresörler için.",
+    features: ["Yüksek oksidasyon koruması", "Siemens ve ABB onaylı", "Mükemmel filtrelenebilme", "Havayı defetme özelliği"],
+    fullDescription: `Yüksek Performanslı Endüstriyel Türbin Yağı. Shell Turbo T ürünleri, günümüzün ve gelecekteki yüksek güçlü buhar türbinlerinin gereksinimlerini karşılayacak şekilde geliştirilmiştir.
+
+UYGULAMALAR
+• Endüstriyel buhar türbinleri: Ana mil yatakları, mekanik dişliler, kontrol valfleri
+• Daha geniş endüstriyel uygulamalar: Yüksek pas ve oksidasyon koruması gereken sistemler
+• Turbo kompresörler
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel termal ve oksidasyon kararlılığı: Çamurumsu ürünlerin ve zararlı yan ürünlerin oluşumunu önler.
+• Mükemmel sudan ayrılma: Suyu sistemi güvenli hale getirmek için kolayca dreyn eder.
+• Mükemmel filtrelenebilirlik: Su veya kontaminasyon varlığında dahi üstün filtrasyon.
+• Korozyona karşı koruma: Yüksek kaliteli bazyağ ve katıklar metal yüzeyleri korur.
+• Mükemmel havayı defetme: Havanın hızlı uzaklaştırılması; köpük oluşumunu önler.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+DIN 51515-1
+ISO 8068
+SIEMENS TLV 9013 04
+ABB HTGD 90117R
+ALSTOM NPA P5001`,
+  },
+  "turbo-cc-32": {
+    name: "Shell Turbo CC 32", grade: "ISO VG 32", series: "Turbo CC", type: "Kombine Çevrim Türbin Yağı",
+    api: "ISO 8068 TSE/TGE", acea: "DIN 51515-1 L-TD",
+    approvals: ["Siemens TLV 9013 04", "ABB HTGD 90117R", "Alstom NPA P5001", "GE GEK 101941", "Westinghouse"],
+    description: "Kombine çevrim sistemleri için özel endüstriyel türbin yağı. Siemens, ABB, GE ve Westinghouse onaylı; ağır yük dişli kapasitesi ve mükemmel oksidasyon kararlılığı.",
+    features: ["Kombine çevrim türbinleri", "Ağır yük dişli kapasitesi", "Siemens/GE/ABB onaylı", "Mükemmel oksidasyon kararlılığı"],
+    fullDescription: `Yüksek Performanslı Endüstriyel Kombine Çevrim Türbin Yağı. Shell Turbo CC, kombine çevrim sisteminin bulunduğu buhar ve gaz türbinlerindeki en zor şartlara dayanıklı formülasyonuyla öne çıkar.
+
+UYGULAMALAR
+• Kombine çevrim sistemleri: Türbin ana yatakları, dişliler, kontrol valfleri ve governor yağı
+• Buhar ve gaz türbinleri: Yüksek yük taşıma kapasitesi gerektiren standart türbinler
+• Ağır yük altında çalışan dişli sistemleri
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel termal ve oksidasyon kararlılığı: Çok zor şartlarda viskoziteyi korur; zararlı ürün ve çamur oluşumunu önler.
+• Çok iyi sudan ayrılma: Fazla suyu dreyn ederek sistemi güvenli hale getirir.
+• Mükemmel havayı defetme: Köpük oluşumuna sebep vermez.
+• Mükemmel yük taşıma kapasitesi: Ağır yük altındaki dişli sistemlerinde kullanılabilir.
+• Korozyona karşı mükemmel koruma: Sistem ömrünü uzatır.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+ISO 6743/5, ISO 8068
+ISO-L-TSA / -TSE / -TGB / -TGE, type AR
+DIN 51515-1, L-TD
+GEK 32568E, GEK 101941
+SIEMENS TLV 9013 04
+WESTINGHOUSE 21T 0591
+ABB HTGD 90117R
+ALSTOM NPA P5001
+SOLAR ES 9-224U
+MHI 600 87182`,
+  },
+  "turbo-cc-46": {
+    name: "Shell Turbo CC 46", grade: "ISO VG 46", series: "Turbo CC", type: "Kombine Çevrim Türbin Yağı",
+    api: "ISO 8068 TSE/TGE", acea: "DIN 51515-1 L-TD",
+    approvals: ["Siemens TLV 9013 04", "ABB HTGD 90117R", "Alstom NPA P5001", "GE GEK 101941", "Westinghouse"],
+    description: "Kombine çevrim sistemleri için ISO VG 46 türbin yağı. Buhar ve gaz türbinlerinde ağır yük dişli sistemi dahil tek tip yağ olarak kullanılabilir.",
+    features: ["Kombine çevrim uzmanlığı", "Tek tip sistem yağı", "Çok sayıda OEM onayı", "Mükemmel sudan ayrılma"],
+    fullDescription: `Yüksek Performanslı Endüstriyel Kombine Çevrim Türbin Yağı. Shell Turbo CC, kombine çevrim sisteminin bulunduğu buhar ve gaz türbinlerindeki en zor şartlara dayanıklı formülasyonuyla öne çıkar.
+
+UYGULAMALAR
+• Kombine çevrim sistemleri: Türbin ana yatakları, dişliler, kontrol valfleri ve governor yağı
+• Buhar ve gaz türbinleri: Yüksek yük taşıma kapasitesi gerektiren standart türbinler
+• Ağır yük altında çalışan dişli sistemleri
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel termal ve oksidasyon kararlılığı: Çok zor şartlarda viskoziteyi korur; zararlı ürün ve çamur oluşumunu önler.
+• Çok iyi sudan ayrılma: Fazla suyu dreyn ederek sistemi güvenli hale getirir.
+• Mükemmel havayı defetme: Köpük oluşumuna sebep vermez.
+• Mükemmel yük taşıma kapasitesi: Ağır yük altındaki dişli sistemlerinde kullanılabilir.
+• Korozyona karşı mükemmel koruma: Sistem ömrünü uzatır.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+ISO 6743/5, ISO 8068
+ISO-L-TSA / -TSE / -TGB / -TGE, type AR
+DIN 51515-1, L-TD
+GEK 32568E, GEK 101941
+SIEMENS TLV 9013 04
+WESTINGHOUSE 21T 0591
+ABB HTGD 90117R
+ALSTOM NPA P5001
+SOLAR ES 9-224U
+MHI 600 87182`,
+  },
+  "turbo-fluid-dr-46": {
+    name: "Shell Turbo S5 DR 46", grade: "ISO VG 46", series: "Turbo S5 DR", type: "Türbin / Sirkülasyon Yağı",
+    api: "ISO 8068", acea: "DIN 51515-1",
+    approvals: [],
+    description: "Yüksek performanslı endüstriyel türbin ve sirkülasyon yağı. Özel formülasyonuyla türbin sistemlerinde uzun servis ömrü ve güvenilir koruma.",
+    features: ["Türbin ve sirkülasyon uygulamaları", "Yüksek termal stabilite", "Oksidasyon direnci", "Uzun servis ömrü"],
+    fullDescription: `Yüksek Performanslı Endüstriyel Türbin Yağı. Shell Turbo T ürünleri, günümüzün ve gelecekteki yüksek güçlü buhar türbinlerinin gereksinimlerini karşılayacak şekilde geliştirilmiştir.
+
+UYGULAMALAR
+• Endüstriyel buhar türbinleri: Ana mil yatakları, mekanik dişliler, kontrol valfleri
+• Daha geniş endüstriyel uygulamalar: Yüksek pas ve oksidasyon koruması gereken sistemler
+• Turbo kompresörler
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel termal ve oksidasyon kararlılığı: Çamurumsu ürünlerin ve zararlı yan ürünlerin oluşumunu önler.
+• Mükemmel sudan ayrılma: Suyu sistemi güvenli hale getirmek için kolayca dreyn eder.
+• Mükemmel filtrelenebilirlik: Su veya kontaminasyon varlığında dahi üstün filtrasyon.
+• Korozyona karşı koruma: Yüksek kaliteli bazyağ ve katıklar metal yüzeyleri korur.
+• Mükemmel havayı defetme: Havanın hızlı uzaklaştırılması; köpük oluşumunu önler.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+DIN 51515-1
+ISO 8068
+SIEMENS TLV 9013 04
+ABB HTGD 90117R
+ALSTOM NPA P5001`,
+  },
+  "turbo-j-32": {
+    name: "Shell Turbo J 32", grade: "ISO VG 32", series: "Turbo J", type: "Türbin Yağı",
+    api: "ISO 8068 TSA", acea: "DIN 51515-1 L-TD",
+    approvals: ["Siemens TLV 9013 04", "ABB HTGD 90117R", "Alstom NPA P5001"],
+    description: "Endüstriyel buhar türbinleri için ISO VG 32 türbin yağı. Ana mil yatakları, mekanik dişliler ve kontrol valfleri için yüksek oksidasyon ve pas koruması.",
+    features: ["Yüksek oksidasyon koruması", "Siemens ve ABB onaylı", "Mükemmel sudan ayrılma", "Turbo kompresör uyumlu"],
+    fullDescription: `Yüksek Performanslı Endüstriyel Türbin Yağı. Shell Turbo T ürünleri, günümüzün ve gelecekteki yüksek güçlü buhar türbinlerinin gereksinimlerini karşılayacak şekilde geliştirilmiştir.
+
+UYGULAMALAR
+• Endüstriyel buhar türbinleri: Ana mil yatakları, mekanik dişliler, kontrol valfleri
+• Daha geniş endüstriyel uygulamalar: Yüksek pas ve oksidasyon koruması gereken sistemler
+• Turbo kompresörler
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel termal ve oksidasyon kararlılığı: Çamurumsu ürünlerin ve zararlı yan ürünlerin oluşumunu önler.
+• Mükemmel sudan ayrılma: Suyu sistemi güvenli hale getirmek için kolayca dreyn eder.
+• Mükemmel filtrelenebilirlik: Su veya kontaminasyon varlığında dahi üstün filtrasyon.
+• Korozyona karşı koruma: Yüksek kaliteli bazyağ ve katıklar metal yüzeyleri korur.
+• Mükemmel havayı defetme: Havanın hızlı uzaklaştırılması; köpük oluşumunu önler.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+DIN 51515-1
+ISO 8068
+SIEMENS TLV 9013 04
+ABB HTGD 90117R
+ALSTOM NPA P5001`,
+  },
   "diala-s4-zx-i": {
     name: "Shell Diala S4 ZX-I", grade: "Sınıf II İnhibisyonlu", series: "Diala S4 ZX-I", type: "Trafo Yağı",
-    api: "IEC 60296 Sınıf II", acea: "IEC 60422 / ASTM D3487",
+    api: "IEC 60296 Ed.4", acea: "IEC 60422 / ASTM D3487",
     approvals: ["ABB", "Siemens", "Schneider Electric"],
-    description: "Güç transformatörleri ve yüksek voltajlı şalt ekipmanları için geliştirilmiş ultra yüksek performanslı mineral izolasyon yağı. Üstün termal ve elektriksel özellikleriyle uzun ekipman ömrü sağlar.",
-    features: ["Üstün dielektrik dayanımı", "Düşük viskozite — gelişmiş soğutma", "Uzun oksidasyon ömrü", "ABB ve Siemens onaylı"],
+    description: "GTL teknolojisiyle üretilen yeni nesil trafo yağı. Sıfır kükürt içeriği, endüstri standardının 5 katı oksidasyon stabilitesi ve uzun ekipman ömrü. Güç transformatörleri ve yüksek voltajlı şalt ekipmanları için.",
+    features: ["GTL teknolojisi", "Sıfır kükürt içeriği", "5x oksidasyon stabilitesi", "ABB ve Siemens onaylı"],
+    fullDescription: `Shell Diala S4 ZX-I, Shell'in trafo yağı ailesindeki en yeni ürün olup GTL teknolojisiyle üretilmiştir.
+
+UYGULAMALAR
+• Her türlü güç iletim ve dağıtım transformatörleri
+• Yüksek voltajlı şalt ekipmanları
+
+PERFORMANS ÖZELLİKLERİ
+• GTL Teknolojisi: Yeni nesil formülasyon
+• Sıfır kükürt içeriği: Bakır korozyon riski tamamen ortadan kalkar
+• Endüstri standardının 5 katı oksidasyon stabilitesi
+• Üstün termal özellikler: Yüksek aşırı yük şartlarında kesintisiz çalışma
+• Düşük sıcaklık akışkanlığı: -30°C'ye kadar
+
+STANDARTLAR VE SPESİFİKASYONLAR
+IEC 60296:Edition 4 (2012)
+ABB, Siemens, Schneider Electric onaylı
+Parlama Noktası: 191°C
+Akma Noktası: -30°C
+Kükürt İçeriği: 0`,
+  },
+  "heat-transfer-oil-s2": {
+    name: "Shell Heat Transfer Oil S2", grade: "—", series: "Heat Transfer S2", type: "Isı Transfer Yağı",
+    api: "ISO 6743-12 Q", acea: "DIN 51522",
+    approvals: [],
+    description: "Kapalı ısı transfer sistemleri için 320°C'ye kadar çalışabilen yüksek performanslı ısı transfer yağı. Düşük buhar basıncı, yüksek ısı transfer katsayısı ve termal kararlılık.",
+    features: ["320°C çalışma sıcaklığı", "Yüksek termal kararlılık", "Düşük buhar basıncı", "Geniş uygulama yelpazesi"],
+    fullDescription: `Shell Heat Transfer Oil S2 (eski adı: Shell Thermia B), 320°C'ye kadar çalışan kapalı ısı transfer sistemleri için özel olarak tasarlanmıştır. Film sıcaklığı 340°C'yi geçmemelidir.
+
+UYGULAMALAR
+Kimya tesisleri, tekstil fabrikaları, boyahane, kontrplak fabrikaları ve yağ ısıtmalı radyatörlerde sirkülasyonlu ısı transfer sistemleri.
+
+PERFORMANS ÖZELLİKLERİ
+• Yüksek oksidasyon ve termal kararlılık
+• Düşük viskozite ile yüksek ısı transfer katsayısı
+• İyi çözücü özelliği
+• Korozif olmayan yapı
+• Düşük buhar basıncı
+
+TİPİK FİZİKSEL ÖZELLİKLER
+Yoğunluk @ 15°C: 895 kg/m³
+Parlama Noktası (PMCC): 220°C
+Parlama Noktası (COC): 230°C
+Akma Noktası: -12°C
+Kinematik Viskozite @ 40°C: 32 mm²/s
+Kaynama Noktası Başlangıcı: >355°C
+
+STANDARTLAR VE SPESİFİKASYONLAR
+ISO 6743-12 Q
+DIN 51522`,
+  },
+  "naturelle-hf-e": {
+    name: "Shell Naturelle HF-E", grade: "ISO VG 46", series: "Naturelle HF-E", type: "Biyolojik Parçalanabilir Hidrolik Yağ",
+    api: "ISO 15380 HEES", acea: "VDMA 24568",
+    approvals: ["Denison HF-0/HF-1/HF-2", "Eaton Vickers M-2950-S"],
+    description: "Çevre dostu biyolojik parçalanabilir hidrolik yağ. Yüksek viskozite indeksi ile geniş sıcaklık aralığında performans; nehir kenarı, orman ve deniz uygulamaları için.",
+    features: ["Biyolojik parçalanabilir", "Çevre dostu", "Yüksek viskozite indeksi", "Denison HF-0 onaylı"],
+    fullDescription: `Shell Naturelle HF-E, çevre hassasiyeti gerektiren uygulamalar için geliştirilmiş biyolojik parçalanabilir hidrolik yağıdır.
+
+UYGULAMALAR
+• Endüstriyel hidrolik sistemler
+• Hidrolik güç iletim sistemleri
+• Denizcilik ve nehir kıyısı uygulamaları
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık, oksidasyona dayanım, suya karşı dayanıklılık
+• Olağanüstü aşınma önleme performansı (Denison T6C ve Vickers 35VQ25 testleri)
+• Mükemmel filtrelenebilme ve havayı defetme
+• İyi sudan ayrılma
+• Sızdırmazlık elemanları ve boya uyumluluğu
+
+STANDARTLAR VE SPESİFİKASYONLAR
+ISO 15380 HEES
+DENISON HF-0, HF-1, HF-2
+Eaton (Vickers) M-2950-S`,
+  },
+  "tequla-v-32": {
+    name: "Shell Tequla V 32", grade: "ISO VG 32", series: "Tequla V", type: "Yüksek VI Hidrolik Yağ",
+    api: "ISO 11158 HV", acea: "DIN 51524 Part 3",
+    approvals: ["DENISON HF-0/HF-1/HF-2", "Eaton Vickers"],
+    description: "Yüksek viskozite indeksli endüstriyel hidrolik yağ. Değişken sıcaklık koşullarındaki sistemlerde sabit viskozite performansı ve üstün aşınma koruması.",
+    features: ["Yüksek viskozite indeksi", "Termal kararlılık", "Olağanüstü aşınma önleme", "Mükemmel filtrelenebilme"],
+    fullDescription: `Shell Tequla V 32, yüksek viskozite indeksli mineral yağlar ve üstün katık paketi ile imal edilmiş yüksek performanslı hidrolik yağıdır.
+
+UYGULAMALAR
+• Endüstriyel hidrolik sistemler
+• Hidrolik güç iletim sistemleri
+• Denizcilik sektöründe hidrolik uygulamalar
+
+PERFORMANS ÖZELLİKLERİ
+• Termal kararlılık: Yüksek sıcaklıklarda çamurumsu ürünler oluşturmadan temiz çalışma.
+• Oksidasyona dayanım: Hava, su ve bakır varlığında TOST testleri başarılı.
+• Olağanüstü aşınma önleme: Denison T6C ve Vickers 35VQ25 testlerinden geçmiş.
+• Mükemmel filtrelenebilme: Ultra-hassas filtreler için uygun.
+• Mükemmel havayı defetme ve köpüğü önleme.
+• İyi sudan ayrılma: Emülsiyon oluşumuna direnç.
+• Sızdırmazlık elemanları ve boya uyumluluğu.`,
+  },
+  "textile-needle-s2-m-32": {
+    name: "Shell Textile Needle S2 M 32", grade: "ISO VG 32", series: "Textile Needle S2 M", type: "Tekstil Makina Yağı",
+    api: "—", acea: "—",
+    approvals: [],
+    description: "Tekstil endüstrisi için geliştirilmiş iğne mekanizması yağı. Yıkanabilir formülasyon; boyama öncesi çabuk yıkama özelliği ve haşıl birikimini önleme.",
+    features: ["Yıkanabilir formülasyon", "Haşıl birikimini önler", "Boyahane uyumlu", "Korozyon koruması"],
+    fullDescription: `Shell Textile Needle S2 M 32 (eski adı: Shell Vexilla G), tekstil endüstrisi için özel geliştirilmiş iğne mekanizması yağıdır.
+
+UYGULAMALAR
+• Yuvarlak yatak örgü makinelerinde iğne mekanizmaları (yün, pamuk, ipek, sentetik ipek, rayon işleme)
+• Örgü işlemi sonrası boyama öncesi hızlı yıkama gerektiren uygulamalar
+
+PERFORMANS ÖZELLİKLERİ
+• Yıkanabilir tip formülasyon: Boyama işlemi öncesi çabuk yıkanabilir
+• Haşıl birikimini önler: Örgü işleminde temiz çalışma
+• Oksidasyon direnci
+• Ekipmana korozyon koruması`,
+  },
+  "air-tool-s2-a-100": {
+    name: "Shell Air Tool S2 A 100", grade: "ISO VG 100", series: "Air Tool S2 A", type: "Pnömatik Alet Yağı",
+    api: "—", acea: "—",
+    approvals: ["Gardner-Denver"],
+    description: "Darbe tipi matkap ve pnömatik alet yağı. Özel mineral bazyağı ve katıklar ile darbe yükü koşullarında üstün aşınma koruması ve soğuk ortam akışkanlığı.",
+    features: ["Darbe yükü koruması", "Üstün aşınma önleme", "Soğuk ortam akışkanlığı", "Yüksek oksidasyon direnci"],
+    fullDescription: `Shell Air Tool S2 A 100 (eski adı: Shell Torcula 100), darbe tipli matkaplar ve diğer pnömatik aletlerin en zorlu koşullarda çalışması için formüle edilmiştir.
+
+UYGULAMALAR
+• Özellikle darbe tipli pnömatik aletler (kaya sondajı dahil)
+• Yağ buharı yağlama sistemleri ve hava araçları
+• Su varlığında dişli ve yatak yağlaması
+
+PERFORMANS ÖZELLİKLERİ
+• Mükemmel yağlama ve aşınma önleme: Darbe yükü koşullarında üstün performans.
+• Mükemmel oksidasyon direnci ve termal kararlılık: Yüksek çalışma sıcaklıklarında çamur ve birikinti oluşumuna dirençli.
+• Olağanüstü düşük sıcaklık akışkanlığı: Soğuk koşullarda akış özelliklerini korur.
+• Mükemmel korozyon koruması: Su varlığında dahi üstün koruma.
+
+TİPİK FİZİKSEL ÖZELLİKLER
+ISO Viskozite Sınıfı: 100
+Kinematik Viskozite @ 40°C: 100 mm²/s | @ 100°C: 11,8 mm²/s
+Viskozite İndeksi: 107
+Parlama Noktası (COC): 232°C | Akma Noktası: -30°C
+Yoğunluk @ 15°C: 895 kg/m³`,
+  },
+  "edelex-956": {
+    name: "Shell Edelex 956", grade: "—", series: "Edelex", type: "Naftanik Proses Yağı",
+    api: "US FDA §178.3620(c)", acea: "ISO VGC 0.820-0.849",
+    approvals: [],
+    description: "Yüksek çözücü özellikli naftanik proses yağı. Lastik, plastik ve termoplastik elastomer üretiminde ekstender; tekstil ve deri işlemede taşıyıcı sıvı olarak kullanılır.",
+    features: ["Yüksek naftanik çözücülük", "Lastik/plastik ekstender", "FDA uyumlu", "Düşük aromatik içerik"],
+    fullDescription: `Shell Edelex yağları, açık renk, düşük koku ve yüksek çözücülük gerektiren uygulamalarda kullanılan yüksek kaliteli naftanik proses yağlarıdır.
+
+UYGULAMALAR
+• Ekstender ve plastikleştirici: Yüksek kaliteli kauçuk, plastik, TPE ve teknik lastik malzeme üretimi
+• Taşıyıcı sıvı: Yağ katkıları, tekstil yardımcıları, deri işlem yağları, köpük kesiciler ve boyalar
+• Kararlılık ve üstün çözücülük gerektiren uygulamalar
+
+PERFORMANS ÖZELLİKLERİ
+• Yoğun rafinasyon işleminden geçmiş yüksek kaliteli naftanik yağ
+• AB tehlikeli maddeler direktifi kapsamında sınıflandırılmayan zararsız formül
+• Naftanik içerik sayesinde yüksek çözücülük
+• Açık renk ve gelişmiş kararlılık
+
+STANDARTLAR VE SPESİFİKASYONLAR
+US FDA §178.3620(c), §175.105, §176.200, §177.2600, §177.2800, §178.3570`,
+  },
+  "catenex-s-321": {
+    name: "Shell Catenex S 321", grade: "—", series: "Catenex", type: "Parafinik Proses Yağı",
+    api: "US FDA §178.3620(c)", acea: "ISO VGC <0.820",
+    approvals: [],
+    description: "Yüksek parlama noktalı parafinik proses yağı. Otomotiv lastiği, sentetik kauçuk ve yapıştırıcı üretiminde ekstender; kauçuk formülasyonlarında referans yağ olarak kullanılır.",
+    features: ["Yüksek parlama noktası", "Parafinik proses yağı", "Kauçuk formülasyonları referansı", "FDA uyumlu"],
+    fullDescription: `Shell Catenex, parafinik proses yağı olarak sınıflandırılan yüksek kaliteli endüstriyel yağdır.
+
+UYGULAMALAR
+• Ekstender ve plastik yapıcı: Sentetik ve doğal kauçuk, otomotiv lastiği, conta ve yapıştırıcı üretimi
+• Taşıyıcı sıvı: Yağ katkıları, tekstil yardımcıları, deri ve kürk işlem yağları
+• Parafinik yağların uygun olduğu çeşitli uygulamalar
+
+PERFORMANS ÖZELLİKLERİ
+• Yüksek parlama noktası: Naftanik yağlara kıyasla daha yüksek
+• Yoğun rafinasyon ile kararlı ürün
+• Birçok onaylı formülde ana madde
+• Geniş viskozite yelpazesi
+
+STANDARTLAR VE SPESİFİKASYONLAR
+Parafinik proses yağları (VGC < 0.820)
+US FDA §178.3620(c), §175.105, §176.200, §177.2260, §177.2600, §177.2800`,
+  },
+  "ondina-x-415": {
+    name: "Shell Ondina X 415", grade: "—", series: "Ondina", type: "Beyaz Mineral Yağ (Farmasötik)",
+    api: "US FDA §172.878", acea: "European Pharmacopoeia",
+    approvals: [],
+    description: "Farmasötik kalitede beyaz mineral yağ. Kozmetik, ilaç ve gıda sektöründe; aroma içermeyen, renksiz ve kokusuz formülasyon. Polisiklik aromatik hidrokarbonlar uzaklaştırılmış.",
+    features: ["Farmasötik kalite", "Renksiz ve kokusuz", "FDA §172.878 onaylı", "PCA uzaklaştırılmış"],
+    fullDescription: `Shell Ondina, İngiltere, Almanya ve Amerika farmasötik spesifikasyonlarını karşılayan yüksek oranda rafine edilmiş beyaz mineral yağlardır. Renksiz, tatsız ve kokusuzdur. Polisiklik aromatik hidrokarbonlar uzaklaştırılmıştır.
+
+UYGULAMALAR
+• Kozmetik ve ilaç sektörü: Kremler, losyonlar, güneş kremi yağları
+• Gıda sektörü ambalajı: Plastik malzeme üretimi
+• Teknik uygulamalar: TPE elastomerlerde taşıyıcı sıvı
+• Oyuncaklar: SBS ve SEBS tipi TPE elastomerleri
+
+PERFORMANS ÖZELLİKLERİ
+• Yüksek saflık: Aromatik bileşenler tamamen uzaklaştırılmış
+• Üstün kalite kontrolü
+• Mükemmel oksidasyon stabilitesi
+• Geniş ürün yelpazesi (naftanik ve parafinik)
+
+STANDARTLAR VE SPESİFİKASYONLAR
+Avrupa Farmakopesi 3. Baskı
+ABD Farmakopesi 23. Baskı
+US FDA §172.878, §178.3620(a)
+İngiltere Mineral Hidrokarbon Yönetmelikleri 1966
+BGA Bülten 38 ve 155`,
+  },
+  "ondina-x-432": {
+    name: "Shell Ondina X 432", grade: "—", series: "Ondina", type: "Beyaz Mineral Yağ (Farmasötik)",
+    api: "US FDA §172.878", acea: "European Pharmacopoeia",
+    approvals: [],
+    description: "Farmasötik kalitede beyaz mineral yağ. Kozmetik, ilaç ve gıda ambalajında kullanılan renksiz, kokusuz formülasyon; FDA ve Avrupa Farmakopesi uyumlu.",
+    features: ["Farmasötik kalite", "FDA §172.878 onaylı", "Renksiz/kokusuz", "Avrupa Farmakopesi uyumlu"],
+    fullDescription: `Shell Ondina X 432, yüksek oranda rafine edilmiş farmasötik kalitede beyaz mineral yağdır.
+
+UYGULAMALAR
+• Kozmetik ve ilaç: Kremler, losyonlar, güneş kremleri
+• Gıda ambalajı: Plastik malzeme üretimi
+• Teknik uygulamalar: TPE elastomerlerde taşıyıcı
+• Oyuncaklar: SBS ve SEBS tipi elastomerleri
+
+PERFORMANS ÖZELLİKLERİ
+• Yüksek saflık: Tüm aromatik bileşenler uzaklaştırılmış
+• Sürekli kalite kontrolü
+• Üstün oksidasyon stabilitesi
+• Renksiz, tatsız ve kokusuz
+
+STANDARTLAR VE SPESİFİKASYONLAR
+Avrupa Farmakopesi 3. Baskı
+ABD Farmakopesi 23. Baskı
+US FDA §172.878, §178.3620
+İngiltere Mineral Hidrokarbon Yönetmelikleri 1966`,
+  },
+  "ondina-x-420": {
+    name: "Shell Ondina X 420", grade: "—", series: "Ondina", type: "Beyaz Mineral Yağ (Farmasötik)",
+    api: "US FDA §172.878", acea: "European Pharmacopoeia",
+    approvals: [],
+    description: "Farmasötik kalitede beyaz mineral yağ. Kozmetik, ilaç ve gıda sektöründe kullanılan renksiz, kokusuz formülasyon; FDA ve Avrupa Farmakopesi uyumlu.",
+    features: ["Farmasötik kalite", "FDA uyumlu", "Renksiz/kokusuz", "Avrupa Farmakopesi uyumlu"],
+    fullDescription: `Shell Ondina X 420 (eski adı: Ondina 919), farmasötik kalitede beyaz mineral yağdır. Kozmetik, ilaç ve gıda ambalajı uygulamaları için renksiz, tatsız ve kokusuz formülasyon.
+
+STANDARTLAR VE SPESİFİKASYONLAR
+Avrupa Farmakopesi | ABD Farmakopesi
+US FDA §172.878, §178.3620`,
+  },
+  "ensis-engine-oil-30": {
+    name: "Shell Ensis Engine Oil 30", grade: "SAE 30", series: "Ensis Engine Oil", type: "Motor Koruma / Konservasyon Yağı",
+    api: "—", acea: "—",
+    approvals: [],
+    description: "Uzun süreli depolama ve nakliye sırasında motor koruması için konservasyon yağı. Paslanma ve korozyona karşı güçlü bariyer oluşturur.",
+    features: ["Motor konservasyon", "Pas ve korozyon koruması", "Uzun depolama uyumlu", "SAE 30"],
+    fullDescription: `Shell Ensis Engine Oil 30, motorların uzun süreli depolanması ve nakliyesi sırasında paslanma ve korozyona karşı koruma sağlayan özel konservasyon yağıdır.
+
+UYGULAMALAR
+• Motor ve makina depolama koruması
+• Uzun süreli nakliye koruması
+
+PERFORMANS ÖZELLİKLERİ
+• Güçlü pas ve korozyon önleme
+• Uzun süreli yüzey koruma filmi`,
+  },
+  "ensis-dw-2462": {
+    name: "Shell Ensis DW 2462", grade: "—", series: "Ensis DW", type: "Konservasyon / Pas Önleyici Yağ",
+    api: "—", acea: "—",
+    approvals: [],
+    description: "Endüstriyel ekipman ve metal yüzeylerin uzun süreli korunması için özel pas önleyici konservasyon yağı.",
+    features: ["Pas önleyici", "Metal yüzey koruması", "Uzun süreli koruma", "Endüstriyel konservasyon"],
+    fullDescription: `Shell Ensis DW 2462, metal yüzeylerin ve endüstriyel ekipmanların uzun süreli depolama ve nakliye sürecinde korunması için geliştirilmiş konservasyon yağıdır.
+
+UYGULAMALAR
+• Metal yüzey koruması
+• Endüstriyel ekipman depolama
+• Uzun süreli konservasyon
+
+PERFORMANS ÖZELLİKLERİ
+• Etkili pas ve korozyon önleme
+• Uzun ömürlü koruma filmi`,
+  },
+  "irus-fluid-c": {
+    name: "Shell Irus Fluid C", grade: "—", series: "Irus Fluid", type: "Özel Endüstriyel Sıvı",
+    api: "—", acea: "—",
+    approvals: [],
+    description: "Özel endüstriyel uygulamalar için geliştirilmiş yüksek performanslı endüstriyel sıvı.",
+    features: ["Özel endüstriyel formülasyon", "Yüksek performans", "Endüstriyel sistemler", "Güvenilir koruma"],
+    fullDescription: `Shell Irus Fluid C, özel endüstriyel uygulamalar için geliştirilmiş yüksek performanslı endüstriyel sıvıdır.
+
+UYGULAMALAR
+• Özel endüstriyel sistemler
+• Endüstriyel prosesler
+
+PERFORMANS ÖZELLİKLERİ
+• Yüksek performanslı endüstriyel formülasyon
+• Güvenilir sistem koruması`,
   },
 };
 
