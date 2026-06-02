@@ -770,7 +770,8 @@
       "f0": "Ashless formula",
       "f1": "Servo valve compatible",
       "f2": "Superior oxidation stability",
-      "f3": "Fine filter compatible"
+      "f3": "Fine filter compatible",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "omala-s2-gx-150": {
       "type": "EP Gear Oil",
@@ -810,7 +811,8 @@
       "f0": "8,000-hour oil life",
       "f1": "Low carbon build-up",
       "f2": "Outstanding oxidation resistance",
-      "f3": "Low volatility"
+      "f3": "Low volatility",
+      "fd": "Premium quality product delivering outstanding performance in oil-injected rotary screw and vane air compressors. Extended service life and trouble-free operation under the most demanding conditions.\n\nPERFORMANCE CHARACTERISTICS\n• Outstanding oxidation resistance: Prevents carbon residue formation in equipment.\n• Extended oil drain intervals: Oil life of up to 8,000 hours.\n• Low volatility: Reduces oil consumption and top-up requirements.\n• High viscosity index: High performance under all operating conditions.\n• Excellent cooling: Fully meets critical cooling requirements.\n• Effective rust and corrosion protection: Extends service intervals.\n• Seal compatibility: Compatible with all components in air compressors."
     },
     "corena-s4-r-46": {
       "type": "Synthetic Rotary Screw/Vane Compressor Oil",
@@ -818,7 +820,8 @@
       "f0": "Fully synthetic",
       "f1": "8,000-hour oil life",
       "f2": "High temperature stability",
-      "f3": "Minimum carbon deposit"
+      "f3": "Minimum carbon deposit",
+      "fd": "Premium quality product delivering outstanding performance in oil-injected rotary screw and vane air compressors. Extended service life and trouble-free operation under the most demanding conditions.\n\nPERFORMANCE CHARACTERISTICS\n• Outstanding oxidation resistance: Prevents carbon residue formation in equipment.\n• Extended oil drain intervals: Oil life of up to 8,000 hours.\n• Low volatility: Reduces oil consumption and top-up requirements.\n• High viscosity index: High performance under all operating conditions.\n• Excellent cooling: Fully meets critical cooling requirements.\n• Effective rust and corrosion protection: Extends service intervals.\n• Seal compatibility: Compatible with all components in air compressors."
     },
     "gadus-s2-v220-2": {
       "type": "EP Grease",
@@ -834,7 +837,8 @@
       "f0": "Turbine-grade water separation",
       "f1": "Long oxidation life",
       "f2": "Siemens and GE approved",
-      "f3": "Foam inhibiting"
+      "f3": "Foam inhibiting",
+      "fd": "Premium quality circulation oil with high viscosity index base oil and zinc-free formulation, providing high-level protection against rust, corrosion and wear.\n\nAPPLICATIONS\n• Circulation systems and plain or rolling element bearings\n• High-speed bearing points\n• Lightly loaded gearboxes\n• Control and hydraulic systems containing steel-bronze or silver surfaces\n\nPERFORMANCE CHARACTERISTICS\n• Excellent oxidation resistance: Resistant at high temperatures in the presence of water, air and metal catalysts.\n• Corrosion protection: Special additives enhance anti-corrosion performance.\n• Low pour point: Advantage in low-temperature applications.\n• Rapid air release and foam inhibition: Air is quickly eliminated to prevent cavitation."
     },
     "tonna-s3-m-68": {
       "type": "Slideway Oil",
@@ -842,7 +846,8 @@
       "f0": "Stick-slip prevention",
       "f1": "Precise feed control",
       "f2": "CNC machine compatible",
-      "f3": "Corrosion prevention"
+      "f3": "Corrosion prevention",
+      "fd": "Shell Tonna S3 M oils are specially designed for the lubrication of machine tool slideways and tables. They are formulated with highly refined mineral oil base and contain adhesion, anti-wear and anti-stick-slip additives.\n\nAPPLICATIONS\n• Machine tool slideways, tables and feed mechanisms (including cast and synthetic materials)\n• Hydraulic systems of machine tools (single oil for slideway and hydraulic use)\n• Machine tool gearboxes and spindles\n\nPERFORMANCE CHARACTERISTICS\n• Excellent friction properties: Prevents stick-slip in slow-moving systems for smooth motion and superior surface quality.\n• Adhesion: Resistant to wash-off by cutting fluids.\n• Water separation: Easily separates from water-soluble fluids.\n• Anti-wear protection: For slideways, gears, bearings and hydraulic components.\n• Corrosion protection: Protects surfaces when water-soluble cutting fluids are used.\n\nSTANDARDS AND SPECIFICATIONS\nISO 11158 / 6743-4 HM | DIN CGLP | Cincinnati Machine P-47 / P-50"
     },
     "diala-s4-zx-i": {
       "type": "Transformer Oil",
@@ -850,7 +855,8 @@
       "f0": "GTL technology",
       "f1": "Zero sulfur content",
       "f2": "5x oxidation stability",
-      "f3": "ABB and Siemens approved"
+      "f3": "ABB and Siemens approved",
+      "fd": "Shell Diala S4 ZX-I is the latest product in Shell's transformer oil family, produced using GTL technology.\n\nAPPLICATIONS\n• All types of power transmission and distribution transformers\n• High-voltage switchgear\n\nPERFORMANCE CHARACTERISTICS\n• GTL Technology: New-generation formulation\n• Zero sulfur content: Copper corrosion risk completely eliminated\n• Five times the oxidation stability of the industry standard\n• Superior thermal properties: Continuous operation under high overload conditions\n• Low-temperature fluidity: Down to -30°C\n\nSTANDARDS AND SPECIFICATIONS\nIEC 60296:Edition 4 (2012) | ABB, Siemens, Schneider Electric approved\nFlash Point: 191°C | Pour Point: -30°C | Sulfur Content: 0"
     },
     "1-esp-x2-0w-20": {
       "type": "Fully Synthetic",
@@ -1960,7 +1966,8 @@
       "f0": "Thermal stability",
       "f1": "Oxidation resistance",
       "f2": "Anti-wear protection",
-      "f3": "Excellent filterability"
+      "f3": "Excellent filterability",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s2-m-46": {
       "type": "Hydraulic Oil",
@@ -1968,7 +1975,8 @@
       "f0": "Thermal stability",
       "f1": "Outstanding anti-wear protection",
       "f2": "Excellent filterability",
-      "f3": "Water separation"
+      "f3": "Water separation",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s2-m-68": {
       "type": "Hydraulic Oil",
@@ -1976,7 +1984,8 @@
       "f0": "High temperature stability",
       "f1": "Outstanding anti-wear protection",
       "f2": "Excellent filterability",
-      "f3": "Water separation"
+      "f3": "Water separation",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s2-m-100": {
       "type": "Hydraulic Oil",
@@ -1984,7 +1993,8 @@
       "f0": "High viscosity stability",
       "f1": "Oxidation resistance",
       "f2": "Anti-wear protection",
-      "f3": "Water separation"
+      "f3": "Water separation",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s2-v-15": {
       "type": "High VI Hydraulic Oil",
@@ -1992,7 +2002,8 @@
       "f0": "High viscosity index",
       "f1": "Wide temperature range",
       "f2": "Thermal stability",
-      "f3": "Excellent filterability"
+      "f3": "Excellent filterability",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s2-v-22": {
       "type": "High VI Hydraulic Oil",
@@ -2000,7 +2011,8 @@
       "f0": "High viscosity index",
       "f1": "Wide temperature performance",
       "f2": "Anti-wear protection",
-      "f3": "Oxidation resistance"
+      "f3": "Oxidation resistance",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s2-v-32": {
       "type": "High VI Hydraulic Oil",
@@ -2008,7 +2020,8 @@
       "f0": "High VI",
       "f1": "Wide temperature range",
       "f2": "Denison HF-0 approved",
-      "f3": "Water separation"
+      "f3": "Water separation",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s2-v-46": {
       "type": "High VI Hydraulic Oil",
@@ -2016,7 +2029,8 @@
       "f0": "High viscosity index",
       "f1": "Most common hydraulic viscosity",
       "f2": "Superior pump protection",
-      "f3": "Excellent filterability"
+      "f3": "Excellent filterability",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s2-v-68": {
       "type": "High VI Hydraulic Oil",
@@ -2024,7 +2038,8 @@
       "f0": "High temperature stability",
       "f1": "Heavy-duty compatible",
       "f2": "High viscosity index",
-      "f3": "Anti-wear protection"
+      "f3": "Anti-wear protection",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s2-v-100": {
       "type": "High VI Hydraulic Oil",
@@ -2032,7 +2047,8 @@
       "f0": "Extra load capacity",
       "f1": "High VI",
       "f2": "Large system compatible",
-      "f3": "Thermal stability"
+      "f3": "Thermal stability",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s3-m-32": {
       "type": "Ashless Hydraulic Oil",
@@ -2040,7 +2056,8 @@
       "f0": "Zinc-free formula",
       "f1": "Servo valve compatible",
       "f2": "Fine filter compatible",
-      "f3": "Wide system compatibility"
+      "f3": "Wide system compatibility",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s3-m-68": {
       "type": "Ashless Hydraulic Oil",
@@ -2048,7 +2065,8 @@
       "f0": "Zinc-free formula",
       "f1": "High temperature stability",
       "f2": "Heavy load capacity",
-      "f3": "Anti-wear protection"
+      "f3": "Anti-wear protection",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s3-m-100": {
       "type": "Ashless Hydraulic Oil",
@@ -2056,7 +2074,8 @@
       "f0": "Zinc-free formula",
       "f1": "Extra load capacity",
       "f2": "Large system compatible",
-      "f3": "Extended service intervals"
+      "f3": "Extended service intervals",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s4-me-32": {
       "type": "Energy-Saving Hydraulic Oil",
@@ -2064,7 +2083,8 @@
       "f0": "Energy saving",
       "f1": "Synthetic technology",
       "f2": "Extended oil life",
-      "f3": "Superior oxidation resistance"
+      "f3": "Superior oxidation resistance",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s4-me-46": {
       "type": "Energy-Saving Hydraulic Oil",
@@ -2072,7 +2092,8 @@
       "f0": "Energy saving",
       "f1": "Synthetic technology",
       "f2": "Extended drain interval",
-      "f3": "Superior anti-wear protection"
+      "f3": "Superior anti-wear protection",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tellus-s4-vx-32": {
       "type": "Wide Temperature Range Hydraulic Oil",
@@ -2080,7 +2101,8 @@
       "f0": "Very wide temperature range",
       "f1": "Synthetic technology",
       "f2": "High viscosity index",
-      "f3": "Cold start advantage"
+      "f3": "Cold start advantage",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "morlina-s2-bl-5": {
       "type": "Circulation / Turbine Oil",
@@ -2088,7 +2110,8 @@
       "f0": "Zinc-free formula",
       "f1": "Ultra-low viscosity",
       "f2": "Pour point -60°C",
-      "f3": "Oxidation resistance"
+      "f3": "Oxidation resistance",
+      "fd": "Premium quality circulation oil with high viscosity index base oil and zinc-free formulation, providing high-level protection against rust, corrosion and wear.\n\nAPPLICATIONS\n• Circulation systems and plain or rolling element bearings\n• High-speed bearing points\n• Lightly loaded gearboxes\n• Control and hydraulic systems containing steel-bronze or silver surfaces\n\nPERFORMANCE CHARACTERISTICS\n• Excellent oxidation resistance: Resistant at high temperatures in the presence of water, air and metal catalysts.\n• Corrosion protection: Special additives enhance anti-corrosion performance.\n• Low pour point: Advantage in low-temperature applications.\n• Rapid air release and foam inhibition: Air is quickly eliminated to prevent cavitation."
     },
     "morlina-s2-bl-22": {
       "type": "Circulation / Turbine Oil",
@@ -2096,7 +2119,8 @@
       "f0": "Zinc-free formula",
       "f1": "High oxidation resistance",
       "f2": "Corrosion protection",
-      "f3": "Low foam tendency"
+      "f3": "Low foam tendency",
+      "fd": "Premium quality circulation oil with high viscosity index base oil and zinc-free formulation, providing high-level protection against rust, corrosion and wear.\n\nAPPLICATIONS\n• Circulation systems and plain or rolling element bearings\n• High-speed bearing points\n• Lightly loaded gearboxes\n• Control and hydraulic systems containing steel-bronze or silver surfaces\n\nPERFORMANCE CHARACTERISTICS\n• Excellent oxidation resistance: Resistant at high temperatures in the presence of water, air and metal catalysts.\n• Corrosion protection: Special additives enhance anti-corrosion performance.\n• Low pour point: Advantage in low-temperature applications.\n• Rapid air release and foam inhibition: Air is quickly eliminated to prevent cavitation."
     },
     "morlina-s2-b-46": {
       "type": "Circulation / Bearing Oil",
@@ -2104,7 +2128,8 @@
       "f0": "Zinc-free formula",
       "f1": "Oxidation resistance",
       "f2": "Corrosion protection",
-      "f3": "Low foam"
+      "f3": "Low foam",
+      "fd": "Premium quality circulation oil with high viscosity index base oil and zinc-free formulation, providing high-level protection against rust, corrosion and wear.\n\nAPPLICATIONS\n• Circulation systems and plain or rolling element bearings\n• High-speed bearing points\n• Lightly loaded gearboxes\n• Control and hydraulic systems containing steel-bronze or silver surfaces\n\nPERFORMANCE CHARACTERISTICS\n• Excellent oxidation resistance: Resistant at high temperatures in the presence of water, air and metal catalysts.\n• Corrosion protection: Special additives enhance anti-corrosion performance.\n• Low pour point: Advantage in low-temperature applications.\n• Rapid air release and foam inhibition: Air is quickly eliminated to prevent cavitation."
     },
     "morlina-s2-b-68": {
       "type": "Circulation / Bearing Oil",
@@ -2112,7 +2137,8 @@
       "f0": "Flash point 240°C",
       "f1": "Zinc-free formula",
       "f2": "Oxidation resistance",
-      "f3": "Corrosion protection"
+      "f3": "Corrosion protection",
+      "fd": "Premium quality circulation oil with high viscosity index base oil and zinc-free formulation, providing high-level protection against rust, corrosion and wear.\n\nAPPLICATIONS\n• Circulation systems and plain or rolling element bearings\n• High-speed bearing points\n• Lightly loaded gearboxes\n• Control and hydraulic systems containing steel-bronze or silver surfaces\n\nPERFORMANCE CHARACTERISTICS\n• Excellent oxidation resistance: Resistant at high temperatures in the presence of water, air and metal catalysts.\n• Corrosion protection: Special additives enhance anti-corrosion performance.\n• Low pour point: Advantage in low-temperature applications.\n• Rapid air release and foam inhibition: Air is quickly eliminated to prevent cavitation."
     },
     "morlina-s2-b-100": {
       "type": "Circulation / Bearing Oil",
@@ -2120,7 +2146,8 @@
       "f0": "Flash point 250°C",
       "f1": "Zinc-free formula",
       "f2": "Extended service interval",
-      "f3": "Corrosion protection"
+      "f3": "Corrosion protection",
+      "fd": "Premium quality circulation oil with high viscosity index base oil and zinc-free formulation, providing high-level protection against rust, corrosion and wear.\n\nAPPLICATIONS\n• Circulation systems and plain or rolling element bearings\n• High-speed bearing points\n• Lightly loaded gearboxes\n• Control and hydraulic systems containing steel-bronze or silver surfaces\n\nPERFORMANCE CHARACTERISTICS\n• Excellent oxidation resistance: Resistant at high temperatures in the presence of water, air and metal catalysts.\n• Corrosion protection: Special additives enhance anti-corrosion performance.\n• Low pour point: Advantage in low-temperature applications.\n• Rapid air release and foam inhibition: Air is quickly eliminated to prevent cavitation."
     },
     "morlina-s2-b-150": {
       "type": "Circulation / Bearing Oil",
@@ -2128,7 +2155,8 @@
       "f0": "ISO VG 150 circulation",
       "f1": "Zinc-free formula",
       "f2": "High temperature stability",
-      "f3": "Corrosion protection"
+      "f3": "Corrosion protection",
+      "fd": "Premium quality circulation oil with high viscosity index base oil and zinc-free formulation, providing high-level protection against rust, corrosion and wear.\n\nAPPLICATIONS\n• Circulation systems and plain or rolling element bearings\n• High-speed bearing points\n• Lightly loaded gearboxes\n• Control and hydraulic systems containing steel-bronze or silver surfaces\n\nPERFORMANCE CHARACTERISTICS\n• Excellent oxidation resistance: Resistant at high temperatures in the presence of water, air and metal catalysts.\n• Corrosion protection: Special additives enhance anti-corrosion performance.\n• Low pour point: Advantage in low-temperature applications.\n• Rapid air release and foam inhibition: Air is quickly eliminated to prevent cavitation."
     },
     "morlina-s2-b-220": {
       "type": "Circulation / Bearing Oil",
@@ -2136,7 +2164,8 @@
       "f0": "Flash point 280°C",
       "f1": "Zinc-free formula",
       "f2": "Heavy industrial compatible",
-      "f3": "Corrosion protection"
+      "f3": "Corrosion protection",
+      "fd": "Premium quality circulation oil with high viscosity index base oil and zinc-free formulation, providing high-level protection against rust, corrosion and wear.\n\nAPPLICATIONS\n• Circulation systems and plain or rolling element bearings\n• High-speed bearing points\n• Lightly loaded gearboxes\n• Control and hydraulic systems containing steel-bronze or silver surfaces\n\nPERFORMANCE CHARACTERISTICS\n• Excellent oxidation resistance: Resistant at high temperatures in the presence of water, air and metal catalysts.\n• Corrosion protection: Special additives enhance anti-corrosion performance.\n• Low pour point: Advantage in low-temperature applications.\n• Rapid air release and foam inhibition: Air is quickly eliminated to prevent cavitation."
     },
     "morlina-s2-b-320": {
       "type": "Circulation / Bearing Oil",
@@ -2144,7 +2173,8 @@
       "f0": "Highest viscosity grade",
       "f1": "Flash point 282°C",
       "f2": "Zinc-free formula",
-      "f3": "Heavy load capacity"
+      "f3": "Heavy load capacity",
+      "fd": "Premium quality circulation oil with high viscosity index base oil and zinc-free formulation, providing high-level protection against rust, corrosion and wear.\n\nAPPLICATIONS\n• Circulation systems and plain or rolling element bearings\n• High-speed bearing points\n• Lightly loaded gearboxes\n• Control and hydraulic systems containing steel-bronze or silver surfaces\n\nPERFORMANCE CHARACTERISTICS\n• Excellent oxidation resistance: Resistant at high temperatures in the presence of water, air and metal catalysts.\n• Corrosion protection: Special additives enhance anti-corrosion performance.\n• Low pour point: Advantage in low-temperature applications.\n• Rapid air release and foam inhibition: Air is quickly eliminated to prevent cavitation."
     },
     "corena-s2-p-68": {
       "type": "Reciprocating Compressor Oil",
@@ -2152,7 +2182,8 @@
       "f0": "Reciprocating compressor specialist",
       "f1": "High temperature protection",
       "f2": "Extended service interval",
-      "f3": "Carbon deposit prevention"
+      "f3": "Carbon deposit prevention",
+      "fd": "Shell Corena S2 P is a compressor oil specially developed for reciprocating type compressors. It delivers high performance even when air discharge temperatures reach up to 220°C.\n\nPERFORMANCE CHARACTERISTICS\n• Extended service intervals: Extends valve and piston maintenance intervals for long, efficient service life.\n• Reliable air lines: Minimises dangerous exothermic reactions caused by carbon deposits and rust residues.\n• High oxidation resistance: Minimises carbon build-up and maximises compressor efficiency.\n• Effective rust and corrosion protection: Extends service intervals.\n• Good air release: Does not cause foam formation.\n• Easy water separation: Oil repels water to prevent oxidation and viscosity increase.\n• Seal compatibility: Compatible with all components in air compressors.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51506 VDL | ISO 6743-3A-DAB"
     },
     "corena-s2-p-100": {
       "type": "Reciprocating Compressor Oil",
@@ -2160,7 +2191,8 @@
       "f0": "Reciprocating compressor specialist",
       "f1": "High oxidation resistance",
       "f2": "Extended service interval",
-      "f3": "Easy water separation"
+      "f3": "Easy water separation",
+      "fd": "Shell Corena S2 P is a compressor oil specially developed for reciprocating type compressors. It delivers high performance even when air discharge temperatures reach up to 220°C.\n\nPERFORMANCE CHARACTERISTICS\n• Extended service intervals: Extends valve and piston maintenance intervals for long, efficient service life.\n• Reliable air lines: Minimises dangerous exothermic reactions caused by carbon deposits and rust residues.\n• High oxidation resistance: Minimises carbon build-up and maximises compressor efficiency.\n• Effective rust and corrosion protection: Extends service intervals.\n• Good air release: Does not cause foam formation.\n• Easy water separation: Oil repels water to prevent oxidation and viscosity increase.\n• Seal compatibility: Compatible with all components in air compressors.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51506 VDL | ISO 6743-3A-DAB"
     },
     "corena-s2-p-150": {
       "type": "Reciprocating Compressor Oil",
@@ -2168,7 +2200,8 @@
       "f0": "High viscosity",
       "f1": "Carbon deposit prevention",
       "f2": "Reliable air lines",
-      "f3": "Extended service interval"
+      "f3": "Extended service interval",
+      "fd": "Shell Corena S2 P is a compressor oil specially developed for reciprocating type compressors. It delivers high performance even when air discharge temperatures reach up to 220°C.\n\nPERFORMANCE CHARACTERISTICS\n• Extended service intervals: Extends valve and piston maintenance intervals for long, efficient service life.\n• Reliable air lines: Minimises dangerous exothermic reactions caused by carbon deposits and rust residues.\n• High oxidation resistance: Minimises carbon build-up and maximises compressor efficiency.\n• Effective rust and corrosion protection: Extends service intervals.\n• Good air release: Does not cause foam formation.\n• Easy water separation: Oil repels water to prevent oxidation and viscosity increase.\n• Seal compatibility: Compatible with all components in air compressors.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51506 VDL | ISO 6743-3A-DAB"
     },
     "corena-s3-r-68": {
       "type": "Rotary Screw/Vane Compressor Oil",
@@ -2176,7 +2209,8 @@
       "f0": "8,000-hour oil life",
       "f1": "Low volatility",
       "f2": "Excellent cooling",
-      "f3": "Rust and corrosion protection"
+      "f3": "Rust and corrosion protection",
+      "fd": "Premium quality product delivering outstanding performance in oil-injected rotary screw and vane air compressors. Extended service life and trouble-free operation under the most demanding conditions.\n\nPERFORMANCE CHARACTERISTICS\n• Outstanding oxidation resistance: Prevents carbon residue formation in equipment.\n• Extended oil drain intervals: Oil life of up to 8,000 hours.\n• Low volatility: Reduces oil consumption and top-up requirements.\n• High viscosity index: High performance under all operating conditions.\n• Excellent cooling: Fully meets critical cooling requirements.\n• Effective rust and corrosion protection: Extends service intervals.\n• Seal compatibility: Compatible with all components in air compressors."
     },
     "corena-s4-r-68": {
       "type": "Synthetic Rotary Screw/Vane Compressor Oil",
@@ -2184,7 +2218,8 @@
       "f0": "Fully synthetic",
       "f1": "High temperature compressors",
       "f2": "8,000-hour oil life",
-      "f3": "Superior oxidation resistance"
+      "f3": "Superior oxidation resistance",
+      "fd": "Premium quality product delivering outstanding performance in oil-injected rotary screw and vane air compressors. Extended service life and trouble-free operation under the most demanding conditions.\n\nPERFORMANCE CHARACTERISTICS\n• Outstanding oxidation resistance: Prevents carbon residue formation in equipment.\n• Extended oil drain intervals: Oil life of up to 8,000 hours.\n• Low volatility: Reduces oil consumption and top-up requirements.\n• High viscosity index: High performance under all operating conditions.\n• Excellent cooling: Fully meets critical cooling requirements.\n• Effective rust and corrosion protection: Extends service intervals.\n• Seal compatibility: Compatible with all components in air compressors."
     },
     "refrigeration-s4-fr-f-32": {
       "type": "Refrigeration Compressor Oil (Alkylbenzene)",
@@ -2192,7 +2227,8 @@
       "f0": "Ammonia system specialist",
       "f1": "Alkylbenzene synthetic",
       "f2": "Excellent low temperature",
-      "f3": "Pour point -39°C"
+      "f3": "Pour point -39°C",
+      "fd": "Alkylbenzene-based synthetic refrigeration compressor oil. Recommended for systems using Ammonia and HCFC refrigerants.\n\nAPPLICATIONS\n• Commercial, industrial and domestic use in open, semi-hermetic and hermetic refrigerating compressors\n• Suitable for rotary screw and reciprocating compressors\n• Excellent performance in ammonia (R717) systems and at evaporation temperatures below -33°C\n• Compatible with halogenated gases (CFC, HCFC), hydrocarbons and R402A/B\n\nPERFORMANCE CHARACTERISTICS\n• Fully synthetic formulation: High-tech alkylbenzene-based chemistry.\n• Outstanding stability: Far superior oxidation and thermal stability compared to mineral oils.\n• Excellent cleanliness: Controls deposit and sludge formation. Oil drain intervals far exceed those of mineral oils.\n• Excellent compatibility: Fully compatible with seals in refrigeration systems; miscible with mineral oils.\n• Superior low-temperature miscibility: Outstanding mixing with CFC/HCFC at low temperatures.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51503 KAA, KC"
     },
     "refrigeration-s4-fr-f-68": {
       "type": "Refrigeration Compressor Oil (Alkylbenzene)",
@@ -2200,7 +2236,8 @@
       "f0": "Alkylbenzene synthetic",
       "f1": "High oxidation stability",
       "f2": "Ammonia system compatible",
-      "f3": "Extended oil life"
+      "f3": "Extended oil life",
+      "fd": "Alkylbenzene-based synthetic refrigeration compressor oil. Recommended for systems using Ammonia and HCFC refrigerants.\n\nAPPLICATIONS\n• Commercial, industrial and domestic use in open, semi-hermetic and hermetic refrigerating compressors\n• Suitable for rotary screw and reciprocating compressors\n• Excellent performance in ammonia (R717) systems and at evaporation temperatures below -33°C\n• Compatible with halogenated gases (CFC, HCFC), hydrocarbons and R402A/B\n\nPERFORMANCE CHARACTERISTICS\n• Fully synthetic formulation: High-tech alkylbenzene-based chemistry.\n• Outstanding stability: Far superior oxidation and thermal stability compared to mineral oils.\n• Excellent cleanliness: Controls deposit and sludge formation. Oil drain intervals far exceed those of mineral oils.\n• Excellent compatibility: Fully compatible with seals in refrigeration systems; miscible with mineral oils.\n• Superior low-temperature miscibility: Outstanding mixing with CFC/HCFC at low temperatures.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51503 KAA, KC"
     },
     "refrigeration-s4-fr-f-100": {
       "type": "Refrigeration Compressor Oil (Alkylbenzene)",
@@ -2208,7 +2245,8 @@
       "f0": "High viscosity refrigeration oil",
       "f1": "Alkylbenzene synthetic",
       "f2": "Ammonia system specialist",
-      "f3": "Miscible with mineral oil"
+      "f3": "Miscible with mineral oil",
+      "fd": "Alkylbenzene-based synthetic refrigeration compressor oil. Recommended for systems using Ammonia and HCFC refrigerants.\n\nAPPLICATIONS\n• Commercial, industrial and domestic use in open, semi-hermetic and hermetic refrigerating compressors\n• Suitable for rotary screw and reciprocating compressors\n• Excellent performance in ammonia (R717) systems and at evaporation temperatures below -33°C\n• Compatible with halogenated gases (CFC, HCFC), hydrocarbons and R402A/B\n\nPERFORMANCE CHARACTERISTICS\n• Fully synthetic formulation: High-tech alkylbenzene-based chemistry.\n• Outstanding stability: Far superior oxidation and thermal stability compared to mineral oils.\n• Excellent cleanliness: Controls deposit and sludge formation. Oil drain intervals far exceed those of mineral oils.\n• Excellent compatibility: Fully compatible with seals in refrigeration systems; miscible with mineral oils.\n• Superior low-temperature miscibility: Outstanding mixing with CFC/HCFC at low temperatures.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51503 KAA, KC"
     },
     "refrigeration-s4-fr-v-32": {
       "type": "Refrigeration Compressor Oil (Alkylbenzene)",
@@ -2216,7 +2254,8 @@
       "f0": "CFC/HCFC compatible",
       "f1": "Superior low temperature miscibility",
       "f2": "Alkylbenzene synthetic",
-      "f3": "Miscible with mineral oil"
+      "f3": "Miscible with mineral oil",
+      "fd": "Alkylbenzene-based synthetic refrigeration compressor oil. Recommended for systems using Ammonia and HCFC refrigerants.\n\nAPPLICATIONS\n• Commercial, industrial and domestic use in open, semi-hermetic and hermetic refrigerating compressors\n• Suitable for rotary screw and reciprocating compressors\n• Excellent performance in ammonia (R717) systems and at evaporation temperatures below -33°C\n• Compatible with halogenated gases (CFC, HCFC), hydrocarbons and R402A/B\n\nPERFORMANCE CHARACTERISTICS\n• Fully synthetic formulation: High-tech alkylbenzene-based chemistry.\n• Outstanding stability: Far superior oxidation and thermal stability compared to mineral oils.\n• Excellent cleanliness: Controls deposit and sludge formation. Oil drain intervals far exceed those of mineral oils.\n• Excellent compatibility: Fully compatible with seals in refrigeration systems; miscible with mineral oils.\n• Superior low-temperature miscibility: Outstanding mixing with CFC/HCFC at low temperatures.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51503 KAA, KC"
     },
     "refrigeration-s4-fr-v-46": {
       "type": "Refrigeration Compressor Oil (Alkylbenzene)",
@@ -2224,7 +2263,8 @@
       "f0": "CFC/HCFC compatible",
       "f1": "Alkylbenzene synthetic",
       "f2": "Extended oil life",
-      "f3": "Ammonia system compatible"
+      "f3": "Ammonia system compatible",
+      "fd": "Alkylbenzene-based synthetic refrigeration compressor oil. Recommended for systems using Ammonia and HCFC refrigerants.\n\nAPPLICATIONS\n• Commercial, industrial and domestic use in open, semi-hermetic and hermetic refrigerating compressors\n• Suitable for rotary screw and reciprocating compressors\n• Excellent performance in ammonia (R717) systems and at evaporation temperatures below -33°C\n• Compatible with halogenated gases (CFC, HCFC), hydrocarbons and R402A/B\n\nPERFORMANCE CHARACTERISTICS\n• Fully synthetic formulation: High-tech alkylbenzene-based chemistry.\n• Outstanding stability: Far superior oxidation and thermal stability compared to mineral oils.\n• Excellent cleanliness: Controls deposit and sludge formation. Oil drain intervals far exceed those of mineral oils.\n• Excellent compatibility: Fully compatible with seals in refrigeration systems; miscible with mineral oils.\n• Superior low-temperature miscibility: Outstanding mixing with CFC/HCFC at low temperatures.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51503 KAA, KC"
     },
     "refrigeration-s4-fr-v-68": {
       "type": "Refrigeration Compressor Oil (Alkylbenzene)",
@@ -2232,7 +2272,8 @@
       "f0": "High oxidation stability",
       "f1": "CFC/HCFC compatible",
       "f2": "Alkylbenzene synthetic",
-      "f3": "Extended oil life"
+      "f3": "Extended oil life",
+      "fd": "Alkylbenzene-based synthetic refrigeration compressor oil. Recommended for systems using Ammonia and HCFC refrigerants.\n\nAPPLICATIONS\n• Commercial, industrial and domestic use in open, semi-hermetic and hermetic refrigerating compressors\n• Suitable for rotary screw and reciprocating compressors\n• Excellent performance in ammonia (R717) systems and at evaporation temperatures below -33°C\n• Compatible with halogenated gases (CFC, HCFC), hydrocarbons and R402A/B\n\nPERFORMANCE CHARACTERISTICS\n• Fully synthetic formulation: High-tech alkylbenzene-based chemistry.\n• Outstanding stability: Far superior oxidation and thermal stability compared to mineral oils.\n• Excellent cleanliness: Controls deposit and sludge formation. Oil drain intervals far exceed those of mineral oils.\n• Excellent compatibility: Fully compatible with seals in refrigeration systems; miscible with mineral oils.\n• Superior low-temperature miscibility: Outstanding mixing with CFC/HCFC at low temperatures.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51503 KAA, KC"
     },
     "tonna-s3-m-220": {
       "type": "Slideway Oil",
@@ -2240,7 +2281,8 @@
       "f0": "Heavy-duty slideways",
       "f1": "Stick-slip prevention",
       "f2": "High viscosity stability",
-      "f3": "Water separation"
+      "f3": "Water separation",
+      "fd": "Shell Tonna S3 M oils are specially designed for the lubrication of machine tool slideways and tables. They are formulated with highly refined mineral oil base and contain adhesion, anti-wear and anti-stick-slip additives.\n\nAPPLICATIONS\n• Machine tool slideways, tables and feed mechanisms (including cast and synthetic materials)\n• Hydraulic systems of machine tools (single oil for slideway and hydraulic use)\n• Machine tool gearboxes and spindles\n\nPERFORMANCE CHARACTERISTICS\n• Excellent friction properties: Prevents stick-slip in slow-moving systems for smooth motion and superior surface quality.\n• Adhesion: Resistant to wash-off by cutting fluids.\n• Water separation: Easily separates from water-soluble fluids.\n• Anti-wear protection: For slideways, gears, bearings and hydraulic components.\n• Corrosion protection: Protects surfaces when water-soluble cutting fluids are used.\n\nSTANDARDS AND SPECIFICATIONS\nISO 11158 / 6743-4 HM | DIN CGLP | Cincinnati Machine P-47 / P-50"
     },
     "turbo-t-32": {
       "type": "Turbine Oil",
@@ -2248,7 +2290,8 @@
       "f0": "Siemens and ABB approved",
       "f1": "Excellent oxidation stability",
       "f2": "Superior water separation",
-      "f3": "Excellent filterability"
+      "f3": "Excellent filterability",
+      "fd": "High-performance industrial turbine oil developed to meet the requirements of today's and future high-power steam and gas turbines.\n\nAPPLICATIONS\n• Industrial steam turbines: main shaft bearings, mechanical gears, control valves\n• Wider industrial applications requiring high rust and oxidation protection\n• Turbo compressors\n\nPERFORMANCE CHARACTERISTICS\n• Excellent thermal and oxidation stability: Prevents formation of sludgy products and harmful by-products.\n• Excellent water separation: Water is easily drained to keep the system safe.\n• Excellent filterability: Superior filtration even in the presence of water or contamination.\n• Corrosion protection: High-quality base oil and additives protect metal surfaces.\n• Excellent air release: Rapid air removal; prevents foam formation.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51515-1 | ISO 8068 | Siemens TLV 9013 04 | ABB HTGD 90117R | Alstom NPA P5001"
     },
     "turbo-t-46": {
       "type": "Turbine Oil",
@@ -2256,7 +2299,8 @@
       "f0": "Siemens and ABB approved",
       "f1": "Corrosion protection",
       "f2": "Excellent water separation",
-      "f3": "Turbo compressor compatible"
+      "f3": "Turbo compressor compatible",
+      "fd": "High-performance industrial turbine oil developed to meet the requirements of today's and future high-power steam and gas turbines.\n\nAPPLICATIONS\n• Industrial steam turbines: main shaft bearings, mechanical gears, control valves\n• Wider industrial applications requiring high rust and oxidation protection\n• Turbo compressors\n\nPERFORMANCE CHARACTERISTICS\n• Excellent thermal and oxidation stability: Prevents formation of sludgy products and harmful by-products.\n• Excellent water separation: Water is easily drained to keep the system safe.\n• Excellent filterability: Superior filtration even in the presence of water or contamination.\n• Corrosion protection: High-quality base oil and additives protect metal surfaces.\n• Excellent air release: Rapid air removal; prevents foam formation.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51515-1 | ISO 8068 | Siemens TLV 9013 04 | ABB HTGD 90117R | Alstom NPA P5001"
     },
     "turbo-t-68": {
       "type": "Turbine Oil",
@@ -2264,7 +2308,8 @@
       "f0": "High oxidation protection",
       "f1": "Siemens and ABB approved",
       "f2": "Excellent filterability",
-      "f3": "Air release property"
+      "f3": "Air release property",
+      "fd": "High-performance industrial turbine oil developed to meet the requirements of today's and future high-power steam and gas turbines.\n\nAPPLICATIONS\n• Industrial steam turbines: main shaft bearings, mechanical gears, control valves\n• Wider industrial applications requiring high rust and oxidation protection\n• Turbo compressors\n\nPERFORMANCE CHARACTERISTICS\n• Excellent thermal and oxidation stability: Prevents formation of sludgy products and harmful by-products.\n• Excellent water separation: Water is easily drained to keep the system safe.\n• Excellent filterability: Superior filtration even in the presence of water or contamination.\n• Corrosion protection: High-quality base oil and additives protect metal surfaces.\n• Excellent air release: Rapid air removal; prevents foam formation.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51515-1 | ISO 8068 | Siemens TLV 9013 04 | ABB HTGD 90117R | Alstom NPA P5001"
     },
     "turbo-cc-32": {
       "type": "Combined Cycle Turbine Oil",
@@ -2272,7 +2317,8 @@
       "f0": "Combined cycle turbines",
       "f1": "Heavy-duty gear capacity",
       "f2": "Siemens/GE/ABB approved",
-      "f3": "Excellent oxidation stability"
+      "f3": "Excellent oxidation stability",
+      "fd": "High-performance industrial turbine oil developed to meet the requirements of today's and future high-power steam and gas turbines.\n\nAPPLICATIONS\n• Industrial steam turbines: main shaft bearings, mechanical gears, control valves\n• Wider industrial applications requiring high rust and oxidation protection\n• Turbo compressors\n\nPERFORMANCE CHARACTERISTICS\n• Excellent thermal and oxidation stability: Prevents formation of sludgy products and harmful by-products.\n• Excellent water separation: Water is easily drained to keep the system safe.\n• Excellent filterability: Superior filtration even in the presence of water or contamination.\n• Corrosion protection: High-quality base oil and additives protect metal surfaces.\n• Excellent air release: Rapid air removal; prevents foam formation.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51515-1 | ISO 8068 | Siemens TLV 9013 04 | ABB HTGD 90117R | Alstom NPA P5001"
     },
     "turbo-cc-46": {
       "type": "Combined Cycle Turbine Oil",
@@ -2280,7 +2326,8 @@
       "f0": "Combined cycle specialist",
       "f1": "Single-fill system oil",
       "f2": "Multiple OEM approvals",
-      "f3": "Excellent water separation"
+      "f3": "Excellent water separation",
+      "fd": "High-performance industrial turbine oil developed to meet the requirements of today's and future high-power steam and gas turbines.\n\nAPPLICATIONS\n• Industrial steam turbines: main shaft bearings, mechanical gears, control valves\n• Wider industrial applications requiring high rust and oxidation protection\n• Turbo compressors\n\nPERFORMANCE CHARACTERISTICS\n• Excellent thermal and oxidation stability: Prevents formation of sludgy products and harmful by-products.\n• Excellent water separation: Water is easily drained to keep the system safe.\n• Excellent filterability: Superior filtration even in the presence of water or contamination.\n• Corrosion protection: High-quality base oil and additives protect metal surfaces.\n• Excellent air release: Rapid air removal; prevents foam formation.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51515-1 | ISO 8068 | Siemens TLV 9013 04 | ABB HTGD 90117R | Alstom NPA P5001"
     },
     "turbo-fluid-dr-46": {
       "type": "Turbine / Circulation Oil",
@@ -2288,7 +2335,8 @@
       "f0": "Turbine and circulation applications",
       "f1": "High thermal stability",
       "f2": "Oxidation resistance",
-      "f3": "Extended service life"
+      "f3": "Extended service life",
+      "fd": "High-performance industrial turbine oil developed to meet the requirements of today's and future high-power steam and gas turbines.\n\nAPPLICATIONS\n• Industrial steam turbines: main shaft bearings, mechanical gears, control valves\n• Wider industrial applications requiring high rust and oxidation protection\n• Turbo compressors\n\nPERFORMANCE CHARACTERISTICS\n• Excellent thermal and oxidation stability: Prevents formation of sludgy products and harmful by-products.\n• Excellent water separation: Water is easily drained to keep the system safe.\n• Excellent filterability: Superior filtration even in the presence of water or contamination.\n• Corrosion protection: High-quality base oil and additives protect metal surfaces.\n• Excellent air release: Rapid air removal; prevents foam formation.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51515-1 | ISO 8068 | Siemens TLV 9013 04 | ABB HTGD 90117R | Alstom NPA P5001"
     },
     "turbo-j-32": {
       "type": "Turbine Oil",
@@ -2296,7 +2344,8 @@
       "f0": "High oxidation protection",
       "f1": "Siemens and ABB approved",
       "f2": "Excellent water separation",
-      "f3": "Turbo compressor compatible"
+      "f3": "Turbo compressor compatible",
+      "fd": "High-performance industrial turbine oil developed to meet the requirements of today's and future high-power steam and gas turbines.\n\nAPPLICATIONS\n• Industrial steam turbines: main shaft bearings, mechanical gears, control valves\n• Wider industrial applications requiring high rust and oxidation protection\n• Turbo compressors\n\nPERFORMANCE CHARACTERISTICS\n• Excellent thermal and oxidation stability: Prevents formation of sludgy products and harmful by-products.\n• Excellent water separation: Water is easily drained to keep the system safe.\n• Excellent filterability: Superior filtration even in the presence of water or contamination.\n• Corrosion protection: High-quality base oil and additives protect metal surfaces.\n• Excellent air release: Rapid air removal; prevents foam formation.\n\nSTANDARDS AND SPECIFICATIONS\nDIN 51515-1 | ISO 8068 | Siemens TLV 9013 04 | ABB HTGD 90117R | Alstom NPA P5001"
     },
     "heat-transfer-oil-s2": {
       "type": "Heat Transfer Oil",
@@ -2304,7 +2353,8 @@
       "f0": "320°C operating temperature",
       "f1": "High thermal stability",
       "f2": "Low vapor pressure",
-      "f3": "Wide application range"
+      "f3": "Wide application range",
+      "fd": "Shell Heat Transfer Oil S2 is specially designed for closed heat transfer systems operating up to 320°C. Film temperature must not exceed 340°C.\n\nAPPLICATIONS\nCirculating heat transfer systems in chemical plants, textile factories, dyehouses, plywood factories and oil-heated radiators.\n\nPERFORMANCE CHARACTERISTICS\n• High oxidation and thermal stability\n• High heat transfer coefficient due to low viscosity\n• Good solvent properties\n• Non-corrosive\n• Low vapour pressure\n\nTYPICAL PHYSICAL PROPERTIES\nDensity @ 15°C: 895 kg/m³ | Flash Point (PMCC): 220°C | Pour Point: -12°C\nKinematic Viscosity @ 40°C: 32 mm²/s | Initial Boiling Point: >355°C\n\nSTANDARDS AND SPECIFICATIONS\nISO 6743-12 Q | DIN 51522"
     },
     "naturelle-hf-e": {
       "type": "Biodegradable Hydraulic Oil",
@@ -2312,7 +2362,8 @@
       "f0": "Biodegradable",
       "f1": "Environmentally friendly",
       "f2": "High viscosity index",
-      "f3": "Denison HF-0 approved"
+      "f3": "Denison HF-0 approved",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "tequla-v-32": {
       "type": "High VI Hydraulic Oil",
@@ -2320,7 +2371,8 @@
       "f0": "High viscosity index",
       "f1": "Thermal stability",
       "f2": "Outstanding anti-wear protection",
-      "f3": "Excellent filterability"
+      "f3": "Excellent filterability",
+      "fd": "High-performance hydraulic oil manufactured using high viscosity index mineral oils and a superior additive package.\n\nPERFORMANCE CHARACTERISTICS\n• Thermal stability: Clean operation at high temperatures without forming sludgy deposits in modern hydraulic systems.\n• Oxidation resistance: High resistance to oxidation in the presence of air, water and copper. Excellent TOST test results.\n• Water resistance: Chemical stability in high humidity; minimises rust and corrosion risk.\n• Outstanding anti-wear protection: Additive package qualified against Denison T6C and Vickers 35VQ25 tests.\n• Excellent filterability: Suitable for ultra-fine filters; retains properties in the presence of water or calcium contamination.\n• Air release and foam inhibition: Prevents cavitation and slows oxidation.\n• Water separation: Resists emulsion formation; protects the system and pumps.\n• Seal and paint compatibility: Compatible with all components used with mineral oils.\n\nSTANDARDS AND SPECIFICATIONS\nCINCINNATI P-68 / P-70 / P-69 | DENISON HF-0, HF-1, HF-2 | Eaton (Vickers) M-2950 S | DIN 51524 PART 2 | ISO 11158"
     },
     "textile-needle-s2-m-32": {
       "type": "Textile Machine Oil",
@@ -2328,7 +2380,8 @@
       "f0": "Washable formulation",
       "f1": "Starch build-up prevention",
       "f2": "Dye-house compatible",
-      "f3": "Corrosion protection"
+      "f3": "Corrosion protection",
+      "fd": "Shell Textile Needle S2 M 32 is a specialty needle mechanism oil developed for the textile industry.\n\nAPPLICATIONS\n• Needle mechanisms in circular knitting machines (wool, cotton, silk, synthetic and rayon processing)\n• Applications requiring rapid washing before dyeing\n\nPERFORMANCE CHARACTERISTICS\n• Washable formulation: Rapidly washable before the dyeing process\n• Prevents starch build-up: Clean operation during the knitting process\n• Oxidation resistance\n• Corrosion protection for equipment"
     },
     "air-tool-s2-a-100": {
       "type": "Pneumatic Tool Oil",
@@ -2336,7 +2389,8 @@
       "f0": "Impact load protection",
       "f1": "Outstanding anti-wear protection",
       "f2": "Cold weather fluidity",
-      "f3": "High oxidation resistance"
+      "f3": "High oxidation resistance",
+      "fd": "Shell Air Tool S2 A 100 is formulated for impact-type drills and other pneumatic tools operating under the most demanding conditions.\n\nAPPLICATIONS\n• Especially impact-type pneumatic tools (including rock drilling)\n• Oil mist lubrication systems and air tools\n• Gear and bearing lubrication in the presence of water\n\nPERFORMANCE CHARACTERISTICS\n• Excellent lubrication and anti-wear: Outstanding performance under impact load conditions.\n• Excellent oxidation resistance and thermal stability: Resistant to sludge and deposit formation at high operating temperatures.\n• Outstanding low-temperature fluidity: Maintains flow properties in cold conditions.\n• Excellent corrosion protection: Superior protection even in the presence of water.\n\nTYPICAL PHYSICAL PROPERTIES\nISO Viscosity Grade: 100 | KV @ 40°C: 100 mm²/s | VI: 107\nFlash Point (COC): 232°C | Pour Point: -30°C"
     },
     "edelex-956": {
       "type": "Naphthenic Process Oil",
