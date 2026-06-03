@@ -2263,6 +2263,254 @@
       "f1": "Yüksek performans",
       "f2": "Endüstriyel sistemler",
       "f3": "Güvenilir koruma"
+    },
+    "1-extended-life-10w-60": {
+      "type": "Tam Sentetik",
+      "description": "BMW M serisi ve yuksek performansli spor araclar icin formule edilmis tam sentetik motor yagi.",
+      "f0": "BMW Longlife-98 onayli",
+      "f1": "Yuksek yuk film dayanimi",
+      "f2": "Spor motor korumasi",
+      "f3": "Porsche A40 uyumlu"
+    },
+    "1-fs-new-life-0w-40": {
+      "type": "Tam Sentetik",
+      "description": "Sifir kilometreden itibaren motorunuzu korumak uzere gelistirilmis tam sentetik motor yagi.",
+      "f0": "Sifir km'den tam koruma",
+      "f1": "MB 229.5 onayli",
+      "f2": "Porsche A40 onayli",
+      "f3": "Ustun oksidasyon direnci"
+    },
+    "1-esp-formula-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "Emisyon sonrasi sistemleri koruyan ACEA C3 sinifi tam sentetik ESP motor yagi.",
+      "f0": "BMW LL-04 onayli",
+      "f1": "MB 229.51 onayli",
+      "f2": "VW 504/507 uyumlu",
+      "f3": "DPF/GPF korumasi"
+    },
+    "1-esp-5w-30-dexos2": {
+      "type": "Tam Sentetik",
+      "description": "GM dexos2 lisansli tam sentetik ESP motor yagi.",
+      "f0": "dexos2 lisansli",
+      "f1": "BMW LL-04 onayli",
+      "f2": "MB 229.51 onayli",
+      "f3": "GPF/DPF uyumlu"
+    },
+    "1-fs-5w-50": {
+      "type": "Tam Sentetik",
+      "description": "Yuksek performansli spor araclar ve yaris motorlari icin gelistirilmis tam sentetik motor yagi.",
+      "f0": "Yuksek RPM korumasi",
+      "f1": "Porsche A40 onayli",
+      "f2": "Asiri isi stabilitesi",
+      "f3": "Spor surüs formulu"
+    },
+    "1-esp-x3-0w-40": {
+      "type": "Tam Sentetik",
+      "description": "Yuksek performansli Avrupa araclari icin ESP tam sentetik motor yagi.",
+      "f0": "MB 229.5 onayli",
+      "f1": "Porsche A40 onayli",
+      "f2": "Genis arac uyumu",
+      "f3": "Yuksek yuk dayanimi"
+    },
+    "super-3000-formula-fe-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "Yakit ekonomisi odakli formülasyonuyla tasarlanmis tam sentetik motor yagi.",
+      "f0": "Ford WSS-M2C913-D onayli",
+      "f1": "Yakit tasarrufu teknolojisi",
+      "f2": "A5/B5 sertifikali",
+      "f3": "Dusuk surtunme formulu"
+    },
+    "super-3000-xe-5w-30-c3": {
+      "type": "Tam Sentetik",
+      "description": "Parciklu filtreleri olan araclar icin ACEA C3 sinifi DPF uyumlu tam sentetik motor yagi.",
+      "f0": "C3 DPF uyumlu",
+      "f1": "BMW LL-04 onayli",
+      "f2": "MB 229.51 onayli",
+      "f3": "Dusuk SAPS formulu"
+    },
+    "super-2000-x1-diesel-10w-40": {
+      "type": "Yari Sentetik",
+      "description": "Dizel motorlar icin optimize edilmis yari sentetik motor yagi.",
+      "f0": "Dizel motor optimizasyonu",
+      "f1": "VW 505.00 onayli",
+      "f2": "Yuksek soot toleransi",
+      "f3": "Ekonomik yari sentetik"
+    },
+    "delvac-xhp-ultra-le-5w-30": {
+      "type": "Tam Sentetik (Agir Hizmet)",
+      "description": "Son nesil Euro 6 agir hizmet dizel motorlari icin Low Emission tam sentetik motor yagi.",
+      "f0": "CK-4 sertifikali",
+      "f1": "Low-SAPS dusuk emisyon",
+      "f2": "Euro 6 motor uyumlu",
+      "f3": "Uzatilmis drain araligi"
+    },
+    "delvac-1-5w-40": {
+      "type": "Tam Sentetik (Agir Hizmet)",
+      "description": "Agir hizmet dizel motorlari icin dunya capinda onayli tam sentetik motor yagi.",
+      "f0": "Tam sentetik agir hizmet",
+      "f1": "Uzun drain araligi",
+      "f2": "EGR motor uyumlu",
+      "f3": "Genis OEM onay portfolyosu"
+    },
+    "delvac-xhp-le-10w-40": {
+      "type": "Tam Sentetik (Agir Hizmet)",
+      "description": "Dusuk emisyonlu agir hizmet dizel motorlari icin CK-4 sertifikali tam sentetik motor yagi.",
+      "f0": "CK-4 onayli",
+      "f1": "Low-SAPS formulu",
+      "f2": "SCR/DPF uyumlu",
+      "f3": "Ustun yuksek sicaklik stabilitesi"
+    },
+    "delvac-xhp-extra-10w-40": {
+      "type": "Tam Sentetik (Agir Hizmet)",
+      "description": "Genis agir hizmet arac yelpazesinde yuksek performans sunan CJ-4 sertifikali tam sentetik motor yagi.",
+      "f0": "CJ-4 sertifikali",
+      "f1": "Uzun drain araligi",
+      "f2": "EGR uyumlu agir hizmet",
+      "f3": "Ustun deposit kontrolu"
+    },
+    "delvac-xhp-esp-10w-40": {
+      "type": "Tam Sentetik (Agir Hizmet)",
+      "description": "Emisyon sonrasi sistemleri koruyan ESP teknolojili tam sentetik agir hizmet motor yagi.",
+      "f0": "ESP emisyon sistemi dostu",
+      "f1": "DPF dusuk SAPS formulu",
+      "f2": "CJ-4 onayli",
+      "f3": "Ustun deposit kontrolu"
+    },
+    "delvac-mx-esp-15w-40": {
+      "type": "Mineral (Agir Hizmet)",
+      "description": "Emisyon kontrol sistemleriyle uyumlu ekonomik mineral agir hizmet motor yagi.",
+      "f0": "ESP emisyon sistemi uyumlu",
+      "f1": "Ekonomik mineral formul",
+      "f2": "CI-4 onayli",
+      "f3": "Genis filo uyumlulugu"
+    },
+    "delvac-lcv-f-5w-30": {
+      "type": "Tam Sentetik (Hafif Ticari)",
+      "description": "Hafif ticari araclar icin ozellestirilmis tam sentetik motor yagi.",
+      "f0": "Hafif ticari arac ozel",
+      "f1": "Ford LCV onayli",
+      "f2": "Uzun drain araligi",
+      "f3": "Dusuk SAPS C3/E6 formulu"
+    },
+    "delvac-mx-15w-40": {
+      "type": "Mineral (Agir Hizmet)",
+      "description": "Agir hizmet dizel motorlari icin guvenilir ve ekonomik mineral motor yagi.",
+      "f0": "CI-4 Plus sertifikali",
+      "f1": "Ekonomik mineral formul",
+      "f2": "Genis OEM onay portfolyosu",
+      "f3": "Guvenilir agir hizmet korumasi"
+    },
+    "delvac-mx-esp-10w-30": {
+      "type": "Mineral (Agir Hizmet)",
+      "description": "Soguk iklim kosullarinda uygun ESP mineral agir hizmet motor yagi.",
+      "f0": "Soguk start performansi",
+      "f1": "ESP emisyon uyumlu",
+      "f2": "Ekonomik mineral formul",
+      "f3": "CI-4 onayli"
+    },
+    "delvac-xhp-15w-40": {
+      "type": "Tam Sentetik (Agir Hizmet)",
+      "description": "CJ-4 sertifikali yuksek performansli agir hizmet tam sentetik motor yagi.",
+      "f0": "CJ-4 sertifikali",
+      "f1": "Uzun drain araligi",
+      "f2": "Ustun motor temizligi",
+      "f3": "EGR motor uyumlu"
+    },
+    "delvac-super-20w-50": {
+      "type": "Mineral (Agir Hizmet)",
+      "description": "Tropikal ve yuksek cevre sicakligi kosullarinda agir hizmet dizel motorlari icin mineral motor yagi.",
+      "f0": "Yuksek sicaklik stabilitesi",
+      "f1": "Tropikal iklim uyumlu",
+      "f2": "CH-4 sertifikali",
+      "f3": "Ekonomik mineral formul"
+    },
+    "delvac-1350": {
+      "type": "Mineral (Agir Hizmet, Monograde)",
+      "description": "SAE 50 monograde agir hizmet dizel motor yagi.",
+      "f0": "SAE 50 monograde formulu",
+      "f1": "Eski nesil motor uyumlu",
+      "f2": "Yuksek sicaklik korumasi",
+      "f3": "Mineral ekonomik secenek"
+    },
+    "delvac-1340": {
+      "type": "Mineral (Agir Hizmet, Monograde)",
+      "description": "SAE 40 monograde agir hizmet dizel motor yagi.",
+      "f0": "SAE 40 monograde formulu",
+      "f1": "Eski dizel motor uyumlu",
+      "f2": "Temel agir hizmet korumasi",
+      "f3": "Ekonomik mineral secenek"
+    },
+    "delvac-1330": {
+      "type": "Mineral (Agir Hizmet, Monograde)",
+      "description": "SAE 30 monograde agir hizmet motor yagi.",
+      "f0": "SAE 30 monograde formulu",
+      "f1": "Caterpillar TO-2 onayli",
+      "f2": "Temel agir hizmet formulu",
+      "f3": "Ekonomik mineral yag"
+    },
+    "delvac-super-1000-20w-50": {
+      "type": "Mineral (Agir Hizmet)",
+      "description": "Buyuk arac filolari icin formule edilmis mineral agir hizmet motor yagi.",
+      "f0": "Filo bakim ekonomisi",
+      "f1": "Yuksek sicaklik stabilitesi",
+      "f2": "CH-4 sertifikali",
+      "f3": "Mineral ekonomik formul"
+    },
+    "delvac-ct-diesel-10w-30": {
+      "type": "Mineral (Agir Hizmet)",
+      "description": "Konvansiyonel teknoloji dizel motorlari icin CI-4 onayli mineral motor yagi.",
+      "f0": "Soguk iklim start performansi",
+      "f1": "CI-4 onayli",
+      "f2": "Konvansiyonel dizel uyumlu",
+      "f3": "Ekonomik mineral formul"
+    },
+    "shc-pegasus-30": {
+      "type": "Gaz Motor Yagi (Tam Sentetik)",
+      "description": "Dort zamanlı stasyoner dogal gaz motorlari icin gelistirilmis PAO bazli tam sentetik gaz motor yagi.",
+      "f0": "PAO tam sentetik formul",
+      "f1": "Dusuk deposit olusumu",
+      "f2": "Uzun degisim araligi",
+      "f3": "Gaz motoru optimizasyonu"
+    },
+    "pegasus-805": {
+      "type": "Gaz Motor Yagi (Mineral)",
+      "description": "Yuksek TBN kapasiteli dort zamanlı stasyoner dogal gaz motorlari icin mineral gaz motor yagi.",
+      "f0": "Yuksek TBN kapasitesi",
+      "f1": "Asit korozyon korumasi",
+      "f2": "Dogal gaz motor uyumlu",
+      "f3": "Guvenilir mineral formul"
+    },
+    "pegasus-605": {
+      "type": "Gaz Motor Yagi (Mineral)",
+      "description": "Orta duzey dort zamanlı stasyoner dogal gaz motorlari icin mineral gaz motor yagi.",
+      "f0": "Gaz ve biyogaz motor uyumlu",
+      "f1": "Orta TBN alkali rezerv",
+      "f2": "Ekonomik mineral formul",
+      "f3": "Stasyoner motor optimizasyonu"
+    },
+    "pegasus-610": {
+      "type": "Gaz Motor Yagi (Mineral)",
+      "description": "Dort zamanlı stasyoner dogal gaz motorlari icin yuksek performansli mineral gaz motor yagi.",
+      "f0": "Yuksek oksidasyon direnci",
+      "f1": "Uzun calisma suresi performansi",
+      "f2": "Gaz motor uyumlu",
+      "f3": "Mineral ekonomik formul"
+    },
+    "pegasus-1005": {
+      "type": "Gaz Motor Yagi (Mineral, Yuksek Kul)",
+      "description": "Kirli veya yuksek kukurtlu gaz yakitlariyla calisan agir hizmet gaz motorlari icin yuksek TBN'li mineral gaz motor yagi.",
+      "f0": "En yuksek TBN kapasitesi",
+      "f1": "Kirli gaz yakit toleransi",
+      "f2": "Guclu asit notralizasyonu",
+      "f3": "Agir hizmet gaz motoru"
+    },
+    "pegasus-705": {
+      "type": "Gaz Motor Yagi (Mineral)",
+      "description": "Dort zamanlı stasyoner dogal gaz motorlari icin guncellenmiş formulasyonlu mineral gaz motor yagi.",
+      "f0": "Guncellenmiş gaz motor formulu",
+      "f1": "Gelismis motor temizligi",
+      "f2": "Korozyon korumasi",
+      "f3": "Mineral ekonomik yag"
     }
   },
   "quotePage": {

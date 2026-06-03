@@ -2463,6 +2463,254 @@
       "f2": "Industrial systems",
       "f3": "Reliable protection",
       "fd": "Shell Irus Fluid C is a high-performance industrial fluid developed for specialised industrial applications.\n\nAPPLICATIONS\n• Specialised industrial systems\n• Industrial processes requiring precision fluid performance\n\nPERFORMANCE CHARACTERISTICS\n• High-performance industrial formulation designed for demanding conditions\n• Reliable system protection ensuring consistent operational performance"
+    },
+    "1-extended-life-10w-60": {
+      "type": "Fully Synthetic",
+      "description": "Wide-viscosity fully synthetic motor oil for BMW M-series and high-performance sports cars.",
+      "f0": "BMW Longlife-98 approved",
+      "f1": "High-load film strength",
+      "f2": "Sports engine protection",
+      "f3": "Porsche A40 compatible"
+    },
+    "1-fs-new-life-0w-40": {
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic motor oil engineered to protect your engine from new. MB 229.5 and Porsche A40 approved.",
+      "f0": "From-new engine protection",
+      "f1": "MB 229.5 approved",
+      "f2": "Porsche A40 approved",
+      "f3": "Superior oxidation resistance"
+    },
+    "1-esp-formula-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "ACEA C3 fully synthetic ESP motor oil protecting emission aftertreatment systems. BMW LL-04 and MB 229.51 approved.",
+      "f0": "BMW LL-04 approved",
+      "f1": "MB 229.51 approved",
+      "f2": "VW 504/507 compatible",
+      "f3": "DPF/GPF protection"
+    },
+    "1-esp-5w-30-dexos2": {
+      "type": "Fully Synthetic",
+      "description": "GM dexos2 licensed fully synthetic ESP motor oil. Approved by BMW, Mercedes-Benz and Volkswagen Group.",
+      "f0": "dexos2 licensed",
+      "f1": "BMW LL-04 approved",
+      "f2": "MB 229.51 approved",
+      "f3": "GPF/DPF compatible"
+    },
+    "1-fs-5w-50": {
+      "type": "Fully Synthetic",
+      "description": "Wide-viscosity fully synthetic motor oil for high-performance sports cars and racing engines.",
+      "f0": "High-RPM protection",
+      "f1": "Porsche A40 approved",
+      "f2": "Extreme heat stability",
+      "f3": "Sports performance formula"
+    },
+    "1-esp-x3-0w-40": {
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic ESP motor oil for high-performance European vehicles. MB 229.5 and Porsche A40 approved.",
+      "f0": "MB 229.5 approved",
+      "f1": "Porsche A40 approved",
+      "f2": "Broad vehicle compatibility",
+      "f3": "High-load durability"
+    },
+    "super-3000-formula-fe-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "Fuel Economy focused fully synthetic motor oil for Ford EcoBoost and other modern engines.",
+      "f0": "Ford WSS-M2C913-D approved",
+      "f1": "Fuel economy technology",
+      "f2": "A5/B5 certified",
+      "f3": "Low-friction formula"
+    },
+    "super-3000-xe-5w-30-c3": {
+      "type": "Fully Synthetic",
+      "description": "ACEA C3 DPF-compatible fully synthetic motor oil for vehicles with particulate filters.",
+      "f0": "C3 DPF compatible",
+      "f1": "BMW LL-04 approved",
+      "f2": "MB 229.51 approved",
+      "f3": "Low SAPS formula"
+    },
+    "super-2000-x1-diesel-10w-40": {
+      "type": "Semi-Synthetic",
+      "description": "Semi-synthetic motor oil optimised for diesel engines with high soot tolerance.",
+      "f0": "Diesel engine optimised",
+      "f1": "VW 505.00 approved",
+      "f2": "High soot tolerance",
+      "f3": "Semi-synthetic economy"
+    },
+    "delvac-xhp-ultra-le-5w-30": {
+      "type": "Fully Synthetic (Heavy Duty)",
+      "description": "Low Emission fully synthetic heavy-duty motor oil for Euro 6 engines with extended drain intervals.",
+      "f0": "CK-4 certified",
+      "f1": "Low SAPS / low emission",
+      "f2": "Euro 6 engine compatible",
+      "f3": "Extended drain intervals"
+    },
+    "delvac-1-5w-40": {
+      "type": "Fully Synthetic (Heavy Duty)",
+      "description": "Globally approved fully synthetic motor oil for heavy-duty diesel engines.",
+      "f0": "Full synthetic heavy duty",
+      "f1": "Extended drain intervals",
+      "f2": "EGR engine compatible",
+      "f3": "Broad OEM approvals"
+    },
+    "delvac-xhp-le-10w-40": {
+      "type": "Fully Synthetic (Heavy Duty)",
+      "description": "CK-4 certified low-emission fully synthetic heavy-duty motor oil.",
+      "f0": "CK-4 certified",
+      "f1": "Low SAPS formula",
+      "f2": "SCR/DPF compatible",
+      "f3": "Superior high-temperature stability"
+    },
+    "delvac-xhp-extra-10w-40": {
+      "type": "Fully Synthetic (Heavy Duty)",
+      "description": "CJ-4 certified fully synthetic motor oil for a broad range of heavy-duty engines.",
+      "f0": "CJ-4 certified",
+      "f1": "Extended drain intervals",
+      "f2": "EGR-compatible protection",
+      "f3": "Superior deposit control"
+    },
+    "delvac-xhp-esp-10w-40": {
+      "type": "Fully Synthetic (Heavy Duty)",
+      "description": "Fully synthetic heavy-duty ESP motor oil protecting emission aftertreatment systems.",
+      "f0": "ESP emission system friendly",
+      "f1": "DPF low-SAPS formula",
+      "f2": "CJ-4 certified",
+      "f3": "Superior deposit control"
+    },
+    "delvac-mx-esp-15w-40": {
+      "type": "Mineral (Heavy Duty)",
+      "description": "Cost-effective mineral heavy-duty motor oil compatible with emission control systems.",
+      "f0": "ESP emission system compatible",
+      "f1": "Cost-effective mineral formula",
+      "f2": "CI-4 certified",
+      "f3": "Broad fleet compatibility"
+    },
+    "delvac-lcv-f-5w-30": {
+      "type": "Fully Synthetic (Light Commercial)",
+      "description": "Fully synthetic motor oil engineered for light commercial vehicles. Ford and Fiat approved.",
+      "f0": "Light commercial vehicle specific",
+      "f1": "Ford LCV approved",
+      "f2": "Extended drain intervals",
+      "f3": "Low SAPS C3/E6 formula"
+    },
+    "delvac-mx-15w-40": {
+      "type": "Mineral (Heavy Duty)",
+      "description": "Reliable and cost-effective mineral motor oil for heavy-duty diesel engines.",
+      "f0": "CI-4 Plus certified",
+      "f1": "Cost-effective mineral formula",
+      "f2": "Broad OEM approvals",
+      "f3": "Reliable heavy-duty protection"
+    },
+    "delvac-mx-esp-10w-30": {
+      "type": "Mineral (Heavy Duty)",
+      "description": "ESP mineral heavy-duty motor oil for cold-climate operation.",
+      "f0": "Cold-climate start performance",
+      "f1": "ESP emission compatible",
+      "f2": "Cost-effective mineral formula",
+      "f3": "CI-4 certified"
+    },
+    "delvac-xhp-15w-40": {
+      "type": "Fully Synthetic (Heavy Duty)",
+      "description": "CJ-4 certified fully synthetic heavy-duty motor oil. Extended drain intervals reduce fleet costs.",
+      "f0": "CJ-4 certified",
+      "f1": "Extended drain intervals",
+      "f2": "Superior engine cleanliness",
+      "f3": "EGR engine compatible"
+    },
+    "delvac-super-20w-50": {
+      "type": "Mineral (Heavy Duty)",
+      "description": "Mineral motor oil for heavy-duty diesel engines in tropical and high-temperature conditions.",
+      "f0": "High-temperature stability",
+      "f1": "Tropical climate suitable",
+      "f2": "CH-4 certified",
+      "f3": "Cost-effective mineral formula"
+    },
+    "delvac-1350": {
+      "type": "Mineral (Heavy Duty, Monograde)",
+      "description": "SAE 50 monograde mineral motor oil for older heavy-duty diesel engines.",
+      "f0": "SAE 50 monograde formula",
+      "f1": "Legacy engine compatible",
+      "f2": "High-temperature film protection",
+      "f3": "Cost-effective mineral option"
+    },
+    "delvac-1340": {
+      "type": "Mineral (Heavy Duty, Monograde)",
+      "description": "SAE 40 monograde mineral motor oil for older heavy-duty diesel engines and equipment.",
+      "f0": "SAE 40 monograde formula",
+      "f1": "Legacy diesel engine compatible",
+      "f2": "Basic heavy-duty protection",
+      "f3": "Cost-effective mineral option"
+    },
+    "delvac-1330": {
+      "type": "Mineral (Heavy Duty, Monograde)",
+      "description": "SAE 30 monograde heavy-duty mineral motor oil compatible with Caterpillar equipment.",
+      "f0": "SAE 30 monograde formula",
+      "f1": "Caterpillar TO-2 approved",
+      "f2": "Basic heavy-duty protection",
+      "f3": "Cost-effective mineral oil"
+    },
+    "delvac-super-1000-20w-50": {
+      "type": "Mineral (Heavy Duty)",
+      "description": "Mineral heavy-duty motor oil for large fleet operations in high-temperature environments.",
+      "f0": "Fleet maintenance economy",
+      "f1": "High-temperature stability",
+      "f2": "CH-4 certified",
+      "f3": "Cost-effective mineral formula"
+    },
+    "delvac-ct-diesel-10w-30": {
+      "type": "Mineral (Heavy Duty)",
+      "description": "CI-4 approved mineral motor oil for conventional technology heavy-duty diesel engines.",
+      "f0": "Cold-climate start performance",
+      "f1": "CI-4 approved",
+      "f2": "Conventional diesel compatible",
+      "f3": "Cost-effective mineral formula"
+    },
+    "shc-pegasus-30": {
+      "type": "Gas Engine Oil (Fully Synthetic)",
+      "description": "PAO-based fully synthetic gas engine oil for four-stroke stationary natural gas engines.",
+      "f0": "PAO fully synthetic formula",
+      "f1": "Low deposit formation",
+      "f2": "Extended drain intervals",
+      "f3": "Gas engine optimised"
+    },
+    "pegasus-805": {
+      "type": "Gas Engine Oil (Mineral)",
+      "description": "High-TBN mineral gas engine oil for four-stroke stationary natural gas engines.",
+      "f0": "High TBN capacity",
+      "f1": "Acid corrosion protection",
+      "f2": "Natural gas engine compatible",
+      "f3": "Reliable mineral formula"
+    },
+    "pegasus-605": {
+      "type": "Gas Engine Oil (Mineral)",
+      "description": "Mineral gas engine oil for mid-range stationary natural gas and biogas engines.",
+      "f0": "Gas and biogas engine compatible",
+      "f1": "Medium TBN alkalinity reserve",
+      "f2": "Economical mineral formula",
+      "f3": "Stationary engine optimised"
+    },
+    "pegasus-610": {
+      "type": "Gas Engine Oil (Mineral)",
+      "description": "High-performance mineral gas engine oil for four-stroke stationary natural gas engines.",
+      "f0": "High oxidation resistance",
+      "f1": "Long runtime performance",
+      "f2": "Gas engine compatible",
+      "f3": "Cost-effective mineral formula"
+    },
+    "pegasus-1005": {
+      "type": "Gas Engine Oil (Mineral, High Ash)",
+      "description": "High-TBN mineral gas engine oil for heavy-duty engines on impure or high-sulphur gas fuels.",
+      "f0": "Highest TBN capacity",
+      "f1": "Impure gas fuel tolerance",
+      "f2": "Maximum acid neutralisation",
+      "f3": "Heavy-duty gas engine formula"
+    },
+    "pegasus-705": {
+      "type": "Gas Engine Oil (Mineral)",
+      "description": "Updated-formulation mineral gas engine oil for four-stroke stationary natural gas engines.",
+      "f0": "Updated gas engine formula",
+      "f1": "Enhanced engine cleanliness",
+      "f2": "Corrosion protection",
+      "f3": "Cost-effective mineral oil"
     }
   },
   "quotePage": {

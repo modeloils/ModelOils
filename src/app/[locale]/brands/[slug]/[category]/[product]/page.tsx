@@ -2312,6 +2312,23 @@ const MOBIL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["BMW LL-17FE+", "MB 229.71", "VW 508 00/509 00"],
     description: "BMW'nin son teknoloji verimlilik standardı LL-17FE+'yı karşılayan ultra düşük viskoziteli tam sentetik motor yağı. Yakıt ekonomisini maksimize ederken üstün motor koruması sağlar.",
     features: ["BMW LL-17FE+ onaylı", "Ultra düşük viskozite", "Maksimum yakıt ekonomisi", "Hibrit araç uyumlu"],
+    fullDescription: `BMW'nin en son verimlilik standardi LL-17FE+'yi karsilayan ultra dusuk viskoziteli tam sentetik motor yagi.
+
+En ileri Mobil 1 ESP teknolojisiyle formule edilen bu yag, hibrit araclar dahil en modern BMW, Mercedes-Benz ve VW Group araclarinda maksimum yakit ekonomisi ve ustun motor korumasi saglar.
+
+PERFORMANS OZELLIKLERI
+* Yakit tuketimini minimize eden ultra dusuk viskozite
+* BMW LL-17FE+ ve LL-14FE+ onayli
+* Hibrit ve stop-start sistemlerle uyumluluk
+* Soguk start aninda anlik yaglama koruma
+
+STANDARTLAR VE SPESIFIKASYONLAR
+API SN/CF
+ACEA C5
+BMW LL-17FE+
+MB 229.71
+VW 508 00/509 00`,
+    image: "/images/products/mobil/1-esp-x2-0w-20.jpg",
   },
   "1-esp-0w-30": {
     name: "Mobil 1 ESP 0W-30", grade: "0W-30", series: "Mobil 1 ESP", type: "Tam Sentetik",
@@ -2319,6 +2336,21 @@ const MOBIL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["MB 229.51", "MB 229.31", "Porsche A40"],
     description: "Mercedes-Benz ve Porsche araçları için özel olarak geliştirilmiş tam sentetik ESP motor yağı. ACEA C3 sertifikasyonuyla DPF filtreli araçlarda üstün koruma sağlar.",
     features: ["MB 229.51 onaylı", "Porsche A40 onaylı", "DPF uyumlu Low-SAPS", "Soğuk başlangıç üstünlüğü"],
+    fullDescription: `Mercedes-Benz 229.51 ve Porsche A40 onayli, ACEA C3 sinifi tam sentetik ESP motor yagi.
+
+Dusuk SAPS formulasyonuyla dizel partikul filtreleri ve emisyon sonrasi sistemleri korurken Mercedes-Benz ve Porsche araclarinda uzun servis araligi saglar.
+
+PERFORMANS OZELLIKLERI
+* DPF uyumlu dusuk SAPS formulu
+* MB 229.51 uzun servis araligi uyumu
+* Ustun soguk start korumasi
+* Yuksek sicaklik oksidasyonuna karsi direnc
+
+STANDARTLAR VE SPESIFIKASYONLAR
+API SN/CF
+ACEA C3
+MB 229.51, MB 229.31
+Porsche A40`,
   },
   "1-esp-5w-30": {
     name: "Mobil 1 ESP 5W-30", grade: "5W-30", series: "Mobil 1 ESP", type: "Tam Sentetik",
@@ -2326,6 +2358,22 @@ const MOBIL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["BMW LL-04", "MB 229.51", "VW 504 00/507 00"],
     description: "En geniş OEM onay portföyüne sahip tam sentetik ESP motor yağı. BMW, Mercedes-Benz ve Volkswagen Group araçlarında DPF koruma ve uzun servis aralığı sunar.",
     features: ["BMW LL-04 onaylı", "MB 229.51 onaylı", "VW 504/507 uyumlu", "Uzun değişim aralığı"],
+    fullDescription: `En genis OEM onay portfolyosuna sahip tam sentetik ESP motor yagi — BMW LL-04, MB 229.51 ve VW 504.00/507.00 onayli.
+
+DPF ve GPF filtreli araclar icin dusuk SAPS formulasyonuyla BMW, Mercedes-Benz ve Volkswagen Group araclarinda uzun servis araligi ve ustun koruma saglar.
+
+PERFORMANS OZELLIKLERI
+* En genis OEM onay portfolyosu (BMW, MB, VW)
+* DPF ve GPF uyumlu Low-SAPS
+* Uzatilmis servis araligi
+* Motor temizleyici ESP formulu
+
+STANDARTLAR VE SPESIFIKASYONLAR
+API SN/CF
+ACEA C3
+BMW LL-04
+MB 229.51
+VW 504.00/507.00`,
   },
   "1-esp-x4-0w-40": {
     name: "Mobil 1 ESP X4 0W-40", grade: "0W-40", series: "Mobil 1 ESP X4", type: "Tam Sentetik",
@@ -2333,6 +2381,22 @@ const MOBIL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["MB 229.5", "Porsche A40", "Renault RN0700"],
     description: "Yüksek performanslı spor ve lüks araçlar için geliştirilmiş tam sentetik ESP motor yağı. Geniş sıcaklık aralığında maksimum motor koruması ve yakıt verimliliği sağlar.",
     features: ["MB 229.5 onaylı", "Spor araç uyumlu", "Geniş çalışma sıcaklığı", "Yüksek yük altı koruması"],
+    fullDescription: `Yuksek performansli spor ve lüks Avrupa araclari icin gelistirilmis ust duzey tam sentetik ESP motor yagi.
+
+MB 229.5 ve Porsche A40 onayli genis sicaklik araligi formulasyonuyla spor araclarda maksimum motor korumasi ve yakit verimliligi saglar.
+
+PERFORMANS OZELLIKLERI
+* MB 229.5 ve Porsche A40 onayli
+* Genis sicaklik araliginda viskozite stabilitesi
+* Yuksek yuk altinda ustun film dayanimi
+* Spor arac motor korumasi
+
+STANDARTLAR VE SPESIFIKASYONLAR
+API SN/CF
+ACEA A3/B4
+MB 229.5
+Porsche A40
+Renault RN0700`,
   },
   "1-fs-5w-40": {
     name: "Mobil 1 FS 5W-40", grade: "5W-40", series: "Mobil 1 FS", type: "Tam Sentetik",
@@ -2340,6 +2404,22 @@ const MOBIL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["VW 502 00/505 00", "MB 229.3", "Porsche A40"],
     description: "Dünya çapında milyonlarca araç tarafından güvenilen tam sentetik motor yağı. Geniş OEM onay portföyüyle hem Avrupa hem de küresel araç modelleri için mükemmel koruma sağlar.",
     features: ["Küresel OEM onayları", "Yıl boyu koruma", "VW ve Porsche onaylı", "Sürüklenme karşıtı formül"],
+    fullDescription: `Dunya genelinde milyonlarca arac tarafindan guvenilen Mobil 1'in FS (Fully Synthetic) tam sentetik formulu.
+
+VW, Mercedes-Benz, Porsche ve diger onde gelen ureticilerin onaylariyla kuresel arac yelpazesi icin guclu ve evrensel motor korumasi saglar.
+
+PERFORMANS OZELLIKLERI
+* Kuresel OEM onaylari (VW, MB, Porsche)
+* Yil boyu her kosulda guvenilir koruma
+* Ustun soguk start ve yuksek sicaklik stabilitesi
+* Motor temizleyici deposit onleyici formul
+
+STANDARTLAR VE SPESIFIKASYONLAR
+API SN/CF
+ACEA A3/B3/B4
+VW 502.00/505.00
+MB 229.3
+Porsche A40`,
   },
   "1-new-life-0w-40": {
     name: "Mobil 1 New Life 0W-40", grade: "0W-40", series: "Mobil 1 New Life", type: "Tam Sentetik",
@@ -2347,6 +2427,22 @@ const MOBIL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["MB 229.5", "Porsche A40", "Renault RN0700"],
     description: "Sıfırdan itibaren motorunuzu koruyan tam sentetik motor yağı. Mercedes-Benz ve Porsche yüksek performanslı motorları için optimize edilmiş formülasyonuyla üstün oksidasyon direnci sağlar.",
     features: ["Yüksek performans motor uyumlu", "MB 229.5 onaylı", "Sıfır kilometre koruması", "Üstün oksidasyon direnci"],
+    fullDescription: `Sifirdan itibaren motorunuzu koruyan Mobil 1 tam sentetik motor yagi.
+
+Mercedes-Benz 229.5 ve Porsche onayli formulasyonuyla yuksek performansli arac motorlarinda yeni motor omru boyunca ustun oksidasyon ve termal stabilite saglar.
+
+PERFORMANS OZELLIKLERI
+* Sifir kilometreden itibaren ustun koruma
+* MB 229.5 uzun servis araligi uyumu
+* Ustun oksidasyon ve nitrasyon direnci
+* Motor temizleyici formul
+
+STANDARTLAR VE SPESIFIKASYONLAR
+API SN/CF
+ACEA A3/B3/B4
+MB 229.5
+Porsche A40
+Renault RN0700`,
   },
   "super-3000-fe-5w-30": {
     name: "Mobil Super 3000 FE 5W-30", grade: "5W-30", series: "Mobil Super 3000 FE", type: "Tam Sentetik",
@@ -2354,6 +2450,21 @@ const MOBIL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Ford WSS-M2C913-D", "Renault RN0700"],
     description: "Yakıt ekonomisi odaklı tam sentetik motor yağı. Ford EcoBoost motorlarda mükemmel performans gösteren düşük sürtünmeli formülasyonuyla günlük kullanım için idealdir.",
     features: ["Ford EcoBoost uyumlu", "Yakıt tasarruf odaklı", "A5/B5 sertifikalı", "Soğuk başlangıç kolaylığı"],
+    fullDescription: `Yakit ekonomisi odakli formulasyonuyla tasarlanmis A5/B5 sinifi tam sentetik motor yagi.
+
+Ford EcoBoost ve A5/B5 gerektiren diger modern motorlarda dusuk surtunme avantaji ve yakit tasarrufu saglarken mukemmel motor korumasi sunar.
+
+PERFORMANS OZELLIKLERI
+* Ford ve Renault onayli yakit ekonomisi formulu
+* A5/B5 dusuk surtunme teknolojisi
+* Soguk start aninda hizli yaglama
+* Ustun motor temizligi
+
+STANDARTLAR VE SPESIFIKASYONLAR
+API SN/CF
+ACEA A5/B5
+Ford WSS-M2C913-D
+Renault RN0700`,
   },
   "super-3000-x1-5w-40": {
     name: "Mobil Super 3000 X1 5W-40", grade: "5W-40", series: "Mobil Super 3000 X1", type: "Tam Sentetik",
@@ -2361,6 +2472,23 @@ const MOBIL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["MB 229.3", "VW 502 00/505 00", "Renault RN0700/RN0710"],
     description: "Geniş bir araç yelpazesi için güvenilir tam sentetik motor yağı. Yüksek sıcaklık koruması ve uzun motor temizliği ile yoğun şehir trafiğinde üstün performans gösterir.",
     features: ["Tam sentetik formül", "Yüksek ısı koruması", "Motor temizleyici özellik", "Geniş araç uyumu"],
+    fullDescription: `Genis arac yelpazesi icin ustun koruma sunan A3/B3/B4 sinifi tam sentetik motor yagi.
+
+MB 229.3 ve VW 502/505 onayli formulasyonuyla hem benzinli hem dizel motorlarda yuksek sicaklik korumasi ve uzun motor temizligi saglar.
+
+PERFORMANS OZELLIKLERI
+* Genis OEM onay portfolyosu (MB, VW, Renault)
+* Yuksek sicaklik motor korumasi
+* Motor temizleyici deposit onleyici
+* Tam sentetik uzun omur formulu
+
+STANDARTLAR VE SPESIFIKASYONLAR
+API SN/CF
+ACEA A3/B3/B4
+MB 229.3
+VW 502.00/505.00
+Renault RN0700/RN0710`,
+    image: "/images/products/mobil/super-3000-x1-5w-40.png",
   },
   "super-2000-10w-40": {
     name: "Mobil Super 2000 10W-40", grade: "10W-40", series: "Mobil Super 2000", type: "Yarı Sentetik",
@@ -2368,6 +2496,21 @@ const MOBIL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["VW 501 01/505 00", "MB 229.1"],
     description: "Geniş bir araç yelpazesinde güvenilir koruma sunan yarı sentetik motor yağı. Ekonomik formülasyonuyla hem benzinli hem dizel motorlarda standart bakım ihtiyaçlarını karşılar.",
     features: ["Ekonomik yarı sentetik", "Geniş motor uyumu", "VW ve MB onaylı", "Benzinli/dizel uyumlu"],
+    fullDescription: `Genis arac yelpazesinde ekonomik koruma sunan yari sentetik motor yagi.
+
+VW ve Mercedes-Benz onayli formulasyonuyla hem benzinli hem de dizel motorlarda standart bakim ihtiyaclarini karsilayan ekonomik yari sentetik secnek.
+
+PERFORMANS OZELLIKLERI
+* Genis arac ve motor uyumu
+* VW 501.01/505.00 ve MB 229.1 onayli
+* Ekonomik yari sentetik formulasyon
+* Benzinli ve dizel motor uyumlulugu
+
+STANDARTLAR VE SPESIFIKASYONLAR
+API SL/CF
+ACEA A3/B3
+VW 501.01/505.00
+MB 229.1`,
   },
   "delvac-1-esp-5w-30": {
     name: "Mobil Delvac 1 ESP 5W-30", grade: "5W-30", series: "Mobil Delvac 1 ESP", type: "Tam Sentetik (Ağır Hizmet)",
@@ -2375,6 +2518,23 @@ const MOBIL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Volvo VDS-4.5", "Mack EO-O Premium Plus", "Cummins CES 20086", "MB 228.51"],
     description: "Son nesil ağır hizmet dizel motorları için geliştirilmiş tam sentetik ESP motor yağı. SCR ve DPF sistemleriyle tam uyumlu Low-SAPS formülasyonuyla Euro 6 standartlarını karşılar.",
     features: ["Euro 6 motor uyumlu", "SCR/DPF koruması", "Low-SAPS formülü", "CK-4 sertifikalı"],
+    fullDescription: `Euro 6 agir hizmet dizel motorlari icin gelistirilmis CK-4 sertifikali tam sentetik ESP motor yagi.
+
+SCR ve DPF sistemleriyle tam uyumlu Low-SAPS formulasyonuyla en guncel emisyon standartlarini karsilarken uzatilmis servis araligi saglar.
+
+PERFORMANS OZELLIKLERI
+* CK-4 / Euro 6 uyumu
+* SCR ve DPF Low-SAPS korumasi
+* Uzatilmis yag degisim araligi
+* Ustun soot ve deposit kontrolu
+
+STANDARTLAR VE SPESIFIKASYONLAR
+API CK-4/SN
+ACEA E6, E9
+Volvo VDS-4.5
+Mack EO-O Premium Plus
+Cummins CES 20086
+MB 228.51`,
   },
   "delvac-1-esp-5w-40": {
     name: "Mobil Delvac 1 ESP 5W-40", grade: "5W-40", series: "Mobil Delvac 1 ESP", type: "Tam Sentetik (Ağır Hizmet)",
@@ -2382,6 +2542,23 @@ const MOBIL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Volvo VDS-4", "Mack EO-O Premium Plus", "Cummins CES 20081", "MB 228.51"],
     description: "Ağır hizmet kamyon ve otobüs motorları için yüksek performanslı tam sentetik motor yağı. Uzun servis aralıkları ve üstün deposit kontrolü ile işletme maliyetlerini düşürür.",
     features: ["Uzun servis aralığı", "EGR uyumlu", "Üstün deposit kontrolü", "Yakıt ekonomisi"],
+    fullDescription: `Agir hizmet kamyon ve otobus motorlari icin yuksek performansli CJ-4 sertifikali tam sentetik ESP motor yagi.
+
+Uzun servis araliklari ve ustun deposit kontrolu ile filo isletme maliyetlerini dusururken motor guvenilirligini artirir.
+
+PERFORMANS OZELLIKLERI
+* CJ-4 EGR motor korumasi
+* Uzatilmis yag degisim araligi
+* Ustun deposit ve soot kontrolu
+* Yakit ekonomisi katkisi
+
+STANDARTLAR VE SPESIFIKASYONLAR
+API CJ-4/SN
+ACEA E7
+Volvo VDS-4
+Mack EO-O Premium Plus
+Cummins CES 20081
+MB 228.51`,
   },
   "delvac-1300-super-15w-40": {
     name: "Mobil Delvac 1300 Super 15W-40", grade: "15W-40", series: "Mobil Delvac 1300 Super", type: "Mineral (Ağır Hizmet)",
@@ -2389,6 +2566,23 @@ const MOBIL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Cummins CES 20076", "MAN M3275", "MB 228.3", "Volvo VDS-3"],
     description: "Ağır hizmet dizel motorları için güvenilir ve ekonomik mineral motor yağı. Geniş OEM onay portföyüyle büyük filolar için maliyet etkin çözüm sunar.",
     features: ["Geniş filo uyumluluğu", "Ekonomik mineral formül", "Çok OEM onaylı", "Güvenilir ağır hizmet koruması"],
+    fullDescription: `Agir hizmet dizel motorlari icin guvenilir CI-4 Plus sertifikali mineral motor yagi.
+
+Genis OEM onay portfolyoyle buyuk filolar icin maliyet etkin, guvenilir agir hizmet korumasi saglar.
+
+PERFORMANS OZELLIKLERI
+* CI-4 Plus EGR motor korumasi
+* Genis OEM onay portfolyosu
+* Buyuk filo operasyonlari icin ekonomik
+* Guvenilir mineral agir hizmet formulu
+
+STANDARTLAR VE SPESIFIKASYONLAR
+API CI-4 Plus/SL
+ACEA E7
+Cummins CES 20076
+MAN M3275
+MB 228.3
+Volvo VDS-3`,
   },
   "super-1000-15w-40": {
     name: "Mobil Super 1000 15W-40", grade: "15W-40", series: "Mobil Super 1000", type: "Mineral",
@@ -2396,6 +2590,621 @@ const MOBIL_MOTOR_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["MB 229.1"],
     description: "Standart bakım gereksinimlerini karşılayan güvenilir mineral motor yağı. Eski nesil benzinli ve dizel motorlarda temel koruma sağlayan ekonomik seçenek.",
     features: ["Temel motor koruması", "Ekonomik mineral yağ", "Eski motor uyumlu", "Güvenilir standart performans"],
+    fullDescription: `Standart bakim gereksinimlerini karsilayan ekonomik mineral motor yagi.
+
+Eski nesil benzinli ve dizel motorlarda temel koruma ihtiyaclarini karsilayan guvenilir mineral formulasyon.
+
+PERFORMANS OZELLIKLERI
+* Genis benzinli/dizel motor uyumu
+* MB 229.1 standart servis onayi
+* Temel motor korumasi ve temizligi
+* Ekonomik mineral formulasyon
+
+STANDARTLAR VE SPESIFIKASYONLAR
+API SL/CF
+ACEA A3/B3
+MB 229.1`,
+  },
+
+  "1-extended-life-10w-60": {
+    name: "Mobil 1 Extended Life 10W-60", grade: "10W-60", series: "Mobil 1 Extended Life", type: "Tam Sentetik",
+    api: "SN/CF", acea: "A3/B4",
+    approvals: ["BMW Longlife-98", "Porsche A40", "MB 229.3"],
+    description: "BMW M serisi ve yüksek performanslı spor araçlar için formüle edilmiş geniş viskozite aralıklı tam sentetik motor yağı. Aşırı sürüş koşullarında üstün film dayanımı ve termal stabilite sağlar.",
+    features: ["BMW Longlife-98 onaylı", "Yüksek yük film dayanımı", "Spor motor koruması", "Porsche A40 uyumlu"],
+    image: "/images/products/mobil/1-extended-life-10w-60.jpg",
+    fullDescription: `Yüksek performanslı spor araçlar ve BMW M serisi için tasarlanmış üst düzey tam sentetik motor yağı.
+
+Aşırı motor sıcaklıkları ve yüksek devirde bile stabil viskozite filmi koruyan gelişmiş formülasyonuyla motorsiklet ve spor araç sürüşünde maksimum motor ömrü sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Yüksek hız ve yük altında üstün film koruması
+• BMW M serisi sürüş koşullarına özel formüle edilmiştir
+• Gelişmiş termal ve oksidasyon stabilitesi
+• Geniş sıcaklık aralığında viskozite stabilitesi
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SN/CF
+ACEA A3/B4
+BMW Longlife-98
+Porsche A40
+MB 229.3`,
+  },
+  "1-fs-new-life-0w-40": {
+    name: "Mobil 1 FS New Life 0W-40", grade: "0W-40", series: "Mobil 1 FS New Life", type: "Tam Sentetik",
+    api: "SN/CF", acea: "A3/B3/B4",
+    approvals: ["MB 229.5", "Porsche A40", "Renault RN0700"],
+    description: "Sıfır kilometreden itibaren motorunuzu korumak üzere geliştirilmiş tam sentetik motor yağı. Mercedes-Benz ve Porsche onaylı formülasyonuyla yüksek performanslı motorda üstün oksidasyon direnci sağlar.",
+    features: ["Sıfır km'den tam koruma", "MB 229.5 onaylı", "Porsche A40 onaylı", "Üstün oksidasyon direnci"],
+    image: "/images/products/mobil/1-fs-new-life-0w-40.jpg",
+    fullDescription: `Sıfır kilometreden itibaren motorunuzu korumak üzere özel olarak formüle edilmiş üst düzey tam sentetik motor yağı.
+
+FS teknolojisiyle yeni araç servis aralıklarının uzatılmasına katkıda bulunurken motorunuzu ilk günden itibaren optimum koruma altında tutar.
+
+PERFORMANS ÖZELLİKLERİ
+• Sıfır kilometreden itibaren tam sentetik koruma
+• Yüksek sıcaklıklarda üstün oksidasyon ve termal stabilite
+• Soğuk start anında hızlı yağlama
+• Uzun motor ömrü için deposit önleme
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SN/CF
+ACEA A3/B3/B4
+MB 229.5
+Porsche A40
+Renault RN0700`,
+  },
+  "1-esp-formula-5w-30": {
+    name: "Mobil 1 ESP Formula 5W-30", grade: "5W-30", series: "Mobil 1 ESP Formula", type: "Tam Sentetik",
+    api: "SN/CF", acea: "C3",
+    approvals: ["BMW LL-04", "MB 229.51", "VW 504.00/507.00"],
+    description: "Emisyon sonrası sistemleri koruyan ACEA C3 sınıfı tam sentetik ESP motor yağı. BMW, Mercedes-Benz ve Volkswagen DPF filtreli araçlarında uzun servis aralığı sağlar.",
+    features: ["BMW LL-04 onaylı", "MB 229.51 onaylı", "VW 504/507 uyumlu", "DPF/GPF koruması"],
+    image: "/images/products/mobil/1-esp-formula-5w-30.jpg",
+    fullDescription: `Emisyon sonrası sistemleri koruyan, modern dizel ve benzinli motorlar için geliştirilmiş tam sentetik ESP motor yağı.
+
+Düşük SAPS formülasyonuyla dizel partikül filtreleri (DPF) ve benzin partikül filtrelerini (GPF) temiz tutarken uzun servis aralıklarında optimum motor koruması sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• DPF ve GPF filtrelerini korur
+• Uzun servis aralığı performansı
+• Üstün soğuk start koruması
+• Motor temizleyici formülasyon
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SN/CF
+ACEA C3
+BMW LL-04
+MB 229.51
+VW 504.00/507.00`,
+  },
+  "1-esp-5w-30-dexos2": {
+    name: "Mobil 1 ESP 5W-30 Dexos2", grade: "5W-30", series: "Mobil 1 ESP", type: "Tam Sentetik",
+    api: "SN/CF", acea: "C3",
+    approvals: ["GMW16177 (dexos2)", "BMW LL-04", "MB 229.51", "VW 504.00/507.00"],
+    description: "GM dexos2 lisanslı tam sentetik ESP motor yağı. DPF ve GPF filtreli benzinli ve dizel Opel/Vauxhall ve GM araçlarında üstün emisyon sistemi koruması sağlar.",
+    features: ["dexos2 lisanslı", "BMW LL-04 onaylı", "MB 229.51 onaylı", "GPF/DPF uyumlu"],
+    image: "/images/products/mobil/1-esp-5w-30-dexos2.jpg",
+    fullDescription: `GM dexos2 lisanslı, partikül filtreli araçlar için özel olarak formüle edilmiş tam sentetik ESP motor yağı.
+
+Modern benzinli ve dizel motorların gelişmiş emisyon sistemleriyle tam uyumlu düşük SAPS formülasyonuyla GPF ve DPF filtrelerini korurken optimum motor performansı sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• GM dexos2 lisanslı geniş araç uyumu
+• GPF ve DPF emisyon sistemi koruması
+• Gelişmiş motor temizliği ve koruma
+• Uzun servis aralığı
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SN/CF
+ACEA C3
+GMW16177 (dexos2)
+BMW LL-04
+MB 229.51
+VW 504.00/507.00`,
+  },
+  "1-fs-5w-50": {
+    name: "Mobil 1 FS 5W-50", grade: "5W-50", series: "Mobil 1 FS", type: "Tam Sentetik",
+    api: "SN/CF", acea: "A3/B4",
+    approvals: ["Porsche A40", "MB 229.5", "BMW Longlife-98"],
+    description: "Yüksek performanslı spor araçlar ve yarış motorları için geliştirilmiş geniş viskozite aralıklı tam sentetik motor yağı. Yüksek devirde ve aşırı sıcaklıklarda üstün motor koruması sağlar.",
+    features: ["Yüksek RPM koruması", "Porsche A40 onaylı", "Aşırı ısı stabilitesi", "Spor sürüş formülü"],
+    image: "/images/products/mobil/1-fs-5w-50.jpg",
+    fullDescription: `Yüksek devirli spor araçlar ve yarış motorları için özel olarak tasarlanmış tam sentetik motor yağı.
+
+Geniş viskozite aralığıyla hem soğuk start anında hızlı yağlama sağlar hem de yüksek sıcaklıklarda film kalınlığını koruyarak motor parçalarını maksimum düzeyde korur.
+
+PERFORMANS ÖZELLİKLERİ
+• Yüksek devir ve yük altında üstün film dayanımı
+• Soğuk start ve sıcak çalışma koşullarında stabilite
+• Aşırı termal koşullarda oksidasyon direnci
+• Motor deposit ve çamur oluşumunu engelleme
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SN/CF
+ACEA A3/B4
+Porsche A40
+MB 229.5
+BMW Longlife-98`,
+  },
+  "1-esp-x3-0w-40": {
+    name: "Mobil 1 ESP X3 0W-40", grade: "0W-40", series: "Mobil 1 ESP X3", type: "Tam Sentetik",
+    api: "SN/CF", acea: "A3/B4",
+    approvals: ["MB 229.5", "Porsche A40", "Renault RN0700"],
+    description: "Yüksek performanslı Avrupa araçları için geliştirilmiş ESP tam sentetik motor yağı. MB 229.5, Porsche A40 ve Renault onaylı geniş OEM portföyüyle üstün motor koruması sağlar.",
+    features: ["MB 229.5 onaylı", "Porsche A40 onaylı", "Geniş araç uyumu", "Yüksek yük dayanımı"],
+    image: "/images/products/mobil/1-esp-x3-0w-40.jpg",
+    fullDescription: `Yüksek performanslı Avrupa araçları için tasarlanmış, Emisyon Sistemi Koruma (ESP) teknolojili tam sentetik motor yağı.
+
+Mercedes-Benz 229.5 ve Porsche A40 onaylı formülasyonuyla performanslı araçlarda uzun motor ömrü ve üstün yüksek sıcaklık koruması sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• MB 229.5 ve Porsche A40 onaylı koruma
+• Geniş sıcaklık aralığında viskozite stabilitesi
+• Üstün aşınma ve yük koruması
+• Hızlı soğuk start yağlaması
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SN/CF
+ACEA A3/B4
+MB 229.5
+Porsche A40
+Renault RN0700`,
+  },
+  "super-3000-formula-fe-5w-30": {
+    name: "Mobil Super 3000 Formula FE 5W-30", grade: "5W-30", series: "Mobil Super 3000 Formula FE", type: "Tam Sentetik",
+    api: "SN/CF", acea: "A5/B5",
+    approvals: ["Ford WSS-M2C913-D", "Renault RN0700"],
+    description: "Yakıt ekonomisi odaklı formülasyonuyla tasarlanmış tam sentetik motor yağı. Ford EcoBoost motorlarda mükemmel performans gösteren düşük sürtünmeli formülasyonuyla günlük kullanım için idealdir.",
+    features: ["Ford WSS-M2C913-D onaylı", "Yakıt tasarruf teknolojisi", "A5/B5 sertifikalı", "Düşük sürtünme formülü"],
+    image: "/images/products/mobil/super-3000-formula-fe-5w-30.jpg",
+    fullDescription: `Yakıt ekonomisini maksimize etmek için özel olarak formüle edilmiş, Ford EcoBoost motorlara yönelik tam sentetik motor yağı.
+
+A5/B5 sertifikasyonuyla düşük viskozite sürtünme direncini azaltırken motor koruma kalitesini koruyarak hem yakıt ekonomisi hem de motor ömrünü iyileştirir.
+
+PERFORMANS ÖZELLİKLERİ
+• Ford EcoBoost motorlarda mükemmel performans
+• Yakıt tüketimini azaltan düşük sürtünme formülü
+• Soğuk start anında hızlı yağlama
+• Üstün motor temizliği
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SN/CF
+ACEA A5/B5
+Ford WSS-M2C913-D
+Renault RN0700`,
+  },
+  "super-3000-xe-5w-30-c3": {
+    name: "Mobil Super 3000 XE 5W-30 C3", grade: "5W-30", series: "Mobil Super 3000 XE", type: "Tam Sentetik",
+    api: "SN/CF", acea: "C3",
+    approvals: ["BMW LL-04", "MB 229.51"],
+    description: "Partiküllü filtreleri olan araçlar için ACEA C3 sınıfı DPF uyumlu tam sentetik motor yağı. BMW LL-04 ve MB 229.51 onaylı düşük SAPS formülasyonuyla emisyon sistemlerini korur.",
+    features: ["C3 DPF uyumlu", "BMW LL-04 onaylı", "MB 229.51 onaylı", "Düşük SAPS formülü"],
+    image: "/images/products/mobil/super-3000-xe-5w-30-c3.jpg",
+    fullDescription: `ACEA C3 sınıfı düşük SAPS formülasyonuyla partikül filtreleri koruyan tam sentetik motor yağı.
+
+BMW LL-04 ve Mercedes-Benz 229.51 onaylı bu motor yağı, DPF filtreli modern araçlarda uzun servis aralığı ve üstün motor koruması sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Dizel ve benzin partikül filtrelerini korur
+• BMW ve Mercedes-Benz için uzun servis aralığı
+• Gelişmiş motor temizliği
+• Düşük SAPS ile katalitik konvertör uyumluluğu
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SN/CF
+ACEA C3
+BMW LL-04
+MB 229.51`,
+  },
+  "super-2000-x1-diesel-10w-40": {
+    name: "Mobil Super 2000 X1 Diesel 10W-40", grade: "10W-40", series: "Mobil Super 2000 X1 Diesel", type: "Yarı Sentetik",
+    api: "SL/CF", acea: "A3/B4",
+    approvals: ["VW 505.00", "MB 229.1"],
+    description: "Dizel motorlar için optimize edilmiş yarı sentetik motor yağı. Yüksek soot toleransı ve gelişmiş deposit kontrolüyle dizel partiküllerine karşı üstün koruma sağlar.",
+    features: ["Dizel motor optimizasyonu", "VW 505.00 onaylı", "Yüksek soot toleransı", "Ekonomik yarı sentetik"],
+    image: "/images/products/mobil/super-2000-x1-diesel-10w-40.jpg",
+    fullDescription: `Modern ve eski nesil dizel motorlar için özel olarak formüle edilmiş yarı sentetik motor yağı.
+
+Yüksek soot tutma kapasitesiyle dizel yanma artıklarını süspanse halinde tutarken motor parçalarına zarar vermeden temiz çalışma koşulları sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Dizel motorlara özel yüksek soot toleransı
+• Gelişmiş motor temizliği ve deposit kontrolü
+• Geniş dizel araç uyumu
+• Soğuk start performansı
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SL/CF
+ACEA A3/B4
+VW 505.00
+MB 229.1`,
+  },
+  "delvac-xhp-ultra-le-5w-30": {
+    name: "Mobil Delvac XHP Ultra LE 5W-30", grade: "5W-30", series: "Mobil Delvac XHP Ultra LE", type: "Tam Sentetik (Ağır Hizmet)",
+    api: "CK-4/SN", acea: "E6/E9",
+    approvals: ["Volvo VDS-4.5", "Mack EO-O Premium Plus", "Cummins CES 20086", "MB 228.51"],
+    description: "Son nesil Euro 6 ağır hizmet dizel motorları için geliştirilmiş Low Emission tam sentetik motor yağı. SCR ve DPF sistemleriyle tam uyumlu düşük SAPS formülasyonuyla uzatılmış servis aralığı sağlar.",
+    features: ["CK-4 sertifikalı", "Low-SAPS düşük emisyon", "Euro 6 motor uyumlu", "Uzatılmış drain aralığı"],
+    image: "/images/products/mobil/delvac-xhp-ultra-le-5w-30.jpg",
+    fullDescription: `Son nesil ağır hizmet dizel motorları için özel olarak geliştirilen Low Emission (LE) tam sentetik motor yağı.
+
+SCR, DPF ve EGR sistemleriyle tam uyumlu düşük SAPS formülasyonu sayesinde Euro 6 emisyon standartlarını karşılarken araç filosu için işletme maliyetlerini düşürür.
+
+PERFORMANS ÖZELLİKLERİ
+• SCR ve DPF sistemleriyle tam uyumluluk
+• Uzatılmış yağ değişim aralığı
+• Üstün motor deposit ve karbonlaşma kontrolü
+• Yakıt ekonomisi katkısı
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CK-4/SN
+ACEA E6, E9
+Volvo VDS-4.5
+Mack EO-O Premium Plus
+Cummins CES 20086
+MB 228.51`,
+  },
+  "delvac-1-5w-40": {
+    name: "Mobil Delvac 1 5W-40", grade: "5W-40", series: "Mobil Delvac 1", type: "Tam Sentetik (Ağır Hizmet)",
+    api: "CI-4 Plus/SL", acea: "E7",
+    approvals: ["Volvo VDS-3", "Cummins CES 20081", "MAN M3477", "MB 228.3"],
+    description: "Ağır hizmet dizel motorları için dünya çapında onaylı tam sentetik motor yağı. EGR motor uyumluluğu ve uzun drain aralığıyla filo işletme maliyetlerini düşürür.",
+    features: ["Tam sentetik ağır hizmet", "Uzun drain aralığı", "EGR motor uyumlu", "Geniş OEM onay portföyü"],
+    image: "/images/products/mobil/delvac-1-5w-40.jpg",
+    fullDescription: `Ağır hizmet kamyon ve otobüs motorları için geliştirilmiş, dünya genelinde başlıca OEM'ler tarafından onaylanmış tam sentetik motor yağı.
+
+EGR teknolojili motorlarda üstün koruma sağlayan formülasyonuyla hem motor ömrünü uzatır hem de filo bakım maliyetlerini azaltır.
+
+PERFORMANS ÖZELLİKLERİ
+• EGR motorlarda üstün deposit ve soot kontrolü
+• Uzatılmış yağ değişim aralığı
+• Soğuk iklimde kolay start ve koruma
+• Üstün oksitlenme ve nitrasyon direnci
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CI-4 Plus/SL
+ACEA E7
+Volvo VDS-3
+Cummins CES 20081
+MAN M3477
+MB 228.3`,
+  },
+  "delvac-xhp-le-10w-40": {
+    name: "Mobil Delvac XHP LE 10W-40", grade: "10W-40", series: "Mobil Delvac XHP LE", type: "Tam Sentetik (Ağır Hizmet)",
+    api: "CK-4/SN", acea: "E6/E9",
+    approvals: ["Volvo VDS-4.5", "Mack EO-O Premium Plus", "Cummins CES 20086"],
+    description: "Düşük emisyonlu ağır hizmet dizel motorları için geliştirilmiş CK-4 sertifikalı tam sentetik motor yağı. Low-SAPS formülasyonuyla SCR/DPF sistemlerini korur.",
+    features: ["CK-4 onaylı", "Low-SAPS formülü", "SCR/DPF uyumlu", "Üstün yüksek sıcaklık stabilitesi"],
+    image: "/images/products/mobil/delvac-xhp-le-10w-40.jpg",
+    fullDescription: `CK-4 sınıfı düşük emisyonlu ağır hizmet motorları için geliştirilmiş tam sentetik motor yağı.
+
+Low-SAPS formülasyonuyla modern emisyon kontrol sistemlerini korurken yüksek sıcaklık stabilitesi ve uzatılmış servis aralığı sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• CK-4 düşük emisyon uyumluluğu
+• Dizel partikül filtresi (DPF) koruması
+• Yüksek sıcaklıklarda üstün viskozite stabilitesi
+• Uzun servis aralığı
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CK-4/SN
+ACEA E6, E9
+Volvo VDS-4.5
+Mack EO-O Premium Plus
+Cummins CES 20086`,
+  },
+  "delvac-xhp-extra-10w-40": {
+    name: "Mobil Delvac XHP Extra 10W-40", grade: "10W-40", series: "Mobil Delvac XHP Extra", type: "Tam Sentetik (Ağır Hizmet)",
+    api: "CJ-4/SN", acea: "E7",
+    approvals: ["Volvo VDS-3", "Mack EO-O Premium Plus", "Cummins CES 20081"],
+    description: "Geniş ağır hizmet araç yelpazesinde yüksek performans sunan CJ-4 sertifikalı tam sentetik motor yağı. Gelişmiş deposit kontrolü ve uzun drain aralığıyla işletme maliyetlerini düşürür.",
+    features: ["CJ-4 sertifikalı", "Uzun drain aralığı", "EGR uyumlu ağır hizmet", "Üstün deposit kontrolü"],
+    image: "/images/products/mobil/delvac-xhp-extra-10w-40.png",
+    fullDescription: `CJ-4 sertifikalı, geniş ağır hizmet kamyon ve otobüs motorları için tasarlanmış tam sentetik motor yağı.
+
+Yüksek TBN kapasitesi ve gelişmiş deposit önleme özellikleriyle uzun servis aralıklarında optimum motor koruması sağlarken yakıt ekonomisine katkıda bulunur.
+
+PERFORMANS ÖZELLİKLERİ
+• CJ-4 ile EGR uyumlu motor koruması
+• Üstün deposit ve soot kontrolü
+• Yakıt ekonomisi katkısı
+• Uzatılmış yağ ömrü
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CJ-4/SN
+ACEA E7
+Volvo VDS-3
+Mack EO-O Premium Plus
+Cummins CES 20081`,
+  },
+  "delvac-xhp-esp-10w-40": {
+    name: "Mobil Delvac XHP ESP 10W-40", grade: "10W-40", series: "Mobil Delvac XHP ESP", type: "Tam Sentetik (Ağır Hizmet)",
+    api: "CJ-4/SN", acea: "E6/E7",
+    approvals: ["Volvo VDS-3", "Cummins CES 20081", "MB 228.31", "MAN M3477"],
+    description: "Emisyon sonrası sistemleri koruyan ESP teknolojili tam sentetik ağır hizmet motor yağı. DPF dostu düşük SAPS formülasyonuyla CJ-4 standartlarını karşılar.",
+    features: ["ESP emisyon sistemi dostu", "DPF düşük SAPS formülü", "CJ-4 onaylı", "Üstün deposit kontrolü"],
+    image: "/images/products/mobil/delvac-xhp-esp-10w-40.png",
+    fullDescription: `Emisyon Sistemi Koruması (ESP) teknolojisiyle formüle edilmiş, ağır hizmet dizel motorları için tam sentetik motor yağı.
+
+CJ-4 sertifikalı düşük SAPS formülasyonuyla dizel partikül filtrelerini (DPF) korurken motor içi temizliği ve korumasını maksimize eder.
+
+PERFORMANS ÖZELLİKLERİ
+• Dizel partikül filtrelerini temiz tutar
+• CJ-4 uyumlu düşük SAPS
+• Üstün soot ve deposit kontrolü
+• Uzatılmış yağ değişim aralığı
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CJ-4/SN
+ACEA E6, E7
+Volvo VDS-3
+Cummins CES 20081
+MB 228.31
+MAN M3477`,
+  },
+  "delvac-mx-esp-15w-40": {
+    name: "Mobil Delvac MX ESP 15W-40", grade: "15W-40", series: "Mobil Delvac MX ESP", type: "Mineral (Ağır Hizmet)",
+    api: "CI-4/SL", acea: "E7",
+    approvals: ["Volvo VDS-3", "Cummins CES 20078", "MAN M3275", "MB 228.3"],
+    description: "Emisyon kontrol sistemleriyle uyumlu ekonomik mineral ağır hizmet motor yağı. Geniş OEM onay portföyüyle büyük filolar için maliyet etkin koruma sağlar.",
+    features: ["ESP emisyon sistemi uyumlu", "Ekonomik mineral formül", "CI-4 onaylı", "Geniş filo uyumluluğu"],
+    image: "/images/products/mobil/delvac-mx-esp-15w-40.jpg",
+    fullDescription: `Emisyon kontrol sistemleriyle uyumlu geliştirilmiş ekonomik mineral ağır hizmet motor yağı.
+
+Geniş OEM onayları portföyüyle büyük filolarda bakım maliyetlerini minimize ederken güvenilir motor koruması sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• EGR motorlarla uyumlu ESP teknolojisi
+• Geniş filo ve OEM uyumu
+• Güvenilir ağır hizmet koruması
+• Ekonomik mineral formülasyon
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CI-4/SL
+ACEA E7
+Volvo VDS-3
+Cummins CES 20078
+MAN M3275
+MB 228.3`,
+  },
+  "delvac-lcv-f-5w-30": {
+    name: "Mobil Delvac LCV F 5W-30", grade: "5W-30", series: "Mobil Delvac LCV F", type: "Tam Sentetik (Hafif Ticari)",
+    api: "SN/CF", acea: "C3/E6",
+    approvals: ["Ford WSS-M2C913-D", "Fiat 9.55535-S1", "Renault RN0700"],
+    description: "Hafif ticari araçlar ve LCV filolar için özelleştirilmiş tam sentetik motor yağı. Ford ve Fiat ticari araç onaylı formülasyonuyla uzun değişim aralığı sağlar.",
+    features: ["Hafif ticari araç özel", "Ford LCV onaylı", "Uzun drain aralığı", "Düşük SAPS C3/E6 formülü"],
+    image: "/images/products/mobil/delvac-lcv-f-5w-30.jpg",
+    fullDescription: `Hafif ticari araçlar (LCV) için özel olarak geliştirilen, Ford ve Fiat onaylı tam sentetik motor yağı.
+
+C3 ve E6 çift sertifikasyonuyla hem binek taşımacılığı hem de hafif yük araçlarında optimum motor koruması ve yakıt ekonomisi sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Ford ve Fiat hafif ticari araç onaylı
+• C3/E6 çift sertifikasyon uyumu
+• Uzun servis aralığı ile filo ekonomisi
+• DPF ve GPF koruması
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API SN/CF
+ACEA C3, E6
+Ford WSS-M2C913-D
+Fiat 9.55535-S1
+Renault RN0700`,
+  },
+  "delvac-mx-15w-40": {
+    name: "Mobil Delvac MX 15W-40", grade: "15W-40", series: "Mobil Delvac MX", type: "Mineral (Ağır Hizmet)",
+    api: "CI-4 Plus/SL", acea: "E7",
+    approvals: ["Cummins CES 20076", "MAN M3275", "MB 228.3", "Volvo VDS-3"],
+    description: "Ağır hizmet dizel motorları için geliştirilmiş güvenilir ve ekonomik mineral motor yağı. Geniş OEM onay portföyüyle büyük filolar için maliyet etkin çözüm sunar.",
+    features: ["CI-4 Plus sertifikalı", "Ekonomik mineral formül", "Geniş OEM onay portföyü", "Güvenilir ağır hizmet koruması"],
+    image: "/images/products/mobil/delvac-mx-15w-40.png",
+    fullDescription: `Ağır hizmet kamyon ve otobüs motorları için güvenilir, ekonomik mineral motor yağı.
+
+CI-4 Plus sertifikasyonu ve geniş OEM onay portföyüyle büyük araç filolarında hem güvenilir koruma hem de düşük bakım maliyeti sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• CI-4 Plus ile EGR motor koruması
+• Geniş filo ve araç uyumu
+• Ekonomik mineral formülasyon
+• Güvenilir ağır hizmet koruması
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CI-4 Plus/SL
+ACEA E7
+Cummins CES 20076
+MAN M3275
+MB 228.3
+Volvo VDS-3`,
+  },
+  "delvac-mx-esp-10w-30": {
+    name: "Mobil Delvac MX ESP 10W-30", grade: "10W-30", series: "Mobil Delvac MX ESP", type: "Mineral (Ağır Hizmet)",
+    api: "CI-4/SL", acea: "E7",
+    approvals: ["Cummins CES 20078", "MB 228.3", "Volvo VDS-3"],
+    description: "Soğuk iklim koşullarında kullanıma uygun ESP mineral ağır hizmet motor yağı. Düşük sıcaklıklarda kolay soğuk start ve emisyon kontrol sistemi uyumluluğu sağlar.",
+    features: ["Soğuk start performansı", "ESP emisyon uyumlu", "Ekonomik mineral formül", "CI-4 onaylı"],
+    image: "/images/products/mobil/delvac-mx-esp-10w-30.jpg",
+    fullDescription: `Soğuk iklim bölgeleri için özel olarak formüle edilmiş, emisyon kontrol sistemi uyumlu mineral ağır hizmet motor yağı.
+
+Düşük viskozitesi sayesinde soğuk havada kolay motor start sağlarken ESP teknolojisiyle EGR ve emisyon sonrası sistemleri korur.
+
+PERFORMANS ÖZELLİKLERİ
+• Soğuk iklimde kolay start ve hızlı yağlama
+• ESP teknolojisi ile emisyon uyumluluğu
+• Ekonomik mineral formülasyon
+• Güvenilir ağır hizmet motor koruması
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CI-4/SL
+ACEA E7
+Cummins CES 20078
+MB 228.3
+Volvo VDS-3`,
+  },
+  "delvac-xhp-15w-40": {
+    name: "Mobil Delvac XHP 15W-40", grade: "15W-40", series: "Mobil Delvac XHP", type: "Tam Sentetik (Ağır Hizmet)",
+    api: "CJ-4/SN", acea: "E7",
+    approvals: ["Volvo VDS-3", "Cummins CES 20081", "MAN M3477", "MB 228.3"],
+    description: "CJ-4 sertifikalı yüksek performanslı ağır hizmet tam sentetik motor yağı. Uzun drain aralığı ve üstün motor temizliğiyle filo işletme maliyetlerini azaltır.",
+    features: ["CJ-4 sertifikalı", "Uzun drain aralığı", "Üstün motor temizliği", "EGR motor uyumlu"],
+    image: "/images/products/mobil/delvac-xhp-15w-40.jpg",
+    fullDescription: `CJ-4 ağır hizmet standardını karşılayan, ağır hizmet kamyon motorları için geliştirilmiş tam sentetik motor yağı.
+
+Uzun servis aralıkları ve üstün deposit önleme özellikleriyle filo işletme maliyetlerini düşürürken motor ömrünü uzatır.
+
+PERFORMANS ÖZELLİKLERİ
+• CJ-4 standardına göre uzatılmış drain aralığı
+• Üstün motor temizliği ve deposit kontrolü
+• EGR uyumlu formülasyon
+• Yakıt ekonomisine katkı
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CJ-4/SN
+ACEA E7
+Volvo VDS-3
+Cummins CES 20081
+MAN M3477
+MB 228.3`,
+  },
+  "delvac-super-20w-50": {
+    name: "Mobil Delvac Super 20W-50", grade: "20W-50", series: "Mobil Delvac Super", type: "Mineral (Ağır Hizmet)",
+    api: "CH-4/SL", acea: "E3",
+    approvals: ["Cummins CES 20071", "MAN M3275", "MB 228.1"],
+    description: "Tropikal ve yüksek çevre sıcaklığı koşullarında ağır hizmet dizel motorları için formüle edilmiş mineral motor yağı. Yüksek sıcaklıklarda üstün viskozite stabilitesi sağlar.",
+    features: ["Yüksek sıcaklık stabilitesi", "Tropikal iklim uyumlu", "CH-4 sertifikalı", "Ekonomik mineral formül"],
+    image: "/images/products/mobil/delvac-super-20w-50.png",
+    fullDescription: `Sıcak iklim bölgeleri ve yüksek çevre sıcaklığı koşullarında çalışan ağır hizmet motorları için özel olarak formüle edilmiş mineral motor yağı.
+
+Yüksek viskozite indeksiyle yüksek çalışma sıcaklıklarında film kalınlığını koruyarak tropikal ortamlarda motor parçalarını güvenilir biçimde korur.
+
+PERFORMANS ÖZELLİKLERİ
+• Yüksek sıcaklıklarda üstün viskozite stabilitesi
+• Tropikal ve sıcak iklim koşullarına uygun
+• Güvenilir ağır hizmet motor koruması
+• Ekonomik mineral formülasyon
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CH-4/SL
+ACEA E3
+Cummins CES 20071
+MAN M3275
+MB 228.1`,
+  },
+  "delvac-1350": {
+    name: "Mobil Delvac 1350", grade: "SAE 50", series: "Mobil Delvac 1350", type: "Mineral (Ağır Hizmet, Monograde)",
+    api: "CF-4/SF", acea: "E2",
+    approvals: ["MIL-L-2104E", "MAN M3275"],
+    description: "SAE 50 monograde ağır hizmet dizel motor yağı. Eski nesil kamyon ve iş makinesi motorlarında güvenilir yüksek sıcaklık koruması sağlayan ekonomik mineral seçenek.",
+    features: ["SAE 50 monograde formülü", "Eski nesil motor uyumlu", "Yüksek sıcaklık koruması", "Mineral ekonomik seçenek"],
+    image: "/images/products/mobil/delvac-1350.jpg",
+    fullDescription: `Eski ve konvansiyonel ağır hizmet dizel motorları için formüle edilmiş SAE 50 monograde mineral motor yağı.
+
+Yüksek viskozitesiyle yüksek çalışma sıcaklıklarında güvenilir film koruması sağlarken eski nesil motor tasarımlarının gereksinimlerini karşılar.
+
+PERFORMANS ÖZELLİKLERİ
+• SAE 50 yüksek viskozite koruması
+• Eski motor tasarımlarıyla uyumluluk
+• Güvenilir yüksek sıcaklık film koruması
+• Ekonomik mineral formülasyon
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CF-4/SF
+ACEA E2
+MIL-L-2104E
+MAN M3275`,
+  },
+  "delvac-1340": {
+    name: "Mobil Delvac 1340", grade: "SAE 40", series: "Mobil Delvac 1340", type: "Mineral (Ağır Hizmet, Monograde)",
+    api: "CF-4/SF", acea: "E2",
+    approvals: ["MIL-L-2104E", "MAN M3275"],
+    description: "SAE 40 monograde ağır hizmet dizel motor yağı. Standart çalışma koşullarındaki eski nesil dizel motorlar ve iş makinelerinde temel motor koruması sağlar.",
+    features: ["SAE 40 monograde formülü", "Eski dizel motor uyumlu", "Temel ağır hizmet koruması", "Ekonomik mineral seçenek"],
+    image: "/images/products/mobil/delvac-1340.jpg",
+    fullDescription: `Standart çalışma koşullarında eski ve konvansiyonel ağır hizmet dizel motorları için formüle edilmiş SAE 40 monograde mineral motor yağı.
+
+Temel motor koruması ihtiyaçlarını karşılayan ekonomik formülasyonuyla eski nesil kamyon ve iş makinesi motorları için ideal seçenektir.
+
+PERFORMANS ÖZELLİKLERİ
+• SAE 40 dengeli viskozite koruması
+• Eski motor tasarımlarıyla uyumluluk
+• Temel ağır hizmet motor koruması
+• Ekonomik mineral formülasyon
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CF-4/SF
+ACEA E2
+MIL-L-2104E
+MAN M3275`,
+  },
+  "delvac-1330": {
+    name: "Mobil Delvac 1330", grade: "SAE 30", series: "Mobil Delvac 1330", type: "Mineral (Ağır Hizmet, Monograde)",
+    api: "CF-4/SF", acea: "E2",
+    approvals: ["MIL-L-2104E", "Caterpillar TO-2"],
+    description: "SAE 30 monograde ağır hizmet motor yağı. Standart çalışma koşullarında motor koruması ve Caterpillar iş makineleriyle uyumluluk sağlar.",
+    features: ["SAE 30 monograde formülü", "Caterpillar TO-2 onaylı", "Temel ağır hizmet formülü", "Ekonomik mineral yağ"],
+    image: "/images/products/mobil/delvac-1330.jpg",
+    fullDescription: `Eski ve konvansiyonel ağır hizmet motorları için SAE 30 monograde mineral motor yağı.
+
+Düşük viskozitesiyle soğuk start koşullarında hızlı yağlama sağlarken temel motor koruma gereksinimlerini karşılar.
+
+PERFORMANS ÖZELLİKLERİ
+• SAE 30 düşük viskoziteli soğuk start avantajı
+• Caterpillar iş makineleriyle uyumluluk
+• Temel ağır hizmet motor koruması
+• Ekonomik mineral formülasyon
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CF-4/SF
+ACEA E2
+MIL-L-2104E
+Caterpillar TO-2`,
+  },
+  "delvac-super-1000-20w-50": {
+    name: "Mobil Delvac Super 1000 20W-50", grade: "20W-50", series: "Mobil Delvac Super 1000", type: "Mineral (Ağır Hizmet)",
+    api: "CH-4/SL", acea: "E3",
+    approvals: ["Cummins CES 20071", "MB 228.1"],
+    description: "Büyük araç filoları ve yüksek sıcaklık ortamları için formüle edilmiş mineral ağır hizmet motor yağı. Filo bakım maliyetlerini minimize eden ekonomik formülasyonuyla güvenilir koruma sağlar.",
+    features: ["Filo bakım ekonomisi", "Yüksek sıcaklık stabilitesi", "CH-4 sertifikalı", "Mineral ekonomik formül"],
+    image: "/images/products/mobil/delvac-super-1000-20w-50.jpg",
+    fullDescription: `Büyük araç filolarının ekonomik bakım ihtiyaçlarını karşılamak için tasarlanmış mineral ağır hizmet motor yağı.
+
+Yüksek çalışma sıcaklıklarında yeterli film koruması sağlarken düşük maliyet avantajıyla büyük filolarda bakım maliyetlerini azaltır.
+
+PERFORMANS ÖZELLİKLERİ
+• Büyük filo operasyonları için ekonomik seçenek
+• Yüksek sıcaklıklarda yeterli viskozite koruması
+• CH-4 ağır hizmet sertifikasyonu
+• Güvenilir motor koruması
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CH-4/SL
+ACEA E3
+Cummins CES 20071
+MB 228.1`,
+  },
+  "delvac-ct-diesel-10w-30": {
+    name: "Mobil Delvac CT Diesel 10W-30", grade: "10W-30", series: "Mobil Delvac CT", type: "Mineral (Ağır Hizmet)",
+    api: "CI-4/SL", acea: "E5",
+    approvals: ["MB 228.3", "Volvo VDS-2", "MAN M3275"],
+    description: "Konvansiyonel teknoloji dizel motorları için formüle edilmiş CI-4 onaylı mineral motor yağı. Soğuk iklim koşullarında kolay soğuk start özelliği ve güvenilir koruma sağlar.",
+    features: ["Soğuk iklim start performansı", "CI-4 onaylı", "Konvansiyonel dizel uyumlu", "Ekonomik mineral formül"],
+    image: "/images/products/mobil/delvac-ct-diesel-10w-30.jpg",
+    fullDescription: `Konvansiyonel ve eski teknoloji ağır hizmet dizel motorları için formüle edilmiş CI-4 onaylı mineral motor yağı.
+
+Düşük viskozitesiyle soğuk havalarda kolay motor start sağlarken güvenilir ağır hizmet koruması ve emisyon kontrol sistemi uyumluluğu sunar.
+
+PERFORMANS ÖZELLİKLERİ
+• Soğuk iklimde kolay start ve hızlı yağlama
+• CI-4 standartlarına uygun koruma
+• Konvansiyonel ve eski teknoloji motor uyumu
+• Ekonomik mineral formülasyon
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CI-4/SL
+ACEA E5
+MB 228.3
+Volvo VDS-2
+MAN M3275`,
   },
 };
 
@@ -2469,6 +3278,155 @@ const MOBIL_INDUSTRIAL_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["SKF", "FAG", "NSK", "Timken"],
     description: "Lityum kompleks kıvamlaştırıcılı yüksek performanslı EP gres yağı. Rulmanlı yataklar, dişli kutular ve eklem noktaları dahil geniş endüstriyel uygulamalarda üstün koruma sağlar.",
     features: ["Yüksek EP kapasitesi", "Geniş sıcaklık aralığı (-20°C ile +150°C)", "Su ve pas koruması", "Uzun yeniden gres aralıkları"],
+  },
+
+  "shc-pegasus-30": {
+    name: "Mobil SHC Pegasus 30", grade: "SAE 30", series: "Mobil SHC Pegasus", type: "Gaz Motor Yağı (Tam Sentetik)",
+    api: "API CF", acea: "ISO-L-EGD",
+    approvals: ["GE Jenbacher", "Caterpillar", "Cummins", "Waukesha"],
+    description: "Dört zamanlı stasyoner doğal gaz motorları için geliştirilmiş PAO bazlı tam sentetik gaz motor yağı. Yüksek hızlı gaz motorlarında minimum deposit ve uzun yağ değişim aralığı sağlar.",
+    features: ["PAO tam sentetik formül", "Düşük deposit oluşumu", "Uzun değişim aralığı", "Gaz motoru optimizasyonu"],
+    image: "/images/products/mobil/shc-pegasus-30.jpg",
+    fullDescription: `Stasyoner ve doğal gaz motorları için özel olarak geliştirilen PAO (Poly-Alpha-Olefin) bazlı tam sentetik gaz motor yağı.
+
+Mineral yağlara kıyasla çok daha uzun servis aralıkları ve düşük deposit oluşumuyla endüstriyel gaz motorlarında işletme maliyetlerini azaltır ve motor ömrünü uzatır.
+
+PERFORMANS ÖZELLİKLERİ
+• Yüksek oksidasyon ve nitrasyon direnci
+• Düşük kül içeriğiyle spark plug koruması
+• Uzatılmış yağ değişim aralığı
+• Geniş sıcaklık aralığında viskozite stabilitesi
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CF
+ISO-L-EGD
+GE Jenbacher
+Caterpillar
+Cummins
+Waukesha`,
+  },
+  "pegasus-805": {
+    name: "Mobil Pegasus 805", grade: "SAE 40", series: "Mobil Pegasus 800", type: "Gaz Motor Yağı (Mineral)",
+    api: "API CF", acea: "ISO-L-EGD",
+    approvals: ["GE Jenbacher", "Caterpillar", "Cummins", "Waukesha"],
+    description: "Yüksek TBN kapasiteli dört zamanlı stasyoner doğal gaz motorları için geliştirilmiş mineral gaz motor yağı. Asit nötralizasyonu ve korozyon korumasıyla uzun motor ömrü sağlar.",
+    features: ["Yüksek TBN kapasitesi", "Asit korozyon koruması", "Doğal gaz motor uyumlu", "Güvenilir mineral formül"],
+    image: "/images/products/mobil/pegasus-805.jpg",
+    fullDescription: `Dört zamanlı stasyoner doğal gaz motorları için yüksek TBN (Total Base Number) kapasiteli mineral gaz motor yağı.
+
+Yüksek alkali rezerviyle yanma süreçlerinde oluşan asidik artıkları nötralize ederek motor parçalarını korozyon ve aşınmaya karşı korur.
+
+PERFORMANS ÖZELLİKLERİ
+• Yüksek TBN ile güçlü asit nötralizasyonu
+• Motor korozyonuna karşı etkin koruma
+• Doğal gaz motorlarına özel formülasyon
+• Güvenilir mineral motor yağı
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CF
+ISO-L-EGD
+GE Jenbacher
+Caterpillar
+Cummins
+Waukesha`,
+  },
+  "pegasus-605": {
+    name: "Mobil Pegasus 605", grade: "SAE 40", series: "Mobil Pegasus 600", type: "Gaz Motor Yağı (Mineral)",
+    api: "API CF", acea: "ISO-L-EGD",
+    approvals: ["GE Jenbacher", "Caterpillar", "Waukesha"],
+    description: "Orta düzey dört zamanlı stasyoner doğal gaz ve biyogaz motorları için geliştirilmiş mineral gaz motor yağı. Güvenilir koruma ve ekonomik formülasyonuyla orta ölçekli tesisler için idealdir.",
+    features: ["Gaz ve biyogaz motor uyumlu", "Orta TBN alkali rezerv", "Ekonomik mineral formül", "Stasyoner motor optimizasyonu"],
+    image: "/images/products/mobil/pegasus-605.jpg",
+    fullDescription: `Orta ölçekli stasyoner doğal gaz ve biyogaz motorları için formüle edilmiş mineral gaz motor yağı.
+
+Orta düzey TBN kapasitesiyle temiz yakıtlı gaz motorlarında güvenilir koruma ve ekonomik bakım imkânı sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Temiz gaz yakıtlı motorlarda güvenilir koruma
+• Orta TBN ile asit kontrolü
+• Ekonomik mineral formülasyon
+• Uzun çalışma koşullarında stabilite
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CF
+ISO-L-EGD
+GE Jenbacher
+Caterpillar
+Waukesha`,
+  },
+  "pegasus-610": {
+    name: "Mobil Pegasus 610", grade: "SAE 40", series: "Mobil Pegasus 600", type: "Gaz Motor Yağı (Mineral)",
+    api: "API CF", acea: "ISO-L-EGD",
+    approvals: ["GE Jenbacher", "Caterpillar", "Waukesha"],
+    description: "Dört zamanlı stasyoner doğal gaz motorları için formüle edilmiş yüksek performanslı mineral gaz motor yağı. Gelişmiş oksidasyon direnciyle uzun çalışma sürelerinde güvenilir motor koruması sağlar.",
+    features: ["Yüksek oksidasyon direnci", "Uzun çalışma süresi performansı", "Gaz motor uyumlu", "Mineral ekonomik formül"],
+    image: "/images/products/mobil/pegasus-610.jpg",
+    fullDescription: `Yüksek çalışma saatlerinde güvenilir performans sağlayan dört zamanlı stasyoner doğal gaz motorları için mineral gaz motor yağı.
+
+Gelişmiş oksidasyon direnci formülasyonuyla uzun çalışma sürelerinde yağın bozulmasını yavaşlatarak motor korumasını sürdürür.
+
+PERFORMANS ÖZELLİKLERİ
+• Uzun çalışma sürelerinde üstün oksidasyon stabilitesi
+• Düşük deposit ve vernik oluşumu
+• Doğal gaz motorlarına özel formülasyon
+• Güvenilir mineral motor koruma
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CF
+ISO-L-EGD
+GE Jenbacher
+Caterpillar
+Waukesha`,
+  },
+  "pegasus-1005": {
+    name: "Mobil Pegasus 1005", grade: "SAE 40", series: "Mobil Pegasus 1000", type: "Gaz Motor Yağı (Mineral, Yüksek Kül)",
+    api: "API CF", acea: "ISO-L-EGD",
+    approvals: ["GE Jenbacher", "Caterpillar", "Cummins", "Waukesha"],
+    description: "Kirli veya yüksek kükürtlü gaz yakıtlarıyla çalışan ağır hizmet gaz motorları için yüksek TBN'li mineral gaz motor yağı. Güçlü asit nötralizasyonuyla motor ömrünü korur.",
+    features: ["En yüksek TBN kapasitesi", "Kirli gaz yakıt toleransı", "Güçlü asit nötralizasyonu", "Ağır hizmet gaz motoru"],
+    image: "/images/products/mobil/pegasus-1005.jpg",
+    fullDescription: `Kirli veya yüksek kükürtlü gaz yakıtlarının kullanıldığı ağır hizmet gaz motorları için formüle edilmiş yüksek TBN'li mineral gaz motor yağı.
+
+En yüksek alkali rezerv kapasitesiyle asidik yanma ürünlerini etkili biçimde nötralize ederek motor parçalarını korozyona karşı korur.
+
+PERFORMANS ÖZELLİKLERİ
+• En yüksek TBN ile maksimum asit nötralizasyonu
+• Kirli gaz yakıtlarında üstün koruma
+• Motor korozyonuna karşı en güçlü kalkan
+• Ağır hizmet gaz motoru koşulları için optimize edilmiş
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CF
+ISO-L-EGD
+GE Jenbacher
+Caterpillar
+Cummins
+Waukesha`,
+  },
+  "pegasus-705": {
+    name: "Mobil Pegasus 705", grade: "SAE 40", series: "Mobil Pegasus 700", type: "Gaz Motor Yağı (Mineral)",
+    api: "API CF", acea: "ISO-L-EGD",
+    approvals: ["GE Jenbacher", "Caterpillar", "Cummins", "Waukesha"],
+    description: "Dört zamanlı stasyoner doğal gaz motorları için güncellenmiş formülasyonlu mineral gaz motor yağı. Gelişmiş katık teknolojisiyle motor temizliği ve korozyon koruması sağlar.",
+    features: ["Güncellenmiş gaz motor formülü", "Gelişmiş motor temizliği", "Korozyon koruması", "Mineral ekonomik yağ"],
+    image: "/images/products/mobil/pegasus-705.jpg",
+    fullDescription: `700 serisi güncellenmiş formülasyonuyla dört zamanlı stasyoner gaz motorları için geliştirilmiş mineral gaz motor yağı.
+
+Gelişmiş katık paketi sayesinde önceki jenerasyona kıyasla daha iyi motor temizliği ve korozyon koruması sağlar.
+
+PERFORMANS ÖZELLİKLERİ
+• Gelişmiş katık teknolojisiyle üstün motor temizliği
+• Güçlendirilmiş korozyon ve aşınma koruması
+• Doğal gaz motorlarına özel optimizasyon
+• Güvenilir mineral motor yağı performansı
+
+STANDARTLAR VE SPESİFİKASYONLAR
+API CF
+ISO-L-EGD
+GE Jenbacher
+Caterpillar
+Cummins
+Waukesha`,
   },
 };
 
