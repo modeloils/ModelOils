@@ -447,15 +447,6 @@ function BrandedProductCard({
       {imageSrc ? (
         <div className="relative bg-white flex items-center justify-center overflow-hidden" style={{ height: 140 }}>
           <Image src={imageSrc} alt={name} fill className="object-contain p-3" sizes="220px" />
-          {/* Grade pill at bottom */}
-          {grade && (
-            <span
-              className="absolute bottom-2 left-1/2 -translate-x-1/2 text-xs font-black px-2.5 py-0.5 rounded-full whitespace-nowrap z-10"
-              style={{ background: colors.primary, color: colors.accent }}
-            >
-              {grade}
-            </span>
-          )}
         </div>
       ) : (
         <div
@@ -481,7 +472,7 @@ function BrandedProductCard({
 
       {/* White body */}
       <div className="bg-white p-3 flex flex-col flex-1 gap-3">
-        <p className="text-brand-900 text-xs font-medium leading-snug flex-1">{name}</p>
+        <p className="text-brand-900 text-sm font-semibold leading-snug flex-1">{name}</p>
         <span className="inline-flex items-center justify-center gap-1 text-xs font-semibold border rounded px-2 py-1.5 hover:opacity-80 transition-colors"
           style={{ color: colors.primary, borderColor: colors.primary + "40" }}>
           ▶ <ArrowRight className="h-3 w-3" />
