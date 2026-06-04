@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import { Link } from "@/i18n/navigation";
-import { getTranslations,
-  setRequestLocale} from "next-intl/server";
+import Link from "next/link";
 import { getProductCategories } from "@/lib/sanity/queries";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ArrowRight } from "lucide-react";
@@ -14,22 +12,31 @@ export const metadata: Metadata = {
     "Wholesale supplier of motor oils, mineral oils, and industrial lubricants. ISO certified, API rated. Drum, IBC & bulk tanker available. Export to MENA, Africa, Europe. Request pricing.",
 };
 
+const FALLBACK_CATEGORIES = [
+  {
+    _id: "1",
+    name: "Motor Oils",
+    slug: "motor-oils",
+    description:
+      "SAE-graded engine oils for passenger cars, commercial vehicles, and heavy-duty diesel engines. API and ACEA certified.",
+  },
+  {
+    _id: "2",
+    name: "Mineral Oils",
+    slug: "mineral-oils",
+    description:
+      "White mineral oils, process oils, transformer oils, and specialty mineral base oils for industrial and pharmaceutical applications.",
+  },
+  {
+    _id: "3",
+    name: "Industrial Lubricants",
+    slug: "industrial-lubricants",
+    description:
+      "Hydraulic oils, compressor oils, gear oils, metalworking fluids, and greases for industrial machinery and equipment.",
+  },
+];
 
-interface ProductsPageProps {
-  params: Promise<{ locale: string }>;
-}
-
-export default async function ProductsPage({ params }: ProductsPageProps) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations("productsPage");
-
-  const FALLBACK_CATEGORIES = [
-    { _id: "1", name: t("cat1Name"), slug: "motor-oils",           description: t("cat1Desc") },
-    { _id: "2", name: t("cat2Name"), slug: "mineral-oils",         description: t("cat2Desc") },
-    { _id: "3", name: t("cat3Name"), slug: "industrial-lubricants",description: t("cat3Desc") },
-  ];
-
+export default async function ProductsPage() {
   const categories = await getProductCategories().catch(() => FALLBACK_CATEGORIES);
   const displayCategories = categories.length > 0 ? categories : FALLBACK_CATEGORIES;
 
@@ -51,15 +58,15 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
         <div className="container-xl">
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex items-center gap-2 text-xs text-brand-500">
-              <li><Link href="/" className="hover:text-brand-300">{t("breadcrumbHome")}</Link></li>
+              <li><Link href="/" className="hover:text-brand-300">Home</Link></li>
               <li aria-hidden="true">/</li>
-              <li className="text-brand-300">{t("breadcrumbPage")}</li>
+              <li className="text-brand-300">Products</li>
             </ol>
           </nav>
           <SectionHeader
-            eyebrow={t("eyebrow")}
-            headline={t("headline")}
-            subheadline={t("subheadline")}
+            eyebrow="Full Catalog"
+            headline="Motor Oils, Mineral Oils & Industrial Lubricants"
+            subheadline="500+ products across three categories. All ISO certified, API compliant, with full technical documentation."
             alignment="left"
             dark
           />
@@ -82,19 +89,23 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
                 <h2 className="text-xl font-bold text-brand-900 mb-3 group-hover:text-accent-600 transition-colors">
                   {cat.name}
                 </h2>
-                <p className="text-brand-500 text-sm leading-relaxed mb-5">{cat.description}</p>
+                <p className="text-brand-500 text-sm leading-relaxed mb-5">
+                  {cat.description}
+                </p>
                 <span className="text-accent-600 text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
-                  {t("viewProducts")} <ArrowRight className="h-3.5 w-3.5" />
+                  View Products <ArrowRight className="h-3.5 w-3.5" />
                 </span>
               </Link>
             ))}
           </div>
 
           <div className="mt-12 p-8 bg-brand-900 rounded-xl text-center hex-texture">
-            <h2 className="text-white text-2xl font-bold mb-3">{t("customSpecTitle")}</h2>
-            <p className="text-brand-300 text-sm mb-6 max-w-[480px] mx-auto">{t("customSpecBody")}</p>
+            <h2 className="text-white text-2xl font-bold mb-3">Need a Custom Product Specification?</h2>
+            <p className="text-brand-300 text-sm mb-6 max-w-[480px] mx-auto">
+              Our technical team can match the correct product to your engine type, OEM specification, and operating conditions.
+            </p>
             <Button asChild size="md" rightIcon={<ArrowRight className="h-4 w-4" />}>
-              <Link href="/contact/request-quote">{t("customSpecCta")}</Link>
+              <Link href="/contact/request-quote">Request Technical Matching</Link>
             </Button>
           </div>
         </div>

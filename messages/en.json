@@ -1020,11 +1020,11 @@
     },
     "magnatec-10w-40": {
       "type": "Semi-Synthetic",
-      "description": "A semi-synthetic Castrol Magnatec for everyday driving. Intelligent molecules provide constant engine protection especially during critical warm-up phases.",
-      "f0": "Warm-up phase protection",
-      "f1": "Intelligent molecule technology",
-      "f2": "VW and MB approved",
-      "f3": "Petrol and diesel compatible"
+      "description": "Semi-synthetic 10W-40 with intelligent molecules that cling to engine parts to reduce wear by up to 75% at startup.",
+      "f0": "MB 229.1 approved",
+      "f1": "VW 501.01/505.00 approved",
+      "f2": "75% less wear at startup",
+      "f3": "Smart molecule technology"
     },
     "gtx-15w-40": {
       "type": "Mineral",
@@ -1036,11 +1036,11 @@
     },
     "gtx-20w-50": {
       "type": "Mineral",
-      "description": "A high-viscosity mineral motor oil for hot climates and older high-mileage vehicles. Provides reliable protection and reduces oil consumption in worn engines.",
-      "f0": "Hot climate protection",
-      "f1": "High-mileage engine support",
-      "f2": "Reduced oil consumption",
-      "f3": "Standard mineral formula"
+      "description": "Classic mineral 20W-50 providing reliable protection against wear and sludge in high-mileage engines.",
+      "f0": "50% more wear protection",
+      "f1": "Maximum sludge defense",
+      "f2": "High-temp viscosity stability",
+      "f3": "Engine cooling and cleaning"
     },
     "vecton-15w-40": {
       "type": "Heavy Duty",
@@ -1051,12 +1051,12 @@
       "f3": "Commercial fleet protection"
     },
     "vecton-long-drain-10w-40": {
-      "type": "Heavy Duty",
-      "description": "A long-drain capable heavy-duty diesel engine oil. Extended drain intervals reduce downtime and operating costs for commercial vehicle fleets.",
-      "f0": "Extended drain intervals",
-      "f1": "Reduced downtime",
-      "f2": "Volvo and Cummins approved",
-      "f3": "Fleet cost savings"
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic 10W-40 with System 5 Technology providing 40% higher performance for extended drain Euro 4/5 diesels.",
+      "f0": "System 5 Technology",
+      "f1": "MB 228.51 approved",
+      "f2": "Volvo VDS-3 approved",
+      "f3": "Extended drain intervals"
     },
     "hyspin-aws-32": {
       "type": "Hydraulic Oil",
@@ -3681,6 +3681,214 @@
           "Daha uzun yağ ömrü sağlar"
         ]
       }
+    },
+    "edge-0w-20-ll-iv": {
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic motor oil with Liquid Titanium technology, ACEA C5/C6 and BMW Longlife-17FE+ approved for modern low-friction engines.",
+      "f0": "BMW Longlife-17FE+ approved",
+      "f1": "VW 508/509 approved",
+      "f2": "MB 229.71/229.72 approved",
+      "f3": "Maximum fuel economy"
+    },
+    "edge-0w-30-titanium-fst": {
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic 0W-30 with Titanium FST technology for extended drain intervals and multi-OEM approval.",
+      "f0": "BMW Longlife-04 approved",
+      "f1": "MB 229.51 approved",
+      "f2": "dexos2 certified",
+      "f3": "Extended drain intervals"
+    },
+    "edge-5w-30-fst-titanium-ll": {
+      "type": "Fully Synthetic",
+      "description": "High-performance fully synthetic 5W-30 with Titanium FST for petrol and diesel engines with DPF.",
+      "f0": "MB 229.51 approved",
+      "f1": "Porsche C30 approved",
+      "f2": "DPF compatible",
+      "f3": "Low SAPS formulation"
+    },
+    "edge-5w-30-c3": {
+      "type": "Fully Synthetic",
+      "description": "ACEA C3 fully synthetic 5W-30 with broad multi-OEM approval including BMW, MB, VW and Porsche.",
+      "f0": "ACEA C3 certified",
+      "f1": "BMW Longlife-04 approved",
+      "f2": "dexos2 certified",
+      "f3": "VW 502/505 approved"
+    },
+    "edge-5w-30-m": {
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic 5W-30 with Titanium technology delivering superior friction reduction and engine protection.",
+      "f0": "35% stronger under extreme pressure",
+      "f1": "ACEA C3 certified",
+      "f2": "MB 229.51 approved",
+      "f3": "VW 502/505 approved"
+    },
+    "edge-5w-40-titanium-fst": {
+      "type": "Fully Synthetic",
+      "description": "Industry-leading fully synthetic 5W-40 with Titanium FST technology for maximum engine performance.",
+      "f0": "BMW Longlife-04 approved",
+      "f1": "MB 229.51 approved",
+      "f2": "Porsche A40 approved",
+      "f3": "10% fuel economy gain vs conventional"
+    },
+    "edge-supercar-10w-60": {
+      "type": "Fully Synthetic",
+      "description": "Premium fully synthetic 10W-60 engineered for supercars and high-performance sports vehicles.",
+      "f0": "BMW M-Models approved",
+      "f1": "ACEA A3/B4 certified",
+      "f2": "Suitable for Ferrari, Bugatti, Aston Martin",
+      "f3": "Extreme high-temperature protection"
+    },
+    "magnatec-stop-start-0w-20": {
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic 0W-20 with intelligent molecules designed for stop-start city driving and superior warm-up protection.",
+      "f0": "Intelligent molecule technology",
+      "f1": "Optimized for stop-start engines",
+      "f2": "Superior cold-start protection",
+      "f3": "Fuel economy focused"
+    },
+    "magnatec-a5-5w-30-start-stop": {
+      "type": "Semi-Synthetic",
+      "description": "Semi-synthetic 5W-30 with self-renewing intelligent molecules for superior wear protection in stop-start traffic.",
+      "f0": "Ford WSS-M2C913-D approved",
+      "f1": "ACEA A5/B5 fuel economy",
+      "f2": "Stop-start optimized",
+      "f3": "Up to 20% less wear"
+    },
+    "magnatec-5w-30-a5": {
+      "type": "Semi-Synthetic",
+      "description": "Semi-synthetic 5W-30 with intelligent molecules providing superior protection during the critical warm-up phase.",
+      "f0": "Ford WSS-M2C913-D approved",
+      "f1": "ACEA A5/B5 rated",
+      "f2": "Stop-start protection",
+      "f3": "Self-renewing molecules"
+    },
+    "gtx-5w-30-rn0720": {
+      "type": "Mineral",
+      "description": "Mineral 5W-30 formulated specifically for Renault vehicles with dual-action sludge protection.",
+      "f0": "Renault RN0720 approved",
+      "f1": "Dual sludge protection",
+      "f2": "Extended engine life",
+      "f3": "Viscosity stability"
+    },
+    "gtx-ultraclean-10w-40": {
+      "type": "Mineral",
+      "description": "Mineral 10W-40 with 25% better sludge protection and 50% improved wear resistance versus industry standards.",
+      "f0": "25% better sludge protection",
+      "f1": "50% better wear resistance",
+      "f2": "ACEA A3/B4 certified",
+      "f3": "Petrol and diesel compatible"
+    },
+    "gtx-lpg-20w-50": {
+      "type": "Mineral",
+      "description": "Mineral 20W-50 specially formulated for LPG-powered vehicles, compensating for the lower lubricity of LPG fuel.",
+      "f0": "LPG optimized formula",
+      "f1": "50% more wear protection",
+      "f2": "Maximum sludge protection",
+      "f3": "Viscosity stability at high temp"
+    },
+    "multi-20w-50": {
+      "type": "Mineral",
+      "description": "Mineral diesel 20W-50 for heavy-duty diesel engines with 30% longer acid protection and four-season usability.",
+      "f0": "30% longer acid protection",
+      "f1": "Prevents sludge and corrosion",
+      "f2": "Soot thickening control",
+      "f3": "Low oil consumption"
+    },
+    "mini-truck-10w-30": {
+      "type": "Semi-Synthetic",
+      "description": "Semi-synthetic 10W-30 formulated for Ford Transit, Connect and light commercial vehicles with extended drain intervals.",
+      "f0": "Ford WSS-M2C921-A approved",
+      "f1": "Extended drain intervals",
+      "f2": "Superior engine cleanliness",
+      "f3": "Rust and corrosion protection"
+    },
+    "vecton-fuel-saver-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic heavy-duty diesel 5W-30 with System 5 Technology for Euro 6 engines and extended drain intervals.",
+      "f0": "Euro 6 compatible",
+      "f1": "40% better in 5 critical areas",
+      "f2": "Real-world fuel savings",
+      "f3": "Extended drain intervals"
+    },
+    "vecton-10w-40": {
+      "type": "Mineral",
+      "description": "Heavy-duty diesel 10W-40 with System 5 Technology for commercial trucks with improved fuel economy.",
+      "f0": "ACEA E4/E7 certified",
+      "f1": "System 5 Technology",
+      "f2": "Fuel economy improvement",
+      "f3": "Extended drain capability"
+    },
+    "enduron-plus-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic SHPD diesel 5W-30 for all diesel engines with high fuel efficiency and long drain capability.",
+      "f0": "MB 228.5 approved",
+      "f1": "Volvo VDS-3 approved",
+      "f2": "MAN M3277 approved",
+      "f3": "Full synthetic SHPD"
+    },
+    "elixion-low-saps-5w-30": {
+      "type": "Fully Synthetic",
+      "description": "Fully synthetic low SAPS heavy-duty diesel 5W-30 for Euro 4 fleets with the longest drain intervals.",
+      "f0": "Low SAPS formula",
+      "f1": "MB 228.51 approved",
+      "f2": "Euro 4 optimized",
+      "f3": "Biodiesel compatible"
+    },
+    "crb-turbomax-10w-40": {
+      "type": "Mineral",
+      "description": "Mineral diesel 10W-40 with Durashield Technology actively fighting wear, soot and corrosion in harsh conditions.",
+      "f0": "Durashield Technology",
+      "f1": "Soot and deposit removal",
+      "f2": "Protective film formation",
+      "f3": "Acid neutralization"
+    },
+    "turbomax-10w-40-ci4": {
+      "type": "Mineral",
+      "description": "Mineral diesel 10W-40 with Durashield Technology for diesel engines in varying weather and load conditions.",
+      "f0": "Durashield Technology",
+      "f1": "Soot particle removal",
+      "f2": "Heat resistance",
+      "f3": "Anti-corrosion protection"
+    },
+    "crb-turbomax-15w-40": {
+      "type": "Mineral",
+      "description": "Mineral diesel 15W-40 with Durashield Technology delivering up to twice the engine life versus standard oils.",
+      "f0": "Durashield Technology",
+      "f1": "Twice the engine life",
+      "f2": "MB/MAN/Volvo approved",
+      "f3": "Biodiesel compatible"
+    },
+    "crb-multi-20w-50": {
+      "type": "Mineral",
+      "description": "Multipurpose mineral diesel 20W-50 for older high-mileage diesel fleets with stable oil pressure and low consumption.",
+      "f0": "Foam prevention",
+      "f1": "Stable oil pressure",
+      "f2": "Deposit prevention",
+      "f3": "Startup wear protection"
+    },
+    "tection-monograde-10w": {
+      "type": "Mineral",
+      "description": "Single-grade mineral diesel 10W for heavy-duty diesel engines and construction machinery transmissions and hydraulics.",
+      "f0": "API CF certified",
+      "f1": "ACEA E1 rated",
+      "f2": "MB 228.0 approved",
+      "f3": "CAT TO-2 certified"
+    },
+    "tection-monograde-30w": {
+      "type": "Mineral",
+      "description": "Single-grade mineral diesel 30W for heavy-duty diesel engines and construction/industrial machinery systems.",
+      "f0": "API CF certified",
+      "f1": "ACEA E1 rated",
+      "f2": "MB 228.0 approved",
+      "f3": "No extreme-pressure additives"
+    },
+    "tection-f-tr-10w-30": {
+      "type": "Semi-Synthetic",
+      "description": "Semi-synthetic diesel 10W-30 formulated for Ford Transit and Connect vehicles with extended drain intervals.",
+      "f0": "Ford WSS-M2C921-A approved",
+      "f1": "Extended drain intervals",
+      "f2": "Cold-start fluidity",
+      "f3": "Rust and corrosion protection"
     }
   },
   "quotePage": {

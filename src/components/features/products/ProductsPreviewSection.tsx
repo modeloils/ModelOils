@@ -1,4 +1,4 @@
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Button } from "@/components/ui/Button";
@@ -18,7 +18,7 @@ export function ProductsPreviewSection({ products }: ProductsPreviewSectionProps
       <div className="container-xl">
         <SectionHeader
           id="products-heading"
-          eyebrow={t("eyebrow")}
+          eyebrow="Product Range"
           headline={t("title")}
           subheadline={t("subtitle")}
         />

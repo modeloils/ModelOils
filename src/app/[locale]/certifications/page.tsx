@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import { Link } from "@/i18n/navigation";
-import { getTranslations,
-  setRequestLocale} from "next-intl/server";
+import Link from "next/link";
 import { getCertifications } from "@/lib/sanity/queries";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
@@ -104,24 +102,9 @@ const COMPLIANCE_DOCS = [
   { label: "Phytosanitary / ISPM-15 Declaration", available: true },
 ];
 
-
-interface CertificationsPageProps {
-  params: Promise<{ locale: string }>;
-}
-
-export default async function CertificationsPage({ params }: CertificationsPageProps) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations("certPage");
+export default async function CertificationsPage() {
   const certifications = await getCertifications().catch(() => []);
   const displayCerts = certifications.length > 0 ? certifications : FALLBACK_CERTS;
-
-  const qaSteps = [
-    { step: "01", title: t("qa1Title"), desc: t("qa1Desc") },
-    { step: "02", title: t("qa2Title"), desc: t("qa2Desc") },
-    { step: "03", title: t("qa3Title"), desc: t("qa3Desc") },
-    { step: "04", title: t("qa4Title"), desc: t("qa4Desc") },
-  ];
 
   const breadcrumb = {
     "@context": "https://schema.org",
@@ -141,24 +124,26 @@ export default async function CertificationsPage({ params }: CertificationsPageP
         <div className="container-xl">
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex items-center gap-2 text-xs text-brand-500">
-              <li><Link href="/" className="hover:text-brand-300">{t("breadcrumbHome")}</Link></li>
+              <li><Link href="/" className="hover:text-brand-300">Home</Link></li>
               <li aria-hidden="true">/</li>
-              <li className="text-brand-300">{t("breadcrumbPage")}</li>
+              <li className="text-brand-300">Certifications</li>
             </ol>
           </nav>
           <SectionHeader
-            eyebrow={t("eyebrow")}
-            headline={t("headline")}
-            subheadline={t("subheadline")}
+            eyebrow="Quality & Compliance"
+            headline="Certified Quality You Can Verify"
+            subheadline="ISO 9001:2015 certified operations. API-licensed motor oils. ACEA-compliant formulations. Full documentation package for procurement approval."
             alignment="left"
             dark
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild size="md" rightIcon={<Download className="h-4 w-4" />} variant="outline">
-              <Link href="/contact?docs=certification-package">{t("reqDocPkg")}</Link>
+              <Link href="/contact?docs=certification-package">
+                Request Documentation Package
+              </Link>
             </Button>
             <Button asChild size="md" rightIcon={<ArrowRight className="h-4 w-4" />}>
-              <Link href="/contact/request-quote">{t("reqBulkQuote")}</Link>
+              <Link href="/contact/request-quote">Request a Bulk Quote</Link>
             </Button>
           </div>
         </div>
@@ -169,7 +154,7 @@ export default async function CertificationsPage({ params }: CertificationsPageP
         <div className="container-xl">
           <div className="flex flex-wrap items-center gap-4">
             <span className="text-xs font-semibold text-brand-500 uppercase tracking-wider shrink-0">
-              {t("certCompliant")}
+              Certified &amp; Compliant:
             </span>
             {["ISO 9001:2015", "ISO 14001:2015", "API SN / CK-4", "ACEA E7 / C3", "SGS Verified", "REACH Compliant"].map((cert) => (
               <span
@@ -186,7 +171,7 @@ export default async function CertificationsPage({ params }: CertificationsPageP
       {/* Certification detail cards */}
       <section className="bg-brand-50 section-padding">
         <div className="container-xl">
-          <h2 className="text-xl font-bold text-brand-900 mb-8">{t("ourCertsTitle")}</h2>
+          <h2 className="text-xl font-bold text-brand-900 mb-8">Our Certifications & Approvals</h2>
           <div className="grid gap-5">
             {displayCerts.map((cert) => (
               <div
@@ -211,15 +196,15 @@ export default async function CertificationsPage({ params }: CertificationsPageP
                     {"scope" in cert && (
                       <div className="grid sm:grid-cols-3 gap-3 text-xs">
                         <div>
-                          <span className="text-brand-500 font-medium block mb-0.5">{t("scopeLabel")}</span>
+                          <span className="text-brand-500 font-medium block mb-0.5">Scope</span>
                           <span className="text-brand-700">{"scope" in cert ? (cert.scope as string) : ""}</span>
                         </div>
                         <div>
-                          <span className="text-brand-500 font-medium block mb-0.5">{t("issuingBodyLabel")}</span>
+                          <span className="text-brand-500 font-medium block mb-0.5">Issuing Body</span>
                           <span className="text-brand-700">{"issuingBody" in cert ? (cert.issuingBody as string) : ""}</span>
                         </div>
                         <div>
-                          <span className="text-brand-500 font-medium block mb-0.5">{t("validUntilLabel")}</span>
+                          <span className="text-brand-500 font-medium block mb-0.5">Valid Until</span>
                           <span className="text-brand-700">{"validUntil" in cert ? (cert.validUntil as string) : ""}</span>
                         </div>
                       </div>
@@ -230,7 +215,7 @@ export default async function CertificationsPage({ params }: CertificationsPageP
                   <div className="shrink-0">
                     <Button asChild size="sm" variant="outline" leftIcon={<Download className="h-3.5 w-3.5" />}>
                       <Link href={`/contact?cert=${encodeURIComponent(cert.abbreviation)}`}>
-                        {t("requestCopy")}
+                        Request Copy
                       </Link>
                     </Button>
                   </div>
@@ -248,11 +233,13 @@ export default async function CertificationsPage({ params }: CertificationsPageP
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <ShieldCheck className="h-6 w-6 text-accent-500" aria-hidden="true" />
-                <h2 className="text-xl font-bold text-white">{t("docsTitle")}</h2>
+                <h2 className="text-xl font-bold text-white">Available Compliance Documents</h2>
               </div>
-              <p className="text-brand-300 text-sm leading-relaxed mb-6">{t("docsNote")}</p>
+              <p className="text-brand-300 text-sm leading-relaxed mb-6">
+                Our trade compliance team prepares all standard export documentation in-house. Full documentation packages are typically delivered within 24 hours of order confirmation.
+              </p>
               <Button asChild size="md" rightIcon={<ArrowRight className="h-4 w-4" />}>
-                <Link href="/contact/request-quote">{t("docsCta")}</Link>
+                <Link href="/contact/request-quote">Request a Quote with Documentation</Link>
               </Button>
             </div>
             <ul className="grid sm:grid-cols-2 gap-2">
@@ -275,9 +262,14 @@ export default async function CertificationsPage({ params }: CertificationsPageP
       {/* Quality process */}
       <section className="bg-white py-12 border-t border-brand-100">
         <div className="container-xl">
-          <h2 className="text-xl font-bold text-brand-900 mb-8">{t("qaTitle")}</h2>
+          <h2 className="text-xl font-bold text-brand-900 mb-8">Quality Assurance Process</h2>
           <div className="grid sm:grid-cols-4 gap-5">
-            {qaSteps.map((item) => (
+            {[
+              { step: "01", title: "Raw Material Incoming QC", desc: "Base oils and additives tested against specification on receipt. Non-conforming materials are quarantined and returned to supplier." },
+              { step: "02", title: "In-Process Testing", desc: "Blending batches are sampled at intervals during production. Viscosity, flash point, and density verified at each stage." },
+              { step: "03", title: "Final Product Release", desc: "Each finished batch undergoes full specification testing before release. Batch-specific COA generated and archived." },
+              { step: "04", title: "Pre-Shipment Inspection", desc: "Random sampling from sealed containers before loading. Third-party SGS inspection available on request for large orders." },
+            ].map((item) => (
               <div key={item.step} className="relative">
                 <span className="text-4xl font-bold text-brand-100 leading-none block mb-3">{item.step}</span>
                 <h3 className="text-sm font-bold text-brand-900 mb-2">{item.title}</h3>

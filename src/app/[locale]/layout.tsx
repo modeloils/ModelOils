@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter, Source_Serif_4 } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
@@ -40,10 +39,6 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
-}
-
 interface LocaleLayoutProps {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
@@ -52,21 +47,18 @@ interface LocaleLayoutProps {
 export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const { locale } = await params;
 
-  if (!routing.locales.includes(locale as "en" | "tr" | "ru" | "fa")) {
+  if (!routing.locales.includes(locale as "en" | "tr" | "ar")) {
     notFound();
   }
 
-  setRequestLocale(locale);
-
   const messages = await getMessages();
-  const isRTL = locale === "fa";
+  const isRTL = locale === "ar";
 
   return (
     <html
       lang={locale}
       dir={isRTL ? "rtl" : "ltr"}
       className={`${inter.variable} ${sourceSerif.variable}`}
-      data-scroll-behavior="smooth"
     >
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />

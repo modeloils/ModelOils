@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getTranslations,
-  setRequestLocale} from "next-intl/server";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -198,42 +196,10 @@ export async function generateMetadata({ params }: SolutionPageProps): Promise<M
 }
 
 export default async function SolutionPage({ params }: SolutionPageProps) {
-  const { locale, persona } = await params;
-  setRequestLocale(locale);
+  const { persona } = await params;
   const data = PERSONAS[persona];
+
   if (!data) notFound();
-
-  const ts = await getTranslations("solutions");
-  const PERSONA_KEY: Record<string, string> = {
-    "fleet-operators": "fleet",
-    "automotive-distributors": "distributors",
-    "industrial-companies": "industrial",
-    "lubricant-importers": "importers",
-  };
-  const msgKey = PERSONA_KEY[persona];
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const p = (msgKey ? ts.raw(msgKey as any) : undefined) as Record<string, string> | undefined ?? {};
-
-  const title       = (p.title       ?? data.title);
-  const eyebrow     = (p.eyebrow     ?? data.eyebrow);
-  const headline    = (p.headline    ?? data.headline);
-  const subheadline = (p.subheadline ?? data.subheadline);
-  const painPoints  = [p.p1, p.p2, p.p3, p.p4, p.p5].filter(Boolean) as string[];
-  const solutions   = [
-    { title: p.s1t ?? data.solutions[0]?.title, desc: p.s1d ?? data.solutions[0]?.desc },
-    { title: p.s2t ?? data.solutions[1]?.title, desc: p.s2d ?? data.solutions[1]?.desc },
-    { title: p.s3t ?? data.solutions[2]?.title, desc: p.s3d ?? data.solutions[2]?.desc },
-    { title: p.s4t ?? data.solutions[3]?.title, desc: p.s4d ?? data.solutions[3]?.desc },
-  ].filter((s) => s.title);
-  const faq = [
-    { q: p.faq1q ?? data.faq[0]?.q, a: p.faq1a ?? data.faq[0]?.a },
-    { q: p.faq2q ?? data.faq[1]?.q, a: p.faq2a ?? data.faq[1]?.a },
-    { q: p.faq3q ?? data.faq[2]?.q, a: p.faq3a ?? data.faq[2]?.a },
-    { q: p.faq4q ?? data.faq[3]?.q, a: p.faq4a ?? data.faq[3]?.a },
-  ].filter((f) => f.q);
-  const testimonialQuote = p.testimonial     ?? data.testimonialQuote;
-  const testimonialName  = p.testimonialName ?? data.testimonialName;
-  const testimonialRole  = p.testimonialRole ?? data.testimonialRole;
 
   const breadcrumb = {
     "@context": "https://schema.org",
@@ -254,26 +220,26 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
         <div className="container-xl">
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex items-center gap-2 text-xs text-brand-500 flex-wrap">
-              <li><Link href="/" className="hover:text-brand-300">{ts("breadcrumbHome")}</Link></li>
+              <li><Link href="/" className="hover:text-brand-300">Home</Link></li>
               <li aria-hidden="true">/</li>
-              <li><Link href="/solutions" className="hover:text-brand-300">{ts("breadcrumbSolutions")}</Link></li>
+              <li><Link href="/solutions" className="hover:text-brand-300">Solutions</Link></li>
               <li aria-hidden="true">/</li>
-              <li className="text-brand-300">{title}</li>
+              <li className="text-brand-300">{data.title}</li>
             </ol>
           </nav>
           <SectionHeader
-            eyebrow={eyebrow}
-            headline={headline}
-            subheadline={subheadline}
+            eyebrow={data.eyebrow}
+            headline={data.headline}
+            subheadline={data.subheadline}
             alignment="left"
             dark
           />
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild size="md" rightIcon={<ArrowRight className="h-4 w-4" />}>
-              <Link href="/contact/request-quote">{ts("requestQuote")}</Link>
+              <Link href="/contact/request-quote">Request a Quote</Link>
             </Button>
             <Button asChild size="md" variant="outline">
-              <Link href="/products">{ts("browseCatalog")}</Link>
+              <Link href="/products">Browse Product Catalog</Link>
             </Button>
           </div>
         </div>
@@ -285,9 +251,9 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
           <div className="grid lg:grid-cols-2 gap-10">
             {/* Pain points */}
             <div>
-              <h2 className="text-lg font-bold text-brand-900 mb-5">{ts("challengesTitle")}</h2>
+              <h2 className="text-lg font-bold text-brand-900 mb-5">Common Challenges We Solve</h2>
               <ul className="space-y-3">
-                {(painPoints.length > 0 ? painPoints : data.painPoints).map((pain) => (
+                {data.painPoints.map((pain) => (
                   <li key={pain} className="flex items-start gap-3 bg-white border border-brand-200 rounded-xl px-4 py-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent-600 mt-2 shrink-0" aria-hidden="true" />
                     <span className="text-sm text-brand-700">{pain}</span>
@@ -298,9 +264,9 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
 
             {/* Solutions */}
             <div>
-              <h2 className="text-lg font-bold text-brand-900 mb-5">{ts("solutionsTitle")}</h2>
+              <h2 className="text-lg font-bold text-brand-900 mb-5">How Model Oils Addresses Them</h2>
               <div className="space-y-4">
-                {(solutions.length > 0 ? solutions : data.solutions).map((sol) => (
+                {data.solutions.map((sol) => (
                   <div key={sol.title} className="flex gap-3">
                     <CheckCircle className="h-5 w-5 text-accent-600 shrink-0 mt-0.5" aria-hidden="true" />
                     <div>
@@ -318,7 +284,7 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
       {/* Featured products */}
       <section className="bg-white py-12 border-y border-brand-100">
         <div className="container-xl">
-          <h2 className="text-xl font-bold text-brand-900 mb-6">{ts("recommendedTitle", { title })}</h2>
+          <h2 className="text-xl font-bold text-brand-900 mb-6">Recommended Products for {data.title}</h2>
           <div className="grid sm:grid-cols-3 gap-5 mb-6">
             {data.featuredProducts.map((product) => (
               <Link
@@ -337,7 +303,7 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
             ))}
           </div>
           <Button asChild size="sm" variant="outline" rightIcon={<ArrowRight className="h-3.5 w-3.5" />}>
-            <Link href="/products">{ts("viewFullCatalog")}</Link>
+            <Link href="/products">View Full Product Catalog</Link>
           </Button>
         </div>
       </section>
@@ -347,11 +313,11 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
         <div className="container-lg">
           <blockquote className="text-center">
             <p className="text-white text-lg font-medium leading-relaxed mb-6 max-w-[680px] mx-auto">
-              &ldquo;{testimonialQuote}&rdquo;
+              &ldquo;{data.testimonialQuote}&rdquo;
             </p>
             <footer>
-              <p className="text-accent-400 font-semibold text-sm">{testimonialName}</p>
-              <p className="text-brand-500 text-xs mt-0.5">{testimonialRole}</p>
+              <p className="text-accent-400 font-semibold text-sm">{data.testimonialName}</p>
+              <p className="text-brand-500 text-xs mt-0.5">{data.testimonialRole}</p>
             </footer>
           </blockquote>
         </div>
@@ -360,9 +326,9 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
       {/* FAQ */}
       <section className="bg-brand-50 py-12">
         <div className="container-xl">
-          <h2 className="text-xl font-bold text-brand-900 mb-8">{ts("faqTitle")}</h2>
+          <h2 className="text-xl font-bold text-brand-900 mb-8">Frequently Asked Questions</h2>
           <div className="grid sm:grid-cols-2 gap-6 max-w-[900px]">
-            {(faq.length > 0 ? faq : data.faq).map((item) => (
+            {data.faq.map((item) => (
               <div key={item.q} className="space-y-2">
                 <h3 className="text-sm font-semibold text-brand-900">{item.q}</h3>
                 <p className="text-sm text-brand-600 leading-relaxed">{item.a}</p>
@@ -375,10 +341,12 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
       {/* CTA */}
       <section className="bg-brand-900 py-12 hex-texture">
         <div className="container-lg text-center">
-          <h2 className="text-2xl font-bold text-white mb-3">{ts("ctaTitle")}</h2>
-          <p className="text-brand-300 mb-6 text-sm">{ts("ctaBody")}</p>
+          <h2 className="text-2xl font-bold text-white mb-3">Ready to Discuss Your Requirements?</h2>
+          <p className="text-brand-300 mb-6 text-sm">
+            Our export team responds within 24 hours with pricing, specifications, and documentation.
+          </p>
           <Button asChild size="md" rightIcon={<ArrowRight className="h-4 w-4" />}>
-            <Link href="/contact/request-quote">{ts("ctaBtn")}</Link>
+            <Link href="/contact/request-quote">Request a Quote</Link>
           </Button>
         </div>
       </section>

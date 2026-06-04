@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 
 export function MobileCtaBar() {

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getProductsByCategory, type Product } from "@/lib/sanity/queries";
 import { ProductCard } from "@/components/features/products/ProductCard";

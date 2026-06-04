@@ -1,4 +1,4 @@
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Badge } from "@/components/ui/Badge";
@@ -8,26 +8,44 @@ import { Clock } from "lucide-react";
 
 interface BlogPreviewSectionProps {
   posts: BlogPost[];
-  locale: string;
 }
 
-export function BlogPreviewSection({ posts, locale }: BlogPreviewSectionProps) {
-  const t = useTranslations("blog");
-  const rawSamplePosts = t.raw("samplePosts") as Array<{ title: string; excerpt: string; category: string }>;
-  const categoryLabels = t.raw("categoryLabels") as Record<string, string>;
-
-  const samplePosts = rawSamplePosts.map((p, i) => ({
-    _id: String(i + 1),
-    title: p.title,
-    slug: `sample-post-${i + 1}`,
-    excerpt: p.excerpt,
-    category: p.category,
+const SAMPLE_POSTS = [
+  {
+    _id: "1",
+    title: "API Oil Classifications Explained: Complete Buyer Guide 2026",
+    slug: "api-oil-classifications-explained",
+    excerpt: "A comprehensive reference for procurement managers on API service categories — from SA through SP — with compatibility guidance and application recommendations.",
+    category: "Technical Guide",
     publishedAt: new Date().toISOString(),
-    readingTimeMinutes: [8, 10, 7][i] ?? 8,
+    readingTimeMinutes: 8,
     author: "Technical Team",
-  }));
+  },
+  {
+    _id: "2",
+    title: "Importing Motor Oil to Nigeria: Regulations, HS Codes & NAFDAC Requirements",
+    slug: "importing-motor-oil-nigeria",
+    excerpt: "A practical guide for lubricant importers covering Nigerian customs HS codes, NAFDAC registration requirements, and documentation needed for smooth clearance.",
+    category: "Export Insights",
+    publishedAt: new Date().toISOString(),
+    readingTimeMinutes: 10,
+    author: "Technical Team",
+  },
+  {
+    _id: "3",
+    title: "SAE Viscosity Grades Explained: Selecting the Right Grade for Your Climate",
+    slug: "sae-viscosity-grades-explained",
+    excerpt: "An engineer-level guide to SAE J300 viscosity grades — covering kinematic viscosity at 40°C and 100°C, HTTHS requirements, and selection for tropical and cold climates.",
+    category: "Technical Guide",
+    publishedAt: new Date().toISOString(),
+    readingTimeMinutes: 7,
+    author: "Technical Team",
+  },
+];
 
-  const displayPosts = posts.length > 0 ? posts : samplePosts;
+export function BlogPreviewSection({ posts }: BlogPreviewSectionProps) {
+  const t = useTranslations("blog");
+  const displayPosts = posts.length > 0 ? posts : SAMPLE_POSTS;
 
   return (
     <section className="bg-brand-50 section-padding" aria-labelledby="blog-heading">
@@ -45,15 +63,16 @@ export function BlogPreviewSection({ posts, locale }: BlogPreviewSectionProps) {
               key={post._id}
               className="bg-white border border-brand-200 rounded-[var(--radius-card)] overflow-hidden group hover:border-accent-600 hover:shadow-[0_8px_24px_rgba(13,27,42,0.12)] transition-all duration-200"
             >
+              {/* Cover image placeholder */}
               <div className="aspect-[16/9] bg-gradient-to-br from-brand-900 to-brand-700 flex items-center justify-center">
                 <span className="text-accent-500 text-[10px] font-semibold uppercase tracking-widest">
-                  {post.category ? (categoryLabels[post.category] ?? post.category) : "Article"}
+                  {post.category ?? "Article"}
                 </span>
               </div>
 
               <div className="p-5">
                 <Badge variant="light" className="mb-3">
-                  {post.category ? (categoryLabels[post.category] ?? post.category) : "Article"}
+                  {post.category ?? "Technical Guide"}
                 </Badge>
                 <h3 className="font-semibold text-brand-900 text-sm leading-snug mb-2 group-hover:text-accent-600 transition-colors">
                   <Link href={`/resources/blog/${post.slug}`}>
@@ -65,7 +84,7 @@ export function BlogPreviewSection({ posts, locale }: BlogPreviewSectionProps) {
                 </p>
                 <div className="flex items-center justify-between text-xs text-brand-400">
                   <time dateTime={post.publishedAt}>
-                    {formatDate(post.publishedAt, locale)}
+                    {formatDate(post.publishedAt)}
                   </time>
                   {post.readingTimeMinutes && (
                     <span className="flex items-center gap-1">

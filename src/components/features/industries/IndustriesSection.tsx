@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import {
   Car,
@@ -33,7 +33,7 @@ export function IndustriesSection() {
       <div className="container-xl">
         <SectionHeader
           id="industries-heading"
-          eyebrow={t("eyebrow")}
+          eyebrow="Applications"
           headline={t("title")}
           subheadline={t("subtitle")}
           dark

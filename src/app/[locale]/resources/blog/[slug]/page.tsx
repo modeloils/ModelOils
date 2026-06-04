@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getTranslations,
-  setRequestLocale} from "next-intl/server";
 import { getBlogPostBySlug, getBlogPosts } from "@/lib/sanity/queries";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
@@ -24,8 +22,22 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   };
 }
 
+const CATEGORY_LABELS: Record<string, string> = {
+  "technical-guides": "Technical Guide",
+  "export-guides": "Export Guide",
+  "industry-news": "Industry News",
+};
+
+function formatDate(dateStr: string): string {
+  return new Date(dateStr).toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
+
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const { slug, locale } = await params;
+  const { slug } = await params;
   const [post, relatedPosts] = await Promise.all([
     getBlogPostBySlug(slug).catch(() => null),
     getBlogPosts(4).catch(() => []),
@@ -33,19 +45,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   if (!post) notFound();
 
-  const t = await getTranslations("blogArticlePage");
-  const tn = await getTranslations("nav");
-  const tb = await getTranslations("blog");
-  const categoryLabels = tb.raw("categoryLabels") as Record<string, string>;
-  const categoryLabel = post.category ? (categoryLabels[post.category] ?? post.category) : null;
-
-  function formatDate(dateStr: string): string {
-    return new Date(dateStr).toLocaleDateString(locale === "en" ? "en-GB" : locale, {
-      day: "numeric",
-      month: "long",
-      year: "numeric",
-    });
-  }
+  const categoryLabel = post.category ? (CATEGORY_LABELS[post.category] ?? post.category) : null;
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -87,9 +87,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="container-xl">
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex items-center gap-2 text-xs text-brand-500 flex-wrap">
-              <li><Link href="/" className="hover:text-brand-300">{t("breadcrumbHome")}</Link></li>
+              <li><Link href="/" className="hover:text-brand-300">Home</Link></li>
               <li aria-hidden="true">/</li>
-              <li><Link href="/resources/blog" className="hover:text-brand-300">{t("breadcrumbBlog")}</Link></li>
+              <li><Link href="/resources/blog" className="hover:text-brand-300">Blog</Link></li>
               <li aria-hidden="true">/</li>
               <li className="text-brand-300 truncate max-w-[200px]">{post.title}</li>
             </ol>
@@ -108,10 +108,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               {post.readingTimeMinutes && (
                 <span className="flex items-center gap-1">
                   <Clock className="h-3 w-3" aria-hidden="true" />
-                  {post.readingTimeMinutes} {t("minRead")}
+                  {post.readingTimeMinutes} min read
                 </span>
               )}
-              {post.author && <span>{t("by")} {post.author}</span>}
+              {post.author && <span>By {post.author}</span>}
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   href="/resources/blog"
                   className="inline-flex items-center gap-2 text-brand-600 text-sm hover:text-accent-600 transition-colors"
                 >
-                  <ArrowLeft className="h-4 w-4" /> {t("backToBlog")}
+                  <ArrowLeft className="h-4 w-4" /> Back to all articles
                 </Link>
               </div>
             </article>
@@ -161,17 +161,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <aside className="space-y-6 sticky top-24">
               {/* CTA */}
               <div className="bg-brand-900 rounded-xl p-5">
-                <p className="text-white font-semibold text-sm mb-2">{t("ctaTitle")}</p>
-                <p className="text-brand-400 text-xs mb-4 leading-relaxed">{t("ctaBody")}</p>
+                <p className="text-white font-semibold text-sm mb-2">Need a product for this application?</p>
+                <p className="text-brand-400 text-xs mb-4 leading-relaxed">
+                  Our technical team can match the right specification to your equipment and operating conditions.
+                </p>
                 <Button asChild size="sm" rightIcon={<ArrowRight className="h-3.5 w-3.5" />} className="w-full">
-                  <Link href="/contact/request-quote">{t("ctaBtn")}</Link>
+                  <Link href="/contact/request-quote">Request a Quote</Link>
                 </Button>
               </div>
 
               {/* Related posts */}
               {otherPosts.length > 0 && (
                 <div>
-                  <p className="text-xs font-bold text-brand-700 uppercase tracking-wider mb-4">{t("relatedTitle")}</p>
+                  <p className="text-xs font-bold text-brand-700 uppercase tracking-wider mb-4">More Articles</p>
                   <div className="space-y-3">
                     {otherPosts.map((related) => (
                       <Link
@@ -185,7 +187,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                         {related.readingTimeMinutes && (
                           <p className="text-xs text-brand-500 mt-1 flex items-center gap-1">
                             <Clock className="h-3 w-3" />
-                            {related.readingTimeMinutes} {t("minRead")}
+                            {related.readingTimeMinutes} min read
                           </p>
                         )}
                       </Link>
@@ -196,12 +198,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
               {/* Product links */}
               <div>
-                <p className="text-xs font-bold text-brand-700 uppercase tracking-wider mb-3">{tn("products")}</p>
+                <p className="text-xs font-bold text-brand-700 uppercase tracking-wider mb-3">Browse Products</p>
                 <div className="space-y-1">
                   {[
-                    { name: tn("motorOils"), href: "/products/motor-oils" },
-                    { name: tn("mineralOils"), href: "/products/mineral-oils" },
-                    { name: tn("industrialLubricants"), href: "/products/industrial-lubricants" },
+                    { name: "Motor Oils", href: "/products/motor-oils" },
+                    { name: "Mineral Oils", href: "/products/mineral-oils" },
+                    { name: "Industrial Lubricants", href: "/products/industrial-lubricants" },
                   ].map((link) => (
                     <Link
                       key={link.href}

@@ -1002,11 +1002,11 @@
     },
     "magnatec-10w-40": {
       "type": "Yarı Sentetik",
-      "description": "Yarı sentetik Magnatec formülü ile güvenilir günlük motor koruması. Hem eski hem yeni araçlarda üstün performans sunan ekonomik çözüm.",
-      "f0": "Yarı sentetik güvenilirlik",
-      "f1": "Günlük sürüş koruması",
-      "f2": "Geniş araç uyumluluğu",
-      "f3": "Ekonomik seçenek"
+      "description": "Akıllı molekülleri motor parçalarına yapışarak soğuk start sırasında yüzde 75 daha az aşınma sağlayan yarı sentetik 10W-40.",
+      "f0": "MB 229.1 onaylı",
+      "f1": "VW 501.01/505.00 onaylı",
+      "f2": "Start aşamasında yüzde 75 daha az aşınma",
+      "f3": "Akıllı molekül teknolojisi"
     },
     "gtx-15w-40": {
       "type": "Mineral",
@@ -1018,11 +1018,11 @@
     },
     "gtx-20w-50": {
       "type": "Mineral",
-      "description": "Sıcak iklimlerde ve yüksek kilometre araçlarda üstün koruma sağlayan mineral motor yağı. Yüksek viskozitesiyle geniş boşluklarda koruyucu film oluşturur.",
-      "f0": "Sıcak iklim optimizasyonu",
-      "f1": "Yüksek km araç uyumlu",
-      "f2": "Güvenilir mineral formül",
-      "f3": "Ekonomik seçenek"
+      "description": "Yüksek kilometreli motorlarda aşınma ve çamurlara karşı güvenilir koruma sağlayan klasik mineral 20W-50 motor yağı.",
+      "f0": "Yüzde 50 daha fazla aşınma koruması",
+      "f1": "Maksimum çamur savunması",
+      "f2": "Yüksek sıcaklıkta viskozite stabilitesi",
+      "f3": "Motor soğutma ve temizleme"
     },
     "vecton-15w-40": {
       "type": "Mineral Ağır Hizmet",
@@ -1033,12 +1033,12 @@
       "f3": "Ağır hizmet koruması"
     },
     "vecton-long-drain-10w-40": {
-      "type": "Yarı Sentetik Ağır Hizmet",
-      "description": "Uzun yağ değişim aralıkları için tasarlanmış yarı sentetik ağır hizmet yağı. Filtreler üzerindeki baskıyı azaltır ve aşınma korumayı maksimumda tutar.",
-      "f0": "Uzun değişim aralığı",
-      "f1": "Filtre uyumlu formül",
-      "f2": "Yarı sentetik dayanıklılık",
-      "f3": "Düşük kül içeriği"
+      "type": "Tam Sentetik",
+      "description": "Sistem 5 Teknolojisiyle Euro 4/5 motorlar için uzun değişim aralıklı tam sentetik 10W-40. Beş kritik alanda yüzde 40 daha yüksek performans.",
+      "f0": "Sistem 5 Teknolojisi",
+      "f1": "MB 228.51 onaylı",
+      "f2": "Volvo VDS-3 onaylı",
+      "f3": "Uzun değişim aralıkları"
     },
     "hyspin-aws-32": {
       "type": "Hidrolik Yağ",
@@ -3481,6 +3481,214 @@
           "Daha uzun yağ ömrü sağlar"
         ]
       }
+    },
+    "edge-0w-20-ll-iv": {
+      "type": "Tam Sentetik",
+      "description": "Liquid Titanium teknolojisiyle geliştirilen tam sentetik motor yağı. ACEA C5/C6 ve BMW Longlife-17FE+ onaylı, modern düşük sürtünmeli motorlar için ideal.",
+      "f0": "BMW Longlife-17FE+ onaylı",
+      "f1": "VW 508/509 onaylı",
+      "f2": "MB 229.71/229.72 onaylı",
+      "f3": "Maksimum yakıt ekonomisi"
+    },
+    "edge-0w-30-titanium-fst": {
+      "type": "Tam Sentetik",
+      "description": "Titanium FST teknolojisiyle donatılmış tam sentetik 0W-30 motor yağı. Uzun yağ değişim aralıkları ve çoklu OEM onayı ile üstün performans sunar.",
+      "f0": "BMW Longlife-04 onaylı",
+      "f1": "MB 229.51 onaylı",
+      "f2": "dexos2 sertifikalı",
+      "f3": "Uzun yağ değişim aralıkları"
+    },
+    "edge-5w-30-fst-titanium-ll": {
+      "type": "Tam Sentetik",
+      "description": "Titanium FST teknolojisiyle geliştirilen yüksek performanslı tam sentetik 5W-30. DPF li benzinli ve dizel motorlar için üstün koruma sağlar.",
+      "f0": "MB 229.51 onaylı",
+      "f1": "Porsche C30 onaylı",
+      "f2": "DPF uyumlu formül",
+      "f3": "Düşük SAPS içeriği"
+    },
+    "edge-5w-30-c3": {
+      "type": "Tam Sentetik",
+      "description": "ACEA C3 sertifikalı tam sentetik 5W-30. BMW, MB, VW ve Porsche dahil geniş OEM onay yelpazesiyle modern motorlarda maksimum koruma sunar.",
+      "f0": "ACEA C3 sertifikalı",
+      "f1": "BMW Longlife-04 onaylı",
+      "f2": "dexos2 sertifikalı",
+      "f3": "VW 502/505 onaylı"
+    },
+    "edge-5w-30-m": {
+      "type": "Tam Sentetik",
+      "description": "Titanium teknolojisiyle üstün sürtünme azaltma sağlayan tam sentetik 5W-30 motor yağı. Kritik motor parçalarında güçlü koruma sunar.",
+      "f0": "Aşırı basınçta yüzde 35 daha güçlü",
+      "f1": "ACEA C3 sertifikalı",
+      "f2": "MB 229.51 onaylı",
+      "f3": "VW 502/505 onaylı"
+    },
+    "edge-5w-40-titanium-fst": {
+      "type": "Tam Sentetik",
+      "description": "Titanium FST teknolojisiyle sektörde öncü tam sentetik 5W-40 motor yağı. Maksimum motor performansı ve viskozite kararlılığı sağlar.",
+      "f0": "BMW Longlife-04 onaylı",
+      "f1": "MB 229.51 onaylı",
+      "f2": "Porsche A40 onaylı",
+      "f3": "Geleneksel yağlara göre yüzde 10 yakıt tasarrufu"
+    },
+    "edge-supercar-10w-60": {
+      "type": "Tam Sentetik",
+      "description": "Süperkalar ve yüksek performanslı spor araçlar için özel olarak geliştirilen tam sentetik 10W-60 motor yağı. Aşırı koşullarda üstün motor koruması sağlar.",
+      "f0": "BMW M serisi onaylı",
+      "f1": "ACEA A3/B4 sertifikalı",
+      "f2": "Ferrari ve Bugatti uyumlu",
+      "f3": "Yüksek sıcaklık performansı"
+    },
+    "magnatec-stop-start-0w-20": {
+      "type": "Tam Sentetik",
+      "description": "Dur-kalk trafiğine özel geliştirilen tam sentetik 0W-20 motor yağı. Akıllı molekülleri sayesinde kritik ısınma aşamasında üstün koruma sağlar.",
+      "f0": "Akıllı molekül teknolojisi",
+      "f1": "Dur-kalk motorları için optimize edilmiş",
+      "f2": "Üstün soğuk start koruması",
+      "f3": "Yakıt ekonomisi odaklı"
+    },
+    "magnatec-a5-5w-30-start-stop": {
+      "type": "Yarı Sentetik",
+      "description": "Kendini yenileyebilen akıllı moleküllere sahip yarı sentetik 5W-30. Dur-kalk trafiğinde motor aşınmalarına karşı yüzde 20 daha fazla koruma sağlar.",
+      "f0": "Ford WSS-M2C913-D onaylı",
+      "f1": "ACEA A5/B5 yakıt ekonomisi",
+      "f2": "Dur-kalk trafiğine optimize",
+      "f3": "Yüzde 20 daha az aşınma"
+    },
+    "magnatec-5w-30-a5": {
+      "type": "Yarı Sentetik",
+      "description": "Yarı sentetik 5W-30, akıllı molekülleri ile kritik ısınma aşamasında motoru korur. ACEA A5/B5 ve Ford onaylı.",
+      "f0": "Ford WSS-M2C913-D onaylı",
+      "f1": "ACEA A5/B5 sertifikalı",
+      "f2": "Dur-kalk koruması",
+      "f3": "Kendini yenileyebilen moleküller"
+    },
+    "gtx-5w-30-rn0720": {
+      "type": "Mineral",
+      "description": "Renault araçları için özel olarak formüle edilmiş mineral 5W-30 motor yağı. Çift etkili çamur koruması ile motor ömrünü uzatır.",
+      "f0": "Renault RN0720 onaylı",
+      "f1": "Çift etkili çamur koruması",
+      "f2": "Motor ömrünü uzatır",
+      "f3": "Viskozite kararlılığı"
+    },
+    "gtx-ultraclean-10w-40": {
+      "type": "Mineral",
+      "description": "Endüstri standartlarından yüzde 25 daha iyi çamur koruması ve yüzde 50 artırılmış aşınma direnci sunan mineral 10W-40 motor yağı.",
+      "f0": "Yüzde 25 daha iyi çamur koruması",
+      "f1": "Yüzde 50 daha iyi aşınma direnci",
+      "f2": "ACEA A3/B4 sertifikalı",
+      "f3": "Benzinli ve dizel uyumlu"
+    },
+    "gtx-lpg-20w-50": {
+      "type": "Mineral",
+      "description": "LPG yakıtla çalışan araçlar için özel formüle edilmiş mineral 20W-50 motor yağı. LPG nin düşük yağlama özelliğini telafi eder.",
+      "f0": "LPG sistemlere özel",
+      "f1": "Yüzde 50 daha fazla aşınma koruması",
+      "f2": "Maksimum çamur koruması",
+      "f3": "Yüksek sıcaklıkta viskozite stabilitesi"
+    },
+    "multi-20w-50": {
+      "type": "Mineral",
+      "description": "Ağır hizmet dizel motorlar için dört mevsim kullanılabilen mineral 20W-50. Asit oluşumuna karşı yüzde 30 daha uzun koruma sağlar.",
+      "f0": "Yüzde 30 daha uzun asit koruması",
+      "f1": "Çamur ve korozyon önleme",
+      "f2": "Kurum kalınlaşması kontrolü",
+      "f3": "Düşük yağ tüketimi"
+    },
+    "mini-truck-10w-30": {
+      "type": "Yarı Sentetik",
+      "description": "Ford Transit ve Connect ile hafif ticari araçlara özel formüle edilmiş yarı sentetik 10W-30. Yağ değişim aralıklarını uzatır.",
+      "f0": "Ford WSS-M2C921-A onaylı",
+      "f1": "Uzun yağ değişim aralıkları",
+      "f2": "Üstün motor temizliği",
+      "f3": "Pas ve korozyon koruması"
+    },
+    "vecton-fuel-saver-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "Euro 6 motorları için Sistem 5 Teknolojisiyle geliştirilen tam sentetik ağır hizmet dizel 5W-30. Gerçek yakıt tasarrufu ve uzun değişim aralığı sunar.",
+      "f0": "Euro 6 uyumlu",
+      "f1": "5 kritik alanda yüzde 40 daha iyi performans",
+      "f2": "Gerçek yakıt tasarrufu",
+      "f3": "Uzun yağ değişim aralığı"
+    },
+    "vecton-10w-40": {
+      "type": "Mineral",
+      "description": "Ticari kamyonlar için Sistem 5 Teknolojisiyle geliştirilen ağır hizmet dizel 10W-40. İyileştirilmiş yakıt ekonomisi ve aşınma koruması.",
+      "f0": "ACEA E4/E7 sertifikalı",
+      "f1": "Sistem 5 Teknolojisi",
+      "f2": "Yakıt ekonomisi",
+      "f3": "Uzun değişim kapasitesi"
+    },
+    "enduron-plus-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "Tüm dizel motorlar için yüksek yakıt verimliliği ve uzun değişim kapasitesi sunan tam sentetik SHPD dizel 5W-30.",
+      "f0": "MB 228.5 onaylı",
+      "f1": "Volvo VDS-3 onaylı",
+      "f2": "MAN M3277 onaylı",
+      "f3": "Tam sentetik SHPD"
+    },
+    "elixion-low-saps-5w-30": {
+      "type": "Tam Sentetik",
+      "description": "Euro 4 filolar için en uzun yağ değişim aralığını sağlayan düşük SAPS tam sentetik ağır hizmet dizel 5W-30.",
+      "f0": "Düşük SAPS formülü",
+      "f1": "MB 228.51 onaylı",
+      "f2": "Euro 4 optimize",
+      "f3": "Biyodizel uyumlu"
+    },
+    "crb-turbomax-10w-40": {
+      "type": "Mineral",
+      "description": "Durashield Teknolojisi ile aşınma, kurum ve korozyona karşı aktif mücadele eden mineral ağır hizmet dizel 10W-40.",
+      "f0": "Durashield Teknolojisi",
+      "f1": "Kurum ve tortu temizleme",
+      "f2": "Koruyucu film oluşturma",
+      "f3": "Asit nötralizasyonu"
+    },
+    "turbomax-10w-40-ci4": {
+      "type": "Mineral",
+      "description": "Değişken hava, yol ve yük koşullarında dizel motorları için Durashield Teknolojisiyle koruma sağlayan mineral 10W-40.",
+      "f0": "Durashield Teknolojisi",
+      "f1": "Kurum partikülleri temizleme",
+      "f2": "Isı direnci",
+      "f3": "Korozyon karşıtı koruma"
+    },
+    "crb-turbomax-15w-40": {
+      "type": "Mineral",
+      "description": "Durashield Teknolojisiyle standart yağlara kıyasla iki kat motor ömrü sağlayan mineral ağır hizmet dizel 15W-40.",
+      "f0": "Durashield Teknolojisi",
+      "f1": "İki kat motor ömrü",
+      "f2": "MB/MAN/Volvo onaylı",
+      "f3": "Biyodizel uyumlu"
+    },
+    "crb-multi-20w-50": {
+      "type": "Mineral",
+      "description": "Eski ve yüksek kilometreli dizel filolar için stabil yağ basıncı ve düşük tüketim sağlayan çok amaçlı mineral 20W-50.",
+      "f0": "Köpük oluşumunu önleme",
+      "f1": "Stabil yağ basıncı",
+      "f2": "Tortu oluşumunu engelleme",
+      "f3": "Start aşamasında aşınma koruması"
+    },
+    "tection-monograde-10w": {
+      "type": "Mineral",
+      "description": "Ağır şartlarda çalışan dizel motorlar ve iş makinesi transmisyon/hidrolik sistemleri için formüle edilmiş tek dereceli mineral yağ.",
+      "f0": "API CF sertifikalı",
+      "f1": "ACEA E1 sertifikalı",
+      "f2": "MB 228.0 onaylı",
+      "f3": "CAT TO-2 sertifikalı"
+    },
+    "tection-monograde-30w": {
+      "type": "Mineral",
+      "description": "Ağır hizmet dizel motorlar ve endüstriyel makine sistemleri için özel formüle edilmiş tek dereceli mineral 30W motor yağı.",
+      "f0": "API CF sertifikalı",
+      "f1": "ACEA E1 sertifikalı",
+      "f2": "MB 228.0 onaylı",
+      "f3": "Aşırı basınç katkısı içermez"
+    },
+    "tection-f-tr-10w-30": {
+      "type": "Yarı Sentetik",
+      "description": "Ford Transit ve Connect araçları için özel formüle edilmiş yarı sentetik dizel 10W-30. Uzun yağ değişim aralıkları ve Ford onayı ile üstün performans.",
+      "f0": "Ford WSS-M2C921-A onaylı",
+      "f1": "Uzun yağ değişim aralıkları",
+      "f2": "Soğuk start akışkanlığı",
+      "f3": "Pas ve korozyon koruması"
     }
   },
   "quotePage": {

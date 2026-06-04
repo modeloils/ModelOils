@@ -1,9 +1,9 @@
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils/cn";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import type { Product } from "@/lib/sanity/queries";
 
 interface ProductCardProps {
@@ -104,6 +104,11 @@ export function ProductCard({ product, variant = "grid", className }: ProductCar
           <Button asChild size="sm" className="flex-1 text-xs">
             <Link href={`/products/${product.category.slug}/${product.slug}`}>
               {t("requestQuote")} <ArrowRight className="h-3 w-3" />
+            </Link>
+          </Button>
+          <Button asChild size="sm" variant="secondary" className="flex-1 text-xs">
+            <Link href={`/products/${product.category.slug}/${product.slug}#downloads`}>
+              <Download className="h-3 w-3" /> TDS
             </Link>
           </Button>
         </div>

@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getTranslations,
-  setRequestLocale} from "next-intl/server";
 import { getProductBySlug, getFAQItems } from "@/lib/sanity/queries";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
@@ -26,7 +24,6 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
 export default async function ProductDetailPage({ params }: ProductPageProps) {
   const { locale, category, slug } = await params;
-  setRequestLocale(locale);
 
   const [product, faqs] = await Promise.all([
     getProductBySlug(slug, locale).catch(() => null),
@@ -34,8 +31,6 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   ]);
 
   if (!product) notFound();
-
-  const t = await getTranslations("productDetailPage");
 
   const productSchema = {
     "@context": "https://schema.org",
@@ -97,9 +92,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         <div className="container-xl">
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex items-center gap-2 text-xs text-brand-500 flex-wrap">
-              <li><Link href="/" className="hover:text-brand-300">{t("breadcrumbHome")}</Link></li>
+              <li><Link href="/" className="hover:text-brand-300">Home</Link></li>
               <li aria-hidden="true">/</li>
-              <li><Link href="/products" className="hover:text-brand-300">{t("breadcrumbProducts")}</Link></li>
+              <li><Link href="/products" className="hover:text-brand-300">Products</Link></li>
               <li aria-hidden="true">/</li>
               <li><Link href={`/products/${category}`} className="hover:text-brand-300">{product.category.name}</Link></li>
               <li aria-hidden="true">/</li>
@@ -116,9 +111,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 {product.apiClassification && <Badge variant="default">{product.apiClassification}</Badge>}
                 {product.aceaClassification && <Badge variant="outline">{product.aceaClassification}</Badge>}
                 {product.inStock ? (
-                  <Badge variant="success">{t("inStock")}</Badge>
+                  <Badge variant="success">In Stock</Badge>
                 ) : (
-                  <Badge variant="outline">{t("contactAvailability")}</Badge>
+                  <Badge variant="outline">Contact for Availability</Badge>
                 )}
               </div>
 
@@ -133,7 +128,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button asChild size="md" rightIcon={<ArrowRight className="h-4 w-4" />}>
                   <Link href={`/contact/request-quote?product=${encodeURIComponent(product.name)}`}>
-                    {t("requestQuoteForProduct")}
+                    Request a Quote for This Product
                   </Link>
                 </Button>
                 <Button asChild size="md" variant="outline">
@@ -156,7 +151,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                     {product.viscosityGrade ?? ""}
                   </span>
                 </div>
-                <span className="text-brand-400 text-xs">{t("imageComingSoon")}</span>
+                <span className="text-brand-400 text-xs">Product image coming soon</span>
               </div>
             </div>
           </div>
@@ -167,14 +162,14 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       {product.specifications && product.specifications.length > 0 && (
         <section className="bg-white border-b border-brand-200 py-10" id="specifications">
           <div className="container-xl">
-            <h2 className="text-xl font-bold text-brand-900 mb-6">{t("techSpecs")}</h2>
+            <h2 className="text-xl font-bold text-brand-900 mb-6">Technical Specifications</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm" aria-label="Technical specifications">
                 <thead>
                   <tr className="bg-brand-900 text-left">
-                    <th className="text-brand-300 font-semibold px-4 py-3 text-xs uppercase tracking-wider w-2/5">{t("thProperty")}</th>
-                    <th className="text-brand-300 font-semibold px-4 py-3 text-xs uppercase tracking-wider w-2/5">{t("thValue")}</th>
-                    <th className="text-brand-300 font-semibold px-4 py-3 text-xs uppercase tracking-wider">{t("thTestMethod")}</th>
+                    <th className="text-brand-300 font-semibold px-4 py-3 text-xs uppercase tracking-wider w-2/5">Property</th>
+                    <th className="text-brand-300 font-semibold px-4 py-3 text-xs uppercase tracking-wider w-2/5">Value</th>
+                    <th className="text-brand-300 font-semibold px-4 py-3 text-xs uppercase tracking-wider">Test Method</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -196,7 +191,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       {product.applications && product.applications.length > 0 && (
         <section className="bg-brand-50 py-10">
           <div className="container-xl">
-            <h2 className="text-xl font-bold text-brand-900 mb-6">{t("applications")}</h2>
+            <h2 className="text-xl font-bold text-brand-900 mb-6">Applications</h2>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {product.applications.map((app, i) => (
                 <li key={i} className="flex items-start gap-2.5">
@@ -212,13 +207,13 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       {/* Packaging & Export */}
       <section className="bg-white py-10" id="packaging">
         <div className="container-xl">
-          <h2 className="text-xl font-bold text-brand-900 mb-6">{t("packagingExport")}</h2>
+          <h2 className="text-xl font-bold text-brand-900 mb-6">Packaging & Export Options</h2>
           {product.packagingOptions && product.packagingOptions.length > 0 ? (
             <div className="overflow-x-auto">
               <table className="w-full text-sm" aria-label="Packaging options">
                 <thead>
                   <tr className="bg-brand-900 text-left">
-                    {[t("thPackage"), t("thCapacity"), t("thUnitsPallet"), t("thGrossWeight")].map((h) => (
+                    {["Package", "Capacity", "Units/Pallet", "Gross Weight"].map((h) => (
                       <th key={h} className="text-brand-300 font-semibold px-4 py-3 text-xs uppercase tracking-wider">{h}</th>
                     ))}
                   </tr>
@@ -236,10 +231,12 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               </table>
             </div>
           ) : (
-            <p className="text-brand-500 text-sm">{t("packagingFallback")}</p>
+            <p className="text-brand-500 text-sm">
+              Available in 20L pails, 205L drums, 1,000L IBCs, and bulk tanker. Contact us for container loading specifications.
+            </p>
           )}
           <div className="mt-4 text-sm text-brand-500">
-            <strong className="text-brand-700">{t("incotermsLabel")}:</strong> EXW · FOB · CFR · CIF · DAP · DDP
+            <strong className="text-brand-700">Incoterms:</strong> EXW · FOB · CFR · CIF · DAP · DDP
           </div>
         </div>
       </section>
@@ -247,35 +244,35 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       {/* Downloads */}
       <section className="bg-brand-900 py-10" id="downloads">
         <div className="container-xl">
-          <h2 className="text-xl font-bold text-white mb-6">{t("techDocs")}</h2>
+          <h2 className="text-xl font-bold text-white mb-6">Technical Documentation</h2>
           <div className="flex flex-wrap gap-3">
             {product.technicalDataSheet?.asset.url ? (
               <Button asChild variant="outline" leftIcon={<Download className="h-4 w-4" />}>
                 <a href={product.technicalDataSheet.asset.url} download target="_blank" rel="noopener noreferrer">
-                  {t("downloadTds")}
+                  Download TDS (PDF)
                 </a>
               </Button>
             ) : (
               <Button asChild variant="outline" leftIcon={<Download className="h-4 w-4" />}>
-                <Link href={`/contact?tds=${encodeURIComponent(product.name)}`}>{t("requestTds")}</Link>
+                <Link href={`/contact?tds=${encodeURIComponent(product.name)}`}>Request TDS</Link>
               </Button>
             )}
             {product.safetyDataSheet?.asset.url ? (
               <Button asChild variant="outline" leftIcon={<Download className="h-4 w-4" />}>
                 <a href={product.safetyDataSheet.asset.url} download target="_blank" rel="noopener noreferrer">
-                  {t("downloadSds")}
+                  Download SDS/MSDS (PDF)
                 </a>
               </Button>
             ) : (
               <Button asChild variant="outline" leftIcon={<Download className="h-4 w-4" />}>
-                <Link href={`/contact?sds=${encodeURIComponent(product.name)}`}>{t("requestSds")}</Link>
+                <Link href={`/contact?sds=${encodeURIComponent(product.name)}`}>Request SDS</Link>
               </Button>
             )}
           </div>
           <p className="text-brand-400 text-xs mt-4">
-            {t("docsNote")}{" "}
+            Need documentation in another language or a specific test certificate?{" "}
             <Link href="/contact" className="text-accent-500 hover:text-accent-400 underline">
-              {t("contactTechTeam")}
+              Contact our technical team.
             </Link>
           </p>
         </div>
@@ -285,7 +282,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       {faqs.length > 0 && (
         <section className="bg-brand-50 py-10" id="faq">
           <div className="container-xl">
-            <h2 className="text-xl font-bold text-brand-900 mb-6">{t("faqTitle")}</h2>
+            <h2 className="text-xl font-bold text-brand-900 mb-6">Frequently Asked Questions</h2>
             <div className="space-y-4 max-w-[720px]">
               {faqs.map((faq) => (
                 <details key={faq._id} className="bg-white border border-brand-200 rounded-[var(--radius-card)] group">
@@ -294,7 +291,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                     <span className="text-accent-600 text-lg leading-none group-open:rotate-45 transition-transform">+</span>
                   </summary>
                   <div className="px-5 pb-4 text-brand-600 text-sm leading-relaxed border-t border-brand-100 pt-3">
-                    <p>{t("faqFallback")}</p>
+                    {/* Portable text rendering simplified */}
+                    <p>Please see our full answer on the product page or contact our technical team.</p>
                   </div>
                 </details>
               ))}
@@ -306,11 +304,13 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       {/* Quote CTA */}
       <section className="bg-brand-900 py-12 hex-texture">
         <div className="container-lg text-center">
-          <h2 className="text-2xl font-bold text-white mb-3">{t("ctaTitle")}</h2>
-          <p className="text-brand-300 mb-6 text-sm">{t("ctaBody", { name: product.name })}</p>
+          <h2 className="text-2xl font-bold text-white mb-3">Ready to Place a Bulk Order?</h2>
+          <p className="text-brand-300 mb-6 text-sm">
+            Get a competitive quotation for {product.name} within 24 hours.
+          </p>
           <Button asChild size="md" rightIcon={<ArrowRight className="h-4 w-4" />}>
             <Link href={`/contact/request-quote?product=${encodeURIComponent(product.name)}`}>
-              {t("ctaBtn")}
+              Request a Quote
             </Link>
           </Button>
         </div>

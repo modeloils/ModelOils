@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import { Link } from "@/i18n/navigation";
-import { getTranslations,
-  setRequestLocale} from "next-intl/server";
+import Link from "next/link";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -13,16 +11,35 @@ export const metadata: Metadata = {
     "Model Oils is an Istanbul-based lubricant manufacturer and exporter with 15+ years of experience. ISO 9001:2015 certified. Serving B2B buyers in 40+ countries across MENA, Africa, and Europe.",
 };
 
+const MILESTONES = [
+  { year: "2009", event: "Founded in Istanbul, initially supplying domestic automotive distributors." },
+  { year: "2012", event: "First export contract — 205L drums to Libyan automotive sector." },
+  { year: "2015", event: "ISO 9001:2015 certification achieved. Expanded to 12 export markets." },
+  { year: "2018", event: "API licensing obtained for motor oil product line. New blending facility commissioned." },
+  { year: "2021", event: "Reached 30+ active export countries. ISO 14001 environmental certification added." },
+  { year: "2024", event: "40+ countries served. 12,000+ metric tons exported annually. Private label program launched." },
+];
 
-interface AboutPageProps {
-  params: Promise<{ locale: string }>;
-}
+const VALUES = [
+  {
+    title: "Technical Integrity",
+    desc: "Every product claim is backed by independent laboratory test data. We publish TDS and SDS for every product and provide batch-specific COA with every shipment.",
+  },
+  {
+    title: "Operational Reliability",
+    desc: "B2B buyers stake supply chains on our consistency. We maintain strict production schedules, proactive communication, and a 98.6% on-time delivery rate.",
+  },
+  {
+    title: "Export Professionalism",
+    desc: "International buyers deserve the same documentation standards as domestic buyers. We treat customs compliance, language accuracy, and certificate validity as non-negotiables.",
+  },
+  {
+    title: "Long-Term Partnerships",
+    desc: "We do not optimize for one-time transactions. Our pricing, terms, and account management are structured to make long-term partnership commercially logical for both sides.",
+  },
+];
 
-export default async function AboutPage({ params }: AboutPageProps) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-  const t = await getTranslations("about");
-
+export default function AboutPage() {
   const breadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -52,34 +69,9 @@ export default async function AboutPage({ params }: AboutPageProps) {
       "@type": "ContactPoint",
       telephone: "+90-533-456-7975",
       contactType: "sales",
-      availableLanguage: ["English", "Turkish"],
+      availableLanguage: ["English", "Turkish", "Arabic"],
     },
   };
-
-  const milestones = [
-    { year: "2009", event: t("m2009") },
-    { year: "2012", event: t("m2012") },
-    { year: "2015", event: t("m2015") },
-    { year: "2018", event: t("m2018") },
-    { year: "2021", event: t("m2021") },
-    { year: "2024", event: t("m2024") },
-  ];
-
-  const values = [
-    { title: t("v1Title"), desc: t("v1Desc") },
-    { title: t("v2Title"), desc: t("v2Desc") },
-    { title: t("v3Title"), desc: t("v3Desc") },
-    { title: t("v4Title"), desc: t("v4Desc") },
-  ];
-
-  const stats = [
-    { stat: "40+", label: t("stat1") },
-    { stat: "15+", label: t("stat2") },
-    { stat: "12,000+", label: t("stat3") },
-    { stat: "200+", label: t("stat4") },
-    { stat: t("stat5Abbr"), label: t("stat5Label") },
-    { stat: "98.6%", label: t("stat6") },
-  ];
 
   return (
     <>
@@ -91,15 +83,15 @@ export default async function AboutPage({ params }: AboutPageProps) {
         <div className="container-xl">
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex items-center gap-2 text-xs text-brand-500">
-              <li><Link href="/" className="hover:text-brand-300">{t("breadcrumbHome")}</Link></li>
+              <li><Link href="/" className="hover:text-brand-300">Home</Link></li>
               <li aria-hidden="true">/</li>
-              <li className="text-brand-300">{t("breadcrumbPage")}</li>
+              <li className="text-brand-300">About</li>
             </ol>
           </nav>
           <SectionHeader
-            eyebrow={t("eyebrow")}
-            headline={t("headline")}
-            subheadline={t("subheadline")}
+            eyebrow="About Model Oils"
+            headline="15 Years of Industrial Lubricant Export"
+            subheadline="An Istanbul-based manufacturer and exporter. ISO 9001:2015 certified. 40+ active export markets. We build long-term supply relationships, not one-time transactions."
             alignment="left"
             dark
           />
@@ -111,17 +103,30 @@ export default async function AboutPage({ params }: AboutPageProps) {
         <div className="container-xl">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-xl font-bold text-brand-900 mb-4">{t("whoWeAreTitle")}</h2>
+              <h2 className="text-xl font-bold text-brand-900 mb-4">Who We Are</h2>
               <div className="space-y-4 text-sm text-brand-700 leading-relaxed">
-                <p>{t("para1")}</p>
-                <p>{t("para2")}</p>
-                <p>{t("para3")}</p>
+                <p>
+                  Model Oils is a lubricant manufacturer and bulk exporter headquartered in Bursa, Turkey. We blend and package motor oils, mineral oils, and industrial lubricants at our facility in Nilüfer, Bursa, and export to distributors, importers, fleet operators, and industrial companies worldwide.
+                </p>
+                <p>
+                  Founded in 2009, we spent our first years building technical credibility in the Turkish domestic market before expanding internationally in 2012. Today, we export to 40+ countries across MENA, Sub-Saharan Africa, Southeast Asia, Central Asia, and Europe — with active freight lanes and established customs experience in each region.
+                </p>
+                <p>
+                  We are not a trading company. Every product we export is blended and packaged at our own facility. This means consistent quality, traceable batches, and a technical team that knows every formulation we sell.
+                </p>
               </div>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-2 gap-4">
-              {stats.map((item) => (
+              {[
+                { stat: "40+", label: "Export Countries" },
+                { stat: "15+", label: "Years in Operation" },
+                { stat: "12,000+", label: "Metric Tons Annually" },
+                { stat: "200+", label: "Active B2B Clients" },
+                { stat: "ISO 9001", label: ":2015 Certified" },
+                { stat: "98.6%", label: "On-Time Delivery" },
+              ].map((item) => (
                 <div
                   key={item.label}
                   className="bg-white border border-brand-200 rounded-xl p-5 text-center"
@@ -138,9 +143,9 @@ export default async function AboutPage({ params }: AboutPageProps) {
       {/* Values */}
       <section className="bg-brand-900 py-12 hex-texture">
         <div className="container-xl">
-          <h2 className="text-xl font-bold text-white mb-8">{t("valuesTitle")}</h2>
+          <h2 className="text-xl font-bold text-white mb-8">What We Stand For</h2>
           <div className="grid sm:grid-cols-2 gap-5">
-            {values.map((v) => (
+            {VALUES.map((v) => (
               <div key={v.title} className="flex gap-4">
                 <CheckCircle className="h-5 w-5 text-accent-500 shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
@@ -156,11 +161,11 @@ export default async function AboutPage({ params }: AboutPageProps) {
       {/* Timeline */}
       <section className="bg-white py-12 border-t border-brand-100">
         <div className="container-xl">
-          <h2 className="text-xl font-bold text-brand-900 mb-8">{t("historyTitle")}</h2>
+          <h2 className="text-xl font-bold text-brand-900 mb-8">Our History</h2>
           <div className="relative">
             <div className="absolute left-[52px] top-0 bottom-0 w-px bg-brand-200 hidden sm:block" aria-hidden="true" />
             <div className="space-y-6">
-              {milestones.map((m) => (
+              {MILESTONES.map((m) => (
                 <div key={m.year} className="flex gap-6 items-start">
                   <div className="w-[52px] shrink-0 text-right">
                     <span className="text-xs font-mono font-bold text-accent-600">{m.year}</span>
@@ -177,14 +182,16 @@ export default async function AboutPage({ params }: AboutPageProps) {
       {/* CTA */}
       <section className="bg-brand-900 py-12 hex-texture">
         <div className="container-lg text-center">
-          <h2 className="text-2xl font-bold text-white mb-3">{t("ctaTitle")}</h2>
-          <p className="text-brand-300 mb-6 text-sm">{t("ctaBody")}</p>
+          <h2 className="text-2xl font-bold text-white mb-3">Ready to Work With Us?</h2>
+          <p className="text-brand-300 mb-6 text-sm">
+            Get a bulk quote or contact our export team to discuss your requirements.
+          </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <Button asChild size="md" rightIcon={<ArrowRight className="h-4 w-4" />}>
-              <Link href="/contact/request-quote">{t("ctaQuote")}</Link>
+              <Link href="/contact/request-quote">Request a Quote</Link>
             </Button>
             <Button asChild size="md" variant="outline">
-              <Link href="/certifications">{t("ctaCerts")}</Link>
+              <Link href="/certifications">View Our Certifications</Link>
             </Button>
           </div>
         </div>
