@@ -2850,29 +2850,6 @@ Cummins CES 20071
 MAN M3275
 MB 228.1`,
   },
-  "delvac-1350": {
-    name: "Mobil Delvac 1350", grade: "SAE 50", series: "Mobil Delvac 1350", type: "Mineral (Ağır Hizmet, Monograde)",
-    api: "CF-4/SF", acea: "E2",
-    approvals: ["MIL-L-2104E", "MAN M3275"],
-    description: "SAE 50 monograde ağır hizmet dizel motor yağı. Eski nesil kamyon ve iş makinesi motorlarında güvenilir yüksek sıcaklık koruması sağlayan ekonomik mineral seçenek.",
-    features: ["SAE 50 monograde formülü", "Eski nesil motor uyumlu", "Yüksek sıcaklık koruması", "Mineral ekonomik seçenek"],
-    image: "/images/products/mobil/delvac-1350.jpg",
-    fullDescription: `Eski ve konvansiyonel ağır hizmet dizel motorları için formüle edilmiş SAE 50 monograde mineral motor yağı.
-
-Yüksek viskozitesiyle yüksek çalışma sıcaklıklarında güvenilir film koruması sağlarken eski nesil motor tasarımlarının gereksinimlerini karşılar.
-
-PERFORMANS ÖZELLİKLERİ
-• SAE 50 yüksek viskozite koruması
-• Eski motor tasarımlarıyla uyumluluk
-• Güvenilir yüksek sıcaklık film koruması
-• Ekonomik mineral formülasyon
-
-STANDARTLAR VE SPESİFİKASYONLAR
-API CF-4/SF
-ACEA E2
-MIL-L-2104E
-MAN M3275`,
-  },
   "delvac-1340": {
     name: "Mobil Delvac 1340", grade: "SAE 40", series: "Mobil Delvac 1340", type: "Mineral (Ağır Hizmet, Monograde)",
     api: "CF-4/SF", acea: "E2",
@@ -2895,29 +2872,6 @@ API CF-4/SF
 ACEA E2
 MIL-L-2104E
 MAN M3275`,
-  },
-  "delvac-1330": {
-    name: "Mobil Delvac 1330", grade: "SAE 30", series: "Mobil Delvac 1330", type: "Mineral (Ağır Hizmet, Monograde)",
-    api: "CF-4/SF", acea: "E2",
-    approvals: ["MIL-L-2104E", "Caterpillar TO-2"],
-    description: "SAE 30 monograde ağır hizmet motor yağı. Standart çalışma koşullarında motor koruması ve Caterpillar iş makineleriyle uyumluluk sağlar.",
-    features: ["SAE 30 monograde formülü", "Caterpillar TO-2 onaylı", "Temel ağır hizmet formülü", "Ekonomik mineral yağ"],
-    image: "/images/products/mobil/delvac-1330.jpg",
-    fullDescription: `Eski ve konvansiyonel ağır hizmet motorları için SAE 30 monograde mineral motor yağı.
-
-Düşük viskozitesiyle soğuk start koşullarında hızlı yağlama sağlarken temel motor koruma gereksinimlerini karşılar.
-
-PERFORMANS ÖZELLİKLERİ
-• SAE 30 düşük viskoziteli soğuk start avantajı
-• Caterpillar iş makineleriyle uyumluluk
-• Temel ağır hizmet motor koruması
-• Ekonomik mineral formülasyon
-
-STANDARTLAR VE SPESİFİKASYONLAR
-API CF-4/SF
-ACEA E2
-MIL-L-2104E
-Caterpillar TO-2`,
   },
   "delvac-super-1000-20w-50": {
     name: "Mobil Delvac Super 1000 20W-50", grade: "20W-50", series: "Mobil Delvac Super 1000", type: "Mineral (Ağır Hizmet)",
@@ -2942,31 +2896,8 @@ ACEA E3
 Cummins CES 20071
 MB 228.1`,
   },
-  "delvac-ct-diesel-10w-30": {
-    name: "Mobil Delvac CT Diesel 10W-30", grade: "10W-30", series: "Mobil Delvac CT", type: "Mineral (Ağır Hizmet)",
-    api: "CI-4/SL", acea: "E5",
-    approvals: ["MB 228.3", "Volvo VDS-2", "MAN M3275"],
-    description: "Konvansiyonel teknoloji dizel motorları için formüle edilmiş CI-4 onaylı mineral motor yağı. Soğuk iklim koşullarında kolay soğuk start özelliği ve güvenilir koruma sağlar.",
-    features: ["Soğuk iklim start performansı", "CI-4 onaylı", "Konvansiyonel dizel uyumlu", "Ekonomik mineral formül"],
-    image: "/images/products/mobil/delvac-ct-diesel-10w-30.jpg",
-    fullDescription: `Konvansiyonel ve eski teknoloji ağır hizmet dizel motorları için formüle edilmiş CI-4 onaylı mineral motor yağı.
-
-Düşük viskozitesiyle soğuk havalarda kolay motor start sağlarken güvenilir ağır hizmet koruması ve emisyon kontrol sistemi uyumluluğu sunar.
-
-PERFORMANS ÖZELLİKLERİ
-• Soğuk iklimde kolay start ve hızlı yağlama
-• CI-4 standartlarına uygun koruma
-• Konvansiyonel ve eski teknoloji motor uyumu
-• Ekonomik mineral formülasyon
-
-STANDARTLAR VE SPESİFİKASYONLAR
-API CI-4/SL
-ACEA E5
-MB 228.3
-Volvo VDS-2
-MAN M3275`,
-  },
 };
+
 
 const MOBIL_INDUSTRIAL_PRODUCTS: Record<string, ProductSpec> = {
   "dte-10-excel-32": {
