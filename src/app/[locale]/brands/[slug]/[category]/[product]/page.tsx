@@ -2996,15 +2996,7 @@ const MOBIL_INDUSTRIAL_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Bosch Rexroth RE 90220", "Parker Denison HF-0/HF-1/HF-2"],
     description: "Ekstra yük kapasitesi gerektiren büyük hidrolik sistemler için yüksek viskoziteli premium hidrolik yağı. Ağır presler ve büyük inşaat ekipmanlarında güvenilir koruma sağlar.",
     features: ["Ekstra yük kapasitesi", "Büyük sistem uyumluluğu", "Termal stabilite", "Uzun servis ömrü"],
-  },
-  "shc-630": {
-    name: "Mobil SHC 630", grade: "ISO VG 150", series: "Mobil SHC 630", type: "Dişli Yağı (Tam Sentetik)",
-    api: "ISO 12925-1 CKT", acea: "DIN 51517-3 CLP",
-    approvals: ["US Steel 224", "David Brown S1.53.101", "AGMA 9005-E02"],
-    description: "PAO bazlı tam sentetik endüstriyel dişli yağı. Mineral yağlara kıyasla çok daha uzun servis aralıkları ve üstün düşük sıcaklık performansı ile sert çalışma koşullarında üstün dişli koruması sağlar.",
-    features: ["PAO tam sentetik formül", "Uzun servis aralığı", "Üstün düşük sıcaklık akışkanlığı", "Yüksek ısı stabilitesi"],
-  },
-  "shc-632": {
+  },  "shc-632": {
     name: "Mobil SHC 632", grade: "ISO VG 220", series: "Mobil SHC 632", type: "Dişli Yağı (Tam Sentetik)",
     api: "ISO 12925-1 CKT", acea: "DIN 51517-3 CLP",
     approvals: ["US Steel 224", "David Brown S1.53.101", "AGMA 9005-E02"],
@@ -3024,73 +3016,13 @@ const MOBIL_INDUSTRIAL_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Atlas Copco", "Kaeser", "Ingersoll Rand", "Sullair", "Gardner Denver"],
     description: "Döner vidalı kompresörler için geliştirilmiş PAO bazlı tam sentetik kompresör yağı. 8.000 saate kadar uzatılmış değişim aralığı ve minimum karbon birikimi ile işletme maliyetlerini azaltır.",
     features: ["PAO tam sentetik formül", "8.000 saat değişim aralığı", "Sıfır karbon birikimi", "Çevre dostu uzun ömür"],
-  },
-  "vactra-2": {
-    name: "Mobil Vactra 2", grade: "ISO VG 68 (No.2)", series: "Mobil Vactra", type: "Kızak Yağı",
-    api: "ISO 6743-13 G", acea: "DIN 51502 CGLP",
-    approvals: ["Cincinnati Machine P-47", "Mazak", "Okuma", "Fanuc"],
-    description: "CNC tezgahları ve hassas takım tezgahları için geliştirilmiş özel kızak yağı. Stick-slip titreşimlerini elimine ederek hassas yüzey kalitesi ve ilerleme tutarlılığı sağlar.",
-    features: ["Stick-slip önleme", "CNC tezgah uyumluluğu", "Hassas ilerleme kontrolü", "Su emülsiyonu direnci"],
-  },
-  "grease-xhp-222": {
+  },  "grease-xhp-222": {
     name: "Mobil Grease XHP 222", grade: "NLGI 2", series: "Mobil Grease XHP 222", type: "Gres Yağı EP",
     api: "ISO 6743-9 L-XBCHB 2", acea: "DIN 51825 KP2K-20",
     approvals: ["SKF", "FAG", "NSK", "Timken"],
     description: "Lityum kompleks kıvamlaştırıcılı yüksek performanslı EP gres yağı. Rulmanlı yataklar, dişli kutular ve eklem noktaları dahil geniş endüstriyel uygulamalarda üstün koruma sağlar.",
     features: ["Yüksek EP kapasitesi", "Geniş sıcaklık aralığı (-20°C ile +150°C)", "Su ve pas koruması", "Uzun yeniden gres aralıkları"],
-  },
-
-  "shc-pegasus-30": {
-    name: "Mobil SHC Pegasus 30", grade: "SAE 30", series: "Mobil SHC Pegasus", type: "Gaz Motor Yağı (Tam Sentetik)",
-    api: "API CF", acea: "ISO-L-EGD",
-    approvals: ["GE Jenbacher", "Caterpillar", "Cummins", "Waukesha"],
-    description: "Dört zamanlı stasyoner doğal gaz motorları için geliştirilmiş PAO bazlı tam sentetik gaz motor yağı. Yüksek hızlı gaz motorlarında minimum deposit ve uzun yağ değişim aralığı sağlar.",
-    features: ["PAO tam sentetik formül", "Düşük deposit oluşumu", "Uzun değişim aralığı", "Gaz motoru optimizasyonu"],
-    image: "/images/products/mobil/shc-pegasus-30.jpg",
-    fullDescription: `Stasyoner ve doğal gaz motorları için özel olarak geliştirilen PAO (Poly-Alpha-Olefin) bazlı tam sentetik gaz motor yağı.
-
-Mineral yağlara kıyasla çok daha uzun servis aralıkları ve düşük deposit oluşumuyla endüstriyel gaz motorlarında işletme maliyetlerini azaltır ve motor ömrünü uzatır.
-
-PERFORMANS ÖZELLİKLERİ
-• Yüksek oksidasyon ve nitrasyon direnci
-• Düşük kül içeriğiyle spark plug koruması
-• Uzatılmış yağ değişim aralığı
-• Geniş sıcaklık aralığında viskozite stabilitesi
-
-STANDARTLAR VE SPESİFİKASYONLAR
-API CF
-ISO-L-EGD
-GE Jenbacher
-Caterpillar
-Cummins
-Waukesha`,
-  },
-  "pegasus-805": {
-    name: "Mobil Pegasus 805", grade: "SAE 40", series: "Mobil Pegasus 800", type: "Gaz Motor Yağı (Mineral)",
-    api: "API CF", acea: "ISO-L-EGD",
-    approvals: ["GE Jenbacher", "Caterpillar", "Cummins", "Waukesha"],
-    description: "Yüksek TBN kapasiteli dört zamanlı stasyoner doğal gaz motorları için geliştirilmiş mineral gaz motor yağı. Asit nötralizasyonu ve korozyon korumasıyla uzun motor ömrü sağlar.",
-    features: ["Yüksek TBN kapasitesi", "Asit korozyon koruması", "Doğal gaz motor uyumlu", "Güvenilir mineral formül"],
-    image: "/images/products/mobil/pegasus-805.jpg",
-    fullDescription: `Dört zamanlı stasyoner doğal gaz motorları için yüksek TBN (Total Base Number) kapasiteli mineral gaz motor yağı.
-
-Yüksek alkali rezerviyle yanma süreçlerinde oluşan asidik artıkları nötralize ederek motor parçalarını korozyon ve aşınmaya karşı korur.
-
-PERFORMANS ÖZELLİKLERİ
-• Yüksek TBN ile güçlü asit nötralizasyonu
-• Motor korozyonuna karşı etkin koruma
-• Doğal gaz motorlarına özel formülasyon
-• Güvenilir mineral motor yağı
-
-STANDARTLAR VE SPESİFİKASYONLAR
-API CF
-ISO-L-EGD
-GE Jenbacher
-Caterpillar
-Cummins
-Waukesha`,
-  },
-  "pegasus-605": {
+  },  "pegasus-605": {
     name: "Mobil Pegasus 605", grade: "SAE 40", series: "Mobil Pegasus 600", type: "Gaz Motor Yağı (Mineral)",
     api: "API CF", acea: "ISO-L-EGD",
     approvals: ["GE Jenbacher", "Caterpillar", "Waukesha"],
@@ -3113,32 +3045,7 @@ ISO-L-EGD
 GE Jenbacher
 Caterpillar
 Waukesha`,
-  },
-  "pegasus-610": {
-    name: "Mobil Pegasus 610", grade: "SAE 40", series: "Mobil Pegasus 600", type: "Gaz Motor Yağı (Mineral)",
-    api: "API CF", acea: "ISO-L-EGD",
-    approvals: ["GE Jenbacher", "Caterpillar", "Waukesha"],
-    description: "Dört zamanlı stasyoner doğal gaz motorları için formüle edilmiş yüksek performanslı mineral gaz motor yağı. Gelişmiş oksidasyon direnciyle uzun çalışma sürelerinde güvenilir motor koruması sağlar.",
-    features: ["Yüksek oksidasyon direnci", "Uzun çalışma süresi performansı", "Gaz motor uyumlu", "Mineral ekonomik formül"],
-    image: "/images/products/mobil/pegasus-610.jpg",
-    fullDescription: `Yüksek çalışma saatlerinde güvenilir performans sağlayan dört zamanlı stasyoner doğal gaz motorları için mineral gaz motor yağı.
-
-Gelişmiş oksidasyon direnci formülasyonuyla uzun çalışma sürelerinde yağın bozulmasını yavaşlatarak motor korumasını sürdürür.
-
-PERFORMANS ÖZELLİKLERİ
-• Uzun çalışma sürelerinde üstün oksidasyon stabilitesi
-• Düşük deposit ve vernik oluşumu
-• Doğal gaz motorlarına özel formülasyon
-• Güvenilir mineral motor koruma
-
-STANDARTLAR VE SPESİFİKASYONLAR
-API CF
-ISO-L-EGD
-GE Jenbacher
-Caterpillar
-Waukesha`,
-  },
-  "pegasus-1005": {
+  },  "pegasus-1005": {
     name: "Mobil Pegasus 1005", grade: "SAE 40", series: "Mobil Pegasus 1000", type: "Gaz Motor Yağı (Mineral, Yüksek Kül)",
     api: "API CF", acea: "ISO-L-EGD",
     approvals: ["GE Jenbacher", "Caterpillar", "Cummins", "Waukesha"],
@@ -3162,33 +3069,7 @@ GE Jenbacher
 Caterpillar
 Cummins
 Waukesha`,
-  },
-  "pegasus-705": {
-    name: "Mobil Pegasus 705", grade: "SAE 40", series: "Mobil Pegasus 700", type: "Gaz Motor Yağı (Mineral)",
-    api: "API CF", acea: "ISO-L-EGD",
-    approvals: ["GE Jenbacher", "Caterpillar", "Cummins", "Waukesha"],
-    description: "Dört zamanlı stasyoner doğal gaz motorları için güncellenmiş formülasyonlu mineral gaz motor yağı. Gelişmiş katık teknolojisiyle motor temizliği ve korozyon koruması sağlar.",
-    features: ["Güncellenmiş gaz motor formülü", "Gelişmiş motor temizliği", "Korozyon koruması", "Mineral ekonomik yağ"],
-    image: "/images/products/mobil/pegasus-705.jpg",
-    fullDescription: `700 serisi güncellenmiş formülasyonuyla dört zamanlı stasyoner gaz motorları için geliştirilmiş mineral gaz motor yağı.
-
-Gelişmiş katık paketi sayesinde önceki jenerasyona kıyasla daha iyi motor temizliği ve korozyon koruması sağlar.
-
-PERFORMANS ÖZELLİKLERİ
-• Gelişmiş katık teknolojisiyle üstün motor temizliği
-• Güçlendirilmiş korozyon ve aşınma koruması
-• Doğal gaz motorlarına özel optimizasyon
-• Güvenilir mineral motor yağı performansı
-
-STANDARTLAR VE SPESİFİKASYONLAR
-API CF
-ISO-L-EGD
-GE Jenbacher
-Caterpillar
-Cummins
-Waukesha`,
-  },
-  "almo-oil-525": {
+  },  "almo-oil-525": {
     name: "Mobil Almo Oil 525", grade: "ISO VG 525", series: "Mobil Almo Oil", type: "Pnömatik Ekipman Yağı",
     api: "", acea: "",
     approvals: [],
