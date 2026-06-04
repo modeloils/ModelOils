@@ -241,23 +241,19 @@ export function Header({ locale = "en" }: HeaderProps) {
           </button>
           {mobileProductsOpen && (
             <div className="pl-4 pb-2">
-              {MEGA_MENU_KEYS.map((col) => (
-                <div key={col.categoryKey} className="mb-3">
-                  <Link
-                    href={col.href}
-                    className="text-accent-500 text-xs font-semibold uppercase tracking-widest block mb-1"
-                    onClick={() => setMobileOpen(false)}
-                  >
-                    {t(col.categoryKey)}
-                  </Link>
-                  {col.itemKeys.slice(0, 3).map((key) => (
+              {BRANDS_MENU.map((brand) => (
+                <div key={brand.slug} className="mb-3">
+                  <span className="text-accent-500 text-xs font-semibold uppercase tracking-widest block mb-1">
+                    {brand.name}
+                  </span>
+                  {BRAND_CATEGORIES.map((cat) => (
                     <Link
-                      key={key}
-                      href={col.href}
+                      key={cat.path}
+                      href={`/brands/${brand.slug}/${cat.path}`}
                       className="block text-brand-300 text-sm py-1 hover:text-white"
                       onClick={() => setMobileOpen(false)}
                     >
-                      {t(key)}
+                      {cat.label}
                     </Link>
                   ))}
                 </div>
