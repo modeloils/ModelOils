@@ -219,22 +219,6 @@ const BRAND_OVERRIDES: Record<string, string[]> = {
     "Mobil Delvac Super 1000 20W-50",
     "Mobil Delvac CT Diesel 10W-30",
   ],
-  "mobil:endustriyel-yaglar": [
-    "Mobil DTE 10 Excel 32", "Mobil DTE 10 Excel 46",
-    "Mobil DTE 10 Excel 68", "Mobil DTE 10 Excel 100",
-    "Mobil SHC 630", "Mobil SHC 632",
-    "Mobil Rarus 427", "Mobil Rarus SHC 1024",
-    "Mobil Vactra 2",
-    "Mobil Grease XHP 222",
-  
-    "Mobil SHC Pegasus 30",
-    "Mobil Pegasus 805",
-    "Mobil Pegasus 605",
-    "Mobil Pegasus 610",
-    "Mobil Pegasus 1005",
-    "Mobil Pegasus 705",
-  ],
-
   /* ── CASTROL ────────────────────────────────────────────────────── */
   "castrol:motor-yaglari": [
     "Castrol EDGE 0W-20", "Castrol EDGE 0W-30", "Castrol EDGE 5W-30",
@@ -475,26 +459,10 @@ const PRODUCT_IMAGES: Record<string, string> = {
   "mobil:delvac-xhp-extra-10w-40": "/images/products/mobil/delvac-xhp-extra-10w-40.png",
   "mobil:delvac-xhp-le-10w-40": "/images/products/mobil/delvac-xhp-le-10w-40.jpg",
   "mobil:delvac-xhp-ultra-le-5w-30": "/images/products/mobil/delvac-xhp-ultra-le-5w-30.jpg",
-  "mobil:dte-10-excel-100": "/images/products/mobil/dte-10-excel-100.jpg",
-  "mobil:dte-10-excel-32": "/images/products/mobil/dte-10-excel-32.jpg",
-  "mobil:dte-10-excel-46": "/images/products/mobil/dte-10-excel-46.jpg",
-  "mobil:dte-10-excel-68": "/images/products/mobil/dte-10-excel-68.jpg",
-  "mobil:grease-xhp-222": "/images/products/mobil/grease-xhp-222.jpg",
-  "mobil:pegasus-1005": "/images/products/mobil/pegasus-1005.jpg",
-  "mobil:pegasus-605": "/images/products/mobil/pegasus-605.jpg",
-  "mobil:pegasus-610": "/images/products/mobil/pegasus-610.jpg",
-  "mobil:pegasus-705": "/images/products/mobil/pegasus-705.jpg",
-  "mobil:pegasus-805": "/images/products/mobil/pegasus-805.jpg",
-  "mobil:rarus-427": "/images/products/mobil/rarus-427.jpg",
-  "mobil:rarus-shc-1024": "/images/products/mobil/rarus-shc-1024.jpg",
-  "mobil:shc-630": "/images/products/mobil/shc-630.jpg",
-  "mobil:shc-632": "/images/products/mobil/shc-632.jpg",
-  "mobil:shc-pegasus-30": "/images/products/mobil/shc-pegasus-30.jpg",
   "mobil:super-2000-x1-diesel-10w-40": "/images/products/mobil/super-2000-x1-diesel-10w-40.jpg",
   "mobil:super-3000-formula-fe-5w-30": "/images/products/mobil/super-3000-formula-fe-5w-30.jpg",
   "mobil:super-3000-x1-5w-40": "/images/products/mobil/super-3000-x1-5w-40.png",
   "mobil:super-3000-xe-5w-30-c3": "/images/products/mobil/super-3000-xe-5w-30-c3.jpg",
-  "mobil:vactra-2": "/images/products/mobil/vactra-2.jpg",
 };
 
 function getProductImage(brandSlug: string, productSlug: string): string | null {
