@@ -4988,7 +4988,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
       <div className="bg-white border-b border-brand-200 py-4">
         <div className="container-xl">
           <Link
-            href={`/brands/${slug}/${category}`}
+            href={`/brands/${slug}/${category}` as any}
             className="inline-flex items-center gap-2 text-sm text-brand-500 hover:text-brand-900 transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />

@@ -692,7 +692,7 @@ function BrandedProductCard({
 
   return (
     <Link
-      href={`/brands/${brandSlug}/${categorySlug}/${productSlug}`}
+      href={`/brands/${brandSlug}/${categorySlug}/${productSlug}` as any}
       className="rounded-[var(--radius-card)] overflow-hidden border hover:shadow-[0_8px_24px_rgba(0,0,0,0.18)] hover:-translate-y-1 transition-all duration-200 flex flex-col"
       style={{ borderColor: colors.primary + "40" }}
     >
@@ -793,7 +793,7 @@ export default async function BrandCategoryPage({ params }: CategoryPageProps) {
       <section className="bg-white border-b border-brand-200 py-12">
         <div className="container-xl">
           <Link
-            href={`/brands/${slug}`}
+            href={`/brands/${slug}` as any}
             className="inline-flex items-center gap-2 text-sm text-brand-500 hover:text-brand-900 transition-colors mb-8"
           >
             <ArrowLeft className="h-4 w-4" />
