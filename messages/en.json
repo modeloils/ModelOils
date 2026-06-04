@@ -2623,6 +2623,1064 @@
       "f1": "Enhanced engine cleanliness",
       "f2": "Corrosion protection",
       "f3": "Cost-effective mineral oil"
+    },
+    "mobil": {
+      "almo-oil-525": {
+        "name": "Mobil Almo Oil 525",
+        "type": "Pneumatic Equipment Oil",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Almo Oil 525 is a premium pneumatic equipment oil for industrial applications.",
+        "features": [
+          "Özellikleri",
+          "Etkili kimyasal kararlılık",
+          "Valf çalışmasını iyileştirir",
+          "İstenilen emülsiyon özellikleri",
+          "Yüksek viskozite indeksi",
+          "Mükemmel yük taşıma kapasitesi ve aşınmaya karşı koruma"
+        ]
+      },
+      "velocite-oil-no-4": {
+        "name": "Mobil Velocite Oil No 4",
+        "type": "Spindle Oil",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Velocite Oil No 4 is a premium spindle oil for industrial applications.",
+        "features": [
+          "Yüksek oksidasyon direnci",
+          "Yağ ömrünü uzatır",
+          "Ekipman ömrünü uzatır",
+          "Etkili sudan ayrılma",
+          "Emülsiyon oluşumunu engeller",
+          "Nemi kritik yağlama alanlarından uzak tutar"
+        ]
+      },
+      "velocite-oil-no-10": {
+        "name": "Mobil Velocite Oil No 10",
+        "type": "Spindle Oil",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Velocite Oil No 10 is a premium spindle oil for industrial applications.",
+        "features": [
+          "Yüksek oksidasyon direnci",
+          "Yağ ömrünü uzatır",
+          "Ekipman ömrünü uzatır",
+          "Etkili sudan ayrılma",
+          "Emülsiyon oluşumunu engeller",
+          "Nemi kritik yağlama alanlarından uzak tutar"
+        ]
+      },
+      "almo-oil-527": {
+        "name": "Mobil Almo Oil 527",
+        "type": "Pneumatic Equipment Oil",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Almo Oil 527 is a premium pneumatic equipment oil for industrial applications.",
+        "features": [
+          "Özellikleri",
+          "Etkili kimyasal kararlılık",
+          "Valf çalışmasını iyileştirir",
+          "İstenilen emülsiyon özellikleri",
+          "Yüksek viskozite indeksi",
+          "Mükemmel yük taşıma kapasitesi ve aşınmaya karşı koruma"
+        ]
+      },
+      "met-763": {
+        "name": "Mobil Met 763",
+        "type": "Metalworking Fluid",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Met 763 is a premium metalworking fluid for industrial applications.",
+        "features": [
+          "Mükemmel parça işleme performansı",
+          "Mükemmel yağlama özelliği",
+          "Çok amaçlı kullanım",
+          "Açık renkli ve saydam görünüm",
+          "Yağ sisini önleyen formülasyon",
+          "Çalışma yeri güvenliğini artırır"
+        ]
+      },
+      "met-766": {
+        "name": "Mobil Met 766",
+        "type": "Metalworking Fluid",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Met 766 is a premium metalworking fluid for industrial applications.",
+        "features": [
+          "Mükemmel parça işleme performansı",
+          "Mükemmel yağlama özelliği",
+          "Çok amaçlı kullanım",
+          "Açık renkli ve saydam görünüm",
+          "Yağ sisini önleyen formülasyon",
+          "Çalışma yeri güvenliğini artırır"
+        ]
+      },
+      "met-424": {
+        "name": "Mobil Met 424",
+        "type": "Metalworking Fluid",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Met 424 is a premium metalworking fluid for industrial applications.",
+        "features": [
+          "Mükemmel talaşlı imalat kapasitesi",
+          "Çok çeşitli malzeme ve operasyon ile uygunluk",
+          "Kızak ve tezgah fikstürleri üzerinde leke oluşturmaz",
+          "Açık renkli, saydam",
+          "Yağ sisi azdır",
+          "Daha güvenli ve konforlu bir çalışma ortamı sağlar"
+        ]
+      },
+      "dte-27": {
+        "name": "Mobil DTE 27",
+        "type": "Circulating System Oil",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil DTE 27 is a premium circulating system oil for industrial applications.",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "dte-24": {
+        "name": "Mobil DTE 24",
+        "type": "Circulating System Oil",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil DTE 24 is a premium circulating system oil for industrial applications.",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "dte-10-excel-32": {
+        "name": "Mobil DTE 10 Excel 32",
+        "type": "High-Performance Hydraulic Oil",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil DTE 10 Excel 32 is a premium high-performance hydraulic oil for industrial applications.",
+        "features": [
+          "Mükemmel Hidrolik Verimlilik",
+          "Çok Üstün Temiz Tutma Performansı",
+          "Elastomer ve contalarla iyi bir uyumluluk Uzun conta ömrü ve daha az bakım",
+          "Aşınma önleyici özellikler",
+          "Mükemmel Hava Ayırma Özellikleri",
+          "Çoklu metal uyumluluğu"
+        ]
+      },
+      "dte-26": {
+        "name": "Mobil DTE 26",
+        "type": "Circulating System Oil",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil DTE 26 is a premium circulating system oil for industrial applications.",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "dte-25": {
+        "name": "Mobil DTE 25",
+        "type": "Circulating System Oil",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil DTE 25 is a premium circulating system oil for industrial applications.",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "dte-10-excel-100": {
+        "name": "Mobil DTE 10 Excel 100",
+        "type": "High-Performance Hydraulic Oil",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil DTE 10 Excel 100 is a premium high-performance hydraulic oil for industrial applications.",
+        "features": [
+          "Mükemmel Hidrolik Verimlilik",
+          "Çok Üstün Temiz Tutma Performansı",
+          "Elastomer ve contalarla iyi bir uyumluluk Uzun conta ömrü ve daha az bakım",
+          "Aşınma önleyici özellikler",
+          "Mükemmel Hava Ayırma Özellikleri",
+          "Çoklu metal uyumluluğu"
+        ]
+      },
+      "dte-10-excel-46": {
+        "name": "Mobil DTE 10 Excel 46",
+        "type": "High-Performance Hydraulic Oil",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil DTE 10 Excel 46 is a premium high-performance hydraulic oil for industrial applications.",
+        "features": [
+          "Mükemmel Hidrolik Verimlilik",
+          "Çok Üstün Temiz Tutma Performansı",
+          "Elastomer ve contalarla iyi bir uyumluluk Uzun conta ömrü ve daha az bakım",
+          "Aşınma önleyici özellikler",
+          "Mükemmel Hava Ayırma Özellikleri",
+          "Çoklu metal uyumluluğu"
+        ]
+      },
+      "dte-10-excel-68": {
+        "name": "Mobil DTE 10 Excel 68",
+        "type": "High-Performance Hydraulic Oil",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil DTE 10 Excel 68 is a premium high-performance hydraulic oil for industrial applications.",
+        "features": [
+          "Mükemmel Hidrolik Verimlilik",
+          "Çok Üstün Temiz Tutma Performansı",
+          "Elastomer ve contalarla iyi bir uyumluluk Uzun conta ömrü ve daha az bakım",
+          "Aşınma önleyici özellikler",
+          "Mükemmel Hava Ayırma Özellikleri",
+          "Çoklu metal uyumluluğu"
+        ]
+      },
+      "vactra-oil-no-1": {
+        "name": "Mobil Vactra Oil No 1",
+        "type": "Slideway and Guideway Oil",
+        "category": "Kızak Yağları",
+        "description": "Mobil Vactra Oil No 1 is a premium slideway and guideway oil for industrial applications.",
+        "features": [
+          "Kontrollü Sürtünme Özellikleri",
+          "Çoklu Malzeme Becerileri",
+          "Su ve su bazlı soğutucu sıvısından kolay ayrışabilme",
+          "Yapışkanlık",
+          "Uzun Vadeli Pas ve Korozyona karşı Koruma",
+          "Uygulamalar"
+        ]
+      },
+      "vactra-oil-no-4": {
+        "name": "Mobil Vactra Oil No 4",
+        "type": "Slideway and Guideway Oil",
+        "category": "Kızak Yağları",
+        "description": "Mobil Vactra Oil No 4 is a premium slideway and guideway oil for industrial applications.",
+        "features": [
+          "Kontrollü Sürtünme Özellikleri",
+          "Çoklu Malzeme Becerileri",
+          "Su ve su bazlı soğutucu sıvısından kolay ayrışabilme",
+          "Yapışkanlık",
+          "Uzun Vadeli Pas ve Korozyona karşı Koruma",
+          "Uygulamalar"
+        ]
+      },
+      "vactra-oil-no-2": {
+        "name": "Mobil Vactra Oil No 2",
+        "type": "Slideway and Guideway Oil",
+        "category": "Kızak Yağları",
+        "description": "Mobil Vactra Oil No 2 is a premium slideway and guideway oil for industrial applications.",
+        "features": [
+          "Kontrollü Sürtünme Özellikleri",
+          "Çoklu Malzeme Becerileri",
+          "Su ve su bazlı soğutucu sıvısından kolay ayrışabilme",
+          "Yapışkanlık",
+          "Uzun Vadeli Pas ve Korozyona karşı Koruma",
+          "Uygulamalar"
+        ]
+      },
+      "therm-605": {
+        "name": "Mobil Therm 605",
+        "type": "Heat Treatment Oil",
+        "category": "Isı Transfer Yağları",
+        "description": "Mobil Therm 605 is a premium heat treatment oil for industrial applications.",
+        "features": [
+          "bir etkendir.",
+          "Mobiltherm 600, aşağıdaki faydaları sağlar."
+        ]
+      },
+      "jet-oil-2": {
+        "name": "Mobil Jet Oil 2",
+        "type": "Aviation Turbine Oil",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil Jet Oil 2 is a premium aviation turbine oil for industrial applications.",
+        "features": [
+          "Özellikleri",
+          "Avantajları ve Potansiyel Yararları",
+          "Tutar motor verimliliğini ve motor ömrünü uzatır",
+          "Azaltır, motor bakım",
+          "Kimyasal olarak stabil azaltır buharlaşma kayıpları ve yağ tüketimini azaltır",
+          "Uygulamalar"
+        ]
+      },
+      "dte-oil-heavy-medium": {
+        "name": "Mobil DTE Oil Heavy Medium",
+        "type": "Mineral Compressor Oil",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE Oil Heavy Medium is a premium mineral compressor oil for industrial applications.",
+        "features": [
+          "Beklenmeyen duruşları azaltır ve bakım maliyetlerini düşürür",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Aşınmaya karşı üstün koruma",
+          "Pas ve korozyona karşı uzun vadeli koruma"
+        ]
+      },
+      "dte-oil-heavy": {
+        "name": "Mobil DTE Oil Heavy",
+        "type": "Mineral Compressor Oil",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE Oil Heavy is a premium mineral compressor oil for industrial applications.",
+        "features": [
+          "Beklenmeyen duruşları azaltır ve bakım maliyetlerini düşürür",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Aşınmaya karşı üstün koruma",
+          "Pas ve korozyona karşı uzun vadeli koruma"
+        ]
+      },
+      "dte-oil-light": {
+        "name": "Mobil DTE Oil Light",
+        "type": "Mineral Compressor Oil",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE Oil Light is a premium mineral compressor oil for industrial applications.",
+        "features": [
+          "Beklenmeyen duruşları azaltır ve bakım maliyetlerini düşürür",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Aşınmaya karşı üstün koruma",
+          "Pas ve korozyona karşı uzun vadeli koruma"
+        ]
+      },
+      "rarus-424": {
+        "name": "Mobil Rarus 424",
+        "type": "Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus 424 is a premium compressor oil for industrial applications.",
+        "features": []
+      },
+      "gargoyle-arctic-300": {
+        "name": "Mobil Gargoyle Arctic 300",
+        "type": "Refrigeration Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Gargoyle Arctic 300 is a premium refrigeration compressor oil for industrial applications.",
+        "features": [
+          "Özellikleri Üstünlükleri ve Sağlayacağı Faydalar",
+          "Düşük wax içeriği",
+          "İyi kimyasal kararlılık",
+          "Çok amaçlı yağlar"
+        ]
+      },
+      "gargoyle-arctic-shc-226e": {
+        "name": "Mobil Gargoyle Arctic SHC 226E",
+        "type": "Refrigeration Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Gargoyle Arctic SHC 226E is a premium refrigeration compressor oil for industrial applications.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "az sayıda periyodik bakım sağlar",
+          "Mükemmel ısıl/oksidasyon ve kimyasal kararlılık",
+          "Düşük buharlaşma Viskozite artışını engeller, yağ tüketimini azaltır",
+          "Yüksek Viskozite indeksi ve wax içermeyen bileşim",
+          "Düşük çekme gerilim katsayısı"
+        ]
+      },
+      "eal-arctic-68": {
+        "name": "Mobil EAL Arctic 68",
+        "type": "Environmentally Acceptable Refrigeration Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil EAL Arctic 68 is a premium environmentally acceptable refrigeration oil for industrial applications.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "eal-arctic-32": {
+        "name": "Mobil EAL Arctic 32",
+        "type": "Environmentally Acceptable Refrigeration Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil EAL Arctic 32 is a premium environmentally acceptable refrigeration oil for industrial applications.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "rarus-427": {
+        "name": "Mobil Rarus 427",
+        "type": "Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus 427 is a premium compressor oil for industrial applications.",
+        "features": [
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşur",
+          "Daha yüksek kompresör performansı sağlar",
+          "Daha uzun yağ ömrü sağlar",
+          "Filtre ömrünü artırır",
+          "Yüksek yük-taşıma kapasitesi"
+        ]
+      },
+      "rarus-425": {
+        "name": "Mobil Rarus 425",
+        "type": "Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus 425 is a premium compressor oil for industrial applications.",
+        "features": [
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşur",
+          "Daha yüksek kompresör performansı sağlar",
+          "Daha uzun yağ ömrü sağlar",
+          "Filtre ömrünü artırır",
+          "Yüksek yük-taşıma kapasitesi"
+        ]
+      },
+      "rarus-shc-1026": {
+        "name": "Mobil Rarus SHC 1026",
+        "type": "Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus SHC 1026 is a premium compressor oil for industrial applications.",
+        "features": [
+          "Geniş çalışma sıcaklığı aralığı",
+          "Güvenlik artışı",
+          "Uzun servis ömrü",
+          "Kok tortularını azaltır",
+          "Yağ ömrünü uzatır",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "rarus-shc-1025": {
+        "name": "Mobil Rarus SHC 1025",
+        "type": "Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus SHC 1025 is a premium compressor oil for industrial applications.",
+        "features": [
+          "Geniş çalışma sıcaklığı aralığı",
+          "Güvenlik artışı",
+          "Uzun servis ömrü",
+          "Kok tortularını azaltır",
+          "Yağ ömrünü uzatır",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "eal-arctic-46": {
+        "name": "Mobil EAL Arctic 46",
+        "type": "Environmentally Acceptable Refrigeration Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil EAL Arctic 46 is a premium environmentally acceptable refrigeration oil for industrial applications.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "socony-oven-conveyer-lubricant": {
+        "name": "Mobil Socony Oven Conveyer Lubricant",
+        "type": "Oven Conveyor Lubricant",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Socony Oven Conveyer Lubricant is a premium oven conveyor lubricant for industrial applications.",
+        "features": [
+          "Özellikler",
+          "Avantajları ve Potansiyel Yararları",
+          "Grafit, katı filmin çok iyi yağlama özellikleri",
+          "Zincir bağlantıları ve iğnelerden iyi penetrasyon",
+          "Yapışmasına neden olabilir mevduat olmaması",
+          "Uygulamalar"
+        ]
+      },
+      "vacuoline-546": {
+        "name": "Mobil Vacuoline 546",
+        "type": "Circulating System Oil",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Vacuoline 546 is a premium circulating system oil for industrial applications.",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "vacuoline-537": {
+        "name": "Mobil Vacuoline 537",
+        "type": "Circulating System Oil",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Vacuoline 537 is a premium circulating system oil for industrial applications.",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "vacuoline-533": {
+        "name": "Mobil Vacuoline 533",
+        "type": "Circulating System Oil",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Vacuoline 533 is a premium circulating system oil for industrial applications.",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "vacuoline-528": {
+        "name": "Mobil Vacuoline 528",
+        "type": "Circulating System Oil",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Vacuoline 528 is a premium circulating system oil for industrial applications.",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "vacuoline-525": {
+        "name": "Mobil Vacuoline 525",
+        "type": "Circulating System Oil",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Vacuoline 525 is a premium circulating system oil for industrial applications.",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "velocite-oil-no-6": {
+        "name": "Mobil Velocite Oil No 6",
+        "type": "Spindle Oil",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Velocite Oil No 6 is a premium spindle oil for industrial applications.",
+        "features": [
+          "Yüksek oksidasyon direnci",
+          "Yağ ömrünü uzatır",
+          "Ekipman ömrünü uzatır",
+          "Etkili sudan ayrılma",
+          "Emülsiyon oluşumunu engeller",
+          "Nemi kritik yağlama alanlarından uzak tutar"
+        ]
+      },
+      "velocite-oil-no-3": {
+        "name": "Mobil Velocite Oil No 3",
+        "type": "Spindle Oil",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Velocite Oil No 3 is a premium spindle oil for industrial applications.",
+        "features": [
+          "Yüksek oksidasyon direnci",
+          "Yağ ömrünü uzatır",
+          "Ekipman ömrünü uzatır",
+          "Etkili sudan ayrılma",
+          "Emülsiyon oluşumunu engeller",
+          "Nemi kritik yağlama alanlarından uzak tutar"
+        ]
+      },
+      "met-762": {
+        "name": "Mobil Met 762",
+        "type": "Metalworking Fluid",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Met 762 is a premium metalworking fluid for industrial applications.",
+        "features": [
+          "Mükemmel parça işleme performansı",
+          "Mükemmel yağlama özelliği",
+          "Çok amaçlı kullanım",
+          "Açık renkli ve saydam görünüm",
+          "Yağ sisini önleyen formülasyon",
+          "Çalışma yeri güvenliğini artırır"
+        ]
+      },
+      "arma-798": {
+        "name": "Mobil Arma 798",
+        "type": "Heavy Gear and Wire Rope Lubricant",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Arma 798 is a premium heavy gear and wire rope lubricant for industrial applications.",
+        "features": [
+          "Özellikler",
+          "Üstün yapıştırıcı özellikleri",
+          "Dayanıklıdır atmak-off",
+          "Mükemmel pas ve korozyon koruması",
+          ", hafif asitlere karşı saldırı halatı korur",
+          "Aşınma azaltır"
+        ]
+      },
+      "nuto-h-46": {
+        "name": "Mobil Nuto H 46",
+        "type": "Hydraulic Oil",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Nuto H 46 is a premium hydraulic oil for industrial applications.",
+        "features": []
+      },
+      "dte-22": {
+        "name": "Mobil DTE 22",
+        "type": "Circulating System Oil",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil DTE 22 is a premium circulating system oil for industrial applications.",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "delvac-hydraulic-10w": {
+        "name": "Mobil Delvac Hydraulic 10W",
+        "type": "Hydraulic Oil",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Delvac Hydraulic 10W is a premium hydraulic oil for industrial applications.",
+        "features": [
+          "Özellikle pompa kanatları ve kontrol valflerinde daha az aşınma",
+          "Pompa kanadı yapışmasına karşı korur",
+          "Yağ analizleri ile yağ değişim aralıklarını uzatır",
+          "İyi aşınma önleme özelliği     Erken aşınmayı azaltır ve ekipman ömrünü uzatır",
+          "Yüksek sıcaklıklarda etkili yağ filmi mukavemeti sağlar"
+        ]
+      },
+      "dte-oil-medium": {
+        "name": "Mobil DTE Oil Medium",
+        "type": "Mineral Compressor Oil",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE Oil Medium is a premium mineral compressor oil for industrial applications.",
+        "features": [
+          "Beklenmeyen duruşları azaltır ve bakım maliyetlerini düşürür",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Aşınmaya karşı üstün koruma",
+          "Pas ve korozyona karşı uzun vadeli koruma"
+        ]
+      },
+      "dte-797": {
+        "name": "Mobil DTE 797",
+        "type": "Heavy-Duty Circulating Oil",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 797 is a premium heavy-duty circulating oil for industrial applications.",
+        "features": [
+          "Üstün oksidasyon, kimyasal ve renk kararlılığı",
+          "Üstün türbin sistemi güvenilirlik seviyesi ve azaltılmış arıza duruş süreleri",
+          "Mükemmel sudan ayrılabilirlik",
+          "Geliştirilmiş pas ve korozyon koruması",
+          "Hızlı hava bırakma ve köpük oluşumunu engelleme",
+          "Çinkosuz (Zinc Free)"
+        ]
+      },
+      "dte-846": {
+        "name": "Mobil DTE 846",
+        "type": "Heavy-Duty Circulating Oil",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 846 is a premium heavy-duty circulating oil for industrial applications.",
+        "features": [
+          "Yanlış yağ uygulama olasılığını önler, masraflı yağ değişimlerini azaltır",
+          "Stok maliyetlerini azaltır",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Yağ değişme aralığını artırır, üretim maliyetlerini düşürür",
+          "Aşınmaya karşı mükemmel koruma",
+          "Ekipman ömrünü uzatır, parça değişim maliyetini düşürür"
+        ]
+      },
+      "dte-832": {
+        "name": "Mobil DTE 832",
+        "type": "Heavy-Duty Circulating Oil",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 832 is a premium heavy-duty circulating oil for industrial applications.",
+        "features": [
+          "Yanlış yağ uygulama olasılığını önler, masraflı yağ değişimlerini azaltır",
+          "Stok maliyetlerini azaltır",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Yağ değişme aralığını artırır, üretim maliyetlerini düşürür",
+          "Aşınmaya karşı mükemmel koruma",
+          "Ekipman ömrünü uzatır, parça değişim maliyetini düşürür"
+        ]
+      },
+      "shc-rarus-68": {
+        "name": "Mobil SHC Rarus 68",
+        "type": "Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil SHC Rarus 68 is a premium compressor oil for industrial applications.",
+        "features": [
+          "Tipik Özellikler"
+        ]
+      },
+      "shc-rarus-46": {
+        "name": "Mobil SHC Rarus 46",
+        "type": "Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil SHC Rarus 46 is a premium compressor oil for industrial applications.",
+        "features": [
+          "Tipik Özellikler"
+        ]
+      },
+      "shc-rarus-32": {
+        "name": "Mobil SHC Rarus 32",
+        "type": "Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil SHC Rarus 32 is a premium compressor oil for industrial applications.",
+        "features": [
+          "Tipik Özellikler"
+        ]
+      },
+      "gargoyle-arctic-155": {
+        "name": "Mobil Gargoyle Arctic 155",
+        "type": "Refrigeration Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Gargoyle Arctic 155 is a premium refrigeration compressor oil for industrial applications.",
+        "features": [
+          "Özellikleri Üstünlükleri ve Sağlayacağı Faydalar",
+          "Düşük wax içeriği",
+          "İyi kimyasal kararlılık",
+          "Çok amaçlı yağlar"
+        ]
+      },
+      "gargoyle-arctic-shc-230": {
+        "name": "Mobil Gargoyle Arctics SHC 230",
+        "type": "Refrigeration Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Gargoyle Arctics SHC 230 is a premium refrigeration compressor oil for industrial applications.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "az sayıda periyodik bakım sağlar",
+          "Mükemmel ısıl/oksidasyon ve kimyasal kararlılık",
+          "Düşük buharlaşma Viskozite artışını engeller, yağ tüketimini azaltır",
+          "Yüksek Viskozite indeksi ve wax içermeyen bileşim",
+          "Düşük çekme gerilim katsayısı"
+        ]
+      },
+      "eal-arctic-100": {
+        "name": "Mobil EAL Arctic 100",
+        "type": "Environmentally Acceptable Refrigeration Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil EAL Arctic 100 is a premium environmentally acceptable refrigeration oil for industrial applications.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "rarus-429": {
+        "name": "Mobil Rarus 429",
+        "type": "Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus 429 is a premium compressor oil for industrial applications.",
+        "features": [
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşur",
+          "Daha yüksek kompresör performansı sağlar",
+          "Daha uzun yağ ömrü sağlar",
+          "Filtre ömrünü artırır",
+          "Yüksek yük-taşıma kapasitesi"
+        ]
+      },
+      "rarus-426": {
+        "name": "Mobil Rarus 426",
+        "type": "Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus 426 is a premium compressor oil for industrial applications.",
+        "features": [
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşur",
+          "Daha yüksek kompresör performansı sağlar",
+          "Daha uzun yağ ömrü sağlar",
+          "Filtre ömrünü artırır",
+          "Yüksek yük-taşıma kapasitesi"
+        ]
+      },
+      "rarus-shc-1024": {
+        "name": "Mobil Rarus SHC 1024",
+        "type": "Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus SHC 1024 is a premium compressor oil for industrial applications.",
+        "features": [
+          "Geniş çalışma sıcaklığı aralığı",
+          "Güvenlik artışı",
+          "Uzun servis ömrü",
+          "Kok tortularını azaltır",
+          "Yağ ömrünü uzatır",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "nuto-h-68": {
+        "name": "Mobil Nuto H 68",
+        "type": "Hydraulic Oil",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Nuto H 68 is a premium hydraulic oil for industrial applications.",
+        "features": []
+      },
+      "dte-21": {
+        "name": "Mobil DTE 21",
+        "type": "Circulating System Oil",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil DTE 21 is a premium circulating system oil for industrial applications.",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "eal-arctic-22": {
+        "name": "Mobil EAL Arctic 22",
+        "type": "Environmentally Acceptable Refrigeration Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil EAL Arctic 22 is a premium environmentally acceptable refrigeration oil for industrial applications.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "somentor-ah-70": {
+        "name": "Mobil Somentor AH 70",
+        "type": "Machine Room Oil",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Somentor AH 70 is a premium machine room oil for industrial applications.",
+        "features": [
+          "Haddelenmiş metal parlak bir yüzey teslim",
+          "Yağın ömrünü uzatmak için kolay filtrasyon",
+          "Metallerin geniş bir aralığı için uygun",
+          "Uygulamalar"
+        ]
+      },
+      "aero-hf": {
+        "name": "Mobil Aero HF",
+        "type": "Aviation Hydraulic Fluid",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Aero HF is a premium aviation hydraulic fluid for industrial applications.",
+        "features": [
+          "Mobil Aero HF"
+        ]
+      },
+      "aero-hfa": {
+        "name": "Mobil Aero HFA",
+        "type": "Aviation Hydraulic Fluid",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Aero HFA is a premium aviation hydraulic fluid for industrial applications.",
+        "features": [
+          "Mobil Aero HFA"
+        ]
+      },
+      "met-427": {
+        "name": "Mobil Met 427",
+        "type": "Metalworking Fluid",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Met 427 is a premium metalworking fluid for industrial applications.",
+        "features": [
+          "Mükemmel talaşlı imalat kapasitesi",
+          "Çok çeşitli malzeme ve operasyon ile uygunluk",
+          "Kızak ve tezgah fikstürleri üzerinde leke oluşturmaz",
+          "Açık renkli, saydam",
+          "Yağ sisi azdır",
+          "Daha güvenli ve konforlu bir çalışma ortamı sağlar"
+        ]
+      },
+      "dte-10-excel-15": {
+        "name": "Mobil DTE 10 Excel 15",
+        "type": "High-Performance Hydraulic Oil",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil DTE 10 Excel 15 is a premium high-performance hydraulic oil for industrial applications.",
+        "features": [
+          "Mükemmel Hidrolik Verimlilik",
+          "Çok Üstün Temiz Tutma Performansı",
+          "Elastomer ve contalarla iyi bir uyumluluk Uzun conta ömrü ve daha az bakım",
+          "Aşınma önleyici özellikler",
+          "ve kavitasyon hasarını önlemeye yardım eder.",
+          "Mükemmel Hava Ayırma Özellikleri"
+        ]
+      },
+      "pyrotec-hfc-46": {
+        "name": "Mobil Pyrotec HFC 46",
+        "type": "Fire-Resistant Hydraulic Fluid",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Pyrotec HFC 46 is a premium fire-resistant hydraulic fluid for industrial applications.",
+        "features": [
+          "Mobil Pyrotec Hfc 46"
+        ]
+      },
+      "ect-44": {
+        "name": "Mobil ECT 44",
+        "type": "Electrical Transformer Oil",
+        "category": "Trafo Yağları",
+        "description": "Mobil ECT 44 is a premium electrical transformer oil for industrial applications.",
+        "features": [
+          "Mobilect 44'ün başlıca yararları şunlardır:"
+        ]
+      },
+      "prosol-nt-70": {
+        "name": "Mobil Prosol NT 70",
+        "type": "Metal Cleaning Solution",
+        "category": "Kesme Yağları",
+        "description": "Mobil Prosol NT 70 is a premium metal cleaning solution for industrial applications.",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-250": {
+        "name": "Mobil Cut 250",
+        "type": "Cutting Fluid",
+        "category": "Kesme Yağları",
+        "description": "Mobil Cut 250 is a premium cutting fluid for industrial applications.",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-240": {
+        "name": "Mobil Cut 240",
+        "type": "Cutting Fluid",
+        "category": "Kesme Yağları",
+        "description": "Mobil Cut 240 is a premium cutting fluid for industrial applications.",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-230": {
+        "name": "Mobil Cut 230",
+        "type": "Cutting Fluid",
+        "category": "Kesme Yağları",
+        "description": "Mobil Cut 230 is a premium cutting fluid for industrial applications.",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-210": {
+        "name": "Mobil Cut 210",
+        "type": "Cutting Fluid",
+        "category": "Kesme Yağları",
+        "description": "Mobil Cut 210 is a premium cutting fluid for industrial applications.",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-140": {
+        "name": "Mobil Cut 140",
+        "type": "Cutting Fluid",
+        "category": "Kesme Yağları",
+        "description": "Mobil Cut 140 is a premium cutting fluid for industrial applications.",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-100": {
+        "name": "Mobil Cut 100",
+        "type": "Cutting Fluid",
+        "category": "Kesme Yağları",
+        "description": "Mobil Cut 100 is a premium cutting fluid for industrial applications.",
+        "features": []
+      },
+      "exxon-hyjet-v": {
+        "name": "Exxon Hyjet V",
+        "type": "Aviation Hydraulic Fluid",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Exxon Hyjet V is a premium aviation hydraulic fluid for industrial applications.",
+        "features": [
+          "Özellikler",
+          "Avantajları ve Potansiyel Yararları",
+          "Daha uzun yağ ömrü.",
+          "Azaltılmış hidrolik sistem bakım maliyetleri",
+          "En düşük yoğunluk Tip IV sıvı",
+          "İndirimli uçak yakıt tüketimi, düşük işletme maliyetleri"
+        ]
+      },
+      "exxon-hyjet-iv-a-plus": {
+        "name": "Exxon Hyjet IV A Plus",
+        "type": "Aviation Hydraulic Fluid",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Exxon Hyjet IV A Plus is a premium aviation hydraulic fluid for industrial applications.",
+        "features": [
+          "Özellikler",
+          "Avantajları ve Potansiyel Yararları",
+          "Daha uzun yağ ömrü.",
+          "Azaltılmış hidrolik sistem bakım maliyetleri",
+          "En düşük yoğunluk Tip IV sıvı",
+          "İndirimli uçak yakıt tüketimi, düşük işletme maliyetleri"
+        ]
+      },
+      "jet-oil-254": {
+        "name": "Mobil Jet Oil 254",
+        "type": "Aviation Turbine Oil",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil Jet Oil 254 is a premium aviation turbine oil for industrial applications.",
+        "features": [
+          "Özellikleri",
+          "Avantajları ve Potansiyel Yararları",
+          "Tutar motor verimliliğini ve motor ömrünü uzatır",
+          "50 º C% 50 oranında artar ve mevduat kontrol azaltır dökme yağ oksidasyonu",
+          "Azaltır, motor bakım",
+          "Uygulamalar"
+        ]
+      },
+      "dte-746": {
+        "name": "Mobil DTE 746",
+        "type": "Heavy-Duty Circulating Oil",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 746 is a premium heavy-duty circulating oil for industrial applications.",
+        "features": [
+          "Üstün oksidasyon, kimyasal ve renk kararlılığı",
+          "Üstün türbin sistemi güvenilirlik seviyesi ve azaltılmış arıza duruş süreleri",
+          "Mükemmel sudan ayrılabilirlik",
+          "Geliştirilmiş pas ve korozyon koruması",
+          "Hızlı hava bırakma ve köpük oluşumunu engelleme",
+          "Çinkosuz (Zinc Free)"
+        ]
+      },
+      "dte-732": {
+        "name": "Mobil DTE 732",
+        "type": "Heavy-Duty Circulating Oil",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 732 is a premium heavy-duty circulating oil for industrial applications.",
+        "features": [
+          "Üstün oksidasyon, kimyasal ve renk kararlılığı",
+          "Üstün türbin sistemi güvenilirlik seviyesi ve azaltılmış arıza duruş süreleri",
+          "Mükemmel sudan ayrılabilirlik",
+          "Geliştirilmiş pas ve korozyon koruması",
+          "Hızlı hava bırakma ve köpük oluşumunu engelleme",
+          "Çinkosuz (Zinc Free)"
+        ]
+      },
+      "gargoyle-arctic-shc-nh-68": {
+        "name": "Mobil Gargoyle Arctic SHC NH 68",
+        "type": "Refrigeration Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Gargoyle Arctic SHC NH 68 is a premium refrigeration compressor oil for industrial applications.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "az sayıda periyodik bakım sağlar",
+          "Mükemmel ısıl/oksidasyon ve kimyasal kararlılık",
+          "Düşük buharlaşma Viskozite artışını engeller, yağ tüketimini azaltır",
+          "Yüksek Viskozite indeksi ve wax içermeyen bileşim",
+          "Düşük çekme gerilim katsayısı"
+        ]
+      },
+      "rarus-829": {
+        "name": "Mobil Rarus 829",
+        "type": "Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus 829 is a premium compressor oil for industrial applications.",
+        "features": [
+          "Yüksek performanslı sentetik esaslı yağlar",
+          "Güvenli kullanım sağlar",
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşturur",
+          "Daha yüksek kompresör performansı sağlar",
+          "Daha uzun yağ ömrü sağlar"
+        ]
+      },
+      "rarus-827": {
+        "name": "Mobil Rarus 827",
+        "type": "Compressor Oil",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus 827 is a premium compressor oil for industrial applications.",
+        "features": [
+          "Yüksek performanslı sentetik esaslı yağlar",
+          "Güvenli kullanım sağlar",
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşturur",
+          "Daha yüksek kompresör performansı sağlar",
+          "Daha uzun yağ ömrü sağlar"
+        ]
+      }
     }
   },
   "quotePage": {

@@ -1,0 +1,1099 @@
+{
+  "nav": {
+    "products": "المنتجات",
+    "industries": "الصناعات",
+    "exportServices": "خدمات التصدير",
+    "certifications": "الشهادات",
+    "about": "عن الشركة",
+    "blog": "المدونة",
+    "requestQuote": "طلب عرض سعر",
+    "motorOils": "زيوت المحرك",
+    "mineralOils": "الزيوت المعدنية",
+    "industrialLubricants": "مواد التشحيم الصناعية",
+    "viewAllProducts": "عرض جميع المنتجات",
+    "downloadCatalog": "تحميل الكتالوج"
+  },
+  "hero": {
+    "preHeadline": "معتمد وفق ISO 9001:2015",
+    "headline": "مواد تشحيم صناعية. جاهزة للتصدير. نخدم 40+ دولة.",
+    "subheadline": "زيوت المحرك والزيوت المعدنية ومواد التشحيم الصناعية للقطاعات الصناعية والسيارات والطاقة حول العالم. طلبات بالجملة من 1000 لتر. وثائق التصدير مشمولة.",
+    "primaryCta": "طلب عرض سعر بالجملة",
+    "secondaryCta": "تصفح كتالوج المنتجات",
+    "trustBadge1": "معتمد ISO",
+    "trustBadge2": "+40 دولة",
+    "trustBadge3": "رد خلال 24 ساعة"
+  },
+  "footer": {
+    "tagline": "مواد تشحيم متميزة للصناعة. شريك تصدير موثوق للموزعين في جميع أنحاء العالم.",
+    "products": "المنتجات",
+    "company": "الشركة",
+    "contact": "تواصل معنا",
+    "aboutUs": "عن الشركة",
+    "certifications": "الشهادات",
+    "exportRegions": "مناطق التصدير",
+    "blog": "المدونة والرؤى",
+    "privacyPolicy": "سياسة الخصوصية",
+    "terms": "شروط الاستخدام",
+    "allRightsReserved": "جميع الحقوق محفوظة."
+  },
+  "pd": {
+    "mobil": {
+      "almo-oil-525": {
+        "name": "Mobil Almo Oil 525",
+        "type": "زيت المعدات الهوائية",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Almo Oil 525 هو زيت المعدات الهوائية عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri",
+          "Etkili kimyasal kararlılık",
+          "Valf çalışmasını iyileştirir",
+          "İstenilen emülsiyon özellikleri",
+          "Yüksek viskozite indeksi",
+          "Mükemmel yük taşıma kapasitesi ve aşınmaya karşı koruma"
+        ]
+      },
+      "velocite-oil-no-4": {
+        "name": "Mobil Velocite Oil No 4",
+        "type": "زيت المغزل",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Velocite Oil No 4 هو زيت المغزل عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Yüksek oksidasyon direnci",
+          "Yağ ömrünü uzatır",
+          "Ekipman ömrünü uzatır",
+          "Etkili sudan ayrılma",
+          "Emülsiyon oluşumunu engeller",
+          "Nemi kritik yağlama alanlarından uzak tutar"
+        ]
+      },
+      "velocite-oil-no-10": {
+        "name": "Mobil Velocite Oil No 10",
+        "type": "زيت المغزل",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Velocite Oil No 10 هو زيت المغزل عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Yüksek oksidasyon direnci",
+          "Yağ ömrünü uzatır",
+          "Ekipman ömrünü uzatır",
+          "Etkili sudan ayrılma",
+          "Emülsiyon oluşumunu engeller",
+          "Nemi kritik yağlama alanlarından uzak tutar"
+        ]
+      },
+      "almo-oil-527": {
+        "name": "Mobil Almo Oil 527",
+        "type": "زيت المعدات الهوائية",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Almo Oil 527 هو زيت المعدات الهوائية عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri",
+          "Etkili kimyasal kararlılık",
+          "Valf çalışmasını iyileştirir",
+          "İstenilen emülsiyon özellikleri",
+          "Yüksek viskozite indeksi",
+          "Mükemmel yük taşıma kapasitesi ve aşınmaya karşı koruma"
+        ]
+      },
+      "met-763": {
+        "name": "Mobil Met 763",
+        "type": "سائل تشغيل المعادن",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Met 763 هو سائل تشغيل المعادن عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Mükemmel parça işleme performansı",
+          "Mükemmel yağlama özelliği",
+          "Çok amaçlı kullanım",
+          "Açık renkli ve saydam görünüm",
+          "Yağ sisini önleyen formülasyon",
+          "Çalışma yeri güvenliğini artırır"
+        ]
+      },
+      "met-766": {
+        "name": "Mobil Met 766",
+        "type": "سائل تشغيل المعادن",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Met 766 هو سائل تشغيل المعادن عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Mükemmel parça işleme performansı",
+          "Mükemmel yağlama özelliği",
+          "Çok amaçlı kullanım",
+          "Açık renkli ve saydam görünüm",
+          "Yağ sisini önleyen formülasyon",
+          "Çalışma yeri güvenliğini artırır"
+        ]
+      },
+      "met-424": {
+        "name": "Mobil Met 424",
+        "type": "سائل تشغيل المعادن",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Met 424 هو سائل تشغيل المعادن عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Mükemmel talaşlı imalat kapasitesi",
+          "Çok çeşitli malzeme ve operasyon ile uygunluk",
+          "Kızak ve tezgah fikstürleri üzerinde leke oluşturmaz",
+          "Açık renkli, saydam",
+          "Yağ sisi azdır",
+          "Daha güvenli ve konforlu bir çalışma ortamı sağlar"
+        ]
+      },
+      "dte-27": {
+        "name": "Mobil DTE 27",
+        "type": "زيت نظام الدورة",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil DTE 27 هو زيت نظام الدورة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "dte-24": {
+        "name": "Mobil DTE 24",
+        "type": "زيت نظام الدورة",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil DTE 24 هو زيت نظام الدورة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "dte-10-excel-32": {
+        "name": "Mobil DTE 10 Excel 32",
+        "type": "زيت هيدروليكي عالي الأداء",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil DTE 10 Excel 32 هو زيت هيدروليكي عالي الأداء عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "كفاءة هيدروليكية ممتازة",
+          "أداء تنظيف ومنع الترسبات المتميز",
+          "عمر افتراضي طويل للمانع وصيانة أقل",
+          "حماية مضادة للتآكل للمضخات والمكونات",
+          "خصائص ممتازة لتحرير الهواء",
+          "توافق مع المعادن المتعددة"
+        ]
+      },
+      "dte-26": {
+        "name": "Mobil DTE 26",
+        "type": "زيت نظام الدورة",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil DTE 26 هو زيت نظام الدورة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "dte-25": {
+        "name": "Mobil DTE 25",
+        "type": "زيت نظام الدورة",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil DTE 25 هو زيت نظام الدورة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "dte-10-excel-100": {
+        "name": "Mobil DTE 10 Excel 100",
+        "type": "زيت هيدروليكي عالي الأداء",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil DTE 10 Excel 100 هو زيت هيدروليكي عالي الأداء عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "كفاءة هيدروليكية ممتازة",
+          "أداء تنظيف ومنع الترسبات المتميز",
+          "عمر افتراضي طويل للمانع وصيانة أقل",
+          "حماية مضادة للتآكل للمضخات والمكونات",
+          "خصائص ممتازة لتحرير الهواء",
+          "توافق مع المعادن المتعددة"
+        ]
+      },
+      "dte-10-excel-46": {
+        "name": "Mobil DTE 10 Excel 46",
+        "type": "زيت هيدروليكي عالي الأداء",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil DTE 10 Excel 46 هو زيت هيدروليكي عالي الأداء عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "كفاءة هيدروليكية ممتازة",
+          "أداء تنظيف ومنع الترسبات المتميز",
+          "عمر افتراضي طويل للمانع وصيانة أقل",
+          "حماية مضادة للتآكل للمضخات والمكونات",
+          "خصائص ممتازة لتحرير الهواء",
+          "توافق مع المعادن المتعددة"
+        ]
+      },
+      "dte-10-excel-68": {
+        "name": "Mobil DTE 10 Excel 68",
+        "type": "زيت هيدروليكي عالي الأداء",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil DTE 10 Excel 68 هو زيت هيدروليكي عالي الأداء عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "كفاءة هيدروليكية ممتازة",
+          "أداء تنظيف ومنع الترسبات المتميز",
+          "عمر افتراضي طويل للمانع وصيانة أقل",
+          "حماية مضادة للتآكل للمضخات والمكونات",
+          "خصائص ممتازة لتحرير الهواء",
+          "توافق مع المعادن المتعددة"
+        ]
+      },
+      "vactra-oil-no-1": {
+        "name": "Mobil Vactra Oil No 1",
+        "type": "زيت مزلقة ومسارات الآلات",
+        "category": "زيوت مزلقة",
+        "description": "Mobil Vactra Oil No 1 هو زيت مزلقة ومسارات الآلات عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Kontrollü Sürtünme Özellikleri",
+          "Çoklu Malzeme Becerileri",
+          "Su ve su bazlı soğutucu sıvısından kolay ayrışabilme",
+          "Yapışkanlık",
+          "Uzun Vadeli Pas ve Korozyona karşı Koruma",
+          "Uygulamalar"
+        ]
+      },
+      "vactra-oil-no-4": {
+        "name": "Mobil Vactra Oil No 4",
+        "type": "زيت مزلقة ومسارات الآلات",
+        "category": "زيوت مزلقة",
+        "description": "Mobil Vactra Oil No 4 هو زيت مزلقة ومسارات الآلات عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Kontrollü Sürtünme Özellikleri",
+          "Çoklu Malzeme Becerileri",
+          "Su ve su bazlı soğutucu sıvısından kolay ayrışabilme",
+          "Yapışkanlık",
+          "Uzun Vadeli Pas ve Korozyona karşı Koruma",
+          "Uygulamalar"
+        ]
+      },
+      "vactra-oil-no-2": {
+        "name": "Mobil Vactra Oil No 2",
+        "type": "زيت مزلقة ومسارات الآلات",
+        "category": "زيوت مزلقة",
+        "description": "Mobil Vactra Oil No 2 هو زيت مزلقة ومسارات الآلات عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Kontrollü Sürtünme Özellikleri",
+          "Çoklu Malzeme Becerileri",
+          "Su ve su bazlı soğutucu sıvısından kolay ayrışabilme",
+          "Yapışkanlık",
+          "Uzun Vadeli Pas ve Korozyona karşı Koruma",
+          "Uygulamalar"
+        ]
+      },
+      "therm-605": {
+        "name": "Mobil Therm 605",
+        "type": "زيت المعالجة الحرارية",
+        "category": "Isı Transfer Yağları",
+        "description": "Mobil Therm 605 هو زيت المعالجة الحرارية عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "bir etkendir.",
+          "Mobiltherm 600, aşağıdaki faydaları sağlar."
+        ]
+      },
+      "jet-oil-2": {
+        "name": "Mobil Jet Oil 2",
+        "type": "زيت توربين الطيران",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil Jet Oil 2 هو زيت توربين الطيران عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri",
+          "Avantajları ve Potansiyel Yararları",
+          "Tutar motor verimliliğini ve motor ömrünü uzatır",
+          "Azaltır, motor bakım",
+          "Kimyasal olarak stabil azaltır buharlaşma kayıpları ve yağ tüketimini azaltır",
+          "Uygulamalar"
+        ]
+      },
+      "dte-oil-heavy-medium": {
+        "name": "Mobil DTE Oil Heavy Medium",
+        "type": "زيت ضاغط معدني",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE Oil Heavy Medium هو زيت ضاغط معدني عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Beklenmeyen duruşları azaltır ve bakım maliyetlerini düşürür",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Aşınmaya karşı üstün koruma",
+          "Pas ve korozyona karşı uzun vadeli koruma"
+        ]
+      },
+      "dte-oil-heavy": {
+        "name": "Mobil DTE Oil Heavy",
+        "type": "زيت ضاغط معدني",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE Oil Heavy هو زيت ضاغط معدني عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Beklenmeyen duruşları azaltır ve bakım maliyetlerini düşürür",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Aşınmaya karşı üstün koruma",
+          "Pas ve korozyona karşı uzun vadeli koruma"
+        ]
+      },
+      "dte-oil-light": {
+        "name": "Mobil DTE Oil Light",
+        "type": "زيت ضاغط معدني",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE Oil Light هو زيت ضاغط معدني عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Beklenmeyen duruşları azaltır ve bakım maliyetlerini düşürür",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Aşınmaya karşı üstün koruma",
+          "Pas ve korozyona karşı uzun vadeli koruma"
+        ]
+      },
+      "rarus-424": {
+        "name": "Mobil Rarus 424",
+        "type": "زيت ضاغط",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Rarus 424 هو زيت ضاغط عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": []
+      },
+      "gargoyle-arctic-300": {
+        "name": "Mobil Gargoyle Arctic 300",
+        "type": "زيت ضاغط التبريد",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Gargoyle Arctic 300 هو زيت ضاغط التبريد عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri Üstünlükleri ve Sağlayacağı Faydalar",
+          "Düşük wax içeriği",
+          "İyi kimyasal kararlılık",
+          "Çok amaçlı yağlar"
+        ]
+      },
+      "gargoyle-arctic-shc-226e": {
+        "name": "Mobil Gargoyle Arctic SHC 226E",
+        "type": "زيت ضاغط التبريد",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Gargoyle Arctic SHC 226E هو زيت ضاغط التبريد عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "az sayıda periyodik bakım sağlar",
+          "Mükemmel ısıl/oksidasyon ve kimyasal kararlılık",
+          "Düşük buharlaşma Viskozite artışını engeller, yağ tüketimini azaltır",
+          "Yüksek Viskozite indeksi ve wax içermeyen bileşim",
+          "Düşük çekme gerilim katsayısı"
+        ]
+      },
+      "eal-arctic-68": {
+        "name": "Mobil EAL Arctic 68",
+        "type": "زيت تبريد صديق للبيئة",
+        "category": "زيوت الضاغط",
+        "description": "Mobil EAL Arctic 68 هو زيت تبريد صديق للبيئة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "eal-arctic-32": {
+        "name": "Mobil EAL Arctic 32",
+        "type": "زيت تبريد صديق للبيئة",
+        "category": "زيوت الضاغط",
+        "description": "Mobil EAL Arctic 32 هو زيت تبريد صديق للبيئة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "rarus-427": {
+        "name": "Mobil Rarus 427",
+        "type": "زيت ضاغط",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Rarus 427 هو زيت ضاغط عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşur",
+          "Daha yüksek kompresör performansı sağlar",
+          "عمر افتراضي ممتد للزيت",
+          "Filtre ömrünü artırır",
+          "Yüksek yük-taşıma kapasitesi"
+        ]
+      },
+      "rarus-425": {
+        "name": "Mobil Rarus 425",
+        "type": "زيت ضاغط",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Rarus 425 هو زيت ضاغط عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşur",
+          "Daha yüksek kompresör performansı sağlar",
+          "عمر افتراضي ممتد للزيت",
+          "Filtre ömrünü artırır",
+          "Yüksek yük-taşıma kapasitesi"
+        ]
+      },
+      "rarus-shc-1026": {
+        "name": "Mobil Rarus SHC 1026",
+        "type": "زيت ضاغط",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Rarus SHC 1026 هو زيت ضاغط عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Geniş çalışma sıcaklığı aralığı",
+          "Güvenlik artışı",
+          "عمر خدمة ممتد",
+          "Kok tortularını azaltır",
+          "Yağ ömrünü uzatır",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "rarus-shc-1025": {
+        "name": "Mobil Rarus SHC 1025",
+        "type": "زيت ضاغط",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Rarus SHC 1025 هو زيت ضاغط عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Geniş çalışma sıcaklığı aralığı",
+          "Güvenlik artışı",
+          "عمر خدمة ممتد",
+          "Kok tortularını azaltır",
+          "Yağ ömrünü uzatır",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "eal-arctic-46": {
+        "name": "Mobil EAL Arctic 46",
+        "type": "زيت تبريد صديق للبيئة",
+        "category": "زيوت الضاغط",
+        "description": "Mobil EAL Arctic 46 هو زيت تبريد صديق للبيئة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "socony-oven-conveyer-lubricant": {
+        "name": "Mobil Socony Oven Conveyer Lubricant",
+        "type": "مشحم ناقل الأفران",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Socony Oven Conveyer Lubricant هو مشحم ناقل الأفران عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikler",
+          "Avantajları ve Potansiyel Yararları",
+          "Grafit, katı filmin çok iyi yağlama özellikleri",
+          "Zincir bağlantıları ve iğnelerden iyi penetrasyon",
+          "Yapışmasına neden olabilir mevduat olmaması",
+          "Uygulamalar"
+        ]
+      },
+      "vacuoline-546": {
+        "name": "Mobil Vacuoline 546",
+        "type": "زيت نظام الدورة",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Vacuoline 546 هو زيت نظام الدورة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "vacuoline-537": {
+        "name": "Mobil Vacuoline 537",
+        "type": "زيت نظام الدورة",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Vacuoline 537 هو زيت نظام الدورة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "vacuoline-533": {
+        "name": "Mobil Vacuoline 533",
+        "type": "زيت نظام الدورة",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Vacuoline 533 هو زيت نظام الدورة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "vacuoline-528": {
+        "name": "Mobil Vacuoline 528",
+        "type": "زيت نظام الدورة",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Vacuoline 528 هو زيت نظام الدورة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "vacuoline-525": {
+        "name": "Mobil Vacuoline 525",
+        "type": "زيت نظام الدورة",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Vacuoline 525 هو زيت نظام الدورة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "velocite-oil-no-6": {
+        "name": "Mobil Velocite Oil No 6",
+        "type": "زيت المغزل",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Velocite Oil No 6 هو زيت المغزل عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Yüksek oksidasyon direnci",
+          "Yağ ömrünü uzatır",
+          "Ekipman ömrünü uzatır",
+          "Etkili sudan ayrılma",
+          "Emülsiyon oluşumunu engeller",
+          "Nemi kritik yağlama alanlarından uzak tutar"
+        ]
+      },
+      "velocite-oil-no-3": {
+        "name": "Mobil Velocite Oil No 3",
+        "type": "زيت المغزل",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Velocite Oil No 3 هو زيت المغزل عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Yüksek oksidasyon direnci",
+          "Yağ ömrünü uzatır",
+          "Ekipman ömrünü uzatır",
+          "Etkili sudan ayrılma",
+          "Emülsiyon oluşumunu engeller",
+          "Nemi kritik yağlama alanlarından uzak tutar"
+        ]
+      },
+      "met-762": {
+        "name": "Mobil Met 762",
+        "type": "سائل تشغيل المعادن",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Met 762 هو سائل تشغيل المعادن عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Mükemmel parça işleme performansı",
+          "Mükemmel yağlama özelliği",
+          "Çok amaçlı kullanım",
+          "Açık renkli ve saydam görünüm",
+          "Yağ sisini önleyen formülasyon",
+          "Çalışma yeri güvenliğini artırır"
+        ]
+      },
+      "arma-798": {
+        "name": "Mobil Arma 798",
+        "type": "مشحم تروس ثقيلة وحبال معدنية",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Arma 798 هو مشحم تروس ثقيلة وحبال معدنية عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikler",
+          "Üstün yapıştırıcı özellikleri",
+          "Dayanıklıdır atmak-off",
+          "حماية من التآكل",
+          ", hafif asitlere karşı saldırı halatı korur",
+          "Aşınma azaltır"
+        ]
+      },
+      "nuto-h-46": {
+        "name": "Mobil Nuto H 46",
+        "type": "زيت هيدروليكي",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil Nuto H 46 هو زيت هيدروليكي عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": []
+      },
+      "dte-22": {
+        "name": "Mobil DTE 22",
+        "type": "زيت نظام الدورة",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil DTE 22 هو زيت نظام الدورة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "delvac-hydraulic-10w": {
+        "name": "Mobil Delvac Hydraulic 10W",
+        "type": "زيت هيدروليكي",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil Delvac Hydraulic 10W هو زيت هيدروليكي عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikle pompa kanatları ve kontrol valflerinde daha az aşınma",
+          "Pompa kanadı yapışmasına karşı korur",
+          "Yağ analizleri ile yağ değişim aralıklarını uzatır",
+          "İyi aşınma önleme özelliği     Erken aşınmayı azaltır ve ekipman ömrünü uzatır",
+          "Yüksek sıcaklıklarda etkili yağ filmi mukavemeti sağlar"
+        ]
+      },
+      "dte-oil-medium": {
+        "name": "Mobil DTE Oil Medium",
+        "type": "زيت ضاغط معدني",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE Oil Medium هو زيت ضاغط معدني عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Beklenmeyen duruşları azaltır ve bakım maliyetlerini düşürür",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Aşınmaya karşı üstün koruma",
+          "Pas ve korozyona karşı uzun vadeli koruma"
+        ]
+      },
+      "dte-797": {
+        "name": "Mobil DTE 797",
+        "type": "زيت دورة للأعمال الشاقة",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 797 هو زيت دورة للأعمال الشاقة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Üstün oksidasyon, kimyasal ve renk kararlılığı",
+          "Üstün türbin sistemi güvenilirlik seviyesi ve azaltılmış arıza duruş süreleri",
+          "Mükemmel sudan ayrılabilirlik",
+          "حماية من التآكل",
+          "Hızlı hava bırakma ve köpük oluşumunu engelleme",
+          "Çinkosuz (Zinc Free)"
+        ]
+      },
+      "dte-846": {
+        "name": "Mobil DTE 846",
+        "type": "زيت دورة للأعمال الشاقة",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 846 هو زيت دورة للأعمال الشاقة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Yanlış yağ uygulama olasılığını önler, masraflı yağ değişimlerini azaltır",
+          "Stok maliyetlerini azaltır",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Yağ değişme aralığını artırır, üretim maliyetlerini düşürür",
+          "Aşınmaya karşı mükemmel koruma",
+          "Ekipman ömrünü uzatır, parça değişim maliyetini düşürür"
+        ]
+      },
+      "dte-832": {
+        "name": "Mobil DTE 832",
+        "type": "زيت دورة للأعمال الشاقة",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 832 هو زيت دورة للأعمال الشاقة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Yanlış yağ uygulama olasılığını önler, masraflı yağ değişimlerini azaltır",
+          "Stok maliyetlerini azaltır",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Yağ değişme aralığını artırır, üretim maliyetlerini düşürür",
+          "Aşınmaya karşı mükemmel koruma",
+          "Ekipman ömrünü uzatır, parça değişim maliyetini düşürür"
+        ]
+      },
+      "shc-rarus-68": {
+        "name": "Mobil SHC Rarus 68",
+        "type": "زيت ضاغط",
+        "category": "زيوت الضاغط",
+        "description": "Mobil SHC Rarus 68 هو زيت ضاغط عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Tipik Özellikler"
+        ]
+      },
+      "shc-rarus-46": {
+        "name": "Mobil SHC Rarus 46",
+        "type": "زيت ضاغط",
+        "category": "زيوت الضاغط",
+        "description": "Mobil SHC Rarus 46 هو زيت ضاغط عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Tipik Özellikler"
+        ]
+      },
+      "shc-rarus-32": {
+        "name": "Mobil SHC Rarus 32",
+        "type": "زيت ضاغط",
+        "category": "زيوت الضاغط",
+        "description": "Mobil SHC Rarus 32 هو زيت ضاغط عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Tipik Özellikler"
+        ]
+      },
+      "gargoyle-arctic-155": {
+        "name": "Mobil Gargoyle Arctic 155",
+        "type": "زيت ضاغط التبريد",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Gargoyle Arctic 155 هو زيت ضاغط التبريد عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri Üstünlükleri ve Sağlayacağı Faydalar",
+          "Düşük wax içeriği",
+          "İyi kimyasal kararlılık",
+          "Çok amaçlı yağlar"
+        ]
+      },
+      "gargoyle-arctic-shc-230": {
+        "name": "Mobil Gargoyle Arctics SHC 230",
+        "type": "زيت ضاغط التبريد",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Gargoyle Arctics SHC 230 هو زيت ضاغط التبريد عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "az sayıda periyodik bakım sağlar",
+          "Mükemmel ısıl/oksidasyon ve kimyasal kararlılık",
+          "Düşük buharlaşma Viskozite artışını engeller, yağ tüketimini azaltır",
+          "Yüksek Viskozite indeksi ve wax içermeyen bileşim",
+          "Düşük çekme gerilim katsayısı"
+        ]
+      },
+      "eal-arctic-100": {
+        "name": "Mobil EAL Arctic 100",
+        "type": "زيت تبريد صديق للبيئة",
+        "category": "زيوت الضاغط",
+        "description": "Mobil EAL Arctic 100 هو زيت تبريد صديق للبيئة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "rarus-429": {
+        "name": "Mobil Rarus 429",
+        "type": "زيت ضاغط",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Rarus 429 هو زيت ضاغط عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşur",
+          "Daha yüksek kompresör performansı sağlar",
+          "عمر افتراضي ممتد للزيت",
+          "Filtre ömrünü artırır",
+          "Yüksek yük-taşıma kapasitesi"
+        ]
+      },
+      "rarus-426": {
+        "name": "Mobil Rarus 426",
+        "type": "زيت ضاغط",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Rarus 426 هو زيت ضاغط عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşur",
+          "Daha yüksek kompresör performansı sağlar",
+          "عمر افتراضي ممتد للزيت",
+          "Filtre ömrünü artırır",
+          "Yüksek yük-taşıma kapasitesi"
+        ]
+      },
+      "rarus-shc-1024": {
+        "name": "Mobil Rarus SHC 1024",
+        "type": "زيت ضاغط",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Rarus SHC 1024 هو زيت ضاغط عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Geniş çalışma sıcaklığı aralığı",
+          "Güvenlik artışı",
+          "عمر خدمة ممتد",
+          "Kok tortularını azaltır",
+          "Yağ ömrünü uzatır",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "nuto-h-68": {
+        "name": "Mobil Nuto H 68",
+        "type": "زيت هيدروليكي",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil Nuto H 68 هو زيت هيدروليكي عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": []
+      },
+      "dte-21": {
+        "name": "Mobil DTE 21",
+        "type": "زيت نظام الدورة",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil DTE 21 هو زيت نظام الدورة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "eal-arctic-22": {
+        "name": "Mobil EAL Arctic 22",
+        "type": "زيت تبريد صديق للبيئة",
+        "category": "زيوت الضاغط",
+        "description": "Mobil EAL Arctic 22 هو زيت تبريد صديق للبيئة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "somentor-ah-70": {
+        "name": "Mobil Somentor AH 70",
+        "type": "زيت غرفة الآلات",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Somentor AH 70 هو زيت غرفة الآلات عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Haddelenmiş metal parlak bir yüzey teslim",
+          "Yağın ömrünü uzatmak için kolay filtrasyon",
+          "Metallerin geniş bir aralığı için uygun",
+          "Uygulamalar"
+        ]
+      },
+      "aero-hf": {
+        "name": "Mobil Aero HF",
+        "type": "سائل هيدروليكي للطيران",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Aero HF هو سائل هيدروليكي للطيران عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Mobil Aero HF"
+        ]
+      },
+      "aero-hfa": {
+        "name": "Mobil Aero HFA",
+        "type": "سائل هيدروليكي للطيران",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Aero HFA هو سائل هيدروليكي للطيران عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Mobil Aero HFA"
+        ]
+      },
+      "met-427": {
+        "name": "Mobil Met 427",
+        "type": "سائل تشغيل المعادن",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Met 427 هو سائل تشغيل المعادن عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Mükemmel talaşlı imalat kapasitesi",
+          "Çok çeşitli malzeme ve operasyon ile uygunluk",
+          "Kızak ve tezgah fikstürleri üzerinde leke oluşturmaz",
+          "Açık renkli, saydam",
+          "Yağ sisi azdır",
+          "Daha güvenli ve konforlu bir çalışma ortamı sağlar"
+        ]
+      },
+      "dte-10-excel-15": {
+        "name": "Mobil DTE 10 Excel 15",
+        "type": "زيت هيدروليكي عالي الأداء",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil DTE 10 Excel 15 هو زيت هيدروليكي عالي الأداء عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "كفاءة هيدروليكية ممتازة",
+          "أداء تنظيف ومنع الترسبات المتميز",
+          "عمر افتراضي طويل للمانع وصيانة أقل",
+          "حماية مضادة للتآكل للمضخات والمكونات",
+          "ve kavitasyon hasarını önlemeye yardım eder.",
+          "خصائص ممتازة لتحرير الهواء"
+        ]
+      },
+      "pyrotec-hfc-46": {
+        "name": "Mobil Pyrotec HFC 46",
+        "type": "سائل هيدروليكي مقاوم للحريق",
+        "category": "زيوت النظام الهيدروليكي",
+        "description": "Mobil Pyrotec HFC 46 هو سائل هيدروليكي مقاوم للحريق عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Mobil Pyrotec Hfc 46"
+        ]
+      },
+      "ect-44": {
+        "name": "Mobil ECT 44",
+        "type": "زيت محول كهربائي",
+        "category": "Trafo Yağları",
+        "description": "Mobil ECT 44 هو زيت محول كهربائي عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Mobilect 44'ün başlıca yararları şunlardır:"
+        ]
+      },
+      "prosol-nt-70": {
+        "name": "Mobil Prosol NT 70",
+        "type": "محلول تنظيف المعادن",
+        "category": "Kesme Yağları",
+        "description": "Mobil Prosol NT 70 هو محلول تنظيف المعادن عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-250": {
+        "name": "Mobil Cut 250",
+        "type": "سائل القطع",
+        "category": "Kesme Yağları",
+        "description": "Mobil Cut 250 هو سائل القطع عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-240": {
+        "name": "Mobil Cut 240",
+        "type": "سائل القطع",
+        "category": "Kesme Yağları",
+        "description": "Mobil Cut 240 هو سائل القطع عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-230": {
+        "name": "Mobil Cut 230",
+        "type": "سائل القطع",
+        "category": "Kesme Yağları",
+        "description": "Mobil Cut 230 هو سائل القطع عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-210": {
+        "name": "Mobil Cut 210",
+        "type": "سائل القطع",
+        "category": "Kesme Yağları",
+        "description": "Mobil Cut 210 هو سائل القطع عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-140": {
+        "name": "Mobil Cut 140",
+        "type": "سائل القطع",
+        "category": "Kesme Yağları",
+        "description": "Mobil Cut 140 هو سائل القطع عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-100": {
+        "name": "Mobil Cut 100",
+        "type": "سائل القطع",
+        "category": "Kesme Yağları",
+        "description": "Mobil Cut 100 هو سائل القطع عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": []
+      },
+      "exxon-hyjet-v": {
+        "name": "Exxon Hyjet V",
+        "type": "سائل هيدروليكي للطيران",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Exxon Hyjet V هو سائل هيدروليكي للطيران عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikler",
+          "Avantajları ve Potansiyel Yararları",
+          "عمر افتراضي ممتد للزيت",
+          "Azaltılmış hidrolik sistem bakım maliyetleri",
+          "En düşük yoğunluk Tip IV sıvı",
+          "İndirimli uçak yakıt tüketimi, düşük işletme maliyetleri"
+        ]
+      },
+      "exxon-hyjet-iv-a-plus": {
+        "name": "Exxon Hyjet IV A Plus",
+        "type": "سائل هيدروليكي للطيران",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Exxon Hyjet IV A Plus هو سائل هيدروليكي للطيران عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikler",
+          "Avantajları ve Potansiyel Yararları",
+          "عمر افتراضي ممتد للزيت",
+          "Azaltılmış hidrolik sistem bakım maliyetleri",
+          "En düşük yoğunluk Tip IV sıvı",
+          "İndirimli uçak yakıt tüketimi, düşük işletme maliyetleri"
+        ]
+      },
+      "jet-oil-254": {
+        "name": "Mobil Jet Oil 254",
+        "type": "زيت توربين الطيران",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil Jet Oil 254 هو زيت توربين الطيران عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri",
+          "Avantajları ve Potansiyel Yararları",
+          "Tutar motor verimliliğini ve motor ömrünü uzatır",
+          "50 º C% 50 oranında artar ve mevduat kontrol azaltır dökme yağ oksidasyonu",
+          "Azaltır, motor bakım",
+          "Uygulamalar"
+        ]
+      },
+      "dte-746": {
+        "name": "Mobil DTE 746",
+        "type": "زيت دورة للأعمال الشاقة",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 746 هو زيت دورة للأعمال الشاقة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Üstün oksidasyon, kimyasal ve renk kararlılığı",
+          "Üstün türbin sistemi güvenilirlik seviyesi ve azaltılmış arıza duruş süreleri",
+          "Mükemmel sudan ayrılabilirlik",
+          "حماية من التآكل",
+          "Hızlı hava bırakma ve köpük oluşumunu engelleme",
+          "Çinkosuz (Zinc Free)"
+        ]
+      },
+      "dte-732": {
+        "name": "Mobil DTE 732",
+        "type": "زيت دورة للأعمال الشاقة",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 732 هو زيت دورة للأعمال الشاقة عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Üstün oksidasyon, kimyasal ve renk kararlılığı",
+          "Üstün türbin sistemi güvenilirlik seviyesi ve azaltılmış arıza duruş süreleri",
+          "Mükemmel sudan ayrılabilirlik",
+          "حماية من التآكل",
+          "Hızlı hava bırakma ve köpük oluşumunu engelleme",
+          "Çinkosuz (Zinc Free)"
+        ]
+      },
+      "gargoyle-arctic-shc-nh-68": {
+        "name": "Mobil Gargoyle Arctic SHC NH 68",
+        "type": "زيت ضاغط التبريد",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Gargoyle Arctic SHC NH 68 هو زيت ضاغط التبريد عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "az sayıda periyodik bakım sağlar",
+          "Mükemmel ısıl/oksidasyon ve kimyasal kararlılık",
+          "Düşük buharlaşma Viskozite artışını engeller, yağ tüketimini azaltır",
+          "Yüksek Viskozite indeksi ve wax içermeyen bileşim",
+          "Düşük çekme gerilim katsayısı"
+        ]
+      },
+      "rarus-829": {
+        "name": "Mobil Rarus 829",
+        "type": "زيت ضاغط",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Rarus 829 هو زيت ضاغط عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Yüksek performanslı sentetik esaslı yağlar",
+          "Güvenli kullanım sağlar",
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşturur",
+          "Daha yüksek kompresör performansı sağlar",
+          "عمر افتراضي ممتد للزيت"
+        ]
+      },
+      "rarus-827": {
+        "name": "Mobil Rarus 827",
+        "type": "زيت ضاغط",
+        "category": "زيوت الضاغط",
+        "description": "Mobil Rarus 827 هو زيت ضاغط عالي الجودة مصمم للتطبيقات الصناعية والتجارية.",
+        "features": [
+          "Yüksek performanslı sentetik esaslı yağlar",
+          "Güvenli kullanım sağlar",
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşturur",
+          "Daha yüksek kompresör performansı sağlar",
+          "عمر افتراضي ممتد للزيت"
+        ]
+      }
+    }
+  }
+}

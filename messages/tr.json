@@ -2423,6 +2423,1064 @@
       "f1": "Gelismis motor temizligi",
       "f2": "Korozyon korumasi",
       "f3": "Mineral ekonomik yag"
+    },
+    "mobil": {
+      "almo-oil-525": {
+        "name": "Mobil Almo Oil 525",
+        "type": "Pnömatik Ekipman Yağı",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Almo 500 Serisi yağlar, galeri içinde ve açık alandaki, madencilik işlemlerinde kayaların pnömatik olarak delinmesinde kullanılan matkapların yağlanması amacına yönelik süper kalite ve üstün performanslı ürünlerdir. Mobil Almo 500 Serisi aşınma ve korozyona karşı yüksek koruyuculuk ve mükemmel kimyasal kararlılık sağlayan yüksek kaliteli baz yağlar ve katıklarla formüle edilmiştir. Bu yağlar optimum yapışkanlık sağlarlarken, aynı zamanda suyun aşınma ve korozyon açısından oluşturduğu olums",
+        "features": [
+          "Özellikleri",
+          "Etkili kimyasal kararlılık",
+          "Valf çalışmasını iyileştirir",
+          "İstenilen emülsiyon özellikleri",
+          "Yüksek viskozite indeksi",
+          "Mükemmel yük taşıma kapasitesi ve aşınmaya karşı koruma"
+        ]
+      },
+      "velocite-oil-no-4": {
+        "name": "Mobil Velocite Oil No 4",
+        "type": "Mil Yağı",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Velocite Oil Serisi özel olarak takım tezgahlarında yüksek devirli millerin yağlanması amacıyla tasarlanmış üstün performanslı yağlardır. Bunlar uygun viskozite sınıfı seçildiğinde aynı zamanda bazı kritik hidrolik, merkezi yağlama sistemleri ve hava hatlarının yağlanması için de kullanılır. Bu yağlar özel olarak seçilmiş yüksek kaliteli, düşük viskoziteli baz yağlar ve oksidasyon, pas ve korozyona karşı iyi direnç sağlayan katıklar ile formüle edilmiştir. Bu yağların köpük oluşumuna karşı",
+        "features": [
+          "Yüksek oksidasyon direnci",
+          "Yağ ömrünü uzatır",
+          "Ekipman ömrünü uzatır",
+          "Etkili sudan ayrılma",
+          "Emülsiyon oluşumunu engeller",
+          "Nemi kritik yağlama alanlarından uzak tutar"
+        ]
+      },
+      "velocite-oil-no-10": {
+        "name": "Mobil Velocite Oil No 10",
+        "type": "Mil Yağı",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Velocite Oil Serisi özel olarak takım tezgahlarında yüksek devirli millerin yağlanması amacıyla tasarlanmış üstün performanslı yağlardır. Bunlar uygun viskozite sınıfı seçildiğinde aynı zamanda bazı kritik hidrolik, merkezi yağlama sistemleri ve hava hatlarının yağlanması için de kullanılır. Bu yağlar özel olarak seçilmiş yüksek kaliteli, düşük viskoziteli baz yağlar ve oksidasyon, pas ve korozyona karşı iyi direnç sağlayan katıklar ile formüle edilmiştir. Bu yağların köpük oluşumuna karşı",
+        "features": [
+          "Yüksek oksidasyon direnci",
+          "Yağ ömrünü uzatır",
+          "Ekipman ömrünü uzatır",
+          "Etkili sudan ayrılma",
+          "Emülsiyon oluşumunu engeller",
+          "Nemi kritik yağlama alanlarından uzak tutar"
+        ]
+      },
+      "almo-oil-527": {
+        "name": "Mobil Almo Oil 527",
+        "type": "Pnömatik Ekipman Yağı",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Almo 500 Serisi yağlar, galeri içinde ve açık alandaki, madencilik işlemlerinde kayaların pnömatik olarak delinmesinde kullanılan matkapların yağlanması amacına yönelik süper kalite ve üstün performanslı ürünlerdir. Mobil Almo 500 Serisi aşınma ve korozyona karşı yüksek koruyuculuk ve mükemmel kimyasal kararlılık sağlayan yüksek kaliteli baz yağlar ve katıklarla formüle edilmiştir. Bu yağlar optimum yapışkanlık sağlarlarken, aynı zamanda suyun aşınma ve korozyon açısından oluşturduğu olums",
+        "features": [
+          "Özellikleri",
+          "Etkili kimyasal kararlılık",
+          "Valf çalışmasını iyileştirir",
+          "İstenilen emülsiyon özellikleri",
+          "Yüksek viskozite indeksi",
+          "Mükemmel yük taşıma kapasitesi ve aşınmaya karşı koruma"
+        ]
+      },
+      "met-763": {
+        "name": "Mobil Met 763",
+        "type": "Metal İşleme Sıvısı",
+        "category": "Genel Makina Yağları",
+        "description": "Mobilmet™ 760 Serisi ekstra yüksek performanslı düz kesme yağlarıdır. Klorin içermezler. İişlenmesi güç takım çelikleri üzerinde yapılacak zor kesme işlemleri için geliştirilmişlerdir. . Mobilmet 760 Serisi yağlar, yumuşak sarı metallere karşı agresif olduğundan bakır ve alaşımları için önerilmez. Önde gelen diğer üstün kalite kesme yağlarına kıyasla Mobilmet 760 Serisi, yüzey kalitesi, takım ömrünü artırma ve uç kaynama kontrolü açısından üstün performans sergilerler. Açık renkleri sayesinde iş",
+        "features": [
+          "Mükemmel parça işleme performansı",
+          "Mükemmel yağlama özelliği",
+          "Çok amaçlı kullanım",
+          "Açık renkli ve saydam görünüm",
+          "Yağ sisini önleyen formülasyon",
+          "Çalışma yeri güvenliğini artırır"
+        ]
+      },
+      "met-766": {
+        "name": "Mobil Met 766",
+        "type": "Metal İşleme Sıvısı",
+        "category": "Genel Makina Yağları",
+        "description": "Mobilmet™ 760 Serisi ekstra yüksek performanslı düz kesme yağlarıdır. Klorin içermezler. İişlenmesi güç takım çelikleri üzerinde yapılacak zor kesme işlemleri için geliştirilmişlerdir. . Mobilmet 760 Serisi yağlar, yumuşak sarı metallere karşı agresif olduğundan bakır ve alaşımları için önerilmez. Önde gelen diğer üstün kalite kesme yağlarına kıyasla Mobilmet 760 Serisi, yüzey kalitesi, takım ömrünü artırma ve uç kaynama kontrolü açısından üstün performans sergilerler. Açık renkleri sayesinde iş",
+        "features": [
+          "Mükemmel parça işleme performansı",
+          "Mükemmel yağlama özelliği",
+          "Çok amaçlı kullanım",
+          "Açık renkli ve saydam görünüm",
+          "Yağ sisini önleyen formülasyon",
+          "Çalışma yeri güvenliğini artırır"
+        ]
+      },
+      "met-424": {
+        "name": "Mobil Met 424",
+        "type": "Metal İşleme Sıvısı",
+        "category": "Genel Makina Yağları",
+        "description": "Mobilmet 400 Serisi yüksek performanslı, çok amaçlı korozif olmayan ve su ile karıştırmadan kullanılan metal işleme yağlarıdır. Bu yağlar, hafif ve orta hizmet talaşlı imalat işlemleri için tasarlanmış olmakla birlikte aynı zamanda kesme yağı ve yağlama yağı arasındaki karşılıklı karışmanın neden olabileceği problemleri önlediğinden takım tezgahları yağları ve hidrolik yağı olarak kullanılabilmektedir. Bu yağlar yüksek kaliteli baz yağlar ve çok geniş bir uygulama alanında etkili bir talaşlı ima",
+        "features": [
+          "Mükemmel talaşlı imalat kapasitesi",
+          "Çok çeşitli malzeme ve operasyon ile uygunluk",
+          "Kızak ve tezgah fikstürleri üzerinde leke oluşturmaz",
+          "Açık renkli, saydam",
+          "Yağ sisi azdır",
+          "Daha güvenli ve konforlu bir çalışma ortamı sağlar"
+        ]
+      },
+      "dte-27": {
+        "name": "Mobil DTE 27",
+        "type": "Dolaşım Sistemi Yağı",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Çok değişik ve çeşitli hidrolik ekipman taleplerini karşılamak için tasarlanmış üstün performanslı aşınma önleyici hidrolik yağlardır. Bu yağlar uzun yağ/filtre ömrü ve optimum ekipman koruması sağlayarak, hem bakım hem de kullanılmış yağ atık maliyetlerini düşürürler.  Dar toleranslara sahip servo-valflar ve yüksek hassasiyetteki sayısal kontrollu (NC) takım tezgahlarındaki gibi diğer hidrolik sistem parçalarının kritik gereksinimlerini karşılamanın yanı sıra, zor koşullar altında yüksek basınç",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "dte-24": {
+        "name": "Mobil DTE 24",
+        "type": "Dolaşım Sistemi Yağı",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Dte 24 çok değişik ve çeşitli hidrolik ekipman taleplerini karşılamak için tasarlanmış üstün performanslı aşınma önleyici hidrolik yağlardır. Bu yağlar uzun yağ/filtre ömrü ve optimum ekipman koruması sağlayarak, hem bakım hem de kullanılmış yağ atık maliyetlerini düşürürler.  Dar toleranslara sahip servo-valflar ve yüksek hassasiyetteki sayısal kontrollu (NC) takım tezgahlarındaki gibi diğer hidrolik sistem parçalarının kritik gereksinimlerini karşılamanın yanı sıra, zor koşullar altında",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "dte-10-excel-32": {
+        "name": "Mobil DTE 10 Excel 32",
+        "type": "Yüksek Performanslı Hidrolik Yağ",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Dte 10 Exel 32, özellikle modern, yüksek basınçlı, endüstriyel ve mobil ekipmanların hidrolik sistemlerin ihtiyaçlarını karşılamak üzere tasarlanmış yüksek performanslı, aşınma önleyici hidrolik yağlardır.",
+        "features": [
+          "Mükemmel Hidrolik Verimlilik",
+          "Çok Üstün Temiz Tutma Performansı",
+          "Elastomer ve contalarla iyi bir uyumluluk Uzun conta ömrü ve daha az bakım",
+          "Aşınma önleyici özellikler",
+          "Mükemmel Hava Ayırma Özellikleri",
+          "Çoklu metal uyumluluğu"
+        ]
+      },
+      "dte-26": {
+        "name": "Mobil DTE 26",
+        "type": "Dolaşım Sistemi Yağı",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Dte 26 çok değişik ve çeşitli hidrolik ekipman taleplerini karşılamak için tasarlanmış üstün performanslı aşınma önleyici hidrolik yağlardır. Bu yağlar uzun yağ/filtre ömrü ve optimum ekipman koruması sağlayarak, hem bakım hem de kullanılmış yağ atık maliyetlerini düşürürler.  Dar toleranslara sahip servo-valflar ve yüksek hassasiyetteki sayısal kontrollu (NC) takım tezgahlarındaki gibi diğer hidrolik sistem parçalarının kritik gereksinimlerini karşılamanın yanı sıra, zor koşullar altında",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "dte-25": {
+        "name": "Mobil DTE 25",
+        "type": "Dolaşım Sistemi Yağı",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Dte 25 çok değişik ve çeşitli hidrolik ekipman taleplerini karşılamak için tasarlanmış üstün performanslı aşınma önleyici hidrolik yağlardır. Bu yağlar uzun yağ/filtre ömrü ve optimum ekipman koruması sağlayarak, hem bakım hem de kullanılmış yağ atık maliyetlerini düşürürler.  Dar toleranslara sahip servo-valflar ve yüksek hassasiyetteki sayısal kontrollu (NC) takım tezgahlarındaki gibi diğer hidrolik sistem parçalarının kritik gereksinimlerini karşılamanın yanı sıra, zor koşullar altında",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "dte-10-excel-100": {
+        "name": "Mobil DTE 10 Excel 100",
+        "type": "Yüksek Performanslı Hidrolik Yağ",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Dte 10 Exel 100, özellikle modern, yüksek basınçlı, endüstriyel ve mobil ekipmanların hidrolik sistemlerin ihtiyaçlarını karşılamak üzere tasarlanmış yüksek performanslı, aşınma önleyici hidrolik yağlardır. Mobil Dte 10 Exel 100, çeşitli uygulamalarda iyi dengelenmiş bir performans sağlamak amacıyla seçilmiş baz yağlar ve katık sistemiyle oluşturulmuştur. Serideki ürünler, yüksek basınç ve yüksek debili pompaların kullanıldığı zorlu çalışma koşullarındaki hidrolik sistemlerde tortuyu en az",
+        "features": [
+          "Mükemmel Hidrolik Verimlilik",
+          "Çok Üstün Temiz Tutma Performansı",
+          "Elastomer ve contalarla iyi bir uyumluluk Uzun conta ömrü ve daha az bakım",
+          "Aşınma önleyici özellikler",
+          "Mükemmel Hava Ayırma Özellikleri",
+          "Çoklu metal uyumluluğu"
+        ]
+      },
+      "dte-10-excel-46": {
+        "name": "Mobil DTE 10 Excel 46",
+        "type": "Yüksek Performanslı Hidrolik Yağ",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Dte 10 Exel 46, özellikle modern, yüksek basınçlı, endüstriyel ve mobil ekipmanların hidrolik sistemlerin ihtiyaçlarını karşılamak üzere tasarlanmış yüksek performanslı, aşınma önleyici hidrolik yağlardır. Mobil Dte 10 Exel 46, çeşitli uygulamalarda iyi dengelenmiş bir performans sağlamak amacıyla seçilmiş baz yağlar ve katık sistemiyle oluşturulmuştur. Serideki ürünler, yüksek basınç ve yüksek debili pompaların kullanıldığı zorlu çalışma koşullarındaki hidrolik sistemlerde tortuyu en aza",
+        "features": [
+          "Mükemmel Hidrolik Verimlilik",
+          "Çok Üstün Temiz Tutma Performansı",
+          "Elastomer ve contalarla iyi bir uyumluluk Uzun conta ömrü ve daha az bakım",
+          "Aşınma önleyici özellikler",
+          "Mükemmel Hava Ayırma Özellikleri",
+          "Çoklu metal uyumluluğu"
+        ]
+      },
+      "dte-10-excel-68": {
+        "name": "Mobil DTE 10 Excel 68",
+        "type": "Yüksek Performanslı Hidrolik Yağ",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Dte 10 Exel 68, özellikle modern, yüksek basınçlı, endüstriyel ve mobil ekipmanların hidrolik sistemlerin ihtiyaçlarını karşılamak üzere tasarlanmış yüksek performanslı, aşınma önleyici hidrolik yağlardır. Mobil Dte 10 Exel 68, çeşitli uygulamalarda iyi dengelenmiş bir performans sağlamak amacıyla seçilmiş baz yağlar ve katık sistemiyle oluşturulmuştur. Serideki ürünler, yüksek basınç ve yüksek debili pompaların kullanıldığı zorlu çalışma koşullarındaki hidrolik sistemlerde tortuyu en aza",
+        "features": [
+          "Mükemmel Hidrolik Verimlilik",
+          "Çok Üstün Temiz Tutma Performansı",
+          "Elastomer ve contalarla iyi bir uyumluluk Uzun conta ömrü ve daha az bakım",
+          "Aşınma önleyici özellikler",
+          "Mükemmel Hava Ayırma Özellikleri",
+          "Çoklu metal uyumluluğu"
+        ]
+      },
+      "vactra-oil-no-1": {
+        "name": "Mobil Vactra Oil No 1",
+        "type": "Kızak ve Yol Kılavuzu Yağı",
+        "category": "Kızak Yağları",
+        "description": "Mobil Vactra ™ Oil Numbered Serisi, hassas tezgahların kesinlik, soğutma sıvısı ayrışabilirliği ve ekipman koruması gereksinimlerini karşılamak için özel olarak tasarlanmış üstün kaliteli kızak yağlarıdır. Mobil Vactra Oil Numbered Serisi, yüksek kaliteli baz yağlardan dikkatlice formüle edilmiştir ve kontrollü sürtünme özellikleri sağlayan, su ile karışan metal işleme sıvılarıyla uyumlu ve parçalarda ve ekipmanda korozyona karşı koruma sağlayan gelişmiş bir katkı sistemi ile performans dengesi",
+        "features": [
+          "Kontrollü Sürtünme Özellikleri",
+          "Çoklu Malzeme Becerileri",
+          "Su ve su bazlı soğutucu sıvısından kolay ayrışabilme",
+          "Yapışkanlık",
+          "Uzun Vadeli Pas ve Korozyona karşı Koruma",
+          "Uygulamalar"
+        ]
+      },
+      "vactra-oil-no-4": {
+        "name": "Mobil Vactra Oil No 4",
+        "type": "Kızak ve Yol Kılavuzu Yağı",
+        "category": "Kızak Yağları",
+        "description": "Mobil Vactra ™ Oil Numbered Serisi, hassas tezgahların kesinlik, soğutma sıvısı ayrışabilirliği ve ekipman koruması gereksinimlerini karşılamak için özel olarak tasarlanmış üstün kaliteli kızak yağlarıdır. Mobil Vactra Oil Numbered Serisi, yüksek kaliteli baz yağlardan dikkatlice formüle edilmiştir ve kontrollü sürtünme özellikleri sağlayan, su ile karışan metal işleme sıvılarıyla uyumlu ve parçalarda ve ekipmanda korozyona karşı koruma sağlayan gelişmiş bir katkı sistemi ile performans dengesi",
+        "features": [
+          "Kontrollü Sürtünme Özellikleri",
+          "Çoklu Malzeme Becerileri",
+          "Su ve su bazlı soğutucu sıvısından kolay ayrışabilme",
+          "Yapışkanlık",
+          "Uzun Vadeli Pas ve Korozyona karşı Koruma",
+          "Uygulamalar"
+        ]
+      },
+      "vactra-oil-no-2": {
+        "name": "Mobil Vactra Oil No 2",
+        "type": "Kızak ve Yol Kılavuzu Yağı",
+        "category": "Kızak Yağları",
+        "description": "Mobil Vactra ™ Oil Numbered Serisi, hassas tezgahların kesinlik, soğutma sıvısı ayrışabilirliği ve ekipman koruması gereksinimlerini karşılamak için özel olarak tasarlanmış üstün kaliteli kızak yağlarıdır. Mobil Vactra Oil Numbered Serisi, yüksek kaliteli baz yağlardan dikkatlice formüle edilmiştir ve kontrollü sürtünme özellikleri sağlayan, su ile karışan metal işleme sıvılarıyla uyumlu ve parçalarda ve ekipmanda korozyona karşı koruma sağlayan gelişmiş bir katkı sistemi ile performans dengesi",
+        "features": [
+          "Kontrollü Sürtünme Özellikleri",
+          "Çoklu Malzeme Becerileri",
+          "Su ve su bazlı soğutucu sıvısından kolay ayrışabilme",
+          "Yapışkanlık",
+          "Uzun Vadeli Pas ve Korozyona karşı Koruma",
+          "Uygulamalar"
+        ]
+      },
+      "therm-605": {
+        "name": "Mobil Therm 605",
+        "type": "Isıl İşlem Yağı",
+        "category": "Isı Transfer Yağları",
+        "description": "Mobiltherm ısı transfer yağları, kapalı dolaylı ısıtma sistemlerinde kullanmak için tasarlanmış yüksek performanslı ürünlerdir. Bu yağlar her tür endüstriyel proseslerdeki soğuk yağ sızdırmazlığı",
+        "features": [
+          "bir etkendir.",
+          "Mobiltherm 600, aşağıdaki faydaları sağlar."
+        ]
+      },
+      "jet-oil-2": {
+        "name": "Mobil Jet Oil 2",
+        "type": "Havacılık Türbin Yağı",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Havacılık Türbin Yağı",
+        "features": [
+          "Özellikleri",
+          "Avantajları ve Potansiyel Yararları",
+          "Tutar motor verimliliğini ve motor ömrünü uzatır",
+          "Azaltır, motor bakım",
+          "Kimyasal olarak stabil azaltır buharlaşma kayıpları ve yağ tüketimini azaltır",
+          "Uygulamalar"
+        ]
+      },
+      "dte-oil-heavy-medium": {
+        "name": "Mobil DTE Oil Heavy Medium",
+        "type": "Mineral Yağlı Kompresör Yağı",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE Oil Serisi, uzun yağ servis ömrünün gerektiği ve aralarında buhar ve su türbin gruplarının yer aldığı uygulamalar için tasarlanmış üstün performanslı sirkülasyon yağlarıdır. Mobil DTE Oil Serisi yağlar olağanüstü kimyasal ve ısıl kararlılık, sudan hızlı ve tam ayrılma, emülsiyon oluşumuna karşı yüksek dayanıklılığı sağlayan üst düzeyde rafine edilmiş baz yağlar ve katık sistemi ile formüle edilmiştir. Bu yağlar, pas ve korozyona karşı mükemmel koruma yanı sıra tuzlu suya karşı direnç v",
+        "features": [
+          "Beklenmeyen duruşları azaltır ve bakım maliyetlerini düşürür",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Aşınmaya karşı üstün koruma",
+          "Pas ve korozyona karşı uzun vadeli koruma"
+        ]
+      },
+      "dte-oil-heavy": {
+        "name": "Mobil DTE Oil Heavy",
+        "type": "Mineral Yağlı Kompresör Yağı",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE Oil Serisi, uzun yağ servis ömrünün gerektiği ve aralarında buhar ve su türbin gruplarının yer aldığı uygulamalar için tasarlanmış üstün performanslı sirkülasyon yağlarıdır. Mobil DTE Oil Serisi yağlar olağanüstü kimyasal ve ısıl kararlılık, sudan hızlı ve tam ayrılma, emülsiyon oluşumuna karşı yüksek dayanıklılığı sağlayan üst düzeyde rafine edilmiş baz yağlar ve katık sistemi ile formüle edilmiştir. Bu yağlar, pas ve korozyona karşı mükemmel koruma yanı sıra tuzlu suya karşı direnç v",
+        "features": [
+          "Beklenmeyen duruşları azaltır ve bakım maliyetlerini düşürür",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Aşınmaya karşı üstün koruma",
+          "Pas ve korozyona karşı uzun vadeli koruma"
+        ]
+      },
+      "dte-oil-light": {
+        "name": "Mobil DTE Oil Light",
+        "type": "Mineral Yağlı Kompresör Yağı",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE Oil Serisi, uzun yağ servis ömrünün gerektiği ve aralarında buhar ve su türbin gruplarının yer aldığı uygulamalar için tasarlanmış üstün performanslı sirkülasyon yağlarıdır. Mobil DTE Oil Serisi yağlar olağanüstü kimyasal ve ısıl kararlılık, sudan hızlı ve tam ayrılma, emülsiyon oluşumuna karşı yüksek dayanıklılığı sağlayan üst düzeyde rafine edilmiş baz yağlar ve katık sistemi ile formüle edilmiştir. Bu yağlar, pas ve korozyona karşı mükemmel koruma yanı sıra tuzlu suya karşı direnç v",
+        "features": [
+          "Beklenmeyen duruşları azaltır ve bakım maliyetlerini düşürür",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Aşınmaya karşı üstün koruma",
+          "Pas ve korozyona karşı uzun vadeli koruma"
+        ]
+      },
+      "rarus-424": {
+        "name": "Mobil Rarus 424",
+        "type": "Kompresör Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Kompresör Yağı",
+        "features": []
+      },
+      "gargoyle-arctic-300": {
+        "name": "Mobil Gargoyle Arctic 300",
+        "type": "Soğutma Kompresörü Yağı",
+        "category": "Kompresör Yağları",
+        "description": "C Heavy ve 300 ürünleri yüksek performanslı, esas olarak soğutma kompresörlerinde kullanılmak amacıyla geliştirilmiş naftenik mineral yağlardır. Wax içermedikleri için çok düşük akma noktasına ve düşük sıcaklıklarda mükemmel akıcılığa sahiptirler. Bunun sonucunda, Gargoyle Arctic yağlarının kullanılması evaporatör borularının temiz kalmasını sağlayarak ısı transferini arttırır ve bakım için duruş sürelerini azaltır. Bu yağların çok iyi kimyasal kararlılığı vardır silindir ve rulman yağlaması içi",
+        "features": [
+          "Özellikleri Üstünlükleri ve Sağlayacağı Faydalar",
+          "Düşük wax içeriği",
+          "İyi kimyasal kararlılık",
+          "Çok amaçlı yağlar"
+        ]
+      },
+      "gargoyle-arctic-shc-226e": {
+        "name": "Mobil Gargoyle Arctic SHC 226E",
+        "type": "Soğutma Kompresörü Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Bu Ürün Bülteninin içerdiği bilgiler geçerliliğini yitirmiştir. Mobil Gargoyle Arctic SHC 200 Serisi tam sentetik, soğutma kompresörleri ve ısı pompalarında kullanılmak üzere özel olarak tasarlanmış üstün performanslı yağlayıcılardır. Yağlayıcılar wax içermeyen, ısıl ve oksidasyon bozunmalarına karşı üstün dirence sahip sentetik hidrokarbon polialfaolefin (PAO) sıvılarından formüle edilmiştir. Doğal olarak sahip oldukları kesme dayanımlı yüksek viskozite indeksi ve düşük sıcaklıklardaki kolay ak",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "az sayıda periyodik bakım sağlar",
+          "Mükemmel ısıl/oksidasyon ve kimyasal kararlılık",
+          "Düşük buharlaşma Viskozite artışını engeller, yağ tüketimini azaltır",
+          "Yüksek Viskozite indeksi ve wax içermeyen bileşim",
+          "Düşük çekme gerilim katsayısı"
+        ]
+      },
+      "eal-arctic-68": {
+        "name": "Mobil EAL Arctic 68",
+        "type": "Çevreci Soğutma Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil EAL Arctic Serisi yüksek performanslı Çevreye Duyarlı Yağlar (EAL), özellikle ozon dostu HFC soğutucu  kullanan soğutma kompresörleri ve sistemlerinin yağlanması için özel olarak tasarlanmış tam sentetik ürünlerdir (HFC'ler klorin içermeyen ve dünya pazarlarında klorin içeren soğutucuların yerine kullanılan ürünlerdir). Mobil EAL Arctic Serisi yağlar benzersiz yağlama, aşınmaya karşı koruma, kimyasal, ısıl ve hidrolik kararlılık sağlaması amacıyla özel sentetik poliol esterleri (POE'ler) v",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "eal-arctic-32": {
+        "name": "Mobil EAL Arctic 32",
+        "type": "Çevreci Soğutma Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil EAL Arctic Serisi yüksek performanslı Çevreye Duyarlı Yağlar (EAL), özellikle ozon dostu HFC soğutucu  kullanan soğutma kompresörleri ve sistemlerinin yağlanması için özel olarak tasarlanmış tam sentetik ürünlerdir (HFC'ler klorin içermeyen ve dünya pazarlarında klorin içeren soğutucuların yerine kullanılan ürünlerdir). Mobil EAL Arctic Serisi yağlar benzersiz yağlama, aşınmaya karşı koruma, kimyasal, ısıl ve hidrolik kararlılık sağlaması amacıyla özel sentetik poliol esterleri (POE'ler) v",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "rarus-427": {
+        "name": "Mobil Rarus 427",
+        "type": "Kompresör Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Vakum pompası yağı Mobil Rarus 400 Serisi önde gelen kompresör imalatçılarının talep ettiği zorlu gereksinimleri karşılamak üzere tasarlanmış üstün performanslı külsüz hava kompresörü yağlarıdır. Yüksek kaliteli mineral baz yağlar ile orta ve ağır koşullar altında çalışan kompresörler için benzersiz ekipman koruması ve güvenirliği sağlamak üzere tasarlanmış yüksek performanslı katık sistemi ile formüle edilmişlerdir. Bu yağlar ekipman sorunlarını ve tortu oluşumunu ve taşınmasını en aza indirere",
+        "features": [
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşur",
+          "Daha yüksek kompresör performansı sağlar",
+          "Daha uzun yağ ömrü sağlar",
+          "Filtre ömrünü artırır",
+          "Yüksek yük-taşıma kapasitesi"
+        ]
+      },
+      "rarus-425": {
+        "name": "Mobil Rarus 425",
+        "type": "Kompresör Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus 400 Serisi önde gelen kompresör imalatçılarının talep ettiği zorlu gereksinimleri karşılamak üzere tasarlanmış üstün performanslı külsüz hava kompresörü yağlarıdır. Yüksek kaliteli mineral baz yağlar ile orta ve ağır koşullar altında çalışan kompresörler için benzersiz ekipman koruması ve güvenirliği sağlamak üzere tasarlanmış yüksek performanslı katık sistemi ile formüle edilmişlerdir. Bu yağlar ekipman sorunlarını ve tortu oluşumunu ve taşınmasını en aza indirerek aşınmaya karşı mü",
+        "features": [
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşur",
+          "Daha yüksek kompresör performansı sağlar",
+          "Daha uzun yağ ömrü sağlar",
+          "Filtre ömrünü artırır",
+          "Yüksek yük-taşıma kapasitesi"
+        ]
+      },
+      "rarus-shc-1026": {
+        "name": "Mobil Rarus SHC 1026",
+        "type": "Kompresör Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus SHC 1000 Serisi üstün performanslı yağlar esas olarak ağır hizmet rotari vidalı ve kanatlı hava kompresörlerini yağlama amacıyla geliştirilmiş bir seridir. Bu yağlar, özellikle mineral bazlı ürünlerin yüksek son kompresyon sıcaklıkları altındaki güç çalışma uygulamaları veya yağ değiştirme aralıklarının uzatılması taleplerini karşılayamadığı durumlar için uygundur. Bunlar özel olarak tasarlanmış wax içermeyen sentetik hidrokarbon sıvıları ve mineral bazlı hava kompresörleri yağlarını",
+        "features": [
+          "Geniş çalışma sıcaklığı aralığı",
+          "Güvenlik artışı",
+          "Uzun servis ömrü",
+          "Kok tortularını azaltır",
+          "Yağ ömrünü uzatır",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "rarus-shc-1025": {
+        "name": "Mobil Rarus SHC 1025",
+        "type": "Kompresör Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus SHC 1000 Serisi üstün performanslı yağlar esas olarak ağır hizmet rotari vidalı ve kanatlı hava kompresörlerini yağlama amacıyla geliştirilmiş bir seridir. Bu yağlar, özellikle mineral bazlı ürünlerin yüksek son kompresyon sıcaklıkları altındaki güç çalışma uygulamaları veya yağ değiştirme aralıklarının uzatılması taleplerini karşılayamadığı durumlar için uygundur. Bunlar özel olarak tasarlanmış wax içermeyen sentetik hidrokarbon sıvıları ve mineral bazlı hava kompresörleri yağlarını",
+        "features": [
+          "Geniş çalışma sıcaklığı aralığı",
+          "Güvenlik artışı",
+          "Uzun servis ömrü",
+          "Kok tortularını azaltır",
+          "Yağ ömrünü uzatır",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "eal-arctic-46": {
+        "name": "Mobil EAL Arctic 46",
+        "type": "Çevreci Soğutma Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil EAL Arctic Serisi yüksek performanslı Çevreye Duyarlı Yağlar (EAL), özellikle ozon dostu HFC soğutucu  kullanan soğutma kompresörleri ve sistemlerinin yağlanması için özel olarak tasarlanmış tam sentetik ürünlerdir (HFC'ler klorin içermeyen ve dünya pazarlarında klorin içeren soğutucuların yerine kullanılan ürünlerdir). Mobil EAL Arctic Serisi yağlar benzersiz yağlama, aşınmaya karşı koruma, kimyasal, ısıl ve hidrolik kararlılık sağlaması amacıyla özel sentetik poliol esterleri (POE'ler) v",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "socony-oven-conveyer-lubricant": {
+        "name": "Mobil Socony Oven Conveyer Lubricant",
+        "type": "Fırın Konveyör Yağlayıcısı",
+        "category": "Genel Makina Yağları",
+        "description": "Socony Fırın Zincirleme Yağ 200 santigrat sıcaklığa kadar fırın konveyör zincirleri yağlanması için özel olarak tasarlanmış yüksek performanslı bir üründür. Bu düşük viskoziteli bir yağla ve koloidal grafit formüle edilmiştir. Yağ, grafit için bir taşıyıcı olarak hareket eder ve hareketli parçalar arasında nüfuz edebilir. Yağ. Yapışma neden olabilecek kalıntı bırakmadan buharlaşmaya çalışma sıcaklığında uçucudur Socony fırın konveyör Lubricant akışkan bağlantılar ve pimlerin arasına nüfuz sağlam",
+        "features": [
+          "Özellikler",
+          "Avantajları ve Potansiyel Yararları",
+          "Grafit, katı filmin çok iyi yağlama özellikleri",
+          "Zincir bağlantıları ve iğnelerden iyi penetrasyon",
+          "Yapışmasına neden olabilir mevduat olmaması",
+          "Uygulamalar"
+        ]
+      },
+      "vacuoline-546": {
+        "name": "Mobil Vacuoline 546",
+        "type": "Dolaşım Sistemi Yağı",
+        "category": "Genel Makina Yağları",
+        "description": "Movil Vacuoline 500 Serisine ait ürünler geniş bir endüstriyel ekipman çeşidi için çok yönlü yağlama imkanı sağlar.  Mobil Vacuoline 500 Serisi yağlayıcıları, No-Twist Çubuk haddelerinin ihtiyaçları için tasarlanmış olan ağır hizmet sirkülasyon yağlarıdır, ancak performansları bu yağları dişlileri ve yatakların sirkülasyonlu sistemle yağlanması konusunda mükemmel bir seçenek yapar. Mobil Vacuoline 500 Serisi Morgan Construction Company’nin yüksek hızlı No-Twist Çubuk Haddelerinin kritik talepler",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "vacuoline-537": {
+        "name": "Mobil Vacuoline 537",
+        "type": "Dolaşım Sistemi Yağı",
+        "category": "Genel Makina Yağları",
+        "description": "Movil Vacuoline 500 Serisine ait ürünler geniş bir endüstriyel ekipman çeşidi için çok yönlü yağlama imkanı sağlar.  Mobil Vacuoline 500 Serisi yağlayıcıları, No-Twist Çubuk haddelerinin ihtiyaçları için tasarlanmış olan ağır hizmet sirkülasyon yağlarıdır, ancak performansları bu yağları dişlileri ve yatakların sirkülasyonlu sistemle yağlanması konusunda mükemmel bir seçenek yapar. Mobil Vacuoline 500 Serisi Morgan Construction Company’nin yüksek hızlı No-Twist Çubuk Haddelerinin kritik talepler",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "vacuoline-533": {
+        "name": "Mobil Vacuoline 533",
+        "type": "Dolaşım Sistemi Yağı",
+        "category": "Genel Makina Yağları",
+        "description": "Ürünün Eski İsmi: Mobil DTE Oil BB - VG220 Movil Vacuoline 500 Serisine ait ürünler geniş bir endüstriyel ekipman çeşidi için çok yönlü yağlama imkanı sağlar.  Mobil Vacuoline 500 Serisi yağlayıcıları, No-Twist Çubuk haddelerinin ihtiyaçları için tasarlanmış olan ağır hizmet sirkülasyon yağlarıdır, ancak performansları bu yağları dişlileri ve yatakların sirkülasyonlu sistemle yağlanması konusunda mükemmel bir seçenek yapar. Mobil Vacuoline 500 Serisi Morgan Construction Company’nin yüksek hızlı",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "vacuoline-528": {
+        "name": "Mobil Vacuoline 528",
+        "type": "Dolaşım Sistemi Yağı",
+        "category": "Genel Makina Yağları",
+        "description": "Movil Vacuoline 500 Serisine ait ürünler geniş bir endüstriyel ekipman çeşidi için çok yönlü yağlama imkanı sağlar.  Mobil Vacuoline 500 Serisi yağlayıcıları, No-Twist Çubuk haddelerinin ihtiyaçları için tasarlanmış olan ağır hizmet sirkülasyon yağlarıdır, ancak performansları bu yağları dişlileri ve yatakların sirkülasyonlu sistemle yağlanması konusunda mükemmel bir seçenek yapar. Mobil Vacuoline 500 Serisi Morgan Construction Company’nin yüksek hızlı No-Twist Çubuk Haddelerinin kritik talepler",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "vacuoline-525": {
+        "name": "Mobil Vacuoline 525",
+        "type": "Dolaşım Sistemi Yağı",
+        "category": "Genel Makina Yağları",
+        "description": "Movil Vacuoline 500 Serisine ait ürünler geniş bir endüstriyel ekipman çeşidi için çok yönlü yağlama imkanı sağlar.  Mobil Vacuoline 500 Serisi yağlayıcıları, No-Twist Çubuk haddelerinin ihtiyaçları için tasarlanmış olan ağır hizmet sirkülasyon yağlarıdır, ancak performansları bu yağları dişlileri ve yatakların sirkülasyonlu sistemle yağlanması konusunda mükemmel bir seçenek yapar. Mobil Vacuoline 500 Serisi Morgan Construction Company’nin yüksek hızlı No-Twist Çubuk Haddelerinin kritik talepler",
+        "features": [
+          "Daha az programsız duruş ve düşük bakım maliyeti sağlar",
+          "Benzersiz aşınma önleme performansı",
+          "Mükemmel sudan ayrılma özellikleri",
+          "Yüksek oksidasyon ve ısıl bozunma mukavemeti",
+          "Dünya çapında güvenilir performans gösterir"
+        ]
+      },
+      "velocite-oil-no-6": {
+        "name": "Mobil Velocite Oil No 6",
+        "type": "Mil Yağı",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Velocite Oil Serisi özel olarak takım tezgahlarında yüksek devirli millerin yağlanması amacıyla tasarlanmış üstün performanslı yağlardır. Bunlar uygun viskozite sınıfı seçildiğinde aynı zamanda bazı kritik hidrolik, merkezi yağlama sistemleri ve hava hatlarının yağlanması için de kullanılır. Bu yağlar özel olarak seçilmiş yüksek kaliteli, düşük viskoziteli baz yağlar ve oksidasyon, pas ve korozyona karşı iyi direnç sağlayan katıklar ile formüle edilmiştir. Bu yağların köpük oluşumuna karşı",
+        "features": [
+          "Yüksek oksidasyon direnci",
+          "Yağ ömrünü uzatır",
+          "Ekipman ömrünü uzatır",
+          "Etkili sudan ayrılma",
+          "Emülsiyon oluşumunu engeller",
+          "Nemi kritik yağlama alanlarından uzak tutar"
+        ]
+      },
+      "velocite-oil-no-3": {
+        "name": "Mobil Velocite Oil No 3",
+        "type": "Mil Yağı",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Velocite Oil Serisi özel olarak takım tezgahlarında yüksek devirli millerin yağlanması amacıyla tasarlanmış üstün performanslı yağlardır. Bunlar uygun viskozite sınıfı seçildiğinde aynı zamanda bazı kritik hidrolik, merkezi yağlama sistemleri ve hava hatlarının yağlanması için de kullanılır. Bu yağlar özel olarak seçilmiş yüksek kaliteli, düşük viskoziteli baz yağlar ve oksidasyon, pas ve korozyona karşı iyi direnç sağlayan katıklar ile formüle edilmiştir. Bu yağların köpük oluşumuna karşı",
+        "features": [
+          "Yüksek oksidasyon direnci",
+          "Yağ ömrünü uzatır",
+          "Ekipman ömrünü uzatır",
+          "Etkili sudan ayrılma",
+          "Emülsiyon oluşumunu engeller",
+          "Nemi kritik yağlama alanlarından uzak tutar"
+        ]
+      },
+      "met-762": {
+        "name": "Mobil Met 762",
+        "type": "Metal İşleme Sıvısı",
+        "category": "Genel Makina Yağları",
+        "description": "Mobilmet™ 760 Serisi ekstra yüksek performanslı düz kesme yağlarıdır. Klorin içermezler. İişlenmesi güç takım çelikleri üzerinde yapılacak zor kesme işlemleri için geliştirilmişlerdir. . Mobilmet 760 Serisi yağlar, yumuşak sarı metallere karşı agresif olduğundan bakır ve alaşımları için önerilmez. Önde gelen diğer üstün kalite kesme yağlarına kıyasla Mobilmet 760 Serisi, yüzey kalitesi, takım ömrünü artırma ve uç kaynama kontrolü açısından üstün performans sergilerler. Açık renkleri sayesinde iş",
+        "features": [
+          "Mükemmel parça işleme performansı",
+          "Mükemmel yağlama özelliği",
+          "Çok amaçlı kullanım",
+          "Açık renkli ve saydam görünüm",
+          "Yağ sisini önleyen formülasyon",
+          "Çalışma yeri güvenliğini artırır"
+        ]
+      },
+      "arma-798": {
+        "name": "Mobil Arma 798",
+        "type": "Ağır Dişli ve Kablo Yağı",
+        "category": "Genel Makina Yağları",
+        "description": "Mobilarma 798 tel halat yağlayıcı olarak hizmet etmek ve uygulama ve depolama koşulları altında pas ve korozyonu önlemek amacıyla önleyici bir prim performans, yağ bazlı pas olduğunu. Bu sanayi, madencilik, ve deniz uygulamalarında kullanılmaktadır. Mobilarma 798 mükemmel film oluşturucu özellikleri vardır ve gres yağı benzeri bir kıvama sahiptir. Onun inatçı filmi tuz spreyi ve rutubetli ortamlarda aşındırıcı eğilimlerden halat korur. Mobilarma 798 denizde karşılaşılabilecek sıcaklıklarının aşı",
+        "features": [
+          "Özellikler",
+          "Üstün yapıştırıcı özellikleri",
+          "Dayanıklıdır atmak-off",
+          "Mükemmel pas ve korozyon koruması",
+          ", hafif asitlere karşı saldırı halatı korur",
+          "Aşınma azaltır"
+        ]
+      },
+      "nuto-h-46": {
+        "name": "Mobil Nuto H 46",
+        "type": "Hidrolik Yağ",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Nuto™ H Serisi yağlar, aşırı olmayan çalışma koşullarına maruz kalan ve aşınma önleyici yağlara ihtiyaç duyulan endüstriyel ve hareketli hizmet uygulamaları için tasarlanmış iyi kalitede aşınma önleyici hidrolik yağlardır. Etkili oksidasyon direnci ve kimyasal kararlılıkları, hafiften ağır şartlara kadarki tüm uygulamalarda bu yağlara uzun hizmet ömrü sağlar.",
+        "features": []
+      },
+      "dte-22": {
+        "name": "Mobil DTE 22",
+        "type": "Dolaşım Sistemi Yağı",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Dte 22 çok değişik ve çeşitli hidrolik ekipman taleplerini karşılamak için tasarlanmış üstün performanslı aşınma önleyici hidrolik yağlardır. Bu yağlar uzun yağ/filtre ömrü ve optimum ekipman koruması sağlayarak, hem bakım hem de kullanılmış yağ atık maliyetlerini düşürürler.  Dar toleranslara sahip servo-valflar ve yüksek hassasiyetteki sayısal kontrollu (NC) takım tezgahlarındaki gibi diğer hidrolik sistem parçalarının kritik gereksinimlerini karşılamanın yanı sıra, zor koşullar altında",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "delvac-hydraulic-10w": {
+        "name": "Mobil Delvac Hydraulic 10W",
+        "type": "Hidrolik Yağ",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Delvac Hydraulic 10W, çok çeşitli ağır hizmet hidrolik ekipmanlarının gereksinimlerini karşılamak üzere tasarlanmış ileri teknoloji ile üretilmiş baz yağlar ve dengeli bir katık sistemi ile formüle edilmiş yüksek performanslı hidrolik yağıdır. Bu ürün özellikle kül içermeyen dispersanlar ve metalik deterjanlar ile oksidasyon, aşınma, korozyon ve paslanmayı kontrol eden koruyucuların etkili dengesiyle özel olarak geliştirilmiştir. Mobil Delvac Hydraulic 10W, yol ve arazi şartlarında bulunan",
+        "features": [
+          "Özellikle pompa kanatları ve kontrol valflerinde daha az aşınma",
+          "Pompa kanadı yapışmasına karşı korur",
+          "Yağ analizleri ile yağ değişim aralıklarını uzatır",
+          "İyi aşınma önleme özelliği     Erken aşınmayı azaltır ve ekipman ömrünü uzatır",
+          "Yüksek sıcaklıklarda etkili yağ filmi mukavemeti sağlar"
+        ]
+      },
+      "dte-oil-medium": {
+        "name": "Mobil DTE Oil Medium",
+        "type": "Mineral Yağlı Kompresör Yağı",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE Oil Serisi, uzun yağ servis ömrünün gerektiği ve aralarında buhar ve su türbin gruplarının yer aldığı uygulamalar için tasarlanmış üstün performanslı sirkülasyon yağlarıdır. Mobil DTE Oil Serisi yağlar olağanüstü kimyasal ve ısıl kararlılık, sudan hızlı ve tam ayrılma, emülsiyon oluşumuna karşı yüksek dayanıklılığı sağlayan üst düzeyde rafine edilmiş baz yağlar ve katık sistemi ile formüle edilmiştir. Bu yağlar, pas ve korozyona karşı mükemmel koruma yanı sıra tuzlu suya karşı direnç v",
+        "features": [
+          "Beklenmeyen duruşları azaltır ve bakım maliyetlerini düşürür",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Aşınmaya karşı üstün koruma",
+          "Pas ve korozyona karşı uzun vadeli koruma"
+        ]
+      },
+      "dte-797": {
+        "name": "Mobil DTE 797",
+        "type": "Ağır Hizmet Dolaşım Yağı",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 700 Serisi yağlar uzun zamandır yüksek kalitesi ve güvenilirliğiyle tanınan Mobil DTE türbin yağlayıcı ürünler ailesinin en yeni üyesidir. Mobil DTE 700 Serisi, gaz ve buhar türbini uygulamalarında kullanılmak üzere özel olarak geliştirilmiş olan Çinko içermeyen türbin yağlarıdır. Mobil DTE 700 Serisi yağlar, antioksidanlar, pas ve korozyon inhibitörleri ve köpük önleyici maddelerini de içeren özenle seçilmiş olan bazyağlar ve katıklarla formüle edilmişlerdir. Bu bileşenler zaman içind",
+        "features": [
+          "Üstün oksidasyon, kimyasal ve renk kararlılığı",
+          "Üstün türbin sistemi güvenilirlik seviyesi ve azaltılmış arıza duruş süreleri",
+          "Mükemmel sudan ayrılabilirlik",
+          "Geliştirilmiş pas ve korozyon koruması",
+          "Hızlı hava bırakma ve köpük oluşumunu engelleme",
+          "Çinkosuz (Zinc Free)"
+        ]
+      },
+      "dte-846": {
+        "name": "Mobil DTE 846",
+        "type": "Ağır Hizmet Dolaşım Yağı",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 832 ve 846 yağları buhar türbini, gaz türbini ve kombine çevrimli gaz türbinlerinin (CCGT) karşı karşıya kaldığı en zor çalışma koşulları altında kullanılmak üzere tasarlanmıştır. Bu yenilikçi ürünler özgün yöntemlerle hidrojen işlemlerinden geçirilmiş üstün ısıl/oksidasyon mukavemeti sağlayan çok yüksek kaliteli baz yağlar ile zor koşullar altında çalışan gaz türbinleri için gerekli tortu kontrolü ve \"temiz tutma” performansı ile bunun yanı sıra buhar türbini işletmesi için gereken mü",
+        "features": [
+          "Yanlış yağ uygulama olasılığını önler, masraflı yağ değişimlerini azaltır",
+          "Stok maliyetlerini azaltır",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Yağ değişme aralığını artırır, üretim maliyetlerini düşürür",
+          "Aşınmaya karşı mükemmel koruma",
+          "Ekipman ömrünü uzatır, parça değişim maliyetini düşürür"
+        ]
+      },
+      "dte-832": {
+        "name": "Mobil DTE 832",
+        "type": "Ağır Hizmet Dolaşım Yağı",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 832 ve 846 yağları buhar türbini, gaz türbini ve kombine çevrimli gaz türbinlerinin (CCGT) karşı karşıya kaldığı en zor çalışma koşulları altında kullanılmak üzere tasarlanmıştır. Bu yenilikçi ürünler özgün yöntemlerle hidrojen işlemlerinden geçirilmiş üstün ısıl/oksidasyon mukavemeti sağlayan çok yüksek kaliteli baz yağlar ile zor koşullar altında çalışan gaz türbinleri için gerekli tortu kontrolü ve \"temiz tutma” performansı ile bunun yanı sıra buhar türbini işletmesi için gereken mü",
+        "features": [
+          "Yanlış yağ uygulama olasılığını önler, masraflı yağ değişimlerini azaltır",
+          "Stok maliyetlerini azaltır",
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "Yağ değişme aralığını artırır, üretim maliyetlerini düşürür",
+          "Aşınmaya karşı mükemmel koruma",
+          "Ekipman ömrünü uzatır, parça değişim maliyetini düşürür"
+        ]
+      },
+      "shc-rarus-68": {
+        "name": "Mobil SHC Rarus 68",
+        "type": "Kompresör Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil SHC Rarus 68 Vidalı Kompresör Yağı Yeni nesil sentetik hava kompresörü yağı",
+        "features": [
+          "Tipik Özellikler"
+        ]
+      },
+      "shc-rarus-46": {
+        "name": "Mobil SHC Rarus 46",
+        "type": "Kompresör Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil SHC Rarus 46 Vidalı Kompresör Yağı Yeni nesil sentetik hava kompresörü yağı",
+        "features": [
+          "Tipik Özellikler"
+        ]
+      },
+      "shc-rarus-32": {
+        "name": "Mobil SHC Rarus 32",
+        "type": "Kompresör Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil SHC Rarus 32 Vidalı Kompresör Yağı Yeni nesil sentetik hava kompresörü yağı",
+        "features": [
+          "Tipik Özellikler"
+        ]
+      },
+      "gargoyle-arctic-155": {
+        "name": "Mobil Gargoyle Arctic 155",
+        "type": "Soğutma Kompresörü Yağı",
+        "category": "Kompresör Yağları",
+        "description": "C Heavy ve 300 ürünleri yüksek performanslı, esas olarak soğutma kompresörlerinde kullanılmak amacıyla geliştirilmiş naftenik mineral yağlardır. Wax içermedikleri için çok düşük akma noktasına ve düşük sıcaklıklarda mükemmel akıcılığa sahiptirler. Bunun sonucunda, Gargoyle Arctic yağlarının kullanılması evaporatör borularının temiz kalmasını sağlayarak ısı transferini arttırır ve bakım için duruş sürelerini azaltır. Bu yağların çok iyi kimyasal kararlılığı vardır silindir ve rulman yağlaması içi",
+        "features": [
+          "Özellikleri Üstünlükleri ve Sağlayacağı Faydalar",
+          "Düşük wax içeriği",
+          "İyi kimyasal kararlılık",
+          "Çok amaçlı yağlar"
+        ]
+      },
+      "gargoyle-arctic-shc-230": {
+        "name": "Mobil Gargoyle Arctics SHC 230",
+        "type": "Soğutma Kompresörü Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Bu Ürün Bülteninin içerdiği bilgiler geçerliliğini yitirmiştir. Mobil Gargoyle Arctic SHC 200 Serisi tam sentetik, soğutma kompresörleri ve ısı pompalarında kullanılmak üzere özel olarak tasarlanmış üstün performanslı yağlayıcılardır. Yağlayıcılar wax içermeyen, ısıl ve oksidasyon bozunmalarına karşı üstün dirence sahip sentetik hidrokarbon polialfaolefin (PAO) sıvılarından formüle edilmiştir. Doğal olarak sahip oldukları kesme dayanımlı yüksek viskozite indeksi ve düşük sıcaklıklardaki kolay ak",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "az sayıda periyodik bakım sağlar",
+          "Mükemmel ısıl/oksidasyon ve kimyasal kararlılık",
+          "Düşük buharlaşma Viskozite artışını engeller, yağ tüketimini azaltır",
+          "Yüksek Viskozite indeksi ve wax içermeyen bileşim",
+          "Düşük çekme gerilim katsayısı"
+        ]
+      },
+      "eal-arctic-100": {
+        "name": "Mobil EAL Arctic 100",
+        "type": "Çevreci Soğutma Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil EAL Arctic Serisi yüksek performanslı Çevreye Duyarlı Yağlar (EAL), özellikle ozon dostu HFC soğutucu  kullanan soğutma kompresörleri ve sistemlerinin yağlanması için özel olarak tasarlanmış tam sentetik ürünlerdir (HFC'ler klorin içermeyen ve dünya pazarlarında klorin içeren soğutucuların yerine kullanılan ürünlerdir). Mobil EAL Arctic Serisi yağlar benzersiz yağlama, aşınmaya karşı koruma, kimyasal, ısıl ve hidrolik kararlılık sağlaması amacıyla özel sentetik poliol esterleri (POE'ler) v",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "rarus-429": {
+        "name": "Mobil Rarus 429",
+        "type": "Kompresör Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus 400 Serisi önde gelen kompresör imalatçılarının talep ettiği zorlu gereksinimleri karşılamak üzere tasarlanmış üstün performanslı külsüz hava kompresörü yağlarıdır. Yüksek kaliteli mineral baz yağlar ile orta ve ağır koşullar altında çalışan kompresörler için benzersiz ekipman koruması ve güvenirliği sağlamak üzere tasarlanmış yüksek performanslı katık sistemi ile formüle edilmişlerdir. Bu yağlar ekipman sorunlarını ve tortu oluşumunu ve taşınmasını en aza indirerek aşınmaya karşı mü",
+        "features": [
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşur",
+          "Daha yüksek kompresör performansı sağlar",
+          "Daha uzun yağ ömrü sağlar",
+          "Filtre ömrünü artırır",
+          "Yüksek yük-taşıma kapasitesi"
+        ]
+      },
+      "rarus-426": {
+        "name": "Mobil Rarus 426",
+        "type": "Kompresör Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus 400 Serisi önde gelen kompresör imalatçılarının talep ettiği zorlu gereksinimleri karşılamak üzere tasarlanmış üstün performanslı külsüz hava kompresörü yağlarıdır. Yüksek kaliteli mineral baz yağlar ile orta ve ağır koşullar altında çalışan kompresörler için benzersiz ekipman koruması ve güvenirliği sağlamak üzere tasarlanmış yüksek performanslı katık sistemi ile formüle edilmişlerdir. Bu yağlar ekipman sorunlarını ve tortu oluşumunu ve taşınmasını en aza indirerek aşınmaya karşı mü",
+        "features": [
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşur",
+          "Daha yüksek kompresör performansı sağlar",
+          "Daha uzun yağ ömrü sağlar",
+          "Filtre ömrünü artırır",
+          "Yüksek yük-taşıma kapasitesi"
+        ]
+      },
+      "rarus-shc-1024": {
+        "name": "Mobil Rarus SHC 1024",
+        "type": "Kompresör Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus SHC 1000 Serisi üstün performanslı yağlar esas olarak ağır hizmet rotari vidalı ve kanatlı hava kompresörlerini yağlama amacıyla geliştirilmiş bir seridir. Bu yağlar, özellikle mineral bazlı ürünlerin yüksek son kompresyon sıcaklıkları altındaki güç çalışma uygulamaları veya yağ değiştirme aralıklarının uzatılması taleplerini karşılayamadığı durumlar için uygundur. Bunlar özel olarak tasarlanmış wax içermeyen sentetik hidrokarbon sıvıları ve mineral bazlı hava kompresörleri yağlarını",
+        "features": [
+          "Geniş çalışma sıcaklığı aralığı",
+          "Güvenlik artışı",
+          "Uzun servis ömrü",
+          "Kok tortularını azaltır",
+          "Yağ ömrünü uzatır",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "nuto-h-68": {
+        "name": "Mobil Nuto H 68",
+        "type": "Hidrolik Yağ",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Nuto™ H Serisi yağlar, aşırı olmayan çalışma koşullarına maruz kalan ve aşınma önleyici yağlara ihtiyaç duyulan endüstriyel ve hareketli hizmet uygulamaları için tasarlanmış iyi kalitede aşınma önleyici hidrolik yağlardır. Etkili oksidasyon direnci ve kimyasal kararlılıkları, hafiften ağır şartlara kadarki tüm uygulamalarda bu yağlara uzun hizmet ömrü sağlar.",
+        "features": []
+      },
+      "dte-21": {
+        "name": "Mobil DTE 21",
+        "type": "Dolaşım Sistemi Yağı",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Çok değişik ve çeşitli hidrolik ekipman taleplerini karşılamak için tasarlanmış üstün performanslı aşınma önleyici hidrolik yağlardır. Bu yağlar uzun yağ/filtre ömrü ve optimum ekipman koruması sağlayarak, hem bakım hem de kullanılmış yağ atık maliyetlerini düşürürler.  Dar toleranslara sahip servo-valflar ve yüksek hassasiyetteki sayısal kontrollu (NC) takım tezgahlarındaki gibi diğer hidrolik sistem parçalarının kritik gereksinimlerini karşılamanın yanı sıra, zor koşullar altında yüksek basınç",
+        "features": [
+          "Özellikleri",
+          "Aşınmaya karşı koruma",
+          "Aşınmayı azaltır",
+          "Kalitesini koruma",
+          "Oksidasyon kararlılığı",
+          "Filtre ömrünü uzatır"
+        ]
+      },
+      "eal-arctic-22": {
+        "name": "Mobil EAL Arctic 22",
+        "type": "Çevreci Soğutma Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil EAL Arctic Serisi yüksek performanslı Çevreye Duyarlı Yağlar (EAL), özellikle ozon dostu HFC soğutucu  kullanan soğutma kompresörleri ve sistemlerinin yağlanması için özel olarak tasarlanmış tam sentetik ürünlerdir (HFC'ler klorin içermeyen ve dünya pazarlarında klorin içeren soğutucuların yerine kullanılan ürünlerdir). Mobil EAL Arctic Serisi yağlar benzersiz yağlama, aşınmaya karşı koruma, kimyasal, ısıl ve hidrolik kararlılık sağlaması amacıyla özel sentetik poliol esterleri (POE'ler) v",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "gerekli özel viskozite gereksinimlerini karşılar",
+          "Geniş viskozite aralığı"
+        ]
+      },
+      "somentor-ah-70": {
+        "name": "Mobil Somentor AH 70",
+        "type": "Makine Dairesi Yağı",
+        "category": "Genel Makina Yağları",
+        "description": "Somentor AH 45, AH 70 ve AL 70 Demirli ve demirsiz metallerin soğuk haddeleme için uygun tam bileşik yağlar, üstün kalite. Bu yağlar yüksek kaliteli baz yağlar ve bu uygulamaların zorlu performans gereksinimlerini karşılamak için özel olarak seçilen rulo yağ katkı maddeleri ile formüle edilmiştir.",
+        "features": [
+          "Haddelenmiş metal parlak bir yüzey teslim",
+          "Yağın ömrünü uzatmak için kolay filtrasyon",
+          "Metallerin geniş bir aralığı için uygun",
+          "Uygulamalar"
+        ]
+      },
+      "aero-hf": {
+        "name": "Mobil Aero HF",
+        "type": "Havacılık Hidrolik Sıvısı",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Aero HF  kağıt makinelerinin zorlu çalışma şartlarında aşırı sıcak ortamlar ve değişik kalitede su ile temas etme durumlarına dayanması için özel olarak tasarlanmış üstün performans ürünlerimizdendir.Mobil Aero HF, sentetik bazyağlar ile yüksek kaliteli lityum kompleks kalınlaştırıcının özgün özelliklerini bir araya getirmektedir. Sentetik bazyağlar mum (wax) içermeyen yapıları sayesinde aynı vizkositede sentetik olmayan diğer yağ ürünlerine kıyasla düşük sıcaklıkta mükemmel şekilde pompal",
+        "features": [
+          "Mobil Aero HF"
+        ]
+      },
+      "aero-hfa": {
+        "name": "Mobil Aero HFA",
+        "type": "Havacılık Hidrolik Sıvısı",
+        "category": "Genel Makina Yağları",
+        "description": "Mobil Aero   kağıt makinelerinin zorlu çalışma şartlarında aşırı sıcak ortamlar ve değişik kalitede su ile temas etme durumlarına dayanması için özel olarak tasarlanmış üstün performans ürünlerimizdendir. Mobil Oil Aero Red, sentetik bazyağlar ile yüksek kaliteli lityum kompleks kalınlaştırıcının özgün özelliklerini bir araya getirmektedir. Sentetik bazyağlar mum (wax) içermeyen yapıları sayesinde aynı vizkositede sentetik olmayan diğer yağ ürünlerine kıyasla düşük sıcaklıkta mükemmel şekilde po",
+        "features": [
+          "Mobil Aero HFA"
+        ]
+      },
+      "met-427": {
+        "name": "Mobil Met 427",
+        "type": "Metal İşleme Sıvısı",
+        "category": "Genel Makina Yağları",
+        "description": "Mobilmet 400 Serisi yüksek performanslı, çok amaçlı korozif olmayan ve su ile karıştırmadan kullanılan metal işleme yağlarıdır. Bu yağlar, hafif ve orta hizmet talaşlı imalat işlemleri için tasarlanmış olmakla birlikte aynı zamanda kesme yağı ve yağlama yağı arasındaki karşılıklı karışmanın neden olabileceği problemleri önlediğinden takım tezgahları yağları ve hidrolik yağı olarak kullanılabilmektedir. Bu yağlar yüksek kaliteli baz yağlar ve çok geniş bir uygulama alanında etkili bir talaşlı ima",
+        "features": [
+          "Mükemmel talaşlı imalat kapasitesi",
+          "Çok çeşitli malzeme ve operasyon ile uygunluk",
+          "Kızak ve tezgah fikstürleri üzerinde leke oluşturmaz",
+          "Açık renkli, saydam",
+          "Yağ sisi azdır",
+          "Daha güvenli ve konforlu bir çalışma ortamı sağlar"
+        ]
+      },
+      "dte-10-excel-15": {
+        "name": "Mobil DTE 10 Excel 15",
+        "type": "Yüksek Performanslı Hidrolik Yağ",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Dte 10 Exel 15, özellikle modern, yüksek basınçlı, endüstriyel ve mobil ekipmanların hidrolik sistemlerin ihtiyaçlarını karşılamak üzere tasarlanmış yüksek performanslı, aşınma önleyici hidrolik yağlardır.",
+        "features": [
+          "Mükemmel Hidrolik Verimlilik",
+          "Çok Üstün Temiz Tutma Performansı",
+          "Elastomer ve contalarla iyi bir uyumluluk Uzun conta ömrü ve daha az bakım",
+          "Aşınma önleyici özellikler",
+          "ve kavitasyon hasarını önlemeye yardım eder.",
+          "Mükemmel Hava Ayırma Özellikleri"
+        ]
+      },
+      "pyrotec-hfc-46": {
+        "name": "Mobil Pyrotec HFC 46",
+        "type": "Yangına Dayanıklı Hidrolik Sıvı",
+        "category": "Hidrolik Sistem Yağları",
+        "description": "Mobil Pyrotec Hfc 46, özellikle modern, yüksek basınçlı, endüstriyel ve mobil ekipmanların hidrolik sistemlerin ihtiyaçlarını karşılamak üzere tasarlanmış yüksek performanslı, aşınma önleyici hidrolik yağlardır. Mobil Pyrotec Hfc 46, çeşitli uygulamalarda iyi dengelenmiş bir performans sağlamak amacıyla seçilmiş baz yağlar ve katık sistemiyle oluşturulmuştur. Serideki ürünler, yüksek basınç ve yüksek debili pompaların kullanıldığı zorlu çalışma koşullarındaki hidrolik sistemlerde tortuyu en aza",
+        "features": [
+          "Mobil Pyrotec Hfc 46"
+        ]
+      },
+      "ect-44": {
+        "name": "Mobil ECT 44",
+        "type": "Elektrik Transformatör Yağı",
+        "category": "Trafo Yağları",
+        "description": "Mobilect 44 trafo, şalt cihazları ve diğer elektrik donanımlar için tasarlanmış ve üstün dielektrik özellikler ve oksidasyon kararlılığına sahip yüksek kaliteli mineral izolasyon yağıdır. İzolasyon yağları korumalı ve korumasız olmak üzere iki sınıf altında temin edilebilir. Mobilect 44 korumalı sınıftır, daha üstün oksidasyon direnci sağlar ve IEC 60296 (82) Class IA ve IIA teknik özelliklerini karşılar.",
+        "features": [
+          "Mobilect 44'ün başlıca yararları şunlardır:"
+        ]
+      },
+      "prosol-nt-70": {
+        "name": "Mobil Prosol NT 70",
+        "type": "Metal Temizleme Solüsyonu",
+        "category": "Kesme Yağları",
+        "description": "Mobil Prosol Nt 70, suda çözünebilen, çok amaçlı, yüksek performanslı, yarı sentetik kesme yağlarıdır. Bu yağlar, çok çeşitli talaşlı imalat işlemlerinde yüksek işleme performansı göstererek çalışmasını sağlamak üzere yüksek kalitedeki baz yağları, emülgatörler ve katık sistemi formüle edilmişlerdir. Yüksek oranda yağ içeren emülsiyon, mükemmel kesme performansı, olağanüstü takım yağlaması ve korozyonu önleme görevi görür. Mobil Prosol Nt 70 yağları su ile kolayca ve kararlı mikro emülsiyonlarda",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-250": {
+        "name": "Mobil Cut 250",
+        "type": "Kesme Sıvısı",
+        "category": "Kesme Yağları",
+        "description": "Mobilcut 250 , suda çözünebilen, çok amaçlı, yüksek performanslı, yarı sentetik kesme yağlarıdır. Bu yağlar, çok çeşitli talaşlı imalat işlemlerinde yüksek işleme performansı göstererek çalışmasını sağlamak üzere yüksek kalitedeki baz yağları, emülgatörler ve katık sistemi formüle edilmişlerdir. Yüksek oranda yağ içeren emülsiyon, mükemmel kesme performansı, olağanüstü takım yağlaması ve korozyonu önleme görevi görür. Mobilcut Esc  yağları su ile kolayca ve kararlı mikro emülsiyonlardan oluştura",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-240": {
+        "name": "Mobil Cut 240",
+        "type": "Kesme Sıvısı",
+        "category": "Kesme Yağları",
+        "description": "Mobilcut 240, suda çözünebilen, çok amaçlı, yüksek performanslı, yarı sentetik kesme yağlarıdır. Bu yağlar, çok çeşitli talaşlı imalat işlemlerinde yüksek işleme performansı göstererek çalışmasını sağlamak üzere yüksek kalitedeki baz yağları, emülgatörler ve katık sistemi formüle edilmişlerdir. Yüksek oranda yağ içeren emülsiyon, mükemmel kesme performansı, olağanüstü takım yağlaması ve korozyonu önleme görevi görür. Mobilcut 321 yağları su ile kolayca ve kararlı mikro emülsiyonlardan oluşturabi",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-230": {
+        "name": "Mobil Cut 230",
+        "type": "Kesme Sıvısı",
+        "category": "Kesme Yağları",
+        "description": "Mobilcut 200 Serisi, suda çözünebilen, çok amaçlı, yüksek performanslı, yarı sentetik kesme yağlarıdır. Bu yağlar, çok çeşitli talaşlı imalat işlemlerinde yüksek işleme performansı göstererek çalışmasını sağlamak üzere yüksek kalitedeki baz yağları, emülgatörler ve katık sistemi formüle edilmişlerdir. Yüksek oranda yağ içeren emülsiyon, mükemmel kesme performansı, olağanüstü takım yağlaması ve korozyonu önleme görevi görür. Demir ve demir dışı metallerin , hafiften orta zorluktaki işlemlerine (M",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-210": {
+        "name": "Mobil Cut 210",
+        "type": "Kesme Sıvısı",
+        "category": "Kesme Yağları",
+        "description": "Mobilcut 200 Serisi, suda çözünebilen, çok amaçlı, yüksek performanslı, yarı sentetik kesme yağlarıdır. Bu yağlar, çok çeşitli talaşlı imalat işlemlerinde yüksek işleme performansı göstererek çalışmasını sağlamak üzere yüksek kalitedeki baz yağları, emülgatörler ve katık sistemi formüle edilmişlerdir. Yüksek oranda yağ içeren emülsiyon, mükemmel kesme performansı, olağanüstü takım yağlaması ve korozyonu önleme görevi görür. Demir ve demir dışı metallerin , hafiften orta zorluktaki işlemlerine (M",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-140": {
+        "name": "Mobil Cut 140",
+        "type": "Kesme Sıvısı",
+        "category": "Kesme Yağları",
+        "description": "Mobilcut 100 yağlarıdır. Bu yağlar, çok çeşitli talaşlı imalat işlemlerinde yüksek işleme performansı göstererek çalışmasını sağlamak üzere yüksek kalitedeki baz yağları, emülgatörler ve katık sistemi formüle edilmişlerdir. Yüksek oranda yağ içeren emülsiyon, mükemmel kesme performansı, olağanüstü takım yağlaması ve korozyonu önleme görevi görür. Demir ve demir dışı metallerin , hafiften orta zorluktaki işlemlerine (Mobilcut 222); ve orta düzeyden zor işlemlere (Mobilcut 232 ve 242) kadar uzanan",
+        "features": [
+          "Kolay kontrol ve bakım      Tutarlı ve güvenilir performans sağlar",
+          "Klor ve Nitrit içermez      Atık yokme maliyetini düşürür ve çevreyi korur",
+          "Düşük seviyede koku      çalışma koşullarını iyileştirir."
+        ]
+      },
+      "cut-100": {
+        "name": "Mobil Cut 100",
+        "type": "Kesme Sıvısı",
+        "category": "Kesme Yağları",
+        "description": "Mobilcut 100, suda çözünebilen, çok amaçlı, yüksek performanslı, yarı sentetik kesme yağlarıdır. Bu yağlar, çok çeşitli talaşlı imalat işlemlerinde yüksek işleme performansı göstererek çalışmasını sağlamak üzere yüksek kalitedeki baz yağları, emülgatörler ve katık sistemi formüle edilmişlerdir. Yüksek oranda yağ içeren emülsiyon, mükemmel kesme performansı, olağanüstü takım yağlaması ve korozyonu önleme görevi görür. Demir ve demir dışı metallerin , hafiften orta zorluktaki işlemlerine (Mobilcut",
+        "features": []
+      },
+      "exxon-hyjet-v": {
+        "name": "Exxon Hyjet V",
+        "type": "Havacılık Hidrolik Sıvısı",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Yangın Dayanıklı Fosfat Ester Havacılık Hidrolik Yağı",
+        "features": [
+          "Özellikler",
+          "Avantajları ve Potansiyel Yararları",
+          "Daha uzun yağ ömrü.",
+          "Azaltılmış hidrolik sistem bakım maliyetleri",
+          "En düşük yoğunluk Tip IV sıvı",
+          "İndirimli uçak yakıt tüketimi, düşük işletme maliyetleri"
+        ]
+      },
+      "exxon-hyjet-iv-a-plus": {
+        "name": "Exxon Hyjet IV A Plus",
+        "type": "Havacılık Hidrolik Sıvısı",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Yangın Dayanıklı Fosfat Ester Havacılık Hidrolik Yağı",
+        "features": [
+          "Özellikler",
+          "Avantajları ve Potansiyel Yararları",
+          "Daha uzun yağ ömrü.",
+          "Azaltılmış hidrolik sistem bakım maliyetleri",
+          "En düşük yoğunluk Tip IV sıvı",
+          "İndirimli uçak yakıt tüketimi, düşük işletme maliyetleri"
+        ]
+      },
+      "jet-oil-254": {
+        "name": "Mobil Jet Oil 254",
+        "type": "Havacılık Türbin Yağı",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil Jet Petrol 254, üçüncü nesil, ekstra yüksek performans, ticari ve askeri uçaklarda kullanılan gaz türbin motorları için performans gereksinimlerini karşılamak için tasarlanmış sentetik uçak tipi gaz türbini yağıdır.   Bu ürün özel olarak hazırlanmış, engel-ester baz formüle edilmiş ve benzersiz bir kimyasal katkı paketi ile güçlendirilmiş.   Sonuç oluşturucu ve askeri özellikleri gerektirdiği fiziksel özelliklerini korurken bozulma ve tortu oluşumuna karşı dayanıklıdır Üstün ısıl ve oksida",
+        "features": [
+          "Özellikleri",
+          "Avantajları ve Potansiyel Yararları",
+          "Tutar motor verimliliğini ve motor ömrünü uzatır",
+          "50 º C% 50 oranında artar ve mevduat kontrol azaltır dökme yağ oksidasyonu",
+          "Azaltır, motor bakım",
+          "Uygulamalar"
+        ]
+      },
+      "dte-746": {
+        "name": "Mobil DTE 746",
+        "type": "Ağır Hizmet Dolaşım Yağı",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 700 Serisi yağlar uzun zamandır yüksek kalitesi ve güvenilirliğiyle tanınan Mobil DTE türbin yağlayıcı ürünler ailesinin en yeni üyesidir. Mobil DTE 700 Serisi, gaz ve buhar türbini uygulamalarında kullanılmak üzere özel olarak geliştirilmiş olan Çinko içermeyen türbin yağlarıdır. Mobil DTE 700 Serisi yağlar, antioksidanlar, pas ve korozyon inhibitörleri ve köpük önleyici maddelerini de içeren özenle seçilmiş olan bazyağlar ve katıklarla formüle edilmişlerdir. Bu bileşenler zaman içind",
+        "features": [
+          "Üstün oksidasyon, kimyasal ve renk kararlılığı",
+          "Üstün türbin sistemi güvenilirlik seviyesi ve azaltılmış arıza duruş süreleri",
+          "Mükemmel sudan ayrılabilirlik",
+          "Geliştirilmiş pas ve korozyon koruması",
+          "Hızlı hava bırakma ve köpük oluşumunu engelleme",
+          "Çinkosuz (Zinc Free)"
+        ]
+      },
+      "dte-732": {
+        "name": "Mobil DTE 732",
+        "type": "Ağır Hizmet Dolaşım Yağı",
+        "category": "Türbin,Sirkülasyon Yağları",
+        "description": "Mobil DTE 700 Serisi yağlar uzun zamandır yüksek kalitesi ve güvenilirliğiyle tanınan Mobil DTE türbin yağlayıcı ürünler ailesinin en yeni üyesidir. Mobil DTE 700 Serisi, gaz ve buhar türbini uygulamalarında kullanılmak üzere özel olarak geliştirilmiş olan Çinko içermeyen türbin yağlarıdır. Mobil DTE 700 Serisi yağlar, antioksidanlar, pas ve korozyon inhibitörleri ve köpük önleyici maddelerini de içeren özenle seçilmiş olan bazyağlar ve katıklarla formüle edilmişlerdir. Bu bileşenler zaman içind",
+        "features": [
+          "Üstün oksidasyon, kimyasal ve renk kararlılığı",
+          "Üstün türbin sistemi güvenilirlik seviyesi ve azaltılmış arıza duruş süreleri",
+          "Mükemmel sudan ayrılabilirlik",
+          "Geliştirilmiş pas ve korozyon koruması",
+          "Hızlı hava bırakma ve köpük oluşumunu engelleme",
+          "Çinkosuz (Zinc Free)"
+        ]
+      },
+      "gargoyle-arctic-shc-nh-68": {
+        "name": "Mobil Gargoyle Arctic SHC NH 68",
+        "type": "Soğutma Kompresörü Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Bu Ürün Bülteninin içerdiği bilgiler geçerliliğini yitirmiştir. Mobil Gargoyle Arctic SHC 200 Serisi tam sentetik, soğutma kompresörleri ve ısı pompalarında kullanılmak üzere özel olarak tasarlanmış üstün performanslı yağlayıcılardır. Yağlayıcılar wax içermeyen, ısıl ve oksidasyon bozunmalarına karşı üstün dirence sahip sentetik hidrokarbon polialfaolefin (PAO) sıvılarından formüle edilmiştir. Doğal olarak sahip oldukları kesme dayanımlı yüksek viskozite indeksi ve düşük sıcaklıklardaki kolay ak",
+        "features": [
+          "Özellikleri Avantajları ve Sağlayabileceği Faydalar",
+          "az sayıda periyodik bakım sağlar",
+          "Mükemmel ısıl/oksidasyon ve kimyasal kararlılık",
+          "Düşük buharlaşma Viskozite artışını engeller, yağ tüketimini azaltır",
+          "Yüksek Viskozite indeksi ve wax içermeyen bileşim",
+          "Düşük çekme gerilim katsayısı"
+        ]
+      },
+      "rarus-829": {
+        "name": "Mobil Rarus 829",
+        "type": "Kompresör Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus 800 Serisi esas olarak ağır hizmet pistonlu hava kompresörlerinin yağlanmasında üstün performans sağlayan kompresör yağlarıdır. Bu yağlar, önde gelen kompresör imalatçı firmaları tarafından istenen en zor şartları karşılamak veya aşmak için tasarlanmıştır. Mineral esaslı ürünlerin istenen gereksinimleri karşılamadığı koşullar altında çalışan kompresörlerin korunmasını ve güvenirliğini sağlayan özgün tasarımlı sentetik yağlar ve yüksek teknolojili katık sistemi ile formüle edilmiştir.",
+        "features": [
+          "Yüksek performanslı sentetik esaslı yağlar",
+          "Güvenli kullanım sağlar",
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşturur",
+          "Daha yüksek kompresör performansı sağlar",
+          "Daha uzun yağ ömrü sağlar"
+        ]
+      },
+      "rarus-827": {
+        "name": "Mobil Rarus 827",
+        "type": "Kompresör Yağı",
+        "category": "Kompresör Yağları",
+        "description": "Mobil Rarus 800 Serisi esas olarak ağır hizmet pistonlu hava kompresörlerinin yağlanmasında üstün performans sağlayan kompresör yağlarıdır. Bu yağlar, önde gelen kompresör imalatçı firmaları tarafından istenen en zor şartları karşılamak veya aşmak için tasarlanmıştır. Mineral esaslı ürünlerin istenen gereksinimleri karşılamadığı koşullar altında çalışan kompresörlerin korunmasını ve güvenirliğini sağlayan özgün tasarımlı sentetik yağlar ve yüksek teknolojili katık sistemi ile formüle edilmiştir.",
+        "features": [
+          "Yüksek performanslı sentetik esaslı yağlar",
+          "Güvenli kullanım sağlar",
+          "Supap performansı artar",
+          "Çıkış hatlarında daha az tortu oluşturur",
+          "Daha yüksek kompresör performansı sağlar",
+          "Daha uzun yağ ömrü sağlar"
+        ]
+      }
     }
   },
   "quotePage": {
