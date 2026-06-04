@@ -219,6 +219,8 @@ const BRAND_OVERRIDES: Record<string, string[]> = {
     "Mobil Delvac Super 1000 20W-50",
     "Mobil Delvac CT Diesel 10W-30",
   ],
+  "mobil:endustriyel-yaglar": [],
+
   /* ── CASTROL ────────────────────────────────────────────────────── */
   "castrol:motor-yaglari": [
     "Castrol EDGE 0W-20", "Castrol EDGE 0W-30", "Castrol EDGE 5W-30",
