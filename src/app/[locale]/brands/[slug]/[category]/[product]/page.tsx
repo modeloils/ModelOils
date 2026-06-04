@@ -2996,12 +2996,6 @@ const MOBIL_INDUSTRIAL_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Bosch Rexroth RE 90220", "Parker Denison HF-0/HF-1/HF-2"],
     description: "Ekstra yük kapasitesi gerektiren büyük hidrolik sistemler için yüksek viskoziteli premium hidrolik yağı. Ağır presler ve büyük inşaat ekipmanlarında güvenilir koruma sağlar.",
     features: ["Ekstra yük kapasitesi", "Büyük sistem uyumluluğu", "Termal stabilite", "Uzun servis ömrü"],
-  },  "shc-632": {
-    name: "Mobil SHC 632", grade: "ISO VG 220", series: "Mobil SHC 632", type: "Dişli Yağı (Tam Sentetik)",
-    api: "ISO 12925-1 CKT", acea: "DIN 51517-3 CLP",
-    approvals: ["US Steel 224", "David Brown S1.53.101", "AGMA 9005-E02"],
-    description: "En yaygın endüstriyel dişli viskozite derecesinde PAO bazlı tam sentetik dişli yağı. Redüktörler ve kapalı dişli kutularında mineral yağlara göre 3 kat daha uzun servis ömrü sağlar.",
-    features: ["ISO VG 220 tam sentetik", "3x uzun servis ömrü", "Enerji tasarrufu", "Üstün düşük sıcaklık akışı"],
   },
   "rarus-427": {
     name: "Mobil Rarus 427", grade: "ISO VG 46", series: "Mobil Rarus 427", type: "Kompresör Yağı (Mineral)",
@@ -3016,60 +3010,8 @@ const MOBIL_INDUSTRIAL_PRODUCTS: Record<string, ProductSpec> = {
     approvals: ["Atlas Copco", "Kaeser", "Ingersoll Rand", "Sullair", "Gardner Denver"],
     description: "Döner vidalı kompresörler için geliştirilmiş PAO bazlı tam sentetik kompresör yağı. 8.000 saate kadar uzatılmış değişim aralığı ve minimum karbon birikimi ile işletme maliyetlerini azaltır.",
     features: ["PAO tam sentetik formül", "8.000 saat değişim aralığı", "Sıfır karbon birikimi", "Çevre dostu uzun ömür"],
-  },  "grease-xhp-222": {
-    name: "Mobil Grease XHP 222", grade: "NLGI 2", series: "Mobil Grease XHP 222", type: "Gres Yağı EP",
-    api: "ISO 6743-9 L-XBCHB 2", acea: "DIN 51825 KP2K-20",
-    approvals: ["SKF", "FAG", "NSK", "Timken"],
-    description: "Lityum kompleks kıvamlaştırıcılı yüksek performanslı EP gres yağı. Rulmanlı yataklar, dişli kutular ve eklem noktaları dahil geniş endüstriyel uygulamalarda üstün koruma sağlar.",
-    features: ["Yüksek EP kapasitesi", "Geniş sıcaklık aralığı (-20°C ile +150°C)", "Su ve pas koruması", "Uzun yeniden gres aralıkları"],
-  },  "pegasus-605": {
-    name: "Mobil Pegasus 605", grade: "SAE 40", series: "Mobil Pegasus 600", type: "Gaz Motor Yağı (Mineral)",
-    api: "API CF", acea: "ISO-L-EGD",
-    approvals: ["GE Jenbacher", "Caterpillar", "Waukesha"],
-    description: "Orta düzey dört zamanlı stasyoner doğal gaz ve biyogaz motorları için geliştirilmiş mineral gaz motor yağı. Güvenilir koruma ve ekonomik formülasyonuyla orta ölçekli tesisler için idealdir.",
-    features: ["Gaz ve biyogaz motor uyumlu", "Orta TBN alkali rezerv", "Ekonomik mineral formül", "Stasyoner motor optimizasyonu"],
-    image: "/images/products/mobil/pegasus-605.jpg",
-    fullDescription: `Orta ölçekli stasyoner doğal gaz ve biyogaz motorları için formüle edilmiş mineral gaz motor yağı.
-
-Orta düzey TBN kapasitesiyle temiz yakıtlı gaz motorlarında güvenilir koruma ve ekonomik bakım imkânı sağlar.
-
-PERFORMANS ÖZELLİKLERİ
-• Temiz gaz yakıtlı motorlarda güvenilir koruma
-• Orta TBN ile asit kontrolü
-• Ekonomik mineral formülasyon
-• Uzun çalışma koşullarında stabilite
-
-STANDARTLAR VE SPESİFİKASYONLAR
-API CF
-ISO-L-EGD
-GE Jenbacher
-Caterpillar
-Waukesha`,
-  },  "pegasus-1005": {
-    name: "Mobil Pegasus 1005", grade: "SAE 40", series: "Mobil Pegasus 1000", type: "Gaz Motor Yağı (Mineral, Yüksek Kül)",
-    api: "API CF", acea: "ISO-L-EGD",
-    approvals: ["GE Jenbacher", "Caterpillar", "Cummins", "Waukesha"],
-    description: "Kirli veya yüksek kükürtlü gaz yakıtlarıyla çalışan ağır hizmet gaz motorları için yüksek TBN'li mineral gaz motor yağı. Güçlü asit nötralizasyonuyla motor ömrünü korur.",
-    features: ["En yüksek TBN kapasitesi", "Kirli gaz yakıt toleransı", "Güçlü asit nötralizasyonu", "Ağır hizmet gaz motoru"],
-    image: "/images/products/mobil/pegasus-1005.jpg",
-    fullDescription: `Kirli veya yüksek kükürtlü gaz yakıtlarının kullanıldığı ağır hizmet gaz motorları için formüle edilmiş yüksek TBN'li mineral gaz motor yağı.
-
-En yüksek alkali rezerv kapasitesiyle asidik yanma ürünlerini etkili biçimde nötralize ederek motor parçalarını korozyona karşı korur.
-
-PERFORMANS ÖZELLİKLERİ
-• En yüksek TBN ile maksimum asit nötralizasyonu
-• Kirli gaz yakıtlarında üstün koruma
-• Motor korozyonuna karşı en güçlü kalkan
-• Ağır hizmet gaz motoru koşulları için optimize edilmiş
-
-STANDARTLAR VE SPESİFİKASYONLAR
-API CF
-ISO-L-EGD
-GE Jenbacher
-Caterpillar
-Cummins
-Waukesha`,
-  },  "almo-oil-525": {
+  },
+  "almo-oil-525": {
     name: "Mobil Almo Oil 525", grade: "ISO VG 525", series: "Mobil Almo Oil", type: "Pnömatik Ekipman Yağı",
     api: "", acea: "",
     approvals: [],
