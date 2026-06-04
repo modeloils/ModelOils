@@ -866,54 +866,6 @@
       "f2": "Maximum fuel economy",
       "f3": "Hybrid vehicle compatible"
     },
-    "1-esp-0w-30": {
-      "type": "Fully Synthetic",
-      "description": "A fully synthetic ESP motor oil developed specifically for Mercedes-Benz and Porsche vehicles. ACEA C3 certification provides superior protection in DPF-equipped vehicles.",
-      "f0": "MB 229.51 approved",
-      "f1": "Porsche A40 approved",
-      "f2": "DPF compatible Low-SAPS",
-      "f3": "Superior cold start"
-    },
-    "1-esp-5w-30": {
-      "type": "Fully Synthetic",
-      "description": "A fully synthetic ESP motor oil with the widest OEM approval portfolio. Provides DPF protection and extended service intervals in BMW, Mercedes-Benz and Volkswagen Group vehicles.",
-      "f0": "BMW LL-04 approved",
-      "f1": "MB 229.51 approved",
-      "f2": "VW 504/507 compatible",
-      "f3": "Extended drain intervals"
-    },
-    "1-esp-x4-0w-40": {
-      "type": "Fully Synthetic",
-      "description": "A fully synthetic ESP motor oil developed for high-performance sports and luxury vehicles. Provides maximum engine protection and fuel efficiency across a wide temperature range.",
-      "f0": "MB 229.5 approved",
-      "f1": "Sports vehicle compatible",
-      "f2": "Wide operating temperature",
-      "f3": "High-load protection"
-    },
-    "1-fs-5w-40": {
-      "type": "Fully Synthetic",
-      "description": "A fully synthetic motor oil trusted by millions of vehicles worldwide. Wide OEM approval portfolio provides excellent protection for both European and global vehicle models.",
-      "f0": "Global OEM approvals",
-      "f1": "Year-round protection",
-      "f2": "VW and Porsche approved",
-      "f3": "Anti-shear formula"
-    },
-    "1-new-life-0w-40": {
-      "type": "Fully Synthetic",
-      "description": "A fully synthetic motor oil that protects your engine from the very first kilometre. Formulation optimized for Mercedes-Benz and Porsche high-performance engines delivers superior oxidation resistance.",
-      "f0": "High-performance engine compatible",
-      "f1": "MB 229.5 approved",
-      "f2": "Zero-kilometre protection",
-      "f3": "Superior oxidation resistance"
-    },
-    "super-3000-fe-5w-30": {
-      "type": "Fully Synthetic",
-      "description": "A fuel-economy focused fully synthetic motor oil. Low-friction formulation delivering excellent performance in Ford EcoBoost engines makes it ideal for everyday use.",
-      "f0": "Ford EcoBoost compatible",
-      "f1": "Fuel-saving focused",
-      "f2": "A5/B5 certified",
-      "f3": "Easy cold start"
-    },
     "super-3000-x1-5w-40": {
       "type": "Fully Synthetic",
       "description": "A reliable fully synthetic motor oil for a wide range of vehicles. High temperature protection and extended engine cleanliness provide superior performance in heavy urban traffic.",
@@ -921,46 +873,6 @@
       "f1": "High thermal protection",
       "f2": "Engine cleaning properties",
       "f3": "Wide vehicle compatibility"
-    },
-    "super-2000-10w-40": {
-      "type": "Semi-Synthetic",
-      "description": "A semi-synthetic motor oil providing reliable protection across a wide range of vehicles. Economical formulation meets standard maintenance needs in both petrol and diesel engines.",
-      "f0": "Economical semi-synthetic",
-      "f1": "Wide engine compatibility",
-      "f2": "VW and MB approved",
-      "f3": "Petrol/diesel compatible"
-    },
-    "delvac-1-esp-5w-30": {
-      "type": "Fully Synthetic (Heavy Duty)",
-      "description": "A fully synthetic ESP motor oil developed for latest-generation heavy-duty diesel engines. Fully compatible with SCR and DPF systems with Low-SAPS formulation meeting Euro 6 standards.",
-      "f0": "Euro 6 engine compatible",
-      "f1": "SCR/DPF protection",
-      "f2": "Low-SAPS formula",
-      "f3": "CK-4 certified"
-    },
-    "delvac-1-esp-5w-40": {
-      "type": "Fully Synthetic (Heavy Duty)",
-      "description": "A high-performance fully synthetic motor oil for heavy-duty truck and bus engines. Extended service intervals and superior deposit control reduce operating costs.",
-      "f0": "Extended service intervals",
-      "f1": "EGR compatible",
-      "f2": "Superior deposit control",
-      "f3": "Fuel economy"
-    },
-    "delvac-1300-super-15w-40": {
-      "type": "Mineral (Heavy Duty)",
-      "description": "A reliable and economical mineral motor oil for heavy-duty diesel engines. Wide OEM approval portfolio provides a cost-effective solution for large fleets.",
-      "f0": "Wide fleet compatibility",
-      "f1": "Economical mineral formula",
-      "f2": "Multi-OEM approved",
-      "f3": "Reliable heavy-duty protection"
-    },
-    "super-1000-15w-40": {
-      "type": "Mineral",
-      "description": "A reliable mineral motor oil meeting standard maintenance requirements. Economical choice providing basic protection in older generation petrol and diesel engines.",
-      "f0": "Basic engine protection",
-      "f1": "Economical mineral oil",
-      "f2": "Older engine compatible",
-      "f3": "Reliable standard performance"
     },
     "dte-10-excel-32": {
       "type": "Hydraulic Oil (High VI)",

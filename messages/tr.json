@@ -848,54 +848,6 @@
       "f2": "Maksimum yakıt ekonomisi",
       "f3": "Hibrit araç uyumlu"
     },
-    "1-esp-0w-30": {
-      "type": "Tam Sentetik",
-      "description": "Mercedes-Benz ve Porsche araçları için özel geliştirilmiş tam sentetik ESP motor yağı. ACEA C3 sertifikasyonuyla DPF filtreli araçlarda üstün koruma sağlar.",
-      "f0": "MB 229.51 onaylı",
-      "f1": "Porsche A40 onaylı",
-      "f2": "DPF uyumlu Low-SAPS",
-      "f3": "Soğuk başlangıç üstünlüğü"
-    },
-    "1-esp-5w-30": {
-      "type": "Tam Sentetik",
-      "description": "En geniş OEM onay portföyüne sahip tam sentetik ESP motor yağı. BMW, Mercedes-Benz ve Volkswagen Group araçlarında DPF koruma ve uzun servis aralığı sunar.",
-      "f0": "BMW LL-04 onaylı",
-      "f1": "MB 229.51 onaylı",
-      "f2": "VW 504/507 uyumlu",
-      "f3": "Uzun değişim aralığı"
-    },
-    "1-esp-x4-0w-40": {
-      "type": "Tam Sentetik",
-      "description": "Yüksek performanslı spor ve lüks araçlar için geliştirilmiş tam sentetik ESP motor yağı. Geniş sıcaklık aralığında maksimum motor koruması sağlar.",
-      "f0": "MB 229.5 onaylı",
-      "f1": "Spor araç uyumlu",
-      "f2": "Geniş çalışma sıcaklığı",
-      "f3": "Yüksek yük altı koruması"
-    },
-    "1-fs-5w-40": {
-      "type": "Tam Sentetik",
-      "description": "Dünya çapında milyonlarca araç tarafından güvenilen tam sentetik motor yağı. Geniş OEM onay portföyüyle hem Avrupa hem küresel araç modelleri için mükemmel koruma sağlar.",
-      "f0": "Küresel OEM onayları",
-      "f1": "Yıl boyu koruma",
-      "f2": "VW ve Porsche onaylı",
-      "f3": "Sürüklenme karşıtı formül"
-    },
-    "1-new-life-0w-40": {
-      "type": "Tam Sentetik",
-      "description": "Sıfırdan itibaren motorunuzu koruyan tam sentetik motor yağı. Mercedes-Benz ve Porsche yüksek performanslı motorları için optimize edilmiş formülasyonuyla üstün oksidasyon direnci sağlar.",
-      "f0": "Yüksek performans motor uyumlu",
-      "f1": "MB 229.5 onaylı",
-      "f2": "Sıfır kilometre koruması",
-      "f3": "Üstün oksidasyon direnci"
-    },
-    "super-3000-fe-5w-30": {
-      "type": "Tam Sentetik",
-      "description": "Yakıt ekonomisi odaklı tam sentetik motor yağı. Ford EcoBoost motorlarda mükemmel performans gösteren düşük sürtünmeli formülasyon.",
-      "f0": "Ford EcoBoost uyumlu",
-      "f1": "Yakıt tasarruf odaklı",
-      "f2": "A5/B5 sertifikalı",
-      "f3": "Soğuk başlangıç kolaylığı"
-    },
     "super-3000-x1-5w-40": {
       "type": "Tam Sentetik",
       "description": "Geniş bir araç yelpazesi için güvenilir tam sentetik motor yağı. Yüksek sıcaklık koruması ve uzun motor temizliği ile yoğun şehir trafiğinde üstün performans gösterir.",
@@ -903,46 +855,6 @@
       "f1": "Yüksek ısı koruması",
       "f2": "Motor temizleyici özellik",
       "f3": "Geniş araç uyumu"
-    },
-    "super-2000-10w-40": {
-      "type": "Yarı Sentetik",
-      "description": "Geniş bir araç yelpazesinde güvenilir koruma sunan yarı sentetik motor yağı. Hem benzinli hem dizel motorlarda standart bakım ihtiyaçlarını karşılar.",
-      "f0": "Ekonomik yarı sentetik",
-      "f1": "Geniş motor uyumu",
-      "f2": "VW ve MB onaylı",
-      "f3": "Benzinli/dizel uyumlu"
-    },
-    "delvac-1-esp-5w-30": {
-      "type": "Tam Sentetik (Ağır Hizmet)",
-      "description": "Son nesil ağır hizmet dizel motorları için tam sentetik ESP motor yağı. SCR ve DPF sistemleriyle tam uyumlu Low-SAPS formülasyonuyla Euro 6 standartlarını karşılar.",
-      "f0": "Euro 6 motor uyumlu",
-      "f1": "SCR/DPF koruması",
-      "f2": "Low-SAPS formülü",
-      "f3": "CK-4 sertifikalı"
-    },
-    "delvac-1-esp-5w-40": {
-      "type": "Tam Sentetik (Ağır Hizmet)",
-      "description": "Ağır hizmet kamyon ve otobüs motorları için yüksek performanslı tam sentetik motor yağı. Uzun servis aralıkları ve üstün deposit kontrolü ile işletme maliyetlerini düşürür.",
-      "f0": "Uzun servis aralığı",
-      "f1": "EGR uyumlu",
-      "f2": "Üstün deposit kontrolü",
-      "f3": "Yakıt ekonomisi"
-    },
-    "delvac-1300-super-15w-40": {
-      "type": "Mineral (Ağır Hizmet)",
-      "description": "Ağır hizmet dizel motorları için güvenilir ve ekonomik mineral motor yağı. Geniş OEM onay portföyüyle büyük filolar için maliyet etkin çözüm sunar.",
-      "f0": "Geniş filo uyumluluğu",
-      "f1": "Ekonomik mineral formül",
-      "f2": "Çok OEM onaylı",
-      "f3": "Güvenilir ağır hizmet koruması"
-    },
-    "super-1000-15w-40": {
-      "type": "Mineral",
-      "description": "Standart bakım gereksinimlerini karşılayan güvenilir mineral motor yağı. Eski nesil benzinli ve dizel motorlarda temel koruma sağlayan ekonomik seçenek.",
-      "f0": "Temel motor koruması",
-      "f1": "Ekonomik mineral yağ",
-      "f2": "Eski motor uyumlu",
-      "f3": "Güvenilir standart performans"
     },
     "dte-10-excel-32": {
       "type": "Hidrolik Yağ (Yüksek VI)",
