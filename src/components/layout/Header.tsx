@@ -89,6 +89,7 @@ export function Header({ locale = "en" }: HeaderProps) {
   }, [pathname]);
 
   return (
+    <>
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-[var(--z-header)] transition-all duration-300",
@@ -234,15 +235,17 @@ export function Header({ locale = "en" }: HeaderProps) {
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
+    </header>
 
-      {/* Mobile drawer */}
-      <div
-        className={cn(
-          "lg:hidden fixed inset-0 top-[120px] bg-brand-950/98 backdrop-blur-[12px] z-[calc(var(--z-header)-1)] transition-transform duration-300 overflow-y-auto",
-          mobileOpen ? "translate-x-0" : "translate-x-full"
-        )}
-        aria-hidden={!mobileOpen}
-      >
+    {/* Mobile drawer — rendered outside <header> so the header's backdrop-filter
+        does not create a new containing block and break fixed positioning on iOS */}
+    <div
+      className={cn(
+        "lg:hidden fixed inset-0 top-[120px] bg-brand-950/98 backdrop-blur-[12px] z-[calc(var(--z-header)-1)] transition-transform duration-300 overflow-y-auto",
+        mobileOpen ? "translate-x-0" : "translate-x-full"
+      )}
+      aria-hidden={!mobileOpen}
+    >
         <div className="flex flex-col p-6 gap-1">
           {/* Locale selector – mobile */}
           <div className="flex flex-wrap gap-2 mb-4 pb-4 border-b border-brand-700">
@@ -332,6 +335,6 @@ export function Header({ locale = "en" }: HeaderProps) {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }
