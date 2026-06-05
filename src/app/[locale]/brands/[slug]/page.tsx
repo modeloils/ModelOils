@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
 import { ArrowLeft, ArrowRight, FlaskConical, Truck } from "lucide-react";
 
 const BRANDS: Record<string, { name: string; logo: string }> = {
@@ -22,7 +23,8 @@ export async function generateStaticParams() {
 }
 
 export default async function BrandPage({ params }: BrandPageProps) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
   const brand = BRANDS[slug.toLowerCase()];
 
   if (!brand) notFound();
