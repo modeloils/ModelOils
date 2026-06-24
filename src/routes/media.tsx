@@ -75,9 +75,10 @@ export function Media() {
             />
             <button
               onClick={() => setLightbox(null)}
-              className="absolute -right-3 -top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-100"
+              aria-label="Close"
+              className="absolute -right-2 -top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-100 sm:-right-4 sm:-top-4"
             >
-              <X className="h-4 w-4 text-gray-800" />
+              <X className="h-5 w-5 text-gray-800" />
             </button>
           </div>
         </div>
@@ -104,7 +105,7 @@ export function Media() {
                       className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                     <span className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/20">
-                      <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/0 opacity-0 shadow transition-all group-hover:bg-white/90 group-hover:opacity-100">
+                      <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/80 opacity-100 shadow transition-all group-hover:bg-white/90 sm:bg-white/0 sm:opacity-0 sm:group-hover:bg-white/90 sm:group-hover:opacity-100">
                         <ZoomIn className="h-4 w-4 text-gray-800" />
                       </span>
                     </span>

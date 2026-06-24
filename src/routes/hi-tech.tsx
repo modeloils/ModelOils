@@ -542,7 +542,7 @@ export function HiTech() {
             <div className="mt-8">
               <Button asChild variant="hero" size="lg">
                 <LocaleLink to="/contact">
-                  {t.hitech.becomeDistributor} <ArrowRight className="h-4 w-4" />
+                  {t.hitech.becomeDistributor} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
                 </LocaleLink>
               </Button>
             </div>
@@ -616,9 +616,9 @@ function BackToCategories() {
     <LocaleLink
       to="/hi-tech"
       hash="kategorilerimiz"
-      className="mb-8 inline-flex items-center gap-1.5 rounded-md border border-border bg-[image:var(--gradient-panel)] px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-colors hover:border-primary/50 hover:text-foreground"
+      className="mb-8 inline-flex min-h-[44px] items-center gap-1.5 rounded-md border border-border bg-[image:var(--gradient-panel)] px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-colors hover:border-primary/50 hover:text-foreground"
     >
-      <ChevronLeft className="h-4 w-4" />
+      <ChevronLeft className="h-4 w-4 shrink-0 rtl:rotate-180" />
       {t.common.backToProducts}
     </LocaleLink>
   );
@@ -652,9 +652,9 @@ export function HiTechSubcategory() {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <LocaleLink
                 to={`/hi-tech/${category}`}
-                className="mb-8 inline-flex items-center gap-1.5 rounded-md border border-border bg-[image:var(--gradient-panel)] px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-colors hover:border-primary/50 hover:text-foreground"
+                className="mb-8 inline-flex min-h-[44px] items-center gap-1.5 rounded-md border border-border bg-[image:var(--gradient-panel)] px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-colors hover:border-primary/50 hover:text-foreground"
               >
-                <ChevronLeft className="h-4 w-4" />
+                <ChevronLeft className="h-4 w-4 shrink-0 rtl:rotate-180" />
                 {translatedCatTitle}
               </LocaleLink>
               <SectionHeading eyebrow="HI-TECH" title={product ? (subcatTranslations[product] ?? subData.title) : subData.title} />
@@ -804,20 +804,21 @@ export function HiTechProduct() {
       {/* Lightbox */}
       {lightboxOpen && (
         <div
-          className="fixed inset-0 z-50 flex cursor-pointer items-center justify-center bg-black/85 p-6"
+          className="fixed inset-0 z-50 flex cursor-pointer items-center justify-center bg-black/85 p-4"
           onClick={() => setLightboxOpen(false)}
         >
           <div className="relative" onClick={(e) => e.stopPropagation()}>
             <img
               src={product.image}
               alt={product.name}
-              className="max-h-[80vh] max-w-[80vw] object-contain drop-shadow-2xl"
+              className="max-h-[80vh] max-w-[88vw] object-contain drop-shadow-2xl"
             />
             <button
               onClick={() => setLightboxOpen(false)}
-              className="absolute -right-4 -top-4 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-100"
+              className="absolute -right-2 -top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-100 sm:-right-4 sm:-top-4"
+              aria-label="Close"
             >
-              <X className="h-4 w-4 text-gray-800" />
+              <X className="h-5 w-5 text-gray-800" />
             </button>
           </div>
         </div>
@@ -829,9 +830,9 @@ export function HiTechProduct() {
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <LocaleLink
               to={parentSubcategorySlug ? `/hi-tech/${category}/${parentSubcategorySlug}` : `/hi-tech/${category ?? ""}`}
-              className="inline-flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="inline-flex min-h-[44px] items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
-              <ChevronLeft className="h-4 w-4" />
+              <ChevronLeft className="h-4 w-4 shrink-0 rtl:rotate-180" />
               {translatedSubcatTitle ?? translatedCatTitle ?? category}
             </LocaleLink>
           </div>
@@ -841,19 +842,19 @@ export function HiTechProduct() {
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-16">
             {/* Circular product image — circle is the background, image floats on top */}
-            <div className="flex shrink-0 items-center justify-center">
+            <div className="flex w-full shrink-0 items-center justify-center lg:w-auto">
               <button
                 onClick={() => setLightboxOpen(true)}
-                className="group relative flex h-72 w-72 cursor-zoom-in items-center justify-center sm:h-80 sm:w-80"
+                className="group relative flex h-64 w-64 cursor-zoom-in items-center justify-center sm:h-72 sm:w-72 lg:h-80 lg:w-80"
                 aria-label="Resmi büyüt"
               >
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="relative z-10 h-64 w-auto max-w-[85%] object-contain transition-transform duration-300 group-hover:scale-105 sm:h-72"
+                  className="relative z-10 h-56 w-auto max-w-[85%] object-contain transition-transform duration-300 group-hover:scale-105 sm:h-64 lg:h-72"
                 />
-                <span className="absolute bottom-5 right-5 z-20 flex h-7 w-7 items-center justify-center rounded-full bg-white/80 opacity-0 shadow transition-opacity group-hover:opacity-100">
-                  <ZoomIn className="h-3.5 w-3.5 text-gray-700" />
+                <span className="absolute bottom-5 right-5 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-white/80 shadow transition-opacity group-hover:opacity-100 sm:opacity-0">
+                  <ZoomIn className="h-4 w-4 text-gray-700" />
                 </span>
               </button>
             </div>

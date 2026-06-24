@@ -7,23 +7,23 @@ export function Footer() {
 
   return (
     <footer className="border-t border-border bg-[image:var(--gradient-panel)]">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-5 lg:px-8">
-        <div className="lg:col-span-2">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:grid-cols-2 sm:px-6 lg:grid-cols-5 lg:px-8">
+        <div className="sm:col-span-2 lg:col-span-2">
           <img
             src="/model-oils/images/logo-main.png"
             alt="Model Oils"
-            className="h-28 w-auto object-contain"
+            className="h-20 w-auto object-contain lg:h-28"
           />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
             {t.footer.taglinePre}{" "}
             <span className="font-semibold text-foreground">HI-TECH</span> {t.footer.taglinePost}
           </p>
           <div className="mt-5 space-y-2 text-sm text-muted-foreground">
-            <a href={`mailto:${CONTACT.email}`} className="flex items-center gap-2 hover:text-primary">
-              <Mail className="h-4 w-4" /> {CONTACT.email}
+            <a href={`mailto:${CONTACT.email}`} className="flex min-h-[44px] items-center gap-2 hover:text-primary">
+              <Mail className="h-4 w-4 shrink-0" /> {CONTACT.email}
             </a>
-            <a href={CONTACT.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
-              <MessageCircle className="h-4 w-4" /> WhatsApp: {CONTACT.phone}
+            <a href={CONTACT.whatsapp} target="_blank" rel="noopener noreferrer" className="flex min-h-[44px] items-center gap-2 hover:text-primary">
+              <MessageCircle className="h-4 w-4 shrink-0" /> WhatsApp: {CONTACT.phone}
             </a>
             <span className="flex items-center gap-2">
               <Globe className="h-4 w-4" /> {t.footer.exportWelcome}

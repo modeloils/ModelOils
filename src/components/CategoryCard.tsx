@@ -37,7 +37,7 @@ export function CategoryCard({ category }: { category: Category }) {
       </div>
       <Button asChild variant="ghost" size="sm" className="mt-5 justify-start px-0 text-primary hover:bg-transparent hover:text-primary/80">
         <LocaleLink to="/contact">
-          {t.card.requestQuote} <ArrowRight className="h-4 w-4" />
+          {t.card.requestQuote} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
         </LocaleLink>
       </Button>
     </div>

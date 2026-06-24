@@ -31,7 +31,7 @@ export function Export() {
         <div className="mt-8">
           <Button asChild variant="hero" size="lg">
             <LocaleLink to="/contact">
-              {t.exportPage.requestOffer} <ArrowRight className="h-4 w-4" />
+              {t.exportPage.requestOffer} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
             </LocaleLink>
           </Button>
         </div>

@@ -116,9 +116,9 @@ export function Products() {
         <div className="relative mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
           <LocaleLink
             to="/"
-            className="inline-flex items-center gap-1.5 rounded-md border border-border bg-[image:var(--gradient-panel)] px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-colors hover:border-primary/50 hover:text-foreground"
+            className="inline-flex min-h-[44px] items-center gap-1.5 rounded-md border border-border bg-[image:var(--gradient-panel)] px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-colors hover:border-primary/50 hover:text-foreground"
           >
-            <ChevronLeft className="h-4 w-4" />
+            <ChevronLeft className="h-4 w-4 shrink-0 rtl:rotate-180" />
             {t.common.backToHome}
           </LocaleLink>
         </div>

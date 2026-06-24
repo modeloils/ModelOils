@@ -32,7 +32,7 @@ function ArticleCard({ article }: { article: BlogArticle }) {
         {excerpt}
       </p>
       <span className="mt-5 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-        {t.blogPage.readMore} <ArrowRight className="h-3 w-3" />
+        {t.blogPage.readMore} <ArrowRight className="h-3 w-3 rtl:rotate-180" />
       </span>
     </LocaleLink>
   );
@@ -77,9 +77,9 @@ export function Blog() {
           </p>
           <LocaleLink
             to="/contact"
-            className="mt-8 inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+            className="mt-8 inline-flex min-h-[44px] items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
           >
-            {t.quoteCta.requestWholesale} <ArrowRight className="h-4 w-4" />
+            {t.quoteCta.requestWholesale} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
           </LocaleLink>
         </div>
       </section>

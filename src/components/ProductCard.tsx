@@ -39,7 +39,7 @@ export function ProductCard({ product }: { product: Product }) {
         </dl>
         <Button asChild variant="steel" size="sm" className="mt-5 w-full">
           <LocaleLink to="/contact">
-            {t.card.requestQuote} <ArrowRight className="h-4 w-4" />
+            {t.card.requestQuote} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
           </LocaleLink>
         </Button>
       </div>

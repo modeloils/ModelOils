@@ -28,13 +28,13 @@ export function BrandCatalogPage({
           <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
             <LocaleLink
               to="/products"
-              className="relative inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className="relative inline-flex min-h-[44px] items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
-              <ArrowLeft className="h-4 w-4" />
+              <ArrowLeft className="h-4 w-4 shrink-0 rtl:rotate-180" />
               {t.common.backToBrands}
             </LocaleLink>
 
-            <div className="relative flex min-h-[360px] items-center justify-center py-12">
+            <div className="relative flex min-h-[200px] items-center justify-center py-8 sm:min-h-[360px] sm:py-12">
               <img
                 src={logo}
                 alt={brandName}

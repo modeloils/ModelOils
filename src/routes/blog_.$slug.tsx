@@ -26,9 +26,9 @@ export function BlogArticle() {
             <p className="text-lg font-semibold text-foreground">{t.notFound.title}</p>
             <LocaleLink
               to="/blog"
-              className="mt-4 inline-flex items-center gap-2 text-sm text-primary hover:underline"
+              className="mt-4 inline-flex min-h-[44px] items-center gap-2 text-sm text-primary hover:underline"
             >
-              <ArrowLeft className="h-4 w-4" /> {t.blogPage.backToBlog}
+              <ArrowLeft className="h-4 w-4 rtl:rotate-180" /> {t.blogPage.backToBlog}
             </LocaleLink>
           </div>
         </div>
@@ -42,9 +42,9 @@ export function BlogArticle() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <LocaleLink
             to="/blog"
-            className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            className="inline-flex min-h-[44px] items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
           >
-            <ArrowLeft className="h-4 w-4" /> {t.blogPage.backToBlog}
+            <ArrowLeft className="h-4 w-4 rtl:rotate-180" /> {t.blogPage.backToBlog}
           </LocaleLink>
 
           <h1 className="mt-8 font-display text-3xl font-bold leading-tight text-foreground sm:text-4xl">
@@ -72,15 +72,15 @@ export function BlogArticle() {
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <LocaleLink
               to="/contact"
-              className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
             >
-              {t.quoteCta.requestWholesale} <ArrowRight className="h-4 w-4" />
+              {t.quoteCta.requestWholesale} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
             </LocaleLink>
             <LocaleLink
               to="/blog"
-              className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-accent"
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-md border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-accent"
             >
-              <ArrowLeft className="h-4 w-4" /> {t.blogPage.backToBlog}
+              <ArrowLeft className="h-4 w-4 rtl:rotate-180" /> {t.blogPage.backToBlog}
             </LocaleLink>
           </div>
         </div>

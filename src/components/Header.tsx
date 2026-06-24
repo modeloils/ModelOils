@@ -10,12 +10,12 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-xl">
-      <div className="mx-auto flex h-28 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 sm:h-20 sm:px-6 lg:h-28 lg:px-8">
         <LocaleLink to="/" className="flex min-w-0 items-center" onClick={() => setOpen(false)}>
           <img
             src="/model-oils/images/logo-main.png"
             alt="Model Oils"
-            className="h-24 w-auto shrink-0 object-contain"
+            className="h-12 w-auto shrink-0 object-contain sm:h-16 lg:h-24"
           />
         </LocaleLink>
 
@@ -46,7 +46,7 @@ export function Header() {
         <div className="ml-auto flex items-center gap-2">
           <LanguageSwitcher className="hidden sm:inline-flex" />
           <button
-            className="grid h-10 w-10 place-items-center rounded-md border border-border text-foreground lg:hidden"
+            className="grid h-11 w-11 place-items-center rounded-md border border-border text-foreground lg:hidden"
             aria-label="Toggle menu"
             onClick={() => setOpen((v) => !v)}
           >
@@ -64,7 +64,7 @@ export function Header() {
                 to={l.to}
                 onClick={() => setOpen(false)}
                 activeProps={{ className: "bg-secondary text-primary" }}
-                className="flex items-center justify-between rounded-md px-3 py-3 text-sm font-medium text-foreground"
+                className="flex min-h-[44px] items-center justify-between rounded-md px-3 py-3 text-sm font-medium text-foreground"
               >
                 {l.key === "hiTech" ? (
                   <span className="flex flex-col leading-none">
