@@ -12,6 +12,8 @@ import flagshipImg from "@/assets/flagship.png";
 interface ProductItem {
   slug: string;
   name: string;
+  /** Optional per-locale display name; falls back to `name` when absent or missing a locale. */
+  displayName?: Record<string, string>;
   image: string;
 }
 
@@ -25,6 +27,9 @@ function resolveText(val: LocaleText, locale: string): string {
 function resolveArray(val: LocaleTextArray, locale: string): string[] {
   if (Array.isArray(val)) return val;
   return val[locale] ?? val["en"] ?? [];
+}
+function resolveName(item: ProductItem, locale: string): string {
+  return item.displayName?.[locale] ?? item.displayName?.["en"] ?? item.name;
 }
 
 interface ProductDetail {
@@ -138,9 +143,9 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
   Antifrizler: {
     title: "Antifrizler",
     products: [
-      { slug: "Antifriz-37",       name: "Antifriz -37",       image: "/model-oils/images/hi-tech/antifrizler/Antifriz%20-37.png" },
-      { slug: "Antifriz-56",       name: "Antifriz -56",       image: "/model-oils/images/hi-tech/antifrizler/Antifriz%20-56.png" },
-      { slug: "Antifriz-Konsantre", name: "Antifriz Konsantre", image: "/model-oils/images/hi-tech/antifrizler/Antifriz%20Konsantre.png" },
+      { slug: "Antifriz-37",       name: "Antifriz -37",       displayName: { en: "Antifreeze -37", tr: "Antifriz -37", ru: "Антифриз -37", fa: "ضدیخ -۳۷", ar: "مانع التجمد -37", de: "Frostschutz -37", fr: "Antigel -37" }, image: "/model-oils/images/hi-tech/antifrizler/Antifriz%20-37.png" },
+      { slug: "Antifriz-56",       name: "Antifriz -56",       displayName: { en: "Antifreeze -56", tr: "Antifriz -56", ru: "Антифриз -56", fa: "ضدیخ -۵۶", ar: "مانع التجمد -56", de: "Frostschutz -56", fr: "Antigel -56" }, image: "/model-oils/images/hi-tech/antifrizler/Antifriz%20-56.png" },
+      { slug: "Antifriz-Konsantre", name: "Antifriz Konsantre", displayName: { en: "Antifreeze Concentrate", tr: "Antifriz Konsantre", ru: "Концентрат антифриза", fa: "ضدیخ کنسانتره", ar: "مركّز مانع التجمد", de: "Frostschutzkonzentrat", fr: "Concentré d'antigel" }, image: "/model-oils/images/hi-tech/antifrizler/Antifriz%20Konsantre.png" },
     ],
     details: {
       "Antifriz-37": {
@@ -298,10 +303,10 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
   Gresler: {
     title: "Gresler",
     products: [
-      { slug: "Gres-Beyaz",   name: "Kalsiyum Beyaz Gres",         image: "/model-oils/images/hi-tech/gresler/Beyaz.png" },
-      { slug: "Gres-Kirmizi", name: "Kalsiyum Kırmızı Gres",       image: "/model-oils/images/hi-tech/gresler/K%C4%B1rm%C4%B1z%C4%B1.png" },
-      { slug: "Lithium-Gres", name: "Lityum EP Gres",              image: "/model-oils/images/hi-tech/gresler/Lithium.png" },
-      { slug: "Gres-Yesil",   name: "Kalsiyum Kauçuk Yeşil Gres", image: "/model-oils/images/hi-tech/gresler/Ye%C5%9Fil.png" },
+      { slug: "Gres-Beyaz",   name: "Kalsiyum Beyaz Gres",         displayName: { en: "Calcium White Grease", tr: "Kalsiyum Beyaz Gres", ru: "Кальциевая белая смазка", fa: "گریس سفید کلسیم", ar: "شحم الكالسيوم الأبيض", de: "Kalzium-Weißfett", fr: "Graisse blanche au calcium" }, image: "/model-oils/images/hi-tech/gresler/Beyaz.png" },
+      { slug: "Gres-Kirmizi", name: "Kalsiyum Kırmızı Gres",       displayName: { en: "Calcium Red Grease", tr: "Kalsiyum Kırmızı Gres", ru: "Кальциевая красная смазка", fa: "گریس قرمز کلسیم", ar: "شحم الكالسيوم الأحمر", de: "Kalzium-Rotfett", fr: "Graisse rouge au calcium" }, image: "/model-oils/images/hi-tech/gresler/K%C4%B1rm%C4%B1z%C4%B1.png" },
+      { slug: "Lithium-Gres", name: "Lityum EP Gres",              displayName: { en: "Lithium EP Grease", tr: "Lityum EP Gres", ru: "Литиевая смазка EP", fa: "گریس لیتیم EP", ar: "شحم الليثيوم EP", de: "Lithium-EP-Fett", fr: "Graisse au lithium EP" }, image: "/model-oils/images/hi-tech/gresler/Lithium.png" },
+      { slug: "Gres-Yesil",   name: "Kalsiyum Kauçuk Yeşil Gres", displayName: { en: "Calcium Rubber Green Grease", tr: "Kalsiyum Kauçuk Yeşil Gres", ru: "Кальциевая каучуковая зелёная смазка", fa: "گریس سبز لاستیکی کلسیم", ar: "شحم الكالسيوم المطاطي الأخضر", de: "Kalzium-Kautschuk-Grünfett", fr: "Graisse verte caoutchouc au calcium" }, image: "/model-oils/images/hi-tech/gresler/Ye%C5%9Fil.png" },
     ],
     details: {
       "Gres-Beyaz": {
@@ -509,10 +514,10 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
   "Endustriyel-Yaglar": {
     title: "Endüstriyel Yağlar",
     products: [
-      { slug: "Hydra-32",  name: "Hydra 32 Hidrolik Yağ", image: "/model-oils/images/hi-tech/end%C3%BCstriyel/Hydra32.png" },
-      { slug: "Hydra-46",  name: "Hydra 46 Hidrolik Yağ", image: "/model-oils/images/hi-tech/end%C3%BCstriyel/Hydra46.png" },
-      { slug: "Hydra-68",  name: "Hydra 68 Hidrolik Yağ", image: "/model-oils/images/hi-tech/end%C3%BCstriyel/Hydra68.png" },
-      { slug: "Kesme-Yagi", name: "Kesme Yağı",           image: "/model-oils/images/hi-tech/end%C3%BCstriyel/Kesme.png" },
+      { slug: "Hydra-32",  name: "Hydra 32 Hidrolik Yağ", displayName: { en: "Hydra 32 Hydraulic Oil", tr: "Hydra 32 Hidrolik Yağ", ru: "Hydra 32 Гидравлическое масло", fa: "روغن هیدرولیک Hydra 32", ar: "زيت هيدروليكي Hydra 32", de: "Hydra 32 Hydrauliköl", fr: "Huile hydraulique Hydra 32" }, image: "/model-oils/images/hi-tech/end%C3%BCstriyel/Hydra32.png" },
+      { slug: "Hydra-46",  name: "Hydra 46 Hidrolik Yağ", displayName: { en: "Hydra 46 Hydraulic Oil", tr: "Hydra 46 Hidrolik Yağ", ru: "Hydra 46 Гидравлическое масло", fa: "روغن هیدرولیک Hydra 46", ar: "زيت هيدروليكي Hydra 46", de: "Hydra 46 Hydrauliköl", fr: "Huile hydraulique Hydra 46" }, image: "/model-oils/images/hi-tech/end%C3%BCstriyel/Hydra46.png" },
+      { slug: "Hydra-68",  name: "Hydra 68 Hidrolik Yağ", displayName: { en: "Hydra 68 Hydraulic Oil", tr: "Hydra 68 Hidrolik Yağ", ru: "Hydra 68 Гидравлическое масло", fa: "روغن هیدرولیک Hydra 68", ar: "زيت هيدروليكي Hydra 68", de: "Hydra 68 Hydrauliköl", fr: "Huile hydraulique Hydra 68" }, image: "/model-oils/images/hi-tech/end%C3%BCstriyel/Hydra68.png" },
+      { slug: "Kesme-Yagi", name: "Kesme Yağı",           displayName: { en: "Cutting Oil", tr: "Kesme Yağı", ru: "Смазочно-охлаждающая жидкость", fa: "روغن برشکاری", ar: "زيت القطع", de: "Schneidöl", fr: "Huile de coupe" }, image: "/model-oils/images/hi-tech/end%C3%BCstriyel/Kesme.png" },
     ],
     details: {
       "Hydra-32": {
@@ -880,12 +885,12 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
   "Agir-Hizmet-Motor-Yaglari": {
     title: "Ağır Hizmet Motor Yağları",
     products: [
-      { slug: "HD-5W30",   name: "5W-30 Ağır Hizmet Dizel Yağı",  image: "/model-oils/images/hi-tech/ticari/5w30.png" },
-      { slug: "HD-10W40",  name: "10W-40 Ağır Hizmet Dizel Yağı", image: "/model-oils/images/hi-tech/ticari/10w40.png" },
-      { slug: "HD-15W40",  name: "15W-40 Ağır Hizmet Dizel Yağı", image: "/model-oils/images/hi-tech/ticari/15w40.png" },
-      { slug: "SAE-30W",   name: "SAE 30W Monograt Motor Yağı",   image: "/model-oils/images/hi-tech/ticari/sae30w.png" },
-      { slug: "SAE-40W",   name: "SAE 40W Monograt Motor Yağı",   image: "/model-oils/images/hi-tech/ticari/sae40w.png" },
-      { slug: "SAE-50W",   name: "SAE 50W Monograt Motor Yağı",   image: "/model-oils/images/hi-tech/ticari/sae50w.png" },
+      { slug: "HD-5W30",   name: "5W-30 Ağır Hizmet Dizel Yağı",  displayName: { en: "5W-30 Heavy Duty Diesel Oil", tr: "5W-30 Ağır Hizmet Dizel Yağı", ru: "5W-30 Дизельное масло для тяжёлых условий", fa: "روغن دیزل خدمات سنگین 5W-30", ar: "زيت ديزل ثقيل الخدمة 5W-30", de: "5W-30 Schwerlast-Dieselöl", fr: "Huile diesel service intensif 5W-30" }, image: "/model-oils/images/hi-tech/ticari/5w30.png" },
+      { slug: "HD-10W40",  name: "10W-40 Ağır Hizmet Dizel Yağı", displayName: { en: "10W-40 Heavy Duty Diesel Oil", tr: "10W-40 Ağır Hizmet Dizel Yağı", ru: "10W-40 Дизельное масло для тяжёлых условий", fa: "روغن دیزل خدمات سنگین 10W-40", ar: "زيت ديزل ثقيل الخدمة 10W-40", de: "10W-40 Schwerlast-Dieselöl", fr: "Huile diesel service intensif 10W-40" }, image: "/model-oils/images/hi-tech/ticari/10w40.png" },
+      { slug: "HD-15W40",  name: "15W-40 Ağır Hizmet Dizel Yağı", displayName: { en: "15W-40 Heavy Duty Diesel Oil", tr: "15W-40 Ağır Hizmet Dizel Yağı", ru: "15W-40 Дизельное масло для тяжёлых условий", fa: "روغن دیزل خدمات سنگین 15W-40", ar: "زيت ديزل ثقيل الخدمة 15W-40", de: "15W-40 Schwerlast-Dieselöl", fr: "Huile diesel service intensif 15W-40" }, image: "/model-oils/images/hi-tech/ticari/15w40.png" },
+      { slug: "SAE-30W",   name: "SAE 30W Monograt Motor Yağı",   displayName: { en: "SAE 30W Monograde Engine Oil", tr: "SAE 30W Monograt Motor Yağı", ru: "SAE 30W Моторное масло (моносорт)", fa: "روغن موتور تک‌درجه SAE 30W", ar: "زيت محرك أحادي الدرجة SAE 30W", de: "SAE 30W Einbereichsmotoröl", fr: "Huile moteur monograde SAE 30W" }, image: "/model-oils/images/hi-tech/ticari/sae30w.png" },
+      { slug: "SAE-40W",   name: "SAE 40W Monograt Motor Yağı",   displayName: { en: "SAE 40W Monograde Engine Oil", tr: "SAE 40W Monograt Motor Yağı", ru: "SAE 40W Моторное масло (моносорт)", fa: "روغن موتور تک‌درجه SAE 40W", ar: "زيت محرك أحادي الدرجة SAE 40W", de: "SAE 40W Einbereichsmotoröl", fr: "Huile moteur monograde SAE 40W" }, image: "/model-oils/images/hi-tech/ticari/sae40w.png" },
+      { slug: "SAE-50W",   name: "SAE 50W Monograt Motor Yağı",   displayName: { en: "SAE 50W Monograde Engine Oil", tr: "SAE 50W Monograt Motor Yağı", ru: "SAE 50W Моторное масло (моносорт)", fa: "روغن موتور تک‌درجه SAE 50W", ar: "زيت محرك أحادي الدرجة SAE 50W", de: "SAE 50W Einbereichsmotoröl", fr: "Huile moteur monograde SAE 50W" }, image: "/model-oils/images/hi-tech/ticari/sae50w.png" },
     ],
     details: {
       "HD-5W30": {
@@ -1193,8 +1198,8 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
   "Motosiklet-Yaglari": {
     title: "Motosiklet Yağları",
     products: [
-      { slug: "Moto-4T-10W40", name: "4T 10W-40 Motor Yağı", image: "/model-oils/images/hi-tech/motosiklet/4t.png" },
-      { slug: "Moto-2T",       name: "2T Motor Yağı",        image: "/model-oils/images/hi-tech/motosiklet/2t.png" },
+      { slug: "Moto-4T-10W40", name: "4T 10W-40 Motor Yağı", displayName: { en: "4T 10W-40 Engine Oil", tr: "4T 10W-40 Motor Yağı", ru: "4T 10W-40 Моторное масло", fa: "روغن موتور 4T 10W-40", ar: "زيت محرك 4T 10W-40", de: "4T 10W-40 Motoröl", fr: "Huile moteur 4T 10W-40" }, image: "/model-oils/images/hi-tech/motosiklet/4t.png" },
+      { slug: "Moto-2T",       name: "2T Motor Yağı",        displayName: { en: "2T Engine Oil", tr: "2T Motor Yağı", ru: "2T Моторное масло", fa: "روغن موتور 2T", ar: "زيت محرك 2T", de: "2T Motoröl", fr: "Huile moteur 2T" }, image: "/model-oils/images/hi-tech/motosiklet/2t.png" },
     ],
     details: {
       "Moto-4T-10W40": {
@@ -1302,12 +1307,12 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
   "Disli-ve-Transmisyon-Yaglari": {
     title: "Dişli ve Transmisyon Yağları",
     products: [
-      { slug: "Gear-75W80",  name: "75W-80 Sentetik Dişli Yağı",  image: "/model-oils/images/hi-tech/di%C5%9Fliler/7580.png" },
-      { slug: "Gear-75W90",  name: "75W-90 Sentetik Dişli Yağı",  image: "/model-oils/images/hi-tech/di%C5%9Fliler/7590.png" },
-      { slug: "Gear-80W90",  name: "80W-90 Sentetik Dişli Yağı",  image: "/model-oils/images/hi-tech/di%C5%9Fliler/8090.png" },
-      { slug: "Gear-85W140", name: "85W-140 Sentetik Dişli Yağı", image: "/model-oils/images/hi-tech/di%C5%9Fliler/85140.png" },
-      { slug: "Gear-90W",    name: "Gear 90W Mineral Dişli Yağı", image: "/model-oils/images/hi-tech/di%C5%9Fliler/90w.png" },
-      { slug: "Gear-140",    name: "Gear 140 Mineral Dişli Yağı", image: "/model-oils/images/hi-tech/di%C5%9Fliler/140w.png" },
+      { slug: "Gear-75W80",  name: "75W-80 Sentetik Dişli Yağı",  displayName: { en: "75W-80 Synthetic Gear Oil", tr: "75W-80 Sentetik Dişli Yağı", ru: "75W-80 Синтетическое трансмиссионное масло", fa: "روغن دنده سنتتیک 75W-80", ar: "زيت تروس اصطناعي 75W-80", de: "75W-80 Synthetisches Getriebeöl", fr: "Huile de transmission synthétique 75W-80" }, image: "/model-oils/images/hi-tech/di%C5%9Fliler/7580.png" },
+      { slug: "Gear-75W90",  name: "75W-90 Sentetik Dişli Yağı",  displayName: { en: "75W-90 Synthetic Gear Oil", tr: "75W-90 Sentetik Dişli Yağı", ru: "75W-90 Синтетическое трансмиссионное масло", fa: "روغن دنده سنتتیک 75W-90", ar: "زيت تروس اصطناعي 75W-90", de: "75W-90 Synthetisches Getriebeöl", fr: "Huile de transmission synthétique 75W-90" }, image: "/model-oils/images/hi-tech/di%C5%9Fliler/7590.png" },
+      { slug: "Gear-80W90",  name: "80W-90 Sentetik Dişli Yağı",  displayName: { en: "80W-90 Synthetic Gear Oil", tr: "80W-90 Sentetik Dişli Yağı", ru: "80W-90 Синтетическое трансмиссионное масло", fa: "روغن دنده سنتتیک 80W-90", ar: "زيت تروس اصطناعي 80W-90", de: "80W-90 Synthetisches Getriebeöl", fr: "Huile de transmission synthétique 80W-90" }, image: "/model-oils/images/hi-tech/di%C5%9Fliler/8090.png" },
+      { slug: "Gear-85W140", name: "85W-140 Sentetik Dişli Yağı", displayName: { en: "85W-140 Synthetic Gear Oil", tr: "85W-140 Sentetik Dişli Yağı", ru: "85W-140 Синтетическое трансмиссионное масло", fa: "روغن دنده سنتتیک 85W-140", ar: "زيت تروس اصطناعي 85W-140", de: "85W-140 Synthetisches Getriebeöl", fr: "Huile de transmission synthétique 85W-140" }, image: "/model-oils/images/hi-tech/di%C5%9Fliler/85140.png" },
+      { slug: "Gear-90W",    name: "Gear 90W Mineral Dişli Yağı", displayName: { en: "Gear 90W Mineral Gear Oil", tr: "Gear 90W Mineral Dişli Yağı", ru: "Gear 90W Минеральное трансмиссионное масло", fa: "روغن دنده معدنی Gear 90W", ar: "زيت تروس معدني Gear 90W", de: "Gear 90W Mineralisches Getriebeöl", fr: "Huile de transmission minérale Gear 90W" }, image: "/model-oils/images/hi-tech/di%C5%9Fliler/90w.png" },
+      { slug: "Gear-140",    name: "Gear 140 Mineral Dişli Yağı", displayName: { en: "Gear 140 Mineral Gear Oil", tr: "Gear 140 Mineral Dişli Yağı", ru: "Gear 140 Минеральное трансмиссионное масло", fa: "روغن دنده معدنی Gear 140", ar: "زيت تروس معدني Gear 140", de: "Gear 140 Mineralisches Getriebeöl", fr: "Huile de transmission minérale Gear 140" }, image: "/model-oils/images/hi-tech/di%C5%9Fliler/140w.png" },
     ],
     details: {
       "Gear-75W80": {
@@ -1758,7 +1763,7 @@ function BackToCategories() {
 
 export function HiTechSubcategory() {
   const { category, product } = useParams({ strict: false });
-  const { t, data } = useTranslation();
+  const { t, data, locale } = useTranslation();
   const catData = category ? CATEGORY_DATA[category] : undefined;
 
   // Build slug → translated category name using hitechCategorySlugs + data.categories
@@ -1800,13 +1805,13 @@ export function HiTechSubcategory() {
                     <div className="flex items-center justify-center p-8">
                       <img
                         src={p.image}
-                        alt={p.name}
+                        alt={resolveName(p, locale)}
                         className="h-56 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                       />
                     </div>
                     <div className="border-t border-border p-5">
                       <h3 className="font-display text-lg font-bold text-foreground transition-colors group-hover:text-primary">
-                        {p.name}
+                        {resolveName(p, locale)}
                       </h3>
                     </div>
                   </LocaleLink>
@@ -1871,13 +1876,13 @@ export function HiTechSubcategory() {
                   <div className="flex items-center justify-center p-8">
                     <img
                       src={p.image}
-                      alt={p.name}
+                      alt={resolveName(p, locale)}
                       className="h-56 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>
                   <div className="border-t border-border p-5">
                     <h3 className="font-display text-lg font-bold text-foreground transition-colors group-hover:text-primary">
-                      {p.name}
+                      {resolveName(p, locale)}
                     </h3>
                   </div>
                 </LocaleLink>
@@ -1942,7 +1947,7 @@ export function HiTechProduct() {
           <div className="relative" onClick={(e) => e.stopPropagation()}>
             <img
               src={product.image}
-              alt={product.name}
+              alt={resolveName(product, locale)}
               className="max-h-[80vh] max-w-[80vw] object-contain drop-shadow-2xl"
             />
             <button
@@ -1981,7 +1986,7 @@ export function HiTechProduct() {
               >
                 <img
                   src={product.image}
-                  alt={product.name}
+                  alt={resolveName(product, locale)}
                   className="relative z-10 h-64 w-auto max-w-[85%] object-contain transition-transform duration-300 group-hover:scale-105 sm:h-72"
                 />
                 <span className="absolute bottom-5 right-5 z-20 flex h-7 w-7 items-center justify-center rounded-full bg-white/80 opacity-0 shadow transition-opacity group-hover:opacity-100">
@@ -1995,7 +2000,7 @@ export function HiTechProduct() {
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wider text-primary">HI-TECH</p>
                 <h1 className="mt-1 font-display text-3xl font-bold text-foreground sm:text-4xl">
-                  {product.name}
+                  {resolveName(product, locale)}
                 </h1>
               </div>
 
@@ -2011,7 +2016,7 @@ export function HiTechProduct() {
                 {t.hitech.productDescription}
               </p>
               <p className="text-sm leading-relaxed text-muted-foreground">
-                <span className="font-semibold text-primary">HI-TECH {product.name.toUpperCase()},</span>{" "}
+                <span className="font-semibold text-primary">HI-TECH {resolveName(product, locale).toUpperCase()},</span>{" "}
                 {resolveText(detail.description, locale).replace(/^[^,]+,\s*/, "")}
               </p>
             </div>
