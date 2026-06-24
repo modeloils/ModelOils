@@ -21,10 +21,10 @@ export function QuoteForm() {
         (e.target as HTMLFormElement).reset();
         toast.success(t.form.toastTitle, { description: t.form.toastBody });
       } else {
-        toast.error("Error", { description: "Could not send your request. Please email us directly." });
+        toast.error(t.form.errorTitle, { description: t.form.errorBody });
       }
     } catch {
-      toast.error("Error", { description: "Network error. Please email us directly at info@modelgrup.com" });
+      toast.error(t.form.errorTitle, { description: t.form.networkError });
     } finally {
       setSubmitting(false);
     }

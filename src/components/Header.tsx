@@ -47,7 +47,7 @@ export function Header() {
           <LanguageSwitcher className="hidden sm:inline-flex" />
           <button
             className="grid h-10 w-10 place-items-center rounded-md border border-border text-foreground lg:hidden"
-            aria-label="Toggle menu"
+            aria-label={t.nav.toggleMenu}
             onClick={() => setOpen((v) => !v)}
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}

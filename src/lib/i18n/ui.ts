@@ -15,6 +15,8 @@ export interface UIStrings {
     brandBadge: string;
     requestQuote: string;
     tagline: string;
+    toggleMenu: string;
+    whatsappLabel: string;
   };
   lang: {
     switchToEn: string;
@@ -111,6 +113,7 @@ export interface UIStrings {
     productStandards: string;
     productPackaging: string;
     productNotFound: string;
+    zoomImage: string;
   };
   industriesPage: {
     heroEyebrow: string;
@@ -146,6 +149,9 @@ export interface UIStrings {
     submitting: string;
     toastTitle: string;
     toastBody: string;
+    errorTitle: string;
+    errorBody: string;
+    networkError: string;
   };
   notFound: { title: string; body: string; goHome: string };
   errorPage: { title: string; body: string; tryAgain: string; goHome: string };
@@ -176,6 +182,8 @@ const en: UIStrings = {
     brandBadge: "Brand",
     requestQuote: "Request Quote",
     tagline: "Lubricant Export",
+    toggleMenu: "Toggle menu",
+    whatsappLabel: "Contact us on WhatsApp",
   },
   lang: {
     switchToEn: "English",
@@ -317,6 +325,7 @@ const en: UIStrings = {
     productStandards: "Approvals and Specifications",
     productPackaging: "Packaging Options",
     productNotFound: "Product not found.",
+    zoomImage: "Enlarge image",
   },
   industriesPage: {
     heroEyebrow: "Industries Served",
@@ -355,6 +364,9 @@ const en: UIStrings = {
     submitting: "Sending...",
     toastTitle: "Request received",
     toastBody: "Thank you. Our export team will prepare a suitable offer and get back to you.",
+    errorTitle: "Error",
+    errorBody: "Could not send your request. Please email us directly.",
+    networkError: "Network error. Please email us directly at info@modelgrup.com",
   },
   notFound: {
     title: "Page not found",
@@ -403,6 +415,8 @@ const tr: UIStrings = {
     brandBadge: "Marka",
     requestQuote: "Teklif Al",
     tagline: "Yağ İhracatı",
+    toggleMenu: "Menüyü aç/kapat",
+    whatsappLabel: "WhatsApp ile iletişime geçin",
   },
   lang: {
     switchToEn: "English",
@@ -543,6 +557,7 @@ const tr: UIStrings = {
     productStandards: "Karşıladığı Onay ve Şartnameler",
     productPackaging: "Ambalaj Çeşitleri",
     productNotFound: "Ürün bulunamadı.",
+    zoomImage: "Resmi büyüt",
   },
   industriesPage: {
     heroEyebrow: "Hizmet Verilen Sektörler",
@@ -580,6 +595,9 @@ const tr: UIStrings = {
     submitting: "Gönderiliyor...",
     toastTitle: "Talebiniz alındı",
     toastBody: "Teşekkürler. İhracat ekibimiz size uygun bir teklif hazırlayıp geri dönecektir.",
+    errorTitle: "Hata",
+    errorBody: "Talebiniz gönderilemedi. Lütfen bize doğrudan e-posta gönderin.",
+    networkError: "Ağ hatası. Lütfen bize doğrudan info@modelgrup.com adresinden e-posta gönderin.",
   },
   notFound: {
     title: "Sayfa bulunamadı",
@@ -628,6 +646,8 @@ const ru: UIStrings = {
     brandBadge: "Бренд",
     requestQuote: "Запросить цену",
     tagline: "Экспорт смазочных материалов",
+    toggleMenu: "Открыть/закрыть меню",
+    whatsappLabel: "Связаться с нами в WhatsApp",
   },
   lang: {
     switchToEn: "English",
@@ -769,6 +789,7 @@ const ru: UIStrings = {
     productStandards: "Допуски и спецификации",
     productPackaging: "Варианты упаковки",
     productNotFound: "Продукт не найден.",
+    zoomImage: "Увеличить изображение",
   },
   industriesPage: {
     heroEyebrow: "Обслуживаемые отрасли",
@@ -807,6 +828,9 @@ const ru: UIStrings = {
     submitting: "Отправка...",
     toastTitle: "Запрос получен",
     toastBody: "Спасибо. Наша экспортная команда подготовит подходящее предложение и свяжется с вами.",
+    errorTitle: "Ошибка",
+    errorBody: "Не удалось отправить запрос. Пожалуйста, напишите нам напрямую по электронной почте.",
+    networkError: "Ошибка сети. Пожалуйста, напишите нам на info@modelgrup.com",
   },
   notFound: {
     title: "Страница не найдена",
@@ -855,6 +879,8 @@ const fa: UIStrings = {
     brandBadge: "برند",
     requestQuote: "درخواست قیمت",
     tagline: "صادرات روانکار",
+    toggleMenu: "باز/بسته کردن منو",
+    whatsappLabel: "تماس با ما از طریق واتساپ",
   },
   lang: {
     switchToEn: "English",
@@ -996,6 +1022,7 @@ const fa: UIStrings = {
     productStandards: "تأییدیه‌ها و مشخصات",
     productPackaging: "گزینه‌های بسته‌بندی",
     productNotFound: "محصول یافت نشد.",
+    zoomImage: "بزرگ‌نمایی تصویر",
   },
   industriesPage: {
     heroEyebrow: "صنایع تحت پوشش",
@@ -1034,6 +1061,9 @@ const fa: UIStrings = {
     submitting: "در حال ارسال...",
     toastTitle: "درخواست دریافت شد",
     toastBody: "متشکریم. تیم صادراتی ما یک پیشنهاد مناسب آماده کرده و با شما تماس خواهد گرفت.",
+    errorTitle: "خطا",
+    errorBody: "درخواست شما ارسال نشد. لطفاً مستقیماً با ما از طریق ایمیل تماس بگیرید.",
+    networkError: "خطای شبکه. لطفاً مستقیماً به آدرس info@modelgrup.com ایمیل بزنید.",
   },
   notFound: {
     title: "صفحه یافت نشد",
@@ -1082,6 +1112,8 @@ const ar: UIStrings = {
     brandBadge: "العلامة التجارية",
     requestQuote: "طلب عرض سعر",
     tagline: "تصدير المواد التشحيمية",
+    toggleMenu: "فتح/إغلاق القائمة",
+    whatsappLabel: "تواصل معنا عبر واتساب",
   },
   lang: {
     switchToEn: "English",
@@ -1223,6 +1255,7 @@ const ar: UIStrings = {
     productStandards: "الموافقات والمواصفات",
     productPackaging: "خيارات التعبئة",
     productNotFound: "المنتج غير موجود.",
+    zoomImage: "تكبير الصورة",
   },
   industriesPage: {
     heroEyebrow: "الصناعات المخدومة",
@@ -1261,6 +1294,9 @@ const ar: UIStrings = {
     submitting: "جارٍ الإرسال...",
     toastTitle: "تم استلام الطلب",
     toastBody: "شكراً لك. سيعدّ فريق التصدير لدينا عرضاً مناسباً ويتواصل معك.",
+    errorTitle: "خطأ",
+    errorBody: "تعذّر إرسال طلبك. يرجى مراسلتنا مباشرة عبر البريد الإلكتروني.",
+    networkError: "خطأ في الشبكة. يرجى مراسلتنا على info@modelgrup.com",
   },
   notFound: {
     title: "الصفحة غير موجودة",
@@ -1309,6 +1345,8 @@ const de: UIStrings = {
     brandBadge: "Marke",
     requestQuote: "Angebot anfordern",
     tagline: "Schmierstoff-Export",
+    toggleMenu: "Menü öffnen/schließen",
+    whatsappLabel: "Kontaktieren Sie uns auf WhatsApp",
   },
   lang: {
     switchToEn: "English",
@@ -1444,6 +1482,7 @@ const de: UIStrings = {
     productStandards: "Zulassungen und Spezifikationen",
     productPackaging: "Verpackungsoptionen",
     productNotFound: "Produkt nicht gefunden.",
+    zoomImage: "Bild vergrößern",
   },
   industriesPage: {
     heroEyebrow: "Bediente Branchen",
@@ -1482,6 +1521,9 @@ const de: UIStrings = {
     submitting: "Wird gesendet...",
     toastTitle: "Anfrage erhalten",
     toastBody: "Danke. Unser Export-Team wird ein passendes Angebot vorbereiten und sich bei Ihnen melden.",
+    errorTitle: "Fehler",
+    errorBody: "Ihre Anfrage konnte nicht gesendet werden. Bitte schreiben Sie uns direkt eine E-Mail.",
+    networkError: "Netzwerkfehler. Bitte schreiben Sie uns direkt an info@modelgrup.com",
   },
   notFound: {
     title: "Seite nicht gefunden",
@@ -1530,6 +1572,8 @@ const fr: UIStrings = {
     brandBadge: "Marque",
     requestQuote: "Demander un devis",
     tagline: "Export de lubrifiants",
+    toggleMenu: "Ouvrir/fermer le menu",
+    whatsappLabel: "Contactez-nous sur WhatsApp",
   },
   lang: {
     switchToEn: "English",
@@ -1665,6 +1709,7 @@ const fr: UIStrings = {
     productStandards: "Approbations et spécifications",
     productPackaging: "Options d'emballage",
     productNotFound: "Produit introuvable.",
+    zoomImage: "Agrandir l'image",
   },
   industriesPage: {
     heroEyebrow: "Secteurs desservis",
@@ -1703,6 +1748,9 @@ const fr: UIStrings = {
     submitting: "Envoi en cours...",
     toastTitle: "Demande reçue",
     toastBody: "Merci. Notre équipe export préparera une offre adaptée et vous contactera.",
+    errorTitle: "Erreur",
+    errorBody: "Votre demande n'a pas pu être envoyée. Veuillez nous contacter directement par e-mail.",
+    networkError: "Erreur réseau. Veuillez nous écrire directement à info@modelgrup.com",
   },
   notFound: {
     title: "Page introuvable",
