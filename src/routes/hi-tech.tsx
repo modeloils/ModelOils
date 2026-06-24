@@ -1198,22 +1198,102 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
     ],
     details: {
       "Moto-4T-10W40": {
-        description: "HI-TECH 4T 10W-40, 4 zamanlı motosiklet motorları için yüksek performanslı motor yağıdır. Hem yağlama hem de güç aktarımı fonksiyonlarını birleştiren JASO MA2 onaylı formülü ile ıslak debriyaj sistemleriyle tam uyumludur. Her koşulda güvenilir motor koruması ve pürüzsüz vites geçişi sağlar.",
-        features: [
-          "JASO MA2 onaylı formülü ile ıslak debriyajlı 4 zamanlı motosiklet motorları için özel olarak geliştirilmiştir.",
-          "Yüksek devirde termal stabilite sağlayarak motor ömrünü uzatır ve performansı korur.",
-          "Piston, silindir ve rulman yüzeylerini aşınmaya karşı üstün koruma altına alır.",
-        ],
+        description: {
+          tr: "HI-TECH 4T 10W-40, 4 zamanlı motosiklet motorları için yüksek performanslı motor yağıdır. Hem yağlama hem de güç aktarımı fonksiyonlarını birleştiren JASO MA2 onaylı formülü ile ıslak debriyaj sistemleriyle tam uyumludur. Her koşulda güvenilir motor koruması ve pürüzsüz vites geçişi sağlar.",
+          en: "HI-TECH 4T 10W-40, a high-performance engine oil for four-stroke motorcycle engines. Its JASO MA2 approved formula, combining both lubrication and power-transmission functions, is fully compatible with wet-clutch systems. Provides reliable engine protection and smooth gear shifting under all conditions.",
+          ru: "HI-TECH 4T 10W-40, высокоэффективное моторное масло для четырёхтактных мотоциклетных двигателей. Его одобренная по JASO MA2 формула, сочетающая функции смазки и передачи мощности, полностью совместима с системами мокрого сцепления. Обеспечивает надёжную защиту двигателя и плавное переключение передач в любых условиях.",
+          fa: "HI-TECH 4T 10W-40، یک روغن موتور با عملکرد بالا برای موتورهای موتورسیکلت چهارزمانه است. فرمول تأییدشده JASO MA2 آن که هر دو عملکرد روان‌کاری و انتقال قدرت را ترکیب می‌کند، کاملاً با سیستم‌های کلاچ تر سازگار است. در همه شرایط محافظت مطمئن از موتور و تعویض دنده روان ارائه می‌دهد.",
+          ar: "HI-TECH 4T 10W-40، زيت محرك عالي الأداء لمحركات الدراجات النارية رباعية الأشواط. صيغته المعتمدة من JASO MA2، التي تجمع بين وظيفتي التزييت ونقل الحركة، متوافقة تماماً مع أنظمة القابض المبلل. يوفر حماية موثوقة للمحرك وتبديل تروس سلساً في جميع الظروف.",
+          de: "HI-TECH 4T 10W-40, ein Hochleistungs-Motoröl für Viertakt-Motorradmotoren. Seine nach JASO MA2 zugelassene Formel, die Schmierung und Kraftübertragung vereint, ist vollständig mit Nasskupplungssystemen kompatibel. Bietet zuverlässigen Motorschutz und sanftes Schalten unter allen Bedingungen.",
+          fr: "HI-TECH 4T 10W-40, une huile moteur haute performance pour moteurs de motos quatre temps. Sa formule approuvée JASO MA2, combinant les fonctions de lubrification et de transmission de puissance, est entièrement compatible avec les systèmes d'embrayage humide. Offre une protection moteur fiable et un passage de vitesses fluide en toutes conditions.",
+        },
+        features: {
+          tr: [
+            "JASO MA2 onaylı formülü ile ıslak debriyajlı 4 zamanlı motosiklet motorları için özel olarak geliştirilmiştir.",
+            "Yüksek devirde termal stabilite sağlayarak motor ömrünü uzatır ve performansı korur.",
+            "Piston, silindir ve rulman yüzeylerini aşınmaya karşı üstün koruma altına alır.",
+          ],
+          en: [
+            "Specially developed for wet-clutch four-stroke motorcycle engines with its JASO MA2 approved formula.",
+            "Provides thermal stability at high revs, extending engine life and preserving performance.",
+            "Offers superior protection against wear for piston, cylinder and bearing surfaces.",
+          ],
+          ru: [
+            "Специально разработано для четырёхтактных мотоциклетных двигателей с мокрым сцеплением благодаря формуле с одобрением JASO MA2.",
+            "Обеспечивает термическую стабильность на высоких оборотах, продлевая срок службы двигателя и сохраняя его характеристики.",
+            "Обеспечивает превосходную защиту от износа поверхностей поршня, цилиндра и подшипников.",
+          ],
+          fa: [
+            "با فرمول تأییدشده JASO MA2 به طور خاص برای موتورهای موتورسیکلت چهارزمانه با کلاچ تر توسعه یافته است.",
+            "پایداری حرارتی را در دورهای بالا فراهم می‌کند، عمر موتور را افزایش می‌دهد و عملکرد را حفظ می‌کند.",
+            "محافظت برتر در برابر سایش برای سطوح پیستون، سیلندر و یاتاقان ارائه می‌دهد.",
+          ],
+          ar: [
+            "طُوّر خصيصاً لمحركات الدراجات النارية رباعية الأشواط ذات القابض المبلل بصيغته المعتمدة من JASO MA2.",
+            "يوفر ثباتاً حرارياً عند الدورات العالية، مما يطيل عمر المحرك ويحافظ على الأداء.",
+            "يوفر حماية فائقة ضد التآكل لأسطح المكبس والأسطوانة والمحامل.",
+          ],
+          de: [
+            "Mit seiner nach JASO MA2 zugelassenen Formel speziell für Viertakt-Motorradmotoren mit Nasskupplung entwickelt.",
+            "Bietet thermische Stabilität bei hohen Drehzahlen, verlängert die Motorlebensdauer und erhält die Leistung.",
+            "Bietet überlegenen Verschleißschutz für Kolben-, Zylinder- und Lagerflächen.",
+          ],
+          fr: [
+            "Spécialement développée pour les moteurs de motos quatre temps à embrayage humide grâce à sa formule approuvée JASO MA2.",
+            "Offre une stabilité thermique à haut régime, prolongeant la durée de vie du moteur et préservant ses performances.",
+            "Offre une protection supérieure contre l'usure des surfaces de piston, de cylindre et de roulement.",
+          ],
+        },
         standards: "API SL, JASO MA2",
         packaging: ["1 L", "200 L"],
       },
       "Moto-2T": {
-        description: "HI-TECH 2T, 2 zamanlı motosiklet ve küçük motorlar için yüksek kaliteli motor yağıdır. Benzin ile tam karışım sağlayan özel formülü sayesinde mükemmel yanma ve düşük egzoz emisyonu sunar. Motor temizliğini koruyarak buji ve egzoz tortulaşmasını minimize eder.",
-        features: [
-          "Benzinle mükemmel karışabilirlik özelliği ile homojen yağlama sağlar.",
-          "Düşük duman ve is oluşumu ile çevre dostu performans sunar.",
-          "Piston ve silindir duvarlarını yüksek devirde aşınmaya karşı korur.",
-        ],
+        description: {
+          tr: "HI-TECH 2T, 2 zamanlı motosiklet ve küçük motorlar için yüksek kaliteli motor yağıdır. Benzin ile tam karışım sağlayan özel formülü sayesinde mükemmel yanma ve düşük egzoz emisyonu sunar. Motor temizliğini koruyarak buji ve egzoz tortulaşmasını minimize eder.",
+          en: "HI-TECH 2T, a high-quality engine oil for two-stroke motorcycles and small engines. Its special formula, which mixes thoroughly with petrol, delivers excellent combustion and low exhaust emissions. Keeps the engine clean and minimises spark-plug and exhaust deposits.",
+          ru: "HI-TECH 2T, высококачественное моторное масло для двухтактных мотоциклов и малых двигателей. Его специальная формула, полностью смешивающаяся с бензином, обеспечивает отличное сгорание и низкий уровень выхлопных выбросов. Сохраняет двигатель чистым и сводит к минимуму отложения на свечах зажигания и в выпускной системе.",
+          fa: "HI-TECH 2T، یک روغن موتور با کیفیت بالا برای موتورسیکلت‌های دوزمانه و موتورهای کوچک است. فرمول ویژه آن که کاملاً با بنزین مخلوط می‌شود، احتراق عالی و انتشار اگزوز کم ارائه می‌دهد. موتور را تمیز نگه می‌دارد و رسوبات شمع و اگزوز را به حداقل می‌رساند.",
+          ar: "HI-TECH 2T، زيت محرك عالي الجودة للدراجات النارية ثنائية الأشواط والمحركات الصغيرة. صيغته الخاصة التي تمتزج تماماً مع البنزين توفر احتراقاً ممتازاً وانبعاثات عادم منخفضة. يحافظ على نظافة المحرك ويقلل ترسبات شمعة الإشعال والعادم.",
+          de: "HI-TECH 2T, ein hochwertiges Motoröl für Zweitakt-Motorräder und Kleinmotoren. Seine spezielle Formel, die sich gründlich mit Benzin vermischt, sorgt für hervorragende Verbrennung und geringe Abgasemissionen. Hält den Motor sauber und minimiert Zündkerzen- und Abgasablagerungen.",
+          fr: "HI-TECH 2T, une huile moteur de haute qualité pour motos deux temps et petits moteurs. Sa formule spéciale, qui se mélange parfaitement à l'essence, offre une excellente combustion et de faibles émissions d'échappement. Maintient le moteur propre et minimise les dépôts sur les bougies et l'échappement.",
+        },
+        features: {
+          tr: [
+            "Benzinle mükemmel karışabilirlik özelliği ile homojen yağlama sağlar.",
+            "Düşük duman ve is oluşumu ile çevre dostu performans sunar.",
+            "Piston ve silindir duvarlarını yüksek devirde aşınmaya karşı korur.",
+          ],
+          en: [
+            "Excellent miscibility with petrol provides homogeneous lubrication.",
+            "Offers environmentally friendly performance with low smoke and soot formation.",
+            "Protects piston and cylinder walls against wear at high revs.",
+          ],
+          ru: [
+            "Отличная смешиваемость с бензином обеспечивает однородную смазку.",
+            "Обеспечивает экологичную работу с низким образованием дыма и нагара.",
+            "Защищает стенки поршня и цилиндра от износа на высоких оборотах.",
+          ],
+          fa: [
+            "اختلاط‌پذیری عالی با بنزین روان‌کاری همگن را فراهم می‌کند.",
+            "با تشکیل دود و دوده کم عملکرد سازگار با محیط زیست ارائه می‌دهد.",
+            "دیواره‌های پیستون و سیلندر را در دورهای بالا در برابر سایش محافظت می‌کند.",
+          ],
+          ar: [
+            "الامتزاج الممتاز مع البنزين يوفر تزييتاً متجانساً.",
+            "يقدم أداءً صديقاً للبيئة بتكوين منخفض للدخان والسناج.",
+            "يحمي جدران المكبس والأسطوانة من التآكل عند الدورات العالية.",
+          ],
+          de: [
+            "Hervorragende Mischbarkeit mit Benzin sorgt für eine homogene Schmierung.",
+            "Bietet umweltfreundliche Leistung mit geringer Rauch- und Rußbildung.",
+            "Schützt Kolben- und Zylinderwände bei hohen Drehzahlen vor Verschleiß.",
+          ],
+          fr: [
+            "Une excellente miscibilité avec l'essence assure une lubrification homogène.",
+            "Offre des performances respectueuses de l'environnement avec une faible formation de fumée et de suie.",
+            "Protège les parois du piston et du cylindre contre l'usure à haut régime.",
+          ],
+        },
         standards: "API TC, ISO-L-EGB, JASO FB",
         packaging: ["1 L", "200 L"],
       },
@@ -1231,62 +1311,302 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
     ],
     details: {
       "Gear-75W80": {
-        description: "HI-TECH 75W-80 SENTETİK DİŞLİ YAĞI, API GL-4/GL-5 onaylı tam sentetik formüllü manuel şanzıman ve aks dişli yağıdır. Düşük viskozitesi sayesinde soğuk havalarda kolay vites geçişi ve üstün yakıt ekonomisi sağlar.",
-        features: [
-          "Tam sentetik baz yağ ile düşük sürtünme katsayısı ve mükemmel akışkanlık sunar.",
-          "GL-4/GL-5 çift onayı ile geniş araç yelpazesinde kullanım imkânı sağlar.",
-          "Aşırı basınç (EP) katkıları ile dişli yüzeylerini yıpranmaya karşı korur.",
-        ],
+        description: {
+          tr: "HI-TECH 75W-80 SENTETİK DİŞLİ YAĞI, API GL-4/GL-5 onaylı tam sentetik formüllü manuel şanzıman ve aks dişli yağıdır. Düşük viskozitesi sayesinde soğuk havalarda kolay vites geçişi ve üstün yakıt ekonomisi sağlar.",
+          en: "HI-TECH 75W-80 SYNTHETIC GEAR OIL, a fully synthetic manual-transmission and axle gear oil approved by API GL-4/GL-5. Its low viscosity enables easy gear shifting in cold weather and superior fuel economy.",
+          ru: "HI-TECH 75W-80 SYNTHETIC GEAR OIL, полностью синтетическое трансмиссионное масло для механических коробок передач и мостов, одобренное API GL-4/GL-5. Низкая вязкость обеспечивает лёгкое переключение передач в холодную погоду и превосходную топливную экономичность.",
+          fa: "HI-TECH 75W-80 SYNTHETIC GEAR OIL، یک روغن دنده تمام‌سنتتیک برای گیربکس دستی و اکسل است که توسط API GL-4/GL-5 تأیید شده است. ویسکوزیته پایین آن تعویض آسان دنده در هوای سرد و صرفه‌جویی برتر در سوخت را امکان‌پذیر می‌کند.",
+          ar: "HI-TECH 75W-80 SYNTHETIC GEAR OIL، زيت تروس اصطناعي بالكامل لناقل الحركة اليدوي والمحاور معتمد من API GL-4/GL-5. لزوجته المنخفضة تتيح تبديل التروس بسهولة في الطقس البارد واقتصاداً فائقاً في الوقود.",
+          de: "HI-TECH 75W-80 SYNTHETIC GEAR OIL, ein vollsynthetisches Getriebeöl für Schaltgetriebe und Achsen, zugelassen nach API GL-4/GL-5. Seine niedrige Viskosität ermöglicht leichtes Schalten bei kaltem Wetter und überlegene Kraftstoffeffizienz.",
+          fr: "HI-TECH 75W-80 SYNTHETIC GEAR OIL, une huile de transmission manuelle et de pont entièrement synthétique, approuvée API GL-4/GL-5. Sa faible viscosité permet un passage de vitesses facile par temps froid et une économie de carburant supérieure.",
+        },
+        features: {
+          tr: [
+            "Tam sentetik baz yağ ile düşük sürtünme katsayısı ve mükemmel akışkanlık sunar.",
+            "GL-4/GL-5 çift onayı ile geniş araç yelpazesinde kullanım imkânı sağlar.",
+            "Aşırı basınç (EP) katkıları ile dişli yüzeylerini yıpranmaya karşı korur.",
+          ],
+          en: [
+            "Fully synthetic base oil offers a low friction coefficient and excellent fluidity.",
+            "Dual GL-4/GL-5 approval allows use across a wide range of vehicles.",
+            "Extreme-pressure (EP) additives protect gear surfaces against wear.",
+          ],
+          ru: [
+            "Полностью синтетическое базовое масло обеспечивает низкий коэффициент трения и отличную текучесть.",
+            "Двойное одобрение GL-4/GL-5 позволяет использовать масло в широком парке техники.",
+            "Противозадирные (EP) присадки защищают поверхности шестерён от износа.",
+          ],
+          fa: [
+            "روغن پایه تمام‌سنتتیک ضریب اصطکاک پایین و سیالیت عالی ارائه می‌دهد.",
+            "تأییدیه دوگانه GL-4/GL-5 امکان استفاده در طیف گسترده‌ای از خودروها را فراهم می‌کند.",
+            "افزودنی‌های فشار شدید (EP) سطوح دنده را در برابر سایش محافظت می‌کنند.",
+          ],
+          ar: [
+            "زيت الأساس الاصطناعي بالكامل يوفر معامل احتكاك منخفضاً وسيولة ممتازة.",
+            "الاعتماد المزدوج GL-4/GL-5 يتيح الاستخدام عبر مجموعة واسعة من المركبات.",
+            "مضافات الضغط الشديد (EP) تحمي أسطح التروس من التآكل.",
+          ],
+          de: [
+            "Das vollsynthetische Grundöl bietet einen niedrigen Reibungskoeffizienten und ausgezeichnete Fließfähigkeit.",
+            "Die doppelte GL-4/GL-5-Zulassung ermöglicht den Einsatz in einer breiten Fahrzeugpalette.",
+            "Hochdruckadditive (EP) schützen die Zahnradoberflächen vor Verschleiß.",
+          ],
+          fr: [
+            "L'huile de base entièrement synthétique offre un faible coefficient de frottement et une excellente fluidité.",
+            "La double approbation GL-4/GL-5 permet une utilisation sur une large gamme de véhicules.",
+            "Les additifs extrême pression (EP) protègent les surfaces des engrenages contre l'usure.",
+          ],
+        },
         standards: "API GL-4/GL-5, ZF TE-ML 02B/08/17B/19B",
         packaging: ["20 L", "200 L"],
       },
       "Gear-75W90": {
-        description: "HI-TECH 75W-90 SENTETİK DİŞLİ YAĞI, API GL-4/GL-5 onaylı tam sentetik dişli ve şanzıman yağıdır. Binek araçlar, hafif ticari araçlar ve ağır hizmet araçlarının manuel şanzımanları ile ön/arka akslarında yüksek performans sunar.",
-        features: [
-          "Geniş sıcaklık aralığında kararlı viskozite ile dişlilere sürekli yağ filmi sağlar.",
-          "Mükemmel oksidasyon ve termal stabilite ile uzun yağ değişim aralıkları sunar.",
-          "Sentetik formülü sayesinde sürtünme kaynaklı enerji kayıplarını minimuma indirir.",
-        ],
+        description: {
+          tr: "HI-TECH 75W-90 SENTETİK DİŞLİ YAĞI, API GL-4/GL-5 onaylı tam sentetik dişli ve şanzıman yağıdır. Binek araçlar, hafif ticari araçlar ve ağır hizmet araçlarının manuel şanzımanları ile ön/arka akslarında yüksek performans sunar.",
+          en: "HI-TECH 75W-90 SYNTHETIC GEAR OIL, a fully synthetic gear and transmission oil approved by API GL-4/GL-5. Delivers high performance in the manual transmissions and front/rear axles of passenger cars, light commercial vehicles and heavy-duty vehicles.",
+          ru: "HI-TECH 75W-90 SYNTHETIC GEAR OIL, полностью синтетическое трансмиссионное масло, одобренное API GL-4/GL-5. Обеспечивает высокие характеристики в механических коробках передач и передних/задних мостах легковых автомобилей, лёгкого коммерческого транспорта и большегрузной техники.",
+          fa: "HI-TECH 75W-90 SYNTHETIC GEAR OIL، یک روغن دنده و گیربکس تمام‌سنتتیک است که توسط API GL-4/GL-5 تأیید شده است. در گیربکس‌های دستی و اکسل‌های جلو/عقب خودروهای سواری، خودروهای تجاری سبک و خودروهای خدمات سنگین عملکرد بالایی ارائه می‌دهد.",
+          ar: "HI-TECH 75W-90 SYNTHETIC GEAR OIL، زيت تروس وناقل حركة اصطناعي بالكامل معتمد من API GL-4/GL-5. يوفر أداءً عالياً في نواقل الحركة اليدوية والمحاور الأمامية/الخلفية لسيارات الركاب والمركبات التجارية الخفيفة ومركبات الخدمة الثقيلة.",
+          de: "HI-TECH 75W-90 SYNTHETIC GEAR OIL, ein vollsynthetisches Getriebe- und Schaltgetriebeöl, zugelassen nach API GL-4/GL-5. Bietet hohe Leistung in den Schaltgetrieben und Vorder-/Hinterachsen von Pkw, leichten Nutzfahrzeugen und Schwerlastfahrzeugen.",
+          fr: "HI-TECH 75W-90 SYNTHETIC GEAR OIL, une huile de transmission et de boîte de vitesses entièrement synthétique, approuvée API GL-4/GL-5. Offre des performances élevées dans les boîtes manuelles et les ponts avant/arrière des voitures particulières, véhicules utilitaires légers et véhicules à service intensif.",
+        },
+        features: {
+          tr: [
+            "Geniş sıcaklık aralığında kararlı viskozite ile dişlilere sürekli yağ filmi sağlar.",
+            "Mükemmel oksidasyon ve termal stabilite ile uzun yağ değişim aralıkları sunar.",
+            "Sentetik formülü sayesinde sürtünme kaynaklı enerji kayıplarını minimuma indirir.",
+          ],
+          en: [
+            "Stable viscosity across a wide temperature range maintains a continuous oil film on the gears.",
+            "Excellent oxidation and thermal stability provide long oil-drain intervals.",
+            "Its synthetic formula minimises friction-related energy losses.",
+          ],
+          ru: [
+            "Стабильная вязкость в широком диапазоне температур поддерживает непрерывную масляную плёнку на шестернях.",
+            "Отличная стойкость к окислению и термическая стабильность обеспечивают длительные интервалы замены масла.",
+            "Синтетическая формула сводит к минимуму потери энергии на трение.",
+          ],
+          fa: [
+            "ویسکوزیته پایدار در دامنه دمایی گسترده، لایه روغن پیوسته‌ای روی دنده‌ها حفظ می‌کند.",
+            "پایداری عالی اکسیداسیون و حرارتی فواصل طولانی تعویض روغن را فراهم می‌کند.",
+            "فرمول سنتتیک آن تلفات انرژی ناشی از اصطکاک را به حداقل می‌رساند.",
+          ],
+          ar: [
+            "لزوجة ثابتة عبر نطاق واسع من درجات الحرارة تحافظ على طبقة زيت مستمرة على التروس.",
+            "مقاومة ممتازة للأكسدة وثبات حراري يوفران فترات طويلة لتغيير الزيت.",
+            "صيغته الاصطناعية تقلل خسائر الطاقة الناتجة عن الاحتكاك.",
+          ],
+          de: [
+            "Stabile Viskosität über einen breiten Temperaturbereich erhält einen kontinuierlichen Ölfilm auf den Zahnrädern.",
+            "Hervorragende Oxidations- und thermische Stabilität ermöglichen lange Ölwechselintervalle.",
+            "Seine synthetische Formel minimiert reibungsbedingte Energieverluste.",
+          ],
+          fr: [
+            "Une viscosité stable sur une large plage de températures maintient un film d'huile continu sur les engrenages.",
+            "Une excellente stabilité à l'oxydation et thermique offre de longs intervalles de vidange.",
+            "Sa formule synthétique minimise les pertes d'énergie dues au frottement.",
+          ],
+        },
         standards: "API GL-4/GL-5, MAN 341 Type E-1, ZF TE-ML 02B/05A/12L/16F/17B/19B/21A",
         packaging: ["20 L", "200 L"],
       },
       "Gear-80W90": {
-        description: "HI-TECH 80W-90 SENTETİK DİŞLİ YAĞI, API GL-4/GL-5 onaylı sentetik dişli yağıdır. Manuel şanzımanlar, ön/arka diferansiyeller ve transfer kutuları için güvenilir yağlama ve koruma sağlar.",
-        features: [
-          "Yüksek EP (Extreme Pressure) performansı ile ağır yük altındaki dişlileri korur.",
-          "Su ve nem direnci yüksektir; ıslak koşullarda bile etkin yağlama sağlar.",
-          "Gürültü ve titreşimi azaltarak şanzıman ömrünü uzatır.",
-        ],
+        description: {
+          tr: "HI-TECH 80W-90 SENTETİK DİŞLİ YAĞI, API GL-4/GL-5 onaylı sentetik dişli yağıdır. Manuel şanzımanlar, ön/arka diferansiyeller ve transfer kutuları için güvenilir yağlama ve koruma sağlar.",
+          en: "HI-TECH 80W-90 SYNTHETIC GEAR OIL, a synthetic gear oil approved by API GL-4/GL-5. Provides reliable lubrication and protection for manual transmissions, front/rear differentials and transfer cases.",
+          ru: "HI-TECH 80W-90 SYNTHETIC GEAR OIL, синтетическое трансмиссионное масло, одобренное API GL-4/GL-5. Обеспечивает надёжную смазку и защиту механических коробок передач, передних/задних дифференциалов и раздаточных коробок.",
+          fa: "HI-TECH 80W-90 SYNTHETIC GEAR OIL، یک روغن دنده سنتتیک است که توسط API GL-4/GL-5 تأیید شده است. روان‌کاری و محافظت مطمئن برای گیربکس‌های دستی، دیفرانسیل‌های جلو/عقب و جعبه‌های انتقال ارائه می‌دهد.",
+          ar: "HI-TECH 80W-90 SYNTHETIC GEAR OIL، زيت تروس اصطناعي معتمد من API GL-4/GL-5. يوفر تزييتاً وحماية موثوقين لنواقل الحركة اليدوية والتفاضلات الأمامية/الخلفية وعلب نقل الحركة.",
+          de: "HI-TECH 80W-90 SYNTHETIC GEAR OIL, ein synthetisches Getriebeöl, zugelassen nach API GL-4/GL-5. Bietet zuverlässige Schmierung und Schutz für Schaltgetriebe, Vorder-/Hinterdifferenziale und Verteilergetriebe.",
+          fr: "HI-TECH 80W-90 SYNTHETIC GEAR OIL, une huile de transmission synthétique, approuvée API GL-4/GL-5. Assure une lubrification et une protection fiables des boîtes manuelles, des différentiels avant/arrière et des boîtes de transfert.",
+        },
+        features: {
+          tr: [
+            "Yüksek EP (Extreme Pressure) performansı ile ağır yük altındaki dişlileri korur.",
+            "Su ve nem direnci yüksektir; ıslak koşullarda bile etkin yağlama sağlar.",
+            "Gürültü ve titreşimi azaltarak şanzıman ömrünü uzatır.",
+          ],
+          en: [
+            "High EP (Extreme Pressure) performance protects gears under heavy loads.",
+            "High water and moisture resistance ensures effective lubrication even in wet conditions.",
+            "Reduces noise and vibration, extending transmission life.",
+          ],
+          ru: [
+            "Высокие противозадирные (EP) свойства защищают шестерни при больших нагрузках.",
+            "Высокая стойкость к воде и влаге обеспечивает эффективную смазку даже во влажных условиях.",
+            "Снижает шум и вибрацию, продлевая срок службы трансмиссии.",
+          ],
+          fa: [
+            "عملکرد بالای EP (فشار شدید) دنده‌ها را تحت بارهای سنگین محافظت می‌کند.",
+            "مقاومت بالا در برابر آب و رطوبت روان‌کاری مؤثر حتی در شرایط مرطوب را تضمین می‌کند.",
+            "سروصدا و لرزش را کاهش می‌دهد و عمر گیربکس را افزایش می‌دهد.",
+          ],
+          ar: [
+            "أداء EP العالي (الضغط الشديد) يحمي التروس تحت الأحمال الثقيلة.",
+            "مقاومة عالية للماء والرطوبة تضمن تزييتاً فعالاً حتى في الظروف الرطبة.",
+            "يقلل الضوضاء والاهتزاز، مما يطيل عمر ناقل الحركة.",
+          ],
+          de: [
+            "Hohe EP-Leistung (Extreme Pressure) schützt Zahnräder unter schweren Lasten.",
+            "Hohe Wasser- und Feuchtigkeitsbeständigkeit sorgt für wirksame Schmierung auch unter nassen Bedingungen.",
+            "Reduziert Geräusche und Vibrationen und verlängert die Getriebelebensdauer.",
+          ],
+          fr: [
+            "Des performances EP élevées (extrême pression) protègent les engrenages sous charges lourdes.",
+            "Une résistance élevée à l'eau et à l'humidité assure une lubrification efficace même en conditions humides.",
+            "Réduit le bruit et les vibrations, prolongeant la durée de vie de la transmission.",
+          ],
+        },
         standards: "API GL-4/GL-5, MIL-L-2105D",
         packaging: ["20 L", "200 L"],
       },
       "Gear-85W140": {
-        description: "HI-TECH 85W-140 SENTETİK DİŞLİ YAĞI, API GL-5 onaylı yüksek viskoziteli sentetik dişli yağıdır. Ağır hizmet araçlarının arka aksları ve diferansiyelleri için özel olarak geliştirilmiştir. Yüksek yük ve darbe koşullarında üstün koruma sunar.",
-        features: [
-          "API GL-5 onayı ile yüksek torklu ve ağır yüklü diferansiyeller için idealdir.",
-          "Yüksek viskozitesi ile metal-metal temasını önler ve dişli yüzeylerini korur.",
-          "Ekstremal sıcaklık koşullarında güvenilir yağ filmi oluşturur.",
-        ],
+        description: {
+          tr: "HI-TECH 85W-140 SENTETİK DİŞLİ YAĞI, API GL-5 onaylı yüksek viskoziteli sentetik dişli yağıdır. Ağır hizmet araçlarının arka aksları ve diferansiyelleri için özel olarak geliştirilmiştir. Yüksek yük ve darbe koşullarında üstün koruma sunar.",
+          en: "HI-TECH 85W-140 SYNTHETIC GEAR OIL, a high-viscosity synthetic gear oil approved by API GL-5. Specially developed for the rear axles and differentials of heavy-duty vehicles. Offers superior protection under high-load and shock conditions.",
+          ru: "HI-TECH 85W-140 SYNTHETIC GEAR OIL, высоковязкое синтетическое трансмиссионное масло, одобренное API GL-5. Специально разработано для задних мостов и дифференциалов большегрузной техники. Обеспечивает превосходную защиту при высоких нагрузках и ударных условиях.",
+          fa: "HI-TECH 85W-140 SYNTHETIC GEAR OIL، یک روغن دنده سنتتیک با ویسکوزیته بالا است که توسط API GL-5 تأیید شده است. به طور خاص برای اکسل‌های عقب و دیفرانسیل‌های خودروهای خدمات سنگین توسعه یافته است. در شرایط بار بالا و ضربه محافظت برتر ارائه می‌دهد.",
+          ar: "HI-TECH 85W-140 SYNTHETIC GEAR OIL، زيت تروس اصطناعي عالي اللزوجة معتمد من API GL-5. طُوّر خصيصاً للمحاور الخلفية والتفاضلات لمركبات الخدمة الثقيلة. يوفر حماية فائقة في ظروف الأحمال العالية والصدمات.",
+          de: "HI-TECH 85W-140 SYNTHETIC GEAR OIL, ein hochviskoses synthetisches Getriebeöl, zugelassen nach API GL-5. Speziell für die Hinterachsen und Differenziale von Schwerlastfahrzeugen entwickelt. Bietet überlegenen Schutz unter hohen Lasten und Stoßbelastungen.",
+          fr: "HI-TECH 85W-140 SYNTHETIC GEAR OIL, une huile de transmission synthétique à haute viscosité, approuvée API GL-5. Spécialement développée pour les ponts arrière et les différentiels des véhicules à service intensif. Offre une protection supérieure sous charges élevées et conditions de chocs.",
+        },
+        features: {
+          tr: [
+            "API GL-5 onayı ile yüksek torklu ve ağır yüklü diferansiyeller için idealdir.",
+            "Yüksek viskozitesi ile metal-metal temasını önler ve dişli yüzeylerini korur.",
+            "Ekstremal sıcaklık koşullarında güvenilir yağ filmi oluşturur.",
+          ],
+          en: [
+            "With API GL-5 approval, it is ideal for high-torque, heavily loaded differentials.",
+            "Its high viscosity prevents metal-to-metal contact and protects gear surfaces.",
+            "Forms a reliable oil film under extreme temperature conditions.",
+          ],
+          ru: [
+            "Благодаря одобрению API GL-5 идеально подходит для высоконагруженных дифференциалов с большим крутящим моментом.",
+            "Высокая вязкость предотвращает контакт металл-металл и защищает поверхности шестерён.",
+            "Образует надёжную масляную плёнку в условиях экстремальных температур.",
+          ],
+          fa: [
+            "با تأییدیه API GL-5 برای دیفرانسیل‌های با گشتاور بالا و بار سنگین ایده‌آل است.",
+            "ویسکوزیته بالای آن از تماس فلز با فلز جلوگیری می‌کند و سطوح دنده را محافظت می‌کند.",
+            "در شرایط دمایی شدید لایه روغن مطمئنی تشکیل می‌دهد.",
+          ],
+          ar: [
+            "مع اعتماد API GL-5، فهو مثالي للتفاضلات عالية العزم والمحملة بشدة.",
+            "لزوجته العالية تمنع التلامس المعدني المباشر وتحمي أسطح التروس.",
+            "يُشكّل طبقة زيت موثوقة في ظروف درجات الحرارة القصوى.",
+          ],
+          de: [
+            "Mit API GL-5-Zulassung ist es ideal für hochbelastete Differenziale mit hohem Drehmoment.",
+            "Seine hohe Viskosität verhindert Metall-Metall-Kontakt und schützt die Zahnradoberflächen.",
+            "Bildet unter extremen Temperaturbedingungen einen zuverlässigen Ölfilm.",
+          ],
+          fr: [
+            "Avec l'approbation API GL-5, elle est idéale pour les différentiels à couple élevé et fortement chargés.",
+            "Sa haute viscosité empêche le contact métal-métal et protège les surfaces des engrenages.",
+            "Forme un film d'huile fiable dans des conditions de température extrêmes.",
+          ],
+        },
         standards: "API GL-5, MIL-L-2105D",
         packaging: ["20 L", "200 L"],
       },
       "Gear-90W": {
-        description: "HI-TECH GEAR 90W MİNERAL DİŞLİ YAĞI, API GL-4 onaylı mineral bazlı dişli yağıdır. Manuel şanzımanlar ve aks dişlileri için ekonomik ve güvenilir yağlama çözümü sunar. Geniş araç ve ekipman yelpazesiyle uyumludur.",
-        features: [
-          "API GL-4 onaylı mineral formül ile manuel şanzımanlarda stabil koruma sağlar.",
-          "Korozyon ve aşınma önleyici katkılarla dişli bileşenlerinin ömrünü uzatır.",
-          "Tarım makineleri, iş makineleri ve ticari araçlarda geniş uygulama alanı sunar.",
-        ],
+        description: {
+          tr: "HI-TECH GEAR 90W MİNERAL DİŞLİ YAĞI, API GL-4 onaylı mineral bazlı dişli yağıdır. Manuel şanzımanlar ve aks dişlileri için ekonomik ve güvenilir yağlama çözümü sunar. Geniş araç ve ekipman yelpazesiyle uyumludur.",
+          en: "HI-TECH GEAR 90W MINERAL GEAR OIL, a mineral-based gear oil approved by API GL-4. Offers an economical and reliable lubrication solution for manual transmissions and axle gears. Compatible with a wide range of vehicles and equipment.",
+          ru: "HI-TECH GEAR 90W MINERAL GEAR OIL, минеральное трансмиссионное масло, одобренное API GL-4. Предлагает экономичное и надёжное решение для смазки механических коробок передач и шестерён мостов. Совместимо с широким парком техники и оборудования.",
+          fa: "HI-TECH GEAR 90W MINERAL GEAR OIL، یک روغن دنده بر پایه مواد معدنی است که توسط API GL-4 تأیید شده است. راه‌حل روان‌کاری اقتصادی و مطمئن برای گیربکس‌های دستی و دنده‌های اکسل ارائه می‌دهد. با طیف گسترده‌ای از خودروها و تجهیزات سازگار است.",
+          ar: "HI-TECH GEAR 90W MINERAL GEAR OIL، زيت تروس على أساس معدني معتمد من API GL-4. يوفر حلاً اقتصادياً وموثوقاً للتزييت لنواقل الحركة اليدوية وتروس المحاور. متوافق مع مجموعة واسعة من المركبات والمعدات.",
+          de: "HI-TECH GEAR 90W MINERAL GEAR OIL, ein mineralisches Getriebeöl, zugelassen nach API GL-4. Bietet eine wirtschaftliche und zuverlässige Schmierlösung für Schaltgetriebe und Achsgetriebe. Kompatibel mit einer breiten Palette von Fahrzeugen und Geräten.",
+          fr: "HI-TECH GEAR 90W MINERAL GEAR OIL, une huile de transmission à base minérale, approuvée API GL-4. Offre une solution de lubrification économique et fiable pour les boîtes manuelles et les engrenages de pont. Compatible avec une large gamme de véhicules et d'équipements.",
+        },
+        features: {
+          tr: [
+            "API GL-4 onaylı mineral formül ile manuel şanzımanlarda stabil koruma sağlar.",
+            "Korozyon ve aşınma önleyici katkılarla dişli bileşenlerinin ömrünü uzatır.",
+            "Tarım makineleri, iş makineleri ve ticari araçlarda geniş uygulama alanı sunar.",
+          ],
+          en: [
+            "Its API GL-4 approved mineral formula provides stable protection in manual transmissions.",
+            "Anti-corrosion and anti-wear additives extend the life of gear components.",
+            "Offers a wide application range in agricultural machinery, construction equipment and commercial vehicles.",
+          ],
+          ru: [
+            "Минеральная формула с одобрением API GL-4 обеспечивает стабильную защиту механических коробок передач.",
+            "Антикоррозионные и противоизносные присадки продлевают срок службы деталей трансмиссии.",
+            "Обеспечивает широкий спектр применения в сельхозтехнике, строительном оборудовании и коммерческом транспорте.",
+          ],
+          fa: [
+            "فرمول معدنی تأییدشده API GL-4 آن محافظت پایدار در گیربکس‌های دستی فراهم می‌کند.",
+            "افزودنی‌های ضد خوردگی و ضد سایش عمر اجزای دنده را افزایش می‌دهند.",
+            "دامنه کاربرد گسترده‌ای در ماشین‌آلات کشاورزی، تجهیزات راه‌سازی و خودروهای تجاری ارائه می‌دهد.",
+          ],
+          ar: [
+            "صيغته المعدنية المعتمدة من API GL-4 توفر حماية ثابتة في نواقل الحركة اليدوية.",
+            "مضافات مقاومة الصدأ والتآكل تطيل عمر مكونات التروس.",
+            "يوفر نطاق تطبيق واسعاً في الآلات الزراعية ومعدات البناء والمركبات التجارية.",
+          ],
+          de: [
+            "Seine nach API GL-4 zugelassene Mineralformel bietet stabilen Schutz in Schaltgetrieben.",
+            "Korrosions- und Verschleißschutzadditive verlängern die Lebensdauer der Getriebekomponenten.",
+            "Bietet ein breites Anwendungsspektrum in Landmaschinen, Baumaschinen und Nutzfahrzeugen.",
+          ],
+          fr: [
+            "Sa formule minérale approuvée API GL-4 offre une protection stable dans les boîtes manuelles.",
+            "Les additifs anticorrosion et anti-usure prolongent la durée de vie des composants d'engrenage.",
+            "Offre une large gamme d'applications dans les machines agricoles, les engins de chantier et les véhicules commerciaux.",
+          ],
+        },
         standards: "API GL-4, MIL-L-2105",
         packaging: ["20 L", "200 L"],
       },
       "Gear-140": {
-        description: "HI-TECH GEAR 140 MİNERAL DİŞLİ YAĞI, API GL-4 onaylı yüksek viskoziteli mineral dişli yağıdır. Sıcak iklimlerde ve ağır çalışma koşullarında güvenilir dişli koruması için tercih edilen klasik formüldür.",
-        features: [
-          "Yüksek viskoziteli mineral formülü ile sıcak havalarda güvenilir yağ filmi oluşturur.",
-          "Eski nesil şanzıman ve aks sistemleri için uygun viskozite kademesi sunar.",
-          "Aşırı basınç katkıları ile dişli yüzeyleri yüksek yüklere karşı korunur.",
-        ],
+        description: {
+          tr: "HI-TECH GEAR 140 MİNERAL DİŞLİ YAĞI, API GL-4 onaylı yüksek viskoziteli mineral dişli yağıdır. Sıcak iklimlerde ve ağır çalışma koşullarında güvenilir dişli koruması için tercih edilen klasik formüldür.",
+          en: "HI-TECH GEAR 140 MINERAL GEAR OIL, a high-viscosity mineral gear oil approved by API GL-4. A classic formula preferred for reliable gear protection in hot climates and severe operating conditions.",
+          ru: "HI-TECH GEAR 140 MINERAL GEAR OIL, высоковязкое минеральное трансмиссионное масло, одобренное API GL-4. Классическая формула, предпочитаемая для надёжной защиты шестерён в жарком климате и тяжёлых условиях эксплуатации.",
+          fa: "HI-TECH GEAR 140 MINERAL GEAR OIL، یک روغن دنده معدنی با ویسکوزیته بالا است که توسط API GL-4 تأیید شده است. فرمول کلاسیکی که برای محافظت مطمئن از دنده در آب‌وهوای گرم و شرایط کاری سخت ترجیح داده می‌شود.",
+          ar: "HI-TECH GEAR 140 MINERAL GEAR OIL، زيت تروس معدني عالي اللزوجة معتمد من API GL-4. صيغة كلاسيكية مُفضّلة لحماية التروس الموثوقة في المناخات الحارة وظروف التشغيل القاسية.",
+          de: "HI-TECH GEAR 140 MINERAL GEAR OIL, ein hochviskoses mineralisches Getriebeöl, zugelassen nach API GL-4. Eine klassische Formel, die für zuverlässigen Zahnradschutz in heißen Klimazonen und unter schweren Betriebsbedingungen bevorzugt wird.",
+          fr: "HI-TECH GEAR 140 MINERAL GEAR OIL, une huile de transmission minérale à haute viscosité, approuvée API GL-4. Une formule classique privilégiée pour une protection fiable des engrenages dans les climats chauds et les conditions d'exploitation sévères.",
+        },
+        features: {
+          tr: [
+            "Yüksek viskoziteli mineral formülü ile sıcak havalarda güvenilir yağ filmi oluşturur.",
+            "Eski nesil şanzıman ve aks sistemleri için uygun viskozite kademesi sunar.",
+            "Aşırı basınç katkıları ile dişli yüzeyleri yüksek yüklere karşı korunur.",
+          ],
+          en: [
+            "Its high-viscosity mineral formula forms a reliable oil film in hot weather.",
+            "Offers a suitable viscosity grade for older-generation transmission and axle systems.",
+            "Extreme-pressure additives protect gear surfaces against high loads.",
+          ],
+          ru: [
+            "Высоковязкая минеральная формула образует надёжную масляную плёнку в жаркую погоду.",
+            "Предлагает подходящий класс вязкости для трансмиссий и мостов прежних поколений.",
+            "Противозадирные присадки защищают поверхности шестерён от высоких нагрузок.",
+          ],
+          fa: [
+            "فرمول معدنی با ویسکوزیته بالای آن در هوای گرم لایه روغن مطمئنی تشکیل می‌دهد.",
+            "گرید ویسکوزیته مناسبی برای سیستم‌های گیربکس و اکسل نسل قدیم ارائه می‌دهد.",
+            "افزودنی‌های فشار شدید سطوح دنده را در برابر بارهای بالا محافظت می‌کنند.",
+          ],
+          ar: [
+            "صيغته المعدنية عالية اللزوجة تُشكّل طبقة زيت موثوقة في الطقس الحار.",
+            "يوفر درجة لزوجة مناسبة لأنظمة ناقل الحركة والمحاور من الجيل القديم.",
+            "مضافات الضغط الشديد تحمي أسطح التروس من الأحمال العالية.",
+          ],
+          de: [
+            "Seine hochviskose Mineralformel bildet bei heißem Wetter einen zuverlässigen Ölfilm.",
+            "Bietet eine geeignete Viskositätsklasse für Getriebe- und Achssysteme älterer Generation.",
+            "Hochdruckadditive schützen die Zahnradoberflächen vor hohen Lasten.",
+          ],
+          fr: [
+            "Sa formule minérale à haute viscosité forme un film d'huile fiable par temps chaud.",
+            "Offre un grade de viscosité adapté aux systèmes de transmission et de pont de générations antérieures.",
+            "Les additifs extrême pression protègent les surfaces des engrenages contre les charges élevées.",
+          ],
+        },
         standards: "API GL-4, MIL-L-2105",
         packaging: ["20 L", "200 L"],
       },
