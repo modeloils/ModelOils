@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { SectionHeading } from "@/components/SectionHeading";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
-import { GENERAL_ARTICLES, FAQ_ARTICLES, type BlogArticle } from "@/lib/blog-data";
+import { getBlogArticles, type BlogArticle, type BlogLocale } from "@/lib/blog-data";
 
 export function blogHead(locale: Locale) {
   return pageHead(locale, "blog");
@@ -39,7 +39,9 @@ function ArticleCard({ article }: { article: BlogArticle }) {
 }
 
 export function Blog() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
+  const generalArticles = getBlogArticles(locale as BlogLocale, "general");
+  const faqArticles = getBlogArticles(locale as BlogLocale, "faq");
 
   return (
     <SiteLayout>
@@ -47,7 +49,7 @@ export function Blog() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading title={t.blogPage.generalInfo} />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {GENERAL_ARTICLES.map((article) => (
+            {generalArticles.map((article) => (
               <ArticleCard key={article.slug} article={article} />
             ))}
           </div>
@@ -58,7 +60,7 @@ export function Blog() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading title={t.blogPage.faq} />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {FAQ_ARTICLES.map((article) => (
+            {faqArticles.map((article) => (
               <ArticleCard key={article.slug} article={article} />
             ))}
           </div>

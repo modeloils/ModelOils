@@ -61,18 +61,21 @@ export function Media() {
     <SiteLayout>
       {lightbox && (
         <div
-          className="fixed inset-0 z-50 flex cursor-pointer items-center justify-center bg-black/90 p-4"
-          onClick={() => setLightbox(null)}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          onPointerDown={() => setLightbox(null)}
         >
-          <div className="relative" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="relative flex items-center justify-center"
+            onPointerDown={(e) => e.stopPropagation()}
+          >
             <img
               src={lightbox}
               alt=""
-              className="max-h-[88vh] max-w-[90vw] rounded-lg object-contain shadow-2xl"
+              className="block max-h-[85vh] max-w-[90vw] rounded-lg object-contain shadow-2xl"
             />
             <button
               onClick={() => setLightbox(null)}
-              className="absolute -right-4 -top-4 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-100"
+              className="absolute -right-3 -top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-100"
             >
               <X className="h-4 w-4 text-gray-800" />
             </button>

@@ -105,6 +105,12 @@ export interface UIStrings {
     rangeEyebrow: string;
     rangeTitle: string;
     rangeDescription: string;
+    lightCommercial: string;
+    productDescription: string;
+    productFeatures: string;
+    productStandards: string;
+    productPackaging: string;
+    productNotFound: string;
   };
   industriesPage: {
     heroEyebrow: string;
@@ -305,6 +311,12 @@ const en: UIStrings = {
     rangeTitle: "Featured HI-TECH Products",
     rangeDescription:
       "Specifications shown are editable placeholders. We do not claim API, ACEA, OEM or ISO approvals unless documentation is provided.",
+    lightCommercial: "Light Commercial Vehicles",
+    productDescription: "Product Description and Application Areas",
+    productFeatures: "Features and Benefits",
+    productStandards: "Approvals and Specifications",
+    productPackaging: "Packaging Options",
+    productNotFound: "Product not found.",
   },
   industriesPage: {
     heroEyebrow: "Industries Served",
@@ -525,6 +537,12 @@ const tr: UIStrings = {
     rangeEyebrow: "HI-TECH Serisi",
     rangeTitle: "Kategorilerimiz",
     rangeDescription: "Gösterilen spesifikasyonlar düzenlenebilir örneklerdir. Belgelenmediği sürece API, ACEA, OEM veya ISO onayı talep edilmemektedir.",
+    lightCommercial: "Hafif Ticari Araçlar",
+    productDescription: "Ürün Tanımı ve Kullanım Alanları",
+    productFeatures: "Özellikleri ve Faydaları",
+    productStandards: "Karşıladığı Onay ve Şartnameler",
+    productPackaging: "Ambalaj Çeşitleri",
+    productNotFound: "Ürün bulunamadı.",
   },
   industriesPage: {
     heroEyebrow: "Hizmet Verilen Sektörler",
@@ -745,6 +763,12 @@ const ru: UIStrings = {
     rangeTitle: "Избранные продукты HI-TECH",
     rangeDescription:
       "Показанные характеристики являются редактируемыми примерами. Мы не заявляем об одобрениях API, ACEA, OEM или ISO, если документация не предоставлена.",
+    lightCommercial: "Лёгкие коммерческие автомобили",
+    productDescription: "Описание продукта и области применения",
+    productFeatures: "Характеристики и преимущества",
+    productStandards: "Допуски и спецификации",
+    productPackaging: "Варианты упаковки",
+    productNotFound: "Продукт не найден.",
   },
   industriesPage: {
     heroEyebrow: "Обслуживаемые отрасли",
@@ -966,6 +990,12 @@ const fa: UIStrings = {
     rangeTitle: "محصولات برجسته HI-TECH",
     rangeDescription:
       "مشخصات نشان‌داده‌شده نمونه‌های قابل ویرایش هستند. ما تأییدیه‌های API، ACEA، OEM یا ISO را ادعا نمی‌کنیم مگر اینکه مستندات ارائه شده باشد.",
+    lightCommercial: "خودروهای تجاری سبک",
+    productDescription: "توضیحات محصول و حوزه‌های کاربرد",
+    productFeatures: "ویژگی‌ها و مزایا",
+    productStandards: "تأییدیه‌ها و مشخصات",
+    productPackaging: "گزینه‌های بسته‌بندی",
+    productNotFound: "محصول یافت نشد.",
   },
   industriesPage: {
     heroEyebrow: "صنایع تحت پوشش",
@@ -1187,6 +1217,12 @@ const ar: UIStrings = {
     rangeTitle: "منتجات HI-TECH المميزة",
     rangeDescription:
       "المواصفات الظاهرة هي أمثلة قابلة للتحرير. لا ندّعي موافقات API أو ACEA أو OEM أو ISO إلا إذا تم تقديم الوثائق.",
+    lightCommercial: "السيارات التجارية الخفيفة",
+    productDescription: "وصف المنتج ومجالات التطبيق",
+    productFeatures: "الميزات والفوائد",
+    productStandards: "الموافقات والمواصفات",
+    productPackaging: "خيارات التعبئة",
+    productNotFound: "المنتج غير موجود.",
   },
   industriesPage: {
     heroEyebrow: "الصناعات المخدومة",
@@ -1402,6 +1438,12 @@ const de: UIStrings = {
     rangeTitle: "Ausgewählte HI-TECH Produkte",
     rangeDescription:
       "Angezeigte Viskositätsgrades und Spezifikationen sind bearbeitbare Platzhalter. Wir erheben keine Ansprüche auf API-, ACEA-, OEM- oder ISO-Zulassungen, sofern keine Dokumentation vorliegt.",
+    lightCommercial: "Leichte Nutzfahrzeuge",
+    productDescription: "Produktbeschreibung und Anwendungsbereiche",
+    productFeatures: "Eigenschaften und Vorteile",
+    productStandards: "Zulassungen und Spezifikationen",
+    productPackaging: "Verpackungsoptionen",
+    productNotFound: "Produkt nicht gefunden.",
   },
   industriesPage: {
     heroEyebrow: "Bediente Branchen",
@@ -1617,6 +1659,12 @@ const fr: UIStrings = {
     rangeTitle: "Produits HI-TECH sélectionnés",
     rangeDescription:
       "Les grades de viscosité et spécifications affichés sont des exemples modifiables. Nous ne revendiquons pas d'approbations API, ACEA, OEM ou ISO sauf si une documentation est fournie.",
+    lightCommercial: "Véhicules utilitaires légers",
+    productDescription: "Description du produit et domaines d'application",
+    productFeatures: "Caractéristiques et avantages",
+    productStandards: "Approbations et spécifications",
+    productPackaging: "Options d'emballage",
+    productNotFound: "Produit introuvable.",
   },
   industriesPage: {
     heroEyebrow: "Secteurs desservis",

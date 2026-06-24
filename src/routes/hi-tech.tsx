@@ -626,7 +626,20 @@ function BackToCategories() {
 
 export function HiTechSubcategory() {
   const { category, product } = useParams({ strict: false });
+  const { t, data } = useTranslation();
   const catData = category ? CATEGORY_DATA[category] : undefined;
+
+  // Build slug → translated category name using hitechCategorySlugs + data.categories
+  const slugToTranslatedName: Record<string, string> = {};
+  hitechCategorySlugs.forEach((slug, idx) => {
+    if (data.categories[idx]) slugToTranslatedName[slug] = data.categories[idx].name;
+  });
+  const translatedCatTitle = (category ? slugToTranslatedName[category] : undefined) ?? catData?.title;
+
+  // Subcategory slug → translated title (for non-grade subcategories)
+  const subcatTranslations: Record<string, string> = {
+    "Hafif-Ticariler": t.hitech.lightCommercial,
+  };
 
   // Subcategory grade page — e.g. /Binek-Arac-Motor-Yaglari/5W-30
   if (product && catData?.subcategories) {
@@ -642,9 +655,9 @@ export function HiTechSubcategory() {
                 className="mb-8 inline-flex items-center gap-1.5 rounded-md border border-border bg-[image:var(--gradient-panel)] px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-colors hover:border-primary/50 hover:text-foreground"
               >
                 <ChevronLeft className="h-4 w-4" />
-                {catData.title}
+                {translatedCatTitle}
               </LocaleLink>
-              <SectionHeading eyebrow="HI-TECH" title={subData.title} />
+              <SectionHeading eyebrow="HI-TECH" title={product ? (subcatTranslations[product] ?? subData.title) : subData.title} />
               <div className={`mt-10 grid gap-6 sm:grid-cols-2 ${cols}`}>
                 {subData.products.map((p) => (
                   <LocaleLink
@@ -687,7 +700,7 @@ export function HiTechSubcategory() {
         <div className="min-h-[55vh] bg-background py-20 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <BackToCategories />
-            <SectionHeading eyebrow="HI-TECH" title={catData.title} />
+            <SectionHeading eyebrow="HI-TECH" title={translatedCatTitle ?? ""} />
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {subcatEntries.map(([slug, sub]) => (
                 <LocaleLink
@@ -696,7 +709,7 @@ export function HiTechSubcategory() {
                   className="group flex min-h-32 items-center rounded-lg border border-border bg-[image:var(--gradient-panel)] p-6 shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50"
                 >
                   <h3 className="font-display text-lg font-bold leading-snug text-foreground transition-colors group-hover:text-primary">
-                    {sub.title}
+                    {subcatTranslations[slug] ?? sub.title}
                   </h3>
                 </LocaleLink>
               ))}
@@ -715,7 +728,7 @@ export function HiTechSubcategory() {
         <div className="min-h-[55vh] bg-background py-20 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <BackToCategories />
-            <SectionHeading eyebrow="HI-TECH" title={catData.title} />
+            <SectionHeading eyebrow="HI-TECH" title={translatedCatTitle ?? ""} />
             <div className={`mt-10 grid gap-6 sm:grid-cols-2 ${cols}`}>
               {catData.products.map((p) => (
                 <LocaleLink
@@ -753,6 +766,7 @@ export function HiTechSubcategory() {
 
 export function HiTechProduct() {
   const { product: productSlug, category } = useParams({ strict: false });
+  const { t, data } = useTranslation();
   const catData = category ? CATEGORY_DATA[category] : undefined;
   let product = catData?.products.find((p) => p.slug === productSlug);
   let parentSubcategorySlug: string | undefined;
@@ -763,6 +777,14 @@ export function HiTechProduct() {
       if (found) { product = found; parentSubcategorySlug = slug; parentSubcategoryTitle = sub.title; break; }
     }
   }
+
+  const slugToTranslatedName: Record<string, string> = {};
+  hitechCategorySlugs.forEach((slug, idx) => {
+    if (data.categories[idx]) slugToTranslatedName[slug] = data.categories[idx].name;
+  });
+  const translatedCatTitle = (category ? slugToTranslatedName[category] : undefined) ?? catData?.title;
+  const subcatTranslations: Record<string, string> = { "Hafif-Ticariler": t.hitech.lightCommercial };
+  const translatedSubcatTitle = parentSubcategorySlug ? (subcatTranslations[parentSubcategorySlug] ?? parentSubcategoryTitle) : parentSubcategoryTitle;
   const detail = productSlug ? catData?.details[productSlug] : undefined;
 
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -771,7 +793,7 @@ export function HiTechProduct() {
     return (
       <SiteLayout>
         <div className="flex min-h-[55vh] items-center justify-center bg-background">
-          <p className="text-muted-foreground">Ürün bulunamadı.</p>
+          <p className="text-muted-foreground">{t.hitech.productNotFound}</p>
         </div>
       </SiteLayout>
     );
@@ -810,7 +832,7 @@ export function HiTechProduct() {
               className="inline-flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               <ChevronLeft className="h-4 w-4" />
-              {parentSubcategoryTitle ?? catData?.title ?? category}
+              {translatedSubcatTitle ?? translatedCatTitle ?? category}
             </LocaleLink>
           </div>
         </div>
@@ -854,7 +876,7 @@ export function HiTechProduct() {
             {/* Description */}
             <div className="rounded border border-border bg-[image:var(--gradient-panel)] p-5">
               <p className="mb-3 text-xs font-bold uppercase tracking-widest text-muted-foreground">
-                Ürün Tanımı ve Kullanım Alanları
+                {t.hitech.productDescription}
               </p>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 <span className="font-semibold text-primary">HI-TECH {product.name.toUpperCase()},</span>{" "}
@@ -865,7 +887,7 @@ export function HiTechProduct() {
             {/* Features */}
             <div>
               <h3 className="mb-4 text-sm font-bold uppercase tracking-widest text-foreground">
-                Özellikleri ve Faydaları
+                {t.hitech.productFeatures}
               </h3>
               <div className="space-y-2">
                 {detail.features.map((f) => (
@@ -883,7 +905,7 @@ export function HiTechProduct() {
             {/* Standards */}
             <div>
               <h3 className="mb-3 text-sm font-bold uppercase tracking-widest text-foreground">
-                Karşıladığı Onay ve Şartnameler
+                {t.hitech.productStandards}
               </h3>
               <p className="text-sm text-muted-foreground">{detail.standards}</p>
             </div>
@@ -891,7 +913,7 @@ export function HiTechProduct() {
             {/* Packaging */}
             <div className="rounded border border-border bg-[image:var(--gradient-panel)] p-6">
               <h3 className="mb-6 text-sm font-bold uppercase tracking-widest text-foreground">
-                Ambalaj Çeşitleri
+                {t.hitech.productPackaging}
               </h3>
               <div className="flex flex-wrap gap-3">
                 {detail.packaging.map((size) => (

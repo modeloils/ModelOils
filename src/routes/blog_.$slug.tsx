@@ -2,7 +2,7 @@ import { createFileRoute, useParams } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
-import { getBlogArticle } from "@/lib/blog-data";
+import { getBlogArticle, type BlogLocale } from "@/lib/blog-data";
 
 export function blogArticleHead(locale: Locale) {
   return pageHead(locale, "blog");
@@ -15,8 +15,8 @@ export const Route = createFileRoute("/blog_/$slug")({
 
 export function BlogArticle() {
   const { slug } = useParams({ strict: false }) as { slug: string };
-  const { t } = useTranslation();
-  const article = getBlogArticle(slug);
+  const { t, locale } = useTranslation();
+  const article = getBlogArticle(slug, locale as BlogLocale);
 
   if (!article) {
     return (
