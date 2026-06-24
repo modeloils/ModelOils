@@ -314,7 +314,7 @@ const en: UIStrings = {
     whyTitle: "One Brand. Built for Global Supply.",
     bullets: [
       "Engineered as a complete lubricant family across automotive and industrial needs.",
-      "Designed for export with flexible packaging from 1L bottles to 208L barrels and IBC.",
+      "Designed for export with flexible packaging from 1L bottles to 200L barrels.",
       "Backed by technical support to match the right product to your market.",
       "Distributor-friendly cooperation for long-term, repeatable supply.",
     ],
@@ -341,7 +341,7 @@ const en: UIStrings = {
     heroEyebrow: "Product Range",
     heroTitle: "Lubricant Categories & HI-TECH Products",
     heroSubtitle:
-      "A complete portfolio of automotive and industrial lubricants, supplied in flexible packaging from 1L bottles to 208L barrels and IBC totes.",
+      "A complete portfolio of automotive and industrial lubricants, supplied in flexible packaging from 1L bottles to 200L barrels.",
     catEyebrow: "Categories",
     catTitle: "Browse by Category",
     prodEyebrow: "HI-TECH Products",
@@ -796,7 +796,7 @@ const ru: UIStrings = {
     whyTitle: "Один бренд. Создан для глобальных поставок.",
     bullets: [
       "Разработана как полная линейка смазочных материалов для автомобильных и промышленных нужд.",
-      "Создана для экспорта с гибкой упаковкой от 1L флаконов до 208L бочек и IBC.",
+      "Создана для экспорта с гибкой упаковкой от 1L флаконов до 200L бочек.",
       "Поддерживается технической помощью для подбора нужного продукта для вашего рынка.",
       "Дистрибьюторское сотрудничество для долгосрочных и повторяющихся поставок.",
     ],
@@ -823,7 +823,7 @@ const ru: UIStrings = {
     heroEyebrow: "Ассортимент продукции",
     heroTitle: "Категории смазочных материалов и продукты HI-TECH",
     heroSubtitle:
-      "Полный портфель автомобильных и промышленных смазочных материалов, поставляемых в гибкой упаковке от 1L флаконов до 208L бочек и IBC.",
+      "Полный портфель автомобильных и промышленных смазочных материалов, поставляемых в гибкой упаковке от 1L флаконов до 200L бочек.",
     catEyebrow: "Категории",
     catTitle: "Выбрать по категории",
     prodEyebrow: "Продукты HI-TECH",
@@ -1038,7 +1038,7 @@ const fa: UIStrings = {
     whyTitle: "یک برند. ساخته‌شده برای تأمین جهانی.",
     bullets: [
       "به عنوان یک خانواده کامل روانکار برای نیازهای خودرویی و صنعتی طراحی شده است.",
-      "برای صادرات با بسته‌بندی انعطاف‌پذیر از بطری‌های ۱ لیتری تا بشکه‌های ۲۰۸ لیتری و IBC طراحی شده است.",
+      "برای صادرات با بسته‌بندی انعطاف‌پذیر از بطری‌های ۱ لیتری تا بشکه‌های ۲۰۰ لیتری طراحی شده است.",
       "با پشتیبانی فنی برای تطبیق محصول مناسب با بازار شما پشتیبانی می‌شود.",
       "همکاری دوستانه با توزیع‌کننده برای تأمین بلندمدت و تکرارشونده.",
     ],
@@ -1065,7 +1065,7 @@ const fa: UIStrings = {
     heroEyebrow: "محدوده محصولات",
     heroTitle: "دسته‌بندی‌های روانکار و محصولات HI-TECH",
     heroSubtitle:
-      "پرتفوی کامل روانکارهای خودرویی و صنعتی، تأمین‌شده در بسته‌بندی انعطاف‌پذیر از بطری‌های ۱ لیتری تا بشکه‌های ۲۰۸ لیتری و مخازن IBC.",
+      "پرتفوی کامل روانکارهای خودرویی و صنعتی، تأمین‌شده در بسته‌بندی انعطاف‌پذیر از بطری‌های ۱ لیتری تا بشکه‌های ۲۰۰ لیتری.",
     catEyebrow: "دسته‌بندی‌ها",
     catTitle: "مرور بر اساس دسته‌بندی",
     prodEyebrow: "محصولات HI-TECH",
@@ -1280,7 +1280,7 @@ const ar: UIStrings = {
     whyTitle: "علامة واحدة. بُنيت للتوريد العالمي.",
     bullets: [
       "مصممة كعائلة مواد تشحيمية متكاملة عبر الاحتياجات الصناعية والسيارات.",
-      "مصممة للتصدير بتغليف مرن من زجاجات 1 لتر إلى براميل 208 لتر وIBC.",
+      "مصممة للتصدير بتغليف مرن من زجاجات 1 لتر إلى براميل 200 لتر.",
       "مدعومة بالدعم الفني لمطابقة المنتج المناسب لسوقك.",
       "تعاون صديق للموزع للتوريد طويل الأمد والمتكرر.",
     ],
@@ -1307,7 +1307,7 @@ const ar: UIStrings = {
     heroEyebrow: "مجموعة المنتجات",
     heroTitle: "فئات المواد التشحيمية ومنتجات HI-TECH",
     heroSubtitle:
-      "محفظة متكاملة من المواد التشحيمية للسيارات والصناعة، تُورَّد في تغليف مرن من زجاجات 1 لتر إلى براميل 208 لتر وخزانات IBC.",
+      "محفظة متكاملة من المواد التشحيمية للسيارات والصناعة، تُورَّد في تغليف مرن من زجاجات 1 لتر إلى براميل 200 لتر.",
     catEyebrow: "الفئات",
     catTitle: "تصفح حسب الفئة",
     prodEyebrow: "منتجات HI-TECH",
@@ -1516,7 +1516,7 @@ const de: UIStrings = {
     whyTitle: "Eine Marke. Für globale Versorgung entwickelt.",
     bullets: [
       "Als vollständige Schmierstofffamilie für Automobil- und Industriebedarf konzipiert.",
-      "Für den Export mit flexibler Verpackung von 1-L-Flaschen bis 208-L-Fässern und IBC entwickelt.",
+      "Für den Export mit flexibler Verpackung von 1-L-Flaschen bis 200-L-Fässern entwickelt.",
       "Unterstützt durch technischen Support zur Produktanpassung an Ihren Markt.",
       "Distributorfreundliche Zusammenarbeit für langfristige, wiederholbare Versorgung.",
     ],
@@ -1543,7 +1543,7 @@ const de: UIStrings = {
     heroEyebrow: "Produktpalette",
     heroTitle: "Schmierstoffkategorien & HI-TECH Produkte",
     heroSubtitle:
-      "Ein vollständiges Portfolio aus Automobil- und Industrieschmierstoffen, geliefert in flexibler Verpackung von 1-L-Flaschen bis 208-L-Fässern und IBC.",
+      "Ein vollständiges Portfolio aus Automobil- und Industrieschmierstoffen, geliefert in flexibler Verpackung von 1-L-Flaschen bis 200-L-Fässern.",
     catEyebrow: "Kategorien",
     catTitle: "Nach Kategorie durchsuchen",
     prodEyebrow: "HI-TECH Produkte",
@@ -1752,7 +1752,7 @@ const fr: UIStrings = {
     whyTitle: "Une marque. Développée pour l'approvisionnement mondial.",
     bullets: [
       "Conçu comme une famille complète de lubrifiants pour les besoins automobiles et industriels.",
-      "Développé pour l'export avec un emballage flexible allant de bouteilles 1L aux fûts 208L et IBC.",
+      "Développé pour l'export avec un emballage flexible allant de bouteilles 1L aux fûts 200L.",
       "Appuyé par un support technique pour adapter le bon produit à votre marché.",
       "Coopération adaptée aux distributeurs pour un approvisionnement durable et répétable.",
     ],
@@ -1779,7 +1779,7 @@ const fr: UIStrings = {
     heroEyebrow: "Gamme de produits",
     heroTitle: "Catégories de lubrifiants & Produits HI-TECH",
     heroSubtitle:
-      "Un portfolio complet de lubrifiants automobiles et industriels, fournis dans un emballage flexible allant de bouteilles 1L aux fûts 208L et IBC.",
+      "Un portfolio complet de lubrifiants automobiles et industriels, fournis dans un emballage flexible allant de bouteilles 1L aux fûts 200L.",
     catEyebrow: "Catégories",
     catTitle: "Parcourir par catégorie",
     prodEyebrow: "Produits HI-TECH",

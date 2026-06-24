@@ -201,7 +201,6 @@ const en: SiteContent = {
   ],
   hitechBadges: [
     "Premium Own Brand",
-    "Bulk Supply",
     "Export Ready",
     "Flexible Packaging",
     "Technical Support",
@@ -383,7 +382,6 @@ const tr: SiteContent = {
   ],
   hitechBadges: [
     "Premium Kendi Markası",
-    "Dökme Tedarik",
     "İhracata Hazır",
     "Esnek Ambalaj",
     "Teknik Destek",
@@ -565,7 +563,6 @@ const ru: SiteContent = {
   ],
   hitechBadges: [
     "Премиальный собственный бренд",
-    "Оптовые поставки",
     "Готово к экспорту",
     "Гибкая упаковка",
     "Техническая поддержка",
@@ -747,7 +744,6 @@ const fa: SiteContent = {
   ],
   hitechBadges: [
     "برند ممتاز مالکیتی",
-    "تأمین فله",
     "آماده صادرات",
     "بسته‌بندی انعطاف‌پذیر",
     "پشتیبانی فنی",
@@ -929,7 +925,6 @@ const ar: SiteContent = {
   ],
   hitechBadges: [
     "علامة تجارية ممتازة مملوكة",
-    "توريد بالجملة",
     "جاهز للتصدير",
     "تغليف مرن",
     "دعم فني",
@@ -1111,7 +1106,6 @@ const de: SiteContent = {
   ],
   hitechBadges: [
     "Eigene Premium-Marke",
-    "Großhandelsversorgung",
     "Exportbereit",
     "Flexible Verpackung",
     "Technischer Support",
@@ -1293,7 +1287,6 @@ const fr: SiteContent = {
   ],
   hitechBadges: [
     "Marque premium propriétaire",
-    "Approvisionnement en gros",
     "Prêt à l'export",
     "Emballage flexible",
     "Support technique",
