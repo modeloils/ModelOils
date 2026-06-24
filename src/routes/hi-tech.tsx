@@ -889,12 +889,52 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
     ],
     details: {
       "HD-5W30": {
-        description: "HI-TECH 5W-30 AĞIR HİZMET DİZEL YAĞI, API CK-4 ve ACEA E6/E11 onaylı tam sentetik teknoloji ile üretilmiş en üst seviye ağır hizmet dizel motor yağıdır. Katı emisyon standartlarını karşılayan modern dizel motorlar için özel olarak formüle edilmiştir.",
-        features: [
-          "API CK-4 ve ACEA E6/E11 onayı ile en güncel ağır hizmet dizel motor gereksinimlerini karşılar.",
-          "Düşük viskoziteli sentetik formülü ile soğuk çalışmayı kolaylaştırır ve yakıt tasarrufu sağlar.",
-          "DPF ve EGR sistemleriyle tam uyumlu; parçacık filtresi ömrünü korur.",
-        ],
+        description: {
+          tr: "HI-TECH 5W-30 AĞIR HİZMET DİZEL YAĞI, API CK-4 ve ACEA E6/E11 onaylı tam sentetik teknoloji ile üretilmiş en üst seviye ağır hizmet dizel motor yağıdır. Katı emisyon standartlarını karşılayan modern dizel motorlar için özel olarak formüle edilmiştir.",
+          en: "HI-TECH 5W-30 AĞIR HİZMET DİZEL YAĞI, a top-tier heavy-duty diesel engine oil produced with fully synthetic technology, approved by API CK-4 and ACEA E6/E11. Specially formulated for modern diesel engines meeting stringent emission standards.",
+          ru: "HI-TECH 5W-30 AĞIR HİZMET DİZEL YAĞI, высококлассное дизельное масло для тяжёлых условий, произведённое по технологии полного синтеза, одобренное API CK-4 и ACEA E6/E11. Специально разработано для современных дизельных двигателей, соответствующих жёстким стандартам выбросов.",
+          fa: "HI-TECH 5W-30 AĞIR HİZMET DİZEL YAĞI، یک روغن موتور دیزلی با کیفیت بالا برای خدمات سنگین است که با فناوری تمام سنتتیک تولید شده و توسط API CK-4 و ACEA E6/E11 تأیید شده است. به طور خاص برای موتورهای دیزلی مدرن که استانداردهای سخت انتشار را برآورده می‌کنند فرموله شده است.",
+          ar: "HI-TECH 5W-30 AĞIR HİZMET DİZEL YAĞI، زيت محرك ديزل ثقيل الخدمة بالمستوى الأعلى مُنتَج بتقنية اصطناعية بالكامل، معتمد من API CK-4 وAECA E6/E11. مُصاغ خصيصاً لمحركات الديزل الحديثة التي تستوفي معايير الانبعاثات الصارمة.",
+          de: "HI-TECH 5W-30 AĞIR HİZMET DİZEL YAĞI, ein erstklassiges Schwerlast-Dieselmotoröl, das mit vollsynthetischer Technologie hergestellt und nach API CK-4 und ACEA E6/E11 zugelassen ist. Speziell formuliert für moderne Dieselmotoren, die strenge Emissionsstandards erfüllen.",
+          fr: "HI-TECH 5W-30 AĞIR HİZMET DİZEL YAĞI, une huile moteur diesel lourde service de premier rang produite avec une technologie entièrement synthétique, approuvée API CK-4 et ACEA E6/E11. Spécialement formulée pour les moteurs diesel modernes respectant des normes d'émission strictes.",
+        },
+        features: {
+          tr: [
+            "API CK-4 ve ACEA E6/E11 onayı ile en güncel ağır hizmet dizel motor gereksinimlerini karşılar.",
+            "Düşük viskoziteli sentetik formülü ile soğuk çalışmayı kolaylaştırır ve yakıt tasarrufu sağlar.",
+            "DPF ve EGR sistemleriyle tam uyumlu; parçacık filtresi ömrünü korur.",
+          ],
+          en: [
+            "API CK-4 and ACEA E6/E11 approval meets the latest heavy-duty diesel engine requirements.",
+            "Low-viscosity synthetic formula facilitates cold-weather starting and saves fuel.",
+            "Fully compatible with DPF and EGR systems; preserves particulate filter life.",
+          ],
+          ru: [
+            "Одобрение API CK-4 и ACEA E6/E11 соответствует последним требованиям для тяжёлых дизельных двигателей.",
+            "Низковязкая синтетическая формула облегчает холодный пуск и экономит топливо.",
+            "Полностью совместимо с системами DPF и EGR; сохраняет ресурс сажевого фильтра.",
+          ],
+          fa: [
+            "تأییدیه API CK-4 و ACEA E6/E11 آخرین نیازمندی‌های موتورهای دیزلی سنگین را برآورده می‌کند.",
+            "فرمول سنتتیک با ویسکوزیته پایین استارت در هوای سرد را آسان می‌کند و سوخت صرفه‌جویی می‌کند.",
+            "کاملاً با سیستم‌های DPF و EGR سازگار است؛ عمر فیلتر ذرات را حفظ می‌کند.",
+          ],
+          ar: [
+            "اعتماد API CK-4 وAECA E6/E11 يستوفي أحدث متطلبات محركات الديزل الثقيل.",
+            "الصيغة الاصطناعية منخفضة اللزوجة تُيسّر التشغيل في الطقس البارد وتوفر الوقود.",
+            "متوافق تماماً مع أنظمة DPF وEGR؛ يحافظ على عمر فلتر الجسيمات.",
+          ],
+          de: [
+            "API CK-4- und ACEA E6/E11-Zulassung erfüllt die neuesten Anforderungen für schwere Dieselmotoren.",
+            "Niedrigviskose synthetische Formel erleichtert den Kaltstart und spart Kraftstoff.",
+            "Vollständig kompatibel mit DPF- und EGR-Systemen; schützt die Nutzungsdauer des Partikelfilters.",
+          ],
+          fr: [
+            "L'approbation API CK-4 et ACEA E6/E11 répond aux exigences les plus récentes pour les moteurs diesel lourds.",
+            "La formule synthétique à faible viscosité facilite le démarrage par temps froid et économise le carburant.",
+            "Entièrement compatible avec les systèmes DPF et EGR ; préserve la durée de vie du filtre à particules.",
+          ],
+        },
         standards: "API CK-4, ACEA E6/E11, Volvo VDS-4.5, MB 228.51",
         packaging: ["20 L", "200 L"],
       },
