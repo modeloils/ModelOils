@@ -26,6 +26,7 @@ export interface UIStrings {
     switchToAr: string;
     switchToDe: string;
     switchToFr: string;
+    label: string;
   };
   hero: {
     badge: string;
@@ -156,7 +157,7 @@ export interface UIStrings {
   notFound: { title: string; body: string; goHome: string };
   errorPage: { title: string; body: string; tryAgain: string; goHome: string };
   mediaPage: { heroTitle: string; heroSubtitle: string; galleryEyebrow: string };
-  common: { backToHome: string; backToBrands: string; backToProducts: string; catalogs: string };
+  common: { backToHome: string; backToBrands: string; backToProducts: string; catalogs: string; catalog: string; viewProducts: string };
   blogPage: {
     heroTitle: string;
     heroSubtitle: string;
@@ -193,6 +194,7 @@ const en: UIStrings = {
     switchToAr: "العربية",
     switchToDe: "Deutsch",
     switchToFr: "Français",
+    label: "Language",
   },
   hero: {
     badge: "International Lubricant Export",
@@ -389,6 +391,8 @@ const en: UIStrings = {
     backToBrands: "Back to Brands",
     backToProducts: "Back to Products",
     catalogs: "Catalogs",
+    catalog: "catalog",
+    viewProducts: "View products",
   },
   blogPage: {
     heroTitle: "Technical Resources",
@@ -426,6 +430,7 @@ const tr: UIStrings = {
     switchToAr: "العربية",
     switchToDe: "Deutsch",
     switchToFr: "Français",
+    label: "Dil",
   },
   hero: {
     badge: "Uluslararası Yağ İhracatı",
@@ -620,6 +625,8 @@ const tr: UIStrings = {
     backToBrands: "Markalara Dön",
     backToProducts: "Ürünlere Geri Dön",
     catalogs: "Kataloglar",
+    catalog: "kataloğu",
+    viewProducts: "Ürünleri görüntüle",
   },
   blogPage: {
     heroTitle: "Teknik Kaynaklar",
@@ -657,6 +664,7 @@ const ru: UIStrings = {
     switchToAr: "العربية",
     switchToDe: "Deutsch",
     switchToFr: "Français",
+    label: "Язык",
   },
   hero: {
     badge: "Международный экспорт смазочных материалов",
@@ -853,6 +861,8 @@ const ru: UIStrings = {
     backToBrands: "К брендам",
     backToProducts: "К продуктам",
     catalogs: "Каталоги",
+    catalog: "каталог",
+    viewProducts: "Смотреть продукты",
   },
   blogPage: {
     heroTitle: "Технические ресурсы",
@@ -890,6 +900,7 @@ const fa: UIStrings = {
     switchToAr: "العربية",
     switchToDe: "Deutsch",
     switchToFr: "Français",
+    label: "زبان",
   },
   hero: {
     badge: "صادرات بین‌المللی روانکار",
@@ -1086,6 +1097,8 @@ const fa: UIStrings = {
     backToBrands: "بازگشت به برندها",
     backToProducts: "بازگشت به محصولات",
     catalogs: "کاتالوگ‌ها",
+    catalog: "کاتالوگ",
+    viewProducts: "مشاهده محصولات",
   },
   blogPage: {
     heroTitle: "منابع فنی",
@@ -1123,6 +1136,7 @@ const ar: UIStrings = {
     switchToAr: "العربية",
     switchToDe: "Deutsch",
     switchToFr: "Français",
+    label: "اللغة",
   },
   hero: {
     badge: "تصدير دولي للمواد التشحيمية",
@@ -1319,6 +1333,8 @@ const ar: UIStrings = {
     backToBrands: "العودة إلى العلامات التجارية",
     backToProducts: "العودة إلى المنتجات",
     catalogs: "الكتالوجات",
+    catalog: "كتالوج",
+    viewProducts: "عرض المنتجات",
   },
   blogPage: {
     heroTitle: "الموارد التقنية",
@@ -1356,6 +1372,7 @@ const de: UIStrings = {
     switchToAr: "العربية",
     switchToDe: "Deutsch",
     switchToFr: "Français",
+    label: "Sprache",
   },
   hero: {
     badge: "Internationaler Schmierstoff-Export",
@@ -1546,6 +1563,8 @@ const de: UIStrings = {
     backToBrands: "Zu den Marken",
     backToProducts: "Zu den Produkten",
     catalogs: "Kataloge",
+    catalog: "Katalog",
+    viewProducts: "Produkte ansehen",
   },
   blogPage: {
     heroTitle: "Technische Ressourcen",
@@ -1583,6 +1602,7 @@ const fr: UIStrings = {
     switchToAr: "العربية",
     switchToDe: "Deutsch",
     switchToFr: "Français",
+    label: "Langue",
   },
   hero: {
     badge: "Export international de lubrifiants",
@@ -1773,6 +1793,8 @@ const fr: UIStrings = {
     backToBrands: "Retour aux marques",
     backToProducts: "Retour aux produits",
     catalogs: "Catalogues",
+    catalog: "catalogue",
+    viewProducts: "Voir les produits",
   },
   blogPage: {
     heroTitle: "Ressources techniques",
