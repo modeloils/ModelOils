@@ -263,12 +263,12 @@ function CatalogBrands() {
             <LocaleLink
               key={b.name}
               to={`/products/${b.slug}`}
-              className="flex h-20 items-center justify-center rounded-lg border border-border bg-secondary/40 p-4 transition-all hover:border-primary/50 hover:bg-secondary/70"
+              className="flex h-20 items-center justify-center overflow-hidden rounded-lg border border-border bg-secondary/40 p-4 transition-all hover:border-primary/50 hover:bg-secondary/70"
             >
               <img
                 src={b.logo}
                 alt={b.name}
-                className={`${b.logoClassName ?? "max-h-full"} w-auto object-contain`}
+                className={`${b.logoClassName ?? "max-h-10 max-w-full"} w-auto object-contain`}
               />
             </LocaleLink>
           ))}
