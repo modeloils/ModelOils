@@ -15,6 +15,8 @@ export interface UIStrings {
     brandBadge: string;
     requestQuote: string;
     tagline: string;
+    toggleMenu: string;
+    whatsappLabel: string;
   };
   lang: {
     switchToEn: string;
@@ -24,6 +26,7 @@ export interface UIStrings {
     switchToAr: string;
     switchToDe: string;
     switchToFr: string;
+    label: string;
   };
   hero: {
     badge: string;
@@ -111,6 +114,7 @@ export interface UIStrings {
     productStandards: string;
     productPackaging: string;
     productNotFound: string;
+    zoomImage: string;
   };
   industriesPage: {
     heroEyebrow: string;
@@ -146,11 +150,15 @@ export interface UIStrings {
     submitting: string;
     toastTitle: string;
     toastBody: string;
+    errorTitle: string;
+    errorBody: string;
+    networkError: string;
   };
   notFound: { title: string; body: string; goHome: string };
   errorPage: { title: string; body: string; tryAgain: string; goHome: string };
   mediaPage: { heroTitle: string; heroSubtitle: string; galleryEyebrow: string };
-  common: { backToHome: string; backToBrands: string; backToProducts: string; catalogs: string };
+  common: { backToHome: string; backToBrands: string; backToProducts: string; catalogs: string; catalog: string; viewProducts: string };
+  imgAlt: { heroProducts: string; flagshipFamily: string; exportWarehouse: string; productDisplay: string };
   blogPage: {
     heroTitle: string;
     heroSubtitle: string;
@@ -176,6 +184,8 @@ const en: UIStrings = {
     brandBadge: "Brand",
     requestQuote: "Request Quote",
     tagline: "Lubricant Export",
+    toggleMenu: "Toggle menu",
+    whatsappLabel: "Contact us on WhatsApp",
   },
   lang: {
     switchToEn: "English",
@@ -185,6 +195,7 @@ const en: UIStrings = {
     switchToAr: "العربية",
     switchToDe: "Deutsch",
     switchToFr: "Français",
+    label: "Language",
   },
   hero: {
     badge: "International Lubricant Export",
@@ -317,6 +328,7 @@ const en: UIStrings = {
     productStandards: "Approvals and Specifications",
     productPackaging: "Packaging Options",
     productNotFound: "Product not found.",
+    zoomImage: "Enlarge image",
   },
   industriesPage: {
     heroEyebrow: "Industries Served",
@@ -355,6 +367,9 @@ const en: UIStrings = {
     submitting: "Sending...",
     toastTitle: "Request received",
     toastBody: "Thank you. Our export team will prepare a suitable offer and get back to you.",
+    errorTitle: "Error",
+    errorBody: "Could not send your request. Please email us directly.",
+    networkError: "Network error. Please email us directly at info@modelgrup.com",
   },
   notFound: {
     title: "Page not found",
@@ -377,6 +392,14 @@ const en: UIStrings = {
     backToBrands: "Back to Brands",
     backToProducts: "Back to Products",
     catalogs: "Catalogs",
+    catalog: "catalog",
+    viewProducts: "View products",
+  },
+  imgAlt: {
+    heroProducts: "HI-TECH premium motor oils displayed in a dark industrial export environment",
+    flagshipFamily: "HI-TECH flagship lubricant product family display",
+    exportWarehouse: "International lubricant export warehouse with oil drums",
+    productDisplay: "HI-TECH lubricant product display",
   },
   blogPage: {
     heroTitle: "Technical Resources",
@@ -403,6 +426,8 @@ const tr: UIStrings = {
     brandBadge: "Marka",
     requestQuote: "Teklif Al",
     tagline: "Yağ İhracatı",
+    toggleMenu: "Menüyü aç/kapat",
+    whatsappLabel: "WhatsApp ile iletişime geçin",
   },
   lang: {
     switchToEn: "English",
@@ -412,6 +437,7 @@ const tr: UIStrings = {
     switchToAr: "العربية",
     switchToDe: "Deutsch",
     switchToFr: "Français",
+    label: "Dil",
   },
   hero: {
     badge: "Uluslararası Yağ İhracatı",
@@ -543,6 +569,7 @@ const tr: UIStrings = {
     productStandards: "Karşıladığı Onay ve Şartnameler",
     productPackaging: "Ambalaj Çeşitleri",
     productNotFound: "Ürün bulunamadı.",
+    zoomImage: "Resmi büyüt",
   },
   industriesPage: {
     heroEyebrow: "Hizmet Verilen Sektörler",
@@ -580,6 +607,9 @@ const tr: UIStrings = {
     submitting: "Gönderiliyor...",
     toastTitle: "Talebiniz alındı",
     toastBody: "Teşekkürler. İhracat ekibimiz size uygun bir teklif hazırlayıp geri dönecektir.",
+    errorTitle: "Hata",
+    errorBody: "Talebiniz gönderilemedi. Lütfen bize doğrudan e-posta gönderin.",
+    networkError: "Ağ hatası. Lütfen bize doğrudan info@modelgrup.com adresinden e-posta gönderin.",
   },
   notFound: {
     title: "Sayfa bulunamadı",
@@ -602,6 +632,14 @@ const tr: UIStrings = {
     backToBrands: "Markalara Dön",
     backToProducts: "Ürünlere Geri Dön",
     catalogs: "Kataloglar",
+    catalog: "kataloğu",
+    viewProducts: "Ürünleri görüntüle",
+  },
+  imgAlt: {
+    heroProducts: "Koyu, endüstriyel bir ihracat ortamında sergilenen HI-TECH premium motor yağları",
+    flagshipFamily: "HI-TECH amiral ürün ailesi sergisi",
+    exportWarehouse: "Varillerle dolu uluslararası madeni yağ ihracat deposu",
+    productDisplay: "HI-TECH madeni yağ ürün sergisi",
   },
   blogPage: {
     heroTitle: "Teknik Kaynaklar",
@@ -628,6 +666,8 @@ const ru: UIStrings = {
     brandBadge: "Бренд",
     requestQuote: "Запросить цену",
     tagline: "Экспорт смазочных материалов",
+    toggleMenu: "Открыть/закрыть меню",
+    whatsappLabel: "Связаться с нами в WhatsApp",
   },
   lang: {
     switchToEn: "English",
@@ -637,6 +677,7 @@ const ru: UIStrings = {
     switchToAr: "العربية",
     switchToDe: "Deutsch",
     switchToFr: "Français",
+    label: "Язык",
   },
   hero: {
     badge: "Международный экспорт смазочных материалов",
@@ -769,6 +810,7 @@ const ru: UIStrings = {
     productStandards: "Допуски и спецификации",
     productPackaging: "Варианты упаковки",
     productNotFound: "Продукт не найден.",
+    zoomImage: "Увеличить изображение",
   },
   industriesPage: {
     heroEyebrow: "Обслуживаемые отрасли",
@@ -807,6 +849,9 @@ const ru: UIStrings = {
     submitting: "Отправка...",
     toastTitle: "Запрос получен",
     toastBody: "Спасибо. Наша экспортная команда подготовит подходящее предложение и свяжется с вами.",
+    errorTitle: "Ошибка",
+    errorBody: "Не удалось отправить запрос. Пожалуйста, напишите нам напрямую по электронной почте.",
+    networkError: "Ошибка сети. Пожалуйста, напишите нам на info@modelgrup.com",
   },
   notFound: {
     title: "Страница не найдена",
@@ -829,6 +874,14 @@ const ru: UIStrings = {
     backToBrands: "К брендам",
     backToProducts: "К продуктам",
     catalogs: "Каталоги",
+    catalog: "каталог",
+    viewProducts: "Смотреть продукты",
+  },
+  imgAlt: {
+    heroProducts: "Премиальные моторные масла HI-TECH в тёмной промышленной экспортной среде",
+    flagshipFamily: "Витрина флагманского семейства смазочных материалов HI-TECH",
+    exportWarehouse: "Международный склад экспорта смазочных материалов с бочками масла",
+    productDisplay: "Витрина смазочных материалов HI-TECH",
   },
   blogPage: {
     heroTitle: "Технические ресурсы",
@@ -855,6 +908,8 @@ const fa: UIStrings = {
     brandBadge: "برند",
     requestQuote: "درخواست قیمت",
     tagline: "صادرات روانکار",
+    toggleMenu: "باز/بسته کردن منو",
+    whatsappLabel: "تماس با ما از طریق واتساپ",
   },
   lang: {
     switchToEn: "English",
@@ -864,6 +919,7 @@ const fa: UIStrings = {
     switchToAr: "العربية",
     switchToDe: "Deutsch",
     switchToFr: "Français",
+    label: "زبان",
   },
   hero: {
     badge: "صادرات بین‌المللی روانکار",
@@ -996,6 +1052,7 @@ const fa: UIStrings = {
     productStandards: "تأییدیه‌ها و مشخصات",
     productPackaging: "گزینه‌های بسته‌بندی",
     productNotFound: "محصول یافت نشد.",
+    zoomImage: "بزرگ‌نمایی تصویر",
   },
   industriesPage: {
     heroEyebrow: "صنایع تحت پوشش",
@@ -1034,6 +1091,9 @@ const fa: UIStrings = {
     submitting: "در حال ارسال...",
     toastTitle: "درخواست دریافت شد",
     toastBody: "متشکریم. تیم صادراتی ما یک پیشنهاد مناسب آماده کرده و با شما تماس خواهد گرفت.",
+    errorTitle: "خطا",
+    errorBody: "درخواست شما ارسال نشد. لطفاً مستقیماً با ما از طریق ایمیل تماس بگیرید.",
+    networkError: "خطای شبکه. لطفاً مستقیماً به آدرس info@modelgrup.com ایمیل بزنید.",
   },
   notFound: {
     title: "صفحه یافت نشد",
@@ -1056,6 +1116,14 @@ const fa: UIStrings = {
     backToBrands: "بازگشت به برندها",
     backToProducts: "بازگشت به محصولات",
     catalogs: "کاتالوگ‌ها",
+    catalog: "کاتالوگ",
+    viewProducts: "مشاهده محصولات",
+  },
+  imgAlt: {
+    heroProducts: "روغن‌های موتور پریمیوم HI-TECH در یک محیط صنعتی تیره برای صادرات",
+    flagshipFamily: "نمایش خانواده محصولات پرچم‌دار روان‌کننده HI-TECH",
+    exportWarehouse: "انبار بین‌المللی صادرات روان‌کننده با بشکه‌های روغن",
+    productDisplay: "نمایش محصول روان‌کننده HI-TECH",
   },
   blogPage: {
     heroTitle: "منابع فنی",
@@ -1082,6 +1150,8 @@ const ar: UIStrings = {
     brandBadge: "العلامة التجارية",
     requestQuote: "طلب عرض سعر",
     tagline: "تصدير المواد التشحيمية",
+    toggleMenu: "فتح/إغلاق القائمة",
+    whatsappLabel: "تواصل معنا عبر واتساب",
   },
   lang: {
     switchToEn: "English",
@@ -1091,6 +1161,7 @@ const ar: UIStrings = {
     switchToAr: "العربية",
     switchToDe: "Deutsch",
     switchToFr: "Français",
+    label: "اللغة",
   },
   hero: {
     badge: "تصدير دولي للمواد التشحيمية",
@@ -1223,6 +1294,7 @@ const ar: UIStrings = {
     productStandards: "الموافقات والمواصفات",
     productPackaging: "خيارات التعبئة",
     productNotFound: "المنتج غير موجود.",
+    zoomImage: "تكبير الصورة",
   },
   industriesPage: {
     heroEyebrow: "الصناعات المخدومة",
@@ -1261,6 +1333,9 @@ const ar: UIStrings = {
     submitting: "جارٍ الإرسال...",
     toastTitle: "تم استلام الطلب",
     toastBody: "شكراً لك. سيعدّ فريق التصدير لدينا عرضاً مناسباً ويتواصل معك.",
+    errorTitle: "خطأ",
+    errorBody: "تعذّر إرسال طلبك. يرجى مراسلتنا مباشرة عبر البريد الإلكتروني.",
+    networkError: "خطأ في الشبكة. يرجى مراسلتنا على info@modelgrup.com",
   },
   notFound: {
     title: "الصفحة غير موجودة",
@@ -1283,6 +1358,14 @@ const ar: UIStrings = {
     backToBrands: "العودة إلى العلامات التجارية",
     backToProducts: "العودة إلى المنتجات",
     catalogs: "الكتالوجات",
+    catalog: "كتالوج",
+    viewProducts: "عرض المنتجات",
+  },
+  imgAlt: {
+    heroProducts: "زيوت محركات HI-TECH الممتازة معروضة في بيئة تصدير صناعية داكنة",
+    flagshipFamily: "عرض عائلة منتجات HI-TECH الرائدة لمواد التشحيم",
+    exportWarehouse: "مستودع دولي لتصدير مواد التشحيم مع براميل الزيت",
+    productDisplay: "عرض منتج مواد التشحيم HI-TECH",
   },
   blogPage: {
     heroTitle: "الموارد التقنية",
@@ -1309,6 +1392,8 @@ const de: UIStrings = {
     brandBadge: "Marke",
     requestQuote: "Angebot anfordern",
     tagline: "Schmierstoff-Export",
+    toggleMenu: "Menü öffnen/schließen",
+    whatsappLabel: "Kontaktieren Sie uns auf WhatsApp",
   },
   lang: {
     switchToEn: "English",
@@ -1318,6 +1403,7 @@ const de: UIStrings = {
     switchToAr: "العربية",
     switchToDe: "Deutsch",
     switchToFr: "Français",
+    label: "Sprache",
   },
   hero: {
     badge: "Internationaler Schmierstoff-Export",
@@ -1444,6 +1530,7 @@ const de: UIStrings = {
     productStandards: "Zulassungen und Spezifikationen",
     productPackaging: "Verpackungsoptionen",
     productNotFound: "Produkt nicht gefunden.",
+    zoomImage: "Bild vergrößern",
   },
   industriesPage: {
     heroEyebrow: "Bediente Branchen",
@@ -1482,6 +1569,9 @@ const de: UIStrings = {
     submitting: "Wird gesendet...",
     toastTitle: "Anfrage erhalten",
     toastBody: "Danke. Unser Export-Team wird ein passendes Angebot vorbereiten und sich bei Ihnen melden.",
+    errorTitle: "Fehler",
+    errorBody: "Ihre Anfrage konnte nicht gesendet werden. Bitte schreiben Sie uns direkt eine E-Mail.",
+    networkError: "Netzwerkfehler. Bitte schreiben Sie uns direkt an info@modelgrup.com",
   },
   notFound: {
     title: "Seite nicht gefunden",
@@ -1504,6 +1594,14 @@ const de: UIStrings = {
     backToBrands: "Zu den Marken",
     backToProducts: "Zu den Produkten",
     catalogs: "Kataloge",
+    catalog: "Katalog",
+    viewProducts: "Produkte ansehen",
+  },
+  imgAlt: {
+    heroProducts: "HI-TECH Premium-Motoröle in einer dunklen industriellen Exportumgebung",
+    flagshipFamily: "Präsentation der HI-TECH Flaggschiff-Schmierstoff-Produktfamilie",
+    exportWarehouse: "Internationales Schmierstoff-Exportlager mit Ölfässern",
+    productDisplay: "HI-TECH Schmierstoff-Produktpräsentation",
   },
   blogPage: {
     heroTitle: "Technische Ressourcen",
@@ -1530,6 +1628,8 @@ const fr: UIStrings = {
     brandBadge: "Marque",
     requestQuote: "Demander un devis",
     tagline: "Export de lubrifiants",
+    toggleMenu: "Ouvrir/fermer le menu",
+    whatsappLabel: "Contactez-nous sur WhatsApp",
   },
   lang: {
     switchToEn: "English",
@@ -1539,6 +1639,7 @@ const fr: UIStrings = {
     switchToAr: "العربية",
     switchToDe: "Deutsch",
     switchToFr: "Français",
+    label: "Langue",
   },
   hero: {
     badge: "Export international de lubrifiants",
@@ -1665,6 +1766,7 @@ const fr: UIStrings = {
     productStandards: "Approbations et spécifications",
     productPackaging: "Options d'emballage",
     productNotFound: "Produit introuvable.",
+    zoomImage: "Agrandir l'image",
   },
   industriesPage: {
     heroEyebrow: "Secteurs desservis",
@@ -1703,6 +1805,9 @@ const fr: UIStrings = {
     submitting: "Envoi en cours...",
     toastTitle: "Demande reçue",
     toastBody: "Merci. Notre équipe export préparera une offre adaptée et vous contactera.",
+    errorTitle: "Erreur",
+    errorBody: "Votre demande n'a pas pu être envoyée. Veuillez nous contacter directement par e-mail.",
+    networkError: "Erreur réseau. Veuillez nous écrire directement à info@modelgrup.com",
   },
   notFound: {
     title: "Page introuvable",
@@ -1725,6 +1830,14 @@ const fr: UIStrings = {
     backToBrands: "Retour aux marques",
     backToProducts: "Retour aux produits",
     catalogs: "Catalogues",
+    catalog: "catalogue",
+    viewProducts: "Voir les produits",
+  },
+  imgAlt: {
+    heroProducts: "Huiles moteur premium HI-TECH présentées dans un environnement d'exportation industriel sombre",
+    flagshipFamily: "Présentation de la gamme phare de lubrifiants HI-TECH",
+    exportWarehouse: "Entrepôt international d'exportation de lubrifiants avec fûts d'huile",
+    productDisplay: "Présentation de produits lubrifiants HI-TECH",
   },
   blogPage: {
     heroTitle: "Ressources techniques",

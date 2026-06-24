@@ -125,7 +125,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
         className,
       )}
       role="group"
-      aria-label="Language"
+      aria-label={UI[locale].lang.label}
       dir="ltr"
     >
       <span

@@ -138,7 +138,7 @@ export function Products() {
                 <LocaleLink
                   key={brand.pathName}
                   to={`/products/${brand.pathName}`}
-                  aria-label={`${brand.label} products`}
+                  aria-label={`${brand.label} — ${t.common.viewProducts}`}
                   className="group block overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg"
                 >
                   <div className="flex aspect-[4/3] items-center justify-center bg-muted/40">
@@ -148,7 +148,7 @@ export function Products() {
                       loading="lazy"
                       width={180}
                       height={100}
-                      className={`${brand.logoClassName ?? "max-h-24 max-w-[70%]"} object-contain transition-transform duration-300 group-hover:scale-105`}
+                      className={`${("logoClassName" in brand ? brand.logoClassName : undefined) ?? "max-h-24 max-w-[70%]"} object-contain transition-transform duration-300 group-hover:scale-105`}
                     />
                   </div>
                 </LocaleLink>

@@ -45,7 +45,7 @@ export function About() {
           <div className="relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)] glow-blue">
             <img
               src={flagshipImg}
-              alt="HI-TECH lubricant product display"
+              alt={t.imgAlt.productDisplay}
               loading="lazy"
               width={1536}
               height={1024}
