@@ -11,7 +11,7 @@ const MEDIA_ALBUMS = [
     title: "Fuar",
     images: [
       "/model-oils/media/fuar/fuar-1.png",
-      "/model-oils/media/fuar/fuar%202.png",
+      "/model-oils/media/fuar/fuar-2.png",
       "/model-oils/media/fuar/fuar3.png",
       "/model-oils/media/fuar/fuar-4.jpg",
     ],
