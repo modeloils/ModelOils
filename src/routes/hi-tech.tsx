@@ -108,9 +108,9 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
         { slug: "Binek-5W-30-5L", name: "5W-30 5L", image: "/model-oils/images/hi-tech/binek/5W-30/5L.png" },
       ]},
       "5W-30-DPF": { title: "5W-30 DPF", products: [
-        { slug: "Binek-5W-30-DPF-1L", name: "5W-30 DPF 1L", image: "/model-oils/images/hi-tech/binek/5W-30%20DPF/1L.png" },
-        { slug: "Binek-5W-30-DPF-4L", name: "5W-30 DPF 4L", image: "/model-oils/images/hi-tech/binek/5W-30%20DPF/4L.png" },
-        { slug: "Binek-5W-30-DPF-5L", name: "5W-30 DPF 5L", image: "/model-oils/images/hi-tech/binek/5W-30%20DPF/5L.png" },
+        { slug: "Binek-5W-30-DPF-1L", name: "5W-30 DPF 1L", image: "/model-oils/images/hi-tech/binek/5W-30-DPF/1L.png" },
+        { slug: "Binek-5W-30-DPF-4L", name: "5W-30 DPF 4L", image: "/model-oils/images/hi-tech/binek/5W-30-DPF/4L.png" },
+        { slug: "Binek-5W-30-DPF-5L", name: "5W-30 DPF 5L", image: "/model-oils/images/hi-tech/binek/5W-30-DPF/5L.png" },
       ]},
       "5W-40":     { title: "5W-40",     products: [
         { slug: "Binek-5W-40-1L", name: "5W-40 1L", image: "/model-oils/images/hi-tech/binek/5W-40/1L.png" },
@@ -134,18 +134,18 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
         { slug: "Binek-20W-50-4L", name: "20W-50 4L", image: "/model-oils/images/hi-tech/binek/20W-50/4L.png" },
       ]},
       "Hafif-Ticariler": { title: "Hafif Ticari Araçlar", products: [
-        { slug: "Hafif-5W30-7L",    name: "5W-30 7L",    image: "/model-oils/images/hi-tech/binek/Hafif%20Ticariler/5W30%207L.png" },
-        { slug: "Hafif-5W30-10-5L", name: "5W-30 10.5L", image: "/model-oils/images/hi-tech/binek/Hafif%20Ticariler/5W30%2010.5L.png" },
-        { slug: "Hafif-10W30-7L",   name: "10W-30 7L",   image: "/model-oils/images/hi-tech/binek/Hafif%20Ticariler/10W30%207L.png" },
+        { slug: "Hafif-5W30-7L",    name: "5W-30 7L",    image: "/model-oils/images/hi-tech/binek/Hafif-Ticariler/5W30-7L.png" },
+        { slug: "Hafif-5W30-10-5L", name: "5W-30 10.5L", image: "/model-oils/images/hi-tech/binek/Hafif-Ticariler/5W30-10.5L.png" },
+        { slug: "Hafif-10W30-7L",   name: "10W-30 7L",   image: "/model-oils/images/hi-tech/binek/Hafif-Ticariler/10W30-7L.png" },
       ]},
     },
   },
   Antifrizler: {
     title: "Antifrizler",
     products: [
-      { slug: "Antifriz-37",       name: "Antifriz -37",       displayName: { en: "Antifreeze -37", tr: "Antifriz -37", ru: "Антифриз -37", fa: "ضدیخ -۳۷", ar: "مانع التجمد -37", de: "Frostschutz -37", fr: "Antigel -37" }, image: "/model-oils/images/hi-tech/antifrizler/Antifriz%20-37.png" },
-      { slug: "Antifriz-56",       name: "Antifriz -56",       displayName: { en: "Antifreeze -56", tr: "Antifriz -56", ru: "Антифриз -56", fa: "ضدیخ -۵۶", ar: "مانع التجمد -56", de: "Frostschutz -56", fr: "Antigel -56" }, image: "/model-oils/images/hi-tech/antifrizler/Antifriz%20-56.png" },
-      { slug: "Antifriz-Konsantre", name: "Antifriz Konsantre", displayName: { en: "Antifreeze Concentrate", tr: "Antifriz Konsantre", ru: "Концентрат антифриза", fa: "ضدیخ کنسانتره", ar: "مركّز مانع التجمد", de: "Frostschutzkonzentrat", fr: "Concentré d'antigel" }, image: "/model-oils/images/hi-tech/antifrizler/Antifriz%20Konsantre.png" },
+      { slug: "Antifriz-37",       name: "Antifriz -37",       displayName: { en: "Antifreeze -37", tr: "Antifriz -37", ru: "Антифриз -37", fa: "ضدیخ -۳۷", ar: "مانع التجمد -37", de: "Frostschutz -37", fr: "Antigel -37" }, image: "/model-oils/images/hi-tech/antifrizler/Antifriz-37.png" },
+      { slug: "Antifriz-56",       name: "Antifriz -56",       displayName: { en: "Antifreeze -56", tr: "Antifriz -56", ru: "Антифриз -56", fa: "ضدیخ -۵۶", ar: "مانع التجمد -56", de: "Frostschutz -56", fr: "Antigel -56" }, image: "/model-oils/images/hi-tech/antifrizler/Antifriz-56.png" },
+      { slug: "Antifriz-Konsantre", name: "Antifriz Konsantre", displayName: { en: "Antifreeze Concentrate", tr: "Antifriz Konsantre", ru: "Концентрат антифриза", fa: "ضدیخ کنسانتره", ar: "مركّز مانع التجمد", de: "Frostschutzkonzentrat", fr: "Concentré d'antigel" }, image: "/model-oils/images/hi-tech/antifrizler/Antifriz-Konsantre.png" },
     ],
     details: {
       "Antifriz-37": {
