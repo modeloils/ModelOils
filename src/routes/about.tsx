@@ -38,7 +38,7 @@ export function About() {
             </p>
             <Button asChild variant="hero" size="lg" className="mt-8">
               <LocaleLink to="/contact">
-                {t.about.partnerCta} <ArrowRight className="h-4 w-4" />
+                {t.about.partnerCta} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
               </LocaleLink>
             </Button>
           </div>

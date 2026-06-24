@@ -62,7 +62,7 @@ function Hero() {
       <div className="absolute inset-0 bg-[image:var(--gradient-hero)]" />
       <div className="absolute inset-0 bg-background/55" />
       <div className="tech-grid absolute inset-0 opacity-40" />
-      <div className="relative mx-auto flex max-w-7xl flex-col justify-center px-4 py-28 sm:px-6 lg:px-8 lg:py-40">
+      <div className="relative mx-auto flex max-w-7xl flex-col justify-center px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-40">
         <div className="max-w-2xl animate-float-up">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
             <Globe2 className="h-3.5 w-3.5" /> {t.hero.badge}
@@ -77,7 +77,7 @@ function Hero() {
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Button asChild variant="hero" size="xl">
               <LocaleLink to="/contact">
-                {t.hero.requestQuote} <ArrowRight className="h-5 w-5" />
+                {t.hero.requestQuote} <ArrowRight className="h-5 w-5 rtl:rotate-180" />
               </LocaleLink>
             </Button>
             <Button asChild variant="steel" size="xl">
@@ -127,7 +127,7 @@ function Flagship() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild variant="hero" size="lg">
               <LocaleLink to="/contact">
-                {t.flagship.becomeDistributor} <ArrowRight className="h-4 w-4" />
+                {t.flagship.becomeDistributor} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
               </LocaleLink>
             </Button>
             <Button asChild variant="steel" size="lg">
@@ -293,7 +293,7 @@ function QuoteCta() {
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
           <Button asChild variant="hero" size="xl">
             <LocaleLink to="/contact">
-              {t.quoteCta.requestWholesale} <ArrowRight className="h-5 w-5" />
+              {t.quoteCta.requestWholesale} <ArrowRight className="h-5 w-5 rtl:rotate-180" />
             </LocaleLink>
           </Button>
           <Button asChild variant="steel" size="xl">

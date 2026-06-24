@@ -47,7 +47,7 @@ export function Industries() {
           <div className="mt-14 text-center">
             <Button asChild variant="hero" size="xl">
               <LocaleLink to="/contact">
-                {t.industriesPage.discussCta} <ArrowRight className="h-5 w-5" />
+                {t.industriesPage.discussCta} <ArrowRight className="h-5 w-5 rtl:rotate-180" />
               </LocaleLink>
             </Button>
           </div>
