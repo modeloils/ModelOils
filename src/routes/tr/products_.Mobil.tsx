@@ -13,11 +13,11 @@ function MobilPage() {
       logo={`${ASSET_BASE}/brands/mobil.png`}
       logoClassName="max-w-[420px]"
       catalogs={[
-        { title: "Motor Yağları", href: "https://model-oils.vercel.app/docs/mobil/mobil-motor-oils.pdf" },
-        { title: "Ağır Vasıta Yağları", href: "https://model-oils.vercel.app/docs/mobil/mobil-delvac-heavy-vehicle.pdf" },
-        { title: "Deniz Yağları", href: "https://model-oils.vercel.app/docs/mobil/mobil-marine-lubricants-chart.pdf" },
-        { title: "Yarış Yağları", href: "https://model-oils.vercel.app/docs/mobil/mobil-1-racing-official.pdf" },
-        { title: "Endüstriyel Yağlar", href: "https://model-oils.vercel.app/docs/mobil/mobil-industrial-lubricants.pdf" },
+        { title: "Motor Yağları", href: "/model-oils/docs/mobil/mobil-motor-oils.pdf" },
+        { title: "Ağır Vasıta Yağları", href: "/model-oils/docs/mobil/mobil-delvac-heavy-vehicle.pdf" },
+        { title: "Deniz Yağları", href: "/model-oils/docs/mobil/mobil-marine-lubricants-chart.pdf" },
+        { title: "Yarış Yağları", href: "/model-oils/docs/mobil/mobil-1-racing-official.pdf" },
+        { title: "Endüstriyel Yağlar", href: "/model-oils/docs/mobil/mobil-industrial-lubricants.pdf" },
       ]}
     />
   );

@@ -13,7 +13,7 @@ function PetrolOfisiPage() {
       logo={`${ASSET_BASE}/brands/petrol-ofisi.png`}
       logoClassName="max-w-[520px]"
       catalogs={[
-        { title: "Katalog", href: "https://model-oils.vercel.app/docs/petrol-ofisi/petrol-ofisi-katalog.pdf" },
+        { title: "Katalog", href: "/model-oils/docs/petrol-ofisi/petrol-ofisi-katalog.pdf" },
       ]}
     />
   );

@@ -12,10 +12,10 @@ function ShellPage() {
       brandName="Shell"
       logo={`${ASSET_BASE}/brands/Shell.png`}
       catalogs={[
-        { title: "Shell Coolant Catalogue", href: "https://model-oils.vercel.app/docs/shell/shell-coolant-catalogue.pdf" },
-        { title: "Shell Helix Catalogue", href: "https://model-oils.vercel.app/docs/shell/shell-helix-catalogue.pdf" },
-        { title: "Shell Marine Catalogue", href: "https://model-oils.vercel.app/docs/shell/shell-marine-catalogue.pdf" },
-        { title: "Shell Industrial Catalogue", href: "https://model-oils.vercel.app/docs/shell/shell-endustriyel-katalog.pdf" },
+        { title: "Shell Coolant Catalogue", href: "/model-oils/docs/shell/shell-coolant-catalogue.pdf" },
+        { title: "Shell Helix Catalogue", href: "/model-oils/docs/shell/shell-helix-catalogue.pdf" },
+        { title: "Shell Marine Catalogue", href: "/model-oils/docs/shell/shell-marine-catalogue.pdf" },
+        { title: "Shell Industrial Catalogue", href: "/model-oils/docs/shell/shell-endustriyel-katalog.pdf" },
       ]}
     />
   );

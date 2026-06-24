@@ -13,8 +13,8 @@ function TexolPage() {
       logo={`${ASSET_BASE}/brands/texol.jpg`}
       logoClassName="max-w-[420px]"
       catalogs={[
-        { title: "Motor Yağları", href: "https://model-oils.vercel.app/docs/texol/texol-motor-oils.pdf" },
-        { title: "Endüstriyel Yağlar", href: "https://model-oils.vercel.app/docs/texol/texol-endustriyel-yaglar.pdf" },
+        { title: "Motor Yağları", href: "/model-oils/docs/texol/texol-motor-oils.pdf" },
+        { title: "Endüstriyel Yağlar", href: "/model-oils/docs/texol/texol-endustriyel-yaglar.pdf" },
       ]}
     />
   );

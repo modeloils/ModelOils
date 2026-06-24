@@ -13,7 +13,7 @@ function MotulPage() {
       logo={`${ASSET_BASE}/brands/motul.jpg`}
       logoClassName="max-w-[360px]"
       catalogs={[
-        { title: "Motul Catalogue", href: "https://model-oils.vercel.app/docs/motul/motul-genel-katalog.pdf" },
+        { title: "Motul Catalogue", href: "/model-oils/docs/motul/motul-genel-katalog.pdf" },
       ]}
     />
   );

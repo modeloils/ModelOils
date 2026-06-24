@@ -13,8 +13,8 @@ function TexacoPage() {
       logo={`${ASSET_BASE}/brands/texaco.png`}
       logoClassName="max-w-[520px]"
       catalogs={[
-        { title: "Texaco Motor Oils", href: "https://model-oils.vercel.app/docs/texaco/texaco-motor-oils.pdf" },
-        { title: "Texaco Catalogue", href: "https://model-oils.vercel.app/docs/texaco/texaco-genel-katalog.pdf" },
+        { title: "Texaco Motor Oils", href: "/model-oils/docs/texaco/texaco-motor-oils.pdf" },
+        { title: "Texaco Catalogue", href: "/model-oils/docs/texaco/texaco-genel-katalog.pdf" },
       ]}
     />
   );

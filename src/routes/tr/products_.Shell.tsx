@@ -7,10 +7,10 @@ export const Route = createFileRoute("/tr/products_/Shell")({
 });
 
 const shellCatalogs = [
-  { title: "Antifrizler", href: "https://model-oils.vercel.app/docs/shell/shell-coolant-catalogue.pdf" },
-  { title: "Motor Yağları", href: "https://model-oils.vercel.app/docs/shell/shell-helix-catalogue.pdf" },
-  { title: "Deniz Yağları", href: "https://model-oils.vercel.app/docs/shell/shell-marine-catalogue.pdf" },
-  { title: "Endüstriyel Katalog", href: "https://model-oils.vercel.app/docs/shell/shell-endustriyel-katalog.pdf" },
+  { title: "Antifrizler", href: "/model-oils/docs/shell/shell-coolant-catalogue.pdf" },
+  { title: "Motor Yağları", href: "/model-oils/docs/shell/shell-helix-catalogue.pdf" },
+  { title: "Deniz Yağları", href: "/model-oils/docs/shell/shell-marine-catalogue.pdf" },
+  { title: "Endüstriyel Katalog", href: "/model-oils/docs/shell/shell-endustriyel-katalog.pdf" },
 ];
 
 function ShellPage() {
