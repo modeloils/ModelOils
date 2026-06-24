@@ -939,52 +939,252 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
         packaging: ["20 L", "200 L"],
       },
       "HD-10W40": {
-        description: "HI-TECH 10W-40 AĞIR HİZMET DİZEL YAĞI, API CI-4 ve ACEA E7/E9 onaylı sentetik teknoloji ağır hizmet dizel motor yağıdır. Kamyon, otobüs ve uzun yol araçlarının talepkâr çalışma koşullarında üstün motor koruması sağlar.",
-        features: [
-          "API CI-4 ve ACEA E7/E9 çift onayı ile geniş araç yelpazesinde güvenilir kullanım imkânı sunar.",
-          "Yüksek torku ve uzun mesafeyi göze alarak formüle edilmiş gelişmiş anti-wear katkılar içerir.",
-          "Uzun yağ değişim aralıkları ile işletme maliyetini düşürür.",
-        ],
+        description: {
+          tr: "HI-TECH 10W-40 AĞIR HİZMET DİZEL YAĞI, API CI-4 ve ACEA E7/E9 onaylı sentetik teknoloji ağır hizmet dizel motor yağıdır. Kamyon, otobüs ve uzun yol araçlarının talepkâr çalışma koşullarında üstün motor koruması sağlar.",
+          en: "HI-TECH 10W-40 HEAVY DUTY DIESEL OIL, a synthetic-technology heavy-duty diesel engine oil approved by API CI-4 and ACEA E7/E9. Provides superior engine protection under the demanding operating conditions of trucks, buses and long-haul vehicles.",
+          ru: "HI-TECH 10W-40 HEAVY DUTY DIESEL OIL, дизельное масло для тяжёлых условий на основе синтетической технологии, одобренное API CI-4 и ACEA E7/E9. Обеспечивает превосходную защиту двигателя в тяжёлых условиях эксплуатации грузовиков, автобусов и магистральных автомобилей.",
+          fa: "HI-TECH 10W-40 HEAVY DUTY DIESEL OIL، یک روغن موتور دیزلی خدمات سنگین با فناوری سنتتیک است که توسط API CI-4 و ACEA E7/E9 تأیید شده است. در شرایط کاری سخت کامیون‌ها، اتوبوس‌ها و خودروهای مسافت طولانی محافظت برتر از موتور ارائه می‌دهد.",
+          ar: "HI-TECH 10W-40 HEAVY DUTY DIESEL OIL، زيت محرك ديزل ثقيل الخدمة بتقنية اصطناعية معتمد من API CI-4 وACEA E7/E9. يوفر حماية فائقة للمحرك في ظروف التشغيل الصعبة للشاحنات والحافلات ومركبات المسافات الطويلة.",
+          de: "HI-TECH 10W-40 HEAVY DUTY DIESEL OIL, ein Schwerlast-Dieselmotoröl in Synthesetechnologie, zugelassen nach API CI-4 und ACEA E7/E9. Bietet überlegenen Motorschutz unter den anspruchsvollen Einsatzbedingungen von Lkw, Bussen und Langstreckenfahrzeugen.",
+          fr: "HI-TECH 10W-40 HEAVY DUTY DIESEL OIL, une huile moteur diesel lourde service de technologie synthétique, approuvée API CI-4 et ACEA E7/E9. Offre une protection moteur supérieure dans les conditions d'exploitation exigeantes des camions, bus et véhicules longue distance.",
+        },
+        features: {
+          tr: [
+            "API CI-4 ve ACEA E7/E9 çift onayı ile geniş araç yelpazesinde güvenilir kullanım imkânı sunar.",
+            "Yüksek torku ve uzun mesafeyi göze alarak formüle edilmiş gelişmiş anti-wear katkılar içerir.",
+            "Uzun yağ değişim aralıkları ile işletme maliyetini düşürür.",
+          ],
+          en: [
+            "Dual API CI-4 and ACEA E7/E9 approval ensures reliable use across a wide range of vehicles.",
+            "Contains advanced anti-wear additives formulated for high torque and long distances.",
+            "Long oil-drain intervals reduce operating costs.",
+          ],
+          ru: [
+            "Двойное одобрение API CI-4 и ACEA E7/E9 обеспечивает надёжное применение в широком парке техники.",
+            "Содержит современные противоизносные присадки, рассчитанные на высокий крутящий момент и большие пробеги.",
+            "Длительные интервалы замены масла снижают эксплуатационные расходы.",
+          ],
+          fa: [
+            "تأییدیه دوگانه API CI-4 و ACEA E7/E9 استفاده مطمئن در طیف گسترده‌ای از خودروها را تضمین می‌کند.",
+            "حاوی افزودنی‌های پیشرفته ضد سایش است که برای گشتاور بالا و مسافت‌های طولانی فرموله شده‌اند.",
+            "فواصل طولانی تعویض روغن هزینه‌های عملیاتی را کاهش می‌دهد.",
+          ],
+          ar: [
+            "الاعتماد المزدوج API CI-4 وACEA E7/E9 يضمن استخداماً موثوقاً عبر مجموعة واسعة من المركبات.",
+            "يحتوي على مضافات متقدمة مضادة للتآكل مُصاغة لعزم الدوران العالي والمسافات الطويلة.",
+            "فترات تغيير الزيت الطويلة تقلل تكاليف التشغيل.",
+          ],
+          de: [
+            "Die doppelte Zulassung nach API CI-4 und ACEA E7/E9 gewährleistet zuverlässigen Einsatz in einer breiten Fahrzeugpalette.",
+            "Enthält fortschrittliche Verschleißschutzadditive, die für hohes Drehmoment und lange Strecken formuliert sind.",
+            "Lange Ölwechselintervalle senken die Betriebskosten.",
+          ],
+          fr: [
+            "La double approbation API CI-4 et ACEA E7/E9 garantit une utilisation fiable sur une large gamme de véhicules.",
+            "Contient des additifs anti-usure avancés formulés pour un couple élevé et de longues distances.",
+            "Les longs intervalles de vidange réduisent les coûts d'exploitation.",
+          ],
+        },
         standards: "API CI-4, ACEA E7/E9, Volvo VDS-3, MB 228.3",
         packaging: ["20 L", "200 L"],
       },
       "HD-15W40": {
-        description: "HI-TECH 15W-40 AĞIR HİZMET DİZEL YAĞI, API CI-4 ve ACEA C7 onaylı sentetik teknoloji ağır hizmet motor yağıdır. Ağır koşullarda çalışan dizel ve benzinli motorlar için kapsamlı koruma sunan çok amaçlı bir formüldür.",
-        features: [
-          "API CI-4 onaylı formülü ile dizel ve benzinli ağır hizmet motorlarında geniş kullanım sağlar.",
-          "Yüksek sıcaklıklarda oksidasyona ve viskozite düşüşüne karşı üstün termal stabilite sunar.",
-          "Sert çalışma koşullarında motor içini temiz tutarak bakım aralıklarını uzatır.",
-        ],
+        description: {
+          tr: "HI-TECH 15W-40 AĞIR HİZMET DİZEL YAĞI, API CI-4 ve ACEA C7 onaylı sentetik teknoloji ağır hizmet motor yağıdır. Ağır koşullarda çalışan dizel ve benzinli motorlar için kapsamlı koruma sunan çok amaçlı bir formüldür.",
+          en: "HI-TECH 15W-40 HEAVY DUTY DIESEL OIL, a synthetic-technology heavy-duty engine oil approved by API CI-4 and ACEA C7. A multi-purpose formula offering comprehensive protection for diesel and petrol engines operating under severe conditions.",
+          ru: "HI-TECH 15W-40 HEAVY DUTY DIESEL OIL, моторное масло для тяжёлых условий на основе синтетической технологии, одобренное API CI-4 и ACEA C7. Универсальная формула, обеспечивающая всестороннюю защиту дизельных и бензиновых двигателей, работающих в тяжёлых условиях.",
+          fa: "HI-TECH 15W-40 HEAVY DUTY DIESEL OIL، یک روغن موتور خدمات سنگین با فناوری سنتتیک است که توسط API CI-4 و ACEA C7 تأیید شده است. فرمولی چندمنظوره که محافظت جامع برای موتورهای دیزلی و بنزینی که در شرایط سخت کار می‌کنند ارائه می‌دهد.",
+          ar: "HI-TECH 15W-40 HEAVY DUTY DIESEL OIL، زيت محرك ثقيل الخدمة بتقنية اصطناعية معتمد من API CI-4 وACEA C7. صيغة متعددة الأغراض توفر حماية شاملة لمحركات الديزل والبنزين العاملة في ظروف قاسية.",
+          de: "HI-TECH 15W-40 HEAVY DUTY DIESEL OIL, ein Schwerlast-Motoröl in Synthesetechnologie, zugelassen nach API CI-4 und ACEA C7. Eine Mehrzweckformel, die umfassenden Schutz für Diesel- und Benzinmotoren unter schweren Bedingungen bietet.",
+          fr: "HI-TECH 15W-40 HEAVY DUTY DIESEL OIL, une huile moteur lourde service de technologie synthétique, approuvée API CI-4 et ACEA C7. Une formule polyvalente offrant une protection complète aux moteurs diesel et essence fonctionnant dans des conditions sévères.",
+        },
+        features: {
+          tr: [
+            "API CI-4 onaylı formülü ile dizel ve benzinli ağır hizmet motorlarında geniş kullanım sağlar.",
+            "Yüksek sıcaklıklarda oksidasyona ve viskozite düşüşüne karşı üstün termal stabilite sunar.",
+            "Sert çalışma koşullarında motor içini temiz tutarak bakım aralıklarını uzatır.",
+          ],
+          en: [
+            "API CI-4 approved formula allows broad use in diesel and petrol heavy-duty engines.",
+            "Provides superior thermal stability against oxidation and viscosity loss at high temperatures.",
+            "Keeps the engine interior clean under harsh operating conditions, extending maintenance intervals.",
+          ],
+          ru: [
+            "Формула с одобрением API CI-4 обеспечивает широкое применение в дизельных и бензиновых двигателях для тяжёлых условий.",
+            "Обеспечивает превосходную термическую стабильность против окисления и снижения вязкости при высоких температурах.",
+            "Сохраняет чистоту двигателя в суровых условиях, увеличивая интервалы обслуживания.",
+          ],
+          fa: [
+            "فرمول تأییدشده API CI-4 امکان استفاده گسترده در موتورهای دیزلی و بنزینی خدمات سنگین را فراهم می‌کند.",
+            "پایداری حرارتی برتر در برابر اکسیداسیون و افت ویسکوزیته در دماهای بالا ارائه می‌دهد.",
+            "داخل موتور را در شرایط کاری سخت تمیز نگه می‌دارد و فواصل نگهداری را افزایش می‌دهد.",
+          ],
+          ar: [
+            "الصيغة المعتمدة من API CI-4 تتيح استخداماً واسعاً في محركات الديزل والبنزين ثقيلة الخدمة.",
+            "توفر ثباتاً حرارياً فائقاً ضد الأكسدة وانخفاض اللزوجة عند درجات الحرارة العالية.",
+            "تحافظ على نظافة المحرك الداخلية في ظروف التشغيل القاسية، مما يطيل فترات الصيانة.",
+          ],
+          de: [
+            "Die nach API CI-4 zugelassene Formel ermöglicht den breiten Einsatz in Diesel- und Benzin-Schwerlastmotoren.",
+            "Bietet überlegene thermische Stabilität gegen Oxidation und Viskositätsverlust bei hohen Temperaturen.",
+            "Hält das Motorinnere unter rauen Betriebsbedingungen sauber und verlängert die Wartungsintervalle.",
+          ],
+          fr: [
+            "La formule approuvée API CI-4 permet une large utilisation dans les moteurs diesel et essence à service intensif.",
+            "Offre une stabilité thermique supérieure contre l'oxydation et la perte de viscosité à haute température.",
+            "Maintient l'intérieur du moteur propre dans des conditions d'exploitation difficiles, prolongeant les intervalles d'entretien.",
+          ],
+        },
         standards: "API CI-4, ACEA C7, MB 228.3, MAN M3275",
         packaging: ["20 L", "200 L"],
       },
       "SAE-30W": {
-        description: "HI-TECH SAE 30W MONOGRAT MOTOR YAĞI, API CF/SG onaylı mineral bazlı tek viskozite kademeli ağır hizmet motor yağıdır. Sıcak ve sabit çalışma koşullarındaki dizel motorlar ile tarım ve iş makineleri için güvenilir yağlama sağlar.",
-        features: [
-          "API CF/SG onaylı monograt formülü ile hem dizel hem benzinli motorlarda kullanılabilir.",
-          "Sabit yük ve sıcak iklim koşullarında kararlı yağ filmi oluşturarak motoru korur.",
-          "Ekonomik mineral baz yağ ile geniş ekipman yelpazesinde uygun maliyet sunar.",
-        ],
+        description: {
+          tr: "HI-TECH SAE 30W MONOGRAT MOTOR YAĞI, API CF/SG onaylı mineral bazlı tek viskozite kademeli ağır hizmet motor yağıdır. Sıcak ve sabit çalışma koşullarındaki dizel motorlar ile tarım ve iş makineleri için güvenilir yağlama sağlar.",
+          en: "HI-TECH SAE 30W MONOGRADE ENGINE OIL, a mineral-based single-grade heavy-duty engine oil approved by API CF/SG. Provides reliable lubrication for diesel engines as well as agricultural and construction machinery operating under hot, steady conditions.",
+          ru: "HI-TECH SAE 30W MONOGRADE ENGINE OIL, минеральное односезонное моторное масло для тяжёлых условий, одобренное API CF/SG. Обеспечивает надёжную смазку дизельных двигателей, а также сельскохозяйственной и строительной техники, работающей в жарких и стабильных условиях.",
+          fa: "HI-TECH SAE 30W MONOGRADE ENGINE OIL، یک روغن موتور خدمات سنگین تک‌درجه بر پایه مواد معدنی است که توسط API CF/SG تأیید شده است. روان‌کاری مطمئن برای موتورهای دیزلی و همچنین ماشین‌آلات کشاورزی و راه‌سازی که در شرایط گرم و ثابت کار می‌کنند ارائه می‌دهد.",
+          ar: "HI-TECH SAE 30W MONOGRADE ENGINE OIL، زيت محرك ثقيل الخدمة أحادي الدرجة على أساس معدني معتمد من API CF/SG. يوفر تزييتاً موثوقاً لمحركات الديزل وكذلك للآلات الزراعية ومعدات البناء العاملة في ظروف حارة وثابتة.",
+          de: "HI-TECH SAE 30W MONOGRADE ENGINE OIL, ein mineralisches Einbereichs-Schwerlastmotoröl, zugelassen nach API CF/SG. Bietet zuverlässige Schmierung für Dieselmotoren sowie Landwirtschafts- und Baumaschinen, die unter heißen, gleichmäßigen Bedingungen arbeiten.",
+          fr: "HI-TECH SAE 30W MONOGRADE ENGINE OIL, une huile moteur monograde à base minérale pour service intensif, approuvée API CF/SG. Assure une lubrification fiable des moteurs diesel ainsi que des engins agricoles et de chantier fonctionnant dans des conditions chaudes et stables.",
+        },
+        features: {
+          tr: [
+            "API CF/SG onaylı monograt formülü ile hem dizel hem benzinli motorlarda kullanılabilir.",
+            "Sabit yük ve sıcak iklim koşullarında kararlı yağ filmi oluşturarak motoru korur.",
+            "Ekonomik mineral baz yağ ile geniş ekipman yelpazesinde uygun maliyet sunar.",
+          ],
+          en: [
+            "Its API CF/SG approved monograde formula can be used in both diesel and petrol engines.",
+            "Forms a stable oil film under steady loads and hot climates to protect the engine.",
+            "Economical mineral base oil offers cost efficiency across a wide range of equipment.",
+          ],
+          ru: [
+            "Монолитная формула с одобрением API CF/SG подходит как для дизельных, так и для бензиновых двигателей.",
+            "Образует стабильную масляную плёнку при постоянных нагрузках и в жарком климате, защищая двигатель.",
+            "Экономичное минеральное базовое масло обеспечивает выгодную стоимость для широкого парка техники.",
+          ],
+          fa: [
+            "فرمول تک‌درجه تأییدشده API CF/SG را می‌توان در هر دو موتور دیزلی و بنزینی استفاده کرد.",
+            "تحت بارهای ثابت و آب‌وهوای گرم لایه روغن پایدار تشکیل می‌دهد تا از موتور محافظت کند.",
+            "روغن پایه معدنی اقتصادی صرفه‌جویی در هزینه را در طیف گسترده‌ای از تجهیزات ارائه می‌دهد.",
+          ],
+          ar: [
+            "صيغته أحادية الدرجة المعتمدة من API CF/SG يمكن استخدامها في محركات الديزل والبنزين على حد سواء.",
+            "يُشكّل طبقة زيت ثابتة تحت الأحمال المستقرة والمناخ الحار لحماية المحرك.",
+            "زيت الأساس المعدني الاقتصادي يوفر كفاءة في التكلفة عبر مجموعة واسعة من المعدات.",
+          ],
+          de: [
+            "Die nach API CF/SG zugelassene Einbereichsformel kann sowohl in Diesel- als auch in Benzinmotoren verwendet werden.",
+            "Bildet bei gleichbleibenden Lasten und heißem Klima einen stabilen Ölfilm zum Schutz des Motors.",
+            "Das wirtschaftliche mineralische Grundöl bietet Kosteneffizienz über eine breite Gerätepalette.",
+          ],
+          fr: [
+            "Sa formule monograde approuvée API CF/SG peut être utilisée dans les moteurs diesel comme essence.",
+            "Forme un film d'huile stable sous des charges constantes et des climats chauds pour protéger le moteur.",
+            "L'huile de base minérale économique offre une rentabilité sur une large gamme d'équipements.",
+          ],
+        },
         standards: "API CF/SG, MIL-L-2104C",
         packaging: ["20 L", "200 L"],
       },
       "SAE-40W": {
-        description: "HI-TECH SAE 40W MONOGRAT MOTOR YAĞI, API CF/SG onaylı ağır hizmet mineral motor yağıdır. Yüksek sıcaklık ve ağır yük koşullarında çalışan statüoner motorlar, jeneratörler ve endüstriyel ekipmanlarda uzun ömürlü koruma sağlar.",
-        features: [
-          "Yüksek viskozitesi ile sıcak ortamlarda kararlı yağ filmi ve güçlü motor koruması sunar.",
-          "Statüoner dizel motorlar, jeneratörler ve ağır iş makineleri için idealdir.",
-          "Aşınma ve korozyon önleyici katkılarla motor bileşenlerinin ömrünü uzatır.",
-        ],
+        description: {
+          tr: "HI-TECH SAE 40W MONOGRAT MOTOR YAĞI, API CF/SG onaylı ağır hizmet mineral motor yağıdır. Yüksek sıcaklık ve ağır yük koşullarında çalışan statüoner motorlar, jeneratörler ve endüstriyel ekipmanlarda uzun ömürlü koruma sağlar.",
+          en: "HI-TECH SAE 40W MONOGRADE ENGINE OIL, a heavy-duty mineral engine oil approved by API CF/SG. Provides long-lasting protection in stationary engines, generators and industrial equipment operating under high temperatures and heavy loads.",
+          ru: "HI-TECH SAE 40W MONOGRADE ENGINE OIL, минеральное моторное масло для тяжёлых условий, одобренное API CF/SG. Обеспечивает длительную защиту стационарных двигателей, генераторов и промышленного оборудования, работающих при высоких температурах и больших нагрузках.",
+          fa: "HI-TECH SAE 40W MONOGRADE ENGINE OIL، یک روغن موتور معدنی خدمات سنگین است که توسط API CF/SG تأیید شده است. در موتورهای ثابت، ژنراتورها و تجهیزات صنعتی که در دمای بالا و بارهای سنگین کار می‌کنند محافظت طولانی‌مدت ارائه می‌دهد.",
+          ar: "HI-TECH SAE 40W MONOGRADE ENGINE OIL، زيت محرك معدني ثقيل الخدمة معتمد من API CF/SG. يوفر حماية طويلة الأمد في المحركات الثابتة والمولدات والمعدات الصناعية العاملة في درجات حرارة عالية وأحمال ثقيلة.",
+          de: "HI-TECH SAE 40W MONOGRADE ENGINE OIL, ein mineralisches Schwerlastmotoröl, zugelassen nach API CF/SG. Bietet langanhaltenden Schutz in stationären Motoren, Generatoren und Industrieanlagen, die unter hohen Temperaturen und schweren Lasten arbeiten.",
+          fr: "HI-TECH SAE 40W MONOGRADE ENGINE OIL, une huile moteur minérale pour service intensif, approuvée API CF/SG. Offre une protection durable dans les moteurs stationnaires, les générateurs et les équipements industriels fonctionnant sous hautes températures et charges lourdes.",
+        },
+        features: {
+          tr: [
+            "Yüksek viskozitesi ile sıcak ortamlarda kararlı yağ filmi ve güçlü motor koruması sunar.",
+            "Statüoner dizel motorlar, jeneratörler ve ağır iş makineleri için idealdir.",
+            "Aşınma ve korozyon önleyici katkılarla motor bileşenlerinin ömrünü uzatır.",
+          ],
+          en: [
+            "Its high viscosity provides a stable oil film and strong engine protection in hot environments.",
+            "Ideal for stationary diesel engines, generators and heavy construction machinery.",
+            "Anti-wear and anti-corrosion additives extend the life of engine components.",
+          ],
+          ru: [
+            "Высокая вязкость обеспечивает стабильную масляную плёнку и надёжную защиту двигателя в жарких условиях.",
+            "Идеально подходит для стационарных дизельных двигателей, генераторов и тяжёлой строительной техники.",
+            "Противоизносные и антикоррозионные присадки продлевают срок службы деталей двигателя.",
+          ],
+          fa: [
+            "ویسکوزیته بالای آن لایه روغن پایدار و محافظت قوی از موتور را در محیط‌های گرم ارائه می‌دهد.",
+            "برای موتورهای دیزلی ثابت، ژنراتورها و ماشین‌آلات سنگین راه‌سازی ایده‌آل است.",
+            "افزودنی‌های ضد سایش و ضد خوردگی عمر اجزای موتور را افزایش می‌دهند.",
+          ],
+          ar: [
+            "لزوجته العالية توفر طبقة زيت ثابتة وحماية قوية للمحرك في البيئات الحارة.",
+            "مثالي لمحركات الديزل الثابتة والمولدات وآلات البناء الثقيلة.",
+            "مضافات مقاومة التآكل والصدأ تطيل عمر مكونات المحرك.",
+          ],
+          de: [
+            "Seine hohe Viskosität bietet einen stabilen Ölfilm und starken Motorschutz in heißen Umgebungen.",
+            "Ideal für stationäre Dieselmotoren, Generatoren und schwere Baumaschinen.",
+            "Verschleißschutz- und Korrosionsschutzadditive verlängern die Lebensdauer der Motorkomponenten.",
+          ],
+          fr: [
+            "Sa haute viscosité offre un film d'huile stable et une forte protection moteur dans les environnements chauds.",
+            "Idéale pour les moteurs diesel stationnaires, les générateurs et les engins de chantier lourds.",
+            "Les additifs anti-usure et anticorrosion prolongent la durée de vie des composants du moteur.",
+          ],
+        },
         standards: "API CF/SG, MIL-L-2104C",
         packaging: ["20 L", "200 L"],
       },
       "SAE-50W": {
-        description: "HI-TECH SAE 50W MONOGRAT MOTOR YAĞI, API CF/CF-4/SG onaylı yüksek viskoziteli mineral motor yağıdır. Aşırı sıcak iklimlerde, eski nesil büyük hacimli dizel motorlarda ve yüksek yük altındaki endüstriyel uygulamalarda üstün koruma sağlar.",
-        features: [
-          "API CF/CF-4/SG üçlü onayı ile geniş motor tiplerinde güvenilir kullanım imkânı sunar.",
-          "Yüksek viskozite indeksi ile aşırı sıcaklıklarda yağ filminin bütünlüğünü korur.",
-          "Büyük çaplı motorlar ve ağır yük uygulamalarında güçlü anti-wear performansı sağlar.",
-        ],
+        description: {
+          tr: "HI-TECH SAE 50W MONOGRAT MOTOR YAĞI, API CF/CF-4/SG onaylı yüksek viskoziteli mineral motor yağıdır. Aşırı sıcak iklimlerde, eski nesil büyük hacimli dizel motorlarda ve yüksek yük altındaki endüstriyel uygulamalarda üstün koruma sağlar.",
+          en: "HI-TECH SAE 50W MONOGRADE ENGINE OIL, a high-viscosity mineral engine oil approved by API CF/CF-4/SG. Delivers superior protection in extremely hot climates, older large-displacement diesel engines and heavy-load industrial applications.",
+          ru: "HI-TECH SAE 50W MONOGRADE ENGINE OIL, высоковязкое минеральное моторное масло, одобренное API CF/CF-4/SG. Обеспечивает превосходную защиту в чрезвычайно жарком климате, старых дизельных двигателях большого объёма и промышленных применениях с высокой нагрузкой.",
+          fa: "HI-TECH SAE 50W MONOGRADE ENGINE OIL، یک روغن موتور معدنی با ویسکوزیته بالا است که توسط API CF/CF-4/SG تأیید شده است. در آب‌وهوای بسیار گرم، موتورهای دیزلی حجم بالای نسل قدیم و کاربردهای صنعتی با بار سنگین محافظت برتر ارائه می‌دهد.",
+          ar: "HI-TECH SAE 50W MONOGRADE ENGINE OIL، زيت محرك معدني عالي اللزوجة معتمد من API CF/CF-4/SG. يوفر حماية فائقة في المناخات الحارة جداً ومحركات الديزل كبيرة السعة من الجيل القديم والتطبيقات الصناعية ذات الأحمال الثقيلة.",
+          de: "HI-TECH SAE 50W MONOGRADE ENGINE OIL, ein hochviskoses mineralisches Motoröl, zugelassen nach API CF/CF-4/SG. Bietet überlegenen Schutz in extrem heißen Klimazonen, älteren großvolumigen Dieselmotoren und schwerlastigen Industrieanwendungen.",
+          fr: "HI-TECH SAE 50W MONOGRADE ENGINE OIL, une huile moteur minérale à haute viscosité, approuvée API CF/CF-4/SG. Offre une protection supérieure dans les climats extrêmement chauds, les moteurs diesel anciens à grande cylindrée et les applications industrielles à charge lourde.",
+        },
+        features: {
+          tr: [
+            "API CF/CF-4/SG üçlü onayı ile geniş motor tiplerinde güvenilir kullanım imkânı sunar.",
+            "Yüksek viskozite indeksi ile aşırı sıcaklıklarda yağ filminin bütünlüğünü korur.",
+            "Büyük çaplı motorlar ve ağır yük uygulamalarında güçlü anti-wear performansı sağlar.",
+          ],
+          en: [
+            "Triple API CF/CF-4/SG approval ensures reliable use across a wide range of engine types.",
+            "Its high viscosity index preserves oil-film integrity at extreme temperatures.",
+            "Delivers strong anti-wear performance in large-bore engines and heavy-load applications.",
+          ],
+          ru: [
+            "Тройное одобрение API CF/CF-4/SG обеспечивает надёжное применение в широком диапазоне типов двигателей.",
+            "Высокий индекс вязкости сохраняет целостность масляной плёнки при экстремальных температурах.",
+            "Обеспечивает высокие противоизносные характеристики в крупногабаритных двигателях и при высоких нагрузках.",
+          ],
+          fa: [
+            "تأییدیه سه‌گانه API CF/CF-4/SG استفاده مطمئن در طیف گسترده‌ای از انواع موتور را تضمین می‌کند.",
+            "شاخص ویسکوزیته بالای آن یکپارچگی لایه روغن را در دماهای شدید حفظ می‌کند.",
+            "عملکرد قوی ضد سایش را در موتورهای با قطر بزرگ و کاربردهای با بار سنگین ارائه می‌دهد.",
+          ],
+          ar: [
+            "الاعتماد الثلاثي API CF/CF-4/SG يضمن استخداماً موثوقاً عبر مجموعة واسعة من أنواع المحركات.",
+            "مؤشر اللزوجة العالي يحافظ على سلامة طبقة الزيت في درجات الحرارة القصوى.",
+            "يوفر أداءً قوياً مضاداً للتآكل في المحركات كبيرة القطر والتطبيقات ذات الأحمال الثقيلة.",
+          ],
+          de: [
+            "Die dreifache Zulassung nach API CF/CF-4/SG gewährleistet zuverlässigen Einsatz über eine breite Palette von Motortypen.",
+            "Sein hoher Viskositätsindex bewahrt die Integrität des Ölfilms bei extremen Temperaturen.",
+            "Bietet starke Verschleißschutzleistung in großvolumigen Motoren und Schwerlastanwendungen.",
+          ],
+          fr: [
+            "La triple approbation API CF/CF-4/SG garantit une utilisation fiable sur une large gamme de types de moteurs.",
+            "Son indice de viscosité élevé préserve l'intégrité du film d'huile à des températures extrêmes.",
+            "Offre de solides performances anti-usure dans les moteurs à gros alésage et les applications à charge lourde.",
+          ],
+        },
         standards: "API CF/CF-4/SG, MIL-L-2104C",
         packaging: ["20 L", "200 L"],
       },
