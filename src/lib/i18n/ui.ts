@@ -158,6 +158,7 @@ export interface UIStrings {
   errorPage: { title: string; body: string; tryAgain: string; goHome: string };
   mediaPage: { heroTitle: string; heroSubtitle: string; galleryEyebrow: string };
   common: { backToHome: string; backToBrands: string; backToProducts: string; catalogs: string; catalog: string; viewProducts: string };
+  imgAlt: { heroProducts: string; flagshipFamily: string; exportWarehouse: string; productDisplay: string };
   blogPage: {
     heroTitle: string;
     heroSubtitle: string;
@@ -394,6 +395,12 @@ const en: UIStrings = {
     catalog: "catalog",
     viewProducts: "View products",
   },
+  imgAlt: {
+    heroProducts: "HI-TECH premium motor oils displayed in a dark industrial export environment",
+    flagshipFamily: "HI-TECH flagship lubricant product family display",
+    exportWarehouse: "International lubricant export warehouse with oil drums",
+    productDisplay: "HI-TECH lubricant product display",
+  },
   blogPage: {
     heroTitle: "Technical Resources",
     heroSubtitle: "Technical articles on lubricants and lubrication for distributors, wholesalers and industrial buyers.",
@@ -627,6 +634,12 @@ const tr: UIStrings = {
     catalogs: "Kataloglar",
     catalog: "kataloğu",
     viewProducts: "Ürünleri görüntüle",
+  },
+  imgAlt: {
+    heroProducts: "Koyu, endüstriyel bir ihracat ortamında sergilenen HI-TECH premium motor yağları",
+    flagshipFamily: "HI-TECH amiral ürün ailesi sergisi",
+    exportWarehouse: "Varillerle dolu uluslararası madeni yağ ihracat deposu",
+    productDisplay: "HI-TECH madeni yağ ürün sergisi",
   },
   blogPage: {
     heroTitle: "Teknik Kaynaklar",
@@ -864,6 +877,12 @@ const ru: UIStrings = {
     catalog: "каталог",
     viewProducts: "Смотреть продукты",
   },
+  imgAlt: {
+    heroProducts: "Премиальные моторные масла HI-TECH в тёмной промышленной экспортной среде",
+    flagshipFamily: "Витрина флагманского семейства смазочных материалов HI-TECH",
+    exportWarehouse: "Международный склад экспорта смазочных материалов с бочками масла",
+    productDisplay: "Витрина смазочных материалов HI-TECH",
+  },
   blogPage: {
     heroTitle: "Технические ресурсы",
     heroSubtitle: "Технические статьи о смазочных материалах для дистрибьюторов, оптовиков и промышленных покупателей.",
@@ -1099,6 +1118,12 @@ const fa: UIStrings = {
     catalogs: "کاتالوگ‌ها",
     catalog: "کاتالوگ",
     viewProducts: "مشاهده محصولات",
+  },
+  imgAlt: {
+    heroProducts: "روغن‌های موتور پریمیوم HI-TECH در یک محیط صنعتی تیره برای صادرات",
+    flagshipFamily: "نمایش خانواده محصولات پرچم‌دار روان‌کننده HI-TECH",
+    exportWarehouse: "انبار بین‌المللی صادرات روان‌کننده با بشکه‌های روغن",
+    productDisplay: "نمایش محصول روان‌کننده HI-TECH",
   },
   blogPage: {
     heroTitle: "منابع فنی",
@@ -1336,6 +1361,12 @@ const ar: UIStrings = {
     catalog: "كتالوج",
     viewProducts: "عرض المنتجات",
   },
+  imgAlt: {
+    heroProducts: "زيوت محركات HI-TECH الممتازة معروضة في بيئة تصدير صناعية داكنة",
+    flagshipFamily: "عرض عائلة منتجات HI-TECH الرائدة لمواد التشحيم",
+    exportWarehouse: "مستودع دولي لتصدير مواد التشحيم مع براميل الزيت",
+    productDisplay: "عرض منتج مواد التشحيم HI-TECH",
+  },
   blogPage: {
     heroTitle: "الموارد التقنية",
     heroSubtitle: "مقالات تقنية حول المواد التشحيمية والتشحيم للموزعين وتجار الجملة والمشترين الصناعيين.",
@@ -1566,6 +1597,12 @@ const de: UIStrings = {
     catalog: "Katalog",
     viewProducts: "Produkte ansehen",
   },
+  imgAlt: {
+    heroProducts: "HI-TECH Premium-Motoröle in einer dunklen industriellen Exportumgebung",
+    flagshipFamily: "Präsentation der HI-TECH Flaggschiff-Schmierstoff-Produktfamilie",
+    exportWarehouse: "Internationales Schmierstoff-Exportlager mit Ölfässern",
+    productDisplay: "HI-TECH Schmierstoff-Produktpräsentation",
+  },
   blogPage: {
     heroTitle: "Technische Ressourcen",
     heroSubtitle: "Technische Artikel über Schmierstoffe und Schmierung für Distributoren, Großhändler und industrielle Käufer.",
@@ -1795,6 +1832,12 @@ const fr: UIStrings = {
     catalogs: "Catalogues",
     catalog: "catalogue",
     viewProducts: "Voir les produits",
+  },
+  imgAlt: {
+    heroProducts: "Huiles moteur premium HI-TECH présentées dans un environnement d'exportation industriel sombre",
+    flagshipFamily: "Présentation de la gamme phare de lubrifiants HI-TECH",
+    exportWarehouse: "Entrepôt international d'exportation de lubrifiants avec fûts d'huile",
+    productDisplay: "Présentation de produits lubrifiants HI-TECH",
   },
   blogPage: {
     heroTitle: "Ressources techniques",

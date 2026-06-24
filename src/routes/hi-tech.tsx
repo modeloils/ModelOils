@@ -1691,7 +1691,7 @@ export function HiTech() {
             <div className="relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)] glow-blue">
               <img
                 src={flagshipImg}
-                alt="HI-TECH flagship product family"
+                alt={t.imgAlt.flagshipFamily}
                 loading="lazy"
                 width={1536}
                 height={1024}

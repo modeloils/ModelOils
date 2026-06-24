@@ -54,7 +54,7 @@ function Hero() {
     <section className="relative overflow-hidden">
       <img
         src={heroImg}
-        alt="HI-TECH premium motor oils displayed in a dark industrial export environment"
+        alt={t.imgAlt.heroProducts}
         width={1920}
         height={1080}
         className="absolute inset-0 h-full w-full object-cover"
@@ -138,7 +138,7 @@ function Flagship() {
         <div className="relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)] glow-blue">
           <img
             src={flagshipImg}
-            alt="HI-TECH flagship lubricant product family display"
+            alt={t.imgAlt.flagshipFamily}
             loading="lazy"
             width={1536}
             height={1024}
@@ -158,7 +158,7 @@ function ExportSection() {
     <section className="relative overflow-hidden border-y border-border py-20 lg:py-28">
       <img
         src={exportImg}
-        alt="International lubricant export warehouse with oil drums"
+        alt={t.imgAlt.exportWarehouse}
         loading="lazy"
         width={1920}
         height={1080}
