@@ -10,6 +10,7 @@ function ShellPage() {
   return (
     <BrandCatalogPage
       brandName="Shell"
+      logoClassName="max-w-[180px]"
       logo={`${ASSET_BASE}/brands/Shell.png`}
       catalogs={[
         { title: "Shell Coolant Catalogue", href: "/model-oils/docs/shell/shell-coolant-catalogue.pdf" },

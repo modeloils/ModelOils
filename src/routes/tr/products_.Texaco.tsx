@@ -11,7 +11,7 @@ function TexacoPage() {
     <BrandCatalogPage
       brandName="Texaco"
       logo={`${ASSET_BASE}/brands/texaco.png`}
-      logoClassName="max-w-[520px]"
+      logoClassName="max-w-[260px]"
       catalogs={[
         { title: "Motor Yağları", href: "/model-oils/docs/texaco/texaco-motor-oils.pdf" },
         { title: "Katalog", href: "/model-oils/docs/texaco/texaco-genel-katalog.pdf" },

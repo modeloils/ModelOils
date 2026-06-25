@@ -11,7 +11,7 @@ function TexolPage() {
     <BrandCatalogPage
       brandName="Texol"
       logo={`${ASSET_BASE}/brands/texol.jpg`}
-      logoClassName="max-w-[420px]"
+      logoClassName="max-w-[210px]"
       catalogs={[
         { title: "Motor Yağları", href: "/model-oils/docs/texol/texol-motor-oils.pdf" },
         { title: "Endüstriyel Yağlar", href: "/model-oils/docs/texol/texol-endustriyel-yaglar.pdf" },

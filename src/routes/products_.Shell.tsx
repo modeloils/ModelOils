@@ -17,6 +17,7 @@ function ShellPage() {
   return (
     <BrandCatalogPage
       brandName="Shell"
+      logoClassName="max-w-[180px]"
       logo={`${ASSET_BASE}/brands/Shell.png`}
       catalogs={shellCatalogs}
     />

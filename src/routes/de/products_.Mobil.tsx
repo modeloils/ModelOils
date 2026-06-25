@@ -11,7 +11,7 @@ function MobilPage() {
     <BrandCatalogPage
       brandName="Mobil"
       logo={`${ASSET_BASE}/brands/mobil.png`}
-      logoClassName="max-w-[420px]"
+      logoClassName="max-w-[210px]"
       catalogs={[
         { title: "Mobil Motor Oils", href: "/model-oils/docs/mobil/mobil-motor-oils.pdf" },
         { title: "Mobil Delvac Heavy Duty", href: "/model-oils/docs/mobil/mobil-delvac-heavy-vehicle.pdf" },

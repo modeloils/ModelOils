@@ -11,7 +11,7 @@ function PetrolOfisiPage() {
     <BrandCatalogPage
       brandName="Petrol Ofisi"
       logo={`${ASSET_BASE}/brands/petrol-ofisi.png`}
-      logoClassName="max-w-[520px]"
+      logoClassName="max-w-[260px]"
       catalogs={[
         { title: "Katalog", href: "/model-oils/docs/petrol-ofisi/petrol-ofisi-katalog.pdf" },
       ]}
