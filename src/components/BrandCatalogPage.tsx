@@ -57,8 +57,8 @@ export function BrandCatalogPage({
                 <a
                   key={catalog.title}
                   href={catalog.href ?? "#"}
-                  target={catalog.href?.startsWith("http") ? "_blank" : undefined}
-                  rel={catalog.href?.startsWith("http") ? "noreferrer" : undefined}
+                  target={catalog.href ? "_blank" : undefined}
+                  rel={catalog.href ? "noreferrer" : undefined}
                   className="group flex min-h-56 flex-col items-center justify-center rounded-md border border-border bg-[image:var(--gradient-panel)] p-6 text-center shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg"
                   aria-label={`${catalog.title} — ${t.common.catalog}`}
                 >
