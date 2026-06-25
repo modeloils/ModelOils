@@ -1977,7 +1977,7 @@ export function HiTechProduct() {
 
         {/* Hero: image + docs */}
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-16">
+          <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
             {/* Circular product image — circle is the background, image floats on top */}
             <div className="flex w-full shrink-0 items-center justify-center lg:w-auto">
               <button
@@ -2005,7 +2005,7 @@ export function HiTechProduct() {
                 </h1>
               </div>
               {detail && (
-                <div>
+                <div className="rounded border border-border bg-[image:var(--gradient-panel)] p-5">
                   <p className="mb-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
                     {t.hitech.productDescription}
                   </p>
