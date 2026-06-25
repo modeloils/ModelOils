@@ -580,7 +580,7 @@ const tr: UIStrings = {
   },
   productsPage: {
     heroEyebrow: "Ürün Yelpazesi",
-    heroTitle: "Yağ Kategorileri & HI-TECH Ürünleri",
+    heroTitle: "Tedariğini sağladığımız markalar",
     heroSubtitle: "1L şişelerden 200L varillere kadar esnek ambalajlarda tedarik edilen eksiksiz otomotiv ve endüstriyel yağ portföyü.",
     catEyebrow: "Kategoriler",
     catTitle: "Kategoriye Göre İnceleyin",
