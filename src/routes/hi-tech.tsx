@@ -1664,7 +1664,6 @@ export function HiTech() {
             <SectionHeading
               eyebrow={t.hitech.rangeEyebrow}
               title={t.hitech.rangeTitle}
-              description={t.hitech.rangeDescription}
             />
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {data.categories.slice(0, 8).map((category, index) => (
