@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { X, ZoomIn } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { PageHero } from "@/components/PageHero";
@@ -79,7 +80,7 @@ export function Media() {
 
   return (
     <SiteLayout>
-      {lightbox && (
+      {lightbox && typeof document !== "undefined" && createPortal(
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
           onPointerDown={() => setLightbox(null)}
@@ -101,7 +102,8 @@ export function Media() {
               <X className="h-5 w-5 text-gray-800" />
             </button>
           </div>
-        </div>
+        </div>,
+        document.body,
       )}
 
       <PageHero eyebrow="Model Oils" title={t.mediaPage.heroTitle} subtitle={t.mediaPage.heroSubtitle} />
