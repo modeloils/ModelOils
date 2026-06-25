@@ -2017,7 +2017,7 @@ export function HiTechProduct() {
                 {t.hitech.productDescription}
               </p>
               <p className="text-sm leading-relaxed text-muted-foreground">
-                <span className="font-semibold text-primary">HI-TECH {resolveName(product, locale).replace(/\s+\d+L$/i, "").toUpperCase()},</span>{" "}
+                <span className="font-semibold text-primary">HI-TECH {resolveName(product, locale).replace(/\s+\d+L$/i, "").toUpperCase()}</span>,{" "}
                 {resolveText(detail.description, locale).replace(/^[^,]+,\s*/, "")}
               </p>
             </div>
