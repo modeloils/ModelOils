@@ -25,7 +25,7 @@ export function BrandCatalogPage({
         <section className="relative overflow-hidden border-b border-border bg-[image:var(--gradient-panel)]">
           <div className="tech-grid absolute inset-0 opacity-40" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,oklch(0.66_0.18_248/0.16),transparent_55%)]" />
-          <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
             <LocaleLink
               to="/products"
               className="relative inline-flex min-h-[44px] items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
@@ -34,7 +34,7 @@ export function BrandCatalogPage({
               {t.common.backToBrands}
             </LocaleLink>
 
-            <div className="relative flex min-h-[200px] items-center justify-center py-8 sm:min-h-[360px] sm:py-12">
+            <div className="relative flex min-h-[100px] items-center justify-center py-4 sm:min-h-[180px] sm:py-6">
               <img
                 src={logo}
                 alt={brandName}
