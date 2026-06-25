@@ -1659,33 +1659,6 @@ export function HiTech() {
         className="bg-background bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${hiTechBg})` }}
       >
-        <div className="border-b border-border bg-background/80 backdrop-blur-[1px]">
-          <PageHero
-            eyebrow={t.hitech.heroEyebrow}
-            title={t.hitech.heroTitle}
-            subtitle={t.hitech.heroSubtitle}
-            transparent
-          >
-            <div className="mt-7 flex flex-wrap gap-2">
-              {data.hitechBadges.map((b) => (
-                <span
-                  key={b}
-                  className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary"
-                >
-                  {b}
-                </span>
-              ))}
-            </div>
-            <div className="mt-8">
-              <Button asChild variant="hero" size="lg">
-                <LocaleLink to="/contact">
-                  {t.hitech.becomeDistributor} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
-                </LocaleLink>
-              </Button>
-            </div>
-          </PageHero>
-        </div>
-
         <section id="kategorilerimiz" className="border-b border-border bg-background/80 py-20 backdrop-blur-[1px] lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
@@ -1717,7 +1690,7 @@ export function HiTech() {
           </div>
         </section>
 
-        <section className="bg-background/80 py-20 backdrop-blur-[1px] lg:py-24">
+        <section className="border-b border-border bg-background/80 py-20 backdrop-blur-[1px] lg:py-24">
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
             <div className="relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)] glow-blue">
               <img
@@ -1742,6 +1715,33 @@ export function HiTech() {
             </div>
           </div>
         </section>
+
+        <div className="bg-background/80 backdrop-blur-[1px]">
+          <PageHero
+            eyebrow={t.hitech.heroEyebrow}
+            title={t.hitech.heroTitle}
+            subtitle={t.hitech.heroSubtitle}
+            transparent
+          >
+            <div className="mt-7 flex flex-wrap gap-2">
+              {data.hitechBadges.map((b) => (
+                <span
+                  key={b}
+                  className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary"
+                >
+                  {b}
+                </span>
+              ))}
+            </div>
+            <div className="mt-8">
+              <Button asChild variant="hero" size="lg">
+                <LocaleLink to="/contact">
+                  {t.hitech.becomeDistributor} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
+                </LocaleLink>
+              </Button>
+            </div>
+          </PageHero>
+        </div>
       </div>
     </SiteLayout>
   );
@@ -2001,7 +2001,7 @@ export function HiTechProduct() {
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wider text-primary">HI-TECH</p>
                 <h1 className="mt-1 font-display text-3xl font-bold text-foreground sm:text-4xl">
-                  {resolveName(product, locale)}
+                  {resolveName(product, locale).replace(/\s+\d[\d.\-]*\s*[Ll]$/, "")}
                 </h1>
               </div>
               {detail && (
