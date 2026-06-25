@@ -41,6 +41,12 @@ import { Route as RuExportRouteImport } from './routes/ru/export'
 import { Route as RuContactRouteImport } from './routes/ru/contact'
 import { Route as RuBlogRouteImport } from './routes/ru/blog'
 import { Route as RuAboutRouteImport } from './routes/ru/about'
+import { Route as ProductsTexolRouteImport } from './routes/products_.Texol'
+import { Route as ProductsTexacoRouteImport } from './routes/products_.Texaco'
+import { Route as ProductsShellRouteImport } from './routes/products_.Shell'
+import { Route as ProductsPetrolOfisiRouteImport } from './routes/products_.PetrolOfisi'
+import { Route as ProductsMotulRouteImport } from './routes/products_.Motul'
+import { Route as ProductsMobilRouteImport } from './routes/products_.Mobil'
 import { Route as HiTechCategoryRouteImport } from './routes/hi-tech_.$category'
 import { Route as FrProductsRouteImport } from './routes/fr/products'
 import { Route as FrMediaRouteImport } from './routes/fr/media'
@@ -289,6 +295,36 @@ const RuBlogRoute = RuBlogRouteImport.update({
 const RuAboutRoute = RuAboutRouteImport.update({
   id: '/ru/about',
   path: '/ru/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductsTexolRoute = ProductsTexolRouteImport.update({
+  id: '/products_/Texol',
+  path: '/products/Texol',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductsTexacoRoute = ProductsTexacoRouteImport.update({
+  id: '/products_/Texaco',
+  path: '/products/Texaco',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductsShellRoute = ProductsShellRouteImport.update({
+  id: '/products_/Shell',
+  path: '/products/Shell',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductsPetrolOfisiRoute = ProductsPetrolOfisiRouteImport.update({
+  id: '/products_/PetrolOfisi',
+  path: '/products/PetrolOfisi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductsMotulRoute = ProductsMotulRouteImport.update({
+  id: '/products_/Motul',
+  path: '/products/Motul',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductsMobilRoute = ProductsMobilRouteImport.update({
+  id: '/products_/Mobil',
+  path: '/products/Mobil',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HiTechCategoryRoute = HiTechCategoryRouteImport.update({
@@ -782,6 +818,12 @@ export interface FileRoutesByFullPath {
   '/fr/media': typeof FrMediaRoute
   '/fr/products': typeof FrProductsRoute
   '/hi-tech/$category': typeof HiTechCategoryRouteWithChildren
+  '/products/Mobil': typeof ProductsMobilRoute
+  '/products/Motul': typeof ProductsMotulRoute
+  '/products/PetrolOfisi': typeof ProductsPetrolOfisiRoute
+  '/products/Shell': typeof ProductsShellRoute
+  '/products/Texaco': typeof ProductsTexacoRoute
+  '/products/Texol': typeof ProductsTexolRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
   '/ru/contact': typeof RuContactRoute
@@ -905,6 +947,12 @@ export interface FileRoutesByTo {
   '/fr/media': typeof FrMediaRoute
   '/fr/products': typeof FrProductsRoute
   '/hi-tech/$category': typeof HiTechCategoryRouteWithChildren
+  '/products/Mobil': typeof ProductsMobilRoute
+  '/products/Motul': typeof ProductsMotulRoute
+  '/products/PetrolOfisi': typeof ProductsPetrolOfisiRoute
+  '/products/Shell': typeof ProductsShellRoute
+  '/products/Texaco': typeof ProductsTexacoRoute
+  '/products/Texol': typeof ProductsTexolRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
   '/ru/contact': typeof RuContactRoute
@@ -1029,6 +1077,12 @@ export interface FileRoutesById {
   '/fr/media': typeof FrMediaRoute
   '/fr/products': typeof FrProductsRoute
   '/hi-tech_/$category': typeof HiTechCategoryRouteWithChildren
+  '/products_/Mobil': typeof ProductsMobilRoute
+  '/products_/Motul': typeof ProductsMotulRoute
+  '/products_/PetrolOfisi': typeof ProductsPetrolOfisiRoute
+  '/products_/Shell': typeof ProductsShellRoute
+  '/products_/Texaco': typeof ProductsTexacoRoute
+  '/products_/Texol': typeof ProductsTexolRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
   '/ru/contact': typeof RuContactRoute
@@ -1154,6 +1208,12 @@ export interface FileRouteTypes {
     | '/fr/media'
     | '/fr/products'
     | '/hi-tech/$category'
+    | '/products/Mobil'
+    | '/products/Motul'
+    | '/products/PetrolOfisi'
+    | '/products/Shell'
+    | '/products/Texaco'
+    | '/products/Texol'
     | '/ru/about'
     | '/ru/blog'
     | '/ru/contact'
@@ -1277,6 +1337,12 @@ export interface FileRouteTypes {
     | '/fr/media'
     | '/fr/products'
     | '/hi-tech/$category'
+    | '/products/Mobil'
+    | '/products/Motul'
+    | '/products/PetrolOfisi'
+    | '/products/Shell'
+    | '/products/Texaco'
+    | '/products/Texol'
     | '/ru/about'
     | '/ru/blog'
     | '/ru/contact'
@@ -1400,6 +1466,12 @@ export interface FileRouteTypes {
     | '/fr/media'
     | '/fr/products'
     | '/hi-tech_/$category'
+    | '/products_/Mobil'
+    | '/products_/Motul'
+    | '/products_/PetrolOfisi'
+    | '/products_/Shell'
+    | '/products_/Texaco'
+    | '/products_/Texol'
     | '/ru/about'
     | '/ru/blog'
     | '/ru/contact'
@@ -1524,6 +1596,12 @@ export interface RootRouteChildren {
   FrMediaRoute: typeof FrMediaRoute
   FrProductsRoute: typeof FrProductsRoute
   HiTechCategoryRoute: typeof HiTechCategoryRouteWithChildren
+  ProductsMobilRoute: typeof ProductsMobilRoute
+  ProductsMotulRoute: typeof ProductsMotulRoute
+  ProductsPetrolOfisiRoute: typeof ProductsPetrolOfisiRoute
+  ProductsShellRoute: typeof ProductsShellRoute
+  ProductsTexacoRoute: typeof ProductsTexacoRoute
+  ProductsTexolRoute: typeof ProductsTexolRoute
   RuAboutRoute: typeof RuAboutRoute
   RuBlogRoute: typeof RuBlogRoute
   RuContactRoute: typeof RuContactRoute
@@ -1820,6 +1898,48 @@ declare module '@tanstack/react-router' {
       path: '/ru/about'
       fullPath: '/ru/about'
       preLoaderRoute: typeof RuAboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/products_/Texol': {
+      id: '/products_/Texol'
+      path: '/products/Texol'
+      fullPath: '/products/Texol'
+      preLoaderRoute: typeof ProductsTexolRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/products_/Texaco': {
+      id: '/products_/Texaco'
+      path: '/products/Texaco'
+      fullPath: '/products/Texaco'
+      preLoaderRoute: typeof ProductsTexacoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/products_/Shell': {
+      id: '/products_/Shell'
+      path: '/products/Shell'
+      fullPath: '/products/Shell'
+      preLoaderRoute: typeof ProductsShellRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/products_/PetrolOfisi': {
+      id: '/products_/PetrolOfisi'
+      path: '/products/PetrolOfisi'
+      fullPath: '/products/PetrolOfisi'
+      preLoaderRoute: typeof ProductsPetrolOfisiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/products_/Motul': {
+      id: '/products_/Motul'
+      path: '/products/Motul'
+      fullPath: '/products/Motul'
+      preLoaderRoute: typeof ProductsMotulRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/products_/Mobil': {
+      id: '/products_/Mobil'
+      path: '/products/Mobil'
+      fullPath: '/products/Mobil'
+      preLoaderRoute: typeof ProductsMobilRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/hi-tech_/$category': {
@@ -2571,6 +2691,12 @@ const rootRouteChildren: RootRouteChildren = {
   FrMediaRoute: FrMediaRoute,
   FrProductsRoute: FrProductsRoute,
   HiTechCategoryRoute: HiTechCategoryRouteWithChildren,
+  ProductsMobilRoute: ProductsMobilRoute,
+  ProductsMotulRoute: ProductsMotulRoute,
+  ProductsPetrolOfisiRoute: ProductsPetrolOfisiRoute,
+  ProductsShellRoute: ProductsShellRoute,
+  ProductsTexacoRoute: ProductsTexacoRoute,
+  ProductsTexolRoute: ProductsTexolRoute,
   RuAboutRoute: RuAboutRoute,
   RuBlogRoute: RuBlogRoute,
   RuContactRoute: RuContactRoute,
