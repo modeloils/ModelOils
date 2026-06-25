@@ -1198,8 +1198,8 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
   "Motosiklet-Yaglari": {
     title: "Motosiklet Yağları",
     products: [
-      { slug: "Moto-4T-10W40", name: "4T 10W-40 Motor Yağı", displayName: { en: "4T 10W-40 Engine Oil", tr: "4T 10W-40 Motor Yağı", ru: "4T 10W-40 Моторное масло", fa: "روغن موتور 4T 10W-40", ar: "زيت محرك 4T 10W-40", de: "4T 10W-40 Motoröl", fr: "Huile moteur 4T 10W-40" }, image: "/model-oils/images/hi-tech/motosiklet/4t.png" },
-      { slug: "Moto-2T",       name: "2T Motor Yağı",        displayName: { en: "2T Engine Oil", tr: "2T Motor Yağı", ru: "2T Моторное масло", fa: "روغن موتور 2T", ar: "زيت محرك 2T", de: "2T Motoröl", fr: "Huile moteur 2T" }, image: "/model-oils/images/hi-tech/motosiklet/2t.png" },
+      { slug: "Moto-4T-10W40", name: "4T 10W-40 Motosiklet Yağı", displayName: { en: "4T 10W-40 Motorcycle Oil", tr: "4T 10W-40 Motosiklet Yağı", ru: "4T 10W-40 Масло для мотоцикла", fa: "روغن موتورسیکلت 4T 10W-40", ar: "زيت موتوسيكل 4T 10W-40", de: "4T 10W-40 Motorradöl", fr: "Huile moto 4T 10W-40" }, image: "/model-oils/images/hi-tech/motosiklet/4t.png" },
+      { slug: "Moto-2T",       name: "2T Motosiklet Yağı",        displayName: { en: "2T Motorcycle Oil", tr: "2T Motosiklet Yağı", ru: "2T Масло для мотоцикла", fa: "روغن موتورسیکلت 2T", ar: "زيت موتوسيكل 2T", de: "2T Motorradöl", fr: "Huile moto 2T" }, image: "/model-oils/images/hi-tech/motosiklet/2t.png" },
     ],
     details: {
       "Moto-4T-10W40": {
