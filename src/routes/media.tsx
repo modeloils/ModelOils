@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { X, ZoomIn } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { PageHero } from "@/components/PageHero";
@@ -56,6 +56,26 @@ export const Route = createFileRoute("/media")({
 export function Media() {
   const { t } = useTranslation();
   const [lightbox, setLightbox] = useState<string | null>(null);
+
+  // While the lightbox is open, freeze background scroll (and compensate for the
+  // scrollbar width to avoid layout shift). Restore on close. Esc also closes.
+  useEffect(() => {
+    if (!lightbox) return;
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    const prevOverflow = document.body.style.overflow;
+    const prevPaddingRight = document.body.style.paddingRight;
+    document.body.style.overflow = "hidden";
+    if (scrollbarWidth > 0) document.body.style.paddingRight = `${scrollbarWidth}px`;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightbox(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      document.body.style.paddingRight = prevPaddingRight;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [lightbox]);
 
   return (
     <SiteLayout>
