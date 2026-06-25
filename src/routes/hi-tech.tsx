@@ -1996,7 +1996,7 @@ export function HiTechProduct() {
               </button>
             </div>
 
-            {/* Right: name + documents */}
+            {/* Right: name + description */}
             <div className="flex flex-1 flex-col gap-6">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wider text-primary">HI-TECH</p>
@@ -2004,24 +2004,23 @@ export function HiTechProduct() {
                   {resolveName(product, locale)}
                 </h1>
               </div>
-
+              {detail && (
+                <div>
+                  <p className="mb-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
+                    {t.hitech.productDescription}
+                  </p>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    <span className="font-semibold text-primary">HI-TECH {resolveName(product, locale).replace(/\s+\d+L$/i, "").toUpperCase()}</span>{" "}
+                    {resolveText(detail.description, locale).replace(/^[^,]+,\s*/, "")}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
 
         {detail && (
           <div className="mx-auto max-w-6xl space-y-8 px-4 pb-20 sm:px-6 lg:px-8">
-            {/* Description */}
-            <div className="rounded border border-border bg-[image:var(--gradient-panel)] p-5">
-              <p className="mb-3 text-xs font-bold uppercase tracking-widest text-muted-foreground">
-                {t.hitech.productDescription}
-              </p>
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                <span className="font-semibold text-primary">HI-TECH {resolveName(product, locale).replace(/\s+\d+L$/i, "").toUpperCase()}</span>{" "}
-                {resolveText(detail.description, locale).replace(/^[^,]+,\s*/, "")}
-              </p>
-            </div>
-
             {/* Features */}
             <div>
               <h3 className="mb-4 text-sm font-bold uppercase tracking-widest text-foreground">
