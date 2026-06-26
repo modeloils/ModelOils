@@ -1850,7 +1850,7 @@ export function HiTechSubcategory() {
                       alt=""
                       aria-hidden="true"
                       loading="lazy"
-                      className="absolute bottom-0 right-4 h-36 w-auto object-contain drop-shadow-lg transition-transform duration-300 group-hover:scale-105"
+                      className="absolute bottom-2 right-4 h-36 w-auto object-contain drop-shadow-lg transition-transform duration-300 group-hover:scale-105"
                     />
                   )}
                   <div className="relative z-10 max-w-[55%] p-5">

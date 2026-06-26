@@ -339,7 +339,7 @@ const en: UIStrings = {
   },
   productsPage: {
     heroEyebrow: "Product Range",
-    heroTitle: "Lubricant Categories & HI-TECH Products",
+    heroTitle: "Brands We Supply",
     heroSubtitle:
       "A complete portfolio of automotive and industrial lubricants, supplied in flexible packaging from 1L bottles to 200L barrels.",
     catEyebrow: "Categories",
@@ -821,7 +821,7 @@ const ru: UIStrings = {
   },
   productsPage: {
     heroEyebrow: "Ассортимент продукции",
-    heroTitle: "Категории смазочных материалов и продукты HI-TECH",
+    heroTitle: "Бренды, которые мы поставляем",
     heroSubtitle:
       "Полный портфель автомобильных и промышленных смазочных материалов, поставляемых в гибкой упаковке от 1L флаконов до 200L бочек.",
     catEyebrow: "Категории",
@@ -1063,7 +1063,7 @@ const fa: UIStrings = {
   },
   productsPage: {
     heroEyebrow: "محدوده محصولات",
-    heroTitle: "دسته‌بندی‌های روانکار و محصولات HI-TECH",
+    heroTitle: "برندهایی که تأمین می‌کنیم",
     heroSubtitle:
       "پرتفوی کامل روانکارهای خودرویی و صنعتی، تأمین‌شده در بسته‌بندی انعطاف‌پذیر از بطری‌های ۱ لیتری تا بشکه‌های ۲۰۰ لیتری.",
     catEyebrow: "دسته‌بندی‌ها",
@@ -1305,7 +1305,7 @@ const ar: UIStrings = {
   },
   productsPage: {
     heroEyebrow: "مجموعة المنتجات",
-    heroTitle: "فئات المواد التشحيمية ومنتجات HI-TECH",
+    heroTitle: "العلامات التجارية التي نوفرها",
     heroSubtitle:
       "محفظة متكاملة من المواد التشحيمية للسيارات والصناعة، تُورَّد في تغليف مرن من زجاجات 1 لتر إلى براميل 200 لتر.",
     catEyebrow: "الفئات",
@@ -1541,7 +1541,7 @@ const de: UIStrings = {
   },
   productsPage: {
     heroEyebrow: "Produktpalette",
-    heroTitle: "Schmierstoffkategorien & HI-TECH Produkte",
+    heroTitle: "Marken, die wir liefern",
     heroSubtitle:
       "Ein vollständiges Portfolio aus Automobil- und Industrieschmierstoffen, geliefert in flexibler Verpackung von 1-L-Flaschen bis 200-L-Fässern.",
     catEyebrow: "Kategorien",
@@ -1777,7 +1777,7 @@ const fr: UIStrings = {
   },
   productsPage: {
     heroEyebrow: "Gamme de produits",
-    heroTitle: "Catégories de lubrifiants & Produits HI-TECH",
+    heroTitle: "Marques que nous fournissons",
     heroSubtitle:
       "Un portfolio complet de lubrifiants automobiles et industriels, fournis dans un emballage flexible allant de bouteilles 1L aux fûts 200L.",
     catEyebrow: "Catégories",
