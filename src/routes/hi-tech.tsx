@@ -1842,11 +1842,22 @@ export function HiTechSubcategory() {
                 <LocaleLink
                   key={slug}
                   to={`/hi-tech/${category}/${slug}`}
-                  className="group flex min-h-32 items-center rounded-lg border border-border bg-[image:var(--gradient-panel)] p-6 shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50"
+                  className="group relative flex min-h-44 items-end overflow-hidden rounded-lg border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50"
                 >
-                  <h3 className="font-display text-lg font-bold leading-snug text-foreground transition-colors group-hover:text-primary">
-                    {subcatTranslations[slug] ?? sub.title}
-                  </h3>
+                  {sub.products[0] && (
+                    <img
+                      src={sub.products[0].image}
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                      className="absolute bottom-0 right-4 h-36 w-auto object-contain drop-shadow-lg transition-transform duration-300 group-hover:scale-105"
+                    />
+                  )}
+                  <div className="relative z-10 max-w-[55%] p-5">
+                    <h3 className="font-display text-lg font-bold leading-snug text-foreground transition-colors group-hover:text-primary">
+                      {subcatTranslations[slug] ?? sub.title}
+                    </h3>
+                  </div>
                 </LocaleLink>
               ))}
             </div>
