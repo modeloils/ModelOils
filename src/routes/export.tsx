@@ -24,7 +24,7 @@ export function Export() {
   return (
     <SiteLayout>
       <div
-        className="relative bg-cover bg-center"
+        className="relative bg-cover bg-center bg-fixed"
         style={{ backgroundImage: "url('/model-oils/images/export-hero.jpg')" }}
       >
         <div className="pointer-events-none absolute inset-0 bg-background/88" />
