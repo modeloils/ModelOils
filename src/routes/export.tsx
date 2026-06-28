@@ -23,18 +23,16 @@ export function Export() {
   const { t, data } = useTranslation();
   return (
     <SiteLayout>
-      <div className="relative">
-        {/* Full image — no cropping, natural width × auto height */}
-        <img
-          src="/model-oils/images/export-hero.jpg"
-          alt=""
-          aria-hidden="true"
-          className="pointer-events-none absolute left-0 top-0 w-full h-auto select-none"
-        />
+      <div
+        className="relative [background-size:100%_auto] bg-top bg-no-repeat sm:bg-cover sm:bg-fixed"
+        style={{
+          backgroundImage: "url('/model-oils/images/export-hero.jpg')",
+        }}
+      >
+        <div className="pointer-events-none absolute inset-0 bg-background/65" />
 
         <div className="relative z-10">
-          {/* Hero sits directly over the image with a light tint for text readability */}
-          <div className="bg-background/55">
+          <div className="border-b border-border/30 bg-background/30">
             <PageHero
               eyebrow={t.exportPage.heroEyebrow}
               title={t.exportPage.heroTitle}
@@ -51,7 +49,7 @@ export function Export() {
             </PageHero>
           </div>
 
-          <section className="border-b border-border bg-background/85 py-20 lg:py-24">
+          <section className="border-b border-border/30 bg-background/40 py-20 lg:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <SectionHeading eyebrow={t.exportPage.capEyebrow} title={t.exportPage.capTitle} />
               <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -74,7 +72,7 @@ export function Export() {
             </div>
           </section>
 
-          <section className="bg-background/85 py-20 lg:py-24">
+          <section className="bg-background/40 py-20 lg:py-24">
             <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
               <div>
                 <SectionHeading eyebrow={t.exportPage.packagingEyebrow} title={t.exportPage.packagingTitle} />
