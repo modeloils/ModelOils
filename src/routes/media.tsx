@@ -106,7 +106,7 @@ export function Media() {
         document.body,
       )}
 
-      <PageHero eyebrow="Model Oils" title={t.mediaPage.heroTitle} subtitle={t.mediaPage.heroSubtitle} />
+      <PageHero compact eyebrow="Model Oils" title={t.mediaPage.heroTitle} subtitle={t.mediaPage.heroSubtitle} />
 
       <div className="bg-background py-20 lg:py-24">
         <div className="mx-auto max-w-7xl space-y-20 px-4 sm:px-6 lg:px-8">

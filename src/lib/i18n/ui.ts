@@ -334,7 +334,7 @@ const en: UIStrings = {
     heroEyebrow: "Industries Served",
     heroTitle: "Lubricants for Every Operation",
     heroSubtitle:
-      "From passenger vehicles to heavy industry, Model Oils supports a wide range of sectors with the right products and packaging.",
+      "From automotive to industry, agriculture to marine — we offer high-performance lubricant solutions tailored to many different sectors. With engine oils, hydraulic oils, gear oils, greases, and specialty industrial lubricants designed for each sector's needs, we improve your equipment's efficiency and provide long-lasting protection.",
     discussCta: "Discuss Your Requirements",
   },
   productsPage: {
@@ -575,7 +575,7 @@ const tr: UIStrings = {
     heroEyebrow: "Hizmet Verilen Sektörler",
     heroTitle: "Her Operasyon için Yağlar",
     heroSubtitle:
-      "Binek araçlardan ağır sanayiye kadar Model Oils, doğru ürünler ve ambalajla geniş bir sektör yelpazesini destekler.",
+      "otomotivden sanayiye, tarımdan denizcilik sektörüne kadar birçok farklı alana özel yüksek performanslı madeni yağ çözümleri sunuyoruz. Her sektörün ihtiyaçlarına uygun motor yağları, hidrolik yağlar, dişli yağları, gresler ve özel endüstriyel yağlarımız ile ekipmanlarınızın verimliliğini artırıyor, uzun ömürlü koruma sağlıyoruz.",
     discussCta: "İhtiyaçlarınızı Görüşün",
   },
   productsPage: {
@@ -816,7 +816,7 @@ const ru: UIStrings = {
     heroEyebrow: "Обслуживаемые отрасли",
     heroTitle: "Смазочные материалы для любого производства",
     heroSubtitle:
-      "От легковых автомобилей до тяжёлой промышленности, Model Oils поддерживает широкий спектр секторов с правильными продуктами и упаковкой.",
+      "От автомобильной отрасли до промышленности, от сельского хозяйства до судоходства — мы предлагаем высокопроизводительные решения по смазочным материалам для многих различных секторов. Моторные масла, гидравлические масла, трансмиссионные масла, смазки и специальные промышленные масла, разработанные с учётом потребностей каждого сектора, повышают эффективность вашего оборудования и обеспечивают долгосрочную защиту.",
     discussCta: "Обсудить ваши требования",
   },
   productsPage: {
@@ -1058,7 +1058,7 @@ const fa: UIStrings = {
     heroEyebrow: "صنایع تحت پوشش",
     heroTitle: "روانکار برای هر عملیات",
     heroSubtitle:
-      "از خودروهای سواری تا صنایع سنگین، Model Oils طیف گسترده‌ای از بخش‌ها را با محصولات و بسته‌بندی مناسب پشتیبانی می‌کند.",
+      "از خودرو تا صنعت، از کشاورزی تا دریانوردی — ما راه‌حل‌های روانکار با عملکرد بالا را برای بسیاری از بخش‌های مختلف ارائه می‌دهیم. با روغن‌های موتور، روغن‌های هیدرولیک، روغن‌های دنده، گریس‌ها و روغن‌های صنعتی خاص که برای نیازهای هر بخش طراحی شده‌اند، بهره‌وری تجهیزات شما را افزایش می‌دهیم و محافظت طولانی‌مدت فراهم می‌کنیم.",
     discussCta: "نیازهای خود را مطرح کنید",
   },
   productsPage: {
@@ -1300,7 +1300,7 @@ const ar: UIStrings = {
     heroEyebrow: "الصناعات المخدومة",
     heroTitle: "مواد تشحيمية لكل عملية",
     heroSubtitle:
-      "من سيارات الركاب إلى الصناعة الثقيلة، تدعم Model Oils مجموعة واسعة من القطاعات بالمنتجات والتغليف المناسبين.",
+      "من صناعة السيارات إلى الصناعة، ومن الزراعة إلى الملاحة البحرية — نقدم حلول تشحيم عالية الأداء مصممة لقطاعات متعددة ومختلفة. بفضل زيوت المحركات وزيوت الهيدروليك وزيوت التروس والشحوم والزيوت الصناعية المتخصصة المصممة لتلبية احتياجات كل قطاع، نحسّن كفاءة معداتكم ونوفر حماية طويلة الأمد.",
     discussCta: "ناقش متطلباتك",
   },
   productsPage: {
@@ -1536,7 +1536,7 @@ const de: UIStrings = {
     heroEyebrow: "Bediente Branchen",
     heroTitle: "Schmierstoffe für jeden Sektor",
     heroSubtitle:
-      "Von Pkw bis zur Schwerindustrie unterstützt Model Oils eine breite Palette von Branchen mit den richtigen Produkten und Verpackungen.",
+      "Von der Automobilindustrie bis zur Industrie, von der Landwirtschaft bis zur Schifffahrt — wir bieten leistungsstarke Schmierstofflösungen für viele verschiedene Sektoren. Mit Motorölen, Hydraulikölen, Getriebeölen, Schmierfetten und speziellen Industrieölen, die auf die Bedürfnisse jedes Sektors abgestimmt sind, steigern wir die Effizienz Ihrer Anlagen und bieten langanhaltenden Schutz.",
     discussCta: "Anforderungen besprechen",
   },
   productsPage: {
@@ -1772,7 +1772,7 @@ const fr: UIStrings = {
     heroEyebrow: "Secteurs desservis",
     heroTitle: "Lubrifiants pour chaque secteur",
     heroSubtitle:
-      "Des véhicules particuliers à l'industrie lourde, Model Oils soutient une large gamme de secteurs avec les bons produits et emballages.",
+      "De l'automobile à l'industrie, de l'agriculture au maritime — nous proposons des solutions de lubrification haute performance adaptées à de nombreux secteurs. Avec des huiles moteur, des huiles hydrauliques, des huiles pour engrenages, des graisses et des lubrifiants industriels spéciaux conçus pour les besoins de chaque secteur, nous améliorons l'efficacité de vos équipements et assurons une protection durable.",
     discussCta: "Discuter des besoins",
   },
   productsPage: {
