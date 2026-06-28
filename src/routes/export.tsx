@@ -27,6 +27,7 @@ export function Export() {
         eyebrow={t.exportPage.heroEyebrow}
         title={t.exportPage.heroTitle}
         subtitle={t.exportPage.heroSubtitle}
+        backgroundImage="/model-oils/images/export-hero.jpg"
       >
         <div className="mt-8">
           <Button asChild variant="hero" size="lg">
