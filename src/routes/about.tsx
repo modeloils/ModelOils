@@ -24,6 +24,7 @@ export function About() {
         eyebrow={t.about.heroEyebrow}
         title={t.about.heroTitle}
         subtitle={t.about.heroSubtitle}
+        backgroundImage="/model-oils/images/about-hero.jpg"
       />
 
       <section className="border-b border-border bg-background py-20 lg:py-24">
