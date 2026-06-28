@@ -117,8 +117,9 @@ export function Media() {
                 {album.images.map((src) => (
                   <button
                     key={src}
+                    type="button"
                     onClick={() => setLightbox(src)}
-                    className="group relative aspect-[4/3] overflow-hidden rounded-xl border border-border bg-secondary"
+                    className="group relative aspect-[4/3] cursor-pointer overflow-hidden rounded-xl border border-border bg-secondary"
                   >
                     <img
                       src={src}

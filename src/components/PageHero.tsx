@@ -32,12 +32,12 @@ export function PageHero({
           src={backgroundImage}
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 h-full w-full object-cover opacity-40"
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-40"
         />
       )}
-      {backgroundImage && <div className="absolute inset-0 bg-background/70" />}
-      {!transparent && <div className="tech-grid absolute inset-0 opacity-40" />}
-      {!transparent && <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_0%,oklch(0.66_0.18_248/0.15),transparent_55%)]" />}
+      {backgroundImage && <div className="pointer-events-none absolute inset-0 bg-background/70" />}
+      {!transparent && <div className="pointer-events-none tech-grid absolute inset-0 opacity-40" />}
+      {!transparent && <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_0%,oklch(0.66_0.18_248/0.15),transparent_55%)]" />}
       <div className={`relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ${paddingClass}`}>
         <span className="inline-flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
           <span className="h-px w-6 bg-primary" />
