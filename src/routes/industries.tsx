@@ -24,6 +24,7 @@ export function Industries() {
         eyebrow={t.industriesPage.heroEyebrow}
         title={t.industriesPage.heroTitle}
         subtitle={t.industriesPage.heroSubtitle}
+        backgroundImage="/model-oils/images/industries-hero.jpg"
       />
       <section className="bg-background py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
