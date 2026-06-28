@@ -23,28 +23,35 @@ export function Export() {
   const { t, data } = useTranslation();
   return (
     <SiteLayout>
-      <div
-        className="relative bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/model-oils/images/export-hero.jpg')" }}
-      >
-        <div className="pointer-events-none absolute inset-0 bg-background/88" />
-        <div className="relative z-10">
-          <PageHero
-            eyebrow={t.exportPage.heroEyebrow}
-            title={t.exportPage.heroTitle}
-            subtitle={t.exportPage.heroSubtitle}
-            transparent
-          >
-            <div className="mt-8">
-              <Button asChild variant="hero" size="lg">
-                <LocaleLink to="/contact">
-                  {t.exportPage.requestOffer} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
-                </LocaleLink>
-              </Button>
-            </div>
-          </PageHero>
+      <div className="relative">
+        {/* Full image — no cropping, natural width × auto height */}
+        <img
+          src="/model-oils/images/export-hero.jpg"
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute left-0 top-0 w-full h-auto select-none"
+        />
 
-          <section className="border-b border-border/50 py-20 lg:py-24">
+        <div className="relative z-10">
+          {/* Hero sits directly over the image with a light tint for text readability */}
+          <div className="bg-background/55">
+            <PageHero
+              eyebrow={t.exportPage.heroEyebrow}
+              title={t.exportPage.heroTitle}
+              subtitle={t.exportPage.heroSubtitle}
+              transparent
+            >
+              <div className="mt-8">
+                <Button asChild variant="hero" size="lg">
+                  <LocaleLink to="/contact">
+                    {t.exportPage.requestOffer} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
+                  </LocaleLink>
+                </Button>
+              </div>
+            </PageHero>
+          </div>
+
+          <section className="border-b border-border bg-background/85 py-20 lg:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <SectionHeading eyebrow={t.exportPage.capEyebrow} title={t.exportPage.capTitle} />
               <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -67,7 +74,7 @@ export function Export() {
             </div>
           </section>
 
-          <section className="py-20 lg:py-24">
+          <section className="bg-background/85 py-20 lg:py-24">
             <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
               <div>
                 <SectionHeading eyebrow={t.exportPage.packagingEyebrow} title={t.exportPage.packagingTitle} />
