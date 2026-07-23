@@ -115,6 +115,7 @@ export interface UIStrings {
     productPackaging: string;
     productNotFound: string;
     zoomImage: string;
+    downloadCatalog: string;
   };
   industriesPage: {
     heroEyebrow: string;
@@ -329,6 +330,7 @@ const en: UIStrings = {
     productPackaging: "Packaging Options",
     productNotFound: "Product not found.",
     zoomImage: "Enlarge image",
+    downloadCatalog: "Download Catalogue",
   },
   industriesPage: {
     heroEyebrow: "Industries Served",
@@ -570,6 +572,7 @@ const tr: UIStrings = {
     productPackaging: "Ambalaj Çeşitleri",
     productNotFound: "Ürün bulunamadı.",
     zoomImage: "Resmi büyüt",
+    downloadCatalog: "Kataloğu İndir",
   },
   industriesPage: {
     heroEyebrow: "Hizmet Verilen Sektörler",
@@ -811,6 +814,7 @@ const ru: UIStrings = {
     productPackaging: "Варианты упаковки",
     productNotFound: "Продукт не найден.",
     zoomImage: "Увеличить изображение",
+    downloadCatalog: "Скачать каталог",
   },
   industriesPage: {
     heroEyebrow: "Обслуживаемые отрасли",
@@ -1053,6 +1057,7 @@ const fa: UIStrings = {
     productPackaging: "گزینه‌های بسته‌بندی",
     productNotFound: "محصول یافت نشد.",
     zoomImage: "بزرگ‌نمایی تصویر",
+    downloadCatalog: "دانلود کاتالوگ",
   },
   industriesPage: {
     heroEyebrow: "صنایع تحت پوشش",
@@ -1295,6 +1300,7 @@ const ar: UIStrings = {
     productPackaging: "خيارات التعبئة",
     productNotFound: "المنتج غير موجود.",
     zoomImage: "تكبير الصورة",
+    downloadCatalog: "تحميل الكتالوج",
   },
   industriesPage: {
     heroEyebrow: "الصناعات المخدومة",
@@ -1531,6 +1537,7 @@ const de: UIStrings = {
     productPackaging: "Verpackungsoptionen",
     productNotFound: "Produkt nicht gefunden.",
     zoomImage: "Bild vergrößern",
+    downloadCatalog: "Katalog herunterladen",
   },
   industriesPage: {
     heroEyebrow: "Bediente Branchen",
@@ -1767,6 +1774,7 @@ const fr: UIStrings = {
     productPackaging: "Options d'emballage",
     productNotFound: "Produit introuvable.",
     zoomImage: "Agrandir l'image",
+    downloadCatalog: "Télécharger le catalogue",
   },
   industriesPage: {
     heroEyebrow: "Secteurs desservis",

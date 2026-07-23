@@ -23,6 +23,17 @@ export const NAV_LINKS: { key: NavKey; to: string; highlight: boolean }[] = [
 
 export const PACKAGING = ["1L", "3L", "4L", "5L", "7L", "10.5L", "20L", "200L"];
 
+/** The owned HI-TECH catalogue, selected to match the visitor's language where available. */
+export const HI_TECH_CATALOGS = {
+  en: `${ASSET_BASE}/docs/hi-tech/hi-tech-product-service-catalogue-en.pdf`,
+  tr: `${ASSET_BASE}/docs/hi-tech/hi-tech-product-service-catalogue-tr.pdf`,
+  ru: `${ASSET_BASE}/docs/hi-tech/hi-tech-product-service-catalogue-ru.pdf`,
+} as const;
+
+export function getHiTechCatalogHref(locale: string): string {
+  return HI_TECH_CATALOGS[locale as keyof typeof HI_TECH_CATALOGS] ?? HI_TECH_CATALOGS.en;
+}
+
 // Translatable structured content (categories, products, export cards, trust points,
 // industries, badges, markets) now lives in ./i18n/content.ts, keyed by locale.
 // Types are re-exported here so existing imports keep working.

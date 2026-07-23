@@ -14,12 +14,13 @@ import {
   HardHat,
   Wheat,
   Anchor,
+  Download,
   type LucideIcon,
 } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
-import { CATALOG_BRANDS } from "@/lib/site-data";
+import { CATALOG_BRANDS, getHiTechCatalogHref } from "@/lib/site-data";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
 import heroImg from "@/assets/hero.png";
 import flagshipImg from "@/assets/flagship.png";
@@ -99,7 +100,8 @@ function Hero() {
 }
 
 function Flagship() {
-  const { t, data } = useTranslation();
+  const { t, data, locale } = useTranslation();
+  const catalogHref = getHiTechCatalogHref(locale);
   return (
     <section className="relative overflow-hidden border-y border-border bg-background py-20 lg:py-28">
       <div className="tech-grid absolute inset-0 opacity-30" />
@@ -132,6 +134,12 @@ function Flagship() {
             </Button>
             <Button asChild variant="steel" size="lg">
               <LocaleLink to="/hi-tech" hash="kategorilerimiz">{t.flagship.viewRange}</LocaleLink>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <a href={catalogHref} target="_blank" rel="noreferrer">
+                <Download />
+                {t.hitech.downloadCatalog}
+              </a>
             </Button>
           </div>
         </div>
