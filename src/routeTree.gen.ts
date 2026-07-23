@@ -27,12 +27,12 @@ import { Route as DeIndexRouteImport } from './routes/de/index'
 import { Route as ArIndexRouteImport } from './routes/ar/index'
 import { Route as TrMediaRouteImport } from './routes/tr/media'
 import { Route as TrIndustriesRouteImport } from './routes/tr/industries'
+import { Route as TrHiTechRouteImport } from './routes/tr/hi-tech'
 import { Route as TrExportRouteImport } from './routes/tr/export'
 import { Route as TrContactRouteImport } from './routes/tr/contact'
 import { Route as TrCatalogsRouteImport } from './routes/tr/catalogs'
 import { Route as TrBlogRouteImport } from './routes/tr/blog'
 import { Route as TrAboutRouteImport } from './routes/tr/about'
-import { Route as TrHITECHRouteImport } from './routes/tr/HI-TECH'
 import { Route as RuMediaRouteImport } from './routes/ru/media'
 import { Route as RuIndustriesRouteImport } from './routes/ru/industries'
 import { Route as RuHiTechRouteImport } from './routes/ru/hi-tech'
@@ -75,8 +75,8 @@ import { Route as ArContactRouteImport } from './routes/ar/contact'
 import { Route as ArCatalogsRouteImport } from './routes/ar/catalogs'
 import { Route as ArBlogRouteImport } from './routes/ar/blog'
 import { Route as ArAboutRouteImport } from './routes/ar/about'
+import { Route as TrHiTechCategoryRouteImport } from './routes/tr/hi-tech_.$category'
 import { Route as TrBlogSlugRouteImport } from './routes/tr/blog_.$slug'
-import { Route as TrHITECHCategoryRouteImport } from './routes/tr/HI-TECH_.$category'
 import { Route as RuHiTechCategoryRouteImport } from './routes/ru/hi-tech_.$category'
 import { Route as RuBlogSlugRouteImport } from './routes/ru/blog_.$slug'
 import { Route as HiTechCategoryProductRouteImport } from './routes/hi-tech_.$category.$product'
@@ -88,7 +88,7 @@ import { Route as DeHiTechCategoryRouteImport } from './routes/de/hi-tech_.$cate
 import { Route as DeBlogSlugRouteImport } from './routes/de/blog_.$slug'
 import { Route as ArHiTechCategoryRouteImport } from './routes/ar/hi-tech_.$category'
 import { Route as ArBlogSlugRouteImport } from './routes/ar/blog_.$slug'
-import { Route as TrHITECHCategoryProductRouteImport } from './routes/tr/HI-TECH_.$category.$product'
+import { Route as TrHiTechCategoryProductRouteImport } from './routes/tr/hi-tech_.$category.$product'
 import { Route as RuHiTechCategoryProductRouteImport } from './routes/ru/hi-tech_.$category.$product'
 import { Route as FrHiTechCategoryProductRouteImport } from './routes/fr/hi-tech_.$category.$product'
 import { Route as FaHiTechCategoryProductRouteImport } from './routes/fa/hi-tech_.$category.$product'
@@ -185,6 +185,11 @@ const TrIndustriesRoute = TrIndustriesRouteImport.update({
   path: '/tr/industries',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TrHiTechRoute = TrHiTechRouteImport.update({
+  id: '/tr/hi-tech',
+  path: '/tr/hi-tech',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TrExportRoute = TrExportRouteImport.update({
   id: '/tr/export',
   path: '/tr/export',
@@ -208,11 +213,6 @@ const TrBlogRoute = TrBlogRouteImport.update({
 const TrAboutRoute = TrAboutRouteImport.update({
   id: '/tr/about',
   path: '/tr/about',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TrHITECHRoute = TrHITECHRouteImport.update({
-  id: '/tr/HI-TECH',
-  path: '/tr/HI-TECH',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RuMediaRoute = RuMediaRouteImport.update({
@@ -425,14 +425,14 @@ const ArAboutRoute = ArAboutRouteImport.update({
   path: '/ar/about',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TrHiTechCategoryRoute = TrHiTechCategoryRouteImport.update({
+  id: '/tr/hi-tech_/$category',
+  path: '/tr/hi-tech/$category',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TrBlogSlugRoute = TrBlogSlugRouteImport.update({
   id: '/tr/blog_/$slug',
   path: '/tr/blog/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TrHITECHCategoryRoute = TrHITECHCategoryRouteImport.update({
-  id: '/tr/HI-TECH_/$category',
-  path: '/tr/HI-TECH/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RuHiTechCategoryRoute = RuHiTechCategoryRouteImport.update({
@@ -490,10 +490,10 @@ const ArBlogSlugRoute = ArBlogSlugRouteImport.update({
   path: '/ar/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TrHITECHCategoryProductRoute = TrHITECHCategoryProductRouteImport.update({
+const TrHiTechCategoryProductRoute = TrHiTechCategoryProductRouteImport.update({
   id: '/$product',
   path: '/$product',
-  getParentRoute: () => TrHITECHCategoryRoute,
+  getParentRoute: () => TrHiTechCategoryRoute,
 } as any)
 const RuHiTechCategoryProductRoute = RuHiTechCategoryProductRouteImport.update({
   id: '/$product',
@@ -574,12 +574,12 @@ export interface FileRoutesByFullPath {
   '/ru/hi-tech': typeof RuHiTechRoute
   '/ru/industries': typeof RuIndustriesRoute
   '/ru/media': typeof RuMediaRoute
-  '/tr/HI-TECH': typeof TrHITECHRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
   '/tr/catalogs': typeof TrCatalogsRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
+  '/tr/hi-tech': typeof TrHiTechRoute
   '/tr/industries': typeof TrIndustriesRoute
   '/tr/media': typeof TrMediaRoute
   '/ar/': typeof ArIndexRoute
@@ -599,14 +599,14 @@ export interface FileRoutesByFullPath {
   '/hi-tech/$category/$product': typeof HiTechCategoryProductRoute
   '/ru/blog/$slug': typeof RuBlogSlugRoute
   '/ru/hi-tech/$category': typeof RuHiTechCategoryRouteWithChildren
-  '/tr/HI-TECH/$category': typeof TrHITECHCategoryRouteWithChildren
   '/tr/blog/$slug': typeof TrBlogSlugRoute
+  '/tr/hi-tech/$category': typeof TrHiTechCategoryRouteWithChildren
   '/ar/hi-tech/$category/$product': typeof ArHiTechCategoryProductRoute
   '/de/hi-tech/$category/$product': typeof DeHiTechCategoryProductRoute
   '/fa/hi-tech/$category/$product': typeof FaHiTechCategoryProductRoute
   '/fr/hi-tech/$category/$product': typeof FrHiTechCategoryProductRoute
   '/ru/hi-tech/$category/$product': typeof RuHiTechCategoryProductRoute
-  '/tr/HI-TECH/$category/$product': typeof TrHITECHCategoryProductRoute
+  '/tr/hi-tech/$category/$product': typeof TrHiTechCategoryProductRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -661,12 +661,12 @@ export interface FileRoutesByTo {
   '/ru/hi-tech': typeof RuHiTechRoute
   '/ru/industries': typeof RuIndustriesRoute
   '/ru/media': typeof RuMediaRoute
-  '/tr/HI-TECH': typeof TrHITECHRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
   '/tr/catalogs': typeof TrCatalogsRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
+  '/tr/hi-tech': typeof TrHiTechRoute
   '/tr/industries': typeof TrIndustriesRoute
   '/tr/media': typeof TrMediaRoute
   '/ar': typeof ArIndexRoute
@@ -686,14 +686,14 @@ export interface FileRoutesByTo {
   '/hi-tech/$category/$product': typeof HiTechCategoryProductRoute
   '/ru/blog/$slug': typeof RuBlogSlugRoute
   '/ru/hi-tech/$category': typeof RuHiTechCategoryRouteWithChildren
-  '/tr/HI-TECH/$category': typeof TrHITECHCategoryRouteWithChildren
   '/tr/blog/$slug': typeof TrBlogSlugRoute
+  '/tr/hi-tech/$category': typeof TrHiTechCategoryRouteWithChildren
   '/ar/hi-tech/$category/$product': typeof ArHiTechCategoryProductRoute
   '/de/hi-tech/$category/$product': typeof DeHiTechCategoryProductRoute
   '/fa/hi-tech/$category/$product': typeof FaHiTechCategoryProductRoute
   '/fr/hi-tech/$category/$product': typeof FrHiTechCategoryProductRoute
   '/ru/hi-tech/$category/$product': typeof RuHiTechCategoryProductRoute
-  '/tr/HI-TECH/$category/$product': typeof TrHITECHCategoryProductRoute
+  '/tr/hi-tech/$category/$product': typeof TrHiTechCategoryProductRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -749,12 +749,12 @@ export interface FileRoutesById {
   '/ru/hi-tech': typeof RuHiTechRoute
   '/ru/industries': typeof RuIndustriesRoute
   '/ru/media': typeof RuMediaRoute
-  '/tr/HI-TECH': typeof TrHITECHRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
   '/tr/catalogs': typeof TrCatalogsRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
+  '/tr/hi-tech': typeof TrHiTechRoute
   '/tr/industries': typeof TrIndustriesRoute
   '/tr/media': typeof TrMediaRoute
   '/ar/': typeof ArIndexRoute
@@ -774,14 +774,14 @@ export interface FileRoutesById {
   '/hi-tech_/$category/$product': typeof HiTechCategoryProductRoute
   '/ru/blog_/$slug': typeof RuBlogSlugRoute
   '/ru/hi-tech_/$category': typeof RuHiTechCategoryRouteWithChildren
-  '/tr/HI-TECH_/$category': typeof TrHITECHCategoryRouteWithChildren
   '/tr/blog_/$slug': typeof TrBlogSlugRoute
+  '/tr/hi-tech_/$category': typeof TrHiTechCategoryRouteWithChildren
   '/ar/hi-tech_/$category/$product': typeof ArHiTechCategoryProductRoute
   '/de/hi-tech_/$category/$product': typeof DeHiTechCategoryProductRoute
   '/fa/hi-tech_/$category/$product': typeof FaHiTechCategoryProductRoute
   '/fr/hi-tech_/$category/$product': typeof FrHiTechCategoryProductRoute
   '/ru/hi-tech_/$category/$product': typeof RuHiTechCategoryProductRoute
-  '/tr/HI-TECH_/$category/$product': typeof TrHITECHCategoryProductRoute
+  '/tr/hi-tech_/$category/$product': typeof TrHiTechCategoryProductRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -838,12 +838,12 @@ export interface FileRouteTypes {
     | '/ru/hi-tech'
     | '/ru/industries'
     | '/ru/media'
-    | '/tr/HI-TECH'
     | '/tr/about'
     | '/tr/blog'
     | '/tr/catalogs'
     | '/tr/contact'
     | '/tr/export'
+    | '/tr/hi-tech'
     | '/tr/industries'
     | '/tr/media'
     | '/ar/'
@@ -863,14 +863,14 @@ export interface FileRouteTypes {
     | '/hi-tech/$category/$product'
     | '/ru/blog/$slug'
     | '/ru/hi-tech/$category'
-    | '/tr/HI-TECH/$category'
     | '/tr/blog/$slug'
+    | '/tr/hi-tech/$category'
     | '/ar/hi-tech/$category/$product'
     | '/de/hi-tech/$category/$product'
     | '/fa/hi-tech/$category/$product'
     | '/fr/hi-tech/$category/$product'
     | '/ru/hi-tech/$category/$product'
-    | '/tr/HI-TECH/$category/$product'
+    | '/tr/hi-tech/$category/$product'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -925,12 +925,12 @@ export interface FileRouteTypes {
     | '/ru/hi-tech'
     | '/ru/industries'
     | '/ru/media'
-    | '/tr/HI-TECH'
     | '/tr/about'
     | '/tr/blog'
     | '/tr/catalogs'
     | '/tr/contact'
     | '/tr/export'
+    | '/tr/hi-tech'
     | '/tr/industries'
     | '/tr/media'
     | '/ar'
@@ -950,14 +950,14 @@ export interface FileRouteTypes {
     | '/hi-tech/$category/$product'
     | '/ru/blog/$slug'
     | '/ru/hi-tech/$category'
-    | '/tr/HI-TECH/$category'
     | '/tr/blog/$slug'
+    | '/tr/hi-tech/$category'
     | '/ar/hi-tech/$category/$product'
     | '/de/hi-tech/$category/$product'
     | '/fa/hi-tech/$category/$product'
     | '/fr/hi-tech/$category/$product'
     | '/ru/hi-tech/$category/$product'
-    | '/tr/HI-TECH/$category/$product'
+    | '/tr/hi-tech/$category/$product'
   id:
     | '__root__'
     | '/'
@@ -1012,12 +1012,12 @@ export interface FileRouteTypes {
     | '/ru/hi-tech'
     | '/ru/industries'
     | '/ru/media'
-    | '/tr/HI-TECH'
     | '/tr/about'
     | '/tr/blog'
     | '/tr/catalogs'
     | '/tr/contact'
     | '/tr/export'
+    | '/tr/hi-tech'
     | '/tr/industries'
     | '/tr/media'
     | '/ar/'
@@ -1037,14 +1037,14 @@ export interface FileRouteTypes {
     | '/hi-tech_/$category/$product'
     | '/ru/blog_/$slug'
     | '/ru/hi-tech_/$category'
-    | '/tr/HI-TECH_/$category'
     | '/tr/blog_/$slug'
+    | '/tr/hi-tech_/$category'
     | '/ar/hi-tech_/$category/$product'
     | '/de/hi-tech_/$category/$product'
     | '/fa/hi-tech_/$category/$product'
     | '/fr/hi-tech_/$category/$product'
     | '/ru/hi-tech_/$category/$product'
-    | '/tr/HI-TECH_/$category/$product'
+    | '/tr/hi-tech_/$category/$product'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -1100,12 +1100,12 @@ export interface RootRouteChildren {
   RuHiTechRoute: typeof RuHiTechRoute
   RuIndustriesRoute: typeof RuIndustriesRoute
   RuMediaRoute: typeof RuMediaRoute
-  TrHITECHRoute: typeof TrHITECHRoute
   TrAboutRoute: typeof TrAboutRoute
   TrBlogRoute: typeof TrBlogRoute
   TrCatalogsRoute: typeof TrCatalogsRoute
   TrContactRoute: typeof TrContactRoute
   TrExportRoute: typeof TrExportRoute
+  TrHiTechRoute: typeof TrHiTechRoute
   TrIndustriesRoute: typeof TrIndustriesRoute
   TrMediaRoute: typeof TrMediaRoute
   ArIndexRoute: typeof ArIndexRoute
@@ -1124,8 +1124,8 @@ export interface RootRouteChildren {
   FrHiTechCategoryRoute: typeof FrHiTechCategoryRouteWithChildren
   RuBlogSlugRoute: typeof RuBlogSlugRoute
   RuHiTechCategoryRoute: typeof RuHiTechCategoryRouteWithChildren
-  TrHITECHCategoryRoute: typeof TrHITECHCategoryRouteWithChildren
   TrBlogSlugRoute: typeof TrBlogSlugRoute
+  TrHiTechCategoryRoute: typeof TrHiTechCategoryRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -1256,6 +1256,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TrIndustriesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tr/hi-tech': {
+      id: '/tr/hi-tech'
+      path: '/tr/hi-tech'
+      fullPath: '/tr/hi-tech'
+      preLoaderRoute: typeof TrHiTechRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tr/export': {
       id: '/tr/export'
       path: '/tr/export'
@@ -1289,13 +1296,6 @@ declare module '@tanstack/react-router' {
       path: '/tr/about'
       fullPath: '/tr/about'
       preLoaderRoute: typeof TrAboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tr/HI-TECH': {
-      id: '/tr/HI-TECH'
-      path: '/tr/HI-TECH'
-      fullPath: '/tr/HI-TECH'
-      preLoaderRoute: typeof TrHITECHRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ru/media': {
@@ -1592,18 +1592,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArAboutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tr/hi-tech_/$category': {
+      id: '/tr/hi-tech_/$category'
+      path: '/tr/hi-tech/$category'
+      fullPath: '/tr/hi-tech/$category'
+      preLoaderRoute: typeof TrHiTechCategoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tr/blog_/$slug': {
       id: '/tr/blog_/$slug'
       path: '/tr/blog/$slug'
       fullPath: '/tr/blog/$slug'
       preLoaderRoute: typeof TrBlogSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tr/HI-TECH_/$category': {
-      id: '/tr/HI-TECH_/$category'
-      path: '/tr/HI-TECH/$category'
-      fullPath: '/tr/HI-TECH/$category'
-      preLoaderRoute: typeof TrHITECHCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ru/hi-tech_/$category': {
@@ -1683,12 +1683,12 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArBlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tr/HI-TECH_/$category/$product': {
-      id: '/tr/HI-TECH_/$category/$product'
+    '/tr/hi-tech_/$category/$product': {
+      id: '/tr/hi-tech_/$category/$product'
       path: '/$product'
-      fullPath: '/tr/HI-TECH/$category/$product'
-      preLoaderRoute: typeof TrHITECHCategoryProductRouteImport
-      parentRoute: typeof TrHITECHCategoryRoute
+      fullPath: '/tr/hi-tech/$category/$product'
+      preLoaderRoute: typeof TrHiTechCategoryProductRouteImport
+      parentRoute: typeof TrHiTechCategoryRoute
     }
     '/ru/hi-tech_/$category/$product': {
       id: '/ru/hi-tech_/$category/$product'
@@ -1795,16 +1795,16 @@ const RuHiTechCategoryRouteChildren: RuHiTechCategoryRouteChildren = {
 const RuHiTechCategoryRouteWithChildren =
   RuHiTechCategoryRoute._addFileChildren(RuHiTechCategoryRouteChildren)
 
-interface TrHITECHCategoryRouteChildren {
-  TrHITECHCategoryProductRoute: typeof TrHITECHCategoryProductRoute
+interface TrHiTechCategoryRouteChildren {
+  TrHiTechCategoryProductRoute: typeof TrHiTechCategoryProductRoute
 }
 
-const TrHITECHCategoryRouteChildren: TrHITECHCategoryRouteChildren = {
-  TrHITECHCategoryProductRoute: TrHITECHCategoryProductRoute,
+const TrHiTechCategoryRouteChildren: TrHiTechCategoryRouteChildren = {
+  TrHiTechCategoryProductRoute: TrHiTechCategoryProductRoute,
 }
 
-const TrHITECHCategoryRouteWithChildren =
-  TrHITECHCategoryRoute._addFileChildren(TrHITECHCategoryRouteChildren)
+const TrHiTechCategoryRouteWithChildren =
+  TrHiTechCategoryRoute._addFileChildren(TrHiTechCategoryRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
@@ -1859,12 +1859,12 @@ const rootRouteChildren: RootRouteChildren = {
   RuHiTechRoute: RuHiTechRoute,
   RuIndustriesRoute: RuIndustriesRoute,
   RuMediaRoute: RuMediaRoute,
-  TrHITECHRoute: TrHITECHRoute,
   TrAboutRoute: TrAboutRoute,
   TrBlogRoute: TrBlogRoute,
   TrCatalogsRoute: TrCatalogsRoute,
   TrContactRoute: TrContactRoute,
   TrExportRoute: TrExportRoute,
+  TrHiTechRoute: TrHiTechRoute,
   TrIndustriesRoute: TrIndustriesRoute,
   TrMediaRoute: TrMediaRoute,
   ArIndexRoute: ArIndexRoute,
@@ -1883,8 +1883,8 @@ const rootRouteChildren: RootRouteChildren = {
   FrHiTechCategoryRoute: FrHiTechCategoryRouteWithChildren,
   RuBlogSlugRoute: RuBlogSlugRoute,
   RuHiTechCategoryRoute: RuHiTechCategoryRouteWithChildren,
-  TrHITECHCategoryRoute: TrHITECHCategoryRouteWithChildren,
   TrBlogSlugRoute: TrBlogSlugRoute,
+  TrHiTechCategoryRoute: TrHiTechCategoryRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

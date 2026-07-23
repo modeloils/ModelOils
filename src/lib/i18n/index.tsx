@@ -24,8 +24,6 @@ const PAGE_PATHS: Record<PageKey, string> = {
 /** Prefix a base English path with the locale prefix when not English. */
 export function localePath(to: string, locale: Locale): string {
   if (locale === "en") return to;
-  if (locale === "tr" && to === "/hi-tech") return "/tr/HI-TECH";
-  if (locale === "tr" && to.startsWith("/hi-tech/")) return `/tr/HI-TECH${to.slice("/hi-tech".length)}`;
   return to === "/" ? `/${locale}` : `/${locale}${to}`;
 }
 
