@@ -12,7 +12,7 @@ import type { NavKey } from "./i18n/ui";
 
 export const NAV_LINKS: { key: NavKey; to: string; highlight: boolean }[] = [
   { key: "hiTech", to: "/hi-tech", highlight: true },
-  { key: "products", to: "/products", highlight: false },
+  { key: "catalogs", to: "/catalogs", highlight: false },
   { key: "industries", to: "/industries", highlight: false },
   { key: "export", to: "/export", highlight: false },
   { key: "about", to: "/about", highlight: false },
@@ -30,23 +30,10 @@ export const HI_TECH_CATALOGS = {
   ru: `${ASSET_BASE}/docs/hi-tech/hi-tech-product-service-catalogue-ru.pdf`,
 } as const;
 
-export function getHiTechCatalogHref(locale: string): string {
-  return HI_TECH_CATALOGS[locale as keyof typeof HI_TECH_CATALOGS] ?? HI_TECH_CATALOGS.en;
-}
-
 // Translatable structured content (categories, products, export cards, trust points,
 // industries, badges, markets) now lives in ./i18n/content.ts, keyed by locale.
 // Types are re-exported here so existing imports keep working.
 export type { Category, Product } from "./i18n/content";
-
-export const CATALOG_BRANDS = [
-  { name: "Shell",       slug: "Shell",       logo: `${ASSET_BASE}/brands/Shell.png` },
-  { name: "Mobil",       slug: "Mobil",       logo: `${ASSET_BASE}/brands/mobil.png` },
-  { name: "Motul",       slug: "Motul",       logo: `${ASSET_BASE}/brands/motul.jpg` },
-  { name: "Texol",       slug: "Texol",       logo: `${ASSET_BASE}/brands/texol.jpg`, logoClassName: "max-h-16 max-w-[95%]" },
-  { name: "Texaco",      slug: "Texaco",      logo: `${ASSET_BASE}/brands/texaco.png`, logoClassName: "max-h-16 max-w-[95%]" },
-  { name: "Petrol Ofisi", slug: "PetrolOfisi", logo: `${ASSET_BASE}/brands/petrol-ofisi.png` },
-];
 
 export const MEDIA_HIGHLIGHTS = [
   { title: "Fair Presence", image: `${ASSET_BASE}/media/fuar/fuar-1.png` },

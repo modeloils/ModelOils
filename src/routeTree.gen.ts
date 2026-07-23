@@ -10,12 +10,12 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as ProductsRouteImport } from './routes/products'
 import { Route as MediaRouteImport } from './routes/media'
 import { Route as IndustriesRouteImport } from './routes/industries'
 import { Route as HiTechRouteImport } from './routes/hi-tech'
 import { Route as ExportRouteImport } from './routes/export'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CatalogsRouteImport } from './routes/catalogs'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -25,109 +25,67 @@ import { Route as FrIndexRouteImport } from './routes/fr/index'
 import { Route as FaIndexRouteImport } from './routes/fa/index'
 import { Route as DeIndexRouteImport } from './routes/de/index'
 import { Route as ArIndexRouteImport } from './routes/ar/index'
-import { Route as TrProductsRouteImport } from './routes/tr/products'
 import { Route as TrMediaRouteImport } from './routes/tr/media'
 import { Route as TrIndustriesRouteImport } from './routes/tr/industries'
 import { Route as TrExportRouteImport } from './routes/tr/export'
 import { Route as TrContactRouteImport } from './routes/tr/contact'
+import { Route as TrCatalogsRouteImport } from './routes/tr/catalogs'
 import { Route as TrBlogRouteImport } from './routes/tr/blog'
 import { Route as TrAboutRouteImport } from './routes/tr/about'
 import { Route as TrHITECHRouteImport } from './routes/tr/HI-TECH'
-import { Route as RuProductsRouteImport } from './routes/ru/products'
 import { Route as RuMediaRouteImport } from './routes/ru/media'
 import { Route as RuIndustriesRouteImport } from './routes/ru/industries'
 import { Route as RuHiTechRouteImport } from './routes/ru/hi-tech'
 import { Route as RuExportRouteImport } from './routes/ru/export'
 import { Route as RuContactRouteImport } from './routes/ru/contact'
+import { Route as RuCatalogsRouteImport } from './routes/ru/catalogs'
 import { Route as RuBlogRouteImport } from './routes/ru/blog'
 import { Route as RuAboutRouteImport } from './routes/ru/about'
-import { Route as ProductsTexolRouteImport } from './routes/products_.Texol'
-import { Route as ProductsTexacoRouteImport } from './routes/products_.Texaco'
-import { Route as ProductsShellRouteImport } from './routes/products_.Shell'
-import { Route as ProductsPetrolOfisiRouteImport } from './routes/products_.PetrolOfisi'
-import { Route as ProductsMotulRouteImport } from './routes/products_.Motul'
-import { Route as ProductsMobilRouteImport } from './routes/products_.Mobil'
 import { Route as HiTechCategoryRouteImport } from './routes/hi-tech_.$category'
-import { Route as FrProductsRouteImport } from './routes/fr/products'
 import { Route as FrMediaRouteImport } from './routes/fr/media'
 import { Route as FrIndustriesRouteImport } from './routes/fr/industries'
 import { Route as FrHiTechRouteImport } from './routes/fr/hi-tech'
 import { Route as FrExportRouteImport } from './routes/fr/export'
 import { Route as FrContactRouteImport } from './routes/fr/contact'
+import { Route as FrCatalogsRouteImport } from './routes/fr/catalogs'
 import { Route as FrBlogRouteImport } from './routes/fr/blog'
 import { Route as FrAboutRouteImport } from './routes/fr/about'
-import { Route as FaProductsRouteImport } from './routes/fa/products'
 import { Route as FaMediaRouteImport } from './routes/fa/media'
 import { Route as FaIndustriesRouteImport } from './routes/fa/industries'
 import { Route as FaHiTechRouteImport } from './routes/fa/hi-tech'
 import { Route as FaExportRouteImport } from './routes/fa/export'
 import { Route as FaContactRouteImport } from './routes/fa/contact'
+import { Route as FaCatalogsRouteImport } from './routes/fa/catalogs'
 import { Route as FaBlogRouteImport } from './routes/fa/blog'
 import { Route as FaAboutRouteImport } from './routes/fa/about'
-import { Route as DeProductsRouteImport } from './routes/de/products'
 import { Route as DeMediaRouteImport } from './routes/de/media'
 import { Route as DeIndustriesRouteImport } from './routes/de/industries'
 import { Route as DeHiTechRouteImport } from './routes/de/hi-tech'
 import { Route as DeExportRouteImport } from './routes/de/export'
 import { Route as DeContactRouteImport } from './routes/de/contact'
+import { Route as DeCatalogsRouteImport } from './routes/de/catalogs'
 import { Route as DeBlogRouteImport } from './routes/de/blog'
 import { Route as DeAboutRouteImport } from './routes/de/about'
 import { Route as BlogSlugRouteImport } from './routes/blog_.$slug'
-import { Route as ArProductsRouteImport } from './routes/ar/products'
 import { Route as ArMediaRouteImport } from './routes/ar/media'
 import { Route as ArIndustriesRouteImport } from './routes/ar/industries'
 import { Route as ArHiTechRouteImport } from './routes/ar/hi-tech'
 import { Route as ArExportRouteImport } from './routes/ar/export'
 import { Route as ArContactRouteImport } from './routes/ar/contact'
+import { Route as ArCatalogsRouteImport } from './routes/ar/catalogs'
 import { Route as ArBlogRouteImport } from './routes/ar/blog'
 import { Route as ArAboutRouteImport } from './routes/ar/about'
-import { Route as TrProductsTexolRouteImport } from './routes/tr/products_.Texol'
-import { Route as TrProductsTexacoRouteImport } from './routes/tr/products_.Texaco'
-import { Route as TrProductsShellRouteImport } from './routes/tr/products_.Shell'
-import { Route as TrProductsPetrolOfisiRouteImport } from './routes/tr/products_.PetrolOfisi'
-import { Route as TrProductsMotulRouteImport } from './routes/tr/products_.Motul'
-import { Route as TrProductsMobilRouteImport } from './routes/tr/products_.Mobil'
 import { Route as TrBlogSlugRouteImport } from './routes/tr/blog_.$slug'
 import { Route as TrHITECHCategoryRouteImport } from './routes/tr/HI-TECH_.$category'
-import { Route as RuProductsTexolRouteImport } from './routes/ru/products_.Texol'
-import { Route as RuProductsTexacoRouteImport } from './routes/ru/products_.Texaco'
-import { Route as RuProductsShellRouteImport } from './routes/ru/products_.Shell'
-import { Route as RuProductsPetrolOfisiRouteImport } from './routes/ru/products_.PetrolOfisi'
-import { Route as RuProductsMotulRouteImport } from './routes/ru/products_.Motul'
-import { Route as RuProductsMobilRouteImport } from './routes/ru/products_.Mobil'
 import { Route as RuHiTechCategoryRouteImport } from './routes/ru/hi-tech_.$category'
 import { Route as RuBlogSlugRouteImport } from './routes/ru/blog_.$slug'
 import { Route as HiTechCategoryProductRouteImport } from './routes/hi-tech_.$category.$product'
-import { Route as FrProductsTexolRouteImport } from './routes/fr/products_.Texol'
-import { Route as FrProductsTexacoRouteImport } from './routes/fr/products_.Texaco'
-import { Route as FrProductsShellRouteImport } from './routes/fr/products_.Shell'
-import { Route as FrProductsPetrolOfisiRouteImport } from './routes/fr/products_.PetrolOfisi'
-import { Route as FrProductsMotulRouteImport } from './routes/fr/products_.Motul'
-import { Route as FrProductsMobilRouteImport } from './routes/fr/products_.Mobil'
 import { Route as FrHiTechCategoryRouteImport } from './routes/fr/hi-tech_.$category'
 import { Route as FrBlogSlugRouteImport } from './routes/fr/blog_.$slug'
-import { Route as FaProductsTexolRouteImport } from './routes/fa/products_.Texol'
-import { Route as FaProductsTexacoRouteImport } from './routes/fa/products_.Texaco'
-import { Route as FaProductsShellRouteImport } from './routes/fa/products_.Shell'
-import { Route as FaProductsPetrolOfisiRouteImport } from './routes/fa/products_.PetrolOfisi'
-import { Route as FaProductsMotulRouteImport } from './routes/fa/products_.Motul'
-import { Route as FaProductsMobilRouteImport } from './routes/fa/products_.Mobil'
 import { Route as FaHiTechCategoryRouteImport } from './routes/fa/hi-tech_.$category'
 import { Route as FaBlogSlugRouteImport } from './routes/fa/blog_.$slug'
-import { Route as DeProductsTexolRouteImport } from './routes/de/products_.Texol'
-import { Route as DeProductsTexacoRouteImport } from './routes/de/products_.Texaco'
-import { Route as DeProductsShellRouteImport } from './routes/de/products_.Shell'
-import { Route as DeProductsPetrolOfisiRouteImport } from './routes/de/products_.PetrolOfisi'
-import { Route as DeProductsMotulRouteImport } from './routes/de/products_.Motul'
-import { Route as DeProductsMobilRouteImport } from './routes/de/products_.Mobil'
 import { Route as DeHiTechCategoryRouteImport } from './routes/de/hi-tech_.$category'
 import { Route as DeBlogSlugRouteImport } from './routes/de/blog_.$slug'
-import { Route as ArProductsTexolRouteImport } from './routes/ar/products_.Texol'
-import { Route as ArProductsTexacoRouteImport } from './routes/ar/products_.Texaco'
-import { Route as ArProductsShellRouteImport } from './routes/ar/products_.Shell'
-import { Route as ArProductsPetrolOfisiRouteImport } from './routes/ar/products_.PetrolOfisi'
-import { Route as ArProductsMotulRouteImport } from './routes/ar/products_.Motul'
-import { Route as ArProductsMobilRouteImport } from './routes/ar/products_.Mobil'
 import { Route as ArHiTechCategoryRouteImport } from './routes/ar/hi-tech_.$category'
 import { Route as ArBlogSlugRouteImport } from './routes/ar/blog_.$slug'
 import { Route as TrHITECHCategoryProductRouteImport } from './routes/tr/HI-TECH_.$category.$product'
@@ -140,11 +98,6 @@ import { Route as ArHiTechCategoryProductRouteImport } from './routes/ar/hi-tech
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProductsRoute = ProductsRouteImport.update({
-  id: '/products',
-  path: '/products',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MediaRoute = MediaRouteImport.update({
@@ -170,6 +123,11 @@ const ExportRoute = ExportRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CatalogsRoute = CatalogsRouteImport.update({
+  id: '/catalogs',
+  path: '/catalogs',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogRoute = BlogRouteImport.update({
@@ -217,11 +175,6 @@ const ArIndexRoute = ArIndexRouteImport.update({
   path: '/ar/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TrProductsRoute = TrProductsRouteImport.update({
-  id: '/tr/products',
-  path: '/tr/products',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const TrMediaRoute = TrMediaRouteImport.update({
   id: '/tr/media',
   path: '/tr/media',
@@ -242,6 +195,11 @@ const TrContactRoute = TrContactRouteImport.update({
   path: '/tr/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TrCatalogsRoute = TrCatalogsRouteImport.update({
+  id: '/tr/catalogs',
+  path: '/tr/catalogs',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TrBlogRoute = TrBlogRouteImport.update({
   id: '/tr/blog',
   path: '/tr/blog',
@@ -255,11 +213,6 @@ const TrAboutRoute = TrAboutRouteImport.update({
 const TrHITECHRoute = TrHITECHRouteImport.update({
   id: '/tr/HI-TECH',
   path: '/tr/HI-TECH',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RuProductsRoute = RuProductsRouteImport.update({
-  id: '/ru/products',
-  path: '/ru/products',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RuMediaRoute = RuMediaRouteImport.update({
@@ -287,6 +240,11 @@ const RuContactRoute = RuContactRouteImport.update({
   path: '/ru/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RuCatalogsRoute = RuCatalogsRouteImport.update({
+  id: '/ru/catalogs',
+  path: '/ru/catalogs',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RuBlogRoute = RuBlogRouteImport.update({
   id: '/ru/blog',
   path: '/ru/blog',
@@ -297,44 +255,9 @@ const RuAboutRoute = RuAboutRouteImport.update({
   path: '/ru/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProductsTexolRoute = ProductsTexolRouteImport.update({
-  id: '/products_/Texol',
-  path: '/products/Texol',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProductsTexacoRoute = ProductsTexacoRouteImport.update({
-  id: '/products_/Texaco',
-  path: '/products/Texaco',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProductsShellRoute = ProductsShellRouteImport.update({
-  id: '/products_/Shell',
-  path: '/products/Shell',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProductsPetrolOfisiRoute = ProductsPetrolOfisiRouteImport.update({
-  id: '/products_/PetrolOfisi',
-  path: '/products/PetrolOfisi',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProductsMotulRoute = ProductsMotulRouteImport.update({
-  id: '/products_/Motul',
-  path: '/products/Motul',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProductsMobilRoute = ProductsMobilRouteImport.update({
-  id: '/products_/Mobil',
-  path: '/products/Mobil',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const HiTechCategoryRoute = HiTechCategoryRouteImport.update({
   id: '/hi-tech_/$category',
   path: '/hi-tech/$category',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FrProductsRoute = FrProductsRouteImport.update({
-  id: '/fr/products',
-  path: '/fr/products',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FrMediaRoute = FrMediaRouteImport.update({
@@ -362,6 +285,11 @@ const FrContactRoute = FrContactRouteImport.update({
   path: '/fr/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FrCatalogsRoute = FrCatalogsRouteImport.update({
+  id: '/fr/catalogs',
+  path: '/fr/catalogs',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FrBlogRoute = FrBlogRouteImport.update({
   id: '/fr/blog',
   path: '/fr/blog',
@@ -370,11 +298,6 @@ const FrBlogRoute = FrBlogRouteImport.update({
 const FrAboutRoute = FrAboutRouteImport.update({
   id: '/fr/about',
   path: '/fr/about',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FaProductsRoute = FaProductsRouteImport.update({
-  id: '/fa/products',
-  path: '/fa/products',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FaMediaRoute = FaMediaRouteImport.update({
@@ -402,6 +325,11 @@ const FaContactRoute = FaContactRouteImport.update({
   path: '/fa/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FaCatalogsRoute = FaCatalogsRouteImport.update({
+  id: '/fa/catalogs',
+  path: '/fa/catalogs',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FaBlogRoute = FaBlogRouteImport.update({
   id: '/fa/blog',
   path: '/fa/blog',
@@ -410,11 +338,6 @@ const FaBlogRoute = FaBlogRouteImport.update({
 const FaAboutRoute = FaAboutRouteImport.update({
   id: '/fa/about',
   path: '/fa/about',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DeProductsRoute = DeProductsRouteImport.update({
-  id: '/de/products',
-  path: '/de/products',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DeMediaRoute = DeMediaRouteImport.update({
@@ -442,6 +365,11 @@ const DeContactRoute = DeContactRouteImport.update({
   path: '/de/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DeCatalogsRoute = DeCatalogsRouteImport.update({
+  id: '/de/catalogs',
+  path: '/de/catalogs',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DeBlogRoute = DeBlogRouteImport.update({
   id: '/de/blog',
   path: '/de/blog',
@@ -455,11 +383,6 @@ const DeAboutRoute = DeAboutRouteImport.update({
 const BlogSlugRoute = BlogSlugRouteImport.update({
   id: '/blog_/$slug',
   path: '/blog/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ArProductsRoute = ArProductsRouteImport.update({
-  id: '/ar/products',
-  path: '/ar/products',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ArMediaRoute = ArMediaRouteImport.update({
@@ -487,6 +410,11 @@ const ArContactRoute = ArContactRouteImport.update({
   path: '/ar/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ArCatalogsRoute = ArCatalogsRouteImport.update({
+  id: '/ar/catalogs',
+  path: '/ar/catalogs',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ArBlogRoute = ArBlogRouteImport.update({
   id: '/ar/blog',
   path: '/ar/blog',
@@ -497,36 +425,6 @@ const ArAboutRoute = ArAboutRouteImport.update({
   path: '/ar/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TrProductsTexolRoute = TrProductsTexolRouteImport.update({
-  id: '/tr/products_/Texol',
-  path: '/tr/products/Texol',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TrProductsTexacoRoute = TrProductsTexacoRouteImport.update({
-  id: '/tr/products_/Texaco',
-  path: '/tr/products/Texaco',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TrProductsShellRoute = TrProductsShellRouteImport.update({
-  id: '/tr/products_/Shell',
-  path: '/tr/products/Shell',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TrProductsPetrolOfisiRoute = TrProductsPetrolOfisiRouteImport.update({
-  id: '/tr/products_/PetrolOfisi',
-  path: '/tr/products/PetrolOfisi',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TrProductsMotulRoute = TrProductsMotulRouteImport.update({
-  id: '/tr/products_/Motul',
-  path: '/tr/products/Motul',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TrProductsMobilRoute = TrProductsMobilRouteImport.update({
-  id: '/tr/products_/Mobil',
-  path: '/tr/products/Mobil',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const TrBlogSlugRoute = TrBlogSlugRouteImport.update({
   id: '/tr/blog_/$slug',
   path: '/tr/blog/$slug',
@@ -535,36 +433,6 @@ const TrBlogSlugRoute = TrBlogSlugRouteImport.update({
 const TrHITECHCategoryRoute = TrHITECHCategoryRouteImport.update({
   id: '/tr/HI-TECH_/$category',
   path: '/tr/HI-TECH/$category',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RuProductsTexolRoute = RuProductsTexolRouteImport.update({
-  id: '/ru/products_/Texol',
-  path: '/ru/products/Texol',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RuProductsTexacoRoute = RuProductsTexacoRouteImport.update({
-  id: '/ru/products_/Texaco',
-  path: '/ru/products/Texaco',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RuProductsShellRoute = RuProductsShellRouteImport.update({
-  id: '/ru/products_/Shell',
-  path: '/ru/products/Shell',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RuProductsPetrolOfisiRoute = RuProductsPetrolOfisiRouteImport.update({
-  id: '/ru/products_/PetrolOfisi',
-  path: '/ru/products/PetrolOfisi',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RuProductsMotulRoute = RuProductsMotulRouteImport.update({
-  id: '/ru/products_/Motul',
-  path: '/ru/products/Motul',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RuProductsMobilRoute = RuProductsMobilRouteImport.update({
-  id: '/ru/products_/Mobil',
-  path: '/ru/products/Mobil',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RuHiTechCategoryRoute = RuHiTechCategoryRouteImport.update({
@@ -582,36 +450,6 @@ const HiTechCategoryProductRoute = HiTechCategoryProductRouteImport.update({
   path: '/$product',
   getParentRoute: () => HiTechCategoryRoute,
 } as any)
-const FrProductsTexolRoute = FrProductsTexolRouteImport.update({
-  id: '/fr/products_/Texol',
-  path: '/fr/products/Texol',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FrProductsTexacoRoute = FrProductsTexacoRouteImport.update({
-  id: '/fr/products_/Texaco',
-  path: '/fr/products/Texaco',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FrProductsShellRoute = FrProductsShellRouteImport.update({
-  id: '/fr/products_/Shell',
-  path: '/fr/products/Shell',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FrProductsPetrolOfisiRoute = FrProductsPetrolOfisiRouteImport.update({
-  id: '/fr/products_/PetrolOfisi',
-  path: '/fr/products/PetrolOfisi',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FrProductsMotulRoute = FrProductsMotulRouteImport.update({
-  id: '/fr/products_/Motul',
-  path: '/fr/products/Motul',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FrProductsMobilRoute = FrProductsMobilRouteImport.update({
-  id: '/fr/products_/Mobil',
-  path: '/fr/products/Mobil',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const FrHiTechCategoryRoute = FrHiTechCategoryRouteImport.update({
   id: '/fr/hi-tech_/$category',
   path: '/fr/hi-tech/$category',
@@ -620,36 +458,6 @@ const FrHiTechCategoryRoute = FrHiTechCategoryRouteImport.update({
 const FrBlogSlugRoute = FrBlogSlugRouteImport.update({
   id: '/fr/blog_/$slug',
   path: '/fr/blog/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FaProductsTexolRoute = FaProductsTexolRouteImport.update({
-  id: '/fa/products_/Texol',
-  path: '/fa/products/Texol',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FaProductsTexacoRoute = FaProductsTexacoRouteImport.update({
-  id: '/fa/products_/Texaco',
-  path: '/fa/products/Texaco',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FaProductsShellRoute = FaProductsShellRouteImport.update({
-  id: '/fa/products_/Shell',
-  path: '/fa/products/Shell',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FaProductsPetrolOfisiRoute = FaProductsPetrolOfisiRouteImport.update({
-  id: '/fa/products_/PetrolOfisi',
-  path: '/fa/products/PetrolOfisi',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FaProductsMotulRoute = FaProductsMotulRouteImport.update({
-  id: '/fa/products_/Motul',
-  path: '/fa/products/Motul',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FaProductsMobilRoute = FaProductsMobilRouteImport.update({
-  id: '/fa/products_/Mobil',
-  path: '/fa/products/Mobil',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FaHiTechCategoryRoute = FaHiTechCategoryRouteImport.update({
@@ -662,36 +470,6 @@ const FaBlogSlugRoute = FaBlogSlugRouteImport.update({
   path: '/fa/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const DeProductsTexolRoute = DeProductsTexolRouteImport.update({
-  id: '/de/products_/Texol',
-  path: '/de/products/Texol',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DeProductsTexacoRoute = DeProductsTexacoRouteImport.update({
-  id: '/de/products_/Texaco',
-  path: '/de/products/Texaco',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DeProductsShellRoute = DeProductsShellRouteImport.update({
-  id: '/de/products_/Shell',
-  path: '/de/products/Shell',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DeProductsPetrolOfisiRoute = DeProductsPetrolOfisiRouteImport.update({
-  id: '/de/products_/PetrolOfisi',
-  path: '/de/products/PetrolOfisi',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DeProductsMotulRoute = DeProductsMotulRouteImport.update({
-  id: '/de/products_/Motul',
-  path: '/de/products/Motul',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DeProductsMobilRoute = DeProductsMobilRouteImport.update({
-  id: '/de/products_/Mobil',
-  path: '/de/products/Mobil',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const DeHiTechCategoryRoute = DeHiTechCategoryRouteImport.update({
   id: '/de/hi-tech_/$category',
   path: '/de/hi-tech/$category',
@@ -700,36 +478,6 @@ const DeHiTechCategoryRoute = DeHiTechCategoryRouteImport.update({
 const DeBlogSlugRoute = DeBlogSlugRouteImport.update({
   id: '/de/blog_/$slug',
   path: '/de/blog/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ArProductsTexolRoute = ArProductsTexolRouteImport.update({
-  id: '/ar/products_/Texol',
-  path: '/ar/products/Texol',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ArProductsTexacoRoute = ArProductsTexacoRouteImport.update({
-  id: '/ar/products_/Texaco',
-  path: '/ar/products/Texaco',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ArProductsShellRoute = ArProductsShellRouteImport.update({
-  id: '/ar/products_/Shell',
-  path: '/ar/products/Shell',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ArProductsPetrolOfisiRoute = ArProductsPetrolOfisiRouteImport.update({
-  id: '/ar/products_/PetrolOfisi',
-  path: '/ar/products/PetrolOfisi',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ArProductsMotulRoute = ArProductsMotulRouteImport.update({
-  id: '/ar/products_/Motul',
-  path: '/ar/products/Motul',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ArProductsMobilRoute = ArProductsMobilRouteImport.update({
-  id: '/ar/products_/Mobil',
-  path: '/ar/products/Mobil',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ArHiTechCategoryRoute = ArHiTechCategoryRouteImport.update({
@@ -777,69 +525,63 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blog': typeof BlogRoute
+  '/catalogs': typeof CatalogsRoute
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
   '/hi-tech': typeof HiTechRoute
   '/industries': typeof IndustriesRoute
   '/media': typeof MediaRoute
-  '/products': typeof ProductsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/ar/about': typeof ArAboutRoute
   '/ar/blog': typeof ArBlogRoute
+  '/ar/catalogs': typeof ArCatalogsRoute
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
   '/ar/hi-tech': typeof ArHiTechRoute
   '/ar/industries': typeof ArIndustriesRoute
   '/ar/media': typeof ArMediaRoute
-  '/ar/products': typeof ArProductsRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/blog': typeof DeBlogRoute
+  '/de/catalogs': typeof DeCatalogsRoute
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
   '/de/hi-tech': typeof DeHiTechRoute
   '/de/industries': typeof DeIndustriesRoute
   '/de/media': typeof DeMediaRoute
-  '/de/products': typeof DeProductsRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
+  '/fa/catalogs': typeof FaCatalogsRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
   '/fa/hi-tech': typeof FaHiTechRoute
   '/fa/industries': typeof FaIndustriesRoute
   '/fa/media': typeof FaMediaRoute
-  '/fa/products': typeof FaProductsRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
+  '/fr/catalogs': typeof FrCatalogsRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
   '/fr/hi-tech': typeof FrHiTechRoute
   '/fr/industries': typeof FrIndustriesRoute
   '/fr/media': typeof FrMediaRoute
-  '/fr/products': typeof FrProductsRoute
   '/hi-tech/$category': typeof HiTechCategoryRouteWithChildren
-  '/products/Mobil': typeof ProductsMobilRoute
-  '/products/Motul': typeof ProductsMotulRoute
-  '/products/PetrolOfisi': typeof ProductsPetrolOfisiRoute
-  '/products/Shell': typeof ProductsShellRoute
-  '/products/Texaco': typeof ProductsTexacoRoute
-  '/products/Texol': typeof ProductsTexolRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
+  '/ru/catalogs': typeof RuCatalogsRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
   '/ru/hi-tech': typeof RuHiTechRoute
   '/ru/industries': typeof RuIndustriesRoute
   '/ru/media': typeof RuMediaRoute
-  '/ru/products': typeof RuProductsRoute
   '/tr/HI-TECH': typeof TrHITECHRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
+  '/tr/catalogs': typeof TrCatalogsRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
   '/tr/industries': typeof TrIndustriesRoute
   '/tr/media': typeof TrMediaRoute
-  '/tr/products': typeof TrProductsRoute
   '/ar/': typeof ArIndexRoute
   '/de/': typeof DeIndexRoute
   '/fa/': typeof FaIndexRoute
@@ -848,53 +590,17 @@ export interface FileRoutesByFullPath {
   '/tr/': typeof TrIndexRoute
   '/ar/blog/$slug': typeof ArBlogSlugRoute
   '/ar/hi-tech/$category': typeof ArHiTechCategoryRouteWithChildren
-  '/ar/products/Mobil': typeof ArProductsMobilRoute
-  '/ar/products/Motul': typeof ArProductsMotulRoute
-  '/ar/products/PetrolOfisi': typeof ArProductsPetrolOfisiRoute
-  '/ar/products/Shell': typeof ArProductsShellRoute
-  '/ar/products/Texaco': typeof ArProductsTexacoRoute
-  '/ar/products/Texol': typeof ArProductsTexolRoute
   '/de/blog/$slug': typeof DeBlogSlugRoute
   '/de/hi-tech/$category': typeof DeHiTechCategoryRouteWithChildren
-  '/de/products/Mobil': typeof DeProductsMobilRoute
-  '/de/products/Motul': typeof DeProductsMotulRoute
-  '/de/products/PetrolOfisi': typeof DeProductsPetrolOfisiRoute
-  '/de/products/Shell': typeof DeProductsShellRoute
-  '/de/products/Texaco': typeof DeProductsTexacoRoute
-  '/de/products/Texol': typeof DeProductsTexolRoute
   '/fa/blog/$slug': typeof FaBlogSlugRoute
   '/fa/hi-tech/$category': typeof FaHiTechCategoryRouteWithChildren
-  '/fa/products/Mobil': typeof FaProductsMobilRoute
-  '/fa/products/Motul': typeof FaProductsMotulRoute
-  '/fa/products/PetrolOfisi': typeof FaProductsPetrolOfisiRoute
-  '/fa/products/Shell': typeof FaProductsShellRoute
-  '/fa/products/Texaco': typeof FaProductsTexacoRoute
-  '/fa/products/Texol': typeof FaProductsTexolRoute
   '/fr/blog/$slug': typeof FrBlogSlugRoute
   '/fr/hi-tech/$category': typeof FrHiTechCategoryRouteWithChildren
-  '/fr/products/Mobil': typeof FrProductsMobilRoute
-  '/fr/products/Motul': typeof FrProductsMotulRoute
-  '/fr/products/PetrolOfisi': typeof FrProductsPetrolOfisiRoute
-  '/fr/products/Shell': typeof FrProductsShellRoute
-  '/fr/products/Texaco': typeof FrProductsTexacoRoute
-  '/fr/products/Texol': typeof FrProductsTexolRoute
   '/hi-tech/$category/$product': typeof HiTechCategoryProductRoute
   '/ru/blog/$slug': typeof RuBlogSlugRoute
   '/ru/hi-tech/$category': typeof RuHiTechCategoryRouteWithChildren
-  '/ru/products/Mobil': typeof RuProductsMobilRoute
-  '/ru/products/Motul': typeof RuProductsMotulRoute
-  '/ru/products/PetrolOfisi': typeof RuProductsPetrolOfisiRoute
-  '/ru/products/Shell': typeof RuProductsShellRoute
-  '/ru/products/Texaco': typeof RuProductsTexacoRoute
-  '/ru/products/Texol': typeof RuProductsTexolRoute
   '/tr/HI-TECH/$category': typeof TrHITECHCategoryRouteWithChildren
   '/tr/blog/$slug': typeof TrBlogSlugRoute
-  '/tr/products/Mobil': typeof TrProductsMobilRoute
-  '/tr/products/Motul': typeof TrProductsMotulRoute
-  '/tr/products/PetrolOfisi': typeof TrProductsPetrolOfisiRoute
-  '/tr/products/Shell': typeof TrProductsShellRoute
-  '/tr/products/Texaco': typeof TrProductsTexacoRoute
-  '/tr/products/Texol': typeof TrProductsTexolRoute
   '/ar/hi-tech/$category/$product': typeof ArHiTechCategoryProductRoute
   '/de/hi-tech/$category/$product': typeof DeHiTechCategoryProductRoute
   '/fa/hi-tech/$category/$product': typeof FaHiTechCategoryProductRoute
@@ -906,69 +612,63 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blog': typeof BlogRoute
+  '/catalogs': typeof CatalogsRoute
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
   '/hi-tech': typeof HiTechRoute
   '/industries': typeof IndustriesRoute
   '/media': typeof MediaRoute
-  '/products': typeof ProductsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/ar/about': typeof ArAboutRoute
   '/ar/blog': typeof ArBlogRoute
+  '/ar/catalogs': typeof ArCatalogsRoute
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
   '/ar/hi-tech': typeof ArHiTechRoute
   '/ar/industries': typeof ArIndustriesRoute
   '/ar/media': typeof ArMediaRoute
-  '/ar/products': typeof ArProductsRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/blog': typeof DeBlogRoute
+  '/de/catalogs': typeof DeCatalogsRoute
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
   '/de/hi-tech': typeof DeHiTechRoute
   '/de/industries': typeof DeIndustriesRoute
   '/de/media': typeof DeMediaRoute
-  '/de/products': typeof DeProductsRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
+  '/fa/catalogs': typeof FaCatalogsRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
   '/fa/hi-tech': typeof FaHiTechRoute
   '/fa/industries': typeof FaIndustriesRoute
   '/fa/media': typeof FaMediaRoute
-  '/fa/products': typeof FaProductsRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
+  '/fr/catalogs': typeof FrCatalogsRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
   '/fr/hi-tech': typeof FrHiTechRoute
   '/fr/industries': typeof FrIndustriesRoute
   '/fr/media': typeof FrMediaRoute
-  '/fr/products': typeof FrProductsRoute
   '/hi-tech/$category': typeof HiTechCategoryRouteWithChildren
-  '/products/Mobil': typeof ProductsMobilRoute
-  '/products/Motul': typeof ProductsMotulRoute
-  '/products/PetrolOfisi': typeof ProductsPetrolOfisiRoute
-  '/products/Shell': typeof ProductsShellRoute
-  '/products/Texaco': typeof ProductsTexacoRoute
-  '/products/Texol': typeof ProductsTexolRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
+  '/ru/catalogs': typeof RuCatalogsRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
   '/ru/hi-tech': typeof RuHiTechRoute
   '/ru/industries': typeof RuIndustriesRoute
   '/ru/media': typeof RuMediaRoute
-  '/ru/products': typeof RuProductsRoute
   '/tr/HI-TECH': typeof TrHITECHRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
+  '/tr/catalogs': typeof TrCatalogsRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
   '/tr/industries': typeof TrIndustriesRoute
   '/tr/media': typeof TrMediaRoute
-  '/tr/products': typeof TrProductsRoute
   '/ar': typeof ArIndexRoute
   '/de': typeof DeIndexRoute
   '/fa': typeof FaIndexRoute
@@ -977,53 +677,17 @@ export interface FileRoutesByTo {
   '/tr': typeof TrIndexRoute
   '/ar/blog/$slug': typeof ArBlogSlugRoute
   '/ar/hi-tech/$category': typeof ArHiTechCategoryRouteWithChildren
-  '/ar/products/Mobil': typeof ArProductsMobilRoute
-  '/ar/products/Motul': typeof ArProductsMotulRoute
-  '/ar/products/PetrolOfisi': typeof ArProductsPetrolOfisiRoute
-  '/ar/products/Shell': typeof ArProductsShellRoute
-  '/ar/products/Texaco': typeof ArProductsTexacoRoute
-  '/ar/products/Texol': typeof ArProductsTexolRoute
   '/de/blog/$slug': typeof DeBlogSlugRoute
   '/de/hi-tech/$category': typeof DeHiTechCategoryRouteWithChildren
-  '/de/products/Mobil': typeof DeProductsMobilRoute
-  '/de/products/Motul': typeof DeProductsMotulRoute
-  '/de/products/PetrolOfisi': typeof DeProductsPetrolOfisiRoute
-  '/de/products/Shell': typeof DeProductsShellRoute
-  '/de/products/Texaco': typeof DeProductsTexacoRoute
-  '/de/products/Texol': typeof DeProductsTexolRoute
   '/fa/blog/$slug': typeof FaBlogSlugRoute
   '/fa/hi-tech/$category': typeof FaHiTechCategoryRouteWithChildren
-  '/fa/products/Mobil': typeof FaProductsMobilRoute
-  '/fa/products/Motul': typeof FaProductsMotulRoute
-  '/fa/products/PetrolOfisi': typeof FaProductsPetrolOfisiRoute
-  '/fa/products/Shell': typeof FaProductsShellRoute
-  '/fa/products/Texaco': typeof FaProductsTexacoRoute
-  '/fa/products/Texol': typeof FaProductsTexolRoute
   '/fr/blog/$slug': typeof FrBlogSlugRoute
   '/fr/hi-tech/$category': typeof FrHiTechCategoryRouteWithChildren
-  '/fr/products/Mobil': typeof FrProductsMobilRoute
-  '/fr/products/Motul': typeof FrProductsMotulRoute
-  '/fr/products/PetrolOfisi': typeof FrProductsPetrolOfisiRoute
-  '/fr/products/Shell': typeof FrProductsShellRoute
-  '/fr/products/Texaco': typeof FrProductsTexacoRoute
-  '/fr/products/Texol': typeof FrProductsTexolRoute
   '/hi-tech/$category/$product': typeof HiTechCategoryProductRoute
   '/ru/blog/$slug': typeof RuBlogSlugRoute
   '/ru/hi-tech/$category': typeof RuHiTechCategoryRouteWithChildren
-  '/ru/products/Mobil': typeof RuProductsMobilRoute
-  '/ru/products/Motul': typeof RuProductsMotulRoute
-  '/ru/products/PetrolOfisi': typeof RuProductsPetrolOfisiRoute
-  '/ru/products/Shell': typeof RuProductsShellRoute
-  '/ru/products/Texaco': typeof RuProductsTexacoRoute
-  '/ru/products/Texol': typeof RuProductsTexolRoute
   '/tr/HI-TECH/$category': typeof TrHITECHCategoryRouteWithChildren
   '/tr/blog/$slug': typeof TrBlogSlugRoute
-  '/tr/products/Mobil': typeof TrProductsMobilRoute
-  '/tr/products/Motul': typeof TrProductsMotulRoute
-  '/tr/products/PetrolOfisi': typeof TrProductsPetrolOfisiRoute
-  '/tr/products/Shell': typeof TrProductsShellRoute
-  '/tr/products/Texaco': typeof TrProductsTexacoRoute
-  '/tr/products/Texol': typeof TrProductsTexolRoute
   '/ar/hi-tech/$category/$product': typeof ArHiTechCategoryProductRoute
   '/de/hi-tech/$category/$product': typeof DeHiTechCategoryProductRoute
   '/fa/hi-tech/$category/$product': typeof FaHiTechCategoryProductRoute
@@ -1036,69 +700,63 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blog': typeof BlogRoute
+  '/catalogs': typeof CatalogsRoute
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
   '/hi-tech': typeof HiTechRoute
   '/industries': typeof IndustriesRoute
   '/media': typeof MediaRoute
-  '/products': typeof ProductsRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/ar/about': typeof ArAboutRoute
   '/ar/blog': typeof ArBlogRoute
+  '/ar/catalogs': typeof ArCatalogsRoute
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
   '/ar/hi-tech': typeof ArHiTechRoute
   '/ar/industries': typeof ArIndustriesRoute
   '/ar/media': typeof ArMediaRoute
-  '/ar/products': typeof ArProductsRoute
   '/blog_/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/blog': typeof DeBlogRoute
+  '/de/catalogs': typeof DeCatalogsRoute
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
   '/de/hi-tech': typeof DeHiTechRoute
   '/de/industries': typeof DeIndustriesRoute
   '/de/media': typeof DeMediaRoute
-  '/de/products': typeof DeProductsRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
+  '/fa/catalogs': typeof FaCatalogsRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
   '/fa/hi-tech': typeof FaHiTechRoute
   '/fa/industries': typeof FaIndustriesRoute
   '/fa/media': typeof FaMediaRoute
-  '/fa/products': typeof FaProductsRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
+  '/fr/catalogs': typeof FrCatalogsRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
   '/fr/hi-tech': typeof FrHiTechRoute
   '/fr/industries': typeof FrIndustriesRoute
   '/fr/media': typeof FrMediaRoute
-  '/fr/products': typeof FrProductsRoute
   '/hi-tech_/$category': typeof HiTechCategoryRouteWithChildren
-  '/products_/Mobil': typeof ProductsMobilRoute
-  '/products_/Motul': typeof ProductsMotulRoute
-  '/products_/PetrolOfisi': typeof ProductsPetrolOfisiRoute
-  '/products_/Shell': typeof ProductsShellRoute
-  '/products_/Texaco': typeof ProductsTexacoRoute
-  '/products_/Texol': typeof ProductsTexolRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
+  '/ru/catalogs': typeof RuCatalogsRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
   '/ru/hi-tech': typeof RuHiTechRoute
   '/ru/industries': typeof RuIndustriesRoute
   '/ru/media': typeof RuMediaRoute
-  '/ru/products': typeof RuProductsRoute
   '/tr/HI-TECH': typeof TrHITECHRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
+  '/tr/catalogs': typeof TrCatalogsRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
   '/tr/industries': typeof TrIndustriesRoute
   '/tr/media': typeof TrMediaRoute
-  '/tr/products': typeof TrProductsRoute
   '/ar/': typeof ArIndexRoute
   '/de/': typeof DeIndexRoute
   '/fa/': typeof FaIndexRoute
@@ -1107,53 +765,17 @@ export interface FileRoutesById {
   '/tr/': typeof TrIndexRoute
   '/ar/blog_/$slug': typeof ArBlogSlugRoute
   '/ar/hi-tech_/$category': typeof ArHiTechCategoryRouteWithChildren
-  '/ar/products_/Mobil': typeof ArProductsMobilRoute
-  '/ar/products_/Motul': typeof ArProductsMotulRoute
-  '/ar/products_/PetrolOfisi': typeof ArProductsPetrolOfisiRoute
-  '/ar/products_/Shell': typeof ArProductsShellRoute
-  '/ar/products_/Texaco': typeof ArProductsTexacoRoute
-  '/ar/products_/Texol': typeof ArProductsTexolRoute
   '/de/blog_/$slug': typeof DeBlogSlugRoute
   '/de/hi-tech_/$category': typeof DeHiTechCategoryRouteWithChildren
-  '/de/products_/Mobil': typeof DeProductsMobilRoute
-  '/de/products_/Motul': typeof DeProductsMotulRoute
-  '/de/products_/PetrolOfisi': typeof DeProductsPetrolOfisiRoute
-  '/de/products_/Shell': typeof DeProductsShellRoute
-  '/de/products_/Texaco': typeof DeProductsTexacoRoute
-  '/de/products_/Texol': typeof DeProductsTexolRoute
   '/fa/blog_/$slug': typeof FaBlogSlugRoute
   '/fa/hi-tech_/$category': typeof FaHiTechCategoryRouteWithChildren
-  '/fa/products_/Mobil': typeof FaProductsMobilRoute
-  '/fa/products_/Motul': typeof FaProductsMotulRoute
-  '/fa/products_/PetrolOfisi': typeof FaProductsPetrolOfisiRoute
-  '/fa/products_/Shell': typeof FaProductsShellRoute
-  '/fa/products_/Texaco': typeof FaProductsTexacoRoute
-  '/fa/products_/Texol': typeof FaProductsTexolRoute
   '/fr/blog_/$slug': typeof FrBlogSlugRoute
   '/fr/hi-tech_/$category': typeof FrHiTechCategoryRouteWithChildren
-  '/fr/products_/Mobil': typeof FrProductsMobilRoute
-  '/fr/products_/Motul': typeof FrProductsMotulRoute
-  '/fr/products_/PetrolOfisi': typeof FrProductsPetrolOfisiRoute
-  '/fr/products_/Shell': typeof FrProductsShellRoute
-  '/fr/products_/Texaco': typeof FrProductsTexacoRoute
-  '/fr/products_/Texol': typeof FrProductsTexolRoute
   '/hi-tech_/$category/$product': typeof HiTechCategoryProductRoute
   '/ru/blog_/$slug': typeof RuBlogSlugRoute
   '/ru/hi-tech_/$category': typeof RuHiTechCategoryRouteWithChildren
-  '/ru/products_/Mobil': typeof RuProductsMobilRoute
-  '/ru/products_/Motul': typeof RuProductsMotulRoute
-  '/ru/products_/PetrolOfisi': typeof RuProductsPetrolOfisiRoute
-  '/ru/products_/Shell': typeof RuProductsShellRoute
-  '/ru/products_/Texaco': typeof RuProductsTexacoRoute
-  '/ru/products_/Texol': typeof RuProductsTexolRoute
   '/tr/HI-TECH_/$category': typeof TrHITECHCategoryRouteWithChildren
   '/tr/blog_/$slug': typeof TrBlogSlugRoute
-  '/tr/products_/Mobil': typeof TrProductsMobilRoute
-  '/tr/products_/Motul': typeof TrProductsMotulRoute
-  '/tr/products_/PetrolOfisi': typeof TrProductsPetrolOfisiRoute
-  '/tr/products_/Shell': typeof TrProductsShellRoute
-  '/tr/products_/Texaco': typeof TrProductsTexacoRoute
-  '/tr/products_/Texol': typeof TrProductsTexolRoute
   '/ar/hi-tech_/$category/$product': typeof ArHiTechCategoryProductRoute
   '/de/hi-tech_/$category/$product': typeof DeHiTechCategoryProductRoute
   '/fa/hi-tech_/$category/$product': typeof FaHiTechCategoryProductRoute
@@ -1167,69 +789,63 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/blog'
+    | '/catalogs'
     | '/contact'
     | '/export'
     | '/hi-tech'
     | '/industries'
     | '/media'
-    | '/products'
     | '/sitemap.xml'
     | '/ar/about'
     | '/ar/blog'
+    | '/ar/catalogs'
     | '/ar/contact'
     | '/ar/export'
     | '/ar/hi-tech'
     | '/ar/industries'
     | '/ar/media'
-    | '/ar/products'
     | '/blog/$slug'
     | '/de/about'
     | '/de/blog'
+    | '/de/catalogs'
     | '/de/contact'
     | '/de/export'
     | '/de/hi-tech'
     | '/de/industries'
     | '/de/media'
-    | '/de/products'
     | '/fa/about'
     | '/fa/blog'
+    | '/fa/catalogs'
     | '/fa/contact'
     | '/fa/export'
     | '/fa/hi-tech'
     | '/fa/industries'
     | '/fa/media'
-    | '/fa/products'
     | '/fr/about'
     | '/fr/blog'
+    | '/fr/catalogs'
     | '/fr/contact'
     | '/fr/export'
     | '/fr/hi-tech'
     | '/fr/industries'
     | '/fr/media'
-    | '/fr/products'
     | '/hi-tech/$category'
-    | '/products/Mobil'
-    | '/products/Motul'
-    | '/products/PetrolOfisi'
-    | '/products/Shell'
-    | '/products/Texaco'
-    | '/products/Texol'
     | '/ru/about'
     | '/ru/blog'
+    | '/ru/catalogs'
     | '/ru/contact'
     | '/ru/export'
     | '/ru/hi-tech'
     | '/ru/industries'
     | '/ru/media'
-    | '/ru/products'
     | '/tr/HI-TECH'
     | '/tr/about'
     | '/tr/blog'
+    | '/tr/catalogs'
     | '/tr/contact'
     | '/tr/export'
     | '/tr/industries'
     | '/tr/media'
-    | '/tr/products'
     | '/ar/'
     | '/de/'
     | '/fa/'
@@ -1238,53 +854,17 @@ export interface FileRouteTypes {
     | '/tr/'
     | '/ar/blog/$slug'
     | '/ar/hi-tech/$category'
-    | '/ar/products/Mobil'
-    | '/ar/products/Motul'
-    | '/ar/products/PetrolOfisi'
-    | '/ar/products/Shell'
-    | '/ar/products/Texaco'
-    | '/ar/products/Texol'
     | '/de/blog/$slug'
     | '/de/hi-tech/$category'
-    | '/de/products/Mobil'
-    | '/de/products/Motul'
-    | '/de/products/PetrolOfisi'
-    | '/de/products/Shell'
-    | '/de/products/Texaco'
-    | '/de/products/Texol'
     | '/fa/blog/$slug'
     | '/fa/hi-tech/$category'
-    | '/fa/products/Mobil'
-    | '/fa/products/Motul'
-    | '/fa/products/PetrolOfisi'
-    | '/fa/products/Shell'
-    | '/fa/products/Texaco'
-    | '/fa/products/Texol'
     | '/fr/blog/$slug'
     | '/fr/hi-tech/$category'
-    | '/fr/products/Mobil'
-    | '/fr/products/Motul'
-    | '/fr/products/PetrolOfisi'
-    | '/fr/products/Shell'
-    | '/fr/products/Texaco'
-    | '/fr/products/Texol'
     | '/hi-tech/$category/$product'
     | '/ru/blog/$slug'
     | '/ru/hi-tech/$category'
-    | '/ru/products/Mobil'
-    | '/ru/products/Motul'
-    | '/ru/products/PetrolOfisi'
-    | '/ru/products/Shell'
-    | '/ru/products/Texaco'
-    | '/ru/products/Texol'
     | '/tr/HI-TECH/$category'
     | '/tr/blog/$slug'
-    | '/tr/products/Mobil'
-    | '/tr/products/Motul'
-    | '/tr/products/PetrolOfisi'
-    | '/tr/products/Shell'
-    | '/tr/products/Texaco'
-    | '/tr/products/Texol'
     | '/ar/hi-tech/$category/$product'
     | '/de/hi-tech/$category/$product'
     | '/fa/hi-tech/$category/$product'
@@ -1296,69 +876,63 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/blog'
+    | '/catalogs'
     | '/contact'
     | '/export'
     | '/hi-tech'
     | '/industries'
     | '/media'
-    | '/products'
     | '/sitemap.xml'
     | '/ar/about'
     | '/ar/blog'
+    | '/ar/catalogs'
     | '/ar/contact'
     | '/ar/export'
     | '/ar/hi-tech'
     | '/ar/industries'
     | '/ar/media'
-    | '/ar/products'
     | '/blog/$slug'
     | '/de/about'
     | '/de/blog'
+    | '/de/catalogs'
     | '/de/contact'
     | '/de/export'
     | '/de/hi-tech'
     | '/de/industries'
     | '/de/media'
-    | '/de/products'
     | '/fa/about'
     | '/fa/blog'
+    | '/fa/catalogs'
     | '/fa/contact'
     | '/fa/export'
     | '/fa/hi-tech'
     | '/fa/industries'
     | '/fa/media'
-    | '/fa/products'
     | '/fr/about'
     | '/fr/blog'
+    | '/fr/catalogs'
     | '/fr/contact'
     | '/fr/export'
     | '/fr/hi-tech'
     | '/fr/industries'
     | '/fr/media'
-    | '/fr/products'
     | '/hi-tech/$category'
-    | '/products/Mobil'
-    | '/products/Motul'
-    | '/products/PetrolOfisi'
-    | '/products/Shell'
-    | '/products/Texaco'
-    | '/products/Texol'
     | '/ru/about'
     | '/ru/blog'
+    | '/ru/catalogs'
     | '/ru/contact'
     | '/ru/export'
     | '/ru/hi-tech'
     | '/ru/industries'
     | '/ru/media'
-    | '/ru/products'
     | '/tr/HI-TECH'
     | '/tr/about'
     | '/tr/blog'
+    | '/tr/catalogs'
     | '/tr/contact'
     | '/tr/export'
     | '/tr/industries'
     | '/tr/media'
-    | '/tr/products'
     | '/ar'
     | '/de'
     | '/fa'
@@ -1367,53 +941,17 @@ export interface FileRouteTypes {
     | '/tr'
     | '/ar/blog/$slug'
     | '/ar/hi-tech/$category'
-    | '/ar/products/Mobil'
-    | '/ar/products/Motul'
-    | '/ar/products/PetrolOfisi'
-    | '/ar/products/Shell'
-    | '/ar/products/Texaco'
-    | '/ar/products/Texol'
     | '/de/blog/$slug'
     | '/de/hi-tech/$category'
-    | '/de/products/Mobil'
-    | '/de/products/Motul'
-    | '/de/products/PetrolOfisi'
-    | '/de/products/Shell'
-    | '/de/products/Texaco'
-    | '/de/products/Texol'
     | '/fa/blog/$slug'
     | '/fa/hi-tech/$category'
-    | '/fa/products/Mobil'
-    | '/fa/products/Motul'
-    | '/fa/products/PetrolOfisi'
-    | '/fa/products/Shell'
-    | '/fa/products/Texaco'
-    | '/fa/products/Texol'
     | '/fr/blog/$slug'
     | '/fr/hi-tech/$category'
-    | '/fr/products/Mobil'
-    | '/fr/products/Motul'
-    | '/fr/products/PetrolOfisi'
-    | '/fr/products/Shell'
-    | '/fr/products/Texaco'
-    | '/fr/products/Texol'
     | '/hi-tech/$category/$product'
     | '/ru/blog/$slug'
     | '/ru/hi-tech/$category'
-    | '/ru/products/Mobil'
-    | '/ru/products/Motul'
-    | '/ru/products/PetrolOfisi'
-    | '/ru/products/Shell'
-    | '/ru/products/Texaco'
-    | '/ru/products/Texol'
     | '/tr/HI-TECH/$category'
     | '/tr/blog/$slug'
-    | '/tr/products/Mobil'
-    | '/tr/products/Motul'
-    | '/tr/products/PetrolOfisi'
-    | '/tr/products/Shell'
-    | '/tr/products/Texaco'
-    | '/tr/products/Texol'
     | '/ar/hi-tech/$category/$product'
     | '/de/hi-tech/$category/$product'
     | '/fa/hi-tech/$category/$product'
@@ -1425,69 +963,63 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/blog'
+    | '/catalogs'
     | '/contact'
     | '/export'
     | '/hi-tech'
     | '/industries'
     | '/media'
-    | '/products'
     | '/sitemap.xml'
     | '/ar/about'
     | '/ar/blog'
+    | '/ar/catalogs'
     | '/ar/contact'
     | '/ar/export'
     | '/ar/hi-tech'
     | '/ar/industries'
     | '/ar/media'
-    | '/ar/products'
     | '/blog_/$slug'
     | '/de/about'
     | '/de/blog'
+    | '/de/catalogs'
     | '/de/contact'
     | '/de/export'
     | '/de/hi-tech'
     | '/de/industries'
     | '/de/media'
-    | '/de/products'
     | '/fa/about'
     | '/fa/blog'
+    | '/fa/catalogs'
     | '/fa/contact'
     | '/fa/export'
     | '/fa/hi-tech'
     | '/fa/industries'
     | '/fa/media'
-    | '/fa/products'
     | '/fr/about'
     | '/fr/blog'
+    | '/fr/catalogs'
     | '/fr/contact'
     | '/fr/export'
     | '/fr/hi-tech'
     | '/fr/industries'
     | '/fr/media'
-    | '/fr/products'
     | '/hi-tech_/$category'
-    | '/products_/Mobil'
-    | '/products_/Motul'
-    | '/products_/PetrolOfisi'
-    | '/products_/Shell'
-    | '/products_/Texaco'
-    | '/products_/Texol'
     | '/ru/about'
     | '/ru/blog'
+    | '/ru/catalogs'
     | '/ru/contact'
     | '/ru/export'
     | '/ru/hi-tech'
     | '/ru/industries'
     | '/ru/media'
-    | '/ru/products'
     | '/tr/HI-TECH'
     | '/tr/about'
     | '/tr/blog'
+    | '/tr/catalogs'
     | '/tr/contact'
     | '/tr/export'
     | '/tr/industries'
     | '/tr/media'
-    | '/tr/products'
     | '/ar/'
     | '/de/'
     | '/fa/'
@@ -1496,53 +1028,17 @@ export interface FileRouteTypes {
     | '/tr/'
     | '/ar/blog_/$slug'
     | '/ar/hi-tech_/$category'
-    | '/ar/products_/Mobil'
-    | '/ar/products_/Motul'
-    | '/ar/products_/PetrolOfisi'
-    | '/ar/products_/Shell'
-    | '/ar/products_/Texaco'
-    | '/ar/products_/Texol'
     | '/de/blog_/$slug'
     | '/de/hi-tech_/$category'
-    | '/de/products_/Mobil'
-    | '/de/products_/Motul'
-    | '/de/products_/PetrolOfisi'
-    | '/de/products_/Shell'
-    | '/de/products_/Texaco'
-    | '/de/products_/Texol'
     | '/fa/blog_/$slug'
     | '/fa/hi-tech_/$category'
-    | '/fa/products_/Mobil'
-    | '/fa/products_/Motul'
-    | '/fa/products_/PetrolOfisi'
-    | '/fa/products_/Shell'
-    | '/fa/products_/Texaco'
-    | '/fa/products_/Texol'
     | '/fr/blog_/$slug'
     | '/fr/hi-tech_/$category'
-    | '/fr/products_/Mobil'
-    | '/fr/products_/Motul'
-    | '/fr/products_/PetrolOfisi'
-    | '/fr/products_/Shell'
-    | '/fr/products_/Texaco'
-    | '/fr/products_/Texol'
     | '/hi-tech_/$category/$product'
     | '/ru/blog_/$slug'
     | '/ru/hi-tech_/$category'
-    | '/ru/products_/Mobil'
-    | '/ru/products_/Motul'
-    | '/ru/products_/PetrolOfisi'
-    | '/ru/products_/Shell'
-    | '/ru/products_/Texaco'
-    | '/ru/products_/Texol'
     | '/tr/HI-TECH_/$category'
     | '/tr/blog_/$slug'
-    | '/tr/products_/Mobil'
-    | '/tr/products_/Motul'
-    | '/tr/products_/PetrolOfisi'
-    | '/tr/products_/Shell'
-    | '/tr/products_/Texaco'
-    | '/tr/products_/Texol'
     | '/ar/hi-tech_/$category/$product'
     | '/de/hi-tech_/$category/$product'
     | '/fa/hi-tech_/$category/$product'
@@ -1555,69 +1051,63 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   BlogRoute: typeof BlogRoute
+  CatalogsRoute: typeof CatalogsRoute
   ContactRoute: typeof ContactRoute
   ExportRoute: typeof ExportRoute
   HiTechRoute: typeof HiTechRoute
   IndustriesRoute: typeof IndustriesRoute
   MediaRoute: typeof MediaRoute
-  ProductsRoute: typeof ProductsRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   ArAboutRoute: typeof ArAboutRoute
   ArBlogRoute: typeof ArBlogRoute
+  ArCatalogsRoute: typeof ArCatalogsRoute
   ArContactRoute: typeof ArContactRoute
   ArExportRoute: typeof ArExportRoute
   ArHiTechRoute: typeof ArHiTechRoute
   ArIndustriesRoute: typeof ArIndustriesRoute
   ArMediaRoute: typeof ArMediaRoute
-  ArProductsRoute: typeof ArProductsRoute
   BlogSlugRoute: typeof BlogSlugRoute
   DeAboutRoute: typeof DeAboutRoute
   DeBlogRoute: typeof DeBlogRoute
+  DeCatalogsRoute: typeof DeCatalogsRoute
   DeContactRoute: typeof DeContactRoute
   DeExportRoute: typeof DeExportRoute
   DeHiTechRoute: typeof DeHiTechRoute
   DeIndustriesRoute: typeof DeIndustriesRoute
   DeMediaRoute: typeof DeMediaRoute
-  DeProductsRoute: typeof DeProductsRoute
   FaAboutRoute: typeof FaAboutRoute
   FaBlogRoute: typeof FaBlogRoute
+  FaCatalogsRoute: typeof FaCatalogsRoute
   FaContactRoute: typeof FaContactRoute
   FaExportRoute: typeof FaExportRoute
   FaHiTechRoute: typeof FaHiTechRoute
   FaIndustriesRoute: typeof FaIndustriesRoute
   FaMediaRoute: typeof FaMediaRoute
-  FaProductsRoute: typeof FaProductsRoute
   FrAboutRoute: typeof FrAboutRoute
   FrBlogRoute: typeof FrBlogRoute
+  FrCatalogsRoute: typeof FrCatalogsRoute
   FrContactRoute: typeof FrContactRoute
   FrExportRoute: typeof FrExportRoute
   FrHiTechRoute: typeof FrHiTechRoute
   FrIndustriesRoute: typeof FrIndustriesRoute
   FrMediaRoute: typeof FrMediaRoute
-  FrProductsRoute: typeof FrProductsRoute
   HiTechCategoryRoute: typeof HiTechCategoryRouteWithChildren
-  ProductsMobilRoute: typeof ProductsMobilRoute
-  ProductsMotulRoute: typeof ProductsMotulRoute
-  ProductsPetrolOfisiRoute: typeof ProductsPetrolOfisiRoute
-  ProductsShellRoute: typeof ProductsShellRoute
-  ProductsTexacoRoute: typeof ProductsTexacoRoute
-  ProductsTexolRoute: typeof ProductsTexolRoute
   RuAboutRoute: typeof RuAboutRoute
   RuBlogRoute: typeof RuBlogRoute
+  RuCatalogsRoute: typeof RuCatalogsRoute
   RuContactRoute: typeof RuContactRoute
   RuExportRoute: typeof RuExportRoute
   RuHiTechRoute: typeof RuHiTechRoute
   RuIndustriesRoute: typeof RuIndustriesRoute
   RuMediaRoute: typeof RuMediaRoute
-  RuProductsRoute: typeof RuProductsRoute
   TrHITECHRoute: typeof TrHITECHRoute
   TrAboutRoute: typeof TrAboutRoute
   TrBlogRoute: typeof TrBlogRoute
+  TrCatalogsRoute: typeof TrCatalogsRoute
   TrContactRoute: typeof TrContactRoute
   TrExportRoute: typeof TrExportRoute
   TrIndustriesRoute: typeof TrIndustriesRoute
   TrMediaRoute: typeof TrMediaRoute
-  TrProductsRoute: typeof TrProductsRoute
   ArIndexRoute: typeof ArIndexRoute
   DeIndexRoute: typeof DeIndexRoute
   FaIndexRoute: typeof FaIndexRoute
@@ -1626,52 +1116,16 @@ export interface RootRouteChildren {
   TrIndexRoute: typeof TrIndexRoute
   ArBlogSlugRoute: typeof ArBlogSlugRoute
   ArHiTechCategoryRoute: typeof ArHiTechCategoryRouteWithChildren
-  ArProductsMobilRoute: typeof ArProductsMobilRoute
-  ArProductsMotulRoute: typeof ArProductsMotulRoute
-  ArProductsPetrolOfisiRoute: typeof ArProductsPetrolOfisiRoute
-  ArProductsShellRoute: typeof ArProductsShellRoute
-  ArProductsTexacoRoute: typeof ArProductsTexacoRoute
-  ArProductsTexolRoute: typeof ArProductsTexolRoute
   DeBlogSlugRoute: typeof DeBlogSlugRoute
   DeHiTechCategoryRoute: typeof DeHiTechCategoryRouteWithChildren
-  DeProductsMobilRoute: typeof DeProductsMobilRoute
-  DeProductsMotulRoute: typeof DeProductsMotulRoute
-  DeProductsPetrolOfisiRoute: typeof DeProductsPetrolOfisiRoute
-  DeProductsShellRoute: typeof DeProductsShellRoute
-  DeProductsTexacoRoute: typeof DeProductsTexacoRoute
-  DeProductsTexolRoute: typeof DeProductsTexolRoute
   FaBlogSlugRoute: typeof FaBlogSlugRoute
   FaHiTechCategoryRoute: typeof FaHiTechCategoryRouteWithChildren
-  FaProductsMobilRoute: typeof FaProductsMobilRoute
-  FaProductsMotulRoute: typeof FaProductsMotulRoute
-  FaProductsPetrolOfisiRoute: typeof FaProductsPetrolOfisiRoute
-  FaProductsShellRoute: typeof FaProductsShellRoute
-  FaProductsTexacoRoute: typeof FaProductsTexacoRoute
-  FaProductsTexolRoute: typeof FaProductsTexolRoute
   FrBlogSlugRoute: typeof FrBlogSlugRoute
   FrHiTechCategoryRoute: typeof FrHiTechCategoryRouteWithChildren
-  FrProductsMobilRoute: typeof FrProductsMobilRoute
-  FrProductsMotulRoute: typeof FrProductsMotulRoute
-  FrProductsPetrolOfisiRoute: typeof FrProductsPetrolOfisiRoute
-  FrProductsShellRoute: typeof FrProductsShellRoute
-  FrProductsTexacoRoute: typeof FrProductsTexacoRoute
-  FrProductsTexolRoute: typeof FrProductsTexolRoute
   RuBlogSlugRoute: typeof RuBlogSlugRoute
   RuHiTechCategoryRoute: typeof RuHiTechCategoryRouteWithChildren
-  RuProductsMobilRoute: typeof RuProductsMobilRoute
-  RuProductsMotulRoute: typeof RuProductsMotulRoute
-  RuProductsPetrolOfisiRoute: typeof RuProductsPetrolOfisiRoute
-  RuProductsShellRoute: typeof RuProductsShellRoute
-  RuProductsTexacoRoute: typeof RuProductsTexacoRoute
-  RuProductsTexolRoute: typeof RuProductsTexolRoute
   TrHITECHCategoryRoute: typeof TrHITECHCategoryRouteWithChildren
   TrBlogSlugRoute: typeof TrBlogSlugRoute
-  TrProductsMobilRoute: typeof TrProductsMobilRoute
-  TrProductsMotulRoute: typeof TrProductsMotulRoute
-  TrProductsPetrolOfisiRoute: typeof TrProductsPetrolOfisiRoute
-  TrProductsShellRoute: typeof TrProductsShellRoute
-  TrProductsTexacoRoute: typeof TrProductsTexacoRoute
-  TrProductsTexolRoute: typeof TrProductsTexolRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -1681,13 +1135,6 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/products': {
-      id: '/products'
-      path: '/products'
-      fullPath: '/products'
-      preLoaderRoute: typeof ProductsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/media': {
@@ -1723,6 +1170,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/catalogs': {
+      id: '/catalogs'
+      path: '/catalogs'
+      fullPath: '/catalogs'
+      preLoaderRoute: typeof CatalogsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog': {
@@ -1788,13 +1242,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tr/products': {
-      id: '/tr/products'
-      path: '/tr/products'
-      fullPath: '/tr/products'
-      preLoaderRoute: typeof TrProductsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/tr/media': {
       id: '/tr/media'
       path: '/tr/media'
@@ -1823,6 +1270,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TrContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tr/catalogs': {
+      id: '/tr/catalogs'
+      path: '/tr/catalogs'
+      fullPath: '/tr/catalogs'
+      preLoaderRoute: typeof TrCatalogsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tr/blog': {
       id: '/tr/blog'
       path: '/tr/blog'
@@ -1842,13 +1296,6 @@ declare module '@tanstack/react-router' {
       path: '/tr/HI-TECH'
       fullPath: '/tr/HI-TECH'
       preLoaderRoute: typeof TrHITECHRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ru/products': {
-      id: '/ru/products'
-      path: '/ru/products'
-      fullPath: '/ru/products'
-      preLoaderRoute: typeof RuProductsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ru/media': {
@@ -1886,6 +1333,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RuContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ru/catalogs': {
+      id: '/ru/catalogs'
+      path: '/ru/catalogs'
+      fullPath: '/ru/catalogs'
+      preLoaderRoute: typeof RuCatalogsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/ru/blog': {
       id: '/ru/blog'
       path: '/ru/blog'
@@ -1900,60 +1354,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RuAboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/products_/Texol': {
-      id: '/products_/Texol'
-      path: '/products/Texol'
-      fullPath: '/products/Texol'
-      preLoaderRoute: typeof ProductsTexolRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/products_/Texaco': {
-      id: '/products_/Texaco'
-      path: '/products/Texaco'
-      fullPath: '/products/Texaco'
-      preLoaderRoute: typeof ProductsTexacoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/products_/Shell': {
-      id: '/products_/Shell'
-      path: '/products/Shell'
-      fullPath: '/products/Shell'
-      preLoaderRoute: typeof ProductsShellRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/products_/PetrolOfisi': {
-      id: '/products_/PetrolOfisi'
-      path: '/products/PetrolOfisi'
-      fullPath: '/products/PetrolOfisi'
-      preLoaderRoute: typeof ProductsPetrolOfisiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/products_/Motul': {
-      id: '/products_/Motul'
-      path: '/products/Motul'
-      fullPath: '/products/Motul'
-      preLoaderRoute: typeof ProductsMotulRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/products_/Mobil': {
-      id: '/products_/Mobil'
-      path: '/products/Mobil'
-      fullPath: '/products/Mobil'
-      preLoaderRoute: typeof ProductsMobilRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/hi-tech_/$category': {
       id: '/hi-tech_/$category'
       path: '/hi-tech/$category'
       fullPath: '/hi-tech/$category'
       preLoaderRoute: typeof HiTechCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fr/products': {
-      id: '/fr/products'
-      path: '/fr/products'
-      fullPath: '/fr/products'
-      preLoaderRoute: typeof FrProductsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fr/media': {
@@ -1991,6 +1396,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FrContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/fr/catalogs': {
+      id: '/fr/catalogs'
+      path: '/fr/catalogs'
+      fullPath: '/fr/catalogs'
+      preLoaderRoute: typeof FrCatalogsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/fr/blog': {
       id: '/fr/blog'
       path: '/fr/blog'
@@ -2003,13 +1415,6 @@ declare module '@tanstack/react-router' {
       path: '/fr/about'
       fullPath: '/fr/about'
       preLoaderRoute: typeof FrAboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fa/products': {
-      id: '/fa/products'
-      path: '/fa/products'
-      fullPath: '/fa/products'
-      preLoaderRoute: typeof FaProductsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fa/media': {
@@ -2047,6 +1452,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/fa/catalogs': {
+      id: '/fa/catalogs'
+      path: '/fa/catalogs'
+      fullPath: '/fa/catalogs'
+      preLoaderRoute: typeof FaCatalogsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/fa/blog': {
       id: '/fa/blog'
       path: '/fa/blog'
@@ -2059,13 +1471,6 @@ declare module '@tanstack/react-router' {
       path: '/fa/about'
       fullPath: '/fa/about'
       preLoaderRoute: typeof FaAboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/de/products': {
-      id: '/de/products'
-      path: '/de/products'
-      fullPath: '/de/products'
-      preLoaderRoute: typeof DeProductsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/de/media': {
@@ -2103,6 +1508,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DeContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/de/catalogs': {
+      id: '/de/catalogs'
+      path: '/de/catalogs'
+      fullPath: '/de/catalogs'
+      preLoaderRoute: typeof DeCatalogsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/de/blog': {
       id: '/de/blog'
       path: '/de/blog'
@@ -2122,13 +1534,6 @@ declare module '@tanstack/react-router' {
       path: '/blog/$slug'
       fullPath: '/blog/$slug'
       preLoaderRoute: typeof BlogSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ar/products': {
-      id: '/ar/products'
-      path: '/ar/products'
-      fullPath: '/ar/products'
-      preLoaderRoute: typeof ArProductsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ar/media': {
@@ -2166,6 +1571,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ar/catalogs': {
+      id: '/ar/catalogs'
+      path: '/ar/catalogs'
+      fullPath: '/ar/catalogs'
+      preLoaderRoute: typeof ArCatalogsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/ar/blog': {
       id: '/ar/blog'
       path: '/ar/blog'
@@ -2180,48 +1592,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArAboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tr/products_/Texol': {
-      id: '/tr/products_/Texol'
-      path: '/tr/products/Texol'
-      fullPath: '/tr/products/Texol'
-      preLoaderRoute: typeof TrProductsTexolRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tr/products_/Texaco': {
-      id: '/tr/products_/Texaco'
-      path: '/tr/products/Texaco'
-      fullPath: '/tr/products/Texaco'
-      preLoaderRoute: typeof TrProductsTexacoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tr/products_/Shell': {
-      id: '/tr/products_/Shell'
-      path: '/tr/products/Shell'
-      fullPath: '/tr/products/Shell'
-      preLoaderRoute: typeof TrProductsShellRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tr/products_/PetrolOfisi': {
-      id: '/tr/products_/PetrolOfisi'
-      path: '/tr/products/PetrolOfisi'
-      fullPath: '/tr/products/PetrolOfisi'
-      preLoaderRoute: typeof TrProductsPetrolOfisiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tr/products_/Motul': {
-      id: '/tr/products_/Motul'
-      path: '/tr/products/Motul'
-      fullPath: '/tr/products/Motul'
-      preLoaderRoute: typeof TrProductsMotulRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tr/products_/Mobil': {
-      id: '/tr/products_/Mobil'
-      path: '/tr/products/Mobil'
-      fullPath: '/tr/products/Mobil'
-      preLoaderRoute: typeof TrProductsMobilRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/tr/blog_/$slug': {
       id: '/tr/blog_/$slug'
       path: '/tr/blog/$slug'
@@ -2234,48 +1604,6 @@ declare module '@tanstack/react-router' {
       path: '/tr/HI-TECH/$category'
       fullPath: '/tr/HI-TECH/$category'
       preLoaderRoute: typeof TrHITECHCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ru/products_/Texol': {
-      id: '/ru/products_/Texol'
-      path: '/ru/products/Texol'
-      fullPath: '/ru/products/Texol'
-      preLoaderRoute: typeof RuProductsTexolRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ru/products_/Texaco': {
-      id: '/ru/products_/Texaco'
-      path: '/ru/products/Texaco'
-      fullPath: '/ru/products/Texaco'
-      preLoaderRoute: typeof RuProductsTexacoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ru/products_/Shell': {
-      id: '/ru/products_/Shell'
-      path: '/ru/products/Shell'
-      fullPath: '/ru/products/Shell'
-      preLoaderRoute: typeof RuProductsShellRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ru/products_/PetrolOfisi': {
-      id: '/ru/products_/PetrolOfisi'
-      path: '/ru/products/PetrolOfisi'
-      fullPath: '/ru/products/PetrolOfisi'
-      preLoaderRoute: typeof RuProductsPetrolOfisiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ru/products_/Motul': {
-      id: '/ru/products_/Motul'
-      path: '/ru/products/Motul'
-      fullPath: '/ru/products/Motul'
-      preLoaderRoute: typeof RuProductsMotulRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ru/products_/Mobil': {
-      id: '/ru/products_/Mobil'
-      path: '/ru/products/Mobil'
-      fullPath: '/ru/products/Mobil'
-      preLoaderRoute: typeof RuProductsMobilRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ru/hi-tech_/$category': {
@@ -2299,48 +1627,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HiTechCategoryProductRouteImport
       parentRoute: typeof HiTechCategoryRoute
     }
-    '/fr/products_/Texol': {
-      id: '/fr/products_/Texol'
-      path: '/fr/products/Texol'
-      fullPath: '/fr/products/Texol'
-      preLoaderRoute: typeof FrProductsTexolRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fr/products_/Texaco': {
-      id: '/fr/products_/Texaco'
-      path: '/fr/products/Texaco'
-      fullPath: '/fr/products/Texaco'
-      preLoaderRoute: typeof FrProductsTexacoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fr/products_/Shell': {
-      id: '/fr/products_/Shell'
-      path: '/fr/products/Shell'
-      fullPath: '/fr/products/Shell'
-      preLoaderRoute: typeof FrProductsShellRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fr/products_/PetrolOfisi': {
-      id: '/fr/products_/PetrolOfisi'
-      path: '/fr/products/PetrolOfisi'
-      fullPath: '/fr/products/PetrolOfisi'
-      preLoaderRoute: typeof FrProductsPetrolOfisiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fr/products_/Motul': {
-      id: '/fr/products_/Motul'
-      path: '/fr/products/Motul'
-      fullPath: '/fr/products/Motul'
-      preLoaderRoute: typeof FrProductsMotulRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fr/products_/Mobil': {
-      id: '/fr/products_/Mobil'
-      path: '/fr/products/Mobil'
-      fullPath: '/fr/products/Mobil'
-      preLoaderRoute: typeof FrProductsMobilRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/fr/hi-tech_/$category': {
       id: '/fr/hi-tech_/$category'
       path: '/fr/hi-tech/$category'
@@ -2353,48 +1639,6 @@ declare module '@tanstack/react-router' {
       path: '/fr/blog/$slug'
       fullPath: '/fr/blog/$slug'
       preLoaderRoute: typeof FrBlogSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fa/products_/Texol': {
-      id: '/fa/products_/Texol'
-      path: '/fa/products/Texol'
-      fullPath: '/fa/products/Texol'
-      preLoaderRoute: typeof FaProductsTexolRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fa/products_/Texaco': {
-      id: '/fa/products_/Texaco'
-      path: '/fa/products/Texaco'
-      fullPath: '/fa/products/Texaco'
-      preLoaderRoute: typeof FaProductsTexacoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fa/products_/Shell': {
-      id: '/fa/products_/Shell'
-      path: '/fa/products/Shell'
-      fullPath: '/fa/products/Shell'
-      preLoaderRoute: typeof FaProductsShellRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fa/products_/PetrolOfisi': {
-      id: '/fa/products_/PetrolOfisi'
-      path: '/fa/products/PetrolOfisi'
-      fullPath: '/fa/products/PetrolOfisi'
-      preLoaderRoute: typeof FaProductsPetrolOfisiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fa/products_/Motul': {
-      id: '/fa/products_/Motul'
-      path: '/fa/products/Motul'
-      fullPath: '/fa/products/Motul'
-      preLoaderRoute: typeof FaProductsMotulRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fa/products_/Mobil': {
-      id: '/fa/products_/Mobil'
-      path: '/fa/products/Mobil'
-      fullPath: '/fa/products/Mobil'
-      preLoaderRoute: typeof FaProductsMobilRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fa/hi-tech_/$category': {
@@ -2411,48 +1655,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaBlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/de/products_/Texol': {
-      id: '/de/products_/Texol'
-      path: '/de/products/Texol'
-      fullPath: '/de/products/Texol'
-      preLoaderRoute: typeof DeProductsTexolRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/de/products_/Texaco': {
-      id: '/de/products_/Texaco'
-      path: '/de/products/Texaco'
-      fullPath: '/de/products/Texaco'
-      preLoaderRoute: typeof DeProductsTexacoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/de/products_/Shell': {
-      id: '/de/products_/Shell'
-      path: '/de/products/Shell'
-      fullPath: '/de/products/Shell'
-      preLoaderRoute: typeof DeProductsShellRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/de/products_/PetrolOfisi': {
-      id: '/de/products_/PetrolOfisi'
-      path: '/de/products/PetrolOfisi'
-      fullPath: '/de/products/PetrolOfisi'
-      preLoaderRoute: typeof DeProductsPetrolOfisiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/de/products_/Motul': {
-      id: '/de/products_/Motul'
-      path: '/de/products/Motul'
-      fullPath: '/de/products/Motul'
-      preLoaderRoute: typeof DeProductsMotulRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/de/products_/Mobil': {
-      id: '/de/products_/Mobil'
-      path: '/de/products/Mobil'
-      fullPath: '/de/products/Mobil'
-      preLoaderRoute: typeof DeProductsMobilRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/de/hi-tech_/$category': {
       id: '/de/hi-tech_/$category'
       path: '/de/hi-tech/$category'
@@ -2465,48 +1667,6 @@ declare module '@tanstack/react-router' {
       path: '/de/blog/$slug'
       fullPath: '/de/blog/$slug'
       preLoaderRoute: typeof DeBlogSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ar/products_/Texol': {
-      id: '/ar/products_/Texol'
-      path: '/ar/products/Texol'
-      fullPath: '/ar/products/Texol'
-      preLoaderRoute: typeof ArProductsTexolRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ar/products_/Texaco': {
-      id: '/ar/products_/Texaco'
-      path: '/ar/products/Texaco'
-      fullPath: '/ar/products/Texaco'
-      preLoaderRoute: typeof ArProductsTexacoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ar/products_/Shell': {
-      id: '/ar/products_/Shell'
-      path: '/ar/products/Shell'
-      fullPath: '/ar/products/Shell'
-      preLoaderRoute: typeof ArProductsShellRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ar/products_/PetrolOfisi': {
-      id: '/ar/products_/PetrolOfisi'
-      path: '/ar/products/PetrolOfisi'
-      fullPath: '/ar/products/PetrolOfisi'
-      preLoaderRoute: typeof ArProductsPetrolOfisiRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ar/products_/Motul': {
-      id: '/ar/products_/Motul'
-      path: '/ar/products/Motul'
-      fullPath: '/ar/products/Motul'
-      preLoaderRoute: typeof ArProductsMotulRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ar/products_/Mobil': {
-      id: '/ar/products_/Mobil'
-      path: '/ar/products/Mobil'
-      fullPath: '/ar/products/Mobil'
-      preLoaderRoute: typeof ArProductsMobilRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ar/hi-tech_/$category': {
@@ -2650,69 +1810,63 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   BlogRoute: BlogRoute,
+  CatalogsRoute: CatalogsRoute,
   ContactRoute: ContactRoute,
   ExportRoute: ExportRoute,
   HiTechRoute: HiTechRoute,
   IndustriesRoute: IndustriesRoute,
   MediaRoute: MediaRoute,
-  ProductsRoute: ProductsRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   ArAboutRoute: ArAboutRoute,
   ArBlogRoute: ArBlogRoute,
+  ArCatalogsRoute: ArCatalogsRoute,
   ArContactRoute: ArContactRoute,
   ArExportRoute: ArExportRoute,
   ArHiTechRoute: ArHiTechRoute,
   ArIndustriesRoute: ArIndustriesRoute,
   ArMediaRoute: ArMediaRoute,
-  ArProductsRoute: ArProductsRoute,
   BlogSlugRoute: BlogSlugRoute,
   DeAboutRoute: DeAboutRoute,
   DeBlogRoute: DeBlogRoute,
+  DeCatalogsRoute: DeCatalogsRoute,
   DeContactRoute: DeContactRoute,
   DeExportRoute: DeExportRoute,
   DeHiTechRoute: DeHiTechRoute,
   DeIndustriesRoute: DeIndustriesRoute,
   DeMediaRoute: DeMediaRoute,
-  DeProductsRoute: DeProductsRoute,
   FaAboutRoute: FaAboutRoute,
   FaBlogRoute: FaBlogRoute,
+  FaCatalogsRoute: FaCatalogsRoute,
   FaContactRoute: FaContactRoute,
   FaExportRoute: FaExportRoute,
   FaHiTechRoute: FaHiTechRoute,
   FaIndustriesRoute: FaIndustriesRoute,
   FaMediaRoute: FaMediaRoute,
-  FaProductsRoute: FaProductsRoute,
   FrAboutRoute: FrAboutRoute,
   FrBlogRoute: FrBlogRoute,
+  FrCatalogsRoute: FrCatalogsRoute,
   FrContactRoute: FrContactRoute,
   FrExportRoute: FrExportRoute,
   FrHiTechRoute: FrHiTechRoute,
   FrIndustriesRoute: FrIndustriesRoute,
   FrMediaRoute: FrMediaRoute,
-  FrProductsRoute: FrProductsRoute,
   HiTechCategoryRoute: HiTechCategoryRouteWithChildren,
-  ProductsMobilRoute: ProductsMobilRoute,
-  ProductsMotulRoute: ProductsMotulRoute,
-  ProductsPetrolOfisiRoute: ProductsPetrolOfisiRoute,
-  ProductsShellRoute: ProductsShellRoute,
-  ProductsTexacoRoute: ProductsTexacoRoute,
-  ProductsTexolRoute: ProductsTexolRoute,
   RuAboutRoute: RuAboutRoute,
   RuBlogRoute: RuBlogRoute,
+  RuCatalogsRoute: RuCatalogsRoute,
   RuContactRoute: RuContactRoute,
   RuExportRoute: RuExportRoute,
   RuHiTechRoute: RuHiTechRoute,
   RuIndustriesRoute: RuIndustriesRoute,
   RuMediaRoute: RuMediaRoute,
-  RuProductsRoute: RuProductsRoute,
   TrHITECHRoute: TrHITECHRoute,
   TrAboutRoute: TrAboutRoute,
   TrBlogRoute: TrBlogRoute,
+  TrCatalogsRoute: TrCatalogsRoute,
   TrContactRoute: TrContactRoute,
   TrExportRoute: TrExportRoute,
   TrIndustriesRoute: TrIndustriesRoute,
   TrMediaRoute: TrMediaRoute,
-  TrProductsRoute: TrProductsRoute,
   ArIndexRoute: ArIndexRoute,
   DeIndexRoute: DeIndexRoute,
   FaIndexRoute: FaIndexRoute,
@@ -2721,52 +1875,16 @@ const rootRouteChildren: RootRouteChildren = {
   TrIndexRoute: TrIndexRoute,
   ArBlogSlugRoute: ArBlogSlugRoute,
   ArHiTechCategoryRoute: ArHiTechCategoryRouteWithChildren,
-  ArProductsMobilRoute: ArProductsMobilRoute,
-  ArProductsMotulRoute: ArProductsMotulRoute,
-  ArProductsPetrolOfisiRoute: ArProductsPetrolOfisiRoute,
-  ArProductsShellRoute: ArProductsShellRoute,
-  ArProductsTexacoRoute: ArProductsTexacoRoute,
-  ArProductsTexolRoute: ArProductsTexolRoute,
   DeBlogSlugRoute: DeBlogSlugRoute,
   DeHiTechCategoryRoute: DeHiTechCategoryRouteWithChildren,
-  DeProductsMobilRoute: DeProductsMobilRoute,
-  DeProductsMotulRoute: DeProductsMotulRoute,
-  DeProductsPetrolOfisiRoute: DeProductsPetrolOfisiRoute,
-  DeProductsShellRoute: DeProductsShellRoute,
-  DeProductsTexacoRoute: DeProductsTexacoRoute,
-  DeProductsTexolRoute: DeProductsTexolRoute,
   FaBlogSlugRoute: FaBlogSlugRoute,
   FaHiTechCategoryRoute: FaHiTechCategoryRouteWithChildren,
-  FaProductsMobilRoute: FaProductsMobilRoute,
-  FaProductsMotulRoute: FaProductsMotulRoute,
-  FaProductsPetrolOfisiRoute: FaProductsPetrolOfisiRoute,
-  FaProductsShellRoute: FaProductsShellRoute,
-  FaProductsTexacoRoute: FaProductsTexacoRoute,
-  FaProductsTexolRoute: FaProductsTexolRoute,
   FrBlogSlugRoute: FrBlogSlugRoute,
   FrHiTechCategoryRoute: FrHiTechCategoryRouteWithChildren,
-  FrProductsMobilRoute: FrProductsMobilRoute,
-  FrProductsMotulRoute: FrProductsMotulRoute,
-  FrProductsPetrolOfisiRoute: FrProductsPetrolOfisiRoute,
-  FrProductsShellRoute: FrProductsShellRoute,
-  FrProductsTexacoRoute: FrProductsTexacoRoute,
-  FrProductsTexolRoute: FrProductsTexolRoute,
   RuBlogSlugRoute: RuBlogSlugRoute,
   RuHiTechCategoryRoute: RuHiTechCategoryRouteWithChildren,
-  RuProductsMobilRoute: RuProductsMobilRoute,
-  RuProductsMotulRoute: RuProductsMotulRoute,
-  RuProductsPetrolOfisiRoute: RuProductsPetrolOfisiRoute,
-  RuProductsShellRoute: RuProductsShellRoute,
-  RuProductsTexacoRoute: RuProductsTexacoRoute,
-  RuProductsTexolRoute: RuProductsTexolRoute,
   TrHITECHCategoryRoute: TrHITECHCategoryRouteWithChildren,
   TrBlogSlugRoute: TrBlogSlugRoute,
-  TrProductsMobilRoute: TrProductsMobilRoute,
-  TrProductsMotulRoute: TrProductsMotulRoute,
-  TrProductsPetrolOfisiRoute: TrProductsPetrolOfisiRoute,
-  TrProductsShellRoute: TrProductsShellRoute,
-  TrProductsTexacoRoute: TrProductsTexacoRoute,
-  TrProductsTexolRoute: TrProductsTexolRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

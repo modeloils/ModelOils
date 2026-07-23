@@ -1,13 +1,12 @@
 ﻿import { createFileRoute, Outlet } from "@tanstack/react-router";
 import { useParams } from "@tanstack/react-router";
 import { useState } from "react";
-import { ArrowRight, CheckCircle2, ChevronLeft, Download, Flame, X, ZoomIn } from "lucide-react";
+import { ArrowRight, CheckCircle2, ChevronLeft, Flame, X, ZoomIn } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
-import { getHiTechCatalogHref } from "@/lib/site-data";
 import flagshipImg from "@/assets/flagship.png";
 
 interface ProductItem {
@@ -1742,7 +1741,6 @@ export const Route = createFileRoute("/hi-tech")({
 
 export function HiTech() {
   const { t, data, locale } = useTranslation();
-  const catalogHref = getHiTechCatalogHref(locale);
   const categories = [
     ...data.categories.slice(0, 8).map((category, index) => ({
       name: category.name,
@@ -1834,17 +1832,11 @@ export function HiTech() {
                 </span>
               ))}
             </div>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8">
               <Button asChild variant="hero" size="lg">
                 <LocaleLink to="/contact">
                   {t.hitech.becomeDistributor} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
                 </LocaleLink>
-              </Button>
-              <Button asChild variant="steel" size="lg">
-                <a href={catalogHref} target="_blank" rel="noreferrer">
-                  <Download />
-                  {t.hitech.downloadCatalog}
-                </a>
               </Button>
             </div>
           </PageHero>

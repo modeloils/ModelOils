@@ -14,13 +14,11 @@ import {
   HardHat,
   Wheat,
   Anchor,
-  Download,
   type LucideIcon,
 } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
-import { CATALOG_BRANDS, getHiTechCatalogHref } from "@/lib/site-data";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
 import heroImg from "@/assets/hero.png";
 import flagshipImg from "@/assets/flagship.png";
@@ -43,7 +41,6 @@ export function Home() {
       <ExportSection />
       <Industries />
       <WhyUs />
-      <CatalogBrands />
       <QuoteCta />
     </SiteLayout>
   );
@@ -100,8 +97,7 @@ function Hero() {
 }
 
 function Flagship() {
-  const { t, data, locale } = useTranslation();
-  const catalogHref = getHiTechCatalogHref(locale);
+  const { t, data } = useTranslation();
   return (
     <section className="relative overflow-hidden border-y border-border bg-background py-20 lg:py-28">
       <div className="tech-grid absolute inset-0 opacity-30" />
@@ -134,12 +130,6 @@ function Flagship() {
             </Button>
             <Button asChild variant="steel" size="lg">
               <LocaleLink to="/hi-tech" hash="kategorilerimiz">{t.flagship.viewRange}</LocaleLink>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <a href={catalogHref} target="_blank" rel="noreferrer">
-                <Download />
-                {t.hitech.downloadCatalog}
-              </a>
             </Button>
           </div>
         </div>
@@ -249,36 +239,6 @@ function WhyUs() {
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{tp.text}</p>
               </div>
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function CatalogBrands() {
-  const { t } = useTranslation();
-  return (
-    <section className="bg-background py-20 lg:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          eyebrow={t.catalog.eyebrow}
-          title={t.catalog.title}
-          description={t.catalog.description}
-        />
-        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-          {CATALOG_BRANDS.map((b) => (
-            <LocaleLink
-              key={b.name}
-              to={`/products/${b.slug}`}
-              className="flex h-20 items-center justify-center overflow-hidden rounded-lg border border-border bg-secondary/40 p-4 transition-all hover:border-primary/50 hover:bg-secondary/70"
-            >
-              <img
-                src={b.logo}
-                alt={b.name}
-                className={`${b.logoClassName ?? "max-h-10 max-w-full"} w-auto object-contain`}
-              />
-            </LocaleLink>
           ))}
         </div>
       </div>

@@ -1,11 +1,11 @@
 import type { Locale } from "./types";
 
-export type NavKey = "hiTech" | "products" | "industries" | "export" | "about" | "contact" | "media" | "blog";
+export type NavKey = "hiTech" | "catalogs" | "industries" | "export" | "about" | "contact" | "media" | "blog";
 
 export interface UIStrings {
   nav: {
     hiTech: string;
-    products: string;
+    catalogs: string;
     industries: string;
     export: string;
     about: string;
@@ -174,8 +174,8 @@ export interface UIStrings {
 
 const en: UIStrings = {
   nav: {
-    hiTech: "HI-TECH Lubricants",
-    products: "Products",
+    hiTech: "HI-TECH Products",
+    catalogs: "Catalogues",
     industries: "Industries",
     export: "Export",
     about: "About",
@@ -417,8 +417,8 @@ const en: UIStrings = {
 
 const tr: UIStrings = {
   nav: {
-    hiTech: "HI-TECH Yağlayıcılar",
-    products: "Markalarımız",
+    hiTech: "HI-TECH Ürünler",
+    catalogs: "Kataloglar",
     industries: "Sektörler",
     export: "İhracat",
     about: "Hakkımızda",
@@ -658,8 +658,8 @@ const tr: UIStrings = {
 
 const ru: UIStrings = {
   nav: {
-    hiTech: "HI-TECH Смазочные",
-    products: "Продукты",
+    hiTech: "HI-TECH Продукты",
+    catalogs: "Каталоги",
     industries: "Отрасли",
     export: "Экспорт",
     about: "О нас",
@@ -901,8 +901,8 @@ const ru: UIStrings = {
 
 const fa: UIStrings = {
   nav: {
-    hiTech: "HI-TECH روانکارها",
-    products: "محصولات",
+    hiTech: "محصولات HI-TECH",
+    catalogs: "کاتالوگ‌ها",
     industries: "صنایع",
     export: "صادرات",
     about: "درباره ما",
@@ -1144,8 +1144,8 @@ const fa: UIStrings = {
 
 const ar: UIStrings = {
   nav: {
-    hiTech: "HI-TECH للزيوت",
-    products: "المنتجات",
+    hiTech: "منتجات HI-TECH",
+    catalogs: "الكتالوجات",
     industries: "الصناعات",
     export: "التصدير",
     about: "من نحن",
@@ -1387,8 +1387,8 @@ const ar: UIStrings = {
 
 const de: UIStrings = {
   nav: {
-    hiTech: "HI-TECH Schmierstoffe",
-    products: "Marken",
+    hiTech: "HI-TECH Produkte",
+    catalogs: "Kataloge",
     industries: "Branchen",
     export: "Export",
     about: "Über uns",
@@ -1624,8 +1624,8 @@ const de: UIStrings = {
 
 const fr: UIStrings = {
   nav: {
-    hiTech: "HI-TECH Lubrifiants",
-    products: "Marques",
+    hiTech: "Produits HI-TECH",
+    catalogs: "Catalogues",
     industries: "Secteurs",
     export: "Export",
     about: "À propos",
