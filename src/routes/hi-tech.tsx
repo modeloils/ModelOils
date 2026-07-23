@@ -1620,8 +1620,79 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
   },
   "Havacilik-Yaglari": {
     title: "Aviation Lubricants",
-    products: [],
-    details: {},
+    products: [
+      { slug: "Jetmax-II", name: "JETMAX II", image: "/model-oils/images/hi-tech/havacilik/jetmax-ii.jpg" },
+      { slug: "Turbine-M-46", name: "TURBINE M 46", image: "/model-oils/images/hi-tech/havacilik/turbine-m-46.jpg" },
+      { slug: "Turbine-S", name: "TURBINE S", image: "/model-oils/images/hi-tech/havacilik/turbine-s.jpg" },
+    ],
+    details: {
+      "Jetmax-II": {
+        description: {
+          en: "JETMAX II is an aviation turbine oil for aircraft turbines, industrial gas turbines and auxiliary power units (APU), including extreme-temperature service.",
+          tr: "JETMAX II; uçak türbinleri, endüstriyel gaz türbinleri ve yardımcı güç üniteleri (APU) için, aşırı sıcaklık hizmetlerini de kapsayan bir havacılık türbin yağıdır.",
+          ru: "JETMAX II — авиационное турбинное масло для авиационных турбин, промышленных газовых турбин и вспомогательных силовых установок (APU), включая эксплуатацию при экстремальных температурах.",
+          fa: "JETMAX II یک روغن توربین هوانوردی برای توربین‌های هواپیما، توربین‌های گازی صنعتی و واحدهای توان کمکی (APU)، از جمله برای کار در دماهای شدید است.",
+          ar: "JETMAX II زيت توربين للطيران مخصص لتوربينات الطائرات والتوربينات الغازية الصناعية ووحدات الطاقة المساعدة (APU)، بما في ذلك الخدمة في درجات الحرارة القصوى.",
+          de: "JETMAX II ist ein Flugturbinöl für Flugzeugturbinen, industrielle Gasturbinen und Hilfstriebwerke (APU), auch für den Einsatz bei extremen Temperaturen.",
+          fr: "JETMAX II est une huile pour turbines aéronautiques destinée aux turbines d'avion, aux turbines à gaz industrielles et aux groupes auxiliaires de puissance (APU), y compris en conditions de températures extrêmes.",
+        },
+        features: {
+          en: ["Excellent thermal stability — resists oxidation and thermal breakdown.", "Superior anti-wear protection — extends equipment life.", "Outstanding oxidation resistance — longer oil life and fewer deposits.", "Rust and corrosion protection — protects critical components.", "Excellent demulsibility — separates water quickly."],
+          tr: ["Mükemmel termal stabilite — oksidasyona ve termal bozulmaya direnç gösterir.", "Üstün aşınma koruması — ekipman ömrünü uzatır.", "Üstün oksidasyon direnci — daha uzun yağ ömrü ve daha az tortu sağlar.", "Pas ve korozyon koruması — kritik bileşenleri korur.", "Mükemmel demülsifikasyon — suyu hızlı ayırır."],
+          ru: ["Превосходная термическая стабильность — устойчивость к окислению и термическому разложению.", "Высокая противоизносная защита — продлевает срок службы оборудования.", "Высокая стойкость к окислению — более долгий срок службы масла и меньше отложений.", "Защита от ржавчины и коррозии — защищает критически важные компоненты.", "Отличная деэмульгируемость — быстро отделяет воду."],
+          fa: ["پایداری حرارتی عالی — در برابر اکسیداسیون و تخریب حرارتی مقاوم است.", "محافظت برتر در برابر سایش — عمر تجهیزات را افزایش می‌دهد.", "مقاومت عالی در برابر اکسیداسیون — عمر روغن طولانی‌تر و رسوبات کمتر.", "محافظت در برابر زنگ‌زدگی و خوردگی — از اجزای حیاتی محافظت می‌کند.", "دمولسیبیلیتی عالی — آب را به‌سرعت جدا می‌کند."],
+          ar: ["ثبات حراري ممتاز — يقاوم الأكسدة والتحلل الحراري.", "حماية فائقة من التآكل — تطيل عمر المعدات.", "مقاومة متميزة للأكسدة — عمر أطول للزيت ورواسب أقل.", "حماية من الصدأ والتآكل — تحمي المكونات الحرجة.", "قدرة ممتازة على فصل الماء — تفصل الماء بسرعة."],
+          de: ["Ausgezeichnete thermische Stabilität — widersteht Oxidation und thermischem Abbau.", "Überlegener Verschleißschutz — verlängert die Lebensdauer der Ausrüstung.", "Hervorragende Oxidationsbeständigkeit — längere Öllebensdauer und weniger Ablagerungen.", "Rost- und Korrosionsschutz — schützt kritische Komponenten.", "Ausgezeichnetes Wasserabscheidevermögen — trennt Wasser schnell."],
+          fr: ["Excellente stabilité thermique — résiste à l'oxydation et à la dégradation thermique.", "Protection anti-usure supérieure — prolonge la durée de vie des équipements.", "Excellente résistance à l'oxydation — durée de vie de l'huile plus longue et moins de dépôts.", "Protection contre la rouille et la corrosion — protège les composants critiques.", "Excellente désémulsibilité — sépare rapidement l'eau."],
+        },
+        standards: "DEF STAN 91-101 (Issue 7), GEK 28143A, ROLLS-ROYCE OMat 32, PRATT & WHITNEY PMC 704, SIEMENS TLV 9033, SAE AS 5780 SP, MIL-PRF-23699 HTS, Boeing D6-17487 Rev. N, AIRBUS HELICOPTER OIL 2, ISO 6743-5 L-TSA / L-TGA",
+        packaging: ["20 L"],
+      },
+      "Turbine-M-46": {
+        description: {
+          en: "TURBINE M 46 is a turbine oil for steam turbines, gas turbines, hydro turbines and industrial systems.",
+          tr: "TURBINE M 46; buhar türbinleri, gaz türbinleri, hidro türbinler ve endüstriyel sistemler için bir türbin yağıdır.",
+          ru: "TURBINE M 46 — турбинное масло для паровых, газовых и гидравлических турбин, а также промышленных систем.",
+          fa: "TURBINE M 46 یک روغن توربین برای توربین‌های بخار، توربین‌های گازی، توربین‌های آبی و سیستم‌های صنعتی است.",
+          ar: "TURBINE M 46 زيت توربين مخصص للتوربينات البخارية والغازية والمائية والأنظمة الصناعية.",
+          de: "TURBINE M 46 ist ein Turbinenöl für Dampf-, Gas- und Wasserturbinen sowie industrielle Systeme.",
+          fr: "TURBINE M 46 est une huile pour turbines destinée aux turbines à vapeur, à gaz et hydrauliques, ainsi qu'aux systèmes industriels.",
+        },
+        features: {
+          en: ["Excellent thermal stability — resists oxidation and thermal breakdown.", "Outstanding rust protection — protects system components.", "Superior water separation — rapidly separates water.", "Optimal system efficiency — ensures smooth and reliable operation."],
+          tr: ["Mükemmel termal stabilite — oksidasyona ve termal bozulmaya direnç gösterir.", "Üstün pas koruması — sistem bileşenlerini korur.", "Üstün su ayırma — suyu hızla ayırır.", "Optimum sistem verimliliği — düzgün ve güvenilir çalışma sağlar."],
+          ru: ["Превосходная термическая стабильность — устойчивость к окислению и термическому разложению.", "Отличная защита от ржавчины — защищает компоненты системы.", "Превосходное отделение воды — быстро отделяет воду.", "Оптимальная эффективность системы — обеспечивает плавную и надёжную работу."],
+          fa: ["پایداری حرارتی عالی — در برابر اکسیداسیون و تخریب حرارتی مقاوم است.", "محافظت عالی در برابر زنگ‌زدگی — از اجزای سیستم محافظت می‌کند.", "جداسازی برتر آب — آب را به‌سرعت جدا می‌کند.", "کارایی بهینه سیستم — عملکرد روان و قابل‌اعتماد را تضمین می‌کند."],
+          ar: ["ثبات حراري ممتاز — يقاوم الأكسدة والتحلل الحراري.", "حماية متميزة من الصدأ — تحمي مكونات النظام.", "فصل فائق للماء — يفصل الماء بسرعة.", "كفاءة مثالية للنظام — تضمن تشغيلاً سلساً وموثوقاً."],
+          de: ["Ausgezeichnete thermische Stabilität — widersteht Oxidation und thermischem Abbau.", "Hervorragender Rostschutz — schützt Systemkomponenten.", "Überlegene Wasserabscheidung — trennt Wasser schnell.", "Optimale Systemeffizienz — gewährleistet einen reibungslosen und zuverlässigen Betrieb."],
+          fr: ["Excellente stabilité thermique — résiste à l'oxydation et à la dégradation thermique.", "Protection exceptionnelle contre la rouille — protège les composants du système.", "Séparation supérieure de l'eau — sépare rapidement l'eau.", "Efficacité optimale du système — assure un fonctionnement fluide et fiable."],
+        },
+        standards: "ISO 6743-5 L-TSA / L-TGA, DIN 51515-1 L-TD / L-TG, SIEMENS TLV 9013 04, ALSTOM HTGD 90 117, GEK 32568F, MAN Turbo T100 / T101, SOLAR ES 9-224 (Class II), IEC 60296 (Ed. 5), CINCINNATI MILACRON P-38, U.S. STEEL 224, DAVID BROWN S1.53.101 (E), AGMA 9005-E02 (EP)",
+        packaging: ["20 L"],
+      },
+      "Turbine-S": {
+        description: {
+          en: "TURBINE S is a turbine oil for steam turbines, gas turbines, industrial turbines and power generation.",
+          tr: "TURBINE S; buhar türbinleri, gaz türbinleri, endüstriyel türbinler ve enerji üretimi için bir türbin yağıdır.",
+          ru: "TURBINE S — турбинное масло для паровых, газовых и промышленных турбин, а также энергетики.",
+          fa: "TURBINE S یک روغن توربین برای توربین‌های بخار، توربین‌های گازی، توربین‌های صنعتی و تولید برق است.",
+          ar: "TURBINE S زيت توربين مخصص للتوربينات البخارية والغازية والصناعية وتوليد الطاقة.",
+          de: "TURBINE S ist ein Turbinenöl für Dampf-, Gas- und Industrieturbinen sowie die Energieerzeugung.",
+          fr: "TURBINE S est une huile pour turbines destinée aux turbines à vapeur, à gaz et industrielles, ainsi qu'à la production d'énergie.",
+        },
+        features: {
+          en: ["Excellent thermal stability — resists oxidation and thermal breakdown.", "Superior anti-wear protection — extends equipment life.", "Outstanding oxidation resistance — longer oil life and fewer deposits.", "Rust and corrosion protection — protects critical components.", "Excellent demulsibility — separates water quickly."],
+          tr: ["Mükemmel termal stabilite — oksidasyona ve termal bozulmaya direnç gösterir.", "Üstün aşınma koruması — ekipman ömrünü uzatır.", "Üstün oksidasyon direnci — daha uzun yağ ömrü ve daha az tortu sağlar.", "Pas ve korozyon koruması — kritik bileşenleri korur.", "Mükemmel demülsifikasyon — suyu hızlı ayırır."],
+          ru: ["Превосходная термическая стабильность — устойчивость к окислению и термическому разложению.", "Высокая противоизносная защита — продлевает срок службы оборудования.", "Высокая стойкость к окислению — более долгий срок службы масла и меньше отложений.", "Защита от ржавчины и коррозии — защищает критически важные компоненты.", "Отличная деэмульгируемость — быстро отделяет воду."],
+          fa: ["پایداری حرارتی عالی — در برابر اکسیداسیون و تخریب حرارتی مقاوم است.", "محافظت برتر در برابر سایش — عمر تجهیزات را افزایش می‌دهد.", "مقاومت عالی در برابر اکسیداسیون — عمر روغن طولانی‌تر و رسوبات کمتر.", "محافظت در برابر زنگ‌زدگی و خوردگی — از اجزای حیاتی محافظت می‌کند.", "دمولسیبیلیتی عالی — آب را به‌سرعت جدا می‌کند."],
+          ar: ["ثبات حراري ممتاز — يقاوم الأكسدة والتحلل الحراري.", "حماية فائقة من التآكل — تطيل عمر المعدات.", "مقاومة متميزة للأكسدة — عمر أطول للزيت ورواسب أقل.", "حماية من الصدأ والتآكل — تحمي المكونات الحرجة.", "قدرة ممتازة على فصل الماء — تفصل الماء بسرعة."],
+          de: ["Ausgezeichnete thermische Stabilität — widersteht Oxidation und thermischem Abbau.", "Überlegener Verschleißschutz — verlängert die Lebensdauer der Ausrüstung.", "Hervorragende Oxidationsbeständigkeit — längere Öllebensdauer und weniger Ablagerungen.", "Rost- und Korrosionsschutz — schützt kritische Komponenten.", "Ausgezeichnetes Wasserabscheidevermögen — trennt Wasser schnell."],
+          fr: ["Excellente stabilité thermique — résiste à l'oxydation et à la dégradation thermique.", "Protection anti-usure supérieure — prolonge la durée de vie des équipements.", "Excellente résistance à l'oxydation — durée de vie de l'huile plus longue et moins de dépôts.", "Protection contre la rouille et la corrosion — protège les composants critiques.", "Excellente désémulsibilité — sépare rapidement l'eau."],
+        },
+        standards: "ISO 6743-5 L-TSA / L-TGA, DIN 51515-1 L-TD / L-TG, SIEMENS TLV 9013 04, ALSTOM HTGD 90 117, GEK 32568F, MAN Turbo T100 / T101, SOLAR ES 9-224 (Class II), IEC 60296 (Ed. 5)",
+        packaging: ["20 L"],
+      },
+    },
   },
 };
 
@@ -1979,7 +2050,10 @@ export function HiTechProduct() {
   hitechCategorySlugs.forEach((slug, idx) => {
     if (data.categories[idx]) slugToTranslatedName[slug] = data.categories[idx].name;
   });
-  const translatedCatTitle = (category ? slugToTranslatedName[category] : undefined) ?? catData?.title;
+  const translatedCatTitle =
+    category === "Havacilik-Yaglari"
+      ? aviationCategoryNames[locale]
+      : (category ? slugToTranslatedName[category] : undefined) ?? catData?.title;
   const subcatTranslations: Record<string, string> = { "Hafif-Ticariler": t.hitech.lightCommercial };
   const translatedSubcatTitle = parentSubcategorySlug ? (subcatTranslations[parentSubcategorySlug] ?? parentSubcategoryTitle) : parentSubcategoryTitle;
   const detail = productSlug ? catData?.details[productSlug] : undefined;
