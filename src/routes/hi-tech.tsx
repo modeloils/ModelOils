@@ -1618,6 +1618,11 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
       },
     },
   },
+  "Havacilik-Yaglari": {
+    title: "Aviation Lubricants",
+    products: [],
+    details: {},
+  },
 };
 
 const hiTechBg = "/model-oils/images/HI-TECH-BG.png";
@@ -1630,6 +1635,7 @@ const hitechCategorySlugs = [
   "Endustriyel-Yaglar",
   "Antifrizler",
   "Gresler",
+  "Havacilik-Yaglari",
 ];
 
 const hitechCategoryBgs = [
@@ -1641,7 +1647,18 @@ const hitechCategoryBgs = [
   "https://images.unsplash.com/photo-1511454493857-0a29f2c023c7?w=600&q=80&auto=format&fit=crop", // black metal industrial factory — endüstriyel
   "https://images.unsplash.com/photo-1762172189607-91ee2d5f1e34?w=600&q=80&auto=format&fit=crop", // frost crystals dark — antifriz
   "https://images.unsplash.com/photo-1528774701372-1d4b668aed17?w=600&q=80&auto=format&fit=crop", // bearing ball at mechanic shop — gresler
+  "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80&auto=format&fit=crop", // aircraft wing — aviation
 ];
+
+const aviationCategoryNames: Record<Locale, string> = {
+  en: "Aviation Lubricants",
+  tr: "Havacılık Yağları",
+  ru: "Авиационные масла",
+  fa: "روانکارهای هوانوردی",
+  ar: "زيوت الطيران",
+  de: "Luftfahrt-Schmierstoffe",
+  fr: "Lubrifiants aéronautiques",
+};
 
 export function hiTechHead(locale: Locale) {
   return pageHead(locale, "hitech", [{ property: "og:image", content: flagshipImg }]);
@@ -1655,6 +1672,18 @@ export const Route = createFileRoute("/hi-tech")({
 export function HiTech() {
   const { t, data, locale } = useTranslation();
   const catalogHref = getHiTechCatalogHref(locale);
+  const categories = [
+    ...data.categories.slice(0, 8).map((category, index) => ({
+      name: category.name,
+      slug: hitechCategorySlugs[index],
+      background: hitechCategoryBgs[index],
+    })),
+    {
+      name: aviationCategoryNames[locale],
+      slug: "Havacilik-Yaglari",
+      background: hitechCategoryBgs[8],
+    },
+  ];
   return (
     <SiteLayout>
       <div
@@ -1667,15 +1696,15 @@ export function HiTech() {
               eyebrow={t.hitech.rangeEyebrow}
               title={t.hitech.rangeTitle}
             />
-            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {data.categories.slice(0, 8).map((category, index) => (
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-[repeat(20,minmax(0,1fr))]">
+              {categories.map((category, index) => (
                 <LocaleLink
-                  key={category.name}
-                  to={`/hi-tech/${hitechCategorySlugs[index]}`}
-                  className="group relative flex min-h-40 items-end overflow-hidden rounded-lg border border-border shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50"
+                  key={category.slug}
+                  to={`/hi-tech/${category.slug}`}
+                  className={`group relative flex min-h-40 items-end overflow-hidden rounded-lg border border-border shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50 ${index < 4 ? "lg:col-span-5" : "lg:col-span-4"}`}
                 >
                   <img
-                    src={hitechCategoryBgs[index]}
+                    src={category.background}
                     alt=""
                     aria-hidden="true"
                     loading="lazy"
@@ -1778,7 +1807,10 @@ export function HiTechSubcategory() {
   hitechCategorySlugs.forEach((slug, idx) => {
     if (data.categories[idx]) slugToTranslatedName[slug] = data.categories[idx].name;
   });
-  const translatedCatTitle = (category ? slugToTranslatedName[category] : undefined) ?? catData?.title;
+  const translatedCatTitle =
+    category === "Havacilik-Yaglari"
+      ? aviationCategoryNames[locale]
+      : (category ? slugToTranslatedName[category] : undefined) ?? catData?.title;
 
   // Subcategory slug → translated title (for non-grade subcategories)
   const subcatTranslations: Record<string, string> = {
@@ -1884,28 +1916,38 @@ export function HiTechSubcategory() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <BackToCategories />
             <SectionHeading eyebrow="HI-TECH" title={translatedCatTitle ?? ""} />
-            <div className={`mt-10 grid gap-6 sm:grid-cols-2 ${cols}`}>
-              {catData.products.map((p) => (
-                <LocaleLink
-                  key={p.slug}
-                  to={`/hi-tech/${category}/${p.slug}`}
-                  className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50"
-                >
-                  <div className="flex items-center justify-center p-8">
-                    <img
-                      src={p.image}
-                      alt={resolveName(p, locale)}
-                      className="h-56 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="border-t border-border p-5">
-                    <h3 className="font-display text-lg font-bold text-foreground transition-colors group-hover:text-primary">
-                      {resolveName(p, locale)}
-                    </h3>
-                  </div>
-                </LocaleLink>
-              ))}
-            </div>
+            {catData.products.length > 0 ? (
+              <div className={`mt-10 grid gap-6 sm:grid-cols-2 ${cols}`}>
+                {catData.products.map((p) => (
+                  <LocaleLink
+                    key={p.slug}
+                    to={`/hi-tech/${category}/${p.slug}`}
+                    className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50"
+                  >
+                    <div className="flex items-center justify-center p-8">
+                      <img
+                        src={p.image}
+                        alt={resolveName(p, locale)}
+                        className="h-56 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="border-t border-border p-5">
+                      <h3 className="font-display text-lg font-bold text-foreground transition-colors group-hover:text-primary">
+                        {resolveName(p, locale)}
+                      </h3>
+                    </div>
+                  </LocaleLink>
+                ))}
+              </div>
+            ) : (
+              <div className="mt-10">
+                <Button asChild variant="hero" size="lg">
+                  <LocaleLink to="/contact">
+                    {t.hitech.becomeDistributor} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
+                  </LocaleLink>
+                </Button>
+              </div>
+            )}
           </div>
         </div>
       </SiteLayout>
