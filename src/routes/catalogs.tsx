@@ -4,13 +4,47 @@ import { PageHero } from "@/components/PageHero";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { HI_TECH_CATALOGS } from "@/lib/site-data";
-import { useTranslation } from "@/lib/i18n";
+import { useTranslation, type Locale } from "@/lib/i18n";
 
-const catalogs = [
-  { title: "HI-TECH English Catalogue", href: HI_TECH_CATALOGS.en, language: "English" },
-  { title: "HI-TECH Turkish Catalogue", href: HI_TECH_CATALOGS.tr, language: "Türkçe" },
-  { title: "HI-TECH Russian Catalogue", href: HI_TECH_CATALOGS.ru, language: "Русский" },
-];
+type CatalogLanguage = keyof typeof HI_TECH_CATALOGS;
+
+const catalogCopy: Record<Locale, Record<CatalogLanguage, { language: string; title: string }>> = {
+  en: {
+    en: { language: "English", title: "HI-TECH English Catalogue" },
+    tr: { language: "Turkish", title: "HI-TECH Turkish Catalogue" },
+    ru: { language: "Russian", title: "HI-TECH Russian Catalogue" },
+  },
+  tr: {
+    en: { language: "İngilizce", title: "HI-TECH İngilizce Katalog" },
+    tr: { language: "Türkçe", title: "HI-TECH Türkçe Katalog" },
+    ru: { language: "Rusça", title: "HI-TECH Rusça Katalog" },
+  },
+  ru: {
+    en: { language: "Английский", title: "Английский каталог HI-TECH" },
+    tr: { language: "Турецкий", title: "Турецкий каталог HI-TECH" },
+    ru: { language: "Русский", title: "Русский каталог HI-TECH" },
+  },
+  fa: {
+    en: { language: "انگلیسی", title: "کاتالوگ انگلیسی HI-TECH" },
+    tr: { language: "ترکی", title: "کاتالوگ ترکی HI-TECH" },
+    ru: { language: "روسی", title: "کاتالوگ روسی HI-TECH" },
+  },
+  ar: {
+    en: { language: "الإنجليزية", title: "كتالوج HI-TECH باللغة الإنجليزية" },
+    tr: { language: "التركية", title: "كتالوج HI-TECH باللغة التركية" },
+    ru: { language: "الروسية", title: "كتالوج HI-TECH باللغة الروسية" },
+  },
+  de: {
+    en: { language: "Englisch", title: "Englischer HI-TECH-Katalog" },
+    tr: { language: "Türkisch", title: "Türkischer HI-TECH-Katalog" },
+    ru: { language: "Russisch", title: "Russischer HI-TECH-Katalog" },
+  },
+  fr: {
+    en: { language: "Anglais", title: "Catalogue HI-TECH en anglais" },
+    tr: { language: "Turc", title: "Catalogue HI-TECH en turc" },
+    ru: { language: "Russe", title: "Catalogue HI-TECH en russe" },
+  },
+};
 
 export const Route = createFileRoute("/catalogs")({
   head: () => ({ meta: [{ title: "HI-TECH Catalogues | Model Oils" }] }),
@@ -18,7 +52,10 @@ export const Route = createFileRoute("/catalogs")({
 });
 
 export function Catalogs() {
-  const { t } = useTranslation();
+  const { locale, t } = useTranslation();
+  const catalogs = (Object.entries(HI_TECH_CATALOGS) as [CatalogLanguage, string][]).map(
+    ([language, href]) => ({ ...catalogCopy[locale][language], href }),
+  );
 
   return (
     <SiteLayout>
@@ -32,8 +69,12 @@ export function Catalogs() {
             >
               <div>
                 <FileText className="h-9 w-9 text-primary" aria-hidden="true" />
-                <p className="mt-8 text-xs font-bold uppercase tracking-[0.18em] text-primary">{catalog.language}</p>
-                <h2 className="mt-3 font-display text-2xl font-bold text-foreground">{catalog.title}</h2>
+                <p className="mt-8 text-xs font-bold uppercase tracking-[0.18em] text-primary">
+                  {catalog.language}
+                </p>
+                <h2 className="mt-3 font-display text-2xl font-bold text-foreground">
+                  {catalog.title}
+                </h2>
               </div>
               <Button asChild variant="hero" className="mt-8 w-full">
                 <a href={catalog.href} target="_blank" rel="noreferrer">
