@@ -63,7 +63,7 @@ const en: SiteContent = {
       slug: "Motosiklet-Yaglari",
     },
     {
-      name: "Gear Oils",
+      name: "Transmission & Differential Oils",
       description: "Manual transmission and axle gear oils for automotive and industrial drivelines.",
       packaging: "1L, 4L, 20L, 205L",
       image: `${ASSET_BASE}/hi-tech/80w90-20lt.png`,
@@ -243,7 +243,7 @@ const tr: SiteContent = {
       slug: "Motosiklet-Yaglari",
     },
     {
-      name: "Dişli ve Transmisyon Yağları",
+      name: "Şanzıman ve Diferansiyel Yağları",
       description: "Otomotiv ve endüstriyel aktarma organları için manuel şanzıman ve diferansiyel yağları.",
       packaging: "1L, 4L, 20L, 205L",
       image: `${ASSET_BASE}/hi-tech/80w90-20lt.png`,
@@ -423,7 +423,7 @@ const ru: SiteContent = {
       slug: "Motosiklet-Yaglari",
     },
     {
-      name: "Трансмиссионные масла",
+      name: "Трансмиссионные и дифференциальные масла",
       description: "Масла для механических коробок передач и мостов для автомобильных и промышленных трансмиссий.",
       packaging: "1L, 4L, 20L, 205L",
       image: `${ASSET_BASE}/hi-tech/80w90-20lt.png`,
@@ -603,7 +603,7 @@ const fa: SiteContent = {
       slug: "Motosiklet-Yaglari",
     },
     {
-      name: "روغن گیربکس",
+      name: "روغن‌های گیربکس و دیفرانسیل",
       description: "روغن‌های گیربکس دستی و اکسل برای سیستم‌های انتقال قدرت خودرویی و صنعتی.",
       packaging: "1L, 4L, 20L, 205L",
       image: `${ASSET_BASE}/hi-tech/80w90-20lt.png`,
@@ -783,7 +783,7 @@ const ar: SiteContent = {
       slug: "Motosiklet-Yaglari",
     },
     {
-      name: "زيوت ناقل الحركة",
+      name: "زيوت ناقل الحركة والتفاضل",
       description: "زيوت ناقل الحركة اليدوي والمحور للمحركات الصناعية والسيارات.",
       packaging: "1L, 4L, 20L, 205L",
       image: `${ASSET_BASE}/hi-tech/80w90-20lt.png`,
@@ -963,7 +963,7 @@ const de: SiteContent = {
       slug: "Motosiklet-Yaglari",
     },
     {
-      name: "Getriebeöle",
+      name: "Getriebe- und Differentialöle",
       description: "Schaltgetriebe- und Achsgetriebeöle für Automobil- und Industrieantriebe.",
       packaging: "1L, 4L, 20L, 205L",
       image: `${ASSET_BASE}/hi-tech/80w90-20lt.png`,
@@ -1143,7 +1143,7 @@ const fr: SiteContent = {
       slug: "Motosiklet-Yaglari",
     },
     {
-      name: "Huiles de transmission",
+      name: "Huiles de transmission et de différentiel",
       description: "Huiles pour boîtes manuelles et ponts pour transmissions automobiles et industrielles.",
       packaging: "1L, 4L, 20L, 205L",
       image: `${ASSET_BASE}/hi-tech/80w90-20lt.png`,

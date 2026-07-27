@@ -1792,7 +1792,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
     },
   },
   "Disli-ve-Transmisyon-Yaglari": {
-    title: "Dişli ve Transmisyon Yağları",
+    title: "Şanzıman ve Diferansiyel Yağları",
     products: [
       { slug: "Gear-75W80",  name: "75W-80 Sentetik Dişli Yağı",  displayName: { en: "75W-80 Synthetic Gear Oil", tr: "75W-80 Sentetik Dişli Yağı", ru: "75W-80 Синтетическое трансмиссионное масло", fa: "روغن دنده سنتتیک 75W-80", ar: "زيت تروس اصطناعي 75W-80", de: "75W-80 Synthetisches Getriebeöl", fr: "Huile de transmission synthétique 75W-80" }, image: "/model-oils/images/hi-tech/disliler/7580.png" },
       { slug: "Gear-75W90",  name: "75W-90 Sentetik Dişli Yağı",  displayName: { en: "75W-90 Synthetic Gear Oil", tr: "75W-90 Sentetik Dişli Yağı", ru: "75W-90 Синтетическое трансмиссионное масло", fa: "روغن دنده سنتتیک 75W-90", ar: "زيت تروس اصطناعي 75W-90", de: "75W-90 Synthetisches Getriebeöl", fr: "Huile de transmission synthétique 75W-90" }, image: "/model-oils/images/hi-tech/disliler/7590.png" },
