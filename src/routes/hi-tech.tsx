@@ -2096,6 +2096,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
       { slug: "Jetmax-II", name: "JETMAX II", image: "/model-oils/images/hi-tech/havacilik/jetmax-ii.jpg" },
       { slug: "Turbine-M-46", name: "TURBINE M 46", image: "/model-oils/images/hi-tech/havacilik/turbine-m-46.jpg" },
       { slug: "Turbine-S", name: "TURBINE S", image: "/model-oils/images/hi-tech/havacilik/turbine-s.jpg" },
+      { slug: "Turbo-T-68", name: "TURBO T-68", displayName: { en: "Turbo T-68 Turbine Oil", tr: "Turbo T-68 Türbin Yağı", ru: "Турбинное масло Turbo T-68", fa: "روغن توربین Turbo T-68", ar: "زيت توربين Turbo T-68", de: "Turbo T-68 Turbinenöl", fr: "Huile pour turbines Turbo T-68" }, image: "/model-oils/images/hi-tech/havacilik/turbo-t-68.jpeg" },
     ],
     details: {
       "Jetmax-II": {
@@ -2163,6 +2164,28 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
         },
         standards: "ISO 6743-5 L-TSA / L-TGA, DIN 51515-1 L-TD / L-TG, SIEMENS TLV 9013 04, ALSTOM HTGD 90 117, GEK 32568F, MAN Turbo T100 / T101, SOLAR ES 9-224 (Class II), IEC 60296 (Ed. 5)",
         packaging: ["20 L"],
+      },
+      "Turbo-T-68": {
+        description: {
+          en: "HI-TECH TURBO T-68 is a premium-quality turbine oil for gas and steam turbines, industrial turbines and power-generation systems. Its excellent de-aeration supports reliable turbine operation.",
+          tr: "HI-TECH TURBO T-68; gaz ve buhar türbinleri, endüstriyel türbinler ve enerji üretim sistemleri için premium kaliteli türbin yağıdır. Mükemmel hava ayırma özelliği güvenilir türbin çalışmasını destekler.",
+          ru: "HI-TECH TURBO T-68 — высококачественное турбинное масло для газовых, паровых и промышленных турбин, а также систем выработки электроэнергии. Отличное воздухоотделение обеспечивает надёжную работу.",
+          fa: "HI-TECH TURBO T-68 روغن توربین ممتاز برای توربین‌های گازی، بخار و صنعتی و سامانه‌های تولید برق است. قابلیت عالی جداسازی هوا، عملکرد مطمئن توربین را پشتیبانی می‌کند.",
+          ar: "HI-TECH TURBO T-68 زيت توربين عالي الجودة للتوربينات الغازية والبخارية والصناعية وأنظمة توليد الطاقة. تساعد قدرته الممتازة على فصل الهواء في التشغيل الموثوق.",
+          de: "HI-TECH TURBO T-68 ist ein hochwertiges Turbinenöl für Gas-, Dampf- und Industrieturbinen sowie Stromerzeugungssysteme. Das ausgezeichnete Luftabscheidevermögen unterstützt einen zuverlässigen Betrieb.",
+          fr: "HI-TECH TURBO T-68 est une huile de haute qualité pour turbines à gaz, à vapeur et industrielles ainsi que pour les systèmes de production d'énergie. Son excellente désaération favorise un fonctionnement fiable.",
+        },
+        features: {
+          en: ["Excellent thermal stability resists oxidation and thermal breakdown.", "Superior anti-wear protection extends equipment life.", "Outstanding oxidation resistance provides longer oil life and fewer deposits.", "Rust and corrosion protection safeguards critical components.", "Excellent water separation and demulsibility support dependable operation."],
+          tr: ["Mükemmel termal stabilite oksidasyona ve termal bozulmaya direnir.", "Üstün aşınma koruması ekipman ömrünü uzatır.", "Üstün oksidasyon direnci daha uzun yağ ömrü ve daha az tortu sağlar.", "Pas ve korozyon koruması kritik bileşenleri korur.", "Mükemmel su ayırma ve demülsifikasyon güvenilir çalışmayı destekler."],
+          ru: ["Отличная термостабильность противостоит окислению и термическому разрушению.", "Высокая противоизносная защита продлевает срок службы оборудования.", "Стойкость к окислению увеличивает ресурс масла и уменьшает отложения.", "Защита от ржавчины и коррозии сохраняет критически важные детали.", "Отличное отделение воды обеспечивает надёжную работу."],
+          fa: ["پایداری حرارتی عالی در برابر اکسیداسیون و تخریب حرارتی مقاومت می‌کند.", "حفاظت برتر ضد سایش عمر تجهیزات را افزایش می‌دهد.", "مقاومت عالی اکسیداسیون، عمر روغن را بیشتر و رسوبات را کمتر می‌کند.", "حفاظت در برابر زنگ‌زدگی و خوردگی از اجزای حیاتی محافظت می‌کند.", "جداسازی عالی آب و دمولسیبیلیتی عملکرد مطمئن را پشتیبانی می‌کند."],
+          ar: ["ثبات حراري ممتاز يقاوم الأكسدة والتحلل الحراري.", "حماية فائقة من التآكل تطيل عمر المعدات.", "مقاومة متميزة للأكسدة توفر عمراً أطول للزيت ورواسب أقل.", "الحماية من الصدأ والتآكل تحمي المكونات الحرجة.", "الفصل الممتاز للماء يدعم التشغيل الموثوق."],
+          de: ["Ausgezeichnete thermische Stabilität widersteht Oxidation und thermischem Abbau.", "Überlegener Verschleißschutz verlängert die Lebensdauer der Ausrüstung.", "Oxidationsbeständigkeit sorgt für längere Öllebensdauer und weniger Ablagerungen.", "Rost- und Korrosionsschutz schützt kritische Komponenten.", "Ausgezeichnete Wasserabscheidung unterstützt zuverlässigen Betrieb."],
+          fr: ["Excellente stabilité thermique contre l'oxydation et la dégradation.", "Protection anti-usure supérieure prolongeant la vie des équipements.", "Résistance à l'oxydation pour une huile plus durable et moins de dépôts.", "Protection contre la rouille et la corrosion des composants critiques.", "Excellente séparation de l'eau pour un fonctionnement fiable."],
+        },
+        standards: "GEK 101941A (Type A), GEK 32568F (Type A), Siemens TLV 9013 04, Alstom HTGD 90 117, DIN 51515-1 (L-TDA / L-TGA), ISO 8068 (L-TDA / L-TGA), ASTM D4304 (Type I), BS 489:1999, JIS K 2213 (Class 1)",
+        packaging: ["20 L", "200 L"],
       },
     },
   },
