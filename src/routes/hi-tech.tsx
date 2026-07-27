@@ -1,6 +1,7 @@
 ﻿import { createFileRoute, Outlet } from "@tanstack/react-router";
 import { useParams } from "@tanstack/react-router";
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { ArrowRight, CheckCircle2, ChevronLeft, Flame, X, ZoomIn } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { PageHero } from "@/components/PageHero";
@@ -2359,27 +2360,32 @@ export function HiTechProduct() {
   return (
     <SiteLayout>
       {/* Lightbox */}
-      {lightboxOpen && (
-        <div
-          className="fixed inset-0 z-50 flex cursor-pointer items-center justify-center bg-black/85 p-4"
-          onClick={() => setLightboxOpen(false)}
-        >
-          <div className="relative" onClick={(e) => e.stopPropagation()}>
-            <img
-              src={product.image}
-              alt={resolveName(product, locale)}
-              className="max-h-[80vh] max-w-[88vw] object-contain drop-shadow-2xl"
-            />
-            <button
-              onClick={() => setLightboxOpen(false)}
-              className="absolute -right-2 -top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-100 sm:-right-4 sm:-top-4"
-              aria-label="Close"
+      {lightboxOpen &&
+        createPortal(
+          <div
+            className="fixed inset-0 z-[100] grid h-[100dvh] w-screen cursor-pointer place-items-center overflow-hidden bg-black/90 p-4"
+            onClick={() => setLightboxOpen(false)}
+          >
+            <div
+              className="relative flex max-h-full max-w-full items-center justify-center"
+              onClick={(e) => e.stopPropagation()}
             >
-              <X className="h-5 w-5 text-gray-800" />
-            </button>
-          </div>
-        </div>
-      )}
+              <img
+                src={product.image}
+                alt={resolveName(product, locale)}
+                className="block h-auto max-h-[calc(100dvh-2rem)] w-auto max-w-[calc(100vw-2rem)] object-contain drop-shadow-2xl"
+              />
+              <button
+                onClick={() => setLightboxOpen(false)}
+                className="fixed right-4 top-4 z-[101] flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-100"
+                aria-label="Close"
+              >
+                <X className="h-5 w-5 text-gray-800" />
+              </button>
+            </div>
+          </div>,
+          document.body,
+        )}
 
       <div className="bg-background">
         {/* Breadcrumb */}
