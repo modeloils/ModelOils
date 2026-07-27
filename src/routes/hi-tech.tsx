@@ -2450,7 +2450,7 @@ const hitechCategoryBgs = [
   marineYachtCategoryImg, // centered luxury yacht — marine
   "https://images.unsplash.com/photo-1511454493857-0a29f2c023c7?w=600&q=80&auto=format&fit=crop", // black metal industrial factory — endüstriyel
   "https://images.unsplash.com/photo-1762172189607-91ee2d5f1e34?w=600&q=80&auto=format&fit=crop", // frost crystals dark — antifriz
-  "https://images.unsplash.com/photo-1528774701372-1d4b668aed17?w=600&q=80&auto=format&fit=crop", // bearing ball at mechanic shop — gresler
+  "/model-oils/images/hi-tech/gresler/Calsol.jpeg", // centered HI-TECH grease product — gresler
   "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80&auto=format&fit=crop", // aircraft wing — aviation
 ];
 
