@@ -350,18 +350,18 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
         image: "/model-oils/images/hi-tech/gresler/Lithmax-Complex.jpeg",
       },
       {
-        slug: "Calcium-Grease",
-        name: "Kalsiyum Gres",
+        slug: "Calsol-S",
+        name: "Calsol S",
         displayName: {
-          en: "Calcium Grease",
-          tr: "Kalsiyum Gres",
-          ru: "Кальциевая смазка",
-          fa: "گریس کلسیم",
-          ar: "شحم الكالسيوم",
-          de: "Kalziumfett",
-          fr: "Graisse au calcium",
+          en: "Calsol S",
+          tr: "Calsol S",
+          ru: "Calsol S",
+          fa: "Calsol S",
+          ar: "Calsol S",
+          de: "Calsol S",
+          fr: "Calsol S",
         },
-        image: "/model-oils/images/hi-tech/gresler/Calcium-Grease.jpeg",
+        image: "/model-oils/images/hi-tech/gresler/Calsol-S.jpeg",
       },
     ],
     details: {
@@ -739,15 +739,15 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
         },
         packaging: ["14 KG", "180 KG"],
       },
-      "Calcium-Grease": {
+      "Calsol-S": {
         description: {
-          tr: "HI-TECH KALSİYUM GRES, genel yağlama için geliştirilmiş kalsiyum sabunlu NLGI 2 çok amaçlı grestir. İyi mekanik kararlılık, su direnci, yapışma ve pompalanabilirlik özellikleriyle otomotiv, endüstriyel makineler, inşaat ve tarım ekipmanlarında güvenilir koruma sağlar.",
-          en: "HI-TECH CALCIUM GREASE, an NLGI 2 multipurpose calcium-soap grease developed for general lubrication. Its good mechanical stability, water resistance, adhesion and pumpability provide reliable protection in automotive, industrial machinery, construction and agricultural equipment.",
-          ru: "HI-TECH CALCIUM GREASE, многоцелевая кальциевая смазка класса NLGI 2 для общего смазывания. Хорошая механическая стабильность, водостойкость, сцепление и прокачиваемость обеспечивают надёжную защиту автомобильной, промышленной, строительной и сельскохозяйственной техники.",
-          fa: "HI-TECH CALCIUM GREASE، گریس چند منظوره با صابون کلسیم و گرید NLGI 2 است که برای روانکاری عمومی توسعه یافته است. پایداری مکانیکی خوب، مقاومت در برابر آب، چسبندگی و پمپ‌پذیری، حفاظت قابل اعتماد در خودرو، ماشین‌آلات صنعتی و تجهیزات ساختمانی و کشاورزی فراهم می‌کند.",
-          ar: "HI-TECH CALCIUM GREASE، شحم متعدد الأغراض بصابون الكالسيوم بدرجة NLGI 2، مطوّر للتشحيم العام. يوفر ثباتاً ميكانيكياً جيداً ومقاومة للماء والتصاقاً وقابلية ضخ جيدة لحماية موثوقة في السيارات والآلات الصناعية ومعدات البناء والزراعة.",
-          de: "HI-TECH CALCIUM GREASE, ein Mehrzweckfett der Klasse NLGI 2 auf Kalziumseifenbasis für allgemeine Schmierung. Gute mechanische Stabilität, Wasserbeständigkeit, Haftung und Pumpbarkeit bieten zuverlässigen Schutz in Automobilen, Industriemaschinen, Bau- und Landwirtschaftsgeräten.",
-          fr: "HI-TECH CALCIUM GREASE, une graisse polyvalente au savon de calcium de grade NLGI 2, développée pour la lubrification générale. Sa bonne stabilité mécanique, sa résistance à l'eau, son adhérence et sa pompabilité assurent une protection fiable dans l'automobile, les machines industrielles et les équipements de construction et agricoles.",
+          tr: "HI-TECH CALSOL S, genel yağlama için geliştirilmiş kalsiyum sabunlu NLGI 2 çok amaçlı grestir. İyi mekanik kararlılık, su direnci, güçlü yapışma, sızdırmazlık ve pompalanabilirlik özellikleriyle otomotiv, endüstriyel makineler, inşaat ve tarım ekipmanlarında güvenilir koruma sağlar.",
+          en: "HI-TECH CALSOL S, an NLGI 2 multipurpose calcium-soap grease developed for general lubrication. Its good mechanical stability, water resistance, strong adhesion, sealing ability and pumpability provide reliable protection in automotive, industrial machinery, construction and agricultural equipment.",
+          ru: "HI-TECH CALSOL S, многоцелевая смазка класса NLGI 2 на основе кальциевого мыла для общего смазывания. Хорошая механическая стабильность, водостойкость, прочное сцепление, уплотняющая способность и прокачиваемость обеспечивают надёжную защиту автомобильной, промышленной, строительной и сельскохозяйственной техники.",
+          fa: "HI-TECH CALSOL S، گریس چند منظوره با صابون کلسیم و گرید NLGI 2 است که برای روانکاری عمومی توسعه یافته است. پایداری مکانیکی خوب، مقاومت در برابر آب، چسبندگی قوی، قابلیت آب‌بندی و پمپ‌پذیری، حفاظت قابل اعتماد در خودرو، ماشین‌آلات صنعتی و تجهیزات ساختمانی و کشاورزی فراهم می‌کند.",
+          ar: "HI-TECH CALSOL S، شحم متعدد الأغراض بصابون الكالسيوم بدرجة NLGI 2، مطوّر للتشحيم العام. يوفر ثباتاً ميكانيكياً جيداً ومقاومة للماء والتصاقاً قوياً وقدرة على الإحكام وقابلية ضخ جيدة لحماية موثوقة في السيارات والآلات الصناعية ومعدات البناء والزراعة.",
+          de: "HI-TECH CALSOL S, ein Mehrzweckfett der Klasse NLGI 2 auf Kalziumseifenbasis für allgemeine Schmierung. Gute mechanische Stabilität, Wasserbeständigkeit, starke Haftung, Dichtwirkung und Pumpbarkeit bieten zuverlässigen Schutz in Automobilen, Industriemaschinen, Bau- und Landwirtschaftsgeräten.",
+          fr: "HI-TECH CALSOL S, une graisse polyvalente au savon de calcium de grade NLGI 2, développée pour la lubrification générale. Sa bonne stabilité mécanique, sa résistance à l'eau, sa forte adhérence, son pouvoir d'étanchéité et sa pompabilité assurent une protection fiable dans l'automobile, les machines industrielles et les équipements de construction et agricoles.",
         },
         features: {
           tr: [
