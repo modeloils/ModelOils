@@ -2389,9 +2389,46 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
   },
 };
 
+const lightCommercialProducts: ProductItem[] = [
+  {
+    slug: "Hafif-5W30-7L",
+    name: "5W-30 7L",
+    image: "/model-oils/images/hi-tech/binek/Hafif-Ticariler/5W30-7L.png",
+  },
+  {
+    slug: "Hafif-5W30-10-5L",
+    name: "5W-30 10.5L",
+    image: "/model-oils/images/hi-tech/binek/Hafif-Ticariler/5W30-10.5L.png",
+  },
+  {
+    slug: "Hafif-10W30-7L",
+    name: "10W-30 7L",
+    image: "/model-oils/images/hi-tech/binek/Hafif-Ticariler/10W30-7L.png",
+  },
+];
+
+const passengerCarCategory = CATEGORY_DATA["Binek-Arac-Motor-Yaglari"];
+const lightCommercialDetails = Object.fromEntries(
+  lightCommercialProducts.map((product) => [
+    product.slug,
+    passengerCarCategory.details[product.slug],
+  ]),
+) as Record<string, ProductDetail>;
+
+CATEGORY_DATA["Hafif-Ticari-Araclar"] = {
+  title: "Hafif Ticari Araçlar",
+  products: lightCommercialProducts,
+  details: lightCommercialDetails,
+};
+
+if (passengerCarCategory.subcategories) {
+  delete passengerCarCategory.subcategories["Hafif-Ticariler"];
+}
+
 const hiTechBg = "/model-oils/images/HI-TECH-BG.png";
 const hitechCategorySlugs = [
   "Binek-Arac-Motor-Yaglari",
+  "Hafif-Ticari-Araclar",
   "Agir-Hizmet-Motor-Yaglari",
   "Motosiklet-Yaglari",
   "Disli-ve-Transmisyon-Yaglari",
@@ -2404,6 +2441,7 @@ const hitechCategorySlugs = [
 
 const hitechCategoryBgs = [
   "https://images.unsplash.com/photo-1563826773-1e2b4b2cde42?w=600&q=80&auto=format&fit=crop", // black BMW in dark — binek araç
+  "/model-oils/images/categories/light-commercial-vehicles.jpg", // generated light commercial van
   "https://images.unsplash.com/photo-1754437954174-9662c997b661?w=600&q=80&auto=format&fit=crop", // modern semi-truck on dark backdrop — ağır hizmet
   "https://images.unsplash.com/photo-1692317785388-a7d076077d9d?w=600&q=80&auto=format&fit=crop", // motorcycle lit in dark — motosiklet
   "https://images.unsplash.com/photo-1524514587686-e2909d726e9b?w=600&q=80&auto=format&fit=crop", // black metal gears close-up — dişli & transmisyon
@@ -2435,18 +2473,19 @@ export const Route = createFileRoute("/hi-tech")({
 
 export function HiTech() {
   const { t, data, locale } = useTranslation();
-  const categories = [
-    ...data.categories.slice(0, 8).map((category, index) => ({
-      name: category.name,
-      slug: hitechCategorySlugs[index],
-      background: hitechCategoryBgs[index],
-    })),
-    {
-      name: aviationCategoryNames[locale],
-      slug: "Havacilik-Yaglari",
-      background: hitechCategoryBgs[8],
-    },
-  ];
+  const translatedNames = Object.fromEntries(
+    data.categories.map((category) => [category.slug, category.name]),
+  );
+  const categories = hitechCategorySlugs.map((slug, index) => ({
+    name:
+      slug === "Hafif-Ticari-Araclar"
+        ? t.hitech.lightCommercial
+        : slug === "Havacilik-Yaglari"
+          ? aviationCategoryNames[locale]
+          : translatedNames[slug] ?? CATEGORY_DATA[slug]?.title ?? slug,
+    slug,
+    background: hitechCategoryBgs[index],
+  }));
   return (
     <SiteLayout>
       <div
@@ -2460,11 +2499,11 @@ export function HiTech() {
               title={t.hitech.rangeTitle}
             />
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-[repeat(20,minmax(0,1fr))]">
-              {categories.map((category, index) => (
+              {categories.map((category) => (
                 <LocaleLink
                   key={category.slug}
                   to={`/hi-tech/${category.slug}`}
-                  className={`group relative flex min-h-40 items-end overflow-hidden rounded-lg border border-border shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50 ${index < 4 ? "lg:col-span-5" : "lg:col-span-4"}`}
+                  className="group relative flex min-h-40 items-end overflow-hidden rounded-lg border border-border shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50 lg:col-span-4"
                 >
                   <img
                     src={category.background}
@@ -2560,14 +2599,14 @@ export function HiTechSubcategory() {
   const { t, data, locale } = useTranslation();
   const catData = category ? CATEGORY_DATA[category] : undefined;
 
-  // Build slug → translated category name using hitechCategorySlugs + data.categories
-  const slugToTranslatedName: Record<string, string> = {};
-  hitechCategorySlugs.forEach((slug, idx) => {
-    if (data.categories[idx]) slugToTranslatedName[slug] = data.categories[idx].name;
-  });
+  const slugToTranslatedName = Object.fromEntries(
+    data.categories.map((item) => [item.slug, item.name]),
+  );
   const translatedCatTitle =
     category === "Havacilik-Yaglari"
       ? aviationCategoryNames[locale]
+      : category === "Hafif-Ticari-Araclar"
+        ? t.hitech.lightCommercial
       : (category ? slugToTranslatedName[category] : undefined) ?? catData?.title;
 
   // Subcategory slug → translated title (for non-grade subcategories)
@@ -2738,13 +2777,14 @@ export function HiTechProduct() {
     }
   }
 
-  const slugToTranslatedName: Record<string, string> = {};
-  hitechCategorySlugs.forEach((slug, idx) => {
-    if (data.categories[idx]) slugToTranslatedName[slug] = data.categories[idx].name;
-  });
+  const slugToTranslatedName = Object.fromEntries(
+    data.categories.map((item) => [item.slug, item.name]),
+  );
   const translatedCatTitle =
     category === "Havacilik-Yaglari"
       ? aviationCategoryNames[locale]
+      : category === "Hafif-Ticari-Araclar"
+        ? t.hitech.lightCommercial
       : (category ? slugToTranslatedName[category] : undefined) ?? catData?.title;
   const subcatTranslations: Record<string, string> = { "Hafif-Ticariler": t.hitech.lightCommercial };
   const translatedSubcatTitle = parentSubcategorySlug ? (subcatTranslations[parentSubcategorySlug] ?? parentSubcategoryTitle) : parentSubcategoryTitle;
