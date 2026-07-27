@@ -413,7 +413,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           ],
         },
         standards: "DIN 51502, NLGI 2, ISO 6743-9",
-        packaging: ["3.6 KG", "14 KG", "180 KG"],
+        packaging: ["14 KG", "180 KG"],
       },
       "Gres-Kirmizi": {
         description: {
@@ -463,7 +463,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           ],
         },
         standards: "DIN 51502, NLGI 2, ISO 6743-9",
-        packaging: ["3.6 KG", "14 KG", "180 KG"],
+        packaging: ["14 KG", "180 KG"],
       },
       "Lithium-Gres": {
         description: {
@@ -513,7 +513,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           ],
         },
         standards: "DIN 51502, NLGI 2, ISO 6743-9",
-        packaging: ["3.6 KG", "14 KG", "180 KG"],
+        packaging: ["14 KG", "180 KG"],
       },
       "Gres-Yesil": {
         description: {
@@ -563,7 +563,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           ],
         },
         standards: "DIN 51502, NLGI 2, ISO 6743-9, MIL-PRF-2105",
-        packaging: ["3.6 KG", "14 KG", "180 KG"],
+        packaging: ["14 KG", "180 KG"],
       },
       "Ball-Valve-Grease": {
         description: {
@@ -621,7 +621,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           de: "NLGI 2 • Kalziumkomplexseife • -30°C bis +150°C",
           fr: "NLGI 2 • Savon complexe de calcium • -30°C à +150°C",
         },
-        packaging: ["14 KG"],
+        packaging: ["14 KG", "180 KG"],
       },
       "Lithmax-EP-3": {
         description: {
@@ -679,7 +679,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           de: "NLGI 3 • Lithiumseife • -20°C bis +130°C",
           fr: "NLGI 3 • Savon de lithium • -20°C à +130°C",
         },
-        packaging: ["14 KG"],
+        packaging: ["14 KG", "180 KG"],
       },
       "Lithmax-Complex": {
         description: {
@@ -737,7 +737,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           de: "NLGI 2 • Lithiumkomplexseife • -30°C bis +160°C",
           fr: "NLGI 2 • Savon complexe de lithium • -30°C à +160°C",
         },
-        packaging: ["14 KG"],
+        packaging: ["14 KG", "180 KG"],
       },
       "Calcium-Grease": {
         description: {
@@ -795,7 +795,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           de: "NLGI 2 • Kalziumseife • -20°C bis +80°C",
           fr: "NLGI 2 • Savon de calcium • -20°C à +80°C",
         },
-        packaging: ["14 KG"],
+        packaging: ["14 KG", "180 KG"],
       },
     },
   },
@@ -2058,14 +2058,15 @@ export function HiTech() {
                 <LocaleLink
                   key={category.slug}
                   to={`/hi-tech/${category.slug}`}
-                  className={`group relative flex min-h-40 items-end overflow-hidden rounded-lg border border-border shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50 ${index < 4 ? "lg:col-span-5" : "lg:col-span-4"}`}
+                  className={`group relative flex min-h-40 items-end overflow-hidden rounded-lg border border-border shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50 ${index < 4 ? "lg:col-span-5" : "lg:col-span-4"}`}
                 >
                   <img
                     src={category.background}
                     alt=""
                     aria-hidden="true"
                     loading="lazy"
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    decoding="async"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-200 ease-out group-hover:scale-[1.03]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
                   <h3 className="relative p-5 font-display text-base font-bold leading-snug text-white drop-shadow-sm">
@@ -2190,13 +2191,15 @@ export function HiTechSubcategory() {
                   <LocaleLink
                     key={p.slug}
                     to={`/hi-tech/${category}/${p.slug}`}
-                    className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50"
+                    className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                   >
                     <div className="flex items-center justify-center p-8">
                       <img
                         src={p.image}
                         alt={resolveName(p, locale)}
-                        className="h-56 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                        decoding="async"
+                        className="h-56 w-auto object-contain transition-transform duration-150 ease-out group-hover:scale-[1.03]"
                       />
                     </div>
                     <div className="border-t border-border p-5">
@@ -2233,7 +2236,7 @@ export function HiTechSubcategory() {
                 <LocaleLink
                   key={slug}
                   to={`/hi-tech/${category}/${slug}`}
-                  className="group relative flex min-h-44 items-end overflow-hidden rounded-lg border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50"
+                  className="group relative flex min-h-44 items-end overflow-hidden rounded-lg border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                 >
                   {sub.products[0] && (
                     <img
@@ -2241,7 +2244,8 @@ export function HiTechSubcategory() {
                       alt=""
                       aria-hidden="true"
                       loading="lazy"
-                      className="absolute bottom-2 right-4 h-36 w-auto object-contain drop-shadow-lg transition-transform duration-300 group-hover:scale-105"
+                      decoding="async"
+                      className="absolute bottom-2 right-4 h-36 w-auto object-contain drop-shadow-lg transition-transform duration-150 ease-out group-hover:scale-[1.03]"
                     />
                   )}
                   <div className="relative z-10 max-w-[55%] p-5">
@@ -2273,13 +2277,15 @@ export function HiTechSubcategory() {
                   <LocaleLink
                     key={p.slug}
                     to={`/hi-tech/${category}/${p.slug}`}
-                    className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50"
+                    className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                   >
                     <div className="flex items-center justify-center p-8">
                       <img
                         src={p.image}
                         alt={resolveName(p, locale)}
-                        className="h-56 w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                        decoding="async"
+                        className="h-56 w-full object-contain transition-transform duration-150 ease-out group-hover:scale-[1.03]"
                       />
                     </div>
                     <div className="border-t border-border p-5">

@@ -146,12 +146,12 @@
 }
 
 @keyframes page-enter {
-  from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .page-transition {
-  animation: page-enter 0.22s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: page-enter 0.12s ease-out both;
 }
 
 @media (prefers-reduced-motion: reduce) {
