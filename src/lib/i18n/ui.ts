@@ -323,7 +323,7 @@ const en: UIStrings = {
     rangeTitle: "Featured HI-TECH Products",
     rangeDescription:
       "Specifications shown are editable placeholders. We do not claim API, ACEA, OEM or ISO approvals unless documentation is provided.",
-    lightCommercial: "Light Commercial Vehicles",
+    lightCommercial: "Light Commercial Vehicle Motor Oils",
     productDescription: "Product Description and Application Areas",
     productFeatures: "Features and Benefits",
     productStandards: "Approvals and Specifications",
@@ -565,7 +565,7 @@ const tr: UIStrings = {
     rangeEyebrow: "HI-TECH Serisi",
     rangeTitle: "Kategorilerimiz",
     rangeDescription: "Gösterilen spesifikasyonlar düzenlenebilir örneklerdir. Belgelenmediği sürece API, ACEA, OEM veya ISO onayı talep edilmemektedir.",
-    lightCommercial: "Hafif Ticari Araçlar",
+    lightCommercial: "Hafif Ticari Araç Motor Yağları",
     productDescription: "Ürün Tanımı ve Kullanım Alanları",
     productFeatures: "Özellikleri ve Faydaları",
     productStandards: "Karşıladığı Onay ve Şartnameler",
@@ -807,7 +807,7 @@ const ru: UIStrings = {
     rangeTitle: "Избранные продукты HI-TECH",
     rangeDescription:
       "Показанные характеристики являются редактируемыми примерами. Мы не заявляем об одобрениях API, ACEA, OEM или ISO, если документация не предоставлена.",
-    lightCommercial: "Лёгкие коммерческие автомобили",
+    lightCommercial: "Моторные масла для лёгких коммерческих автомобилей",
     productDescription: "Описание продукта и области применения",
     productFeatures: "Характеристики и преимущества",
     productStandards: "Допуски и спецификации",
@@ -1050,7 +1050,7 @@ const fa: UIStrings = {
     rangeTitle: "محصولات برجسته HI-TECH",
     rangeDescription:
       "مشخصات نشان‌داده‌شده نمونه‌های قابل ویرایش هستند. ما تأییدیه‌های API، ACEA، OEM یا ISO را ادعا نمی‌کنیم مگر اینکه مستندات ارائه شده باشد.",
-    lightCommercial: "خودروهای تجاری سبک",
+    lightCommercial: "روغن موتور خودروهای تجاری سبک",
     productDescription: "توضیحات محصول و حوزه‌های کاربرد",
     productFeatures: "ویژگی‌ها و مزایا",
     productStandards: "تأییدیه‌ها و مشخصات",
@@ -1293,7 +1293,7 @@ const ar: UIStrings = {
     rangeTitle: "منتجات HI-TECH المميزة",
     rangeDescription:
       "المواصفات الظاهرة هي أمثلة قابلة للتحرير. لا ندّعي موافقات API أو ACEA أو OEM أو ISO إلا إذا تم تقديم الوثائق.",
-    lightCommercial: "السيارات التجارية الخفيفة",
+    lightCommercial: "زيوت محركات المركبات التجارية الخفيفة",
     productDescription: "وصف المنتج ومجالات التطبيق",
     productFeatures: "الميزات والفوائد",
     productStandards: "الموافقات والمواصفات",
@@ -1530,7 +1530,7 @@ const de: UIStrings = {
     rangeTitle: "Ausgewählte HI-TECH Produkte",
     rangeDescription:
       "Angezeigte Viskositätsgrades und Spezifikationen sind bearbeitbare Platzhalter. Wir erheben keine Ansprüche auf API-, ACEA-, OEM- oder ISO-Zulassungen, sofern keine Dokumentation vorliegt.",
-    lightCommercial: "Leichte Nutzfahrzeuge",
+    lightCommercial: "Motoröle für leichte Nutzfahrzeuge",
     productDescription: "Produktbeschreibung und Anwendungsbereiche",
     productFeatures: "Eigenschaften und Vorteile",
     productStandards: "Zulassungen und Spezifikationen",
@@ -1767,7 +1767,7 @@ const fr: UIStrings = {
     rangeTitle: "Produits HI-TECH sélectionnés",
     rangeDescription:
       "Les grades de viscosité et spécifications affichés sont des exemples modifiables. Nous ne revendiquons pas d'approbations API, ACEA, OEM ou ISO sauf si une documentation est fournie.",
-    lightCommercial: "Véhicules utilitaires légers",
+    lightCommercial: "Huiles moteur pour véhicules utilitaires légers",
     productDescription: "Description du produit et domaines d'application",
     productFeatures: "Caractéristiques et avantages",
     productStandards: "Approbations et spécifications",

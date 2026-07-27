@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
 import flagshipImg from "@/assets/flagship.png";
 import lightCommercialCategoryImg from "@/assets/light-commercial-vehicles.jpg?inline";
+import marineYachtCategoryImg from "@/assets/marine-yacht-category.jpg?inline";
 
 interface ProductItem {
   slug: string;
@@ -2446,7 +2447,7 @@ const hitechCategoryBgs = [
   "https://images.unsplash.com/photo-1754437954174-9662c997b661?w=600&q=80&auto=format&fit=crop", // modern semi-truck on dark backdrop — ağır hizmet
   "https://images.unsplash.com/photo-1692317785388-a7d076077d9d?w=600&q=80&auto=format&fit=crop", // motorcycle lit in dark — motosiklet
   "https://images.unsplash.com/photo-1524514587686-e2909d726e9b?w=600&q=80&auto=format&fit=crop", // black metal gears close-up — dişli & transmisyon
-  "https://images.unsplash.com/photo-1560134025-a119c071bf16?w=600&q=80&auto=format&fit=crop", // large grey cargo ship in ocean — deniz
+  marineYachtCategoryImg, // centered luxury yacht — marine
   "https://images.unsplash.com/photo-1511454493857-0a29f2c023c7?w=600&q=80&auto=format&fit=crop", // black metal industrial factory — endüstriyel
   "https://images.unsplash.com/photo-1762172189607-91ee2d5f1e34?w=600&q=80&auto=format&fit=crop", // frost crystals dark — antifriz
   "https://images.unsplash.com/photo-1528774701372-1d4b668aed17?w=600&q=80&auto=format&fit=crop", // bearing ball at mechanic shop — gresler
