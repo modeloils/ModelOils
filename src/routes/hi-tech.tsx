@@ -9,7 +9,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
 import flagshipImg from "@/assets/flagship.png";
-import lightCommercialCategoryImg from "@/assets/light-commercial-vehicles.jpg";
+import lightCommercialCategoryImg from "@/assets/light-commercial-vehicles.jpg?inline";
 
 interface ProductItem {
   slug: string;
