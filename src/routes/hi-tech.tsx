@@ -2441,7 +2441,7 @@ const hitechCategorySlugs = [
 
 const hitechCategoryBgs = [
   "https://images.unsplash.com/photo-1563826773-1e2b4b2cde42?w=600&q=80&auto=format&fit=crop", // black BMW in dark — binek araç
-  "/model-oils/images/categories/light-commercial-vehicles.jpg", // generated light commercial van
+  "/model-oils/images/hi-tech/light-commercial-vehicles-v2.jpg", // generated light commercial van
   "https://images.unsplash.com/photo-1754437954174-9662c997b661?w=600&q=80&auto=format&fit=crop", // modern semi-truck on dark backdrop — ağır hizmet
   "https://images.unsplash.com/photo-1692317785388-a7d076077d9d?w=600&q=80&auto=format&fit=crop", // motorcycle lit in dark — motosiklet
   "https://images.unsplash.com/photo-1524514587686-e2909d726e9b?w=600&q=80&auto=format&fit=crop", // black metal gears close-up — dişli & transmisyon
