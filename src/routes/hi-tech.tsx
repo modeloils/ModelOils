@@ -807,7 +807,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
       { slug: "Hydra-46",  name: "Hydra 46 Hidrolik Yağ", displayName: { en: "Hydra 46 Hydraulic Oil", tr: "Hydra 46 Hidrolik Yağ", ru: "Hydra 46 Гидравлическое масло", fa: "روغن هیدرولیک Hydra 46", ar: "زيت هيدروليكي Hydra 46", de: "Hydra 46 Hydrauliköl", fr: "Huile hydraulique Hydra 46" }, image: "/model-oils/images/hi-tech/endustriyel/Hydra46.png" },
       { slug: "Hydra-68",  name: "Hydra 68 Hidrolik Yağ", displayName: { en: "Hydra 68 Hydraulic Oil", tr: "Hydra 68 Hidrolik Yağ", ru: "Hydra 68 Гидравлическое масло", fa: "روغن هیدرولیک Hydra 68", ar: "زيت هيدروليكي Hydra 68", de: "Hydra 68 Hydrauliköl", fr: "Huile hydraulique Hydra 68" }, image: "/model-oils/images/hi-tech/endustriyel/Hydra68.png" },
       { slug: "Kesme-Yagi", name: "Kesme Yağı",           displayName: { en: "Cutting Oil", tr: "Kesme Yağı", ru: "Смазочно-охлаждающая жидкость", fa: "روغن برشکاری", ar: "زيت القطع", de: "Schneidöl", fr: "Huile de coupe" }, image: "/model-oils/images/hi-tech/endustriyel/Kesme.png" },
-      { slug: "Insulmax-M", name: "Insulmax M İzolasyon Yağı", displayName: { en: "Insulmax M Insulating Oil", tr: "Insulmax M İzolasyon Yağı", ru: "Insulmax M Изоляционное масло", fa: "روغن عایق Insulmax M", ar: "زيت عازل Insulmax M", de: "Insulmax M Isolieröl", fr: "Huile isolante Insulmax M" }, image: "/model-oils/images/hi-tech/endustriyel/Insulmax-M.jpeg" },
+      { slug: "Transol-HV-1500", name: "Transol HV-1500 Trafo Yağı", displayName: { en: "Transol HV-1500 Transformer Oil", tr: "Transol HV-1500 Trafo Yağı", ru: "Transol HV-1500 Трансформаторное масло", fa: "روغن ترانسفورماتور Transol HV-1500", ar: "زيت محولات Transol HV-1500", de: "Transol HV-1500 Transformatorenöl", fr: "Huile pour transformateur Transol HV-1500" }, image: "/model-oils/images/hi-tech/endustriyel/Transol-HV-1500.jpeg" },
       { slug: "Airmax-S-46", name: "Airmax S 46 Kompresör Yağı", displayName: { en: "Airmax S 46 Compressor Oil", tr: "Airmax S 46 Kompresör Yağı", ru: "Airmax S 46 Компрессорное масло", fa: "روغن کمپرسور Airmax S 46", ar: "زيت ضاغط Airmax S 46", de: "Airmax S 46 Kompressorenöl", fr: "Huile pour compresseur Airmax S 46" }, image: "/model-oils/images/hi-tech/endustriyel/Airmax-S-46.jpeg" },
       { slug: "Progen-S", name: "Progen S Dizel Motor Yağı", displayName: { en: "Progen S Diesel Engine Oil", tr: "Progen S Dizel Motor Yağı", ru: "Progen S Дизельное моторное масло", fa: "روغن موتور دیزل Progen S", ar: "زيت محرك ديزل Progen S", de: "Progen S Dieselmotoröl", fr: "Huile moteur diesel Progen S" }, image: "/model-oils/images/hi-tech/endustriyel/Progen-S.jpeg" },
       { slug: "Hydra-Pro-46", name: "Hydra Pro 46 Hidrolik Yağ", displayName: { en: "Hydra Pro 46 Hydraulic Oil", tr: "Hydra Pro 46 Hidrolik Yağ", ru: "Hydra Pro 46 Гидравлическое масло", fa: "روغن هیدرولیک Hydra Pro 46", ar: "زيت هيدروليكي Hydra Pro 46", de: "Hydra Pro 46 Hydrauliköl", fr: "Huile hydraulique Hydra Pro 46" }, image: "/model-oils/images/hi-tech/endustriyel/Hydra-Pro-46.jpeg" },
@@ -1015,15 +1015,15 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
         standards: "ISO 6743-7, DIN 51385",
         packaging: ["20 L", "200 L"],
       },
-      "Insulmax-M": {
+      "Transol-HV-1500": {
         description: {
-          en: "HI-TECH INSULMAX M is a premium insulating oil for power and distribution transformers, circuit breakers, switchgear and industrial electrical equipment.",
-          tr: "HI-TECH INSULMAX M; güç ve dağıtım transformatörleri, devre kesiciler, şalt ekipmanları ve endüstriyel elektrik sistemleri için premium izolasyon yağıdır.",
-          ru: "HI-TECH INSULMAX M — премиальное изоляционное масло для силовых и распределительных трансформаторов, выключателей, коммутационного и промышленного электрооборудования.",
-          fa: "HI-TECH INSULMAX M روغن عایق ممتاز برای ترانسفورماتورهای قدرت و توزیع، کلیدهای قدرت، تجهیزات سوئیچ و سامانه‌های برق صنعتی است.",
-          ar: "HI-TECH INSULMAX M زيت عازل ممتاز لمحولات القدرة والتوزيع وقواطع الدائرة ومعدات التبديل والأنظمة الكهربائية الصناعية.",
-          de: "HI-TECH INSULMAX M ist ein Premium-Isolieröl für Leistungs- und Verteiltransformatoren, Leistungsschalter, Schaltanlagen und industrielle Elektrogeräte.",
-          fr: "HI-TECH INSULMAX M est une huile isolante premium pour transformateurs de puissance et de distribution, disjoncteurs, appareillages et équipements électriques industriels.",
+          en: "HI-TECH TRANSOL HV-1500 is a premium transformer and insulating oil for power and distribution transformers, circuit breakers, switchgear and industrial electrical equipment.",
+          tr: "HI-TECH TRANSOL HV-1500; güç ve dağıtım transformatörleri, devre kesiciler, şalt ekipmanları ve endüstriyel elektrik sistemleri için premium trafo ve izolasyon yağıdır.",
+          ru: "HI-TECH TRANSOL HV-1500 — премиальное трансформаторное и изоляционное масло для силовых и распределительных трансформаторов, выключателей, коммутационного и промышленного электрооборудования.",
+          fa: "HI-TECH TRANSOL HV-1500 روغن ترانسفورماتور و عایق ممتاز برای ترانسفورماتورهای قدرت و توزیع، کلیدهای قدرت، تجهیزات سوئیچ و سامانه‌های برق صنعتی است.",
+          ar: "HI-TECH TRANSOL HV-1500 زيت محولات وعزل ممتاز لمحولات القدرة والتوزيع وقواطع الدائرة ومعدات التبديل والأنظمة الكهربائية الصناعية.",
+          de: "HI-TECH TRANSOL HV-1500 ist ein Premium-Transformatoren- und Isolieröl für Leistungs- und Verteiltransformatoren, Leistungsschalter, Schaltanlagen und industrielle Elektrogeräte.",
+          fr: "HI-TECH TRANSOL HV-1500 est une huile premium pour transformateurs et isolation, destinée aux transformateurs de puissance et de distribution, disjoncteurs, appareillages et équipements électriques industriels.",
         },
         features: {
           en: ["Excellent dielectric strength for reliable insulation.", "Superior oxidation and thermal stability minimise sludge and deposits.", "Low-temperature performance and corrosion protection extend equipment life."],
