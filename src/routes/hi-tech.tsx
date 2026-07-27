@@ -2291,7 +2291,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
     },
   },
   "Havacilik-Yaglari": {
-    title: "Aviation Lubricants",
+    title: "Aviation & Turbine Oils",
     products: [
       { slug: "Jetmax-II", name: "JETMAX II", image: "/model-oils/images/hi-tech/havacilik/jetmax-ii.jpg" },
       { slug: "Turbine-M-46", name: "TURBINE M 46", image: "/model-oils/images/hi-tech/havacilik/turbine-m-46.jpg" },
@@ -2455,13 +2455,13 @@ const hitechCategoryBgs = [
 ];
 
 const aviationCategoryNames: Record<Locale, string> = {
-  en: "Aviation Lubricants",
-  tr: "Havacılık Yağları",
-  ru: "Авиационные масла",
-  fa: "روانکارهای هوانوردی",
-  ar: "زيوت الطيران",
-  de: "Luftfahrt-Schmierstoffe",
-  fr: "Lubrifiants aéronautiques",
+  en: "Aviation & Turbine Oils",
+  tr: "Havacılık ve Türbin Yağları",
+  ru: "Авиационные и турбинные масла",
+  fa: "روغن‌های هوانوردی و توربین",
+  ar: "زيوت الطيران والتوربينات",
+  de: "Luftfahrt- und Turbinenöle",
+  fr: "Huiles aéronautiques et pour turbines",
 };
 
 export function hiTechHead(locale: Locale) {
