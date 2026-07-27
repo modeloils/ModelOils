@@ -307,6 +307,62 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
       { slug: "Gres-Kirmizi", name: "Kalsiyum Kırmızı Gres",       displayName: { en: "Calcium Red Grease", tr: "Kalsiyum Kırmızı Gres", ru: "Кальциевая красная смазка", fa: "گریس قرمز کلسیم", ar: "شحم الكالسيوم الأحمر", de: "Kalzium-Rotfett", fr: "Graisse rouge au calcium" }, image: "/model-oils/images/hi-tech/gresler/Kirmizi.png" },
       { slug: "Lithium-Gres", name: "Lityum EP Gres",              displayName: { en: "Lithium EP Grease", tr: "Lityum EP Gres", ru: "Литиевая смазка EP", fa: "گریس لیتیم EP", ar: "شحم الليثيوم EP", de: "Lithium-EP-Fett", fr: "Graisse au lithium EP" }, image: "/model-oils/images/hi-tech/gresler/Lithium.png" },
       { slug: "Gres-Yesil",   name: "Kalsiyum Kauçuk Yeşil Gres", displayName: { en: "Calcium Rubber Green Grease", tr: "Kalsiyum Kauçuk Yeşil Gres", ru: "Кальциевая каучуковая зелёная смазка", fa: "گریس سبز لاستیکی کلسیم", ar: "شحم الكالسيوم المطاطي الأخضر", de: "Kalzium-Kautschuk-Grünfett", fr: "Graisse verte caoutchouc au calcium" }, image: "/model-oils/images/hi-tech/gresler/Yesil.png" },
+      {
+        slug: "Ball-Valve-Grease",
+        name: "Küresel Vana Gresi",
+        displayName: {
+          en: "Ball Valve Grease",
+          tr: "Küresel Vana Gresi",
+          ru: "Смазка для шаровых кранов",
+          fa: "گریس شیر توپی",
+          ar: "شحم الصمامات الكروية",
+          de: "Kugelhahnfett",
+          fr: "Graisse pour vannes à boisseau sphérique",
+        },
+        image: "/model-oils/images/hi-tech/gresler/Ball-Valve-Grease.jpeg",
+      },
+      {
+        slug: "Lithmax-EP-3",
+        name: "Lithmax EP 3 Lityum Gres",
+        displayName: {
+          en: "Lithmax EP 3 Lithium Grease",
+          tr: "Lithmax EP 3 Lityum Gres",
+          ru: "Литиевая смазка Lithmax EP 3",
+          fa: "گریس لیتیم Lithmax EP 3",
+          ar: "شحم الليثيوم Lithmax EP 3",
+          de: "Lithmax EP 3 Lithiumfett",
+          fr: "Graisse au lithium Lithmax EP 3",
+        },
+        image: "/model-oils/images/hi-tech/gresler/Lithmax-EP-3.jpeg",
+      },
+      {
+        slug: "Lithmax-Complex",
+        name: "Lithmax Complex Lityum Kompleks Gres",
+        displayName: {
+          en: "Lithmax Complex Lithium Complex Grease",
+          tr: "Lithmax Complex Lityum Kompleks Gres",
+          ru: "Литиевая комплексная смазка Lithmax Complex",
+          fa: "گریس کمپلکس لیتیم Lithmax Complex",
+          ar: "شحم الليثيوم المركب Lithmax Complex",
+          de: "Lithmax Complex Lithiumkomplexfett",
+          fr: "Graisse complexe au lithium Lithmax Complex",
+        },
+        image: "/model-oils/images/hi-tech/gresler/Lithmax-Complex.jpeg",
+      },
+      {
+        slug: "Calcium-Grease",
+        name: "Kalsiyum Gres",
+        displayName: {
+          en: "Calcium Grease",
+          tr: "Kalsiyum Gres",
+          ru: "Кальциевая смазка",
+          fa: "گریس کلسیم",
+          ar: "شحم الكالسيوم",
+          de: "Kalziumfett",
+          fr: "Graisse au calcium",
+        },
+        image: "/model-oils/images/hi-tech/gresler/Calcium-Grease.jpeg",
+      },
     ],
     details: {
       "Gres-Beyaz": {
@@ -508,6 +564,238 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
         },
         standards: "DIN 51502, NLGI 2, ISO 6743-9, MIL-PRF-2105",
         packaging: ["3.6 KG", "14 KG", "180 KG"],
+      },
+      "Ball-Valve-Grease": {
+        description: {
+          tr: "HI-TECH KÜRESEL VANA GRESİ, ağır hizmet tipi küresel vana uygulamaları için geliştirilmiş kalsiyum kompleks sabunlu özel bir grestir. Suya ve kimyasallara karşı üstün direnç, güçlü yapışma ve güvenilir sızdırmazlık sunar. Petrol, gaz, kimya, petrokimya, denizcilik ve endüstriyel tesislerde kullanıma uygundur.",
+          en: "HI-TECH BALL VALVE GREASE, a calcium-complex-soap specialty grease developed for severe-service ball valve applications. It offers superior resistance to water and chemicals, strong adhesion and reliable sealing. Suitable for oil and gas, chemical, petrochemical, marine and industrial facilities.",
+          ru: "HI-TECH BALL VALVE GREASE, специальная смазка на основе кальциевого комплексного мыла для шаровых кранов, работающих в тяжёлых условиях. Обеспечивает высокую стойкость к воде и химическим веществам, прочное сцепление и надёжное уплотнение. Подходит для нефтегазовой, химической, нефтехимической, морской и промышленной отраслей.",
+          fa: "HI-TECH BALL VALVE GREASE، گریس تخصصی بر پایه صابون کمپلکس کلسیم است که برای شیرهای توپی در شرایط کاری سنگین توسعه یافته است. مقاومت عالی در برابر آب و مواد شیمیایی، چسبندگی قوی و آب‌بندی قابل اعتماد ارائه می‌دهد. برای صنایع نفت و گاز، شیمیایی، پتروشیمی، دریایی و تأسیسات صنعتی مناسب است.",
+          ar: "HI-TECH BALL VALVE GREASE، شحم متخصص قائم على صابون الكالسيوم المركب ومطوّر للصمامات الكروية في ظروف الخدمة القاسية. يوفر مقاومة فائقة للماء والمواد الكيميائية والتصاقاً قوياً وإحكاماً موثوقاً. مناسب لقطاعات النفط والغاز والكيماويات والبتروكيماويات والبحرية والمنشآت الصناعية.",
+          de: "HI-TECH BALL VALVE GREASE, ein Spezialfett auf Basis von Kalziumkomplexseife für hoch beanspruchte Kugelhähne. Es bietet hervorragende Wasser- und Chemikalienbeständigkeit, starke Haftung und zuverlässige Abdichtung. Geeignet für Öl- und Gas-, Chemie-, Petrochemie-, Marine- und Industrieanlagen.",
+          fr: "HI-TECH BALL VALVE GREASE, une graisse spéciale à base de savon complexe de calcium, développée pour les vannes à boisseau sphérique en service sévère. Elle offre une excellente résistance à l'eau et aux produits chimiques, une forte adhérence et une étanchéité fiable. Convient aux secteurs pétrolier, gazier, chimique, pétrochimique, maritime et industriel.",
+        },
+        features: {
+          tr: [
+            "Küresel, plug, sürgülü ve endüstriyel vanalarda mükemmel sızdırmazlık ve kaçak önleme sağlar.",
+            "Suya, kimyasallara, korozyona ve pasa karşı yüksek direnç gösterir.",
+            "-30°C ile +150°C arasında güçlü yapışma ve yüksek yük taşıma kapasitesini korur.",
+          ],
+          en: [
+            "Provides excellent sealing and leak prevention in ball, plug, gate and industrial valves.",
+            "Highly resistant to water, chemicals, corrosion and rust.",
+            "Maintains strong adhesion and high load-carrying capacity from -30°C to +150°C.",
+          ],
+          ru: [
+            "Обеспечивает отличное уплотнение и предотвращение утечек в шаровых, пробковых, задвижных и промышленных клапанах.",
+            "Обладает высокой стойкостью к воде, химическим веществам, коррозии и ржавчине.",
+            "Сохраняет прочное сцепление и высокую несущую способность при температурах от -30°C до +150°C.",
+          ],
+          fa: [
+            "در شیرهای توپی، سماوری، کشویی و صنعتی آب‌بندی عالی و جلوگیری از نشتی فراهم می‌کند.",
+            "در برابر آب، مواد شیمیایی، خوردگی و زنگ‌زدگی مقاومت بالایی دارد.",
+            "در محدوده دمایی ۳۰- تا ۱۵۰+ درجه سانتیگراد چسبندگی قوی و ظرفیت تحمل بار بالا را حفظ می‌کند.",
+          ],
+          ar: [
+            "يوفر إحكاماً ممتازاً ومنعاً للتسرب في الصمامات الكروية والسدادية والبوابية والصناعية.",
+            "يتميز بمقاومة عالية للماء والمواد الكيميائية والتآكل والصدأ.",
+            "يحافظ على التصاق قوي وقدرة عالية على تحمل الأحمال من -30°C إلى +150°C.",
+          ],
+          de: [
+            "Bietet ausgezeichnete Abdichtung und Leckagevermeidung in Kugel-, Küken-, Schieber- und Industrieventilen.",
+            "Hohe Beständigkeit gegen Wasser, Chemikalien, Korrosion und Rost.",
+            "Behält starke Haftung und hohe Lasttragefähigkeit von -30°C bis +150°C bei.",
+          ],
+          fr: [
+            "Assure une excellente étanchéité et prévient les fuites dans les vannes à boisseau sphérique, à boisseau, à opercule et industrielles.",
+            "Très résistante à l'eau, aux produits chimiques, à la corrosion et à la rouille.",
+            "Conserve une forte adhérence et une capacité de charge élevée de -30°C à +150°C.",
+          ],
+        },
+        standards: {
+          tr: "NLGI 2 • Kalsiyum kompleks sabun • -30°C ile +150°C",
+          en: "NLGI 2 • Calcium complex soap • -30°C to +150°C",
+          ru: "NLGI 2 • Кальциевое комплексное мыло • от -30°C до +150°C",
+          fa: "NLGI 2 • صابون کمپلکس کلسیم • ۳۰- تا ۱۵۰+ درجه سانتیگراد",
+          ar: "NLGI 2 • صابون الكالسيوم المركب • من -30°C إلى +150°C",
+          de: "NLGI 2 • Kalziumkomplexseife • -30°C bis +150°C",
+          fr: "NLGI 2 • Savon complexe de calcium • -30°C à +150°C",
+        },
+        packaging: ["14 KG"],
+      },
+      "Lithmax-EP-3": {
+        description: {
+          tr: "HI-TECH LITHMAX EP 3, aşırı basınç altında çalışan otomotiv, endüstriyel, tarım ve inşaat ekipmanları için geliştirilmiş lityum sabunlu NLGI 3 çok amaçlı grestir. Yüksek mekanik kararlılık, su direnci ve güçlü yapışma özellikleriyle rulmanlarda, şasi noktalarında ve genel makine uygulamalarında uzun servis ömrü sağlar.",
+          en: "HI-TECH LITHMAX EP 3, an NLGI 3 multipurpose lithium-soap grease developed for automotive, industrial, agricultural and construction equipment operating under extreme pressure. Its high mechanical stability, water resistance and strong adhesion provide long service life in bearings, chassis points and general machinery.",
+          ru: "HI-TECH LITHMAX EP 3, многоцелевая литиевая смазка класса NLGI 3 для автомобильной, промышленной, сельскохозяйственной и строительной техники, работающей при экстремальном давлении. Высокая механическая стабильность, водостойкость и прочное сцепление обеспечивают длительный срок службы подшипников, узлов шасси и общего оборудования.",
+          fa: "HI-TECH LITHMAX EP 3، گریس چند منظوره با صابون لیتیم و گرید NLGI 3 است که برای تجهیزات خودرویی، صنعتی، کشاورزی و ساختمانی تحت فشار شدید توسعه یافته است. پایداری مکانیکی بالا، مقاومت در برابر آب و چسبندگی قوی، عمر سرویس طولانی در بلبرینگ‌ها، نقاط شاسی و ماشین‌آلات عمومی فراهم می‌کند.",
+          ar: "HI-TECH LITHMAX EP 3، شحم متعدد الأغراض بصابون الليثيوم بدرجة NLGI 3، مطوّر لمعدات السيارات والصناعة والزراعة والبناء العاملة تحت الضغط الشديد. يوفر ثباته الميكانيكي العالي ومقاومته للماء والتصاقه القوي عمراً طويلاً للمحامل ونقاط الهيكل والآلات العامة.",
+          de: "HI-TECH LITHMAX EP 3, ein Mehrzweckfett der Klasse NLGI 3 auf Lithiumseifenbasis für Automobil-, Industrie-, Landwirtschafts- und Baumaschinen unter extremem Druck. Hohe mechanische Stabilität, Wasserbeständigkeit und starke Haftung sorgen für lange Lebensdauer in Lagern, Fahrwerkspunkten und allgemeinen Maschinen.",
+          fr: "HI-TECH LITHMAX EP 3, une graisse polyvalente au savon de lithium de grade NLGI 3, développée pour les équipements automobiles, industriels, agricoles et de construction soumis à des pressions extrêmes. Sa grande stabilité mécanique, sa résistance à l'eau et sa forte adhérence assurent une longue durée de service des roulements, châssis et machines générales.",
+        },
+        features: {
+          tr: [
+            "Ağır yüklerde mükemmel EP performansı ve yüksek mekanik kararlılık sunar.",
+            "Suya, oksidasyona, ısıl bozunmaya, pasa ve korozyona karşı dayanıklıdır.",
+            "-20°C ile +130°C arasında rulmanlar, şasi ve genel amaçlı uygulamalar için güvenilir yağlama sağlar.",
+          ],
+          en: [
+            "Delivers excellent EP performance and high mechanical stability under heavy loads.",
+            "Resists water, oxidation, thermal degradation, rust and corrosion.",
+            "Provides reliable lubrication for bearings, chassis and general-purpose applications from -20°C to +130°C.",
+          ],
+          ru: [
+            "Обеспечивает отличные EP-характеристики и высокую механическую стабильность при тяжёлых нагрузках.",
+            "Устойчива к воде, окислению, термическому разрушению, ржавчине и коррозии.",
+            "Обеспечивает надёжную смазку подшипников, шасси и узлов общего назначения при температурах от -20°C до +130°C.",
+          ],
+          fa: [
+            "در بارهای سنگین عملکرد عالی EP و پایداری مکانیکی بالا ارائه می‌دهد.",
+            "در برابر آب، اکسیداسیون، تخریب حرارتی، زنگ‌زدگی و خوردگی مقاوم است.",
+            "از ۲۰- تا ۱۳۰+ درجه سانتیگراد برای بلبرینگ‌ها، شاسی و کاربردهای عمومی روانکاری قابل اعتماد فراهم می‌کند.",
+          ],
+          ar: [
+            "يوفر أداء EP ممتازاً وثباتاً ميكانيكياً عالياً تحت الأحمال الثقيلة.",
+            "يقاوم الماء والأكسدة والتحلل الحراري والصدأ والتآكل.",
+            "يوفر تشحيماً موثوقاً للمحامل والهيكل والتطبيقات العامة من -20°C إلى +130°C.",
+          ],
+          de: [
+            "Bietet ausgezeichnete EP-Leistung und hohe mechanische Stabilität unter schweren Lasten.",
+            "Beständig gegen Wasser, Oxidation, thermischen Abbau, Rost und Korrosion.",
+            "Zuverlässige Schmierung für Lager, Fahrwerk und allgemeine Anwendungen von -20°C bis +130°C.",
+          ],
+          fr: [
+            "Offre d'excellentes performances EP et une grande stabilité mécanique sous fortes charges.",
+            "Résiste à l'eau, à l'oxydation, à la dégradation thermique, à la rouille et à la corrosion.",
+            "Assure une lubrification fiable des roulements, châssis et applications générales de -20°C à +130°C.",
+          ],
+        },
+        standards: {
+          tr: "NLGI 3 • Lityum sabun • -20°C ile +130°C",
+          en: "NLGI 3 • Lithium soap • -20°C to +130°C",
+          ru: "NLGI 3 • Литиевое мыло • от -20°C до +130°C",
+          fa: "NLGI 3 • صابون لیتیم • ۲۰- تا ۱۳۰+ درجه سانتیگراد",
+          ar: "NLGI 3 • صابون الليثيوم • من -20°C إلى +130°C",
+          de: "NLGI 3 • Lithiumseife • -20°C bis +130°C",
+          fr: "NLGI 3 • Savon de lithium • -20°C à +130°C",
+        },
+        packaging: ["14 KG"],
+      },
+      "Lithmax-Complex": {
+        description: {
+          tr: "HI-TECH LITHMAX COMPLEX, yüksek sıcaklık ve ağır yük koşulları için geliştirilmiş lityum kompleks sabunlu NLGI 2 çok amaçlı EP grestir. Üstün mekanik kararlılığı, suyla yıkanmaya direnci ve güçlü yapışması sayesinde otomotiv, endüstri, inşaat, madencilik, tarım ve denizcilik uygulamalarında uzun süreli koruma sağlar.",
+          en: "HI-TECH LITHMAX COMPLEX, an NLGI 2 multipurpose EP grease with lithium-complex soap, developed for high-temperature and heavy-load conditions. Its outstanding mechanical stability, water-washout resistance and strong adhesion provide long-lasting protection in automotive, industrial, construction, mining, agricultural and marine applications.",
+          ru: "HI-TECH LITHMAX COMPLEX, многоцелевая EP-смазка класса NLGI 2 на основе литиевого комплексного мыла для высоких температур и тяжёлых нагрузок. Превосходная механическая стабильность, устойчивость к вымыванию водой и прочное сцепление обеспечивают длительную защиту в автомобильной, промышленной, строительной, горнодобывающей, сельскохозяйственной и морской технике.",
+          fa: "HI-TECH LITHMAX COMPLEX، گریس چند منظوره EP با صابون کمپلکس لیتیم و گرید NLGI 2 است که برای دماهای بالا و بارهای سنگین توسعه یافته است. پایداری مکانیکی برجسته، مقاومت در برابر شست‌وشو با آب و چسبندگی قوی، حفاظت طولانی‌مدت در کاربردهای خودرویی، صنعتی، ساختمانی، معدنی، کشاورزی و دریایی فراهم می‌کند.",
+          ar: "HI-TECH LITHMAX COMPLEX، شحم EP متعدد الأغراض بصابون الليثيوم المركب بدرجة NLGI 2، مطوّر لدرجات الحرارة العالية والأحمال الثقيلة. يوفر ثباتاً ميكانيكياً ممتازاً ومقاومة للغسل بالماء والتصاقاً قوياً لحماية طويلة الأمد في تطبيقات السيارات والصناعة والبناء والتعدين والزراعة والبحرية.",
+          de: "HI-TECH LITHMAX COMPLEX, ein Mehrzweck-EP-Fett der Klasse NLGI 2 auf Lithiumkomplexseifenbasis für hohe Temperaturen und schwere Lasten. Hervorragende mechanische Stabilität, Auswaschbeständigkeit und starke Haftung bieten langanhaltenden Schutz in Automobil-, Industrie-, Bau-, Bergbau-, Landwirtschafts- und Marineanwendungen.",
+          fr: "HI-TECH LITHMAX COMPLEX, une graisse EP polyvalente au savon complexe de lithium de grade NLGI 2, développée pour les températures élevées et les fortes charges. Son excellente stabilité mécanique, sa résistance au délavage à l'eau et sa forte adhérence offrent une protection durable dans les applications automobiles, industrielles, de construction, minières, agricoles et maritimes.",
+        },
+        features: {
+          tr: [
+            "Yüksek sıcaklık ve oksidasyona karşı üstün direnç ile güçlü EP performansı sunar.",
+            "Suyla yıkanmaya, pasa ve korozyona karşı korur; yüzeyde güçlü biçimde tutunur.",
+            "-30°C ile +160°C arasında rulmanlar ve ağır hizmet makinelerinde uzun servis ömrü sağlar.",
+          ],
+          en: [
+            "Provides strong EP performance with outstanding resistance to high temperature and oxidation.",
+            "Protects against water washout, rust and corrosion while adhering strongly to surfaces.",
+            "Delivers long service life in bearings and heavy-duty machinery from -30°C to +160°C.",
+          ],
+          ru: [
+            "Обеспечивает высокие EP-характеристики и превосходную стойкость к высокой температуре и окислению.",
+            "Защищает от вымывания водой, ржавчины и коррозии, прочно удерживаясь на поверхностях.",
+            "Обеспечивает длительный срок службы подшипников и тяжёлой техники при температурах от -30°C до +160°C.",
+          ],
+          fa: [
+            "عملکرد قوی EP همراه با مقاومت برجسته در برابر دمای بالا و اکسیداسیون ارائه می‌دهد.",
+            "در برابر شست‌وشو با آب، زنگ‌زدگی و خوردگی محافظت می‌کند و چسبندگی بالایی به سطوح دارد.",
+            "از ۳۰- تا ۱۶۰+ درجه سانتیگراد در بلبرینگ‌ها و ماشین‌آلات سنگین عمر سرویس طولانی فراهم می‌کند.",
+          ],
+          ar: [
+            "يوفر أداء EP قوياً مع مقاومة ممتازة للحرارة العالية والأكسدة.",
+            "يحمي من الغسل بالماء والصدأ والتآكل مع التصاق قوي بالأسطح.",
+            "يوفر عمراً طويلاً للمحامل والآلات الثقيلة من -30°C إلى +160°C.",
+          ],
+          de: [
+            "Bietet starke EP-Leistung mit hervorragender Beständigkeit gegen hohe Temperaturen und Oxidation.",
+            "Schützt vor Wasserauswaschung, Rost und Korrosion und haftet stark an Oberflächen.",
+            "Lange Lebensdauer in Lagern und Schwerlastmaschinen von -30°C bis +160°C.",
+          ],
+          fr: [
+            "Offre de fortes performances EP avec une excellente résistance aux hautes températures et à l'oxydation.",
+            "Protège contre le délavage à l'eau, la rouille et la corrosion tout en adhérant fortement aux surfaces.",
+            "Assure une longue durée de service des roulements et machines lourdes de -30°C à +160°C.",
+          ],
+        },
+        standards: {
+          tr: "NLGI 2 • Lityum kompleks sabun • -30°C ile +160°C",
+          en: "NLGI 2 • Lithium complex soap • -30°C to +160°C",
+          ru: "NLGI 2 • Литиевое комплексное мыло • от -30°C до +160°C",
+          fa: "NLGI 2 • صابون کمپلکس لیتیم • ۳۰- تا ۱۶۰+ درجه سانتیگراد",
+          ar: "NLGI 2 • صابون الليثيوم المركب • من -30°C إلى +160°C",
+          de: "NLGI 2 • Lithiumkomplexseife • -30°C bis +160°C",
+          fr: "NLGI 2 • Savon complexe de lithium • -30°C à +160°C",
+        },
+        packaging: ["14 KG"],
+      },
+      "Calcium-Grease": {
+        description: {
+          tr: "HI-TECH KALSİYUM GRES, genel yağlama için geliştirilmiş kalsiyum sabunlu NLGI 2 çok amaçlı grestir. İyi mekanik kararlılık, su direnci, yapışma ve pompalanabilirlik özellikleriyle otomotiv, endüstriyel makineler, inşaat ve tarım ekipmanlarında güvenilir koruma sağlar.",
+          en: "HI-TECH CALCIUM GREASE, an NLGI 2 multipurpose calcium-soap grease developed for general lubrication. Its good mechanical stability, water resistance, adhesion and pumpability provide reliable protection in automotive, industrial machinery, construction and agricultural equipment.",
+          ru: "HI-TECH CALCIUM GREASE, многоцелевая кальциевая смазка класса NLGI 2 для общего смазывания. Хорошая механическая стабильность, водостойкость, сцепление и прокачиваемость обеспечивают надёжную защиту автомобильной, промышленной, строительной и сельскохозяйственной техники.",
+          fa: "HI-TECH CALCIUM GREASE، گریس چند منظوره با صابون کلسیم و گرید NLGI 2 است که برای روانکاری عمومی توسعه یافته است. پایداری مکانیکی خوب، مقاومت در برابر آب، چسبندگی و پمپ‌پذیری، حفاظت قابل اعتماد در خودرو، ماشین‌آلات صنعتی و تجهیزات ساختمانی و کشاورزی فراهم می‌کند.",
+          ar: "HI-TECH CALCIUM GREASE، شحم متعدد الأغراض بصابون الكالسيوم بدرجة NLGI 2، مطوّر للتشحيم العام. يوفر ثباتاً ميكانيكياً جيداً ومقاومة للماء والتصاقاً وقابلية ضخ جيدة لحماية موثوقة في السيارات والآلات الصناعية ومعدات البناء والزراعة.",
+          de: "HI-TECH CALCIUM GREASE, ein Mehrzweckfett der Klasse NLGI 2 auf Kalziumseifenbasis für allgemeine Schmierung. Gute mechanische Stabilität, Wasserbeständigkeit, Haftung und Pumpbarkeit bieten zuverlässigen Schutz in Automobilen, Industriemaschinen, Bau- und Landwirtschaftsgeräten.",
+          fr: "HI-TECH CALCIUM GREASE, une graisse polyvalente au savon de calcium de grade NLGI 2, développée pour la lubrification générale. Sa bonne stabilité mécanique, sa résistance à l'eau, son adhérence et sa pompabilité assurent une protection fiable dans l'automobile, les machines industrielles et les équipements de construction et agricoles.",
+        },
+        features: {
+          tr: [
+            "Genel amaçlı uygulamalarda iyi mekanik kararlılık ve güvenilir yük taşıma kapasitesi sunar.",
+            "Suya, pasa ve korozyona karşı korur; güçlü yapışma ve iyi pompalanabilirlik sağlar.",
+            "-20°C ile +80°C arasında otomotiv, endüstri, inşaat ve tarım ekipmanlarında kullanıma uygundur.",
+          ],
+          en: [
+            "Offers good mechanical stability and reliable load-carrying capacity in general-purpose applications.",
+            "Protects against water, rust and corrosion while providing strong adhesion and good pumpability.",
+            "Suitable for automotive, industrial, construction and agricultural equipment from -20°C to +80°C.",
+          ],
+          ru: [
+            "Обеспечивает хорошую механическую стабильность и надёжную несущую способность в универсальных применениях.",
+            "Защищает от воды, ржавчины и коррозии, обеспечивая прочное сцепление и хорошую прокачиваемость.",
+            "Подходит для автомобильной, промышленной, строительной и сельскохозяйственной техники при температурах от -20°C до +80°C.",
+          ],
+          fa: [
+            "در کاربردهای عمومی پایداری مکانیکی خوب و ظرفیت تحمل بار قابل اعتماد ارائه می‌دهد.",
+            "در برابر آب، زنگ‌زدگی و خوردگی محافظت می‌کند و چسبندگی قوی و پمپ‌پذیری خوبی دارد.",
+            "از ۲۰- تا ۸۰+ درجه سانتیگراد برای تجهیزات خودرویی، صنعتی، ساختمانی و کشاورزی مناسب است.",
+          ],
+          ar: [
+            "يوفر ثباتاً ميكانيكياً جيداً وقدرة موثوقة على تحمل الأحمال في التطبيقات العامة.",
+            "يحمي من الماء والصدأ والتآكل مع توفير التصاق قوي وقابلية ضخ جيدة.",
+            "مناسب لمعدات السيارات والصناعة والبناء والزراعة من -20°C إلى +80°C.",
+          ],
+          de: [
+            "Bietet gute mechanische Stabilität und zuverlässige Lasttragefähigkeit in allgemeinen Anwendungen.",
+            "Schützt vor Wasser, Rost und Korrosion und bietet starke Haftung sowie gute Pumpbarkeit.",
+            "Geeignet für Automobil-, Industrie-, Bau- und Landwirtschaftsgeräte von -20°C bis +80°C.",
+          ],
+          fr: [
+            "Offre une bonne stabilité mécanique et une capacité de charge fiable dans les applications générales.",
+            "Protège contre l'eau, la rouille et la corrosion tout en assurant une forte adhérence et une bonne pompabilité.",
+            "Convient aux équipements automobiles, industriels, de construction et agricoles de -20°C à +80°C.",
+          ],
+        },
+        standards: {
+          tr: "NLGI 2 • Kalsiyum sabun • -20°C ile +80°C",
+          en: "NLGI 2 • Calcium soap • -20°C to +80°C",
+          ru: "NLGI 2 • Кальциевое мыло • от -20°C до +80°C",
+          fa: "NLGI 2 • صابون کلسیم • ۲۰- تا ۸۰+ درجه سانتیگراد",
+          ar: "NLGI 2 • صابون الكالسيوم • من -20°C إلى +80°C",
+          de: "NLGI 2 • Kalziumseife • -20°C bis +80°C",
+          fr: "NLGI 2 • Savon de calcium • -20°C à +80°C",
+        },
+        packaging: ["14 KG"],
       },
     },
   },
@@ -1991,7 +2279,7 @@ export function HiTechSubcategory() {
                       <img
                         src={p.image}
                         alt={resolveName(p, locale)}
-                        className="h-56 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                        className="h-56 w-full object-contain transition-transform duration-300 group-hover:scale-105"
                       />
                     </div>
                     <div className="border-t border-border p-5">
