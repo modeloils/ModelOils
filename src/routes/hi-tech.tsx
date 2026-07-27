@@ -352,15 +352,15 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
       },
       {
         slug: "Calsol",
-        name: "Calsol",
+        name: "Calsol Kalsiyum Gresi",
         displayName: {
-          en: "Calsol",
-          tr: "Calsol",
-          ru: "Calsol",
-          fa: "Calsol",
-          ar: "Calsol",
-          de: "Calsol",
-          fr: "Calsol",
+          en: "Calsol Calcium Grease",
+          tr: "Calsol Kalsiyum Gresi",
+          ru: "Calsol Кальциевая смазка",
+          fa: "گریس کلسیم Calsol",
+          ar: "شحم الكالسيوم Calsol",
+          de: "Calsol Kalziumfett",
+          fr: "Graisse au calcium Calsol",
         },
         image: "/model-oils/images/hi-tech/gresler/Calsol.jpeg",
       },
@@ -1035,7 +1035,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           fr: ["Excellente rigidité diélectrique pour une isolation fiable.", "La stabilité à l'oxydation et à la chaleur limite boues et dépôts.", "Les performances à basse température et la protection anticorrosion prolongent la durée de vie."],
         },
         standards: "IEC 60296:2020 (Ed. 5.1), ASTM D3487, BS 148:2009, IS 335:2018 (Type II), IEEE C57.106, IEC 60422, JIS C 2320, GB/T 2536, Cooper Power, Siemens Spec. 03-9320, GEK 28143A (Type II), Alstom HTGD 90117",
-        packaging: ["20 L"],
+        packaging: ["20 L", "200 L"],
       },
       "Airmax-S-46": {
         description: {
@@ -1057,7 +1057,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           fr: ["Excellente stabilité thermique en service sévère.", "Protection anti-usure supérieure des composants du compresseur.", "Longue durée de service pour une utilisation industrielle fiable."],
         },
         standards: "ISO VG 46, ISO 6743-3A (DAA, DAB, DAG, DAH), DIN 51506 VDL/VCL/VBL, ISO 6521, ISO 11158 (HM), ISO 12925-1 (CKD), GB 5903 L-DAB/L-DAH, JIS K 2213 Type 2, PNEUROP PN 100, AFNOR NF E 48-603 (HM), BS 489:1999, SEB 181 222, VDMA 24364",
-        packaging: ["20 L"],
+        packaging: ["20 L", "200 L"],
       },
       "Progen-S": {
         description: {
@@ -1079,7 +1079,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           fr: ["Excellente protection anti-usure et propreté du moteur.", "Stabilité à l'oxydation et à la chaleur en conditions sévères.", "Économie de carburant et protection anticorrosion favorisent la longévité du moteur."],
         },
         standards: "API CF/CF-4/CG-4/CH-4/CI-4/CJ-4, ACEA E7/E9, Cummins CES 20081, Detroit Diesel 93K218, Mack EO-O Premium Plus, Volvo VDS-4, MTU Type 2.1, Renault RLD-3",
-        packaging: ["20 L"],
+        packaging: ["20 L", "200 L"],
       },
       "Hydra-Pro-46": {
         description: {
@@ -1101,7 +1101,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           fr: ["Excellente protection anti-usure prolongeant la vie des composants.", "Stabilité à l'oxydation et à la chaleur contre boues et hautes températures.", "Protection antirouille et filtrabilité maintiennent le système propre."],
         },
         standards: "ISO VG 46, DIN 51524 Part 2 (HLP), ISO 11158 (HM), ISO 6743-4 (HM), AFNOR NF E 48-603 (HM), Cincinnati Milacron P-68, Denison HF-0/HF-1/HF-2, Eaton Vickers I-286-S, U.S. Steel 126/127/136, Bosch Rexroth RE 90220, SAE MS 1004, GM LS-2, JCMAS HK, MAG Denison (T6H20C), SEB 181 222",
-        packaging: ["20 L"],
+        packaging: ["20 L", "200 L"],
       },
       "Hydra-Pro-15": {
         description: {
@@ -1123,7 +1123,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           fr: ["Excellente protection anti-usure prolongeant la vie des composants.", "Stabilité à l'oxydation et à la chaleur contre boues et hautes températures.", "Protection antirouille et filtrabilité maintiennent le système propre."],
         },
         standards: "ISO VG 15, DIN 51524 Part 2 (HLP), ISO 11158 (HM), ISO 6743-4 (HM), AFNOR NF E 48-603 (HM), Cincinnati Milacron P-68, Denison HF-0/HF-1/HF-2, Eaton Vickers I-286-S, U.S. Steel 126/127/136, Bosch Rexroth RE 90220, SAE MS 1004, GM LS-2, JCMAS HK, MAG Denison (T6H20C), SEB 181 222",
-        packaging: ["20 L"],
+        packaging: ["20 L", "200 L"],
       },
       "Heat-Transfer-Oil-S2": {
         description: {
@@ -1145,7 +1145,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           fr: ["Excellente efficacité thermique pour un transfert de chaleur efficace.", "Stabilité thermique et à l'oxydation pour une longue durée de fluide.", "Faible pression de vapeur, protection anticorrosion et compatibilité circuits fermés."],
         },
         standards: "DIN 51522 (Heat Transfer Oils), ISO 6743-12 (L-QB), ASTM D3306, JIS K 2213 (Class 2), BS 2869 (Class 2), AGMA 9005-E02 (EP), SEB 181 222, suitable for closed-loop systems",
-        packaging: ["20 L"],
+        packaging: ["20 L", "200 L"],
       },
     },
   },
@@ -2064,7 +2064,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           fr: ["Protection anti-usure et capacité de charge prolongent la vie des engrenages.", "Stabilité thermique et à l'oxydation à haute température.", "Protection anticorrosion pour un fonctionnement fluide et silencieux."],
         },
         standards: "AGMA 9005-E02 (EP), DIN 51517-3 (CLP), ISO 12925-1 (CKD), U.S. Steel 224, Flender (AIST), David Brown S1.53.101 (E), Cincinnati Milacron P-74, GM LS-2, SEB 181 226, AIST 224, Bosch Rexroth RE 90220, FZG Test (A/8.3/90) > 12, Siemens MD, ZF TE-ML 07A/08/16B/17B/19B/21A",
-        packaging: ["20 L"],
+        packaging: ["20 L", "200 L"],
       },
       "Gearmax-320": {
         description: {
@@ -2086,7 +2086,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
           fr: ["Excellente capacité de charge sous haute pression.", "Protection anti-usure prolongeant la vie des engrenages et roulements.", "Stabilité thermique et protection anticorrosion assurent la fiabilité."],
         },
         standards: "ISO 12925-1 (CKD), AGMA 9005-E02 (EP), DIN 51517-3 (CLP), U.S. Steel 224, Flender (AIST), David Brown S1.53.101 (E), Cincinnati Milacron P-74, GM LS-2, MB 235.0, SEB 181 226, Voith 3.325-340, FZG Test (A/8.3/90) > 12, Bosch Rexroth RE 90220, Siemens MD, ZF TE-ML 07A/08/16B/17B/19B/21A",
-        packaging: ["20 L"],
+        packaging: ["20 L", "200 L"],
       },
     },
   },
