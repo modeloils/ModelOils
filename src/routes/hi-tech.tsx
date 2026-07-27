@@ -1804,7 +1804,7 @@ const CATEGORY_DATA: Record<string, CategoryData> = {
       { slug: "Gearmax-320", name: "Gearmax 320 Dişli Yağı", displayName: { en: "Gearmax 320 Gear Oil", tr: "Gearmax 320 Dişli Yağı", ru: "Gearmax 320 Редукторное масло", fa: "روغن دنده Gearmax 320", ar: "زيت تروس Gearmax 320", de: "Gearmax 320 Getriebeöl", fr: "Huile pour engrenages Gearmax 320" }, image: "/model-oils/images/hi-tech/disliler/Gearmax-320.jpeg" },
       { slug: "Power-Steering-Fluid", name: "Hidrolik Direksiyon Yağı", displayName: { en: "Power Steering Fluid", tr: "Hidrolik Direksiyon Yağı", ru: "Жидкость гидроусилителя руля", fa: "روغن هیدرولیک فرمان", ar: "سائل التوجيه المعزز", de: "Servolenkungsöl", fr: "Fluide de direction assistée" }, image: "/model-oils/images/hi-tech/disliler/power-steering-fluid.jpeg" },
       { slug: "ATF-DSG", name: "ATF DSG Şanzıman Yağı", displayName: { en: "ATF DSG Transmission Fluid", tr: "ATF DSG Şanzıman Yağı", ru: "Трансмиссионная жидкость ATF DSG", fa: "روغن گیربکس ATF DSG", ar: "سائل ناقل الحركة ATF DSG", de: "ATF DSG Getriebeöl", fr: "Fluide de transmission ATF DSG" }, image: "/model-oils/images/hi-tech/disliler/atf-dsg.jpeg" },
-      { slug: "ATF-Dexron-III", name: "ATF Dexron III Otomatik Şanzıman Yağı", displayName: { en: "ATF Dexron III Automatic Transmission Fluid", tr: "ATF Dexron III Otomatik Şanzıman Yağı", ru: "Жидкость АКПП ATF Dexron III", fa: "روغن گیربکس اتوماتیک ATF Dexron III", ar: "سائل ناقل حركة أوتوماتيكي ATF Dexron III", de: "ATF Dexron III Automatikgetriebeöl", fr: "Fluide de transmission automatique ATF Dexron III" }, image: "/model-oils/images/hi-tech/disliler/atf-dexron-3.jpeg" },
+      { slug: "ATF-Dexron-III", name: "ATF Dexron III Otomatik Şanzıman Yağı", displayName: { en: "ATF Dexron III Automatic Transmission Fluid", tr: "ATF Dexron III Otomatik Şanzıman Yağı", ru: "Жидкость АКПП ATF Dexron III", fa: "روغن گیربکس اتوماتیک ATF Dexron III", ar: "سائل ناقل حركة أوتوماتيكي ATF Dexron III", de: "ATF Dexron III Automatikgetriebeöl", fr: "Fluide de transmission automatique ATF Dexron III" }, image: "/model-oils/images/hi-tech/disliler/atf-dexron-3.jpeg?v=2" },
       { slug: "ATF-Dexron-VI", name: "ATF Dexron VI Otomatik Şanzıman Yağı", displayName: { en: "ATF Dexron VI Automatic Transmission Fluid", tr: "ATF Dexron VI Otomatik Şanzıman Yağı", ru: "Жидкость АКПП ATF Dexron VI", fa: "روغن گیربکس اتوماتیک ATF Dexron VI", ar: "سائل ناقل حركة أوتوماتيكي ATF Dexron VI", de: "ATF Dexron VI Automatikgetriebeöl", fr: "Fluide de transmission automatique ATF Dexron VI" }, image: "/model-oils/images/hi-tech/disliler/atf-dexron-vi.jpeg" },
       { slug: "ATF-Dexron-II", name: "ATF Dexron II Otomatik Şanzıman Yağı", displayName: { en: "ATF Dexron II Automatic Transmission Fluid", tr: "ATF Dexron II Otomatik Şanzıman Yağı", ru: "Жидкость АКПП ATF Dexron II", fa: "روغن گیربکس اتوماتیک ATF Dexron II", ar: "سائل ناقل حركة أوتوماتيكي ATF Dexron II", de: "ATF Dexron II Automatikgetriebeöl", fr: "Fluide de transmission automatique ATF Dexron II" }, image: "/model-oils/images/hi-tech/disliler/atf-dexron-ii.jpeg" },
       { slug: "ATF-CVT", name: "ATF CVT Şanzıman Yağı", displayName: { en: "ATF CVT Transmission Fluid", tr: "ATF CVT Şanzıman Yağı", ru: "Трансмиссионная жидкость ATF CVT", fa: "روغن گیربکس ATF CVT", ar: "سائل ناقل الحركة ATF CVT", de: "ATF CVT Getriebeöl", fr: "Fluide de transmission ATF CVT" }, image: "/model-oils/images/hi-tech/disliler/atf-cvt.jpeg" },
@@ -2811,8 +2811,14 @@ export function HiTechProduct() {
           <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
             {/* Circular product image — circle is the background, image floats on top */}
             <div className="flex w-full shrink-0 items-center justify-center lg:w-auto">
-              <button
-                onClick={() => setLightboxOpen(true)}
+              <a
+                href={product.image}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(event) => {
+                  event.preventDefault();
+                  setLightboxOpen(true);
+                }}
                 className="group relative flex h-64 w-64 cursor-zoom-in items-center justify-center sm:h-72 sm:w-72 lg:h-80 lg:w-80"
                 aria-label={t.hitech.zoomImage}
               >
@@ -2824,7 +2830,7 @@ export function HiTechProduct() {
                 <span className="absolute bottom-5 right-5 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-white/80 shadow transition-opacity group-hover:opacity-100 sm:opacity-0">
                   <ZoomIn className="h-4 w-4 text-gray-700" />
                 </span>
-              </button>
+              </a>
             </div>
 
             {/* Right: name + description */}
