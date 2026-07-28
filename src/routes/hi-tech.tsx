@@ -12,9 +12,11 @@ import flagshipImg from "@/assets/flagship.png";
 import antifreezeRadiatorCategoryImg from "@/assets/antifreeze-radiator-category.jpg?inline";
 import aviationMaintenanceCategoryImg from "@/assets/aviation-maintenance-category.jpg?inline";
 import greaseBearingCategoryImg from "@/assets/grease-bearing-category.jpg?inline";
+import industrialOilsCategoryImg from "@/assets/industrial-oils-category.jpg?inline";
 import lightCommercialCategoryImg from "@/assets/light-commercial-vehicles.jpg?inline";
 import marineYachtCategoryImg from "@/assets/marine-yacht-category.jpg?inline";
 import motorcycleCategoryImg from "@/assets/motorcycle-category.jpg?inline";
+import passengerCarCategoryImg from "@/assets/passenger-car-category.jpg?inline";
 import transmissionDifferentialCategoryImg from "@/assets/transmission-differential-category.jpg?inline";
 
 interface ProductItem {
@@ -2447,14 +2449,14 @@ const hitechCategorySlugs = [
 ];
 
 const hitechCategoryBgs = [
-  "https://images.unsplash.com/photo-1563826773-1e2b4b2cde42?w=600&q=80&auto=format&fit=crop", // black BMW in dark — binek araç
+  passengerCarCategoryImg, // supplied passenger car workshop image
   lightCommercialCategoryImg, // generated light commercial van
   "https://images.unsplash.com/photo-1754437954174-9662c997b661?w=600&q=80&auto=format&fit=crop", // modern semi-truck on dark backdrop — ağır hizmet
   motorcycleCategoryImg, // supplied motorcycle road image
   transmissionDifferentialCategoryImg, // transmission and differential gears with oil
   marineYachtCategoryImg, // centered luxury yacht — marine
   aviationMaintenanceCategoryImg, // aircraft turbine maintenance — aviation
-  "https://images.unsplash.com/photo-1511454493857-0a29f2c023c7?w=600&q=80&auto=format&fit=crop", // black metal industrial factory — endüstriyel
+  industrialOilsCategoryImg, // supplied lubricated industrial machinery image
   greaseBearingCategoryImg, // centered bearing surrounded by grease — gresler
   antifreezeRadiatorCategoryImg, // centered automotive radiator and coolant — antifriz
 ];
