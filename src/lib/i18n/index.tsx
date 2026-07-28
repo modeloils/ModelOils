@@ -1,5 +1,5 @@
 import type { ComponentProps, ReactNode } from "react";
-import { Link, useRouter, useRouterState } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { UI, PAGE_META, type PageKey } from "./ui";
 import { SITE_CONTENT } from "./content";
@@ -100,18 +100,11 @@ export function detectPreferredLocale(): Locale {
   return "en";
 }
 
-/** Toggle between English and Turkish, preserving the current page. */
+/** Switch languages while preserving the current page. */
 export function LanguageSwitcher({ className }: { className?: string }) {
-  const router = useRouter();
   const locale = useLocale();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const base = stripLocale(pathname);
-
-  function switchTo(next: Locale) {
-    if (next === locale) return;
-    setLocaleCookie(next);
-    router.navigate({ to: localePath(base, next) as LinkProps["to"] });
-  }
 
   const options = LOCALES;
   const activeIndex = options.indexOf(locale);
@@ -119,7 +112,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "language-switcher relative inline-flex items-center overflow-hidden rounded-md border border-border bg-secondary/40 p-0.5 text-xs font-semibold shadow-inner shadow-black/20",
+        "language-switcher relative inline-flex shrink-0 items-center overflow-hidden rounded-md border border-border bg-secondary/40 p-0.5 text-xs font-semibold shadow-inner shadow-black/20",
         className,
       )}
       role="group"
@@ -134,11 +127,11 @@ export function LanguageSwitcher({ className }: { className?: string }) {
         <span key={locale} className="language-switcher-shine" />
       </span>
       {options.map((opt) => (
-        <button
+        <a
           key={opt}
-          type="button"
-          onClick={() => switchTo(opt)}
-          aria-pressed={locale === opt}
+          href={localePath(base, opt)}
+          onClick={() => setLocaleCookie(opt)}
+          aria-current={locale === opt ? "page" : undefined}
           className={cn(
             "relative z-10 flex h-8 w-9 shrink-0 items-center justify-center rounded uppercase tracking-wide transition-colors duration-200",
             locale === opt
@@ -147,7 +140,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
           )}
         >
           {opt}
-        </button>
+        </a>
       ))}
     </div>
   );

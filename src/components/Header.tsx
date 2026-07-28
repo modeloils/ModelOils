@@ -19,7 +19,7 @@ export function Header() {
           />
         </LocaleLink>
 
-        <nav className="ml-3 hidden items-center gap-1 lg:flex">
+        <nav className="ml-3 hidden min-w-0 items-center gap-0.5 lg:flex">
           {NAV_LINKS.map((l) => (
             <LocaleLink
               key={l.to}
@@ -27,7 +27,7 @@ export function Header() {
               activeProps={{ className: "text-primary" }}
               inactiveProps={{ className: "text-muted-foreground" }}
               className={cn(
-                "relative rounded-md px-3 py-2 text-[15px] font-medium transition-colors hover:text-foreground",
+                "relative rounded-md px-2 py-2 text-sm font-medium transition-colors hover:text-foreground",
                 l.highlight && "text-foreground",
               )}
             >
@@ -45,7 +45,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="ml-auto flex items-center gap-2">
+        <div className="ml-auto flex shrink-0 items-center gap-2">
           <LanguageSwitcher className="hidden sm:inline-flex" />
           <button
             className="grid h-11 w-11 place-items-center rounded-md border border-border text-foreground lg:hidden"
