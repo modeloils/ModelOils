@@ -6,11 +6,13 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { pageHead, useTranslation, type Locale } from "@/lib/i18n";
+import tradeFairBoothImg from "@/assets/trade-fair-booth.jpg?inline";
 
 const MEDIA_ALBUMS = [
   {
     title: "Fuar",
     images: [
+      tradeFairBoothImg,
       "/model-oils/media/fuar/fuar-1.png",
       "/model-oils/media/fuar/fuar-2.png",
       "/model-oils/media/fuar/fuar3.png",

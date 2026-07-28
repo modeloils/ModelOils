@@ -10,9 +10,11 @@ import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
 import flagshipImg from "@/assets/flagship.png";
 import antifreezeRadiatorCategoryImg from "@/assets/antifreeze-radiator-category.jpg?inline";
+import aviationMaintenanceCategoryImg from "@/assets/aviation-maintenance-category.jpg?inline";
 import greaseBearingCategoryImg from "@/assets/grease-bearing-category.jpg?inline";
 import lightCommercialCategoryImg from "@/assets/light-commercial-vehicles.jpg?inline";
 import marineYachtCategoryImg from "@/assets/marine-yacht-category.jpg?inline";
+import transmissionDifferentialCategoryImg from "@/assets/transmission-differential-category.jpg?inline";
 
 interface ProductItem {
   slug: string;
@@ -2448,9 +2450,9 @@ const hitechCategoryBgs = [
   lightCommercialCategoryImg, // generated light commercial van
   "https://images.unsplash.com/photo-1754437954174-9662c997b661?w=600&q=80&auto=format&fit=crop", // modern semi-truck on dark backdrop — ağır hizmet
   "https://images.unsplash.com/photo-1692317785388-a7d076077d9d?w=600&q=80&auto=format&fit=crop", // motorcycle lit in dark — motosiklet
-  "https://images.unsplash.com/photo-1524514587686-e2909d726e9b?w=600&q=80&auto=format&fit=crop", // black metal gears close-up — dişli & transmisyon
+  transmissionDifferentialCategoryImg, // transmission and differential gears with oil
   marineYachtCategoryImg, // centered luxury yacht — marine
-  "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80&auto=format&fit=crop", // aircraft wing — aviation
+  aviationMaintenanceCategoryImg, // aircraft turbine maintenance — aviation
   "https://images.unsplash.com/photo-1511454493857-0a29f2c023c7?w=600&q=80&auto=format&fit=crop", // black metal industrial factory — endüstriyel
   greaseBearingCategoryImg, // centered bearing surrounded by grease — gresler
   antifreezeRadiatorCategoryImg, // centered automotive radiator and coolant — antifriz
