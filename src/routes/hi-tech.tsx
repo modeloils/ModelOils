@@ -2437,10 +2437,10 @@ const hitechCategorySlugs = [
   "Motosiklet-Yaglari",
   "Disli-ve-Transmisyon-Yaglari",
   "Deniz-Yaglari",
-  "Endustriyel-Yaglar",
-  "Antifrizler",
-  "Gresler",
   "Havacilik-Yaglari",
+  "Endustriyel-Yaglar",
+  "Gresler",
+  "Antifrizler",
 ];
 
 const hitechCategoryBgs = [
@@ -2450,10 +2450,10 @@ const hitechCategoryBgs = [
   "https://images.unsplash.com/photo-1692317785388-a7d076077d9d?w=600&q=80&auto=format&fit=crop", // motorcycle lit in dark — motosiklet
   "https://images.unsplash.com/photo-1524514587686-e2909d726e9b?w=600&q=80&auto=format&fit=crop", // black metal gears close-up — dişli & transmisyon
   marineYachtCategoryImg, // centered luxury yacht — marine
-  "https://images.unsplash.com/photo-1511454493857-0a29f2c023c7?w=600&q=80&auto=format&fit=crop", // black metal industrial factory — endüstriyel
-  antifreezeRadiatorCategoryImg, // centered automotive radiator and coolant — antifriz
-  greaseBearingCategoryImg, // centered bearing surrounded by grease — gresler
   "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80&auto=format&fit=crop", // aircraft wing — aviation
+  "https://images.unsplash.com/photo-1511454493857-0a29f2c023c7?w=600&q=80&auto=format&fit=crop", // black metal industrial factory — endüstriyel
+  greaseBearingCategoryImg, // centered bearing surrounded by grease — gresler
+  antifreezeRadiatorCategoryImg, // centered automotive radiator and coolant — antifriz
 ];
 
 const aviationCategoryNames: Record<Locale, string> = {
