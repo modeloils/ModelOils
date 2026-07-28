@@ -95,6 +95,7 @@ const en: SiteContent = {
       description: "Coolants for year-round cooling system protection across demanding climates.",
       packaging: "1L, 4L, 5L, 20L, 205L",
       image: `${ASSET_BASE}/hi-tech/antifreeze-3lt.png`,
+      slug: "Antifrizler",
     },
     {
       name: "Greases",
@@ -283,6 +284,7 @@ const tr: SiteContent = {
       description: "Zorlu iklimlerde yıl boyu soğutma sistemi koruması için soğutma sıvıları.",
       packaging: "1L, 4L, 5L, 20L, 205L",
       image: `${ASSET_BASE}/hi-tech/antifreeze-3lt.png`,
+      slug: "Antifrizler",
     },
     {
       name: "Gresler",
@@ -471,6 +473,7 @@ const ru: SiteContent = {
       description: "Охлаждающие жидкости для круглогодичной защиты системы охлаждения в суровых климатических условиях.",
       packaging: "1L, 4L, 5L, 20L, 205L",
       image: `${ASSET_BASE}/hi-tech/antifreeze-3lt.png`,
+      slug: "Antifrizler",
     },
     {
       name: "Смазки",
@@ -659,6 +662,7 @@ const fa: SiteContent = {
       description: "مایعات خنک‌کننده برای حفاظت از سیستم خنک‌کننده در تمام فصول در آب‌وهوای سخت.",
       packaging: "1L, 4L, 5L, 20L, 205L",
       image: `${ASSET_BASE}/hi-tech/antifreeze-3lt.png`,
+      slug: "Antifrizler",
     },
     {
       name: "گریس",
@@ -847,6 +851,7 @@ const ar: SiteContent = {
       description: "سوائل تبريد لحماية نظام التبريد على مدار العام في المناخات القاسية.",
       packaging: "1L, 4L, 5L, 20L, 205L",
       image: `${ASSET_BASE}/hi-tech/antifreeze-3lt.png`,
+      slug: "Antifrizler",
     },
     {
       name: "الشحوم",
@@ -1035,6 +1040,7 @@ const de: SiteContent = {
       description: "Kühlmittel für ganzjährigen Kühlsystemschutz in anspruchsvollen Klimazonen.",
       packaging: "1L, 4L, 5L, 20L, 205L",
       image: `${ASSET_BASE}/hi-tech/antifreeze-3lt.png`,
+      slug: "Antifrizler",
     },
     {
       name: "Schmierfette",
@@ -1223,6 +1229,7 @@ const fr: SiteContent = {
       description: "Liquides de refroidissement pour une protection toute l'année dans des climats exigeants.",
       packaging: "1L, 4L, 5L, 20L, 205L",
       image: `${ASSET_BASE}/hi-tech/antifreeze-3lt.png`,
+      slug: "Antifrizler",
     },
     {
       name: "Graisses",
