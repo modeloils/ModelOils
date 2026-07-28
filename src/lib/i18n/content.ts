@@ -100,6 +100,7 @@ const en: SiteContent = {
       name: "Greases",
       description: "Multipurpose lithium and EP greases for bearings, chassis, and heavy machinery.",
       packaging: "1L, 4L, 20L, 60L",
+      slug: "Gresler",
     },
     {
       name: "Brake Fluid / Specialty Fluids",
@@ -287,6 +288,7 @@ const tr: SiteContent = {
       name: "Gresler",
       description: "Rulmanlar, şasi ve ağır makineler için çok amaçlı lityum ve EP gresleri.",
       packaging: "1L, 4L, 20L, 60L",
+      slug: "Gresler",
     },
     {
       name: "Fren Hidroliği / Özel Akışkanlar",
@@ -474,6 +476,7 @@ const ru: SiteContent = {
       name: "Смазки",
       description: "Многоцелевые литиевые и EP-смазки для подшипников, шасси и тяжёлой техники.",
       packaging: "1L, 4L, 20L, 60L",
+      slug: "Gresler",
     },
     {
       name: "Тормозная жидкость / Специальные жидкости",
@@ -661,6 +664,7 @@ const fa: SiteContent = {
       name: "گریس",
       description: "گریس‌های لیتیوم و EP چندمنظوره برای بلبرینگ‌ها، شاسی و ماشین‌آلات سنگین.",
       packaging: "1L, 4L, 20L, 60L",
+      slug: "Gresler",
     },
     {
       name: "مایع ترمز / مایعات ویژه",
@@ -848,6 +852,7 @@ const ar: SiteContent = {
       name: "الشحوم",
       description: "شحوم ليثيوم وEP متعددة الأغراض للمحامل والهيكل والآلات الثقيلة.",
       packaging: "1L, 4L, 20L, 60L",
+      slug: "Gresler",
     },
     {
       name: "سائل الفرامل / السوائل الخاصة",
@@ -1035,6 +1040,7 @@ const de: SiteContent = {
       name: "Schmierfette",
       description: "Mehrzweck-Lithium- und EP-Fette für Lager, Fahrgestell und schwere Maschinen.",
       packaging: "1L, 4L, 20L, 60L",
+      slug: "Gresler",
     },
     {
       name: "Bremsflüssigkeit / Spezialflüssigkeiten",
@@ -1222,6 +1228,7 @@ const fr: SiteContent = {
       name: "Graisses",
       description: "Graisses lithium et EP polyvalentes pour roulements, châssis et machines lourdes.",
       packaging: "1L, 4L, 20L, 60L",
+      slug: "Gresler",
     },
     {
       name: "Liquide de frein / Fluides spéciaux",
