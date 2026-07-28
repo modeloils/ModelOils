@@ -9,6 +9,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
 import flagshipImg from "@/assets/flagship.png";
+import antifreezeRadiatorCategoryImg from "@/assets/antifreeze-radiator-category.jpg?inline";
 import lightCommercialCategoryImg from "@/assets/light-commercial-vehicles.jpg?inline";
 import marineYachtCategoryImg from "@/assets/marine-yacht-category.jpg?inline";
 
@@ -2449,7 +2450,7 @@ const hitechCategoryBgs = [
   "https://images.unsplash.com/photo-1524514587686-e2909d726e9b?w=600&q=80&auto=format&fit=crop", // black metal gears close-up — dişli & transmisyon
   marineYachtCategoryImg, // centered luxury yacht — marine
   "https://images.unsplash.com/photo-1511454493857-0a29f2c023c7?w=600&q=80&auto=format&fit=crop", // black metal industrial factory — endüstriyel
-  "https://images.unsplash.com/photo-1762172189607-91ee2d5f1e34?w=600&q=80&auto=format&fit=crop", // frost crystals dark — antifriz
+  antifreezeRadiatorCategoryImg, // centered automotive radiator and coolant — antifriz
   "/model-oils/images/hi-tech/gresler/Calsol.jpeg", // centered HI-TECH grease product — gresler
   "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80&auto=format&fit=crop", // aircraft wing — aviation
 ];
