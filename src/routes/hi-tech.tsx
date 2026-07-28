@@ -42,6 +42,43 @@ function resolveName(item: ProductItem, locale: string): string {
   return item.displayName?.[locale] ?? item.displayName?.["en"] ?? item.name;
 }
 
+const packageSizePattern =
+  /(\d+(?:[.,]\d+)?)\s*(?:L(?:IT(?:ER|RE)S?)?|KG|KILOGRAMS?)\b/gi;
+
+function smallestPackageSize(values: string[]): number | undefined {
+  const sizes = values.flatMap((value) => {
+    const matches = [...value.matchAll(packageSizePattern)];
+    packageSizePattern.lastIndex = 0;
+    return matches.map((match) => Number.parseFloat(match[1].replace(",", ".")));
+  });
+
+  return sizes.length > 0 ? Math.min(...sizes) : undefined;
+}
+
+function sortProductsByPackage(
+  products: ProductItem[],
+  details: Record<string, ProductDetail>,
+  locale: string,
+): ProductItem[] {
+  return [...products].sort((a, b) => {
+    const aSize =
+      smallestPackageSize([a.name]) ??
+      smallestPackageSize(details[a.slug]?.packaging ?? []) ??
+      Number.POSITIVE_INFINITY;
+    const bSize =
+      smallestPackageSize([b.name]) ??
+      smallestPackageSize(details[b.slug]?.packaging ?? []) ??
+      Number.POSITIVE_INFINITY;
+
+    if (aSize !== bSize) return aSize - bSize;
+
+    return resolveName(a, locale).localeCompare(resolveName(b, locale), locale, {
+      sensitivity: "base",
+      numeric: true,
+    });
+  });
+}
+
 interface ProductDetail {
   description: LocaleText;
   features: LocaleTextArray;
@@ -2685,7 +2722,8 @@ export function HiTechSubcategory() {
   if (product && catData?.subcategories) {
     const subData = catData.subcategories[product];
     if (subData) {
-      const cols = subData.products.length <= 3 ? "lg:grid-cols-3" : "lg:grid-cols-4";
+      const sortedProducts = sortProductsByPackage(subData.products, catData.details, locale);
+      const cols = sortedProducts.length <= 3 ? "lg:grid-cols-3" : "lg:grid-cols-4";
       return (
         <SiteLayout>
           <div className="min-h-[55vh] bg-background py-20 lg:py-24">
@@ -2699,7 +2737,7 @@ export function HiTechSubcategory() {
               </LocaleLink>
               <SectionHeading eyebrow="HI-TECH" title={product ? (subcatTranslations[product] ?? subData.title) : subData.title} />
               <div className={`mt-10 grid gap-6 sm:grid-cols-2 ${cols}`}>
-                {subData.products.map((p) => (
+                {sortedProducts.map((p) => (
                   <LocaleLink
                     key={p.slug}
                     to={`/hi-tech/${category}/${p.slug}`}
@@ -2776,7 +2814,8 @@ export function HiTechSubcategory() {
 
   // Regular product grid (all other categories)
   if (catData) {
-    const cols = catData.products.length <= 3 ? "lg:grid-cols-3" : "lg:grid-cols-4";
+    const sortedProducts = sortProductsByPackage(catData.products, catData.details, locale);
+    const cols = sortedProducts.length <= 3 ? "lg:grid-cols-3" : "lg:grid-cols-4";
     return (
       <SiteLayout>
         <div className="min-h-[55vh] bg-background py-20 lg:py-24">
@@ -2785,7 +2824,7 @@ export function HiTechSubcategory() {
             <SectionHeading eyebrow="HI-TECH" title={translatedCatTitle ?? ""} />
             {catData.products.length > 0 ? (
               <div className={`mt-10 grid gap-6 sm:grid-cols-2 ${cols}`}>
-                {catData.products.map((p) => (
+                {sortedProducts.map((p) => (
                   <LocaleLink
                     key={p.slug}
                     to={`/hi-tech/${category}/${p.slug}`}
