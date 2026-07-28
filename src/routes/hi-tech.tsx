@@ -2860,14 +2860,9 @@ export function HiTechProduct() {
           <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
             {/* Circular product image — circle is the background, image floats on top */}
             <div className="flex w-full shrink-0 items-center justify-center lg:w-auto">
-              <a
-                href={product.image}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(event) => {
-                  event.preventDefault();
-                  setLightboxOpen(true);
-                }}
+              <button
+                type="button"
+                onClick={() => setLightboxOpen(true)}
                 className="group relative flex h-64 w-64 cursor-zoom-in items-center justify-center sm:h-72 sm:w-72 lg:h-80 lg:w-80"
                 aria-label={t.hitech.zoomImage}
               >
@@ -2879,7 +2874,7 @@ export function HiTechProduct() {
                 <span className="absolute bottom-5 right-5 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-white/80 shadow transition-opacity group-hover:opacity-100 sm:opacity-0">
                   <ZoomIn className="h-4 w-4 text-gray-700" />
                 </span>
-              </a>
+              </button>
             </div>
 
             {/* Right: name + description */}
