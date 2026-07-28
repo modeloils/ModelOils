@@ -14,6 +14,7 @@ import aviationMaintenanceCategoryImg from "@/assets/aviation-maintenance-catego
 import greaseBearingCategoryImg from "@/assets/grease-bearing-category.jpg?inline";
 import lightCommercialCategoryImg from "@/assets/light-commercial-vehicles.jpg?inline";
 import marineYachtCategoryImg from "@/assets/marine-yacht-category.jpg?inline";
+import motorcycleCategoryImg from "@/assets/motorcycle-category.jpg?inline";
 import transmissionDifferentialCategoryImg from "@/assets/transmission-differential-category.jpg?inline";
 
 interface ProductItem {
@@ -2449,7 +2450,7 @@ const hitechCategoryBgs = [
   "https://images.unsplash.com/photo-1563826773-1e2b4b2cde42?w=600&q=80&auto=format&fit=crop", // black BMW in dark — binek araç
   lightCommercialCategoryImg, // generated light commercial van
   "https://images.unsplash.com/photo-1754437954174-9662c997b661?w=600&q=80&auto=format&fit=crop", // modern semi-truck on dark backdrop — ağır hizmet
-  "https://images.unsplash.com/photo-1692317785388-a7d076077d9d?w=600&q=80&auto=format&fit=crop", // motorcycle lit in dark — motosiklet
+  motorcycleCategoryImg, // supplied motorcycle road image
   transmissionDifferentialCategoryImg, // transmission and differential gears with oil
   marineYachtCategoryImg, // centered luxury yacht — marine
   aviationMaintenanceCategoryImg, // aircraft turbine maintenance — aviation
