@@ -1,6 +1,6 @@
 ﻿import { createFileRoute, Outlet } from "@tanstack/react-router";
 import { useParams } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { createPortal } from "react-dom";
 import { ArrowRight, CheckCircle2, ChevronLeft, Flame, X, ZoomIn } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
@@ -2600,70 +2600,10 @@ function BackToCategories() {
   );
 }
 
-function ProductImageLightbox({
-  product,
-  locale,
-  onClose,
-}: {
-  product: ProductItem | null;
-  locale: Locale;
-  onClose: () => void;
-}) {
-  useEffect(() => {
-    if (!product) return;
-
-    const previousOverflow = document.body.style.overflow;
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") onClose();
-    };
-
-    document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      document.body.style.overflow = previousOverflow;
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [product, onClose]);
-
-  if (!product || typeof document === "undefined") return null;
-
-  return createPortal(
-    <div
-      className="fixed inset-0 z-[100] grid h-[100dvh] w-screen cursor-zoom-out place-items-center overflow-hidden bg-black/90 p-4"
-      onClick={onClose}
-      role="dialog"
-      aria-modal="true"
-      aria-label={resolveName(product, locale)}
-    >
-      <div
-        className="relative flex max-h-full max-w-full items-center justify-center"
-        onClick={(event) => event.stopPropagation()}
-      >
-        <img
-          src={product.image}
-          alt={resolveName(product, locale)}
-          className="block h-auto max-h-[calc(100dvh-2rem)] w-auto max-w-[calc(100vw-2rem)] object-contain drop-shadow-2xl"
-        />
-        <button
-          type="button"
-          onClick={onClose}
-          className="fixed right-4 top-4 z-[101] flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-100"
-          aria-label="Close"
-        >
-          <X className="h-5 w-5 text-gray-800" />
-        </button>
-      </div>
-    </div>,
-    document.body,
-  );
-}
-
 export function HiTechSubcategory() {
   const { category, product } = useParams({ strict: false });
   const { t, data, locale } = useTranslation();
   const catData = category ? CATEGORY_DATA[category] : undefined;
-  const [lightboxProduct, setLightboxProduct] = useState<ProductItem | null>(null);
 
   const slugToTranslatedName = Object.fromEntries(
     data.categories.map((item) => [item.slug, item.name]),
@@ -2687,11 +2627,6 @@ export function HiTechSubcategory() {
       const cols = subData.products.length <= 3 ? "lg:grid-cols-3" : "lg:grid-cols-4";
       return (
         <SiteLayout>
-          <ProductImageLightbox
-            product={lightboxProduct}
-            locale={locale}
-            onClose={() => setLightboxProduct(null)}
-          />
           <div className="min-h-[55vh] bg-background py-20 lg:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <LocaleLink
@@ -2704,12 +2639,10 @@ export function HiTechSubcategory() {
               <SectionHeading eyebrow="HI-TECH" title={product ? (subcatTranslations[product] ?? subData.title) : subData.title} />
               <div className={`mt-10 grid gap-6 sm:grid-cols-2 ${cols}`}>
                 {subData.products.map((p) => (
-                  <button
+                  <LocaleLink
                     key={p.slug}
-                    type="button"
-                    onClick={() => setLightboxProduct(p)}
-                    className="group flex cursor-zoom-in flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] text-left shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
-                    aria-label={`${t.hitech.zoomImage}: ${resolveName(p, locale)}`}
+                    to={`/hi-tech/${category}/${p.slug}`}
+                    className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                   >
                     <div className="flex items-center justify-center p-8">
                       <img
@@ -2725,7 +2658,7 @@ export function HiTechSubcategory() {
                         {resolveName(p, locale)}
                       </h3>
                     </div>
-                  </button>
+                  </LocaleLink>
                 ))}
               </div>
             </div>
@@ -2745,11 +2678,6 @@ export function HiTechSubcategory() {
     const subcatEntries = Object.entries(catData.subcategories);
     return (
       <SiteLayout>
-        <ProductImageLightbox
-          product={lightboxProduct}
-          locale={locale}
-          onClose={() => setLightboxProduct(null)}
-        />
         <div className="min-h-[55vh] bg-background py-20 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <BackToCategories />
@@ -2797,12 +2725,10 @@ export function HiTechSubcategory() {
             {catData.products.length > 0 ? (
               <div className={`mt-10 grid gap-6 sm:grid-cols-2 ${cols}`}>
                 {catData.products.map((p) => (
-                  <button
+                  <LocaleLink
                     key={p.slug}
-                    type="button"
-                    onClick={() => setLightboxProduct(p)}
-                    className="group flex cursor-zoom-in flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] text-left shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
-                    aria-label={`${t.hitech.zoomImage}: ${resolveName(p, locale)}`}
+                    to={`/hi-tech/${category}/${p.slug}`}
+                    className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                   >
                     <div className="flex items-center justify-center p-8">
                       <img
@@ -2818,7 +2744,7 @@ export function HiTechSubcategory() {
                         {resolveName(p, locale)}
                       </h3>
                     </div>
-                  </button>
+                  </LocaleLink>
                 ))}
               </div>
             ) : (
