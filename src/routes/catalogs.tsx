@@ -11,36 +11,43 @@ type CatalogLanguage = keyof typeof HI_TECH_CATALOGS;
 const catalogCopy: Record<Locale, Record<CatalogLanguage, { language: string; title: string }>> = {
   en: {
     en: { language: "English", title: "HI-TECH English Catalogue" },
+    tr: { language: "Turkish", title: "HI-TECH Turkish Catalogue" },
     ru: { language: "Russian", title: "HI-TECH Russian Catalogue" },
     fa: { language: "Persian", title: "HI-TECH Persian Catalogue" },
   },
   tr: {
     en: { language: "İngilizce", title: "HI-TECH İngilizce Katalog" },
+    tr: { language: "Türkçe", title: "HI-TECH Türkçe Katalog" },
     ru: { language: "Rusça", title: "HI-TECH Rusça Katalog" },
     fa: { language: "Farsça", title: "HI-TECH Farsça Katalog" },
   },
   ru: {
     en: { language: "Английский", title: "Английский каталог HI-TECH" },
+    tr: { language: "Турецкий", title: "Турецкий каталог HI-TECH" },
     ru: { language: "Русский", title: "Русский каталог HI-TECH" },
     fa: { language: "Персидский", title: "Персидский каталог HI-TECH" },
   },
   fa: {
     en: { language: "انگلیسی", title: "کاتالوگ انگلیسی HI-TECH" },
+    tr: { language: "ترکی", title: "کاتالوگ ترکی HI-TECH" },
     ru: { language: "روسی", title: "کاتالوگ روسی HI-TECH" },
     fa: { language: "فارسی", title: "کاتالوگ فارسی HI-TECH" },
   },
   ar: {
     en: { language: "الإنجليزية", title: "كتالوج HI-TECH باللغة الإنجليزية" },
+    tr: { language: "التركية", title: "كتالوج HI-TECH باللغة التركية" },
     ru: { language: "الروسية", title: "كتالوج HI-TECH باللغة الروسية" },
     fa: { language: "الفارسية", title: "كتالوج HI-TECH باللغة الفارسية" },
   },
   de: {
     en: { language: "Englisch", title: "Englischer HI-TECH-Katalog" },
+    tr: { language: "Türkisch", title: "Türkischer HI-TECH-Katalog" },
     ru: { language: "Russisch", title: "Russischer HI-TECH-Katalog" },
     fa: { language: "Persisch", title: "Persischer HI-TECH-Katalog" },
   },
   fr: {
     en: { language: "Anglais", title: "Catalogue HI-TECH en anglais" },
+    tr: { language: "Turc", title: "Catalogue HI-TECH en turc" },
     ru: { language: "Russe", title: "Catalogue HI-TECH en russe" },
     fa: { language: "Persan", title: "Catalogue HI-TECH en persan" },
   },

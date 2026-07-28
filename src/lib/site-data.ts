@@ -25,9 +25,10 @@ export const PACKAGING = ["1L", "3L", "4L", "5L", "7L", "10.5L", "20L", "200L"];
 
 /** The owned HI-TECH catalogue, selected to match the visitor's language where available. */
 export const HI_TECH_CATALOGS = {
-  en: `${ASSET_BASE}/docs/hi-tech/hi-tech-product-service-catalogue-en-v8.pdf`,
-  ru: `${ASSET_BASE}/docs/hi-tech/hi-tech-product-service-catalogue-ru-v8.pdf`,
-  fa: `${ASSET_BASE}/docs/hi-tech/hi-tech-product-service-catalogue-fa-v8.pdf`,
+  en: `${ASSET_BASE}/docs/hi-tech/hi-tech-final-catalogue-en.pdf`,
+  tr: `${ASSET_BASE}/docs/hi-tech/hi-tech-final-catalogue-tr.pdf`,
+  ru: `${ASSET_BASE}/docs/hi-tech/hi-tech-final-catalogue-ru.pdf`,
+  fa: `${ASSET_BASE}/docs/hi-tech/hi-tech-final-catalogue-fa.pdf`,
 } as const;
 
 // Translatable structured content (categories, products, export cards, trust points,
