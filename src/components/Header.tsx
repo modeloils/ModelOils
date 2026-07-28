@@ -33,8 +33,10 @@ export function Header() {
             >
               {l.key === "hiTech" ? (
                 <span className="flex flex-col items-center leading-none">
-                  <span>HI-TECH</span>
-                  <span className="mt-0.5 text-[11px] font-semibold">{t.nav.hiTech.replace("HI-TECH ", "")}</span>
+                  <span className="whitespace-nowrap">HI-TECH OIL</span>
+                  <span className="mt-0.5 text-[11px] font-semibold">
+                    {t.nav.hiTech.replace("HI-TECH OIL ", "")}
+                  </span>
                 </span>
               ) : (
                 t.nav[l.key]
@@ -68,8 +70,10 @@ export function Header() {
               >
                 {l.key === "hiTech" ? (
                   <span className="flex flex-col leading-none">
-                    <span>HI-TECH</span>
-                    <span className="mt-1 text-xs font-semibold">{t.nav.hiTech.replace("HI-TECH ", "")}</span>
+                    <span className="whitespace-nowrap">HI-TECH OIL</span>
+                    <span className="mt-1 text-xs font-semibold">
+                      {t.nav.hiTech.replace("HI-TECH OIL ", "")}
+                    </span>
                   </span>
                 ) : (
                   t.nav[l.key]

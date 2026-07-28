@@ -174,7 +174,7 @@ export interface UIStrings {
 
 const en: UIStrings = {
   nav: {
-    hiTech: "HI-TECH OIL",
+    hiTech: "HI-TECH OIL Products",
     catalogs: "Catalogues",
     industries: "Industries",
     export: "Export",
@@ -417,7 +417,7 @@ const en: UIStrings = {
 
 const tr: UIStrings = {
   nav: {
-    hiTech: "HI-TECH OIL",
+    hiTech: "HI-TECH OIL Ürünler",
     catalogs: "Kataloglar",
     industries: "Sektörler",
     export: "İhracat",
@@ -658,7 +658,7 @@ const tr: UIStrings = {
 
 const ru: UIStrings = {
   nav: {
-    hiTech: "HI-TECH OIL",
+    hiTech: "HI-TECH OIL Продукты",
     catalogs: "Каталоги",
     industries: "Отрасли",
     export: "Экспорт",
@@ -901,7 +901,7 @@ const ru: UIStrings = {
 
 const fa: UIStrings = {
   nav: {
-    hiTech: "HI-TECH OIL",
+    hiTech: "HI-TECH OIL محصولات",
     catalogs: "کاتالوگ‌ها",
     industries: "صنایع",
     export: "صادرات",
@@ -1144,7 +1144,7 @@ const fa: UIStrings = {
 
 const ar: UIStrings = {
   nav: {
-    hiTech: "HI-TECH OIL",
+    hiTech: "HI-TECH OIL منتجات",
     catalogs: "الكتالوجات",
     industries: "الصناعات",
     export: "التصدير",
@@ -1387,7 +1387,7 @@ const ar: UIStrings = {
 
 const de: UIStrings = {
   nav: {
-    hiTech: "HI-TECH OIL",
+    hiTech: "HI-TECH OIL Produkte",
     catalogs: "Kataloge",
     industries: "Branchen",
     export: "Export",
@@ -1624,7 +1624,7 @@ const de: UIStrings = {
 
 const fr: UIStrings = {
   nav: {
-    hiTech: "HI-TECH OIL",
+    hiTech: "HI-TECH OIL Produits",
     catalogs: "Catalogues",
     industries: "Secteurs",
     export: "Export",
