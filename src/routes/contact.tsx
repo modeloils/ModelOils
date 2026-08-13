@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Mail, MessageCircle, Globe2, Clock } from "lucide-react";
+import { Mail, MessageCircle, Globe2, Clock, Building2 } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { PageHero } from "@/components/PageHero";
 import { QuoteForm } from "@/components/QuoteForm";
@@ -28,6 +28,7 @@ export function Contact() {
       <section className="bg-background py-16 lg:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.5fr] lg:px-8">
           <div className="space-y-4">
+            <ContactItem icon={Building2} title={t.contact.legalName} value={CONTACT.legalName} wrap />
             <ContactItem icon={Mail} title={t.contact.email} value={CONTACT.email} />
             <ContactItem icon={MessageCircle} title={t.contact.whatsapp} value={CONTACT.phone} />
             <ContactItem icon={Globe2} title={t.contact.exportInquiries} value={t.contact.exportInquiriesValue} />
@@ -49,10 +50,12 @@ function ContactItem({
   icon: Icon,
   title,
   value,
+  wrap = false,
 }: {
   icon: typeof Mail;
   title: string;
   value: string;
+  wrap?: boolean;
 }) {
   return (
     <div className="flex items-center gap-4 rounded-xl border border-border bg-card/60 p-5">
@@ -61,7 +64,7 @@ function ContactItem({
       </span>
       <div className="min-w-0">
         <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{title}</p>
-        <p className="truncate text-sm font-medium text-foreground">{value}</p>
+        <p className={`text-sm font-medium text-foreground ${wrap ? "break-words" : "truncate"}`}>{value}</p>
       </div>
     </div>
   );
