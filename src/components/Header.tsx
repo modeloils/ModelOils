@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { NAV_LINKS } from "@/lib/site-data";
+import { Menu, X, Instagram } from "lucide-react";
+import { CONTACT, NAV_LINKS } from "@/lib/site-data";
 import { LocaleLink, LanguageSwitcher, useTranslation } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
@@ -43,6 +43,15 @@ export function Header() {
               )}
             </LocaleLink>
           ))}
+          <a
+            href={CONTACT.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="ml-1 grid h-9 w-9 shrink-0 place-items-center rounded-md text-muted-foreground transition-colors hover:text-foreground"
+          >
+            <Instagram className="h-[18px] w-[18px]" />
+          </a>
         </nav>
 
         <div className="ml-auto flex shrink-0 items-center gap-2">
@@ -80,6 +89,15 @@ export function Header() {
                 )}
               </LocaleLink>
             ))}
+            <a
+              href={CONTACT.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="flex min-h-[44px] items-center gap-2 rounded-md px-3 py-3 text-sm font-medium text-foreground"
+            >
+              <Instagram className="h-4 w-4 shrink-0" /> Instagram
+            </a>
             <div className="mt-2 flex items-center justify-between gap-2">
               <LanguageSwitcher />
             </div>

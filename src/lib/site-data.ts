@@ -7,6 +7,7 @@ export const CONTACT = {
   whatsapp: "https://wa.me/905334567975?text=Hello,%20I%27m%20interested%20in%20a%20Model%20Oils%20quote.",
   address: "Ucevler Mah. Izmir Yolu Cad. No: 241/334, Nilufer / Bursa, Turkiye",
   hours: "Mon-Fri: 09:00-18:00 (UTC+3)",
+  instagram: "https://www.instagram.com/modeloils/",
 } as const;
 
 import type { NavKey } from "./i18n/ui";
