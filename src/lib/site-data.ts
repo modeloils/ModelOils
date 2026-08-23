@@ -33,6 +33,12 @@ export const HI_TECH_CATALOGS = {
   fa: `${ASSET_BASE}/docs/hi-tech/hi-tech-final-catalogue-fa.pdf`,
 } as const;
 
+/** Yokohama catalogues, distributed by Model Petrol. One file per product line, not per language. */
+export const YOKOHAMA_CATALOGS = {
+  motorOil: `${ASSET_BASE}/docs/yokohama/yokohama-motor-oil-catalogue-en.pdf`,
+  volt: `${ASSET_BASE}/docs/yokohama/yokohama-volt-battery-catalogue-en.pdf`,
+} as const;
+
 // Translatable structured content (categories, products, export cards, trust points,
 // industries, badges, markets) now lives in ./i18n/content.ts, keyed by locale.
 // Types are re-exported here so existing imports keep working.
