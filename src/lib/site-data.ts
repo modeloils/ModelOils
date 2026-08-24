@@ -12,8 +12,14 @@ export const CONTACT = {
 
 import type { NavKey } from "./i18n/ui";
 
-export const NAV_LINKS: { key: NavKey; to: string; highlight: boolean }[] = [
-  { key: "products", to: "/products", highlight: true },
+export const NAV_LINKS: {
+  key: NavKey;
+  to: string;
+  highlight: boolean;
+  brand?: "YOKOHAMA" | "HI-TECH";
+}[] = [
+  { key: "products", to: "/products/yokohama", highlight: true, brand: "YOKOHAMA" },
+  { key: "products", to: "/products/hi-tech", highlight: true, brand: "HI-TECH" },
   { key: "catalogs", to: "/catalogs", highlight: false },
   { key: "industries", to: "/industries", highlight: false },
   { key: "export", to: "/export", highlight: false },

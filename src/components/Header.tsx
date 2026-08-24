@@ -19,7 +19,7 @@ export function Header() {
           />
         </LocaleLink>
 
-        <nav className="ml-3 hidden min-w-0 items-center gap-0.5 lg:flex">
+        <nav dir="ltr" className="ml-3 hidden min-w-0 items-center gap-0.5 lg:flex">
           {NAV_LINKS.map((l) => (
             <LocaleLink
               key={l.to}
@@ -31,9 +31,9 @@ export function Header() {
                 l.highlight && "text-foreground",
               )}
             >
-              {l.key === "products" ? (
+              {l.brand ? (
                 <span className="flex flex-col items-center leading-none">
-                  <span className="whitespace-nowrap">YOKOHAMA &amp; HI-TECH</span>
+                  <span className="whitespace-nowrap">{l.brand}</span>
                   <span className="mt-0.5 text-[11px] font-semibold">
                     {t.nav.products}
                   </span>
@@ -77,9 +77,9 @@ export function Header() {
                 activeProps={{ className: "bg-secondary text-primary" }}
                 className="flex min-h-[44px] items-center justify-between rounded-md px-3 py-3 text-sm font-medium text-foreground"
               >
-                {l.key === "products" ? (
+                {l.brand ? (
                   <span className="flex flex-col leading-none">
-                    <span className="whitespace-nowrap">YOKOHAMA &amp; HI-TECH</span>
+                    <span className="whitespace-nowrap">{l.brand}</span>
                     <span className="mt-1 text-xs font-semibold">
                       {t.nav.products}
                     </span>
