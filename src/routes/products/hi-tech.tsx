@@ -2582,6 +2582,7 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
   const { key: brandKey, base } = useBrand();
   const landing = useBrandLanding();
   const art = useBrandArtwork(hiTechBg, flagshipImg);
+  const isYokohama = brandKey === "yokohama";
   // "Premium Own Brand" is only true of HI-TECH; the distributed brand drops it.
   const badges = brandKey === "yokohama" ? data.hitechBadges.slice(1) : data.hitechBadges;
   const translatedNames = Object.fromEntries(
@@ -2600,7 +2601,7 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
   return (
     <SiteLayout>
       <div
-        className="bg-background bg-cover bg-center bg-no-repeat"
+        className={`${isYokohama ? "yokohama-theme" : ""} bg-background bg-cover bg-center bg-no-repeat`}
         style={{ backgroundImage: `url(${art.backdrop})` }}
       >
         <div className="bg-background/80 pt-6 backdrop-blur-[1px]">
@@ -2612,7 +2613,7 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
         <section id="kategorilerimiz" className="border-b border-border bg-background/80 py-20 backdrop-blur-[1px] lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading eyebrow={landing.rangeEyebrow} title={landing.rangeTitle} />
-            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-[repeat(20,minmax(0,1fr))]">
+            <div className="yokohama-accent-line mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-[repeat(20,minmax(0,1fr))]">
               {categories.map((category) => (
                 <LocaleLink
                   key={category.slug}
@@ -2656,7 +2657,9 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
               <ul className="mt-6 space-y-4">
                 {landing.bullets.map((b) => (
                   <li key={b} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                    <CheckCircle2
+                      className={`mt-0.5 h-5 w-5 shrink-0 ${isYokohama ? "text-[var(--yokohama-green)]" : "text-primary"}`}
+                    />
                     {b}
                   </li>
                 ))}
@@ -2727,9 +2730,14 @@ function BackToCategories() {
 
 export function HiTechSubcategory() {
   const { category, product } = useParams({ strict: false });
-  const { base } = useBrand();
+  const { key: brandKey, base } = useBrand();
   const { t, data, locale } = useTranslation();
   const catData = category ? CATEGORY_DATA[category] : undefined;
+  const isYokohama = brandKey === "yokohama";
+  const brandLabel = isYokohama ? "YOKOHAMA" : "HI-TECH";
+  const pageClassName = isYokohama
+    ? "yokohama-theme yokohama-page-surface min-h-[55vh] py-20 lg:py-24"
+    : "min-h-[55vh] bg-background py-20 lg:py-24";
 
   const slugToTranslatedName = Object.fromEntries(
     data.categories.map((item) => [item.slug, item.name]),
@@ -2754,7 +2762,7 @@ export function HiTechSubcategory() {
       const cols = sortedProducts.length <= 3 ? "lg:grid-cols-3" : "lg:grid-cols-4";
       return (
         <SiteLayout>
-          <div className="min-h-[55vh] bg-background py-20 lg:py-24">
+          <div className={pageClassName}>
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <LocaleLink
                 to={`${base}/${category}`}
@@ -2763,7 +2771,7 @@ export function HiTechSubcategory() {
                 <ChevronLeft className="h-4 w-4 shrink-0 rtl:rotate-180" />
                 {translatedCatTitle}
               </LocaleLink>
-              <SectionHeading eyebrow="HI-TECH" title={product ? (subcatTranslations[product] ?? subData.title) : subData.title} />
+              <SectionHeading eyebrow={brandLabel} title={product ? (subcatTranslations[product] ?? subData.title) : subData.title} />
               <div className={`mt-10 grid gap-6 sm:grid-cols-2 ${cols}`}>
                 {sortedProducts.map((p) => (
                   <LocaleLink
@@ -2805,10 +2813,10 @@ export function HiTechSubcategory() {
     const subcatEntries = Object.entries(catData.subcategories);
     return (
       <SiteLayout>
-        <div className="min-h-[55vh] bg-background py-20 lg:py-24">
+        <div className={pageClassName}>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <BackToCategories />
-            <SectionHeading eyebrow="HI-TECH" title={translatedCatTitle ?? ""} />
+            <SectionHeading eyebrow={brandLabel} title={translatedCatTitle ?? ""} />
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {subcatEntries.map(([slug, sub]) => (
                 <LocaleLink
@@ -2846,10 +2854,10 @@ export function HiTechSubcategory() {
     const cols = sortedProducts.length <= 3 ? "lg:grid-cols-3" : "lg:grid-cols-4";
     return (
       <SiteLayout>
-        <div className="min-h-[55vh] bg-background py-20 lg:py-24">
+        <div className={pageClassName}>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <BackToCategories />
-            <SectionHeading eyebrow="HI-TECH" title={translatedCatTitle ?? ""} />
+            <SectionHeading eyebrow={brandLabel} title={translatedCatTitle ?? ""} />
             {catData.products.length > 0 ? (
               <div className={`mt-10 grid gap-6 sm:grid-cols-2 ${cols}`}>
                 {sortedProducts.map((p) => (
@@ -2892,16 +2900,18 @@ export function HiTechSubcategory() {
 
   return (
     <SiteLayout>
-      <div className="min-h-[55vh] bg-background" />
+      <div className={isYokohama ? "yokohama-theme yokohama-page-surface min-h-[55vh]" : "min-h-[55vh] bg-background"} />
     </SiteLayout>
   );
 }
 
 export function HiTechProduct() {
   const { product: productSlug, category } = useParams({ strict: false });
-  const { base } = useBrand();
+  const { key: brandKey, base } = useBrand();
   const { t, data, locale } = useTranslation();
   const catData = category ? CATEGORY_DATA[category] : undefined;
+  const isYokohama = brandKey === "yokohama";
+  const brandLabel = isYokohama ? "YOKOHAMA" : "HI-TECH";
   let product = catData?.products.find((p) => p.slug === productSlug);
   let parentSubcategorySlug: string | undefined;
   let parentSubcategoryTitle: string | undefined;
@@ -2930,7 +2940,7 @@ export function HiTechProduct() {
   if (!product) {
     return (
       <SiteLayout>
-        <div className="flex min-h-[55vh] items-center justify-center bg-background">
+        <div className={isYokohama ? "yokohama-theme yokohama-page-surface flex min-h-[55vh] items-center justify-center" : "flex min-h-[55vh] items-center justify-center bg-background"}>
           <p className="text-muted-foreground">{t.hitech.productNotFound}</p>
         </div>
       </SiteLayout>
@@ -2967,7 +2977,7 @@ export function HiTechProduct() {
           document.body,
         )}
 
-      <div className="bg-background">
+      <div className={isYokohama ? "yokohama-theme yokohama-page-surface" : "bg-background"}>
         {/* Breadcrumb */}
         <div className="border-b border-border bg-background/80 py-3">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -2989,7 +2999,7 @@ export function HiTechProduct() {
               <button
                 type="button"
                 onClick={() => setLightboxOpen(true)}
-                className="group relative flex h-64 w-64 cursor-zoom-in items-center justify-center sm:h-72 sm:w-72 lg:h-80 lg:w-80"
+                className={`group relative flex h-64 w-64 cursor-zoom-in items-center justify-center rounded-full sm:h-72 sm:w-72 lg:h-80 lg:w-80 ${isYokohama ? "yokohama-product-halo" : ""}`}
                 aria-label={t.hitech.zoomImage}
               >
                 <img
@@ -3006,7 +3016,7 @@ export function HiTechProduct() {
             {/* Right: name + description */}
             <div className="flex flex-1 flex-col gap-6">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-primary">HI-TECH</p>
+                <p className="text-sm font-semibold uppercase tracking-wider text-primary">{brandLabel}</p>
                 <h1 className="mt-1 font-display text-3xl font-bold text-foreground sm:text-4xl">
                   {resolveName(product, locale).replace(/\s+\d[\d.\-]*\s*[Ll]$/, "")}
                 </h1>
@@ -3017,7 +3027,7 @@ export function HiTechProduct() {
                     {t.hitech.productDescription}
                   </p>
                   <p className="text-sm leading-relaxed text-muted-foreground">
-                    <span className="font-semibold text-primary">HI-TECH {resolveName(product, locale).replace(/\s+\d+L$/i, "").toUpperCase()}</span>{" "}
+                    <span className="font-semibold text-primary">{brandLabel} {resolveName(product, locale).replace(/\s+\d+L$/i, "").toUpperCase()}</span>{" "}
                     {resolveText(detail.description, locale).replace(/^[^,]+,\s*/, "")}
                   </p>
                 </div>

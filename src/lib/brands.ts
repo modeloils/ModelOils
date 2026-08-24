@@ -173,15 +173,13 @@ export function useBrandLanding(): BrandLanding {
 /**
  * Backdrop and feature artwork for the active brand's range page.
  *
- * Both brands share the refinery backdrop: it reads as industrial atmosphere rather than
- * branding, and the Yokohama catalogue artwork carries baked-in logo text plus white page
- * margins, which scale into visible fragments behind a full-bleed layout. Brand identity
- * comes from the feature image instead.
+ * Yokohama uses its own red/green industrial backdrop while retaining the same proven
+ * range-page structure as HI-TECH.
  */
 export function useBrandArtwork(hiTechBackdrop: string, hiTechFeature: string) {
   const { key } = useBrand();
   if (key === "yokohama") {
-    return { backdrop: hiTechBackdrop, feature: BRAND_IMAGES.yokohama };
+    return { backdrop: BRAND_IMAGES.yokohamaBackground, feature: BRAND_IMAGES.yokohama };
   }
   return { backdrop: hiTechBackdrop, feature: hiTechFeature };
 }

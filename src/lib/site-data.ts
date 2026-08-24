@@ -46,6 +46,7 @@ export const YOKOHAMA_CATALOGS = {
 export const BRAND_IMAGES = {
   hiTech: `${ASSET_BASE}/images/HI-TECH-BG.png`,
   yokohama: `${ASSET_BASE}/brands/yokohama-range.jpg`,
+  yokohamaBackground: `${ASSET_BASE}/brands/yokohama-page-bg.png`,
   yokohamaCover: `${ASSET_BASE}/brands/yokohama-cover.jpg`,
   yokohamaVolt: `${ASSET_BASE}/brands/yokohama-volt.jpg`,
 } as const;
