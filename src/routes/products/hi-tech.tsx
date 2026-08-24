@@ -2622,7 +2622,7 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
         }
         style={isYokohama ? undefined : { backgroundImage: `url(${art.backdrop})` }}
       >
-        <div className={`${isYokohama ? "bg-background/65" : "bg-background/80 backdrop-blur-[1px]"} pt-6`}>
+        <div className={`${isYokohama ? "bg-background/35" : "bg-background/80 backdrop-blur-[1px]"} pt-6`}>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <BackToProducts />
           </div>
@@ -2630,7 +2630,7 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
 
         <section
           id="kategorilerimiz"
-          className={`border-b border-border py-20 lg:py-24 ${isYokohama ? "bg-background/65" : "bg-background/80 backdrop-blur-[1px]"}`}
+          className={`border-b border-border py-20 lg:py-24 ${isYokohama ? "bg-background/35" : "bg-background/80 backdrop-blur-[1px]"}`}
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading eyebrow={landing.rangeEyebrow} title={landing.rangeTitle} />
@@ -2662,7 +2662,7 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
         {extraSection}
 
         <section
-          className={`border-b border-border py-20 lg:py-24 ${isYokohama ? "bg-background/65" : "bg-background/80 backdrop-blur-[1px]"}`}
+          className={`border-b border-border py-20 lg:py-24 ${isYokohama ? "bg-background/35" : "bg-background/80 backdrop-blur-[1px]"}`}
         >
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
             <div className="relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)] glow-blue">
@@ -2691,7 +2691,7 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
           </div>
         </section>
 
-        <div className={isYokohama ? "bg-background/65" : "bg-background/80 backdrop-blur-[1px]"}>
+        <div className={isYokohama ? "bg-background/35" : "bg-background/80 backdrop-blur-[1px]"}>
           <PageHero
             eyebrow={landing.heroEyebrow}
             title={landing.heroTitle}
