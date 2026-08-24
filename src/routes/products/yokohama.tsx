@@ -325,7 +325,7 @@ function YokohamaLines() {
   const copy = yokohamaCopy[locale];
 
   return (
-    <section className="border-b border-border bg-background/80 py-20 backdrop-blur-[1px] lg:py-24">
+    <section className="border-b border-border bg-background/65 py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="YOKOHAMA" title={t.nav.catalogs} />
         <div className="mt-10 grid gap-6 lg:grid-cols-2">

@@ -2557,6 +2557,19 @@ const hitechCategoryBgs = [
   antifreezeRadiatorCategoryImg, // centered automotive radiator and coolant — antifriz
 ];
 
+const yokohamaCategoryBgs = [
+  "/model-oils/brands/yokohama-categories/passenger-cars.jpg",
+  "/model-oils/brands/yokohama-categories/light-commercial.jpg",
+  "/model-oils/brands/yokohama-categories/heavy-duty.jpg",
+  "/model-oils/brands/yokohama-categories/motorcycle.jpg",
+  "/model-oils/brands/yokohama-categories/transmission.jpg",
+  "/model-oils/brands/yokohama-categories/marine.jpg",
+  "/model-oils/brands/yokohama-categories/aviation.jpg",
+  "/model-oils/brands/yokohama-categories/industrial.jpg",
+  "/model-oils/brands/yokohama-categories/greases.jpg",
+  "/model-oils/brands/yokohama-categories/antifreeze.jpg",
+];
+
 const aviationCategoryNames: Record<Locale, string> = {
   en: "Aviation & Turbine Oils",
   tr: "Havacılık ve Türbin Yağları",
@@ -2588,6 +2601,7 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
   const translatedNames = Object.fromEntries(
     data.categories.map((category) => [category.slug, category.name]),
   );
+  const categoryBackgrounds = isYokohama ? yokohamaCategoryBgs : hitechCategoryBgs;
   const categories = hitechCategorySlugs.map((slug, index) => ({
     name:
       slug === "Hafif-Ticari-Araclar"
@@ -2596,7 +2610,7 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
           ? aviationCategoryNames[locale]
           : translatedNames[slug] ?? CATEGORY_DATA[slug]?.title ?? slug,
     slug,
-    background: hitechCategoryBgs[index],
+    background: categoryBackgrounds[index],
   }));
   return (
     <SiteLayout>
@@ -2608,13 +2622,16 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
         }
         style={isYokohama ? undefined : { backgroundImage: `url(${art.backdrop})` }}
       >
-        <div className="bg-background/80 pt-6 backdrop-blur-[1px]">
+        <div className={`${isYokohama ? "bg-background/65" : "bg-background/80 backdrop-blur-[1px]"} pt-6`}>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <BackToProducts />
           </div>
         </div>
 
-        <section id="kategorilerimiz" className="border-b border-border bg-background/80 py-20 backdrop-blur-[1px] lg:py-24">
+        <section
+          id="kategorilerimiz"
+          className={`border-b border-border py-20 lg:py-24 ${isYokohama ? "bg-background/65" : "bg-background/80 backdrop-blur-[1px]"}`}
+        >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading eyebrow={landing.rangeEyebrow} title={landing.rangeTitle} />
             <div className="yokohama-accent-line mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-[repeat(20,minmax(0,1fr))]">
@@ -2644,7 +2661,9 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
 
         {extraSection}
 
-        <section className="border-b border-border bg-background/80 py-20 backdrop-blur-[1px] lg:py-24">
+        <section
+          className={`border-b border-border py-20 lg:py-24 ${isYokohama ? "bg-background/65" : "bg-background/80 backdrop-blur-[1px]"}`}
+        >
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
             <div className="relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)] glow-blue">
               <img
@@ -2672,7 +2691,7 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
           </div>
         </section>
 
-        <div className="bg-background/80 backdrop-blur-[1px]">
+        <div className={isYokohama ? "bg-background/65" : "bg-background/80 backdrop-blur-[1px]"}>
           <PageHero
             eyebrow={landing.heroEyebrow}
             title={landing.heroTitle}
