@@ -13,7 +13,7 @@ export const CONTACT = {
 import type { NavKey } from "./i18n/ui";
 
 export const NAV_LINKS: { key: NavKey; to: string; highlight: boolean }[] = [
-  { key: "hiTech", to: "/hi-tech", highlight: true },
+  { key: "products", to: "/products", highlight: true },
   { key: "catalogs", to: "/catalogs", highlight: false },
   { key: "industries", to: "/industries", highlight: false },
   { key: "export", to: "/export", highlight: false },
@@ -37,6 +37,17 @@ export const HI_TECH_CATALOGS = {
 export const YOKOHAMA_CATALOGS = {
   motorOil: `${ASSET_BASE}/docs/yokohama/yokohama-motor-oil-catalogue-en.pdf`,
   volt: `${ASSET_BASE}/docs/yokohama/yokohama-volt-battery-catalogue-en.pdf`,
+} as const;
+
+/**
+ * Artwork for the two brand panels on /products. The Yokohama images are the
+ * distributor catalogue's own key visual and cover, extracted from the supplied PDF.
+ */
+export const BRAND_IMAGES = {
+  hiTech: `${ASSET_BASE}/images/HI-TECH-BG.png`,
+  yokohama: `${ASSET_BASE}/brands/yokohama-range.jpg`,
+  yokohamaCover: `${ASSET_BASE}/brands/yokohama-cover.jpg`,
+  yokohamaVolt: `${ASSET_BASE}/brands/yokohama-volt.jpg`,
 } as const;
 
 // Translatable structured content (categories, products, export cards, trust points,

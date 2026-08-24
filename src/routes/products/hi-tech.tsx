@@ -2570,7 +2570,7 @@ export function hiTechHead(locale: Locale) {
   return pageHead(locale, "hitech", [{ property: "og:image", content: flagshipImg }]);
 }
 
-export const Route = createFileRoute("/hi-tech")({
+export const Route = createFileRoute("/products/hi-tech")({
   head: () => hiTechHead("en"),
   component: HiTech,
 });
@@ -2606,7 +2606,7 @@ export function HiTech() {
               {categories.map((category) => (
                 <LocaleLink
                   key={category.slug}
-                  to={`/hi-tech/${category.slug}`}
+                  to={`/products/hi-tech/${category.slug}`}
                   className="group relative flex min-h-40 items-end overflow-hidden rounded-lg border border-border shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50 lg:col-span-4"
                 >
                   <img
@@ -2688,7 +2688,7 @@ function BackToCategories() {
   const { t } = useTranslation();
   return (
     <LocaleLink
-      to="/hi-tech"
+      to="/products/hi-tech"
       hash="kategorilerimiz"
       className="mb-8 inline-flex min-h-[44px] items-center gap-1.5 rounded-md border border-border bg-[image:var(--gradient-panel)] px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-colors hover:border-primary/50 hover:text-foreground"
     >
@@ -2729,7 +2729,7 @@ export function HiTechSubcategory() {
           <div className="min-h-[55vh] bg-background py-20 lg:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <LocaleLink
-                to={`/hi-tech/${category}`}
+                to={`/products/hi-tech/${category}`}
                 className="mb-8 inline-flex min-h-[44px] items-center gap-1.5 rounded-md border border-border bg-[image:var(--gradient-panel)] px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-colors hover:border-primary/50 hover:text-foreground"
               >
                 <ChevronLeft className="h-4 w-4 shrink-0 rtl:rotate-180" />
@@ -2740,7 +2740,7 @@ export function HiTechSubcategory() {
                 {sortedProducts.map((p) => (
                   <LocaleLink
                     key={p.slug}
-                    to={`/hi-tech/${category}/${p.slug}`}
+                    to={`/products/hi-tech/${category}/${p.slug}`}
                     className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                   >
                     <div className="flex items-center justify-center p-8">
@@ -2785,7 +2785,7 @@ export function HiTechSubcategory() {
               {subcatEntries.map(([slug, sub]) => (
                 <LocaleLink
                   key={slug}
-                  to={`/hi-tech/${category}/${slug}`}
+                  to={`/products/hi-tech/${category}/${slug}`}
                   className="group relative flex min-h-44 items-end overflow-hidden rounded-lg border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                 >
                   {sub.products[0] && (
@@ -2827,7 +2827,7 @@ export function HiTechSubcategory() {
                 {sortedProducts.map((p) => (
                   <LocaleLink
                     key={p.slug}
-                    to={`/hi-tech/${category}/${p.slug}`}
+                    to={`/products/hi-tech/${category}/${p.slug}`}
                     className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                   >
                     <div className="flex items-center justify-center p-8">
@@ -2943,7 +2943,7 @@ export function HiTechProduct() {
         <div className="border-b border-border bg-background/80 py-3">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <LocaleLink
-              to={parentSubcategorySlug ? `/hi-tech/${category}/${parentSubcategorySlug}` : `/hi-tech/${category ?? ""}`}
+              to={parentSubcategorySlug ? `/products/hi-tech/${category}/${parentSubcategorySlug}` : `/products/hi-tech/${category ?? ""}`}
               className="inline-flex min-h-[44px] items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               <ChevronLeft className="h-4 w-4 shrink-0 rtl:rotate-180" />

@@ -31,11 +31,11 @@ export function Header() {
                 l.highlight && "text-foreground",
               )}
             >
-              {l.key === "hiTech" ? (
+              {l.key === "products" ? (
                 <span className="flex flex-col items-center leading-none">
-                  <span className="whitespace-nowrap">HI-TECH OIL</span>
+                  <span className="whitespace-nowrap">YOKOHAMA &amp; HI-TECH</span>
                   <span className="mt-0.5 text-[11px] font-semibold">
-                    {t.nav.hiTech.replace("HI-TECH OIL ", "")}
+                    {t.nav.products}
                   </span>
                 </span>
               ) : (
@@ -77,11 +77,11 @@ export function Header() {
                 activeProps={{ className: "bg-secondary text-primary" }}
                 className="flex min-h-[44px] items-center justify-between rounded-md px-3 py-3 text-sm font-medium text-foreground"
               >
-                {l.key === "hiTech" ? (
+                {l.key === "products" ? (
                   <span className="flex flex-col leading-none">
-                    <span className="whitespace-nowrap">HI-TECH OIL</span>
+                    <span className="whitespace-nowrap">YOKOHAMA &amp; HI-TECH</span>
                     <span className="mt-1 text-xs font-semibold">
-                      {t.nav.hiTech.replace("HI-TECH OIL ", "")}
+                      {t.nav.products}
                     </span>
                   </span>
                 ) : (

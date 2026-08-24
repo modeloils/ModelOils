@@ -1,2 +1,19 @@
-/tr/HI-TECH /tr/hi-tech 301
-/tr/HI-TECH/* /tr/hi-tech/:splat 301
+# Legacy uppercase Turkish paths from the original site structure.
+/tr/HI-TECH      /tr/products/hi-tech          301
+/tr/HI-TECH/*    /tr/products/hi-tech/:splat   301
+
+# The HI-TECH range moved under the /products brand chooser when Yokohama was added.
+/hi-tech         /products/hi-tech             301
+/hi-tech/*       /products/hi-tech/:splat      301
+/tr/hi-tech      /tr/products/hi-tech          301
+/tr/hi-tech/*    /tr/products/hi-tech/:splat   301
+/ru/hi-tech      /ru/products/hi-tech          301
+/ru/hi-tech/*    /ru/products/hi-tech/:splat   301
+/fa/hi-tech      /fa/products/hi-tech          301
+/fa/hi-tech/*    /fa/products/hi-tech/:splat   301
+/ar/hi-tech      /ar/products/hi-tech          301
+/ar/hi-tech/*    /ar/products/hi-tech/:splat   301
+/de/hi-tech      /de/products/hi-tech          301
+/de/hi-tech/*    /de/products/hi-tech/:splat   301
+/fr/hi-tech      /fr/products/hi-tech          301
+/fr/hi-tech/*    /fr/products/hi-tech/:splat   301

@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
+import { LOCALES } from "@/lib/i18n/types";
 
 const BASE_URL = "";
 
@@ -13,23 +14,30 @@ export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: async () => {
+        // Base (English) paths. Every locale mirrors this set.
         const pages: SitemapEntry[] = [
           { path: "/", changefreq: "weekly", priority: "1.0" },
-          { path: "/hi-tech", changefreq: "weekly", priority: "0.9" },
+          { path: "/products", changefreq: "weekly", priority: "0.9" },
+          { path: "/products/hi-tech", changefreq: "weekly", priority: "0.9" },
+          { path: "/products/yokohama", changefreq: "weekly", priority: "0.8" },
+          { path: "/catalogs", changefreq: "monthly", priority: "0.7" },
           { path: "/industries", changefreq: "monthly", priority: "0.7" },
           { path: "/export", changefreq: "monthly", priority: "0.8" },
           { path: "/about", changefreq: "monthly", priority: "0.6" },
+          { path: "/media", changefreq: "monthly", priority: "0.5" },
+          { path: "/blog", changefreq: "weekly", priority: "0.6" },
           { path: "/contact", changefreq: "monthly", priority: "0.8" },
         ];
 
-        // Include Turkish (/tr), Russian (/ru), and Persian (/fa) URL sets alongside the English pages.
-        const entries: SitemapEntry[] = [
-          ...pages,
-          ...pages.map((p) => ({ ...p, path: p.path === "/" ? "/tr" : `/tr${p.path}` })),
-          ...pages.map((p) => ({ ...p, path: p.path === "/" ? "/ru" : `/ru${p.path}` })),
-          ...pages.map((p) => ({ ...p, path: p.path === "/" ? "/fa" : `/fa${p.path}` })),
-          ...pages.map((p) => ({ ...p, path: p.path === "/" ? "/ar" : `/ar${p.path}` })),
-        ];
+        // English is served unprefixed; every other locale lives under its own prefix.
+        const entries: SitemapEntry[] = LOCALES.flatMap((locale) =>
+          locale === "en"
+            ? pages
+            : pages.map((p) => ({
+                ...p,
+                path: p.path === "/" ? `/${locale}` : `/${locale}${p.path}`,
+              })),
+        );
 
         const urls = entries.map((e) =>
           [

@@ -1,10 +1,10 @@
 import type { Locale } from "./types";
 
-export type NavKey = "hiTech" | "catalogs" | "industries" | "export" | "about" | "contact" | "media" | "blog";
+export type NavKey = "products" | "catalogs" | "industries" | "export" | "about" | "contact" | "media" | "blog";
 
 export interface UIStrings {
   nav: {
-    hiTech: string;
+    products: string;
     catalogs: string;
     industries: string;
     export: string;
@@ -175,7 +175,7 @@ export interface UIStrings {
 
 const en: UIStrings = {
   nav: {
-    hiTech: "HI-TECH OIL Products",
+    products: "Oil Products",
     catalogs: "Catalogues",
     industries: "Industries",
     export: "Export",
@@ -419,7 +419,7 @@ const en: UIStrings = {
 
 const tr: UIStrings = {
   nav: {
-    hiTech: "HI-TECH OIL Ürünler",
+    products: "Yağ Ürünleri",
     catalogs: "Kataloglar",
     industries: "Sektörler",
     export: "İhracat",
@@ -661,7 +661,7 @@ const tr: UIStrings = {
 
 const ru: UIStrings = {
   nav: {
-    hiTech: "HI-TECH OIL Продукты",
+    products: "Масляная продукция",
     catalogs: "Каталоги",
     industries: "Отрасли",
     export: "Экспорт",
@@ -905,7 +905,7 @@ const ru: UIStrings = {
 
 const fa: UIStrings = {
   nav: {
-    hiTech: "HI-TECH OIL محصولات",
+    products: "محصولات روغن",
     catalogs: "کاتالوگ‌ها",
     industries: "صنایع",
     export: "صادرات",
@@ -1149,7 +1149,7 @@ const fa: UIStrings = {
 
 const ar: UIStrings = {
   nav: {
-    hiTech: "HI-TECH OIL منتجات",
+    products: "منتجات الزيوت",
     catalogs: "الكتالوجات",
     industries: "الصناعات",
     export: "التصدير",
@@ -1393,7 +1393,7 @@ const ar: UIStrings = {
 
 const de: UIStrings = {
   nav: {
-    hiTech: "HI-TECH OIL Produkte",
+    products: "Ölprodukte",
     catalogs: "Kataloge",
     industries: "Branchen",
     export: "Export",
@@ -1631,7 +1631,7 @@ const de: UIStrings = {
 
 const fr: UIStrings = {
   nav: {
-    hiTech: "HI-TECH OIL Produits",
+    products: "Produits lubrifiants",
     catalogs: "Catalogues",
     industries: "Secteurs",
     export: "Export",
@@ -1869,7 +1869,7 @@ const fr: UIStrings = {
 
 export const UI: Record<Locale, UIStrings> = { en, tr, ru, fa, ar, de, fr };
 
-export type PageKey = "home" | "about" | "contact" | "export" | "hitech" | "industries" | "products" | "media" | "blog";
+export type PageKey = "home" | "about" | "contact" | "export" | "hitech" | "industries" | "products" | "yokohama" | "media" | "blog";
 
 export interface PageMeta {
   title: string;
@@ -1924,11 +1924,18 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       ogDescription: "Schmierstofflösungen für Automobil-, Industrie-, Flotten- und Schifffahrtsbetriebe.",
     },
     products: {
-      title: "Produkte | Model Oils Schmierstoffkategorien & HI-TECH Sortiment",
+      title: "Produkte | Yokohama & HI-TECH Ölprodukte | Model Petrol",
       description:
-        "Entdecken Sie Model Oils Schmierstoffkategorien — Motoröle, Dieselöle, Getriebeöle, Hydrauliköle, Fette, Frostschutzmittel und Spezialflüssigkeiten — plus die HI-TECH Produktlinie.",
-      ogTitle: "Produkte | Model Oils Schmierstoffsortiment",
-      ogDescription: "Vollständiges Schmierstoffportfolio mit flexibler Verpackung für Großhandel und Export.",
+        "Wählen Sie zwischen dem HI-TECH Schmierstoffsortiment, der Eigenmarke von Model Petrol, und Yokohama Motor Oil, vertrieben von Model Petrol — Motorenöle, Getriebeöle, Fette, Frostschutzmittel und VOLT-Batterien.",
+      ogTitle: "Yokohama & HI-TECH Ölprodukte | Model Petrol",
+      ogDescription: "Zwei Schmierstoffmarken von einem Lieferanten: das HI-TECH Sortiment und Yokohama Motor Oil.",
+    },
+    yokohama: {
+      title: "Yokohama Motor Oil | Vertrieben von Model Petrol",
+      description:
+        "Yokohama Motorenöle und VOLT-Batterien, vertrieben von Model Petrol. Schmierstoffe in japanischer Qualität für Pkw, Lkw, Getriebe, Motorräder, Landwirtschaft, Industrie und Schifffahrt.",
+      ogTitle: "Yokohama Motor Oil | Vertrieben von Model Petrol",
+      ogDescription: "Motorenöle und VOLT-Batterien in japanischer Qualität, vertrieben von Model Petrol.",
     },
     media: {
       title: "Medien | Model Oils",
@@ -1988,11 +1995,18 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       ogDescription: "Solutions lubrifiantes pour les opérations automobiles, industrielles, de flotte et maritimes.",
     },
     products: {
-      title: "Produits | Catégories de lubrifiants Model Oils & Gamme HI-TECH",
+      title: "Produits | Yokohama & HI-TECH | Model Petrol",
       description:
-        "Découvrez les catégories de lubrifiants Model Oils — huiles moteur, huiles diesel, huiles de transmission, huiles hydrauliques, graisses, antigel et fluides spéciaux — plus la gamme HI-TECH.",
-      ogTitle: "Produits | Gamme de lubrifiants Model Oils",
-      ogDescription: "Portfolio complet de lubrifiants avec emballage flexible pour le gros et l'export.",
+        "Choisissez entre la gamme de lubrifiants HI-TECH, la marque propre de Model Petrol, et Yokohama Motor Oil, distribuée par Model Petrol — huiles moteur, huiles de transmission, graisses, antigel et batteries VOLT.",
+      ogTitle: "Produits Yokohama & HI-TECH | Model Petrol",
+      ogDescription: "Deux marques de lubrifiants chez un seul fournisseur : la gamme HI-TECH et Yokohama Motor Oil.",
+    },
+    yokohama: {
+      title: "Yokohama Motor Oil | Distribuée par Model Petrol",
+      description:
+        "Huiles moteur Yokohama et batteries VOLT, distribuées par Model Petrol. Des lubrifiants de qualité japonaise pour véhicules de tourisme, poids lourds, transmissions, motos, agriculture, industrie et marine.",
+      ogTitle: "Yokohama Motor Oil | Distribuée par Model Petrol",
+      ogDescription: "Huiles moteur et batteries VOLT de qualité japonaise, distribuées par Model Petrol.",
     },
     media: {
       title: "Médias | Model Oils",
@@ -2052,11 +2066,18 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       ogDescription: "Lubricant solutions for automotive, industrial, fleet and marine operations.",
     },
     products: {
-      title: "Products | Model Oils Lubricant Categories & HI-TECH Range",
+      title: "Products | Yokohama & HI-TECH Oil Products | Model Petrol",
       description:
-        "Explore Model Oils lubricant categories — motor oils, diesel oils, gear oils, hydraulic oils, greases, antifreeze and specialty fluids — plus the featured HI-TECH product range.",
-      ogTitle: "Products | Model Oils Lubricant Range",
-      ogDescription: "Full lubricant portfolio with flexible packaging for wholesale and export.",
+        "Choose between the HI-TECH lubricant range, Model Petrol's own brand, and Yokohama Motor Oil, distributed by Model Petrol — motor oils, transmission fluids, greases, antifreeze and VOLT batteries.",
+      ogTitle: "Yokohama & HI-TECH Oil Products | Model Petrol",
+      ogDescription: "Two lubricant brands from one supplier: the HI-TECH range and Yokohama Motor Oil.",
+    },
+    yokohama: {
+      title: "Yokohama Motor Oil | Distributed by Model Petrol",
+      description:
+        "Yokohama Motor Oil and VOLT batteries, distributed by Model Petrol. Japanese-quality lubricants for passenger cars, trucks, transmissions, motorcycles, agriculture, industry and marine use.",
+      ogTitle: "Yokohama Motor Oil | Distributed by Model Petrol",
+      ogDescription: "Japanese-quality motor oils and VOLT batteries, distributed by Model Petrol.",
     },
     media: {
       title: "Media | Model Oils",
@@ -2116,11 +2137,18 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       ogDescription: "Otomotiv, endüstri, filo ve denizcilik operasyonları için yağ çözümleri.",
     },
     products: {
-      title: "Ürünler | Model Oils Yağ Kategorileri ve HI-TECH Serisi",
+      title: "Ürünler | Yokohama & HI-TECH Yağ Ürünleri | Model Petrol",
       description:
-        "Model Oils yağ kategorilerini keşfedin — motor yağları, dizel yağları, şanzıman yağları, hidrolik yağlar, gresler, antifriz ve özel akışkanlar — ve öne çıkan HI-TECH ürün serisi.",
-      ogTitle: "Ürünler | Model Oils Yağ Yelpazesi",
-      ogDescription: "Toptan ve ihracat için esnek ambalajlı eksiksiz yağ portföyü.",
+        "Model Petrol’ün kendi markası HI-TECH yağ serisi ile Model Petrol dağıtımlı Yokohama Motor Oil arasında seçim yapın — motor yağları, şanzıman yağları, gresler, antifriz ve VOLT aküleri.",
+      ogTitle: "Yokohama & HI-TECH Yağ Ürünleri | Model Petrol",
+      ogDescription: "Tek tedarikçiden iki yağ markası: HI-TECH serisi ve Yokohama Motor Oil.",
+    },
+    yokohama: {
+      title: "Yokohama Motor Oil | Model Petrol Dağıtımıyla",
+      description:
+        "Model Petrol dağıtımıyla Yokohama motor yağları ve VOLT aküleri. Binek, ticari araç, şanzıman, motosiklet, tarım, endüstri ve denizcilik için Japon kalitesinde yağlar.",
+      ogTitle: "Yokohama Motor Oil | Model Petrol Dağıtımıyla",
+      ogDescription: "Japon kalitesinde motor yağları ve VOLT aküleri, Model Petrol dağıtımıyla.",
     },
     media: {
       title: "Medya | Model Oils",
@@ -2180,11 +2208,18 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       ogDescription: "Смазочные решения для автомобильной, промышленной, автопарковой и морской отраслей.",
     },
     products: {
-      title: "Продукты | Категории смазочных материалов Model Oils и линейка HI-TECH",
+      title: "Продукция | Yokohama и HI-TECH | Model Petrol",
       description:
-        "Изучите категории смазочных материалов Model Oils — моторные масла, дизельные масла, трансмиссионные масла, гидравлические масла, смазки, антифриз и специальные жидкости — плюс избранная линейка продуктов HI-TECH.",
-      ogTitle: "Продукты | Ассортимент смазочных материалов Model Oils",
-      ogDescription: "Полный портфель смазочных материалов с гибкой упаковкой для оптовой торговли и экспорта.",
+        "Выберите между линейкой смазочных материалов HI-TECH, собственной маркой Model Petrol, и Yokohama Motor Oil, поставляемой Model Petrol — моторные масла, трансмиссионные масла, смазки, антифриз и аккумуляторы VOLT.",
+      ogTitle: "Продукция Yokohama и HI-TECH | Model Petrol",
+      ogDescription: "Два бренда смазочных материалов от одного поставщика: линейка HI-TECH и Yokohama Motor Oil.",
+    },
+    yokohama: {
+      title: "Yokohama Motor Oil | Поставляется Model Petrol",
+      description:
+        "Моторные масла Yokohama и аккумуляторы VOLT, поставляемые Model Petrol. Смазочные материалы японского качества для легковых автомобилей, грузовиков, трансмиссий, мотоциклов, сельского хозяйства, промышленности и судоходства.",
+      ogTitle: "Yokohama Motor Oil | Поставляется Model Petrol",
+      ogDescription: "Моторные масла и аккумуляторы VOLT японского качества, поставляемые Model Petrol.",
     },
     media: {
       title: "Медиа | Model Oils",
@@ -2244,11 +2279,18 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       ogDescription: "راهکارهای روانکار برای عملیات خودرویی، صنعتی، ناوگان و دریایی.",
     },
     products: {
-      title: "محصولات | دسته‌بندی‌های روانکار Model Oils و محدوده HI-TECH",
+      title: "محصولات | یوکوهاما و HI-TECH | Model Petrol",
       description:
-        "دسته‌بندی‌های روانکار Model Oils را کشف کنید — روغن موتور، روغن دیزل، روغن گیربکس، روغن هیدرولیک، گریس، ضدیخ و مایعات ویژه — به علاوه محدوده محصولات برجسته HI-TECH.",
-      ogTitle: "محصولات | محدوده روانکار Model Oils",
-      ogDescription: "پرتفوی کامل روانکار با بسته‌بندی انعطاف‌پذیر برای عمده‌فروشی و صادرات.",
+        "بین محدوده روانکار HI-TECH، برند اختصاصی Model Petrol، و Yokohama Motor Oil با توزیع Model Petrol انتخاب کنید — روغن موتور، روغن گیربکس، گریس، ضدیخ و باتری‌های VOLT.",
+      ogTitle: "محصولات یوکوهاما و HI-TECH | Model Petrol",
+      ogDescription: "دو برند روانکار از یک تأمین‌کننده: محدوده HI-TECH و Yokohama Motor Oil.",
+    },
+    yokohama: {
+      title: "Yokohama Motor Oil | توزیع توسط Model Petrol",
+      description:
+        "روغن موتور یوکوهاما و باتری‌های VOLT با توزیع Model Petrol. روانکارهای با کیفیت ژاپنی برای خودروهای سواری، کامیون، گیربکس، موتورسیکلت، کشاورزی، صنعت و دریایی.",
+      ogTitle: "Yokohama Motor Oil | توزیع توسط Model Petrol",
+      ogDescription: "روغن موتور و باتری‌های VOLT با کیفیت ژاپنی، توزیع توسط Model Petrol.",
     },
     media: {
       title: "رسانه | Model Oils",
@@ -2308,11 +2350,18 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       ogDescription: "حلول تشحيمية للعمليات الصناعية والسيارات والأساطيل والبحرية.",
     },
     products: {
-      title: "المنتجات | فئات المواد التشحيمية ومجموعة HI-TECH من Model Oils",
+      title: "المنتجات | يوكوهاما و HI-TECH | Model Petrol",
       description:
-        "استكشف فئات المواد التشحيمية من Model Oils — زيوت المحركات وزيوت الديزل وزيوت ناقل الحركة والهيدروليك والشحوم ومضادات التجمد والسوائل الخاصة — بالإضافة إلى مجموعة منتجات HI-TECH المميزة.",
-      ogTitle: "المنتجات | مجموعة المواد التشحيمية من Model Oils",
-      ogDescription: "محفظة مواد تشحيمية متكاملة بتغليف مرن للجملة والتصدير.",
+        "اختر بين مجموعة المواد التشحيمية HI-TECH، العلامة الخاصة بـ Model Petrol، و Yokohama Motor Oil الموزعة من Model Petrol — زيوت المحركات وزيوت ناقل الحركة والشحوم ومضادات التجمد وبطاريات VOLT.",
+      ogTitle: "منتجات يوكوهاما و HI-TECH | Model Petrol",
+      ogDescription: "علامتان تجاريتان للمواد التشحيمية من مورد واحد: مجموعة HI-TECH و Yokohama Motor Oil.",
+    },
+    yokohama: {
+      title: "Yokohama Motor Oil | موزعة من Model Petrol",
+      description:
+        "زيوت محركات يوكوهاما وبطاريات VOLT، موزعة من Model Petrol. مواد تشحيم بجودة يابانية لسيارات الركاب والشاحنات وناقلات الحركة والدراجات النارية والزراعة والصناعة والبحرية.",
+      ogTitle: "Yokohama Motor Oil | موزعة من Model Petrol",
+      ogDescription: "زيوت محركات وبطاريات VOLT بجودة يابانية، موزعة من Model Petrol.",
     },
     media: {
       title: "الوسائط | Model Oils",
