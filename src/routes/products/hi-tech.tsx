@@ -1,6 +1,6 @@
 ﻿import { createFileRoute, Outlet } from "@tanstack/react-router";
 import { useParams } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import { ArrowRight, CheckCircle2, ChevronLeft, Flame, X, ZoomIn } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
@@ -8,6 +8,7 @@ import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
+import { useBrand, useBrandArtwork, useBrandLanding } from "@/lib/brands";
 import flagshipImg from "@/assets/flagship.png";
 import antifreezeRadiatorCategoryImg from "@/assets/antifreeze-radiator-category.jpg?inline";
 import aviationMaintenanceCategoryImg from "@/assets/aviation-maintenance-category.jpg?inline";
@@ -2575,8 +2576,14 @@ export const Route = createFileRoute("/products/hi-tech")({
   component: HiTech,
 });
 
-export function HiTech() {
+/** Shared by both brand ranges. `extraSection` lets a brand append its own content. */
+export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
   const { t, data, locale } = useTranslation();
+  const { key: brandKey, base } = useBrand();
+  const landing = useBrandLanding();
+  const art = useBrandArtwork(hiTechBg, flagshipImg);
+  // "Premium Own Brand" is only true of HI-TECH; the distributed brand drops it.
+  const badges = brandKey === "yokohama" ? data.hitechBadges.slice(1) : data.hitechBadges;
   const translatedNames = Object.fromEntries(
     data.categories.map((category) => [category.slug, category.name]),
   );
@@ -2594,19 +2601,22 @@ export function HiTech() {
     <SiteLayout>
       <div
         className="bg-background bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${hiTechBg})` }}
+        style={{ backgroundImage: `url(${art.backdrop})` }}
       >
+        <div className="bg-background/80 pt-6 backdrop-blur-[1px]">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <BackToProducts />
+          </div>
+        </div>
+
         <section id="kategorilerimiz" className="border-b border-border bg-background/80 py-20 backdrop-blur-[1px] lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <SectionHeading
-              eyebrow={t.hitech.rangeEyebrow}
-              title={t.hitech.rangeTitle}
-            />
+            <SectionHeading eyebrow={landing.rangeEyebrow} title={landing.rangeTitle} />
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-[repeat(20,minmax(0,1fr))]">
               {categories.map((category) => (
                 <LocaleLink
                   key={category.slug}
-                  to={`/products/hi-tech/${category.slug}`}
+                  to={`${base}/${category.slug}`}
                   className="group relative flex min-h-40 items-end overflow-hidden rounded-lg border border-border shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50 lg:col-span-4"
                 >
                   <img
@@ -2627,11 +2637,13 @@ export function HiTech() {
           </div>
         </section>
 
+        {extraSection}
+
         <section className="border-b border-border bg-background/80 py-20 backdrop-blur-[1px] lg:py-24">
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
             <div className="relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)] glow-blue">
               <img
-                src={flagshipImg}
+                src={art.feature}
                 alt={t.imgAlt.flagshipFamily}
                 loading="lazy"
                 width={1536}
@@ -2640,9 +2652,9 @@ export function HiTech() {
               />
             </div>
             <div>
-              <SectionHeading eyebrow={t.hitech.whyEyebrow} title={t.hitech.whyTitle} />
+              <SectionHeading eyebrow={landing.whyEyebrow} title={landing.whyTitle} />
               <ul className="mt-6 space-y-4">
-                {t.hitech.bullets.map((b) => (
+                {landing.bullets.map((b) => (
                   <li key={b} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
                     <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                     {b}
@@ -2655,13 +2667,13 @@ export function HiTech() {
 
         <div className="bg-background/80 backdrop-blur-[1px]">
           <PageHero
-            eyebrow={t.hitech.heroEyebrow}
-            title={t.hitech.heroTitle}
-            subtitle={t.hitech.heroSubtitle}
+            eyebrow={landing.heroEyebrow}
+            title={landing.heroTitle}
+            subtitle={landing.heroSubtitle}
             transparent
           >
             <div className="mt-7 flex flex-wrap gap-2">
-              {data.hitechBadges.map((b) => (
+              {badges.map((b) => (
                 <span
                   key={b}
                   className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary"
@@ -2673,7 +2685,7 @@ export function HiTech() {
             <div className="mt-8">
               <Button asChild variant="hero" size="lg">
                 <LocaleLink to="/contact">
-                  {t.hitech.becomeDistributor} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
+                  {landing.becomeDistributor} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
                 </LocaleLink>
               </Button>
             </div>
@@ -2684,11 +2696,26 @@ export function HiTech() {
   );
 }
 
-function BackToCategories() {
+/** Leaves the brand range entirely and returns to the two-brand chooser. */
+function BackToProducts() {
   const { t } = useTranslation();
   return (
     <LocaleLink
-      to="/products/hi-tech"
+      to="/products"
+      className="inline-flex min-h-[44px] items-center gap-1.5 rounded-md border border-border bg-[image:var(--gradient-panel)] px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-colors hover:border-primary/50 hover:text-foreground"
+    >
+      <ChevronLeft className="h-4 w-4 shrink-0 rtl:rotate-180" />
+      {t.nav.products}
+    </LocaleLink>
+  );
+}
+
+function BackToCategories() {
+  const { t } = useTranslation();
+  const { base } = useBrand();
+  return (
+    <LocaleLink
+      to={base}
       hash="kategorilerimiz"
       className="mb-8 inline-flex min-h-[44px] items-center gap-1.5 rounded-md border border-border bg-[image:var(--gradient-panel)] px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-colors hover:border-primary/50 hover:text-foreground"
     >
@@ -2700,6 +2727,7 @@ function BackToCategories() {
 
 export function HiTechSubcategory() {
   const { category, product } = useParams({ strict: false });
+  const { base } = useBrand();
   const { t, data, locale } = useTranslation();
   const catData = category ? CATEGORY_DATA[category] : undefined;
 
@@ -2729,7 +2757,7 @@ export function HiTechSubcategory() {
           <div className="min-h-[55vh] bg-background py-20 lg:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <LocaleLink
-                to={`/products/hi-tech/${category}`}
+                to={`${base}/${category}`}
                 className="mb-8 inline-flex min-h-[44px] items-center gap-1.5 rounded-md border border-border bg-[image:var(--gradient-panel)] px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-colors hover:border-primary/50 hover:text-foreground"
               >
                 <ChevronLeft className="h-4 w-4 shrink-0 rtl:rotate-180" />
@@ -2740,7 +2768,7 @@ export function HiTechSubcategory() {
                 {sortedProducts.map((p) => (
                   <LocaleLink
                     key={p.slug}
-                    to={`/products/hi-tech/${category}/${p.slug}`}
+                    to={`${base}/${category}/${p.slug}`}
                     className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                   >
                     <div className="flex items-center justify-center p-8">
@@ -2785,7 +2813,7 @@ export function HiTechSubcategory() {
               {subcatEntries.map(([slug, sub]) => (
                 <LocaleLink
                   key={slug}
-                  to={`/products/hi-tech/${category}/${slug}`}
+                  to={`${base}/${category}/${slug}`}
                   className="group relative flex min-h-44 items-end overflow-hidden rounded-lg border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                 >
                   {sub.products[0] && (
@@ -2827,7 +2855,7 @@ export function HiTechSubcategory() {
                 {sortedProducts.map((p) => (
                   <LocaleLink
                     key={p.slug}
-                    to={`/products/hi-tech/${category}/${p.slug}`}
+                    to={`${base}/${category}/${p.slug}`}
                     className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                   >
                     <div className="flex items-center justify-center p-8">
@@ -2871,6 +2899,7 @@ export function HiTechSubcategory() {
 
 export function HiTechProduct() {
   const { product: productSlug, category } = useParams({ strict: false });
+  const { base } = useBrand();
   const { t, data, locale } = useTranslation();
   const catData = category ? CATEGORY_DATA[category] : undefined;
   let product = catData?.products.find((p) => p.slug === productSlug);
@@ -2943,7 +2972,7 @@ export function HiTechProduct() {
         <div className="border-b border-border bg-background/80 py-3">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <LocaleLink
-              to={parentSubcategorySlug ? `/products/hi-tech/${category}/${parentSubcategorySlug}` : `/products/hi-tech/${category ?? ""}`}
+              to={parentSubcategorySlug ? `${base}/${category}/${parentSubcategorySlug}` : `${base}/${category ?? ""}`}
               className="inline-flex min-h-[44px] items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               <ChevronLeft className="h-4 w-4 shrink-0 rtl:rotate-180" />

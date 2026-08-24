@@ -1,10 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ChevronLeft, Download } from "lucide-react";
-import { PageHero } from "@/components/PageHero";
-import { SiteLayout } from "@/components/SiteLayout";
+import { Download } from "lucide-react";
+import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { BRAND_IMAGES, YOKOHAMA_CATALOGS } from "@/lib/site-data";
-import { LocaleLink, pageHead, useTranslation, type Locale } from "@/lib/i18n";
+import { useTranslation, type Locale } from "@/lib/i18n";
+import { pageHead } from "@/lib/i18n";
+import { HiTech } from "./hi-tech";
 
 interface LineCopy {
   kicker: string;
@@ -15,19 +16,12 @@ interface LineCopy {
 }
 
 interface YokohamaCopy {
-  heroEyebrow: string;
-  heroTitle: string;
-  heroSubtitle: string;
   motorOil: LineCopy;
   volt: LineCopy;
 }
 
 const yokohamaCopy: Record<Locale, YokohamaCopy> = {
   en: {
-    heroEyebrow: "Distributed by Model Petrol",
-    heroTitle: "Yokohama Motor Oil",
-    heroSubtitle:
-      "Japanese-quality lubricants and batteries, supplied to distributors and wholesalers through Model Petrol.",
     motorOil: {
       kicker: "Motor Oil",
       title: "The Yokohama lubricant range",
@@ -62,10 +56,6 @@ const yokohamaCopy: Record<Locale, YokohamaCopy> = {
     },
   },
   tr: {
-    heroEyebrow: "Model Petrol dağıtımıyla",
-    heroTitle: "Yokohama Motor Oil",
-    heroSubtitle:
-      "Model Petrol aracılığıyla distribütörlere ve toptancılara sunulan Japon kalitesinde yağlar ve aküler.",
     motorOil: {
       kicker: "Motor Yağı",
       title: "Yokohama yağ serisi",
@@ -100,10 +90,6 @@ const yokohamaCopy: Record<Locale, YokohamaCopy> = {
     },
   },
   ru: {
-    heroEyebrow: "Поставляется Model Petrol",
-    heroTitle: "Yokohama Motor Oil",
-    heroSubtitle:
-      "Смазочные материалы и аккумуляторы японского качества, поставляемые дистрибьюторам и оптовикам через Model Petrol.",
     motorOil: {
       kicker: "Моторное масло",
       title: "Линейка масел Yokohama",
@@ -138,10 +124,6 @@ const yokohamaCopy: Record<Locale, YokohamaCopy> = {
     },
   },
   fa: {
-    heroEyebrow: "توزیع توسط Model Petrol",
-    heroTitle: "Yokohama Motor Oil",
-    heroSubtitle:
-      "روانکارها و باتری‌های با کیفیت ژاپنی، عرضه‌شده به توزیع‌کنندگان و عمده‌فروشان از طریق Model Petrol.",
     motorOil: {
       kicker: "روغن موتور",
       title: "محدوده روانکار یوکوهاما",
@@ -176,10 +158,6 @@ const yokohamaCopy: Record<Locale, YokohamaCopy> = {
     },
   },
   ar: {
-    heroEyebrow: "موزعة من Model Petrol",
-    heroTitle: "Yokohama Motor Oil",
-    heroSubtitle:
-      "مواد تشحيم وبطاريات بجودة يابانية، تُورَّد للموزعين وتجار الجملة عبر Model Petrol.",
     motorOil: {
       kicker: "زيوت المحركات",
       title: "مجموعة مواد التشحيم من يوكوهاما",
@@ -214,10 +192,6 @@ const yokohamaCopy: Record<Locale, YokohamaCopy> = {
     },
   },
   de: {
-    heroEyebrow: "Vertrieben von Model Petrol",
-    heroTitle: "Yokohama Motor Oil",
-    heroSubtitle:
-      "Schmierstoffe und Batterien in japanischer Qualität, über Model Petrol an Distributoren und Großhändler geliefert.",
     motorOil: {
       kicker: "Motorenöl",
       title: "Das Yokohama Schmierstoffsortiment",
@@ -252,10 +226,6 @@ const yokohamaCopy: Record<Locale, YokohamaCopy> = {
     },
   },
   fr: {
-    heroEyebrow: "Distribuée par Model Petrol",
-    heroTitle: "Yokohama Motor Oil",
-    heroSubtitle:
-      "Des lubrifiants et batteries de qualité japonaise, fournis aux distributeurs et grossistes via Model Petrol.",
     motorOil: {
       kicker: "Huile moteur",
       title: "La gamme de lubrifiants Yokohama",
@@ -322,9 +292,9 @@ function LineCard({
       </div>
       <div className="p-6 sm:p-8">
         <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">{copy.kicker}</p>
-        <h2 className="mt-3 font-display text-2xl font-bold text-foreground sm:text-3xl">
+        <h3 className="mt-3 font-display text-2xl font-bold text-foreground sm:text-3xl">
           {copy.title}
-        </h2>
+        </h3>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
           {copy.blurb}
         </p>
@@ -349,6 +319,35 @@ function LineCard({
   );
 }
 
+/** The two Yokohama product lines and their catalogues, appended to the range page. */
+function YokohamaLines() {
+  const { locale, t } = useTranslation();
+  const copy = yokohamaCopy[locale];
+
+  return (
+    <section className="border-b border-border bg-background/80 py-20 backdrop-blur-[1px] lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <SectionHeading eyebrow="YOKOHAMA" title={t.nav.catalogs} />
+        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+          <LineCard
+            copy={copy.motorOil}
+            image={BRAND_IMAGES.yokohama}
+            imageClassName="object-[center_70%]"
+            href={YOKOHAMA_CATALOGS.motorOil}
+            downloadLabel={t.hitech.downloadCatalog}
+          />
+          <LineCard
+            copy={copy.volt}
+            image={BRAND_IMAGES.yokohamaVolt}
+            href={YOKOHAMA_CATALOGS.volt}
+            downloadLabel={t.hitech.downloadCatalog}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function yokohamaHead(locale: Locale) {
   return pageHead(locale, "yokohama", [{ property: "og:image", content: BRAND_IMAGES.yokohama }]);
 }
@@ -358,58 +357,7 @@ export const Route = createFileRoute("/products/yokohama")({
   component: Yokohama,
 });
 
+/** Same range layout as HI-TECH, with the Yokohama catalogues appended. */
 export function Yokohama() {
-  const { locale, t } = useTranslation();
-  const copy = yokohamaCopy[locale];
-
-  return (
-    <SiteLayout>
-      <PageHero
-        eyebrow={copy.heroEyebrow}
-        title={copy.heroTitle}
-        subtitle={copy.heroSubtitle}
-        backgroundImage={BRAND_IMAGES.yokohamaCover}
-      />
-
-      <div className="bg-background py-14 lg:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <LocaleLink
-            to="/products"
-            className="mb-8 inline-flex min-h-[44px] items-center gap-1.5 rounded-md border border-border bg-[image:var(--gradient-panel)] px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-colors hover:border-primary/50 hover:text-foreground"
-          >
-            <ChevronLeft className="h-4 w-4 shrink-0 rtl:rotate-180" />
-            {t.common.backToBrands}
-          </LocaleLink>
-
-          <div className="grid gap-6 lg:grid-cols-2">
-            <LineCard
-              copy={copy.motorOil}
-              image={BRAND_IMAGES.yokohama}
-              imageClassName="object-[center_70%]"
-              href={YOKOHAMA_CATALOGS.motorOil}
-              downloadLabel={t.hitech.downloadCatalog}
-            />
-            <LineCard
-              copy={copy.volt}
-              image={BRAND_IMAGES.yokohamaVolt}
-              href={YOKOHAMA_CATALOGS.volt}
-              downloadLabel={t.hitech.downloadCatalog}
-            />
-          </div>
-
-          <section className="mt-14 rounded-xl border border-border bg-[image:var(--gradient-panel)] p-8 text-center sm:p-10">
-            <h2 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
-              {t.quoteCta.title}
-            </h2>
-            <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-              {t.quoteCta.body}
-            </p>
-            <Button asChild variant="hero" className="mt-8">
-              <LocaleLink to="/contact">{t.quoteCta.requestWholesale}</LocaleLink>
-            </Button>
-          </section>
-        </div>
-      </div>
-    </SiteLayout>
-  );
+  return <HiTech extraSection={<YokohamaLines />} />;
 }
