@@ -2601,8 +2601,12 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
   return (
     <SiteLayout>
       <div
-        className={`${isYokohama ? "yokohama-theme" : ""} bg-background bg-cover bg-center bg-no-repeat`}
-        style={{ backgroundImage: `url(${art.backdrop})` }}
+        className={
+          isYokohama
+            ? "yokohama-theme yokohama-page-surface bg-background"
+            : "bg-background bg-cover bg-center bg-no-repeat"
+        }
+        style={isYokohama ? undefined : { backgroundImage: `url(${art.backdrop})` }}
       >
         <div className="bg-background/80 pt-6 backdrop-blur-[1px]">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
