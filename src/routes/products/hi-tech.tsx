@@ -9,6 +9,11 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
 import { useBrand, useBrandArtwork, useBrandLanding } from "@/lib/brands";
+import {
+  getYokohamaCategoryName,
+  YOKOHAMA_CATEGORY_DATA,
+  YOKOHAMA_CATEGORY_DEFINITIONS,
+} from "@/lib/yokohama-products";
 import flagshipImg from "@/assets/flagship.png";
 import antifreezeRadiatorCategoryImg from "@/assets/antifreeze-radiator-category.jpg?inline";
 import aviationMaintenanceCategoryImg from "@/assets/aviation-maintenance-category.jpg?inline";
@@ -2557,19 +2562,6 @@ const hitechCategoryBgs = [
   antifreezeRadiatorCategoryImg, // centered automotive radiator and coolant — antifriz
 ];
 
-const yokohamaCategoryBgs = [
-  "/model-oils/brands/yokohama-categories/passenger-cars.jpg",
-  "/model-oils/brands/yokohama-categories/light-commercial.jpg",
-  "/model-oils/brands/yokohama-categories/heavy-duty.jpg",
-  "/model-oils/brands/yokohama-categories/motorcycle.jpg",
-  "/model-oils/brands/yokohama-categories/transmission.jpg",
-  "/model-oils/brands/yokohama-categories/marine.jpg",
-  "/model-oils/brands/yokohama-categories/aviation.jpg",
-  "/model-oils/brands/yokohama-categories/industrial.jpg",
-  "/model-oils/brands/yokohama-categories/greases.jpg",
-  "/model-oils/brands/yokohama-categories/antifreeze.jpg",
-];
-
 const aviationCategoryNames: Record<Locale, string> = {
   en: "Aviation & Turbine Oils",
   tr: "Havacılık ve Türbin Yağları",
@@ -2601,17 +2593,24 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
   const translatedNames = Object.fromEntries(
     data.categories.map((category) => [category.slug, category.name]),
   );
-  const categoryBackgrounds = isYokohama ? yokohamaCategoryBgs : hitechCategoryBgs;
-  const categories = hitechCategorySlugs.map((slug, index) => ({
-    name:
-      slug === "Hafif-Ticari-Araclar"
-        ? t.hitech.lightCommercial
-        : slug === "Havacilik-Yaglari"
-          ? aviationCategoryNames[locale]
-          : translatedNames[slug] ?? CATEGORY_DATA[slug]?.title ?? slug,
-    slug,
-    background: categoryBackgrounds[index],
-  }));
+  const categories = isYokohama
+    ? YOKOHAMA_CATEGORY_DEFINITIONS.map(({ slug }) => ({
+        name: getYokohamaCategoryName(slug, locale),
+        slug,
+        background:
+          YOKOHAMA_CATEGORY_DATA[slug]?.products[0]?.image ??
+          "/model-oils/brands/yokohama-range.jpg",
+      }))
+    : hitechCategorySlugs.map((slug, index) => ({
+        name:
+          slug === "Hafif-Ticari-Araclar"
+            ? t.hitech.lightCommercial
+            : slug === "Havacilik-Yaglari"
+              ? aviationCategoryNames[locale]
+              : translatedNames[slug] ?? CATEGORY_DATA[slug]?.title ?? slug,
+        slug,
+        background: hitechCategoryBgs[index],
+      }));
   return (
     <SiteLayout>
       <div
@@ -2647,7 +2646,7 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
                     aria-hidden="true"
                     loading="lazy"
                     decoding="async"
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-200 ease-out group-hover:scale-[1.03]"
+                    className={`absolute inset-0 h-full w-full transition-transform duration-200 ease-out group-hover:scale-[1.03] ${isYokohama ? "bg-white object-contain p-3" : "object-cover"}`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
                   <h3 className="relative p-5 font-display text-base font-bold leading-snug text-white drop-shadow-sm">
@@ -2755,8 +2754,9 @@ export function HiTechSubcategory() {
   const { category, product } = useParams({ strict: false });
   const { key: brandKey, base } = useBrand();
   const { t, data, locale } = useTranslation();
-  const catData = category ? CATEGORY_DATA[category] : undefined;
   const isYokohama = brandKey === "yokohama";
+  const brandCategoryData = isYokohama ? YOKOHAMA_CATEGORY_DATA : CATEGORY_DATA;
+  const catData = category ? brandCategoryData[category] : undefined;
   const brandLabel = isYokohama ? "YOKOHAMA" : "HI-TECH";
   const pageClassName = isYokohama
     ? "yokohama-theme yokohama-page-surface min-h-[55vh] py-20 lg:py-24"
@@ -2765,8 +2765,9 @@ export function HiTechSubcategory() {
   const slugToTranslatedName = Object.fromEntries(
     data.categories.map((item) => [item.slug, item.name]),
   );
-  const translatedCatTitle =
-    category === "Havacilik-Yaglari"
+  const translatedCatTitle = isYokohama && category
+    ? getYokohamaCategoryName(category, locale)
+    : category === "Havacilik-Yaglari"
       ? aviationCategoryNames[locale]
       : category === "Hafif-Ticari-Araclar"
         ? t.hitech.lightCommercial
@@ -2802,7 +2803,7 @@ export function HiTechSubcategory() {
                     to={`${base}/${category}/${p.slug}`}
                     className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                   >
-                    <div className="flex items-center justify-center p-8">
+                    <div className={`flex items-center justify-center p-8 ${isYokohama ? "bg-white" : ""}`}>
                       <img
                         src={p.image}
                         alt={resolveName(p, locale)}
@@ -2889,7 +2890,7 @@ export function HiTechSubcategory() {
                     to={`${base}/${category}/${p.slug}`}
                     className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                   >
-                    <div className="flex items-center justify-center p-8">
+                    <div className={`flex items-center justify-center p-8 ${isYokohama ? "bg-white" : ""}`}>
                       <img
                         src={p.image}
                         alt={resolveName(p, locale)}
@@ -2932,8 +2933,9 @@ export function HiTechProduct() {
   const { product: productSlug, category } = useParams({ strict: false });
   const { key: brandKey, base } = useBrand();
   const { t, data, locale } = useTranslation();
-  const catData = category ? CATEGORY_DATA[category] : undefined;
   const isYokohama = brandKey === "yokohama";
+  const brandCategoryData = isYokohama ? YOKOHAMA_CATEGORY_DATA : CATEGORY_DATA;
+  const catData = category ? brandCategoryData[category] : undefined;
   const brandLabel = isYokohama ? "YOKOHAMA" : "HI-TECH";
   let product = catData?.products.find((p) => p.slug === productSlug);
   let parentSubcategorySlug: string | undefined;
@@ -2948,8 +2950,9 @@ export function HiTechProduct() {
   const slugToTranslatedName = Object.fromEntries(
     data.categories.map((item) => [item.slug, item.name]),
   );
-  const translatedCatTitle =
-    category === "Havacilik-Yaglari"
+  const translatedCatTitle = isYokohama && category
+    ? getYokohamaCategoryName(category, locale)
+    : category === "Havacilik-Yaglari"
       ? aviationCategoryNames[locale]
       : category === "Hafif-Ticari-Araclar"
         ? t.hitech.lightCommercial
@@ -3022,7 +3025,7 @@ export function HiTechProduct() {
               <button
                 type="button"
                 onClick={() => setLightboxOpen(true)}
-                className={`group relative flex h-64 w-64 cursor-zoom-in items-center justify-center rounded-full sm:h-72 sm:w-72 lg:h-80 lg:w-80 ${isYokohama ? "yokohama-product-halo" : ""}`}
+                className={`group relative flex h-64 w-64 cursor-zoom-in items-center justify-center rounded-full sm:h-72 sm:w-72 lg:h-80 lg:w-80 ${isYokohama ? "yokohama-product-halo overflow-hidden bg-white" : ""}`}
                 aria-label={t.hitech.zoomImage}
               >
                 <img
@@ -3041,7 +3044,7 @@ export function HiTechProduct() {
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wider text-primary">{brandLabel}</p>
                 <h1 className="mt-1 font-display text-3xl font-bold text-foreground sm:text-4xl">
-                  {resolveName(product, locale).replace(/\s+\d[\d.\-]*\s*[Ll]$/, "")}
+                  {resolveName(product, locale).replace(/\s+\d[\d.-]*\s*[Ll]$/, "")}
                 </h1>
               </div>
               {detail && (
