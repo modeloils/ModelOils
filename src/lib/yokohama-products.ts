@@ -11,9 +11,9 @@ export interface YokohamaProductItem {
 }
 
 export interface YokohamaProductDetail {
-  description: string;
-  features: string[];
-  standards: string;
+  description: Record<Locale, string>;
+  features: Record<Locale, string[]>;
+  standards: string | Record<Locale, string>;
   packaging: string[];
 }
 

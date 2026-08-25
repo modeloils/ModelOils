@@ -3067,7 +3067,9 @@ export function HiTechProduct() {
                   </p>
                   <p className="text-sm leading-relaxed text-muted-foreground">
                     <span className="font-semibold text-primary">{brandLabel} {resolveName(product, locale).replace(/\s+\d+L$/i, "").toUpperCase()}</span>{" "}
-                    {resolveText(detail.description, locale).replace(/^[^,]+,\s*/, "")}
+                    {isYokohama
+                      ? resolveText(detail.description, locale)
+                      : resolveText(detail.description, locale).replace(/^[^,]+,\s*/, "")}
                   </p>
                 </div>
               )}
