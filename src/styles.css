@@ -510,6 +510,8 @@
 }
 
 .language-switcher {
+  --gradient-action: var(--gradient-blue);
+  --shadow-glow: 0 0 40px -8px oklch(0.66 0.18 248 / 0.45);
   isolation: isolate;
 }
 
