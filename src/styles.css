@@ -25,6 +25,9 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-amber: var(--amber);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-red: var(--brand-red);
+  --color-brand-green: var(--brand-green);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
@@ -38,48 +41,81 @@
 :root {
   --radius: 0.5rem;
 
-  /* Deep graphite / navy industrial theme */
-  --background: oklch(0.17 0.02 255);
+  /* Model Oils: neutral industrial base shared by both product families. */
+  --brand-blue: oklch(0.66 0.18 248);
+  --brand-red: oklch(0.64 0.215 27);
+  --brand-green: oklch(0.64 0.16 154);
+
+  --background: oklch(0.165 0.016 258);
   --foreground: oklch(0.95 0.005 250);
 
-  --card: oklch(0.21 0.022 255);
+  --card: oklch(0.205 0.019 258);
   --card-foreground: oklch(0.95 0.005 250);
 
-  --popover: oklch(0.2 0.022 255);
+  --popover: oklch(0.195 0.019 258);
   --popover-foreground: oklch(0.95 0.005 250);
 
-  /* Electric blue */
-  --primary: oklch(0.66 0.18 248);
+  --primary: var(--brand-blue);
   --primary-foreground: oklch(0.14 0.02 255);
 
-  /* Metallic silver / graphite */
-  --secondary: oklch(0.28 0.018 255);
+  --secondary: oklch(0.275 0.018 258);
   --secondary-foreground: oklch(0.92 0.005 250);
 
-  --muted: oklch(0.26 0.018 255);
+  --muted: oklch(0.255 0.017 258);
   --muted-foreground: oklch(0.68 0.015 252);
 
-  --accent: oklch(0.66 0.18 248);
-  --accent-foreground: oklch(0.14 0.02 255);
+  --accent: var(--brand-green);
+  --accent-foreground: oklch(0.985 0.004 150);
 
   /* Amber highlight */
   --amber: oklch(0.78 0.15 75);
 
-  --destructive: oklch(0.6 0.22 25);
+  --destructive: var(--brand-red);
   --destructive-foreground: oklch(0.98 0.003 250);
 
-  --border: oklch(0.32 0.018 255);
-  --input: oklch(0.3 0.018 255);
-  --ring: oklch(0.66 0.18 248);
+  --border: oklch(0.32 0.019 258);
+  --input: oklch(0.295 0.018 258);
+  --ring: var(--brand-blue);
 
-  /* Brand effects */
-  --gradient-hero: linear-gradient(180deg, oklch(0.17 0.02 255 / 0) 0%, oklch(0.14 0.02 255 / 0.55) 55%, oklch(0.13 0.02 255 / 0.96) 100%);
-  --gradient-blue: linear-gradient(135deg, oklch(0.66 0.18 248), oklch(0.55 0.16 255));
+  /* Shared brand effects: HI-TECH blue balanced with Yokohama red and green. */
+  --gradient-hero:
+    linear-gradient(
+      90deg,
+      oklch(0.4 0.15 248 / 0.16),
+      transparent 46%,
+      oklch(0.42 0.16 27 / 0.12) 76%,
+      oklch(0.4 0.13 154 / 0.16)
+    ),
+    linear-gradient(
+      180deg,
+      oklch(0.17 0.02 255 / 0) 0%,
+      oklch(0.14 0.02 255 / 0.58) 55%,
+      oklch(0.13 0.02 255 / 0.97) 100%
+    );
+  --gradient-blue: linear-gradient(135deg, var(--brand-blue), oklch(0.55 0.16 255));
+  --gradient-yokohama: linear-gradient(120deg, var(--brand-red) 0 58%, var(--brand-green) 72% 100%);
+  --gradient-brand: linear-gradient(
+    110deg,
+    var(--brand-blue) 0 42%,
+    var(--brand-red) 54% 72%,
+    var(--brand-green) 84% 100%
+  );
+  --gradient-action: var(--gradient-brand);
   --gradient-steel: linear-gradient(145deg, oklch(0.28 0.018 255), oklch(0.2 0.02 255));
-  --gradient-panel: linear-gradient(160deg, oklch(0.23 0.022 255) 0%, oklch(0.18 0.02 255) 100%);
+  --gradient-panel:
+    radial-gradient(circle at 0% 0%, oklch(0.46 0.15 248 / 0.11), transparent 42%),
+    radial-gradient(circle at 100% 0%, oklch(0.46 0.17 27 / 0.085), transparent 34%),
+    radial-gradient(circle at 100% 100%, oklch(0.44 0.13 154 / 0.075), transparent 38%),
+    linear-gradient(160deg, oklch(0.225 0.02 258) 0%, oklch(0.18 0.016 258) 100%);
   --shadow-card: 0 18px 40px -18px oklch(0.05 0.02 255 / 0.8);
-  --shadow-glow: 0 0 40px -8px oklch(0.66 0.18 248 / 0.45);
+  --shadow-glow:
+    -14px 0 38px -16px oklch(0.66 0.18 248 / 0.42), 12px 2px 38px -18px oklch(0.64 0.215 27 / 0.28),
+    0 14px 38px -20px oklch(0.64 0.16 154 / 0.24);
   --grid-line: oklch(0.95 0.005 250 / 0.04);
+  --brand-hero-glow:
+    radial-gradient(circle at 16% 0%, oklch(0.66 0.18 248 / 0.18), transparent 48%),
+    radial-gradient(circle at 82% 10%, oklch(0.64 0.215 27 / 0.12), transparent 36%),
+    radial-gradient(circle at 96% 74%, oklch(0.64 0.16 154 / 0.1), transparent 38%);
 }
 
 .dark {
@@ -105,6 +141,29 @@
   --ring: oklch(0.66 0.18 248);
 }
 
+/* HI-TECH routes stay blue-led while sharing the same component architecture. */
+.hi-tech-theme {
+  --background: oklch(0.17 0.02 255);
+  --card: oklch(0.21 0.022 255);
+  --popover: oklch(0.2 0.022 255);
+  --primary: var(--brand-blue);
+  --secondary: oklch(0.28 0.018 255);
+  --muted: oklch(0.26 0.018 255);
+  --accent: var(--brand-blue);
+  --accent-foreground: oklch(0.14 0.02 255);
+  --border: oklch(0.32 0.018 255);
+  --input: oklch(0.3 0.018 255);
+  --ring: var(--brand-blue);
+  --gradient-action: var(--gradient-blue);
+  --gradient-panel: linear-gradient(160deg, oklch(0.23 0.022 255) 0%, oklch(0.18 0.02 255) 100%);
+  --shadow-glow: 0 0 40px -8px oklch(0.66 0.18 248 / 0.45);
+  --brand-hero-glow: radial-gradient(
+    circle at 20% 0%,
+    oklch(0.66 0.18 248 / 0.16),
+    transparent 55%
+  );
+}
+
 /* Yokohama keeps the catalogue architecture while giving every route its own identity. */
 .yokohama-theme {
   --background: oklch(0.135 0.018 25);
@@ -125,10 +184,18 @@
   --input: oklch(0.3 0.038 28);
   --ring: oklch(0.64 0.215 27);
   --yokohama-green: oklch(0.69 0.17 154);
-  --gradient-panel: linear-gradient(145deg, oklch(0.235 0.04 27 / 0.96), oklch(0.15 0.02 30 / 0.98));
+  --gradient-action: var(--gradient-yokohama);
+  --gradient-panel: linear-gradient(
+    145deg,
+    oklch(0.235 0.04 27 / 0.96),
+    oklch(0.15 0.02 30 / 0.98)
+  );
   --shadow-card: 0 22px 50px -24px oklch(0.06 0.025 25 / 0.96);
   --shadow-glow: 0 0 42px -10px oklch(0.62 0.21 27 / 0.48);
   --grid-line: oklch(0.72 0.18 27 / 0.045);
+  --brand-hero-glow:
+    radial-gradient(circle at 20% 0%, oklch(0.64 0.215 27 / 0.2), transparent 52%),
+    radial-gradient(circle at 88% 65%, oklch(0.69 0.17 154 / 0.13), transparent 42%);
 }
 
 .yokohama-page-surface {
@@ -178,7 +245,183 @@
     radial-gradient(circle at 68% 70%, oklch(0.69 0.17 154 / 0.13), transparent 48%),
     oklch(0.16 0.022 27 / 0.76);
   border: 1px solid oklch(0.64 0.215 27 / 0.24);
-  box-shadow: inset 0 0 50px oklch(0.05 0.02 25 / 0.75), var(--shadow-glow);
+  box-shadow:
+    inset 0 0 50px oklch(0.05 0.02 25 / 0.75),
+    var(--shadow-glow);
+}
+
+/* The shared Model Oils layer visibly carries both brands. */
+.model-mix-theme {
+  position: relative;
+  isolation: isolate;
+}
+
+.model-mix-theme::before {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 0% 14%, oklch(0.52 0.17 248 / 0.08), transparent 31%),
+    radial-gradient(circle at 100% 28%, oklch(0.52 0.19 27 / 0.065), transparent 26%),
+    radial-gradient(circle at 91% 82%, oklch(0.5 0.14 154 / 0.06), transparent 29%);
+}
+
+.mixed-header {
+  isolation: isolate;
+}
+
+.mixed-header::after,
+.brand-footer::before {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  height: 2px;
+  content: "";
+  background: var(--gradient-brand);
+  box-shadow: var(--shadow-glow);
+  pointer-events: none;
+}
+
+.mixed-header::after {
+  bottom: -1px;
+}
+
+.brand-footer::before {
+  top: -1px;
+}
+
+.mixed-header .brand-nav-hi-tech {
+  color: var(--brand-blue);
+}
+
+.mixed-header .brand-nav-yokohama {
+  color: var(--brand-red);
+}
+
+.mixed-header .brand-nav-yokohama .brand-nav-subline {
+  color: var(--brand-green);
+}
+
+.mixed-header .brand-nav-hi-tech:hover,
+.mixed-header .brand-nav-yokohama:hover {
+  color: var(--foreground);
+}
+
+.brand-eyebrow {
+  background: var(--gradient-action);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.brand-accent-rule {
+  background: var(--gradient-action);
+  box-shadow: var(--shadow-glow);
+}
+
+.brand-hero-glow {
+  background: var(--brand-hero-glow);
+}
+
+.brand-card {
+  position: relative;
+  isolation: isolate;
+}
+
+.brand-card::before {
+  position: absolute;
+  z-index: 2;
+  top: -1px;
+  right: 1rem;
+  left: 1rem;
+  height: 2px;
+  content: "";
+  border-radius: 999px;
+  background: var(--gradient-action);
+  opacity: 0.58;
+  transition:
+    opacity 180ms ease,
+    box-shadow 180ms ease;
+  pointer-events: none;
+}
+
+.brand-card:hover::before {
+  opacity: 1;
+  box-shadow: var(--shadow-glow);
+}
+
+.brand-icon {
+  background-image: var(--gradient-action);
+  box-shadow: var(--shadow-glow);
+}
+
+.brand-pill {
+  border-color: transparent;
+  background:
+    linear-gradient(var(--background), var(--background)) padding-box,
+    var(--gradient-brand) border-box;
+  color: var(--foreground);
+}
+
+.brand-section-blue {
+  background-image:
+    radial-gradient(circle at 14% 20%, oklch(0.56 0.18 248 / 0.15), transparent 38%),
+    linear-gradient(180deg, oklch(0.17 0.021 255), oklch(0.155 0.018 255));
+}
+
+.brand-section-yokohama {
+  background-image:
+    radial-gradient(circle at 82% 10%, oklch(0.55 0.2 27 / 0.13), transparent 36%),
+    radial-gradient(circle at 16% 88%, oklch(0.5 0.145 154 / 0.11), transparent 38%),
+    linear-gradient(160deg, oklch(0.175 0.022 28), oklch(0.155 0.018 150));
+}
+
+.brand-section-mixed {
+  background-image: var(--gradient-panel);
+}
+
+.brand-cta-glow {
+  background:
+    radial-gradient(circle at 28% 0%, oklch(0.6 0.18 248 / 0.16), transparent 45%),
+    radial-gradient(circle at 72% 0%, oklch(0.58 0.2 27 / 0.12), transparent 38%),
+    radial-gradient(circle at 54% 100%, oklch(0.56 0.15 154 / 0.1), transparent 42%);
+}
+
+.brand-cycle > :nth-child(3n + 1) .brand-cycle-icon {
+  background-image: var(--gradient-blue);
+  color: var(--primary-foreground);
+}
+
+.brand-cycle > :nth-child(3n + 2) .brand-cycle-icon {
+  background-image: linear-gradient(135deg, var(--brand-red), oklch(0.52 0.19 27));
+  color: white;
+}
+
+.brand-cycle > :nth-child(3n) .brand-cycle-icon {
+  background-image: linear-gradient(135deg, var(--brand-green), oklch(0.49 0.13 154));
+  color: white;
+}
+
+.brand-cycle > :nth-child(3n + 1) .brand-cycle-mark {
+  color: var(--brand-blue);
+}
+
+.brand-cycle > :nth-child(3n + 2) .brand-cycle-mark {
+  color: var(--brand-red);
+}
+
+.brand-cycle > :nth-child(3n) .brand-cycle-mark {
+  color: var(--brand-green);
+}
+
+.brand-product-halo {
+  background:
+    radial-gradient(circle at 44% 30%, oklch(0.58 0.17 248 / 0.15), transparent 48%),
+    radial-gradient(circle at 68% 70%, oklch(0.55 0.17 27 / 0.08), transparent 44%),
+    radial-gradient(circle at 25% 80%, oklch(0.52 0.13 154 / 0.07), transparent 42%);
 }
 
 @layer base {
@@ -193,7 +436,11 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  h1, h2, h3, h4, .font-display {
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-display {
     font-family: var(--font-display);
   }
 }
@@ -217,13 +464,23 @@
 }
 
 @keyframes float-up {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes page-enter {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .page-transition {
@@ -267,7 +524,7 @@
   filter: saturate(1.12) brightness(1.08);
   box-shadow:
     var(--shadow-glow),
-    0 10px 24px -14px oklch(0.66 0.18 248 / 0.9);
+    0 10px 24px -14px oklch(0.58 0.14 154 / 0.7);
 }
 
 .language-switcher-shine {

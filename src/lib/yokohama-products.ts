@@ -3,10 +3,7 @@ import { YOKOHAMA_CATEGORY_DEFINITIONS } from "./yokohama-categories";
 import { YOKOHAMA_PRODUCT_DETAILS } from "./yokohama-product-details.generated";
 import { YOKOHAMA_PRODUCTS } from "./yokohama-products.generated";
 
-export {
-  getYokohamaCategoryName,
-  YOKOHAMA_CATEGORY_DEFINITIONS,
-} from "./yokohama-categories";
+export { getYokohamaCategoryName, YOKOHAMA_CATEGORY_DEFINITIONS } from "./yokohama-categories";
 
 export interface YokohamaProductItem {
   slug: string;
@@ -44,6 +41,8 @@ const SUBDIVIDED_MOTOR_OIL_CATEGORIES = new Set([
   "Motosiklet-Yaglari",
 ]);
 
+const HANDLE_CLEANED_CATEGORIES = new Set(["Binek-Arac-Motor-Yaglari", "Antifrizler"]);
+
 function getViscosityGroup(product: YokohamaProductItem): string | undefined {
   if (/\b2\s*-?\s*T\b/i.test(product.name)) return "2T";
 
@@ -71,10 +70,9 @@ function createViscositySubcategories(
 }
 
 function useTransparentPackshot(image: string, category: string): string {
-  const suffix =
-    category === "Binek-Arac-Motor-Yaglari"
-      ? "-transparent-clean.webp"
-      : "-transparent.webp";
+  const suffix = HANDLE_CLEANED_CATEGORIES.has(category)
+    ? "-transparent-clean.webp"
+    : "-transparent.webp";
   return image.replace(/\.webp$/i, suffix);
 }
 

@@ -192,7 +192,7 @@ function CatalogGrid({
       {entries.map((catalog) => (
         <article
           key={catalog.href}
-          className="flex min-h-64 flex-col justify-between rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6 shadow-[var(--shadow-card)]"
+          className="brand-card flex min-h-64 flex-col justify-between rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6 shadow-[var(--shadow-card)]"
         >
           <div>
             <FileText className="h-9 w-9 text-primary" aria-hidden="true" />

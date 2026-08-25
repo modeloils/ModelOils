@@ -30,10 +30,26 @@ export function localePath(to: string, locale: Locale): string {
 
 /** Remove a leading locale prefix, returning the base English path. */
 export function stripLocale(pathname: string): string {
-  if (pathname === "/tr" || pathname === "/ru" || pathname === "/fa" || pathname === "/ar" || pathname === "/de" || pathname === "/fr") return "/";
+  if (
+    pathname === "/tr" ||
+    pathname === "/ru" ||
+    pathname === "/fa" ||
+    pathname === "/ar" ||
+    pathname === "/de" ||
+    pathname === "/fr"
+  )
+    return "/";
   if (pathname === "/tr/HI-TECH") return "/hi-tech";
   if (pathname.startsWith("/tr/HI-TECH/")) return `/hi-tech${pathname.slice("/tr/HI-TECH".length)}`;
-  if (pathname.startsWith("/tr/") || pathname.startsWith("/ru/") || pathname.startsWith("/fa/") || pathname.startsWith("/ar/") || pathname.startsWith("/de/") || pathname.startsWith("/fr/")) return pathname.slice(3);
+  if (
+    pathname.startsWith("/tr/") ||
+    pathname.startsWith("/ru/") ||
+    pathname.startsWith("/fa/") ||
+    pathname.startsWith("/ar/") ||
+    pathname.startsWith("/de/") ||
+    pathname.startsWith("/fr/")
+  )
+    return pathname.slice(3);
   return pathname;
 }
 
@@ -82,7 +98,15 @@ function readLocaleCookie(): Locale | null {
   if (typeof document === "undefined") return null;
   const match = document.cookie.match(new RegExp(`(?:^|; )${LOCALE_COOKIE}=([^;]+)`));
   const v = match?.[1];
-  return v === "en" || v === "tr" || v === "ru" || v === "fa" || v === "ar" || v === "de" || v === "fr" ? v : null;
+  return v === "en" ||
+    v === "tr" ||
+    v === "ru" ||
+    v === "fa" ||
+    v === "ar" ||
+    v === "de" ||
+    v === "fr"
+    ? v
+    : null;
 }
 
 /** Decide whether a first-time visitor at "/" should be sent to /tr. */
@@ -121,7 +145,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
       dir="ltr"
     >
       <span
-        className="language-switcher-thumb pointer-events-none absolute left-0.5 top-0.5 h-[calc(100%-0.25rem)] w-9 rounded bg-[image:var(--gradient-blue)] shadow-[var(--shadow-glow)]"
+        className="language-switcher-thumb pointer-events-none absolute left-0.5 top-0.5 h-[calc(100%-0.25rem)] w-9 rounded bg-[image:var(--gradient-action)] shadow-[var(--shadow-glow)]"
         style={{ transform: `translateX(${activeIndex * 2.25}rem)` }}
         aria-hidden="true"
       >
@@ -162,7 +186,19 @@ export function pageHead(
   const deHref = localePath(PAGE_PATHS[key], "de");
   const frHref = localePath(PAGE_PATHS[key], "fr");
   const ogLocale =
-    locale === "tr" ? "tr_TR" : locale === "ru" ? "ru_RU" : locale === "fa" ? "fa_IR" : locale === "ar" ? "ar_AE" : locale === "de" ? "de_DE" : locale === "fr" ? "fr_FR" : "en_US";
+    locale === "tr"
+      ? "tr_TR"
+      : locale === "ru"
+        ? "ru_RU"
+        : locale === "fa"
+          ? "fa_IR"
+          : locale === "ar"
+            ? "ar_AE"
+            : locale === "de"
+              ? "de_DE"
+              : locale === "fr"
+                ? "fr_FR"
+                : "en_US";
 
   return {
     meta: [

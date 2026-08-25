@@ -6,9 +6,9 @@ import { LocaleLink, useTranslation } from "@/lib/i18n";
 export function CategoryCard({ category }: { category: Category }) {
   const { t } = useTranslation();
   return (
-    <div className="group flex flex-col rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6 shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50">
+    <div className="brand-card group flex flex-col rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6 shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50">
       {category.image && (
-        <div className="mb-5 flex h-28 items-center justify-center rounded-lg bg-[radial-gradient(circle_at_50%_30%,oklch(0.66_0.18_248/0.14),transparent_72%)]">
+        <div className="brand-product-halo mb-5 flex h-28 items-center justify-center rounded-lg">
           <img
             src={category.image}
             alt=""
@@ -35,7 +35,12 @@ export function CategoryCard({ category }: { category: Category }) {
           </span>
         ))}
       </div>
-      <Button asChild variant="ghost" size="sm" className="mt-5 justify-start px-0 text-primary hover:bg-transparent hover:text-primary/80">
+      <Button
+        asChild
+        variant="ghost"
+        size="sm"
+        className="mt-5 justify-start px-0 text-primary hover:bg-transparent hover:text-primary/80"
+      >
         <LocaleLink to="/contact">
           {t.card.requestQuote} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
         </LocaleLink>

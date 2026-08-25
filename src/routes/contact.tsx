@@ -28,15 +28,26 @@ export function Contact() {
       <section className="bg-background py-16 lg:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.5fr] lg:px-8">
           <div className="space-y-4">
-            <ContactItem icon={Building2} title={t.contact.legalName} value={CONTACT.legalName} wrap />
+            <ContactItem
+              icon={Building2}
+              title={t.contact.legalName}
+              value={CONTACT.legalName}
+              wrap
+            />
             <ContactItem icon={Mail} title={t.contact.email} value={CONTACT.email} />
             <ContactItem icon={MessageCircle} title={t.contact.whatsapp} value={CONTACT.phone} />
-            <ContactItem icon={Globe2} title={t.contact.exportInquiries} value={t.contact.exportInquiriesValue} />
-            <ContactItem icon={Clock} title={t.contact.responseTime} value={t.contact.responseTimeValue} />
-            <div className="rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6">
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                {t.contact.helpText}
-              </p>
+            <ContactItem
+              icon={Globe2}
+              title={t.contact.exportInquiries}
+              value={t.contact.exportInquiriesValue}
+            />
+            <ContactItem
+              icon={Clock}
+              title={t.contact.responseTime}
+              value={t.contact.responseTimeValue}
+            />
+            <div className="brand-card rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6">
+              <p className="text-sm leading-relaxed text-muted-foreground">{t.contact.helpText}</p>
             </div>
           </div>
           <QuoteForm />
@@ -59,12 +70,16 @@ function ContactItem({
 }) {
   return (
     <div className="flex items-center gap-4 rounded-xl border border-border bg-card/60 p-5">
-      <span className="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-[image:var(--gradient-blue)]">
-        <Icon className="h-5 w-5 text-primary-foreground" />
+      <span className="brand-icon grid h-11 w-11 shrink-0 place-items-center rounded-lg">
+        <Icon className="h-5 w-5 text-white" />
       </span>
       <div className="min-w-0">
-        <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{title}</p>
-        <p className={`text-sm font-medium text-foreground ${wrap ? "break-words" : "truncate"}`}>{value}</p>
+        <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          {title}
+        </p>
+        <p className={`text-sm font-medium text-foreground ${wrap ? "break-words" : "truncate"}`}>
+          {value}
+        </p>
       </div>
     </div>
   );

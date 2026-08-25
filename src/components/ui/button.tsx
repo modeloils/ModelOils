@@ -16,7 +16,7 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-[image:var(--gradient-blue)] text-primary-foreground font-semibold shadow-[var(--shadow-glow)] hover:brightness-110 transition-all",
+        hero: "bg-[image:var(--gradient-action)] text-white font-semibold shadow-[var(--shadow-glow)] hover:brightness-110 transition-all",
         steel:
           "border border-border bg-[image:var(--gradient-steel)] text-foreground hover:border-primary/60 hover:text-primary transition-all",
       },
@@ -27,7 +27,6 @@ const buttonVariants = cva(
         xl: "h-13 rounded-md px-9 text-base font-semibold",
         icon: "h-9 w-9",
       },
-
     },
     defaultVariants: {
       variant: "default",

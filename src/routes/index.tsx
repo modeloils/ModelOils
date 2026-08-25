@@ -62,12 +62,11 @@ function Hero() {
       <div className="tech-grid absolute inset-0 opacity-40" />
       <div className="relative mx-auto flex max-w-7xl flex-col justify-center px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-40">
         <div className="max-w-2xl animate-float-up">
-          <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+          <span className="brand-pill inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]">
             <Globe2 className="h-3.5 w-3.5" /> {t.hero.badge}
           </span>
           <h1 className="mt-6 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            {t.hero.titlePre}{" "}
-            <span className="text-gradient-steel">{t.hero.titleHighlight}</span>
+            {t.hero.titlePre} <span className="text-gradient-steel">{t.hero.titleHighlight}</span>
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-foreground/85 sm:text-lg">
             {t.hero.subtitle}
@@ -84,10 +83,10 @@ function Hero() {
           </div>
           <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-foreground/75">
             <span className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-primary" /> {t.hero.bulletPackaging}
+              <CheckCircle2 className="h-4 w-4 text-brand-red" /> {t.hero.bulletPackaging}
             </span>
             <span className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-primary" /> {t.hero.bulletExport}
+              <CheckCircle2 className="h-4 w-4 text-brand-green" /> {t.hero.bulletExport}
             </span>
           </div>
         </div>
@@ -99,7 +98,7 @@ function Hero() {
 function Flagship() {
   const { t, data } = useTranslation();
   return (
-    <section className="relative overflow-hidden border-y border-border bg-background py-20 lg:py-28">
+    <section className="brand-section-blue relative overflow-hidden border-y border-border py-20 lg:py-28">
       <div className="tech-grid absolute inset-0 opacity-30" />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div>
@@ -129,7 +128,9 @@ function Flagship() {
               </LocaleLink>
             </Button>
             <Button asChild variant="steel" size="lg">
-              <LocaleLink to="/hi-tech" hash="kategorilerimiz">{t.flagship.viewRange}</LocaleLink>
+              <LocaleLink to="/hi-tech" hash="kategorilerimiz">
+                {t.flagship.viewRange}
+              </LocaleLink>
             </Button>
           </div>
         </div>
@@ -153,7 +154,7 @@ function ExportSection() {
   const { t, data } = useTranslation();
   const icons = [Ship, Boxes, ShieldCheck, Boxes, Wrench, Truck];
   return (
-    <section className="relative overflow-hidden border-y border-border py-20 lg:py-28">
+    <section className="brand-section-mixed relative overflow-hidden border-y border-border py-20 lg:py-28">
       <img
         src={exportImg}
         alt={t.imgAlt.exportWarehouse}
@@ -169,18 +170,20 @@ function ExportSection() {
           title={t.exportHome.title}
           description={t.exportHome.description}
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="brand-cycle mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {data.exportCards.map((card, i) => {
             const Icon = icons[i % icons.length];
             return (
               <div
                 key={card.title}
-                className="rounded-xl border border-border bg-card/80 p-6 backdrop-blur-sm transition-all hover:border-primary/50"
+                className="brand-card rounded-xl border border-border bg-card/80 p-6 backdrop-blur-sm transition-all hover:border-primary/50"
               >
-                <span className="grid h-11 w-11 place-items-center rounded-lg bg-[image:var(--gradient-blue)]">
-                  <Icon className="h-5 w-5 text-primary-foreground" />
+                <span className="brand-cycle-icon grid h-11 w-11 place-items-center rounded-lg">
+                  <Icon className="h-5 w-5" />
                 </span>
-                <h3 className="mt-4 font-display text-lg font-bold text-foreground">{card.title}</h3>
+                <h3 className="mt-4 font-display text-lg font-bold text-foreground">
+                  {card.title}
+                </h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{card.text}</p>
               </div>
             );
@@ -191,27 +194,36 @@ function ExportSection() {
   );
 }
 
-const industryIcons: LucideIcon[] = [Car, Truck, RouteIcon, Factory, HardHat, Wheat, Anchor, Wrench];
+const industryIcons: LucideIcon[] = [
+  Car,
+  Truck,
+  RouteIcon,
+  Factory,
+  HardHat,
+  Wheat,
+  Anchor,
+  Wrench,
+];
 
 function Industries() {
   const { t, data } = useTranslation();
   return (
-    <section className="bg-background py-20 lg:py-28">
+    <section className="brand-section-yokohama py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow={t.industriesHome.eyebrow}
           title={t.industriesHome.title}
           align="center"
         />
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <div className="brand-cycle mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
           {data.industries.map((ind, i) => {
             const Icon = industryIcons[i] ?? Factory;
             return (
               <div
                 key={ind.name}
-                className="group flex flex-col items-center gap-3 rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6 text-center transition-all hover:-translate-y-1 hover:border-primary/50"
+                className="brand-card group flex flex-col items-center gap-3 rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6 text-center transition-all hover:-translate-y-1 hover:border-primary/50"
               >
-                <span className="grid h-11 w-11 place-items-center rounded-lg bg-secondary text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                <span className="brand-cycle-icon grid h-11 w-11 place-items-center rounded-lg transition-[filter] group-hover:brightness-110">
                   <Icon className="h-5 w-5" />
                 </span>
                 <span className="text-sm font-semibold text-foreground">{ind.name}</span>
@@ -227,13 +239,16 @@ function Industries() {
 function WhyUs() {
   const { t, data } = useTranslation();
   return (
-    <section className="border-t border-border bg-[image:var(--gradient-panel)] py-20 lg:py-28">
+    <section className="brand-section-mixed border-t border-border py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow={t.whyUs.eyebrow} title={t.whyUs.title} />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="brand-cycle mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {data.trustPoints.map((tp) => (
-            <div key={tp.title} className="flex gap-4 rounded-xl border border-border bg-card/60 p-6">
-              <CheckCircle2 className="mt-0.5 h-6 w-6 shrink-0 text-primary" />
+            <div
+              key={tp.title}
+              className="brand-card flex gap-4 rounded-xl border border-border bg-card/60 p-6"
+            >
+              <CheckCircle2 className="brand-cycle-mark mt-0.5 h-6 w-6 shrink-0" />
               <div>
                 <h3 className="font-display text-base font-bold text-foreground">{tp.title}</h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{tp.text}</p>
@@ -249,15 +264,13 @@ function WhyUs() {
 function QuoteCta() {
   const { t } = useTranslation();
   return (
-    <section className="relative overflow-hidden border-t border-border bg-background py-20 lg:py-24">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,oklch(0.66_0.18_248/0.18),transparent_60%)]" />
+    <section className="brand-section-mixed relative overflow-hidden border-t border-border py-20 lg:py-24">
+      <div className="brand-cta-glow absolute inset-0" />
       <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
         <h2 className="font-display text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
           {t.quoteCta.title}
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">
-          {t.quoteCta.body}
-        </p>
+        <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">{t.quoteCta.body}</p>
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
           <Button asChild variant="hero" size="xl">
             <LocaleLink to="/contact">

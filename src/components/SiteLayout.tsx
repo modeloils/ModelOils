@@ -30,11 +30,19 @@ function WhatsAppButton() {
 export function SiteLayout({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const isYokohamaRoute = /(^|\/)yokohama(?:\/|$)/.test(pathname);
+  const isHiTechRoute = /(^|\/)hi-tech(?:\/|$)/.test(pathname);
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
-      <div className={cn("flex flex-1 flex-col", isYokohamaRoute && "yokohama-theme")}>
+      <div
+        className={cn(
+          "flex flex-1 flex-col",
+          isYokohamaRoute && "yokohama-theme",
+          isHiTechRoute && "hi-tech-theme",
+          !isYokohamaRoute && !isHiTechRoute && "model-mix-theme",
+        )}
+      >
         <main className="flex-1">
           <div key={pathname} className="page-transition">
             {children}

@@ -16,21 +16,18 @@ export const Route = createFileRoute("/blog")({
 
 function ArticleCard({ article }: { article: BlogArticle }) {
   const { t } = useTranslation();
-  const excerpt = article.body[0].length > 120
-    ? article.body[0].slice(0, 120).trimEnd() + "…"
-    : article.body[0];
+  const excerpt =
+    article.body[0].length > 120 ? article.body[0].slice(0, 120).trimEnd() + "…" : article.body[0];
 
   return (
     <LocaleLink
       to={`/blog/${article.slug}`}
-      className="group flex flex-col rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6 transition-colors hover:border-primary/50"
+      className="brand-card group flex flex-col rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6 transition-colors hover:border-primary/50"
     >
       <h3 className="font-display text-base font-semibold leading-snug text-foreground group-hover:text-primary transition-colors">
         {article.title}
       </h3>
-      <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
-        {excerpt}
-      </p>
+      <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{excerpt}</p>
       <span className="mt-5 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
         {t.blogPage.readMore} <ArrowRight className="h-3 w-3 rtl:rotate-180" />
       </span>

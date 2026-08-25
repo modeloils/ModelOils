@@ -14,16 +14,10 @@ export function SectionHeading({
   className?: string;
 }) {
   return (
-    <div
-      className={cn(
-        "max-w-2xl",
-        align === "center" && "mx-auto text-center",
-        className,
-      )}
-    >
+    <div className={cn("max-w-2xl", align === "center" && "mx-auto text-center", className)}>
       {eyebrow && (
-        <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-          <span className="h-px w-6 bg-primary" />
+        <span className="brand-eyebrow inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em]">
+          <span className="brand-accent-rule h-px w-6" />
           {eyebrow}
         </span>
       )}

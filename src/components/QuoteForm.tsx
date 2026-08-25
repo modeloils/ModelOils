@@ -15,7 +15,10 @@ export function QuoteForm() {
     formData.append("subject", "Model Oils — New Quote Request");
     formData.append("from_name", "Model Oils Website");
     try {
-      const res = await fetch("https://api.web3forms.com/submit", { method: "POST", body: formData });
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
       const json = await res.json();
       if (json.success) {
         (e.target as HTMLFormElement).reset();
@@ -33,7 +36,7 @@ export function QuoteForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="space-y-4 rounded-2xl border border-border bg-[image:var(--gradient-panel)] p-6 lg:p-8"
+      className="brand-card space-y-4 rounded-2xl border border-border bg-[image:var(--gradient-panel)] p-6 lg:p-8"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <Field label={t.form.name} name="name" required />

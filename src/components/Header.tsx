@@ -9,7 +9,7 @@ export function Header() {
   const { t } = useTranslation();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-xl">
+    <header className="mixed-header sticky top-0 z-50 border-b border-border/70 bg-background/88 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 sm:h-20 sm:px-6 lg:h-28 lg:px-8">
         <LocaleLink to="/" className="flex min-w-0 items-center" onClick={() => setOpen(false)}>
           <img
@@ -29,12 +29,14 @@ export function Header() {
               className={cn(
                 "relative rounded-md px-2 py-2 text-sm font-medium transition-colors hover:text-foreground",
                 l.highlight && "text-foreground",
+                l.brand === "YOKOHAMA" && "brand-nav-yokohama",
+                l.brand === "HI-TECH" && "brand-nav-hi-tech",
               )}
             >
               {l.brand ? (
                 <span className="flex flex-col items-center leading-none">
                   <span className="whitespace-nowrap">{l.brand}</span>
-                  <span className="mt-0.5 text-[11px] font-semibold">
+                  <span className="brand-nav-subline mt-0.5 text-[11px] font-semibold">
                     {t.nav.products}
                   </span>
                 </span>
@@ -75,12 +77,16 @@ export function Header() {
                 to={l.to}
                 onClick={() => setOpen(false)}
                 activeProps={{ className: "bg-secondary text-primary" }}
-                className="flex min-h-[44px] items-center justify-between rounded-md px-3 py-3 text-sm font-medium text-foreground"
+                className={cn(
+                  "flex min-h-[44px] items-center justify-between rounded-md px-3 py-3 text-sm font-medium text-foreground",
+                  l.brand === "YOKOHAMA" && "brand-nav-yokohama",
+                  l.brand === "HI-TECH" && "brand-nav-hi-tech",
+                )}
               >
                 {l.brand ? (
                   <span className="flex flex-col leading-none">
                     <span className="whitespace-nowrap">{l.brand}</span>
-                    <span className="mt-1 text-xs font-semibold">
+                    <span className="brand-nav-subline mt-1 text-xs font-semibold">
                       {t.nav.products}
                     </span>
                   </span>

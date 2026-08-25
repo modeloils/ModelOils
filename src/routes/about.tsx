@@ -61,7 +61,10 @@ export function About() {
           <SectionHeading eyebrow={t.about.whyEyebrow} title={t.about.whyTitle} />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {data.trustPoints.map((tp) => (
-              <div key={tp.title} className="flex gap-4 rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6">
+              <div
+                key={tp.title}
+                className="brand-card flex gap-4 rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6"
+              >
                 <CheckCircle2 className="mt-0.5 h-6 w-6 shrink-0 text-primary" />
                 <div>
                   <h3 className="font-display text-base font-bold text-foreground">{tp.title}</h3>

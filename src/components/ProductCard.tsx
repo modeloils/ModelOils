@@ -7,8 +7,8 @@ import { LocaleLink, useTranslation } from "@/lib/i18n";
 export function ProductCard({ product }: { product: Product }) {
   const { t } = useTranslation();
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50">
-      <div className="relative flex h-48 items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_50%_30%,oklch(0.66_0.18_248/0.18),transparent_70%)]">
+    <div className="brand-card group relative flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:border-primary/50">
+      <div className="brand-product-halo relative flex h-48 items-center justify-center overflow-hidden">
         <div className="tech-grid absolute inset-0 opacity-60" />
         <img
           src={product.image ?? `${ASSET_BASE}/hi-tech/5w40-4lt.png`}

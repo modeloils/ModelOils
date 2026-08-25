@@ -58,13 +58,17 @@ export function Export() {
                   return (
                     <div
                       key={card.title}
-                      className="rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6 transition-all hover:border-primary/50"
+                      className="brand-card rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6 transition-all hover:border-primary/50"
                     >
-                      <span className="grid h-11 w-11 place-items-center rounded-lg bg-[image:var(--gradient-blue)]">
-                        <Icon className="h-5 w-5 text-primary-foreground" />
+                      <span className="brand-icon grid h-11 w-11 place-items-center rounded-lg">
+                        <Icon className="h-5 w-5 text-white" />
                       </span>
-                      <h3 className="mt-4 font-display text-lg font-bold text-foreground">{card.title}</h3>
-                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{card.text}</p>
+                      <h3 className="mt-4 font-display text-lg font-bold text-foreground">
+                        {card.title}
+                      </h3>
+                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                        {card.text}
+                      </p>
                     </div>
                   );
                 })}
@@ -75,7 +79,10 @@ export function Export() {
           <section className="bg-background/40 py-20 lg:py-24">
             <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
               <div>
-                <SectionHeading eyebrow={t.exportPage.packagingEyebrow} title={t.exportPage.packagingTitle} />
+                <SectionHeading
+                  eyebrow={t.exportPage.packagingEyebrow}
+                  title={t.exportPage.packagingTitle}
+                />
                 <div className="mt-8 flex flex-wrap gap-3">
                   {PACKAGING.map((p) => (
                     <span
@@ -88,7 +95,10 @@ export function Export() {
                 </div>
               </div>
               <div>
-                <SectionHeading eyebrow={t.exportPage.marketsEyebrow} title={t.exportPage.marketsTitle} />
+                <SectionHeading
+                  eyebrow={t.exportPage.marketsEyebrow}
+                  title={t.exportPage.marketsTitle}
+                />
                 <div className="mt-8 flex flex-wrap gap-3">
                   {data.exportMarkets.map((m) => (
                     <span
