@@ -234,26 +234,28 @@ export function Catalogs() {
   return (
     <SiteLayout>
       <PageHero compact eyebrow="HI-TECH · YOKOHAMA" title={t.nav.catalogs} />
-      <main className="bg-background py-16 lg:py-20">
-        <div className="mx-auto max-w-6xl space-y-16 px-4 sm:px-6 lg:px-8">
-          <section>
+      <main>
+        <section className="brand-section-blue py-16 lg:py-20">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="HI-TECH"
               title={brands.hiTech.title}
               description={brands.hiTech.description}
             />
             <CatalogGrid entries={hiTechEntries} downloadLabel={t.hitech.downloadCatalog} />
-          </section>
+          </div>
+        </section>
 
-          <section>
+        <section className="brand-section-red border-t border-border py-16 lg:py-20">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="YOKOHAMA"
               title={brands.yokohama.title}
               description={brands.yokohama.description}
             />
             <CatalogGrid entries={yokohamaEntries} downloadLabel={t.hitech.downloadCatalog} />
-          </section>
-        </div>
+          </div>
+        </section>
       </main>
     </SiteLayout>
   );

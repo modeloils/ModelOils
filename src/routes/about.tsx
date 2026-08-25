@@ -27,7 +27,7 @@ export function About() {
         backgroundImage="/model-oils/images/about-hero.jpg"
       />
 
-      <section className="border-b border-border bg-background py-20 lg:py-24">
+      <section className="brand-section-red border-b border-border py-20 lg:py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <div>
             <SectionHeading eyebrow={t.about.focusEyebrow} title={t.about.focusTitle} />
@@ -43,7 +43,7 @@ export function About() {
               </LocaleLink>
             </Button>
           </div>
-          <div className="relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)] glow-blue">
+          <div className="relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-glow)]">
             <img
               src={flagshipImg}
               alt={t.imgAlt.productDisplay}
@@ -56,7 +56,7 @@ export function About() {
         </div>
       </section>
 
-      <section className="bg-background py-20 lg:py-24">
+      <section className="brand-section-green py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow={t.about.whyEyebrow} title={t.about.whyTitle} />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

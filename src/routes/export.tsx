@@ -49,7 +49,7 @@ export function Export() {
             </PageHero>
           </div>
 
-          <section className="border-b border-border/30 bg-background/40 py-20 lg:py-24">
+          <section className="brand-section-red border-b border-border/30 py-20 lg:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <SectionHeading eyebrow={t.exportPage.capEyebrow} title={t.exportPage.capTitle} />
               <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -76,7 +76,7 @@ export function Export() {
             </div>
           </section>
 
-          <section className="bg-background/40 py-20 lg:py-24">
+          <section className="brand-section-green py-20 lg:py-24">
             <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
               <div>
                 <SectionHeading

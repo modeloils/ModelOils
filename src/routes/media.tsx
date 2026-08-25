@@ -82,64 +82,80 @@ export function Media() {
 
   return (
     <SiteLayout>
-      {lightbox && typeof document !== "undefined" && createPortal(
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
-          onPointerDown={() => setLightbox(null)}
-        >
+      {lightbox &&
+        typeof document !== "undefined" &&
+        createPortal(
           <div
-            className="relative flex items-center justify-center"
-            onPointerDown={(e) => e.stopPropagation()}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+            onPointerDown={() => setLightbox(null)}
           >
-            <img
-              src={lightbox}
-              alt=""
-              className="block max-h-[85vh] max-w-[90vw] rounded-lg object-contain shadow-2xl"
-            />
-            <button
-              onClick={() => setLightbox(null)}
-              aria-label="Close"
-              className="absolute -right-2 -top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-100 sm:-right-4 sm:-top-4"
+            <div
+              className="relative flex items-center justify-center"
+              onPointerDown={(e) => e.stopPropagation()}
             >
-              <X className="h-5 w-5 text-gray-800" />
-            </button>
-          </div>
-        </div>,
-        document.body,
-      )}
+              <img
+                src={lightbox}
+                alt=""
+                className="block max-h-[85vh] max-w-[90vw] rounded-lg object-contain shadow-2xl"
+              />
+              <button
+                onClick={() => setLightbox(null)}
+                aria-label="Close"
+                className="absolute -right-2 -top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-100 sm:-right-4 sm:-top-4"
+              >
+                <X className="h-5 w-5 text-gray-800" />
+              </button>
+            </div>
+          </div>,
+          document.body,
+        )}
 
-      <PageHero compact eyebrow="Model Oils" title={t.mediaPage.heroTitle} subtitle={t.mediaPage.heroSubtitle} />
+      <PageHero
+        compact
+        eyebrow="Model Oils"
+        title={t.mediaPage.heroTitle}
+        subtitle={t.mediaPage.heroSubtitle}
+      />
 
-      <div className="bg-background py-20 lg:py-24">
-        <div className="mx-auto max-w-7xl space-y-20 px-4 sm:px-6 lg:px-8">
-          {MEDIA_ALBUMS.map((album) => (
-            <section key={album.title}>
-              <SectionHeading eyebrow={t.mediaPage.galleryEyebrow} title={album.title} />
-              <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-                {album.images.map((src) => (
-                  <button
-                    key={src}
-                    type="button"
-                    onClick={() => setLightbox(src)}
-                    className="group relative aspect-[4/3] cursor-pointer overflow-hidden rounded-xl border border-border bg-secondary"
-                  >
-                    <img
-                      src={src}
-                      alt=""
-                      loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                    <span className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/20">
-                      <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/80 opacity-100 shadow transition-all group-hover:bg-white/90 sm:bg-white/0 sm:opacity-0 sm:group-hover:bg-white/90 sm:group-hover:opacity-100">
-                        <ZoomIn className="h-4 w-4 text-gray-800" />
+      <div>
+        {MEDIA_ALBUMS.map((album, index) => {
+          const sectionTheme = ["brand-section-red", "brand-section-green", "brand-section-blue"][
+            index % 3
+          ];
+
+          return (
+            <section
+              key={album.title}
+              className={`${sectionTheme} border-t border-border py-20 lg:py-24`}
+            >
+              <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <SectionHeading eyebrow={t.mediaPage.galleryEyebrow} title={album.title} />
+                <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                  {album.images.map((src) => (
+                    <button
+                      key={src}
+                      type="button"
+                      onClick={() => setLightbox(src)}
+                      className="group relative aspect-[4/3] cursor-pointer overflow-hidden rounded-xl border border-border bg-secondary"
+                    >
+                      <img
+                        src={src}
+                        alt=""
+                        loading="lazy"
+                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <span className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/20">
+                        <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/80 opacity-100 shadow transition-all group-hover:bg-white/90 sm:bg-white/0 sm:opacity-0 sm:group-hover:bg-white/90 sm:group-hover:opacity-100">
+                          <ZoomIn className="h-4 w-4 text-gray-800" />
+                        </span>
                       </span>
-                    </span>
-                  </button>
-                ))}
+                    </button>
+                  ))}
+                </div>
               </div>
             </section>
-          ))}
-        </div>
+          );
+        })}
       </div>
     </SiteLayout>
   );

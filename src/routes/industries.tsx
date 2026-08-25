@@ -46,9 +46,9 @@ export function Industries() {
         subtitle={t.industriesPage.heroSubtitle}
         backgroundImage="/model-oils/images/industries-hero.jpg"
       />
-      <section className="bg-background py-20 lg:py-24">
+      <section className="brand-section-red py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="brand-cycle grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {data.industries.map((ind, i) => {
               const Icon = industryIcons[i] ?? Factory;
               return (
@@ -56,7 +56,7 @@ export function Industries() {
                   key={ind.name}
                   className="brand-card group rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6 transition-all hover:-translate-y-1 hover:border-primary/50"
                 >
-                  <span className="brand-cycle-icon grid h-11 w-11 place-items-center rounded-lg transition-[filter] group-hover:brightness-110">
+                  <span className="brand-icon grid h-11 w-11 place-items-center rounded-lg text-white transition-[filter] group-hover:brightness-110">
                     <Icon className="h-5 w-5" />
                   </span>
                   <h3 className="mt-4 font-display text-lg font-bold text-foreground">
