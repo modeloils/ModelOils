@@ -241,6 +241,49 @@
   isolation: isolate;
 }
 
+.home-hero-cream {
+  --background: oklch(0.955 0.016 78);
+  --foreground: oklch(0.24 0.022 65);
+  --primary: var(--brand-red);
+  --primary-foreground: white;
+  --secondary: oklch(0.925 0.018 78);
+  --secondary-foreground: oklch(0.27 0.022 65);
+  --muted-foreground: oklch(0.43 0.025 65);
+  --accent: var(--brand-red);
+  --accent-foreground: white;
+  --border: oklch(0.79 0.025 74);
+  --input: oklch(0.79 0.025 74);
+  --ring: var(--brand-red);
+  --gradient-action: var(--gradient-red);
+  --section-accent: var(--brand-red);
+  --shadow-glow: 0 0 36px -10px oklch(0.64 0.215 27 / 0.3);
+  --grid-line: oklch(0.3 0.025 65 / 0.055);
+  background: oklch(0.955 0.016 78);
+}
+
+.home-hero-overlay {
+  background:
+    linear-gradient(
+      90deg,
+      oklch(0.965 0.016 78 / 0.99) 0%,
+      oklch(0.965 0.016 78 / 0.96) 40%,
+      oklch(0.965 0.016 78 / 0.76) 51%,
+      oklch(0.965 0.016 78 / 0.14) 72%,
+      transparent 84%
+    ),
+    linear-gradient(180deg, oklch(1 0 0 / 0.03), oklch(0.88 0.018 75 / 0.18));
+}
+
+.home-hero-highlight {
+  color: oklch(0.48 0.17 27);
+}
+
+@media (max-width: 639px) {
+  .home-hero-overlay {
+    background: linear-gradient(90deg, oklch(0.965 0.016 78 / 0.96), oklch(0.965 0.016 78 / 0.82));
+  }
+}
+
 /* Blog routes intentionally retain the original combined three-brand-color treatment. */
 .blog-mixed-theme {
   --accent: var(--brand-green);

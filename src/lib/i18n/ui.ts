@@ -1,6 +1,14 @@
 import type { Locale } from "./types";
 
-export type NavKey = "products" | "catalogs" | "industries" | "export" | "about" | "contact" | "media" | "blog";
+export type NavKey =
+  | "products"
+  | "catalogs"
+  | "industries"
+  | "export"
+  | "about"
+  | "contact"
+  | "media"
+  | "blog";
 
 export interface UIStrings {
   nav: {
@@ -34,7 +42,7 @@ export interface UIStrings {
     titleHighlight: string;
     subtitle: string;
     requestQuote: string;
-    exploreHiTech: string;
+    exploreYokohama: string;
     bulletBulk: string;
     bulletPackaging: string;
     bulletExport: string;
@@ -159,8 +167,20 @@ export interface UIStrings {
   notFound: { title: string; body: string; goHome: string };
   errorPage: { title: string; body: string; tryAgain: string; goHome: string };
   mediaPage: { heroTitle: string; heroSubtitle: string; galleryEyebrow: string };
-  common: { backToHome: string; backToBrands: string; backToProducts: string; catalogs: string; catalog: string; viewProducts: string };
-  imgAlt: { heroProducts: string; flagshipFamily: string; exportWarehouse: string; productDisplay: string };
+  common: {
+    backToHome: string;
+    backToBrands: string;
+    backToProducts: string;
+    catalogs: string;
+    catalog: string;
+    viewProducts: string;
+  };
+  imgAlt: {
+    heroProducts: string;
+    flagshipFamily: string;
+    exportWarehouse: string;
+    productDisplay: string;
+  };
   blogPage: {
     heroTitle: string;
     heroSubtitle: string;
@@ -201,12 +221,12 @@ const en: UIStrings = {
   },
   hero: {
     badge: "International Lubricant Export",
-    titlePre: "HI-TECH Oil Solutions for",
+    titlePre: "YOKOHAMA Oil Solutions for",
     titleHighlight: "Distributors & Wholesalers",
     subtitle:
-      "Model Oils supplies HI-TECH motor oils, diesel oils, hydraulic oils, gear oils, antifreeze, greases and industrial lubricants for distributors, wholesalers, fleets and international buyers.",
+      "Model Oils supplies YOKOHAMA motor oils and complementary automotive fluids for distributors, wholesalers, fleets and international buyers.",
     requestQuote: "Request a Quote",
-    exploreHiTech: "Explore HI-TECH Products",
+    exploreYokohama: "Explore YOKOHAMA Products",
     bulletBulk: "Bulk & container supply",
     bulletPackaging: "Flexible packaging",
     bulletExport: "Export ready",
@@ -242,7 +262,8 @@ const en: UIStrings = {
     title: "HI-TECH Leads, Catalog Brands Support",
     description:
       "HI-TECH is our owned flagship brand. Alongside it, we can supply selected catalog and represented lubricant brands as secondary options to complete your sourcing needs.",
-    disclaimer: "Brand names shown are placeholders. Catalog brands are secondary to the HI-TECH flagship range.",
+    disclaimer:
+      "Brand names shown are placeholders. Catalog brands are secondary to the HI-TECH flagship range.",
   },
   quoteCta: {
     title: "Ready to Discuss Your Wholesale Order?",
@@ -400,20 +421,22 @@ const en: UIStrings = {
     viewProducts: "View products",
   },
   imgAlt: {
-    heroProducts: "HI-TECH premium motor oils displayed in a dark industrial export environment",
+    heroProducts: "YOKOHAMA motor oils displayed in a warm cream industrial showroom",
     flagshipFamily: "HI-TECH flagship lubricant product family display",
     exportWarehouse: "International lubricant export warehouse with oil drums",
     productDisplay: "HI-TECH lubricant product display",
   },
   blogPage: {
     heroTitle: "Technical Resources",
-    heroSubtitle: "Technical articles on lubricants and lubrication for distributors, wholesalers and industrial buyers.",
+    heroSubtitle:
+      "Technical articles on lubricants and lubrication for distributors, wholesalers and industrial buyers.",
     generalInfo: "General Information",
     faq: "Frequently Asked Questions",
     backToBlog: "All Articles",
     readMore: "Read",
     ctaTitle: "Looking for a product?",
-    ctaBody: "Our technical team can determine the right specifications for your equipment and operating conditions.",
+    ctaBody:
+      "Our technical team can determine the right specifications for your equipment and operating conditions.",
   },
 };
 
@@ -446,17 +469,17 @@ const tr: UIStrings = {
   hero: {
     badge: "Uluslararası Yağ İhracatı",
     titlePre: "Distribütörler ve Toptancılar için",
-    titleHighlight: "HI-TECH Yağ Çözümleri",
+    titleHighlight: "YOKOHAMA Yağ Çözümleri",
     subtitle:
-      "Model Oils; distribütörler, toptancılar, filolar ve uluslararası alıcılar için HI-TECH ürünleriyle tüm sektörlere cevap vermektedir.",
+      "Model Oils; distribütörler, toptancılar, filolar ve uluslararası alıcılar için YOKOHAMA motor yağları ve tamamlayıcı otomotiv sıvıları sunar.",
     requestQuote: "Teklif Al",
-    exploreHiTech: "HI-TECH Ürünlerini Keşfedin",
+    exploreYokohama: "YOKOHAMA Ürünlerini Keşfedin",
     bulletBulk: "Dökme ve konteyner tedariği",
     bulletPackaging: "Esnek ambalaj",
     bulletExport: "İhracata hazır",
   },
-    flagship: {
-      badge: "Kendi Markamız",
+  flagship: {
+    badge: "Kendi Markamız",
     body: "HI-TECH, Model Oils'in uluslararası toptan, distribütör, filo, servis ve endüstriyel pazarlar için oluşturduğu amiral yağ ürün serisidir. İhracat programımızın kalbidir — performans için tasarlanmış ve küresel tedarik için üretilmiştir.",
     becomeDistributor: "Distribütör Olun",
     viewRange: "HI-TECH Serisini Görün",
@@ -486,7 +509,8 @@ const tr: UIStrings = {
     title: "HI-TECH Önderlik Eder, Katalog Markaları Destekler",
     description:
       "HI-TECH bizim sahibi olduğumuz amiral markadır. Onun yanında, tedarik ihtiyaçlarınızı tamamlamak için seçili katalog ve temsil edilen yağ markalarını ikincil seçenek olarak sağlayabiliriz.",
-    disclaimer: "Gösterilen marka adları örnektir. Katalog markaları, HI-TECH amiral serisine göre ikincildir.",
+    disclaimer:
+      "Gösterilen marka adları örnektir. Katalog markaları, HI-TECH amiral serisine göre ikincildir.",
   },
   quoteCta: {
     title: "Toptan Siparişinizi Görüşmeye Hazır mısınız?",
@@ -495,7 +519,8 @@ const tr: UIStrings = {
     exportCapabilities: "İhracat Kabiliyetleri",
   },
   footer: {
-    taglinePre: "Uluslararası B2B yağ ihracatçısı ve tedarikçisi. Dünya genelinde distribütörler, toptancılar ve endüstriyel alıcılar için",
+    taglinePre:
+      "Uluslararası B2B yağ ihracatçısı ve tedarikçisi. Dünya genelinde distribütörler, toptancılar ve endüstriyel alıcılar için",
     taglinePost: "yağ markasının evi.",
     exportWelcome: "İhracat talepleri dünya genelinde memnuniyetle karşılanır",
     company: "Şirket",
@@ -551,8 +576,8 @@ const tr: UIStrings = {
     marketsEyebrow: "İhracat Pazarları",
     marketsTitle: "Odaklandığımız Pazarlar",
   },
-    hitech: {
-      heroEyebrow: "Kendi Markamız",
+  hitech: {
+    heroEyebrow: "Kendi Markamız",
     heroTitle: "HI-TECH-Model Oils'in Güvenilir Yağ Markası",
     heroSubtitle:
       "HI-TECH, Model Oils'in uluslararası toptan, distribütör, filo, servis ve endüstriyel pazarlar için oluşturduğu amiral yağ ürün serisidir.",
@@ -567,7 +592,8 @@ const tr: UIStrings = {
     ],
     rangeEyebrow: "HI-TECH Serisi",
     rangeTitle: "Kategorilerimiz",
-    rangeDescription: "Gösterilen spesifikasyonlar düzenlenebilir örneklerdir. Belgelenmediği sürece API, ACEA, OEM veya ISO onayı talep edilmemektedir.",
+    rangeDescription:
+      "Gösterilen spesifikasyonlar düzenlenebilir örneklerdir. Belgelenmediği sürece API, ACEA, OEM veya ISO onayı talep edilmemektedir.",
     lightCommercial: "Hafif Ticari Araç Motor Yağları",
     productDescription: "Ürün Tanımı ve Kullanım Alanları",
     productFeatures: "Özellikleri ve Faydaları",
@@ -587,7 +613,8 @@ const tr: UIStrings = {
   productsPage: {
     heroEyebrow: "Ürün Yelpazesi",
     heroTitle: "Tedariğini Sağladımız Markalar",
-    heroSubtitle: "1L şişelerden 200L varillere kadar esnek ambalajlarda tedarik edilen eksiksiz otomotiv ve endüstriyel yağ portföyü.",
+    heroSubtitle:
+      "1L şişelerden 200L varillere kadar esnek ambalajlarda tedarik edilen eksiksiz otomotiv ve endüstriyel yağ portföyü.",
     catEyebrow: "Kategoriler",
     catTitle: "Kategoriye Göre İnceleyin",
     prodEyebrow: "HI-TECH Ürünleri",
@@ -642,20 +669,22 @@ const tr: UIStrings = {
     viewProducts: "Ürünleri görüntüle",
   },
   imgAlt: {
-    heroProducts: "Koyu, endüstriyel bir ihracat ortamında sergilenen HI-TECH premium motor yağları",
+    heroProducts: "Sıcak krem tonlu endüstriyel bir alanda sergilenen YOKOHAMA motor yağları",
     flagshipFamily: "HI-TECH amiral ürün ailesi sergisi",
     exportWarehouse: "Varillerle dolu uluslararası madeni yağ ihracat deposu",
     productDisplay: "HI-TECH madeni yağ ürün sergisi",
   },
   blogPage: {
     heroTitle: "Teknik Kaynaklar",
-    heroSubtitle: "Distribütörler, toptancılar ve endüstriyel alıcılar için yağlar ve yağlama üzerine teknik makaleler.",
+    heroSubtitle:
+      "Distribütörler, toptancılar ve endüstriyel alıcılar için yağlar ve yağlama üzerine teknik makaleler.",
     generalInfo: "Genel Bilgi",
     faq: "Sıkça Sorulan Sorular",
     backToBlog: "Tüm Makaleler",
     readMore: "Oku",
     ctaTitle: "Ürün mü arıyorsunuz?",
-    ctaBody: "Teknik ekibimiz ekipmanınıza ve çalışma koşullarınıza uygun teknik özellikleri belirleyebilir.",
+    ctaBody:
+      "Teknik ekibimiz ekipmanınıza ve çalışma koşullarınıza uygun teknik özellikleri belirleyebilir.",
   },
 };
 
@@ -687,12 +716,12 @@ const ru: UIStrings = {
   },
   hero: {
     badge: "Международный экспорт смазочных материалов",
-    titlePre: "HI-TECH смазочные решения для",
+    titlePre: "Масляные решения YOKOHAMA для",
     titleHighlight: "Дистрибьюторов и оптовиков",
     subtitle:
-      "Model Oils поставляет HI-TECH моторные масла, дизельные масла, гидравлические масла, трансмиссионные масла, антифриз, смазки и промышленные смазочные материалы для дистрибьюторов, оптовиков, автопарков и международных покупателей.",
+      "Model Oils поставляет моторные масла YOKOHAMA и сопутствующие автомобильные жидкости для дистрибьюторов, оптовиков, автопарков и международных покупателей.",
     requestQuote: "Запросить цену",
-    exploreHiTech: "Изучить продукты HI-TECH",
+    exploreYokohama: "Изучить продукты YOKOHAMA",
     bulletBulk: "Навалом и в контейнерах",
     bulletPackaging: "Гибкая упаковка",
     bulletExport: "Готово к экспорту",
@@ -728,7 +757,8 @@ const ru: UIStrings = {
     title: "HI-TECH ведёт, каталог поддерживает",
     description:
       "HI-TECH — наш собственный флагманский бренд. Наряду с ним мы можем поставлять выбранные каталожные и представленные марки смазочных материалов как дополнительные варианты для ваших потребностей в поставках.",
-    disclaimer: "Показанные названия брендов являются примерами. Каталожные бренды второстепенны относительно флагманской линейки HI-TECH.",
+    disclaimer:
+      "Показанные названия брендов являются примерами. Каталожные бренды второстепенны относительно флагманской линейки HI-TECH.",
   },
   quoteCta: {
     title: "Готовы обсудить оптовый заказ?",
@@ -856,9 +886,11 @@ const ru: UIStrings = {
     submit: "Запросить оптовое предложение",
     submitting: "Отправка...",
     toastTitle: "Запрос получен",
-    toastBody: "Спасибо. Наша экспортная команда подготовит подходящее предложение и свяжется с вами.",
+    toastBody:
+      "Спасибо. Наша экспортная команда подготовит подходящее предложение и свяжется с вами.",
     errorTitle: "Ошибка",
-    errorBody: "Не удалось отправить запрос. Пожалуйста, напишите нам напрямую по электронной почте.",
+    errorBody:
+      "Не удалось отправить запрос. Пожалуйста, напишите нам напрямую по электронной почте.",
     networkError: "Ошибка сети. Пожалуйста, напишите нам на info@modelgrup.com",
   },
   notFound: {
@@ -886,20 +918,22 @@ const ru: UIStrings = {
     viewProducts: "Смотреть продукты",
   },
   imgAlt: {
-    heroProducts: "Премиальные моторные масла HI-TECH в тёмной промышленной экспортной среде",
+    heroProducts: "Моторные масла YOKOHAMA в промышленном шоуруме тёплого кремового оттенка",
     flagshipFamily: "Витрина флагманского семейства смазочных материалов HI-TECH",
     exportWarehouse: "Международный склад экспорта смазочных материалов с бочками масла",
     productDisplay: "Витрина смазочных материалов HI-TECH",
   },
   blogPage: {
     heroTitle: "Технические ресурсы",
-    heroSubtitle: "Технические статьи о смазочных материалах для дистрибьюторов, оптовиков и промышленных покупателей.",
+    heroSubtitle:
+      "Технические статьи о смазочных материалах для дистрибьюторов, оптовиков и промышленных покупателей.",
     generalInfo: "Общая информация",
     faq: "Часто задаваемые вопросы",
     backToBlog: "Все статьи",
     readMore: "Читать",
     ctaTitle: "Ищете продукт?",
-    ctaBody: "Наша техническая команда поможет подобрать подходящие характеристики для вашего оборудования и условий эксплуатации.",
+    ctaBody:
+      "Наша техническая команда поможет подобрать подходящие характеристики для вашего оборудования и условий эксплуатации.",
   },
 };
 
@@ -931,12 +965,12 @@ const fa: UIStrings = {
   },
   hero: {
     badge: "صادرات بین‌المللی روانکار",
-    titlePre: "راهکارهای روانکار HI-TECH برای",
+    titlePre: "راهکارهای روغن YOKOHAMA برای",
     titleHighlight: "توزیع‌کنندگان و عمده‌فروشان",
     subtitle:
-      "Model Oils روغن موتور، روغن دیزل، روغن هیدرولیک، روغن گیربکس، ضدیخ، گریس و روانکارهای صنعتی HI-TECH را برای توزیع‌کنندگان، عمده‌فروشان، ناوگان‌ها و خریداران بین‌المللی تأمین می‌کند.",
+      "Model Oils روغن‌های موتور YOKOHAMA و سیالات تکمیلی خودرو را برای توزیع‌کنندگان، عمده‌فروشان، ناوگان‌ها و خریداران بین‌المللی تأمین می‌کند.",
     requestQuote: "درخواست قیمت",
-    exploreHiTech: "مشاهده محصولات HI-TECH",
+    exploreYokohama: "مشاهده محصولات YOKOHAMA",
     bulletBulk: "تأمین فله و کانتینری",
     bulletPackaging: "بسته‌بندی انعطاف‌پذیر",
     bulletExport: "آماده صادرات",
@@ -972,7 +1006,8 @@ const fa: UIStrings = {
     title: "HI-TECH پیشرو، کاتالوگ پشتیبان",
     description:
       "HI-TECH برند پرچمدار مالکیتی ماست. در کنار آن، می‌توانیم برندهای کاتالوگ و نمایندگی‌شده منتخب روانکار را به عنوان گزینه‌های ثانویه برای تکمیل نیازهای تأمین شما ارائه دهیم.",
-    disclaimer: "نام برندهای نشان‌داده‌شده نمونه هستند. برندهای کاتالوگ نسبت به محدوده پرچمدار HI-TECH ثانویه‌اند.",
+    disclaimer:
+      "نام برندهای نشان‌داده‌شده نمونه هستند. برندهای کاتالوگ نسبت به محدوده پرچمدار HI-TECH ثانویه‌اند.",
   },
   quoteCta: {
     title: "آماده بحث درباره سفارش عمده خود هستید؟",
@@ -1130,14 +1165,15 @@ const fa: UIStrings = {
     viewProducts: "مشاهده محصولات",
   },
   imgAlt: {
-    heroProducts: "روغن‌های موتور پریمیوم HI-TECH در یک محیط صنعتی تیره برای صادرات",
+    heroProducts: "روغن‌های موتور YOKOHAMA در یک نمایشگاه صنعتی با رنگ کرم گرم",
     flagshipFamily: "نمایش خانواده محصولات پرچم‌دار روان‌کننده HI-TECH",
     exportWarehouse: "انبار بین‌المللی صادرات روان‌کننده با بشکه‌های روغن",
     productDisplay: "نمایش محصول روان‌کننده HI-TECH",
   },
   blogPage: {
     heroTitle: "منابع فنی",
-    heroSubtitle: "مقالات فنی درباره روانکارها و روانکاری برای توزیع‌کنندگان، عمده‌فروشان و خریداران صنعتی.",
+    heroSubtitle:
+      "مقالات فنی درباره روانکارها و روانکاری برای توزیع‌کنندگان، عمده‌فروشان و خریداران صنعتی.",
     generalInfo: "اطلاعات عمومی",
     faq: "سوالات متداول",
     backToBlog: "همه مقالات",
@@ -1175,12 +1211,12 @@ const ar: UIStrings = {
   },
   hero: {
     badge: "تصدير دولي للمواد التشحيمية",
-    titlePre: "حلول زيوت HI-TECH لـ",
+    titlePre: "حلول زيوت YOKOHAMA لـ",
     titleHighlight: "الموزعين وتجار الجملة",
     subtitle:
-      "تورد Model Oils زيوت المحركات والديزل والهيدروليك وناقل الحركة ومضادات التجمد والشحوم والمواد التشحيمية الصناعية HI-TECH للموزعين وتجار الجملة والأساطيل والمشترين الدوليين.",
+      "تورد Model Oils زيوت محركات YOKOHAMA وسوائل السيارات المكملة للموزعين وتجار الجملة والأساطيل والمشترين الدوليين.",
     requestQuote: "طلب عرض سعر",
-    exploreHiTech: "استكشاف منتجات HI-TECH",
+    exploreYokohama: "استكشاف منتجات YOKOHAMA",
     bulletBulk: "توريد بالجملة والحاويات",
     bulletPackaging: "تغليف مرن",
     bulletExport: "جاهز للتصدير",
@@ -1216,7 +1252,8 @@ const ar: UIStrings = {
     title: "HI-TECH تقود، الكتالوج يدعم",
     description:
       "HI-TECH هي علامتنا التجارية الرائدة المملوكة. إلى جانبها، يمكننا توريد علامات الكتالوج والممثّلة المختارة من المواد التشحيمية كخيارات ثانوية لإتمام احتياجات التوريد لديك.",
-    disclaimer: "أسماء العلامات التجارية الظاهرة هي أمثلة. علامات الكتالوج ثانوية بالنسبة لمجموعة HI-TECH الرائدة.",
+    disclaimer:
+      "أسماء العلامات التجارية الظاهرة هي أمثلة. علامات الكتالوج ثانوية بالنسبة لمجموعة HI-TECH الرائدة.",
   },
   quoteCta: {
     title: "هل أنت مستعد لمناقشة طلبك بالجملة؟",
@@ -1374,14 +1411,15 @@ const ar: UIStrings = {
     viewProducts: "عرض المنتجات",
   },
   imgAlt: {
-    heroProducts: "زيوت محركات HI-TECH الممتازة معروضة في بيئة تصدير صناعية داكنة",
+    heroProducts: "زيوت محركات YOKOHAMA معروضة في صالة صناعية بدرجات كريمية دافئة",
     flagshipFamily: "عرض عائلة منتجات HI-TECH الرائدة لمواد التشحيم",
     exportWarehouse: "مستودع دولي لتصدير مواد التشحيم مع براميل الزيت",
     productDisplay: "عرض منتج مواد التشحيم HI-TECH",
   },
   blogPage: {
     heroTitle: "الموارد التقنية",
-    heroSubtitle: "مقالات تقنية حول المواد التشحيمية والتشحيم للموزعين وتجار الجملة والمشترين الصناعيين.",
+    heroSubtitle:
+      "مقالات تقنية حول المواد التشحيمية والتشحيم للموزعين وتجار الجملة والمشترين الصناعيين.",
     generalInfo: "معلومات عامة",
     faq: "الأسئلة الشائعة",
     backToBlog: "جميع المقالات",
@@ -1419,12 +1457,12 @@ const de: UIStrings = {
   },
   hero: {
     badge: "Internationaler Schmierstoff-Export",
-    titlePre: "HI-TECH Öllösungen für",
+    titlePre: "YOKOHAMA Öllösungen für",
     titleHighlight: "Distributoren & Großhändler",
     subtitle:
-      "Model Oils liefert HI-TECH Motoröle, Dieselöle, Hydrauliköle, Getriebeöle, Frostschutzmittel, Fette und Industrieschmierstoffe für Distributoren, Großhändler, Flotten und internationale Käufer.",
+      "Model Oils liefert YOKOHAMA Motoröle und ergänzende Fahrzeugflüssigkeiten für Distributoren, Großhändler, Flotten und internationale Käufer.",
     requestQuote: "Angebot anfordern",
-    exploreHiTech: "HI-TECH Produkte entdecken",
+    exploreYokohama: "YOKOHAMA Produkte entdecken",
     bulletBulk: "Bulk- & Containerversorgung",
     bulletPackaging: "Flexible Verpackung",
     bulletExport: "Exportbereit",
@@ -1460,7 +1498,8 @@ const de: UIStrings = {
     title: "HI-TECH führt, Katalogmarken unterstützen",
     description:
       "HI-TECH ist unsere eigene Flaggschiffmarke. Daneben können wir ausgewählte Katalog- und vertretene Schmierstoffmarken als sekundäre Optionen liefern.",
-    disclaimer: "Gezeigte Markennamen sind Platzhalter. Katalogmarken sind der HI-TECH-Flaggschiff-Serie untergeordnet.",
+    disclaimer:
+      "Gezeigte Markennamen sind Platzhalter. Katalogmarken sind der HI-TECH-Flaggschiff-Serie untergeordnet.",
   },
   quoteCta: {
     title: "Bereit, Ihre Großbestellung zu besprechen?",
@@ -1504,7 +1543,8 @@ const de: UIStrings = {
     exportInquiriesValue: "Bitte nutzen Sie das Formular oder WhatsApp.",
     responseTime: "Antwortzeit",
     responseTimeValue: "Innerhalb von 24–48 Stunden.",
-    helpText: "Unser Export-Team hilft Ihnen bei Produktauswahl, Preisgestaltung und Lieferdetails.",
+    helpText:
+      "Unser Export-Team hilft Ihnen bei Produktauswahl, Preisgestaltung und Lieferdetails.",
   },
   exportPage: {
     heroEyebrow: "Export & Großhandel",
@@ -1582,9 +1622,11 @@ const de: UIStrings = {
     submit: "Großhandelsangebot anfordern",
     submitting: "Wird gesendet...",
     toastTitle: "Anfrage erhalten",
-    toastBody: "Danke. Unser Export-Team wird ein passendes Angebot vorbereiten und sich bei Ihnen melden.",
+    toastBody:
+      "Danke. Unser Export-Team wird ein passendes Angebot vorbereiten und sich bei Ihnen melden.",
     errorTitle: "Fehler",
-    errorBody: "Ihre Anfrage konnte nicht gesendet werden. Bitte schreiben Sie uns direkt eine E-Mail.",
+    errorBody:
+      "Ihre Anfrage konnte nicht gesendet werden. Bitte schreiben Sie uns direkt eine E-Mail.",
     networkError: "Netzwerkfehler. Bitte schreiben Sie uns direkt an info@modelgrup.com",
   },
   notFound: {
@@ -1612,20 +1654,22 @@ const de: UIStrings = {
     viewProducts: "Produkte ansehen",
   },
   imgAlt: {
-    heroProducts: "HI-TECH Premium-Motoröle in einer dunklen industriellen Exportumgebung",
+    heroProducts: "YOKOHAMA Motoröle in einem warmen cremefarbenen Industrie-Showroom",
     flagshipFamily: "Präsentation der HI-TECH Flaggschiff-Schmierstoff-Produktfamilie",
     exportWarehouse: "Internationales Schmierstoff-Exportlager mit Ölfässern",
     productDisplay: "HI-TECH Schmierstoff-Produktpräsentation",
   },
   blogPage: {
     heroTitle: "Technische Ressourcen",
-    heroSubtitle: "Technische Artikel über Schmierstoffe und Schmierung für Distributoren, Großhändler und industrielle Käufer.",
+    heroSubtitle:
+      "Technische Artikel über Schmierstoffe und Schmierung für Distributoren, Großhändler und industrielle Käufer.",
     generalInfo: "Allgemeine Informationen",
     faq: "Häufig gestellte Fragen",
     backToBlog: "Alle Artikel",
     readMore: "Lesen",
     ctaTitle: "Suchen Sie ein Produkt?",
-    ctaBody: "Unser technisches Team kann die geeigneten Spezifikationen für Ihre Ausrüstung und Betriebsbedingungen ermitteln.",
+    ctaBody:
+      "Unser technisches Team kann die geeigneten Spezifikationen für Ihre Ausrüstung und Betriebsbedingungen ermitteln.",
   },
 };
 
@@ -1657,12 +1701,12 @@ const fr: UIStrings = {
   },
   hero: {
     badge: "Export international de lubrifiants",
-    titlePre: "Solutions HI-TECH pour",
+    titlePre: "Solutions YOKOHAMA pour",
     titleHighlight: "Distributeurs & Grossistes",
     subtitle:
-      "Model Oils fournit des huiles moteur, huiles diesel, huiles hydrauliques, huiles de transmission, antigel, graisses et lubrifiants industriels HI-TECH pour les distributeurs, grossistes, flottes et acheteurs internationaux.",
+      "Model Oils fournit des huiles moteur YOKOHAMA et des fluides automobiles complémentaires aux distributeurs, grossistes, flottes et acheteurs internationaux.",
     requestQuote: "Demander un devis",
-    exploreHiTech: "Explorer les produits HI-TECH",
+    exploreYokohama: "Explorer les produits YOKOHAMA",
     bulletBulk: "Fourniture en vrac & container",
     bulletPackaging: "Emballage flexible",
     bulletExport: "Prêt à l'export",
@@ -1698,7 +1742,8 @@ const fr: UIStrings = {
     title: "HI-TECH en tête, marques catalogue en soutien",
     description:
       "HI-TECH est notre marque phare propriétaire. À ses côtés, nous pouvons fournir des marques de catalogue et représentées sélectionnées comme options secondaires.",
-    disclaimer: "Les noms de marques affichés sont des exemples. Les marques catalogue sont secondaires à la gamme phare HI-TECH.",
+    disclaimer:
+      "Les noms de marques affichés sont des exemples. Les marques catalogue sont secondaires à la gamme phare HI-TECH.",
   },
   quoteCta: {
     title: "Prêt à discuter de votre commande en gros ?",
@@ -1708,7 +1753,8 @@ const fr: UIStrings = {
   },
   footer: {
     taglinePre: "Exportateur et fournisseur international B2B de lubrifiants. Maison de la marque",
-    taglinePost: "pour les distributeurs, grossistes et acheteurs industriels dans le monde entier.",
+    taglinePost:
+      "pour les distributeurs, grossistes et acheteurs industriels dans le monde entier.",
     exportWelcome: "Demandes d'export bienvenues.",
     company: "Entreprise",
     products: "Produits",
@@ -1742,7 +1788,8 @@ const fr: UIStrings = {
     exportInquiriesValue: "Veuillez utiliser le formulaire ou WhatsApp.",
     responseTime: "Délai de réponse",
     responseTimeValue: "Sous 24 à 48 heures.",
-    helpText: "Notre équipe export vous aidera dans la sélection des produits, la tarification et les détails de livraison.",
+    helpText:
+      "Notre équipe export vous aidera dans la sélection des produits, la tarification et les détails de livraison.",
   },
   exportPage: {
     heroEyebrow: "Export & Gros",
@@ -1816,13 +1863,15 @@ const fr: UIStrings = {
     quantity: "Quantité estimée de commande",
     quantityPlaceholder: "ex. 1 container, 20 palettes",
     message: "Message",
-    messagePlaceholder: "Indiquez-nous votre pays cible, le type de produit, l'emballage et le volume.",
+    messagePlaceholder:
+      "Indiquez-nous votre pays cible, le type de produit, l'emballage et le volume.",
     submit: "Demander un devis en gros",
     submitting: "Envoi en cours...",
     toastTitle: "Demande reçue",
     toastBody: "Merci. Notre équipe export préparera une offre adaptée et vous contactera.",
     errorTitle: "Erreur",
-    errorBody: "Votre demande n'a pas pu être envoyée. Veuillez nous contacter directement par e-mail.",
+    errorBody:
+      "Votre demande n'a pas pu être envoyée. Veuillez nous contacter directement par e-mail.",
     networkError: "Erreur réseau. Veuillez nous écrire directement à info@modelgrup.com",
   },
   notFound: {
@@ -1850,26 +1899,39 @@ const fr: UIStrings = {
     viewProducts: "Voir les produits",
   },
   imgAlt: {
-    heroProducts: "Huiles moteur premium HI-TECH présentées dans un environnement d'exportation industriel sombre",
+    heroProducts:
+      "Huiles moteur YOKOHAMA présentées dans un showroom industriel aux tons crème chauds",
     flagshipFamily: "Présentation de la gamme phare de lubrifiants HI-TECH",
     exportWarehouse: "Entrepôt international d'exportation de lubrifiants avec fûts d'huile",
     productDisplay: "Présentation de produits lubrifiants HI-TECH",
   },
   blogPage: {
     heroTitle: "Ressources techniques",
-    heroSubtitle: "Articles techniques sur les lubrifiants et la lubrification pour les distributeurs, grossistes et acheteurs industriels.",
+    heroSubtitle:
+      "Articles techniques sur les lubrifiants et la lubrification pour les distributeurs, grossistes et acheteurs industriels.",
     generalInfo: "Informations générales",
     faq: "Questions fréquentes",
     backToBlog: "Tous les articles",
     readMore: "Lire",
     ctaTitle: "Vous cherchez un produit ?",
-    ctaBody: "Notre équipe technique peut identifier les spécifications adaptées à votre équipement et vos conditions de fonctionnement.",
+    ctaBody:
+      "Notre équipe technique peut identifier les spécifications adaptées à votre équipement et vos conditions de fonctionnement.",
   },
 };
 
 export const UI: Record<Locale, UIStrings> = { en, tr, ru, fa, ar, de, fr };
 
-export type PageKey = "home" | "about" | "contact" | "export" | "hitech" | "industries" | "products" | "yokohama" | "media" | "blog";
+export type PageKey =
+  | "home"
+  | "about"
+  | "contact"
+  | "export"
+  | "hitech"
+  | "industries"
+  | "products"
+  | "yokohama"
+  | "media"
+  | "blog";
 
 export interface PageMeta {
   title: string;
@@ -1900,54 +1962,63 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       description:
         "Fordern Sie ein Großhandels-Schmierstoffangebot von Model Oils an. Teilen Sie uns Ihr Zielland, Produkttyp, Verpackung und Volumen mit.",
       ogTitle: "Großhandelsangebot anfordern | Model Oils",
-      ogDescription: "Kontaktieren Sie Model Oils für HI-TECH Schmierstoff-Export und Großhandelsversorgung.",
+      ogDescription:
+        "Kontaktieren Sie Model Oils für HI-TECH Schmierstoff-Export und Großhandelsversorgung.",
     },
     export: {
       title: "Export & Großhandel | Model Oils Schmierstoffversorgung",
       description:
         "Model Oils unterstützt die Bulk-Schmierstoffversorgung mit flexibler Verpackung, Exportdokumentation, containerbasierter Bestellung und langfristiger Distributorzusammenarbeit.",
       ogTitle: "Export & Großhandelsversorgung | Model Oils",
-      ogDescription: "Containerbestellungen, flexible Verpackung und Exportdokumentation für Distributoren weltweit.",
+      ogDescription:
+        "Containerbestellungen, flexible Verpackung und Exportdokumentation für Distributoren weltweit.",
     },
     hitech: {
       title: "HI-TECH | Model Oils Flaggschiff-Schmierstoffmarke",
       description:
         "HI-TECH ist die Flaggschiff-Schmierstoffmarke von Model Oils für internationale Groß-, Distributor-, Flotten- und Industriemärkte.",
       ogTitle: "HI-TECH | Flaggschiff-Schmierstoffmarke von Model Oils",
-      ogDescription: "Entdecken Sie die HI-TECH Schmierstofflinie für globale Distributoren und Großhändler.",
+      ogDescription:
+        "Entdecken Sie die HI-TECH Schmierstofflinie für globale Distributoren und Großhändler.",
     },
     industries: {
       title: "Branchen | Schmierstofflösungen von Model Oils",
       description:
         "Model Oils liefert Schmierstoffe für Automobil, Schwertransport, Flottenbetrieb, Industrieanlagen, Bau, Landwirtschaft, Maritime und Servicenetze.",
       ogTitle: "Bediente Branchen | Model Oils",
-      ogDescription: "Schmierstofflösungen für Automobil-, Industrie-, Flotten- und Schifffahrtsbetriebe.",
+      ogDescription:
+        "Schmierstofflösungen für Automobil-, Industrie-, Flotten- und Schifffahrtsbetriebe.",
     },
     products: {
       title: "Produkte | Yokohama & HI-TECH Ölprodukte | Model Petrol",
       description:
         "Wählen Sie zwischen dem HI-TECH Schmierstoffsortiment, der Eigenmarke von Model Petrol, und Yokohama Motor Oil, vertrieben von Model Petrol — Motorenöle, Getriebeöle, Fette, Frostschutzmittel und VOLT-Batterien.",
       ogTitle: "Yokohama & HI-TECH Ölprodukte | Model Petrol",
-      ogDescription: "Zwei Schmierstoffmarken von einem Lieferanten: das HI-TECH Sortiment und Yokohama Motor Oil.",
+      ogDescription:
+        "Zwei Schmierstoffmarken von einem Lieferanten: das HI-TECH Sortiment und Yokohama Motor Oil.",
     },
     yokohama: {
       title: "Yokohama Motor Oil | Vertrieben von Model Petrol",
       description:
         "Yokohama Motorenöle und VOLT-Batterien, vertrieben von Model Petrol. Schmierstoffe in japanischer Qualität für Pkw, Lkw, Getriebe, Motorräder, Landwirtschaft, Industrie und Schifffahrt.",
       ogTitle: "Yokohama Motor Oil | Vertrieben von Model Petrol",
-      ogDescription: "Motorenöle und VOLT-Batterien in japanischer Qualität, vertrieben von Model Petrol.",
+      ogDescription:
+        "Motorenöle und VOLT-Batterien in japanischer Qualität, vertrieben von Model Petrol.",
     },
     media: {
       title: "Medien | Model Oils",
-      description: "Fotos von Model Oils Messen, Motocross-Sponsoring, Rallye-Events und Offroad-Aktivitäten.",
+      description:
+        "Fotos von Model Oils Messen, Motocross-Sponsoring, Rallye-Events und Offroad-Aktivitäten.",
       ogTitle: "Medien | Model Oils",
       ogDescription: "Galerie von Model Oils Veranstaltungen, Sponsoring und Aktivitäten.",
     },
     blog: {
       title: "Blog | Technische Schmierstoffressourcen | Model Oils",
-      description: "Technische Artikel über Schmierstoffe, Ölklassifizierung, SAE-Viskositätsstufen und API-Leistungsklassen für Distributoren, Großhändler und industrielle Käufer.",
+      description:
+        "Technische Artikel über Schmierstoffe, Ölklassifizierung, SAE-Viskositätsstufen und API-Leistungsklassen für Distributoren, Großhändler und industrielle Käufer.",
       ogTitle: "Blog | Technische Ressourcen von Model Oils",
-      ogDescription: "Technische Schmierstoffratgeber zu Öltypen, Viskositätsstufen und Leistungsklassifizierungen.",
+      ogDescription:
+        "Technische Schmierstoffratgeber zu Öltypen, Viskositätsstufen und Leistungsklassifizierungen.",
     },
   },
   fr: {
@@ -1971,54 +2042,63 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       description:
         "Demandez un devis lubrifiant en gros à Model Oils. Indiquez-nous votre pays cible, le type de produit, l'emballage et le volume.",
       ogTitle: "Demander un devis en gros | Model Oils",
-      ogDescription: "Contactez Model Oils pour l'export et l'approvisionnement en gros de lubrifiants HI-TECH.",
+      ogDescription:
+        "Contactez Model Oils pour l'export et l'approvisionnement en gros de lubrifiants HI-TECH.",
     },
     export: {
       title: "Export & Gros | Approvisionnement en lubrifiants Model Oils",
       description:
         "Model Oils soutient la fourniture de lubrifiants en vrac avec un emballage flexible, la documentation d'export, les commandes en container et la coopération distributeur à long terme.",
       ogTitle: "Export & Approvisionnement en gros | Model Oils",
-      ogDescription: "Commandes en container, emballage flexible et documentation d'export pour les distributeurs du monde entier.",
+      ogDescription:
+        "Commandes en container, emballage flexible et documentation d'export pour les distributeurs du monde entier.",
     },
     hitech: {
       title: "HI-TECH | Marque phare de lubrifiants Model Oils",
       description:
         "HI-TECH est la marque phare de lubrifiants Model Oils pour les marchés internationaux de gros, de distribution, de flotte et industriels.",
       ogTitle: "HI-TECH | Marque phare de lubrifiants par Model Oils",
-      ogDescription: "Explorez la gamme HI-TECH conçue pour les distributeurs et grossistes mondiaux.",
+      ogDescription:
+        "Explorez la gamme HI-TECH conçue pour les distributeurs et grossistes mondiaux.",
     },
     industries: {
       title: "Secteurs | Solutions lubrifiantes par Model Oils",
       description:
         "Model Oils fournit des lubrifiants pour l'automobile, le transport lourd, les flottes, les installations industrielles, la construction, l'agriculture, le maritime et les réseaux de services.",
       ogTitle: "Secteurs desservis | Model Oils",
-      ogDescription: "Solutions lubrifiantes pour les opérations automobiles, industrielles, de flotte et maritimes.",
+      ogDescription:
+        "Solutions lubrifiantes pour les opérations automobiles, industrielles, de flotte et maritimes.",
     },
     products: {
       title: "Produits | Yokohama & HI-TECH | Model Petrol",
       description:
         "Choisissez entre la gamme de lubrifiants HI-TECH, la marque propre de Model Petrol, et Yokohama Motor Oil, distribuée par Model Petrol — huiles moteur, huiles de transmission, graisses, antigel et batteries VOLT.",
       ogTitle: "Produits Yokohama & HI-TECH | Model Petrol",
-      ogDescription: "Deux marques de lubrifiants chez un seul fournisseur : la gamme HI-TECH et Yokohama Motor Oil.",
+      ogDescription:
+        "Deux marques de lubrifiants chez un seul fournisseur : la gamme HI-TECH et Yokohama Motor Oil.",
     },
     yokohama: {
       title: "Yokohama Motor Oil | Distribuée par Model Petrol",
       description:
         "Huiles moteur Yokohama et batteries VOLT, distribuées par Model Petrol. Des lubrifiants de qualité japonaise pour véhicules de tourisme, poids lourds, transmissions, motos, agriculture, industrie et marine.",
       ogTitle: "Yokohama Motor Oil | Distribuée par Model Petrol",
-      ogDescription: "Huiles moteur et batteries VOLT de qualité japonaise, distribuées par Model Petrol.",
+      ogDescription:
+        "Huiles moteur et batteries VOLT de qualité japonaise, distribuées par Model Petrol.",
     },
     media: {
       title: "Médias | Model Oils",
-      description: "Photos des salons, sponsorisations moto-cross, événements rallye et activités tout-terrain de Model Oils.",
+      description:
+        "Photos des salons, sponsorisations moto-cross, événements rallye et activités tout-terrain de Model Oils.",
       ogTitle: "Médias | Model Oils",
       ogDescription: "Galerie des événements, sponsorisations et activités de Model Oils.",
     },
     blog: {
       title: "Blog | Ressources techniques lubrifiants | Model Oils",
-      description: "Articles techniques sur les lubrifiants, la classification des huiles, les grades de viscosité SAE et les indices de performance API pour les distributeurs, grossistes et acheteurs industriels.",
+      description:
+        "Articles techniques sur les lubrifiants, la classification des huiles, les grades de viscosité SAE et les indices de performance API pour les distributeurs, grossistes et acheteurs industriels.",
       ogTitle: "Blog | Ressources techniques Model Oils",
-      ogDescription: "Guides techniques lubrifiants couvrant les types d'huiles, grades de viscosité et classifications de performance.",
+      ogDescription:
+        "Guides techniques lubrifiants couvrant les types d'huiles, grades de viscosité et classifications de performance.",
     },
   },
   en: {
@@ -2049,14 +2129,16 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       description:
         "Model Oils supports bulk lubricant supply with flexible packaging, export documentation, container-based ordering and long-term distributor cooperation across global markets.",
       ogTitle: "Export & Wholesale Supply | Model Oils",
-      ogDescription: "Container orders, flexible packaging and export documentation for distributors worldwide.",
+      ogDescription:
+        "Container orders, flexible packaging and export documentation for distributors worldwide.",
     },
     hitech: {
       title: "HI-TECH | Model Oils Flagship Lubricant Brand",
       description:
         "HI-TECH is Model Oils' flagship lubricant brand for international wholesale, distributor, fleet and industrial markets — bulk supply, export ready, distributor friendly.",
       ogTitle: "HI-TECH | Flagship Lubricant Brand by Model Oils",
-      ogDescription: "Explore the HI-TECH lubricant range built for global distributors and wholesalers.",
+      ogDescription:
+        "Explore the HI-TECH lubricant range built for global distributors and wholesalers.",
     },
     industries: {
       title: "Industries | Lubricant Solutions by Model Oils",
@@ -2070,7 +2152,8 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       description:
         "Choose between the HI-TECH lubricant range, Model Petrol's own brand, and Yokohama Motor Oil, distributed by Model Petrol — motor oils, transmission fluids, greases, antifreeze and VOLT batteries.",
       ogTitle: "Yokohama & HI-TECH Oil Products | Model Petrol",
-      ogDescription: "Two lubricant brands from one supplier: the HI-TECH range and Yokohama Motor Oil.",
+      ogDescription:
+        "Two lubricant brands from one supplier: the HI-TECH range and Yokohama Motor Oil.",
     },
     yokohama: {
       title: "Yokohama Motor Oil | Distributed by Model Petrol",
@@ -2081,15 +2164,18 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     },
     media: {
       title: "Media | Model Oils",
-      description: "Photos from Model Oils trade fairs, moto-cross sponsorships, rally events and off-road activities.",
+      description:
+        "Photos from Model Oils trade fairs, moto-cross sponsorships, rally events and off-road activities.",
       ogTitle: "Media | Model Oils",
       ogDescription: "Gallery of Model Oils events, sponsorships and activities.",
     },
     blog: {
       title: "Blog | Lubricant Technical Resources | Model Oils",
-      description: "Technical articles on lubricants, oil classification, SAE viscosity grades and API performance ratings for distributors, wholesalers and industrial buyers.",
+      description:
+        "Technical articles on lubricants, oil classification, SAE viscosity grades and API performance ratings for distributors, wholesalers and industrial buyers.",
       ogTitle: "Blog | Model Oils Technical Resources",
-      ogDescription: "Technical lubricant guides covering oil types, viscosity grades and performance classifications.",
+      ogDescription:
+        "Technical lubricant guides covering oil types, viscosity grades and performance classifications.",
     },
   },
   tr: {
@@ -2120,14 +2206,16 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       description:
         "Model Oils; küresel pazarlarda esnek ambalaj, ihracat dokümantasyonu, konteyner bazlı sipariş ve uzun vadeli distribütör iş birliği ile dökme yağ tedariğini destekler.",
       ogTitle: "İhracat ve Toptan Tedarik | Model Oils",
-      ogDescription: "Dünya genelinde distribütörler için konteyner siparişleri, esnek ambalaj ve ihracat dokümantasyonu.",
+      ogDescription:
+        "Dünya genelinde distribütörler için konteyner siparişleri, esnek ambalaj ve ihracat dokümantasyonu.",
     },
     hitech: {
       title: "HI-TECH | Model Oils Amiral Yağ Markası",
       description:
         "HI-TECH, Model Oils'un uluslararası toptan, distribütör, filo ve endüstriyel pazarlar için amiral yağ markasıdır — dökme tedarik, ihracata hazır, distribütör dostu.",
       ogTitle: "HI-TECH | Model Oils Amiral Yağ Markası",
-      ogDescription: "Küresel distribütörler ve toptancılar için tasarlanan HI-TECH yağ serisini keşfedin.",
+      ogDescription:
+        "Küresel distribütörler ve toptancılar için tasarlanan HI-TECH yağ serisini keşfedin.",
     },
     industries: {
       title: "Sektörler | Model Oils Yağ Çözümleri",
@@ -2152,15 +2240,18 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     },
     media: {
       title: "Medya | Model Oils",
-      description: "Model Oils'un fuar, moto-cross, ralli ve off-road etkinliklerinden fotoğraflar.",
+      description:
+        "Model Oils'un fuar, moto-cross, ralli ve off-road etkinliklerinden fotoğraflar.",
       ogTitle: "Medya | Model Oils",
       ogDescription: "Model Oils etkinlikler, sponsorluklar ve faaliyetler galerisi.",
     },
     blog: {
       title: "Blog | Yağlayıcı Teknik Kaynaklar | Model Oils",
-      description: "Distribütörler, toptancılar ve endüstriyel alıcılar için yağlar, yağ sınıflandırması, SAE viskozite kademeleri ve API performans sınıfları hakkında teknik makaleler.",
+      description:
+        "Distribütörler, toptancılar ve endüstriyel alıcılar için yağlar, yağ sınıflandırması, SAE viskozite kademeleri ve API performans sınıfları hakkında teknik makaleler.",
       ogTitle: "Blog | Model Oils Teknik Kaynaklar",
-      ogDescription: "Yağ türleri, viskozite kademeleri ve performans sınıflandırmalarını kapsayan teknik yağ rehberleri.",
+      ogDescription:
+        "Yağ türleri, viskozite kademeleri ve performans sınıflandırmalarını kapsayan teknik yağ rehberleri.",
     },
   },
   ru: {
@@ -2184,42 +2275,48 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       description:
         "Запросите оптовое предложение на смазочные материалы от Model Oils. Сообщите нам целевую страну, тип продукта, упаковку и объём.",
       ogTitle: "Запросить оптовое предложение | Model Oils",
-      ogDescription: "Свяжитесь с Model Oils для HI-TECH экспорта и оптовых поставок смазочных материалов.",
+      ogDescription:
+        "Свяжитесь с Model Oils для HI-TECH экспорта и оптовых поставок смазочных материалов.",
     },
     export: {
       title: "Экспорт и опт | Model Oils — поставки смазочных материалов",
       description:
         "Model Oils обеспечивает оптовые поставки смазочных материалов с гибкой упаковкой, экспортной документацией, контейнерными заказами и долгосрочным сотрудничеством с дистрибьюторами.",
       ogTitle: "Экспорт и оптовые поставки | Model Oils",
-      ogDescription: "Контейнерные заказы, гибкая упаковка и экспортная документация для дистрибьюторов по всему миру.",
+      ogDescription:
+        "Контейнерные заказы, гибкая упаковка и экспортная документация для дистрибьюторов по всему миру.",
     },
     hitech: {
       title: "HI-TECH | Флагманский бренд смазочных материалов Model Oils",
       description:
         "HI-TECH — флагманский бренд смазочных материалов Model Oils для международного оптового, дистрибьюторского, автопаркового и промышленного рынков.",
       ogTitle: "HI-TECH | Флагманский бренд смазочных материалов от Model Oils",
-      ogDescription: "Изучите линейку смазочных материалов HI-TECH, созданную для глобальных дистрибьюторов и оптовиков.",
+      ogDescription:
+        "Изучите линейку смазочных материалов HI-TECH, созданную для глобальных дистрибьюторов и оптовиков.",
     },
     industries: {
       title: "Отрасли | Смазочные решения от Model Oils",
       description:
         "Model Oils поставляет смазочные материалы для автомобильной промышленности, тяжёлого транспорта, автопарков, промышленных объектов, строительства, сельского хозяйства, морского транспорта и сервисных сетей.",
       ogTitle: "Обслуживаемые отрасли | Model Oils",
-      ogDescription: "Смазочные решения для автомобильной, промышленной, автопарковой и морской отраслей.",
+      ogDescription:
+        "Смазочные решения для автомобильной, промышленной, автопарковой и морской отраслей.",
     },
     products: {
       title: "Продукция | Yokohama и HI-TECH | Model Petrol",
       description:
         "Выберите между линейкой смазочных материалов HI-TECH, собственной маркой Model Petrol, и Yokohama Motor Oil, поставляемой Model Petrol — моторные масла, трансмиссионные масла, смазки, антифриз и аккумуляторы VOLT.",
       ogTitle: "Продукция Yokohama и HI-TECH | Model Petrol",
-      ogDescription: "Два бренда смазочных материалов от одного поставщика: линейка HI-TECH и Yokohama Motor Oil.",
+      ogDescription:
+        "Два бренда смазочных материалов от одного поставщика: линейка HI-TECH и Yokohama Motor Oil.",
     },
     yokohama: {
       title: "Yokohama Motor Oil | Поставляется Model Petrol",
       description:
         "Моторные масла Yokohama и аккумуляторы VOLT, поставляемые Model Petrol. Смазочные материалы японского качества для легковых автомобилей, грузовиков, трансмиссий, мотоциклов, сельского хозяйства, промышленности и судоходства.",
       ogTitle: "Yokohama Motor Oil | Поставляется Model Petrol",
-      ogDescription: "Моторные масла и аккумуляторы VOLT японского качества, поставляемые Model Petrol.",
+      ogDescription:
+        "Моторные масла и аккумуляторы VOLT японского качества, поставляемые Model Petrol.",
     },
     media: {
       title: "Медиа | Model Oils",
@@ -2229,9 +2326,11 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     },
     blog: {
       title: "Блог | Технические ресурсы по смазочным материалам | Model Oils",
-      description: "Технические статьи о смазочных материалах, классификации масел, классах вязкости SAE и показателях производительности API для дистрибьюторов, оптовиков и промышленных покупателей.",
+      description:
+        "Технические статьи о смазочных материалах, классификации масел, классах вязкости SAE и показателях производительности API для дистрибьюторов, оптовиков и промышленных покупателей.",
       ogTitle: "Блог | Технические ресурсы Model Oils",
-      ogDescription: "Технические руководства по смазочным материалам, охватывающие типы масел, классы вязкости и классификации производительности.",
+      ogDescription:
+        "Технические руководства по смазочным материалам, охватывающие типы масел, классы вязкости и классификации производительности.",
     },
   },
   fa: {
@@ -2262,14 +2361,16 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       description:
         "Model Oils تأمین فله روانکار را با بسته‌بندی انعطاف‌پذیر، مستندات صادراتی، سفارشات کانتینری و همکاری بلندمدت توزیع‌کننده در بازارهای جهانی پشتیبانی می‌کند.",
       ogTitle: "صادرات و تأمین عمده | Model Oils",
-      ogDescription: "سفارشات کانتینری، بسته‌بندی انعطاف‌پذیر و مستندات صادراتی برای توزیع‌کنندگان در سراسر جهان.",
+      ogDescription:
+        "سفارشات کانتینری، بسته‌بندی انعطاف‌پذیر و مستندات صادراتی برای توزیع‌کنندگان در سراسر جهان.",
     },
     hitech: {
       title: "HI-TECH | برند روانکار پرچمدار Model Oils",
       description:
         "HI-TECH برند روانکار پرچمدار Model Oils برای بازارهای بین‌المللی عمده‌فروشی، توزیع‌کننده، ناوگان و صنعتی است — تأمین فله، آماده صادرات، دوستانه با توزیع‌کننده.",
       ogTitle: "HI-TECH | برند روانکار پرچمدار توسط Model Oils",
-      ogDescription: "محدوده روانکار HI-TECH ساخته‌شده برای توزیع‌کنندگان و عمده‌فروشان جهانی را کشف کنید.",
+      ogDescription:
+        "محدوده روانکار HI-TECH ساخته‌شده برای توزیع‌کنندگان و عمده‌فروشان جهانی را کشف کنید.",
     },
     industries: {
       title: "صنایع | راهکارهای روانکار توسط Model Oils",
@@ -2300,7 +2401,8 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     },
     blog: {
       title: "وبلاگ | منابع فنی روانکار | Model Oils",
-      description: "مقالات فنی درباره روانکارها، طبقه‌بندی روغن، درجات ویسکوزیته SAE و رتبه‌بندی عملکرد API برای توزیع‌کنندگان، عمده‌فروشان و خریداران صنعتی.",
+      description:
+        "مقالات فنی درباره روانکارها، طبقه‌بندی روغن، درجات ویسکوزیته SAE و رتبه‌بندی عملکرد API برای توزیع‌کنندگان، عمده‌فروشان و خریداران صنعتی.",
       ogTitle: "وبلاگ | منابع فنی Model Oils",
       ogDescription: "راهنماهای فنی روانکار شامل انواع روغن، درجات ویسکوزیته و طبقه‌بندی عملکرد.",
     },
@@ -2354,7 +2456,8 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       description:
         "اختر بين مجموعة المواد التشحيمية HI-TECH، العلامة الخاصة بـ Model Petrol، و Yokohama Motor Oil الموزعة من Model Petrol — زيوت المحركات وزيوت ناقل الحركة والشحوم ومضادات التجمد وبطاريات VOLT.",
       ogTitle: "منتجات يوكوهاما و HI-TECH | Model Petrol",
-      ogDescription: "علامتان تجاريتان للمواد التشحيمية من مورد واحد: مجموعة HI-TECH و Yokohama Motor Oil.",
+      ogDescription:
+        "علامتان تجاريتان للمواد التشحيمية من مورد واحد: مجموعة HI-TECH و Yokohama Motor Oil.",
     },
     yokohama: {
       title: "Yokohama Motor Oil | موزعة من Model Petrol",
@@ -2371,9 +2474,11 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     },
     blog: {
       title: "المدونة | موارد تقنية للمواد التشحيمية | Model Oils",
-      description: "مقالات تقنية حول المواد التشحيمية وتصنيف الزيوت ودرجات اللزوجة SAE وتقييمات الأداء API للموزعين وتجار الجملة والمشترين الصناعيين.",
+      description:
+        "مقالات تقنية حول المواد التشحيمية وتصنيف الزيوت ودرجات اللزوجة SAE وتقييمات الأداء API للموزعين وتجار الجملة والمشترين الصناعيين.",
       ogTitle: "المدونة | الموارد التقنية لـ Model Oils",
-      ogDescription: "أدلة تقنية للمواد التشحيمية تغطي أنواع الزيوت ودرجات اللزوجة وتصنيفات الأداء.",
+      ogDescription:
+        "أدلة تقنية للمواد التشحيمية تغطي أنواع الزيوت ودرجات اللزوجة وتصنيفات الأداء.",
     },
   },
 };

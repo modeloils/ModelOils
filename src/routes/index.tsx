@@ -20,7 +20,7 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
-import heroImg from "@/assets/hero.png";
+import heroImg from "@/assets/yokohama-hero-cream.webp";
 import flagshipImg from "@/assets/flagship.png";
 import exportImg from "@/assets/export.jpg";
 
@@ -49,24 +49,23 @@ export function Home() {
 function Hero() {
   const { t } = useTranslation();
   return (
-    <section className="relative overflow-hidden">
+    <section className="home-hero-cream relative overflow-hidden">
       <img
         src={heroImg}
         alt={t.imgAlt.heroProducts}
         width={1920}
         height={1080}
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover object-[68%_center] sm:object-center"
       />
-      <div className="absolute inset-0 bg-[image:var(--gradient-hero)]" />
-      <div className="absolute inset-0 bg-background/55" />
-      <div className="tech-grid absolute inset-0 opacity-40" />
+      <div className="home-hero-overlay absolute inset-0" />
+      <div className="tech-grid absolute inset-0 opacity-30" />
       <div className="relative mx-auto flex max-w-7xl flex-col justify-center px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-40">
         <div className="max-w-2xl animate-float-up">
           <span className="brand-pill inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]">
             <Globe2 className="h-3.5 w-3.5" /> {t.hero.badge}
           </span>
           <h1 className="mt-6 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            {t.hero.titlePre} <span className="text-gradient-steel">{t.hero.titleHighlight}</span>
+            {t.hero.titlePre} <span className="home-hero-highlight">{t.hero.titleHighlight}</span>
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-foreground/85 sm:text-lg">
             {t.hero.subtitle}
@@ -77,8 +76,8 @@ function Hero() {
                 {t.hero.requestQuote} <ArrowRight className="h-5 w-5 rtl:rotate-180" />
               </LocaleLink>
             </Button>
-            <Button asChild variant="steel" size="xl">
-              <LocaleLink to="/hi-tech">{t.hero.exploreHiTech}</LocaleLink>
+            <Button asChild variant="outline" size="xl">
+              <LocaleLink to="/yokohama">{t.hero.exploreYokohama}</LocaleLink>
             </Button>
           </div>
           <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-foreground/75">
