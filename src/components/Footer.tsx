@@ -43,7 +43,7 @@ export function Footer() {
             {t.footer.company}
           </h4>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-            {NAV_LINKS.map((l) => (
+            {NAV_LINKS.filter(({ brand }) => !brand).map((l) => (
               <li key={l.to}>
                 <LocaleLink to={l.to} className="hover:text-primary">
                   {t.nav[l.key]}
