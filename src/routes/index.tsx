@@ -76,7 +76,12 @@ function Hero() {
                 {t.hero.requestQuote} <ArrowRight className="h-5 w-5 rtl:rotate-180" />
               </LocaleLink>
             </Button>
-            <Button asChild variant="outline" size="xl">
+            <Button
+              asChild
+              variant="outline"
+              size="xl"
+              className="border-primary/50 bg-background/90 text-foreground hover:border-primary hover:bg-primary hover:text-primary-foreground"
+            >
               <LocaleLink to="/yokohama">{t.hero.exploreYokohama}</LocaleLink>
             </Button>
           </div>
