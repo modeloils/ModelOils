@@ -2816,7 +2816,7 @@ export function HiTechSubcategory() {
                     to={`${base}/${category}/${p.slug}`}
                     className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                   >
-                    <div className={`flex items-center justify-center p-8 ${isYokohama ? "bg-white" : ""}`}>
+                    <div className="flex items-center justify-center p-8">
                       <img
                         src={p.image}
                         alt={resolveName(p, locale)}
@@ -2903,7 +2903,7 @@ export function HiTechSubcategory() {
                     to={`${base}/${category}/${p.slug}`}
                     className="group flex flex-col overflow-hidden rounded-xl border border-border bg-[image:var(--gradient-panel)] shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                   >
-                    <div className={`flex items-center justify-center p-8 ${isYokohama ? "bg-white" : ""}`}>
+                    <div className="flex items-center justify-center p-8">
                       <img
                         src={p.image}
                         alt={resolveName(p, locale)}
@@ -3038,7 +3038,7 @@ export function HiTechProduct() {
               <button
                 type="button"
                 onClick={() => setLightboxOpen(true)}
-                className={`group relative flex h-64 w-64 cursor-zoom-in items-center justify-center rounded-full sm:h-72 sm:w-72 lg:h-80 lg:w-80 ${isYokohama ? "yokohama-product-halo overflow-hidden bg-white" : ""}`}
+                className={`group relative flex h-64 w-64 cursor-zoom-in items-center justify-center rounded-full sm:h-72 sm:w-72 lg:h-80 lg:w-80 ${isYokohama ? "yokohama-product-halo" : ""}`}
                 aria-label={t.hitech.zoomImage}
               >
                 <img
@@ -3096,12 +3096,14 @@ export function HiTechProduct() {
             </div>
 
             {/* Standards */}
-            <div>
-              <h3 className="mb-3 text-sm font-bold uppercase tracking-widest text-foreground">
-                {t.hitech.productStandards}
-              </h3>
-              <p className="text-sm text-muted-foreground">{resolveText(detail.standards, locale)}</p>
-            </div>
+            {resolveText(detail.standards, locale) && (
+              <div>
+                <h3 className="mb-3 text-sm font-bold uppercase tracking-widest text-foreground">
+                  {t.hitech.productStandards}
+                </h3>
+                <p className="text-sm text-muted-foreground">{resolveText(detail.standards, locale)}</p>
+              </div>
+            )}
 
             {/* Packaging */}
             <div className="rounded border border-border bg-[image:var(--gradient-panel)] p-6">
