@@ -4,6 +4,7 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { Toaster } from "@/components/ui/sonner";
 import { useTranslation } from "@/lib/i18n";
+import { cn } from "@/lib/utils";
 
 const WA_NUMBER = "905334567975";
 const WA_URL = `https://wa.me/${WA_NUMBER}`;
@@ -28,15 +29,19 @@ function WhatsAppButton() {
 
 export function SiteLayout({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const isYokohamaRoute = /(^|\/)yokohama(?:\/|$)/.test(pathname);
+
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
-      <main className="flex-1">
-        <div key={pathname} className="page-transition">
-          {children}
-        </div>
-      </main>
-      <Footer />
+      <div className={cn("flex flex-1 flex-col", isYokohamaRoute && "yokohama-theme")}>
+        <main className="flex-1">
+          <div key={pathname} className="page-transition">
+            {children}
+          </div>
+        </main>
+        <Footer />
+      </div>
       <Toaster position="top-center" />
       <WhatsAppButton />
     </div>

@@ -1,8 +1,6 @@
 import { Mail, MessageCircle, Globe, MapPin } from "lucide-react";
-import { useRouterState } from "@tanstack/react-router";
 import { CONTACT, NAV_LINKS } from "@/lib/site-data";
 import { LocaleLink, useTranslation } from "@/lib/i18n";
-import { cn } from "@/lib/utils";
 import {
   getYokohamaCategoryName,
   YOKOHAMA_CATEGORY_DEFINITIONS,
@@ -10,17 +8,9 @@ import {
 
 export function Footer() {
   const { t, data, locale } = useTranslation();
-  const isYokohamaRoute = useRouterState({
-    select: (state) => /(^|\/)yokohama(?:\/|$)/.test(state.location.pathname),
-  });
 
   return (
-    <footer
-      className={cn(
-        "border-t border-border bg-[image:var(--gradient-panel)]",
-        isYokohamaRoute && "yokohama-theme",
-      )}
-    >
+    <footer className="relative z-10 shrink-0 border-t border-border bg-[image:var(--gradient-panel)]">
       <div className="mx-auto grid max-w-7xl gap-y-10 px-4 py-14 sm:grid-cols-2 sm:gap-x-8 sm:px-6 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] lg:gap-x-6 lg:px-8 xl:gap-x-10">
         <div className="sm:col-span-2 lg:col-span-1">
           <img
