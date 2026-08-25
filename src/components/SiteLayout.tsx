@@ -31,6 +31,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const isYokohamaRoute = /(^|\/)yokohama(?:\/|$)/.test(pathname);
   const isHiTechRoute = /(^|\/)hi-tech(?:\/|$)/.test(pathname);
+  const isBlogRoute = /(^|\/)blog(?:\/|$)/.test(pathname);
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
@@ -39,8 +40,8 @@ export function SiteLayout({ children }: { children: ReactNode }) {
         className={cn(
           "flex flex-1 flex-col",
           isYokohamaRoute && "yokohama-theme",
-          isHiTechRoute && "hi-tech-theme",
-          !isYokohamaRoute && !isHiTechRoute && "model-mix-theme",
+          (isHiTechRoute || isBlogRoute) && "hi-tech-theme",
+          !isYokohamaRoute && !isHiTechRoute && !isBlogRoute && "model-mix-theme",
         )}
       >
         <main className="flex-1">

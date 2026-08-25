@@ -64,8 +64,8 @@
   --muted: oklch(0.255 0.017 258);
   --muted-foreground: oklch(0.68 0.015 252);
 
-  --accent: var(--brand-green);
-  --accent-foreground: oklch(0.985 0.004 150);
+  --accent: var(--brand-blue);
+  --accent-foreground: oklch(0.14 0.02 255);
 
   /* Amber highlight */
   --amber: oklch(0.78 0.15 75);
@@ -77,15 +77,9 @@
   --input: oklch(0.295 0.018 258);
   --ring: var(--brand-blue);
 
-  /* Shared brand effects: HI-TECH blue balanced with Yokohama red and green. */
+  /* Shared surfaces stay neutral; individual sections select one brand color. */
   --gradient-hero:
-    linear-gradient(
-      90deg,
-      oklch(0.4 0.15 248 / 0.16),
-      transparent 46%,
-      oklch(0.42 0.16 27 / 0.12) 76%,
-      oklch(0.4 0.13 154 / 0.16)
-    ),
+    radial-gradient(circle at 18% 18%, oklch(0.5 0.17 248 / 0.14), transparent 42%),
     linear-gradient(
       180deg,
       oklch(0.17 0.02 255 / 0) 0%,
@@ -93,29 +87,21 @@
       oklch(0.13 0.02 255 / 0.97) 100%
     );
   --gradient-blue: linear-gradient(135deg, var(--brand-blue), oklch(0.55 0.16 255));
-  --gradient-yokohama: linear-gradient(120deg, var(--brand-red) 0 58%, var(--brand-green) 72% 100%);
-  --gradient-brand: linear-gradient(
-    110deg,
-    var(--brand-blue) 0 42%,
-    var(--brand-red) 54% 72%,
-    var(--brand-green) 84% 100%
-  );
-  --gradient-action: var(--gradient-brand);
+  --gradient-red: linear-gradient(135deg, var(--brand-red), oklch(0.52 0.19 27));
+  --gradient-green: linear-gradient(135deg, var(--brand-green), oklch(0.49 0.13 154));
+  --gradient-action: var(--gradient-blue);
   --gradient-steel: linear-gradient(145deg, oklch(0.28 0.018 255), oklch(0.2 0.02 255));
-  --gradient-panel:
-    radial-gradient(circle at 0% 0%, oklch(0.46 0.15 248 / 0.11), transparent 42%),
-    radial-gradient(circle at 100% 0%, oklch(0.46 0.17 27 / 0.085), transparent 34%),
-    radial-gradient(circle at 100% 100%, oklch(0.44 0.13 154 / 0.075), transparent 38%),
-    linear-gradient(160deg, oklch(0.225 0.02 258) 0%, oklch(0.18 0.016 258) 100%);
+  --gradient-panel: linear-gradient(160deg, oklch(0.225 0.02 258) 0%, oklch(0.18 0.016 258) 100%);
   --shadow-card: 0 18px 40px -18px oklch(0.05 0.02 255 / 0.8);
-  --shadow-glow:
-    -14px 0 38px -16px oklch(0.66 0.18 248 / 0.42), 12px 2px 38px -18px oklch(0.64 0.215 27 / 0.28),
-    0 14px 38px -20px oklch(0.64 0.16 154 / 0.24);
+  --shadow-glow: 0 0 40px -8px oklch(0.66 0.18 248 / 0.42);
   --grid-line: oklch(0.95 0.005 250 / 0.04);
-  --brand-hero-glow:
-    radial-gradient(circle at 16% 0%, oklch(0.66 0.18 248 / 0.18), transparent 48%),
-    radial-gradient(circle at 82% 10%, oklch(0.64 0.215 27 / 0.12), transparent 36%),
-    radial-gradient(circle at 96% 74%, oklch(0.64 0.16 154 / 0.1), transparent 38%);
+  --brand-hero-glow: radial-gradient(
+    circle at 16% 0%,
+    oklch(0.66 0.18 248 / 0.18),
+    transparent 48%
+  );
+  --section-accent: var(--brand-blue);
+  --section-halo: radial-gradient(circle at 50% 32%, oklch(0.58 0.17 248 / 0.15), transparent 58%);
 }
 
 .dark {
@@ -184,7 +170,7 @@
   --input: oklch(0.3 0.038 28);
   --ring: oklch(0.64 0.215 27);
   --yokohama-green: oklch(0.69 0.17 154);
-  --gradient-action: var(--gradient-yokohama);
+  --gradient-action: var(--gradient-red);
   --gradient-panel: linear-gradient(
     145deg,
     oklch(0.235 0.04 27 / 0.96),
@@ -193,9 +179,9 @@
   --shadow-card: 0 22px 50px -24px oklch(0.06 0.025 25 / 0.96);
   --shadow-glow: 0 0 42px -10px oklch(0.62 0.21 27 / 0.48);
   --grid-line: oklch(0.72 0.18 27 / 0.045);
-  --brand-hero-glow:
-    radial-gradient(circle at 20% 0%, oklch(0.64 0.215 27 / 0.2), transparent 52%),
-    radial-gradient(circle at 88% 65%, oklch(0.69 0.17 154 / 0.13), transparent 42%);
+  --brand-hero-glow: radial-gradient(circle at 20% 0%, oklch(0.64 0.215 27 / 0.2), transparent 52%);
+  --section-accent: var(--brand-red);
+  --section-halo: radial-gradient(circle at 50% 32%, oklch(0.62 0.21 27 / 0.17), transparent 58%);
 }
 
 .yokohama-page-surface {
@@ -235,14 +221,13 @@
   width: min(8rem, 35%);
   height: 2px;
   content: "";
-  background: linear-gradient(90deg, var(--primary), var(--yokohama-green), transparent);
+  background: linear-gradient(90deg, var(--primary), transparent);
   box-shadow: 0 0 18px oklch(0.64 0.215 27 / 0.6);
 }
 
 .yokohama-product-halo {
   background:
-    radial-gradient(circle at 38% 38%, oklch(0.64 0.215 27 / 0.2), transparent 48%),
-    radial-gradient(circle at 68% 70%, oklch(0.69 0.17 154 / 0.13), transparent 48%),
+    radial-gradient(circle at 42% 42%, oklch(0.64 0.215 27 / 0.2), transparent 52%),
     oklch(0.16 0.022 27 / 0.76);
   border: 1px solid oklch(0.64 0.215 27 / 0.24);
   box-shadow:
@@ -250,47 +235,14 @@
     var(--shadow-glow);
 }
 
-/* The shared Model Oils layer visibly carries both brands. */
+/* Shared pages alternate brand-owned areas instead of blending their palettes. */
 .model-mix-theme {
   position: relative;
   isolation: isolate;
 }
 
-.model-mix-theme::before {
-  position: fixed;
-  z-index: -1;
-  inset: 0;
-  content: "";
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 0% 14%, oklch(0.52 0.17 248 / 0.08), transparent 31%),
-    radial-gradient(circle at 100% 28%, oklch(0.52 0.19 27 / 0.065), transparent 26%),
-    radial-gradient(circle at 91% 82%, oklch(0.5 0.14 154 / 0.06), transparent 29%);
-}
-
 .mixed-header {
   isolation: isolate;
-}
-
-.mixed-header::after,
-.brand-footer::before {
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  left: 0;
-  height: 2px;
-  content: "";
-  background: var(--gradient-brand);
-  box-shadow: var(--shadow-glow);
-  pointer-events: none;
-}
-
-.mixed-header::after {
-  bottom: -1px;
-}
-
-.brand-footer::before {
-  top: -1px;
 }
 
 .mixed-header .brand-nav-hi-tech {
@@ -311,14 +263,11 @@
 }
 
 .brand-eyebrow {
-  background: var(--gradient-action);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: var(--section-accent);
 }
 
 .brand-accent-rule {
-  background: var(--gradient-action);
+  background: var(--section-accent);
   box-shadow: var(--shadow-glow);
 }
 
@@ -340,7 +289,7 @@
   height: 2px;
   content: "";
   border-radius: 999px;
-  background: var(--gradient-action);
+  background: var(--section-accent);
   opacity: 0.58;
   transition:
     opacity 180ms ease,
@@ -359,69 +308,90 @@
 }
 
 .brand-pill {
-  border-color: transparent;
-  background:
-    linear-gradient(var(--background), var(--background)) padding-box,
-    var(--gradient-brand) border-box;
-  color: var(--foreground);
+  border-color: color-mix(in oklch, var(--section-accent) 46%, transparent);
+  background: color-mix(in oklch, var(--section-accent) 11%, transparent);
+  color: var(--section-accent);
 }
 
 .brand-section-blue {
+  --primary: var(--brand-blue);
+  --primary-foreground: white;
+  --accent: var(--brand-blue);
+  --gradient-action: var(--gradient-blue);
+  --section-accent: var(--brand-blue);
+  --section-halo: radial-gradient(circle at 50% 32%, oklch(0.58 0.17 248 / 0.15), transparent 58%);
+  --shadow-glow: 0 0 40px -8px oklch(0.66 0.18 248 / 0.42);
   background-image:
     radial-gradient(circle at 14% 20%, oklch(0.56 0.18 248 / 0.15), transparent 38%),
     linear-gradient(180deg, oklch(0.17 0.021 255), oklch(0.155 0.018 255));
 }
 
-.brand-section-yokohama {
+.brand-section-red {
+  --primary: var(--brand-red);
+  --primary-foreground: white;
+  --accent: var(--brand-red);
+  --gradient-action: var(--gradient-red);
+  --section-accent: var(--brand-red);
+  --section-halo: radial-gradient(circle at 50% 32%, oklch(0.58 0.2 27 / 0.14), transparent 58%);
+  --shadow-glow: 0 0 40px -8px oklch(0.64 0.215 27 / 0.38);
   background-image:
-    radial-gradient(circle at 82% 10%, oklch(0.55 0.2 27 / 0.13), transparent 36%),
-    radial-gradient(circle at 16% 88%, oklch(0.5 0.145 154 / 0.11), transparent 38%),
-    linear-gradient(160deg, oklch(0.175 0.022 28), oklch(0.155 0.018 150));
+    radial-gradient(circle at 82% 10%, oklch(0.55 0.2 27 / 0.14), transparent 38%),
+    linear-gradient(160deg, oklch(0.175 0.027 28), oklch(0.145 0.021 28));
 }
 
-.brand-section-mixed {
+.brand-section-green {
+  --primary: var(--brand-green);
+  --primary-foreground: white;
+  --accent: var(--brand-green);
+  --gradient-action: var(--gradient-green);
+  --section-accent: var(--brand-green);
+  --section-halo: radial-gradient(circle at 50% 32%, oklch(0.53 0.15 154 / 0.14), transparent 58%);
+  --shadow-glow: 0 0 40px -8px oklch(0.64 0.16 154 / 0.34);
+  background-image:
+    radial-gradient(circle at 16% 88%, oklch(0.5 0.145 154 / 0.13), transparent 40%),
+    linear-gradient(160deg, oklch(0.17 0.024 154), oklch(0.14 0.019 154));
+}
+
+.brand-section-neutral {
   background-image: var(--gradient-panel);
 }
 
 .brand-cta-glow {
-  background:
-    radial-gradient(circle at 28% 0%, oklch(0.6 0.18 248 / 0.16), transparent 45%),
-    radial-gradient(circle at 72% 0%, oklch(0.58 0.2 27 / 0.12), transparent 38%),
-    radial-gradient(circle at 54% 100%, oklch(0.56 0.15 154 / 0.1), transparent 42%);
+  background: var(--section-halo);
 }
 
-.brand-cycle > :nth-child(3n + 1) .brand-cycle-icon {
-  background-image: var(--gradient-blue);
-  color: var(--primary-foreground);
+.brand-cycle > :nth-child(3n + 1) {
+  --gradient-action: var(--gradient-blue);
+  --section-accent: var(--brand-blue);
+  --section-halo: radial-gradient(circle at 50% 32%, oklch(0.58 0.17 248 / 0.15), transparent 58%);
+  --shadow-glow: 0 0 36px -10px oklch(0.66 0.18 248 / 0.38);
 }
 
-.brand-cycle > :nth-child(3n + 2) .brand-cycle-icon {
-  background-image: linear-gradient(135deg, var(--brand-red), oklch(0.52 0.19 27));
+.brand-cycle > :nth-child(3n + 2) {
+  --gradient-action: var(--gradient-red);
+  --section-accent: var(--brand-red);
+  --section-halo: radial-gradient(circle at 50% 32%, oklch(0.58 0.2 27 / 0.14), transparent 58%);
+  --shadow-glow: 0 0 36px -10px oklch(0.64 0.215 27 / 0.34);
+}
+
+.brand-cycle > :nth-child(3n) {
+  --gradient-action: var(--gradient-green);
+  --section-accent: var(--brand-green);
+  --section-halo: radial-gradient(circle at 50% 32%, oklch(0.53 0.15 154 / 0.14), transparent 58%);
+  --shadow-glow: 0 0 36px -10px oklch(0.64 0.16 154 / 0.32);
+}
+
+.brand-cycle-icon {
+  background-image: var(--gradient-action);
   color: white;
 }
 
-.brand-cycle > :nth-child(3n) .brand-cycle-icon {
-  background-image: linear-gradient(135deg, var(--brand-green), oklch(0.49 0.13 154));
-  color: white;
-}
-
-.brand-cycle > :nth-child(3n + 1) .brand-cycle-mark {
-  color: var(--brand-blue);
-}
-
-.brand-cycle > :nth-child(3n + 2) .brand-cycle-mark {
-  color: var(--brand-red);
-}
-
-.brand-cycle > :nth-child(3n) .brand-cycle-mark {
-  color: var(--brand-green);
+.brand-cycle-mark {
+  color: var(--section-accent);
 }
 
 .brand-product-halo {
-  background:
-    radial-gradient(circle at 44% 30%, oklch(0.58 0.17 248 / 0.15), transparent 48%),
-    radial-gradient(circle at 68% 70%, oklch(0.55 0.17 27 / 0.08), transparent 44%),
-    radial-gradient(circle at 25% 80%, oklch(0.52 0.13 154 / 0.07), transparent 42%);
+  background: var(--section-halo);
 }
 
 @layer base {

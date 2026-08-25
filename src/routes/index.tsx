@@ -83,10 +83,10 @@ function Hero() {
           </div>
           <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-foreground/75">
             <span className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-brand-red" /> {t.hero.bulletPackaging}
+              <CheckCircle2 className="h-4 w-4 text-primary" /> {t.hero.bulletPackaging}
             </span>
             <span className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-brand-green" /> {t.hero.bulletExport}
+              <CheckCircle2 className="h-4 w-4 text-primary" /> {t.hero.bulletExport}
             </span>
           </div>
         </div>
@@ -154,7 +154,7 @@ function ExportSection() {
   const { t, data } = useTranslation();
   const icons = [Ship, Boxes, ShieldCheck, Boxes, Wrench, Truck];
   return (
-    <section className="brand-section-mixed relative overflow-hidden border-y border-border py-20 lg:py-28">
+    <section className="brand-section-red relative overflow-hidden border-y border-border py-20 lg:py-28">
       <img
         src={exportImg}
         alt={t.imgAlt.exportWarehouse}
@@ -170,7 +170,7 @@ function ExportSection() {
           title={t.exportHome.title}
           description={t.exportHome.description}
         />
-        <div className="brand-cycle mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {data.exportCards.map((card, i) => {
             const Icon = icons[i % icons.length];
             return (
@@ -178,7 +178,7 @@ function ExportSection() {
                 key={card.title}
                 className="brand-card rounded-xl border border-border bg-card/80 p-6 backdrop-blur-sm transition-all hover:border-primary/50"
               >
-                <span className="brand-cycle-icon grid h-11 w-11 place-items-center rounded-lg">
+                <span className="brand-icon grid h-11 w-11 place-items-center rounded-lg">
                   <Icon className="h-5 w-5" />
                 </span>
                 <h3 className="mt-4 font-display text-lg font-bold text-foreground">
@@ -208,14 +208,14 @@ const industryIcons: LucideIcon[] = [
 function Industries() {
   const { t, data } = useTranslation();
   return (
-    <section className="brand-section-yokohama py-20 lg:py-28">
+    <section className="brand-section-green py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow={t.industriesHome.eyebrow}
           title={t.industriesHome.title}
           align="center"
         />
-        <div className="brand-cycle mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
           {data.industries.map((ind, i) => {
             const Icon = industryIcons[i] ?? Factory;
             return (
@@ -223,7 +223,7 @@ function Industries() {
                 key={ind.name}
                 className="brand-card group flex flex-col items-center gap-3 rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6 text-center transition-all hover:-translate-y-1 hover:border-primary/50"
               >
-                <span className="brand-cycle-icon grid h-11 w-11 place-items-center rounded-lg transition-[filter] group-hover:brightness-110">
+                <span className="brand-icon grid h-11 w-11 place-items-center rounded-lg transition-[filter] group-hover:brightness-110">
                   <Icon className="h-5 w-5" />
                 </span>
                 <span className="text-sm font-semibold text-foreground">{ind.name}</span>
@@ -239,10 +239,10 @@ function Industries() {
 function WhyUs() {
   const { t, data } = useTranslation();
   return (
-    <section className="brand-section-mixed border-t border-border py-20 lg:py-28">
+    <section className="brand-section-blue border-t border-border py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow={t.whyUs.eyebrow} title={t.whyUs.title} />
-        <div className="brand-cycle mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {data.trustPoints.map((tp) => (
             <div
               key={tp.title}
@@ -264,7 +264,7 @@ function WhyUs() {
 function QuoteCta() {
   const { t } = useTranslation();
   return (
-    <section className="brand-section-mixed relative overflow-hidden border-t border-border py-20 lg:py-24">
+    <section className="brand-section-green relative overflow-hidden border-t border-border py-20 lg:py-24">
       <div className="brand-cta-glow absolute inset-0" />
       <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
         <h2 className="font-display text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
