@@ -70,8 +70,12 @@ function createViscositySubcategories(
   return subcategories;
 }
 
-function useTransparentPackshot(image: string): string {
-  return image.replace(/\.webp$/i, "-transparent.webp");
+function useTransparentPackshot(image: string, category: string): string {
+  const suffix =
+    category === "Binek-Arac-Motor-Yaglari"
+      ? "-transparent-clean.webp"
+      : "-transparent.webp";
+  return image.replace(/\.webp$/i, suffix);
 }
 
 export const YOKOHAMA_CATEGORY_DATA = Object.fromEntries(
@@ -82,7 +86,7 @@ export const YOKOHAMA_CATEGORY_DATA = Object.fromEntries(
     const products = sourceProducts.map(({ slug, name, image }) => ({
       slug,
       name,
-      image: useTransparentPackshot(image),
+      image: useTransparentPackshot(image, category.slug),
     }));
     const details = Object.fromEntries(
       sourceProducts.map((product) => [
