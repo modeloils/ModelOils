@@ -9,9 +9,11 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as YokohamaRouteImport } from './routes/yokohama'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as MediaRouteImport } from './routes/media'
 import { Route as IndustriesRouteImport } from './routes/industries'
+import { Route as HiTechRouteImport } from './routes/hi-tech'
 import { Route as ExportRouteImport } from './routes/export'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CatalogsRouteImport } from './routes/catalogs'
@@ -24,98 +26,101 @@ import { Route as FrIndexRouteImport } from './routes/fr/index'
 import { Route as FaIndexRouteImport } from './routes/fa/index'
 import { Route as DeIndexRouteImport } from './routes/de/index'
 import { Route as ArIndexRouteImport } from './routes/ar/index'
+import { Route as YokohamaCategoryRouteImport } from './routes/yokohama_.$category'
+import { Route as TrYokohamaRouteImport } from './routes/tr/yokohama'
 import { Route as TrMediaRouteImport } from './routes/tr/media'
 import { Route as TrIndustriesRouteImport } from './routes/tr/industries'
+import { Route as TrHiTechRouteImport } from './routes/tr/hi-tech'
 import { Route as TrExportRouteImport } from './routes/tr/export'
 import { Route as TrContactRouteImport } from './routes/tr/contact'
 import { Route as TrCatalogsRouteImport } from './routes/tr/catalogs'
 import { Route as TrBlogRouteImport } from './routes/tr/blog'
 import { Route as TrAboutRouteImport } from './routes/tr/about'
+import { Route as RuYokohamaRouteImport } from './routes/ru/yokohama'
 import { Route as RuMediaRouteImport } from './routes/ru/media'
 import { Route as RuIndustriesRouteImport } from './routes/ru/industries'
+import { Route as RuHiTechRouteImport } from './routes/ru/hi-tech'
 import { Route as RuExportRouteImport } from './routes/ru/export'
 import { Route as RuContactRouteImport } from './routes/ru/contact'
 import { Route as RuCatalogsRouteImport } from './routes/ru/catalogs'
 import { Route as RuBlogRouteImport } from './routes/ru/blog'
 import { Route as RuAboutRouteImport } from './routes/ru/about'
-import { Route as ProductsYokohamaRouteImport } from './routes/products/yokohama'
-import { Route as ProductsHiTechRouteImport } from './routes/products/hi-tech'
+import { Route as HiTechCategoryRouteImport } from './routes/hi-tech_.$category'
+import { Route as FrYokohamaRouteImport } from './routes/fr/yokohama'
 import { Route as FrMediaRouteImport } from './routes/fr/media'
 import { Route as FrIndustriesRouteImport } from './routes/fr/industries'
+import { Route as FrHiTechRouteImport } from './routes/fr/hi-tech'
 import { Route as FrExportRouteImport } from './routes/fr/export'
 import { Route as FrContactRouteImport } from './routes/fr/contact'
 import { Route as FrCatalogsRouteImport } from './routes/fr/catalogs'
 import { Route as FrBlogRouteImport } from './routes/fr/blog'
 import { Route as FrAboutRouteImport } from './routes/fr/about'
+import { Route as FaYokohamaRouteImport } from './routes/fa/yokohama'
 import { Route as FaMediaRouteImport } from './routes/fa/media'
 import { Route as FaIndustriesRouteImport } from './routes/fa/industries'
+import { Route as FaHiTechRouteImport } from './routes/fa/hi-tech'
 import { Route as FaExportRouteImport } from './routes/fa/export'
 import { Route as FaContactRouteImport } from './routes/fa/contact'
 import { Route as FaCatalogsRouteImport } from './routes/fa/catalogs'
 import { Route as FaBlogRouteImport } from './routes/fa/blog'
 import { Route as FaAboutRouteImport } from './routes/fa/about'
+import { Route as DeYokohamaRouteImport } from './routes/de/yokohama'
 import { Route as DeMediaRouteImport } from './routes/de/media'
 import { Route as DeIndustriesRouteImport } from './routes/de/industries'
+import { Route as DeHiTechRouteImport } from './routes/de/hi-tech'
 import { Route as DeExportRouteImport } from './routes/de/export'
 import { Route as DeContactRouteImport } from './routes/de/contact'
 import { Route as DeCatalogsRouteImport } from './routes/de/catalogs'
 import { Route as DeBlogRouteImport } from './routes/de/blog'
 import { Route as DeAboutRouteImport } from './routes/de/about'
 import { Route as BlogSlugRouteImport } from './routes/blog_.$slug'
+import { Route as ArYokohamaRouteImport } from './routes/ar/yokohama'
 import { Route as ArMediaRouteImport } from './routes/ar/media'
 import { Route as ArIndustriesRouteImport } from './routes/ar/industries'
+import { Route as ArHiTechRouteImport } from './routes/ar/hi-tech'
 import { Route as ArExportRouteImport } from './routes/ar/export'
 import { Route as ArContactRouteImport } from './routes/ar/contact'
 import { Route as ArCatalogsRouteImport } from './routes/ar/catalogs'
 import { Route as ArBlogRouteImport } from './routes/ar/blog'
 import { Route as ArAboutRouteImport } from './routes/ar/about'
-import { Route as TrProductsYokohamaRouteImport } from './routes/tr/products/yokohama'
-import { Route as TrProductsHiTechRouteImport } from './routes/tr/products/hi-tech'
+import { Route as YokohamaCategoryProductRouteImport } from './routes/yokohama_.$category.$product'
+import { Route as TrYokohamaCategoryRouteImport } from './routes/tr/yokohama_.$category'
+import { Route as TrHiTechCategoryRouteImport } from './routes/tr/hi-tech_.$category'
 import { Route as TrBlogSlugRouteImport } from './routes/tr/blog_.$slug'
-import { Route as RuProductsYokohamaRouteImport } from './routes/ru/products/yokohama'
-import { Route as RuProductsHiTechRouteImport } from './routes/ru/products/hi-tech'
+import { Route as RuYokohamaCategoryRouteImport } from './routes/ru/yokohama_.$category'
+import { Route as RuHiTechCategoryRouteImport } from './routes/ru/hi-tech_.$category'
 import { Route as RuBlogSlugRouteImport } from './routes/ru/blog_.$slug'
-import { Route as ProductsYokohamaCategoryRouteImport } from './routes/products/yokohama_.$category'
-import { Route as ProductsHiTechCategoryRouteImport } from './routes/products/hi-tech_.$category'
-import { Route as FrProductsYokohamaRouteImport } from './routes/fr/products/yokohama'
-import { Route as FrProductsHiTechRouteImport } from './routes/fr/products/hi-tech'
+import { Route as HiTechCategoryProductRouteImport } from './routes/hi-tech_.$category.$product'
+import { Route as FrYokohamaCategoryRouteImport } from './routes/fr/yokohama_.$category'
+import { Route as FrHiTechCategoryRouteImport } from './routes/fr/hi-tech_.$category'
 import { Route as FrBlogSlugRouteImport } from './routes/fr/blog_.$slug'
-import { Route as FaProductsYokohamaRouteImport } from './routes/fa/products/yokohama'
-import { Route as FaProductsHiTechRouteImport } from './routes/fa/products/hi-tech'
+import { Route as FaYokohamaCategoryRouteImport } from './routes/fa/yokohama_.$category'
+import { Route as FaHiTechCategoryRouteImport } from './routes/fa/hi-tech_.$category'
 import { Route as FaBlogSlugRouteImport } from './routes/fa/blog_.$slug'
-import { Route as DeProductsYokohamaRouteImport } from './routes/de/products/yokohama'
-import { Route as DeProductsHiTechRouteImport } from './routes/de/products/hi-tech'
+import { Route as DeYokohamaCategoryRouteImport } from './routes/de/yokohama_.$category'
+import { Route as DeHiTechCategoryRouteImport } from './routes/de/hi-tech_.$category'
 import { Route as DeBlogSlugRouteImport } from './routes/de/blog_.$slug'
-import { Route as ArProductsYokohamaRouteImport } from './routes/ar/products/yokohama'
-import { Route as ArProductsHiTechRouteImport } from './routes/ar/products/hi-tech'
+import { Route as ArYokohamaCategoryRouteImport } from './routes/ar/yokohama_.$category'
+import { Route as ArHiTechCategoryRouteImport } from './routes/ar/hi-tech_.$category'
 import { Route as ArBlogSlugRouteImport } from './routes/ar/blog_.$slug'
-import { Route as TrProductsYokohamaCategoryRouteImport } from './routes/tr/products/yokohama_.$category'
-import { Route as TrProductsHiTechCategoryRouteImport } from './routes/tr/products/hi-tech_.$category'
-import { Route as RuProductsYokohamaCategoryRouteImport } from './routes/ru/products/yokohama_.$category'
-import { Route as RuProductsHiTechCategoryRouteImport } from './routes/ru/products/hi-tech_.$category'
-import { Route as ProductsYokohamaCategoryProductRouteImport } from './routes/products/yokohama_.$category.$product'
-import { Route as ProductsHiTechCategoryProductRouteImport } from './routes/products/hi-tech_.$category.$product'
-import { Route as FrProductsYokohamaCategoryRouteImport } from './routes/fr/products/yokohama_.$category'
-import { Route as FrProductsHiTechCategoryRouteImport } from './routes/fr/products/hi-tech_.$category'
-import { Route as FaProductsYokohamaCategoryRouteImport } from './routes/fa/products/yokohama_.$category'
-import { Route as FaProductsHiTechCategoryRouteImport } from './routes/fa/products/hi-tech_.$category'
-import { Route as DeProductsYokohamaCategoryRouteImport } from './routes/de/products/yokohama_.$category'
-import { Route as DeProductsHiTechCategoryRouteImport } from './routes/de/products/hi-tech_.$category'
-import { Route as ArProductsYokohamaCategoryRouteImport } from './routes/ar/products/yokohama_.$category'
-import { Route as ArProductsHiTechCategoryRouteImport } from './routes/ar/products/hi-tech_.$category'
-import { Route as TrProductsYokohamaCategoryProductRouteImport } from './routes/tr/products/yokohama_.$category.$product'
-import { Route as TrProductsHiTechCategoryProductRouteImport } from './routes/tr/products/hi-tech_.$category.$product'
-import { Route as RuProductsYokohamaCategoryProductRouteImport } from './routes/ru/products/yokohama_.$category.$product'
-import { Route as RuProductsHiTechCategoryProductRouteImport } from './routes/ru/products/hi-tech_.$category.$product'
-import { Route as FrProductsYokohamaCategoryProductRouteImport } from './routes/fr/products/yokohama_.$category.$product'
-import { Route as FrProductsHiTechCategoryProductRouteImport } from './routes/fr/products/hi-tech_.$category.$product'
-import { Route as FaProductsYokohamaCategoryProductRouteImport } from './routes/fa/products/yokohama_.$category.$product'
-import { Route as FaProductsHiTechCategoryProductRouteImport } from './routes/fa/products/hi-tech_.$category.$product'
-import { Route as DeProductsYokohamaCategoryProductRouteImport } from './routes/de/products/yokohama_.$category.$product'
-import { Route as DeProductsHiTechCategoryProductRouteImport } from './routes/de/products/hi-tech_.$category.$product'
-import { Route as ArProductsYokohamaCategoryProductRouteImport } from './routes/ar/products/yokohama_.$category.$product'
-import { Route as ArProductsHiTechCategoryProductRouteImport } from './routes/ar/products/hi-tech_.$category.$product'
+import { Route as TrYokohamaCategoryProductRouteImport } from './routes/tr/yokohama_.$category.$product'
+import { Route as TrHiTechCategoryProductRouteImport } from './routes/tr/hi-tech_.$category.$product'
+import { Route as RuYokohamaCategoryProductRouteImport } from './routes/ru/yokohama_.$category.$product'
+import { Route as RuHiTechCategoryProductRouteImport } from './routes/ru/hi-tech_.$category.$product'
+import { Route as FrYokohamaCategoryProductRouteImport } from './routes/fr/yokohama_.$category.$product'
+import { Route as FrHiTechCategoryProductRouteImport } from './routes/fr/hi-tech_.$category.$product'
+import { Route as FaYokohamaCategoryProductRouteImport } from './routes/fa/yokohama_.$category.$product'
+import { Route as FaHiTechCategoryProductRouteImport } from './routes/fa/hi-tech_.$category.$product'
+import { Route as DeYokohamaCategoryProductRouteImport } from './routes/de/yokohama_.$category.$product'
+import { Route as DeHiTechCategoryProductRouteImport } from './routes/de/hi-tech_.$category.$product'
+import { Route as ArYokohamaCategoryProductRouteImport } from './routes/ar/yokohama_.$category.$product'
+import { Route as ArHiTechCategoryProductRouteImport } from './routes/ar/hi-tech_.$category.$product'
 
+const YokohamaRoute = YokohamaRouteImport.update({
+  id: '/yokohama',
+  path: '/yokohama',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -129,6 +134,11 @@ const MediaRoute = MediaRouteImport.update({
 const IndustriesRoute = IndustriesRouteImport.update({
   id: '/industries',
   path: '/industries',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HiTechRoute = HiTechRouteImport.update({
+  id: '/hi-tech',
+  path: '/hi-tech',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ExportRoute = ExportRouteImport.update({
@@ -191,6 +201,16 @@ const ArIndexRoute = ArIndexRouteImport.update({
   path: '/ar/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const YokohamaCategoryRoute = YokohamaCategoryRouteImport.update({
+  id: '/yokohama_/$category',
+  path: '/yokohama/$category',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TrYokohamaRoute = TrYokohamaRouteImport.update({
+  id: '/tr/yokohama',
+  path: '/tr/yokohama',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TrMediaRoute = TrMediaRouteImport.update({
   id: '/tr/media',
   path: '/tr/media',
@@ -199,6 +219,11 @@ const TrMediaRoute = TrMediaRouteImport.update({
 const TrIndustriesRoute = TrIndustriesRouteImport.update({
   id: '/tr/industries',
   path: '/tr/industries',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TrHiTechRoute = TrHiTechRouteImport.update({
+  id: '/tr/hi-tech',
+  path: '/tr/hi-tech',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TrExportRoute = TrExportRouteImport.update({
@@ -226,6 +251,11 @@ const TrAboutRoute = TrAboutRouteImport.update({
   path: '/tr/about',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RuYokohamaRoute = RuYokohamaRouteImport.update({
+  id: '/ru/yokohama',
+  path: '/ru/yokohama',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RuMediaRoute = RuMediaRouteImport.update({
   id: '/ru/media',
   path: '/ru/media',
@@ -234,6 +264,11 @@ const RuMediaRoute = RuMediaRouteImport.update({
 const RuIndustriesRoute = RuIndustriesRouteImport.update({
   id: '/ru/industries',
   path: '/ru/industries',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RuHiTechRoute = RuHiTechRouteImport.update({
+  id: '/ru/hi-tech',
+  path: '/ru/hi-tech',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RuExportRoute = RuExportRouteImport.update({
@@ -261,14 +296,14 @@ const RuAboutRoute = RuAboutRouteImport.update({
   path: '/ru/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProductsYokohamaRoute = ProductsYokohamaRouteImport.update({
-  id: '/products/yokohama',
-  path: '/products/yokohama',
+const HiTechCategoryRoute = HiTechCategoryRouteImport.update({
+  id: '/hi-tech_/$category',
+  path: '/hi-tech/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProductsHiTechRoute = ProductsHiTechRouteImport.update({
-  id: '/products/hi-tech',
-  path: '/products/hi-tech',
+const FrYokohamaRoute = FrYokohamaRouteImport.update({
+  id: '/fr/yokohama',
+  path: '/fr/yokohama',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FrMediaRoute = FrMediaRouteImport.update({
@@ -279,6 +314,11 @@ const FrMediaRoute = FrMediaRouteImport.update({
 const FrIndustriesRoute = FrIndustriesRouteImport.update({
   id: '/fr/industries',
   path: '/fr/industries',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FrHiTechRoute = FrHiTechRouteImport.update({
+  id: '/fr/hi-tech',
+  path: '/fr/hi-tech',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FrExportRoute = FrExportRouteImport.update({
@@ -306,6 +346,11 @@ const FrAboutRoute = FrAboutRouteImport.update({
   path: '/fr/about',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FaYokohamaRoute = FaYokohamaRouteImport.update({
+  id: '/fa/yokohama',
+  path: '/fa/yokohama',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FaMediaRoute = FaMediaRouteImport.update({
   id: '/fa/media',
   path: '/fa/media',
@@ -314,6 +359,11 @@ const FaMediaRoute = FaMediaRouteImport.update({
 const FaIndustriesRoute = FaIndustriesRouteImport.update({
   id: '/fa/industries',
   path: '/fa/industries',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaHiTechRoute = FaHiTechRouteImport.update({
+  id: '/fa/hi-tech',
+  path: '/fa/hi-tech',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FaExportRoute = FaExportRouteImport.update({
@@ -341,6 +391,11 @@ const FaAboutRoute = FaAboutRouteImport.update({
   path: '/fa/about',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DeYokohamaRoute = DeYokohamaRouteImport.update({
+  id: '/de/yokohama',
+  path: '/de/yokohama',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DeMediaRoute = DeMediaRouteImport.update({
   id: '/de/media',
   path: '/de/media',
@@ -349,6 +404,11 @@ const DeMediaRoute = DeMediaRouteImport.update({
 const DeIndustriesRoute = DeIndustriesRouteImport.update({
   id: '/de/industries',
   path: '/de/industries',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DeHiTechRoute = DeHiTechRouteImport.update({
+  id: '/de/hi-tech',
+  path: '/de/hi-tech',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DeExportRoute = DeExportRouteImport.update({
@@ -381,6 +441,11 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ArYokohamaRoute = ArYokohamaRouteImport.update({
+  id: '/ar/yokohama',
+  path: '/ar/yokohama',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ArMediaRoute = ArMediaRouteImport.update({
   id: '/ar/media',
   path: '/ar/media',
@@ -389,6 +454,11 @@ const ArMediaRoute = ArMediaRouteImport.update({
 const ArIndustriesRoute = ArIndustriesRouteImport.update({
   id: '/ar/industries',
   path: '/ar/industries',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArHiTechRoute = ArHiTechRouteImport.update({
+  id: '/ar/hi-tech',
+  path: '/ar/hi-tech',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ArExportRoute = ArExportRouteImport.update({
@@ -416,14 +486,19 @@ const ArAboutRoute = ArAboutRouteImport.update({
   path: '/ar/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TrProductsYokohamaRoute = TrProductsYokohamaRouteImport.update({
-  id: '/tr/products/yokohama',
-  path: '/tr/products/yokohama',
+const YokohamaCategoryProductRoute = YokohamaCategoryProductRouteImport.update({
+  id: '/$product',
+  path: '/$product',
+  getParentRoute: () => YokohamaCategoryRoute,
+} as any)
+const TrYokohamaCategoryRoute = TrYokohamaCategoryRouteImport.update({
+  id: '/tr/yokohama_/$category',
+  path: '/tr/yokohama/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TrProductsHiTechRoute = TrProductsHiTechRouteImport.update({
-  id: '/tr/products/hi-tech',
-  path: '/tr/products/hi-tech',
+const TrHiTechCategoryRoute = TrHiTechCategoryRouteImport.update({
+  id: '/tr/hi-tech_/$category',
+  path: '/tr/hi-tech/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TrBlogSlugRoute = TrBlogSlugRouteImport.update({
@@ -431,14 +506,14 @@ const TrBlogSlugRoute = TrBlogSlugRouteImport.update({
   path: '/tr/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const RuProductsYokohamaRoute = RuProductsYokohamaRouteImport.update({
-  id: '/ru/products/yokohama',
-  path: '/ru/products/yokohama',
+const RuYokohamaCategoryRoute = RuYokohamaCategoryRouteImport.update({
+  id: '/ru/yokohama_/$category',
+  path: '/ru/yokohama/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
-const RuProductsHiTechRoute = RuProductsHiTechRouteImport.update({
-  id: '/ru/products/hi-tech',
-  path: '/ru/products/hi-tech',
+const RuHiTechCategoryRoute = RuHiTechCategoryRouteImport.update({
+  id: '/ru/hi-tech_/$category',
+  path: '/ru/hi-tech/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RuBlogSlugRoute = RuBlogSlugRouteImport.update({
@@ -446,25 +521,19 @@ const RuBlogSlugRoute = RuBlogSlugRouteImport.update({
   path: '/ru/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProductsYokohamaCategoryRoute =
-  ProductsYokohamaCategoryRouteImport.update({
-    id: '/products/yokohama_/$category',
-    path: '/products/yokohama/$category',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ProductsHiTechCategoryRoute = ProductsHiTechCategoryRouteImport.update({
-  id: '/products/hi-tech_/$category',
-  path: '/products/hi-tech/$category',
+const HiTechCategoryProductRoute = HiTechCategoryProductRouteImport.update({
+  id: '/$product',
+  path: '/$product',
+  getParentRoute: () => HiTechCategoryRoute,
+} as any)
+const FrYokohamaCategoryRoute = FrYokohamaCategoryRouteImport.update({
+  id: '/fr/yokohama_/$category',
+  path: '/fr/yokohama/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
-const FrProductsYokohamaRoute = FrProductsYokohamaRouteImport.update({
-  id: '/fr/products/yokohama',
-  path: '/fr/products/yokohama',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FrProductsHiTechRoute = FrProductsHiTechRouteImport.update({
-  id: '/fr/products/hi-tech',
-  path: '/fr/products/hi-tech',
+const FrHiTechCategoryRoute = FrHiTechCategoryRouteImport.update({
+  id: '/fr/hi-tech_/$category',
+  path: '/fr/hi-tech/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FrBlogSlugRoute = FrBlogSlugRouteImport.update({
@@ -472,14 +541,14 @@ const FrBlogSlugRoute = FrBlogSlugRouteImport.update({
   path: '/fr/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const FaProductsYokohamaRoute = FaProductsYokohamaRouteImport.update({
-  id: '/fa/products/yokohama',
-  path: '/fa/products/yokohama',
+const FaYokohamaCategoryRoute = FaYokohamaCategoryRouteImport.update({
+  id: '/fa/yokohama_/$category',
+  path: '/fa/yokohama/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
-const FaProductsHiTechRoute = FaProductsHiTechRouteImport.update({
-  id: '/fa/products/hi-tech',
-  path: '/fa/products/hi-tech',
+const FaHiTechCategoryRoute = FaHiTechCategoryRouteImport.update({
+  id: '/fa/hi-tech_/$category',
+  path: '/fa/hi-tech/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FaBlogSlugRoute = FaBlogSlugRouteImport.update({
@@ -487,14 +556,14 @@ const FaBlogSlugRoute = FaBlogSlugRouteImport.update({
   path: '/fa/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const DeProductsYokohamaRoute = DeProductsYokohamaRouteImport.update({
-  id: '/de/products/yokohama',
-  path: '/de/products/yokohama',
+const DeYokohamaCategoryRoute = DeYokohamaCategoryRouteImport.update({
+  id: '/de/yokohama_/$category',
+  path: '/de/yokohama/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
-const DeProductsHiTechRoute = DeProductsHiTechRouteImport.update({
-  id: '/de/products/hi-tech',
-  path: '/de/products/hi-tech',
+const DeHiTechCategoryRoute = DeHiTechCategoryRouteImport.update({
+  id: '/de/hi-tech_/$category',
+  path: '/de/hi-tech/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DeBlogSlugRoute = DeBlogSlugRouteImport.update({
@@ -502,14 +571,14 @@ const DeBlogSlugRoute = DeBlogSlugRouteImport.update({
   path: '/de/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ArProductsYokohamaRoute = ArProductsYokohamaRouteImport.update({
-  id: '/ar/products/yokohama',
-  path: '/ar/products/yokohama',
+const ArYokohamaCategoryRoute = ArYokohamaCategoryRouteImport.update({
+  id: '/ar/yokohama_/$category',
+  path: '/ar/yokohama/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ArProductsHiTechRoute = ArProductsHiTechRouteImport.update({
-  id: '/ar/products/hi-tech',
-  path: '/ar/products/hi-tech',
+const ArHiTechCategoryRoute = ArHiTechCategoryRouteImport.update({
+  id: '/ar/hi-tech_/$category',
+  path: '/ar/hi-tech/$category',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ArBlogSlugRoute = ArBlogSlugRouteImport.update({
@@ -517,162 +586,72 @@ const ArBlogSlugRoute = ArBlogSlugRouteImport.update({
   path: '/ar/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TrProductsYokohamaCategoryRoute =
-  TrProductsYokohamaCategoryRouteImport.update({
-    id: '/tr/products/yokohama_/$category',
-    path: '/tr/products/yokohama/$category',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const TrProductsHiTechCategoryRoute =
-  TrProductsHiTechCategoryRouteImport.update({
-    id: '/tr/products/hi-tech_/$category',
-    path: '/tr/products/hi-tech/$category',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const RuProductsYokohamaCategoryRoute =
-  RuProductsYokohamaCategoryRouteImport.update({
-    id: '/ru/products/yokohama_/$category',
-    path: '/ru/products/yokohama/$category',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const RuProductsHiTechCategoryRoute =
-  RuProductsHiTechCategoryRouteImport.update({
-    id: '/ru/products/hi-tech_/$category',
-    path: '/ru/products/hi-tech/$category',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ProductsYokohamaCategoryProductRoute =
-  ProductsYokohamaCategoryProductRouteImport.update({
+const TrYokohamaCategoryProductRoute =
+  TrYokohamaCategoryProductRouteImport.update({
     id: '/$product',
     path: '/$product',
-    getParentRoute: () => ProductsYokohamaCategoryRoute,
+    getParentRoute: () => TrYokohamaCategoryRoute,
   } as any)
-const ProductsHiTechCategoryProductRoute =
-  ProductsHiTechCategoryProductRouteImport.update({
+const TrHiTechCategoryProductRoute = TrHiTechCategoryProductRouteImport.update({
+  id: '/$product',
+  path: '/$product',
+  getParentRoute: () => TrHiTechCategoryRoute,
+} as any)
+const RuYokohamaCategoryProductRoute =
+  RuYokohamaCategoryProductRouteImport.update({
     id: '/$product',
     path: '/$product',
-    getParentRoute: () => ProductsHiTechCategoryRoute,
+    getParentRoute: () => RuYokohamaCategoryRoute,
   } as any)
-const FrProductsYokohamaCategoryRoute =
-  FrProductsYokohamaCategoryRouteImport.update({
-    id: '/fr/products/yokohama_/$category',
-    path: '/fr/products/yokohama/$category',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const FrProductsHiTechCategoryRoute =
-  FrProductsHiTechCategoryRouteImport.update({
-    id: '/fr/products/hi-tech_/$category',
-    path: '/fr/products/hi-tech/$category',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const FaProductsYokohamaCategoryRoute =
-  FaProductsYokohamaCategoryRouteImport.update({
-    id: '/fa/products/yokohama_/$category',
-    path: '/fa/products/yokohama/$category',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const FaProductsHiTechCategoryRoute =
-  FaProductsHiTechCategoryRouteImport.update({
-    id: '/fa/products/hi-tech_/$category',
-    path: '/fa/products/hi-tech/$category',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const DeProductsYokohamaCategoryRoute =
-  DeProductsYokohamaCategoryRouteImport.update({
-    id: '/de/products/yokohama_/$category',
-    path: '/de/products/yokohama/$category',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const DeProductsHiTechCategoryRoute =
-  DeProductsHiTechCategoryRouteImport.update({
-    id: '/de/products/hi-tech_/$category',
-    path: '/de/products/hi-tech/$category',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ArProductsYokohamaCategoryRoute =
-  ArProductsYokohamaCategoryRouteImport.update({
-    id: '/ar/products/yokohama_/$category',
-    path: '/ar/products/yokohama/$category',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ArProductsHiTechCategoryRoute =
-  ArProductsHiTechCategoryRouteImport.update({
-    id: '/ar/products/hi-tech_/$category',
-    path: '/ar/products/hi-tech/$category',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const TrProductsYokohamaCategoryProductRoute =
-  TrProductsYokohamaCategoryProductRouteImport.update({
+const RuHiTechCategoryProductRoute = RuHiTechCategoryProductRouteImport.update({
+  id: '/$product',
+  path: '/$product',
+  getParentRoute: () => RuHiTechCategoryRoute,
+} as any)
+const FrYokohamaCategoryProductRoute =
+  FrYokohamaCategoryProductRouteImport.update({
     id: '/$product',
     path: '/$product',
-    getParentRoute: () => TrProductsYokohamaCategoryRoute,
+    getParentRoute: () => FrYokohamaCategoryRoute,
   } as any)
-const TrProductsHiTechCategoryProductRoute =
-  TrProductsHiTechCategoryProductRouteImport.update({
+const FrHiTechCategoryProductRoute = FrHiTechCategoryProductRouteImport.update({
+  id: '/$product',
+  path: '/$product',
+  getParentRoute: () => FrHiTechCategoryRoute,
+} as any)
+const FaYokohamaCategoryProductRoute =
+  FaYokohamaCategoryProductRouteImport.update({
     id: '/$product',
     path: '/$product',
-    getParentRoute: () => TrProductsHiTechCategoryRoute,
+    getParentRoute: () => FaYokohamaCategoryRoute,
   } as any)
-const RuProductsYokohamaCategoryProductRoute =
-  RuProductsYokohamaCategoryProductRouteImport.update({
+const FaHiTechCategoryProductRoute = FaHiTechCategoryProductRouteImport.update({
+  id: '/$product',
+  path: '/$product',
+  getParentRoute: () => FaHiTechCategoryRoute,
+} as any)
+const DeYokohamaCategoryProductRoute =
+  DeYokohamaCategoryProductRouteImport.update({
     id: '/$product',
     path: '/$product',
-    getParentRoute: () => RuProductsYokohamaCategoryRoute,
+    getParentRoute: () => DeYokohamaCategoryRoute,
   } as any)
-const RuProductsHiTechCategoryProductRoute =
-  RuProductsHiTechCategoryProductRouteImport.update({
+const DeHiTechCategoryProductRoute = DeHiTechCategoryProductRouteImport.update({
+  id: '/$product',
+  path: '/$product',
+  getParentRoute: () => DeHiTechCategoryRoute,
+} as any)
+const ArYokohamaCategoryProductRoute =
+  ArYokohamaCategoryProductRouteImport.update({
     id: '/$product',
     path: '/$product',
-    getParentRoute: () => RuProductsHiTechCategoryRoute,
+    getParentRoute: () => ArYokohamaCategoryRoute,
   } as any)
-const FrProductsYokohamaCategoryProductRoute =
-  FrProductsYokohamaCategoryProductRouteImport.update({
-    id: '/$product',
-    path: '/$product',
-    getParentRoute: () => FrProductsYokohamaCategoryRoute,
-  } as any)
-const FrProductsHiTechCategoryProductRoute =
-  FrProductsHiTechCategoryProductRouteImport.update({
-    id: '/$product',
-    path: '/$product',
-    getParentRoute: () => FrProductsHiTechCategoryRoute,
-  } as any)
-const FaProductsYokohamaCategoryProductRoute =
-  FaProductsYokohamaCategoryProductRouteImport.update({
-    id: '/$product',
-    path: '/$product',
-    getParentRoute: () => FaProductsYokohamaCategoryRoute,
-  } as any)
-const FaProductsHiTechCategoryProductRoute =
-  FaProductsHiTechCategoryProductRouteImport.update({
-    id: '/$product',
-    path: '/$product',
-    getParentRoute: () => FaProductsHiTechCategoryRoute,
-  } as any)
-const DeProductsYokohamaCategoryProductRoute =
-  DeProductsYokohamaCategoryProductRouteImport.update({
-    id: '/$product',
-    path: '/$product',
-    getParentRoute: () => DeProductsYokohamaCategoryRoute,
-  } as any)
-const DeProductsHiTechCategoryProductRoute =
-  DeProductsHiTechCategoryProductRouteImport.update({
-    id: '/$product',
-    path: '/$product',
-    getParentRoute: () => DeProductsHiTechCategoryRoute,
-  } as any)
-const ArProductsYokohamaCategoryProductRoute =
-  ArProductsYokohamaCategoryProductRouteImport.update({
-    id: '/$product',
-    path: '/$product',
-    getParentRoute: () => ArProductsYokohamaCategoryRoute,
-  } as any)
-const ArProductsHiTechCategoryProductRoute =
-  ArProductsHiTechCategoryProductRouteImport.update({
-    id: '/$product',
-    path: '/$product',
-    getParentRoute: () => ArProductsHiTechCategoryRoute,
-  } as any)
+const ArHiTechCategoryProductRoute = ArHiTechCategoryProductRouteImport.update({
+  id: '/$product',
+  path: '/$product',
+  getParentRoute: () => ArHiTechCategoryRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -681,54 +660,68 @@ export interface FileRoutesByFullPath {
   '/catalogs': typeof CatalogsRoute
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
+  '/hi-tech': typeof HiTechRoute
   '/industries': typeof IndustriesRoute
   '/media': typeof MediaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/yokohama': typeof YokohamaRoute
   '/ar/about': typeof ArAboutRoute
   '/ar/blog': typeof ArBlogRoute
   '/ar/catalogs': typeof ArCatalogsRoute
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
+  '/ar/hi-tech': typeof ArHiTechRoute
   '/ar/industries': typeof ArIndustriesRoute
   '/ar/media': typeof ArMediaRoute
+  '/ar/yokohama': typeof ArYokohamaRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/blog': typeof DeBlogRoute
   '/de/catalogs': typeof DeCatalogsRoute
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
+  '/de/hi-tech': typeof DeHiTechRoute
   '/de/industries': typeof DeIndustriesRoute
   '/de/media': typeof DeMediaRoute
+  '/de/yokohama': typeof DeYokohamaRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
   '/fa/catalogs': typeof FaCatalogsRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
+  '/fa/hi-tech': typeof FaHiTechRoute
   '/fa/industries': typeof FaIndustriesRoute
   '/fa/media': typeof FaMediaRoute
+  '/fa/yokohama': typeof FaYokohamaRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
   '/fr/catalogs': typeof FrCatalogsRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
+  '/fr/hi-tech': typeof FrHiTechRoute
   '/fr/industries': typeof FrIndustriesRoute
   '/fr/media': typeof FrMediaRoute
-  '/products/hi-tech': typeof ProductsHiTechRoute
-  '/products/yokohama': typeof ProductsYokohamaRoute
+  '/fr/yokohama': typeof FrYokohamaRoute
+  '/hi-tech/$category': typeof HiTechCategoryRouteWithChildren
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
   '/ru/catalogs': typeof RuCatalogsRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
+  '/ru/hi-tech': typeof RuHiTechRoute
   '/ru/industries': typeof RuIndustriesRoute
   '/ru/media': typeof RuMediaRoute
+  '/ru/yokohama': typeof RuYokohamaRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
   '/tr/catalogs': typeof TrCatalogsRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
+  '/tr/hi-tech': typeof TrHiTechRoute
   '/tr/industries': typeof TrIndustriesRoute
   '/tr/media': typeof TrMediaRoute
+  '/tr/yokohama': typeof TrYokohamaRoute
+  '/yokohama/$category': typeof YokohamaCategoryRouteWithChildren
   '/ar/': typeof ArIndexRoute
   '/de/': typeof DeIndexRoute
   '/fa/': typeof FaIndexRoute
@@ -736,51 +729,37 @@ export interface FileRoutesByFullPath {
   '/ru/': typeof RuIndexRoute
   '/tr/': typeof TrIndexRoute
   '/ar/blog/$slug': typeof ArBlogSlugRoute
-  '/ar/products/hi-tech': typeof ArProductsHiTechRoute
-  '/ar/products/yokohama': typeof ArProductsYokohamaRoute
+  '/ar/hi-tech/$category': typeof ArHiTechCategoryRouteWithChildren
+  '/ar/yokohama/$category': typeof ArYokohamaCategoryRouteWithChildren
   '/de/blog/$slug': typeof DeBlogSlugRoute
-  '/de/products/hi-tech': typeof DeProductsHiTechRoute
-  '/de/products/yokohama': typeof DeProductsYokohamaRoute
+  '/de/hi-tech/$category': typeof DeHiTechCategoryRouteWithChildren
+  '/de/yokohama/$category': typeof DeYokohamaCategoryRouteWithChildren
   '/fa/blog/$slug': typeof FaBlogSlugRoute
-  '/fa/products/hi-tech': typeof FaProductsHiTechRoute
-  '/fa/products/yokohama': typeof FaProductsYokohamaRoute
+  '/fa/hi-tech/$category': typeof FaHiTechCategoryRouteWithChildren
+  '/fa/yokohama/$category': typeof FaYokohamaCategoryRouteWithChildren
   '/fr/blog/$slug': typeof FrBlogSlugRoute
-  '/fr/products/hi-tech': typeof FrProductsHiTechRoute
-  '/fr/products/yokohama': typeof FrProductsYokohamaRoute
-  '/products/hi-tech/$category': typeof ProductsHiTechCategoryRouteWithChildren
-  '/products/yokohama/$category': typeof ProductsYokohamaCategoryRouteWithChildren
+  '/fr/hi-tech/$category': typeof FrHiTechCategoryRouteWithChildren
+  '/fr/yokohama/$category': typeof FrYokohamaCategoryRouteWithChildren
+  '/hi-tech/$category/$product': typeof HiTechCategoryProductRoute
   '/ru/blog/$slug': typeof RuBlogSlugRoute
-  '/ru/products/hi-tech': typeof RuProductsHiTechRoute
-  '/ru/products/yokohama': typeof RuProductsYokohamaRoute
+  '/ru/hi-tech/$category': typeof RuHiTechCategoryRouteWithChildren
+  '/ru/yokohama/$category': typeof RuYokohamaCategoryRouteWithChildren
   '/tr/blog/$slug': typeof TrBlogSlugRoute
-  '/tr/products/hi-tech': typeof TrProductsHiTechRoute
-  '/tr/products/yokohama': typeof TrProductsYokohamaRoute
-  '/ar/products/hi-tech/$category': typeof ArProductsHiTechCategoryRouteWithChildren
-  '/ar/products/yokohama/$category': typeof ArProductsYokohamaCategoryRouteWithChildren
-  '/de/products/hi-tech/$category': typeof DeProductsHiTechCategoryRouteWithChildren
-  '/de/products/yokohama/$category': typeof DeProductsYokohamaCategoryRouteWithChildren
-  '/fa/products/hi-tech/$category': typeof FaProductsHiTechCategoryRouteWithChildren
-  '/fa/products/yokohama/$category': typeof FaProductsYokohamaCategoryRouteWithChildren
-  '/fr/products/hi-tech/$category': typeof FrProductsHiTechCategoryRouteWithChildren
-  '/fr/products/yokohama/$category': typeof FrProductsYokohamaCategoryRouteWithChildren
-  '/products/hi-tech/$category/$product': typeof ProductsHiTechCategoryProductRoute
-  '/products/yokohama/$category/$product': typeof ProductsYokohamaCategoryProductRoute
-  '/ru/products/hi-tech/$category': typeof RuProductsHiTechCategoryRouteWithChildren
-  '/ru/products/yokohama/$category': typeof RuProductsYokohamaCategoryRouteWithChildren
-  '/tr/products/hi-tech/$category': typeof TrProductsHiTechCategoryRouteWithChildren
-  '/tr/products/yokohama/$category': typeof TrProductsYokohamaCategoryRouteWithChildren
-  '/ar/products/hi-tech/$category/$product': typeof ArProductsHiTechCategoryProductRoute
-  '/ar/products/yokohama/$category/$product': typeof ArProductsYokohamaCategoryProductRoute
-  '/de/products/hi-tech/$category/$product': typeof DeProductsHiTechCategoryProductRoute
-  '/de/products/yokohama/$category/$product': typeof DeProductsYokohamaCategoryProductRoute
-  '/fa/products/hi-tech/$category/$product': typeof FaProductsHiTechCategoryProductRoute
-  '/fa/products/yokohama/$category/$product': typeof FaProductsYokohamaCategoryProductRoute
-  '/fr/products/hi-tech/$category/$product': typeof FrProductsHiTechCategoryProductRoute
-  '/fr/products/yokohama/$category/$product': typeof FrProductsYokohamaCategoryProductRoute
-  '/ru/products/hi-tech/$category/$product': typeof RuProductsHiTechCategoryProductRoute
-  '/ru/products/yokohama/$category/$product': typeof RuProductsYokohamaCategoryProductRoute
-  '/tr/products/hi-tech/$category/$product': typeof TrProductsHiTechCategoryProductRoute
-  '/tr/products/yokohama/$category/$product': typeof TrProductsYokohamaCategoryProductRoute
+  '/tr/hi-tech/$category': typeof TrHiTechCategoryRouteWithChildren
+  '/tr/yokohama/$category': typeof TrYokohamaCategoryRouteWithChildren
+  '/yokohama/$category/$product': typeof YokohamaCategoryProductRoute
+  '/ar/hi-tech/$category/$product': typeof ArHiTechCategoryProductRoute
+  '/ar/yokohama/$category/$product': typeof ArYokohamaCategoryProductRoute
+  '/de/hi-tech/$category/$product': typeof DeHiTechCategoryProductRoute
+  '/de/yokohama/$category/$product': typeof DeYokohamaCategoryProductRoute
+  '/fa/hi-tech/$category/$product': typeof FaHiTechCategoryProductRoute
+  '/fa/yokohama/$category/$product': typeof FaYokohamaCategoryProductRoute
+  '/fr/hi-tech/$category/$product': typeof FrHiTechCategoryProductRoute
+  '/fr/yokohama/$category/$product': typeof FrYokohamaCategoryProductRoute
+  '/ru/hi-tech/$category/$product': typeof RuHiTechCategoryProductRoute
+  '/ru/yokohama/$category/$product': typeof RuYokohamaCategoryProductRoute
+  '/tr/hi-tech/$category/$product': typeof TrHiTechCategoryProductRoute
+  '/tr/yokohama/$category/$product': typeof TrYokohamaCategoryProductRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -789,54 +768,68 @@ export interface FileRoutesByTo {
   '/catalogs': typeof CatalogsRoute
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
+  '/hi-tech': typeof HiTechRoute
   '/industries': typeof IndustriesRoute
   '/media': typeof MediaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/yokohama': typeof YokohamaRoute
   '/ar/about': typeof ArAboutRoute
   '/ar/blog': typeof ArBlogRoute
   '/ar/catalogs': typeof ArCatalogsRoute
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
+  '/ar/hi-tech': typeof ArHiTechRoute
   '/ar/industries': typeof ArIndustriesRoute
   '/ar/media': typeof ArMediaRoute
+  '/ar/yokohama': typeof ArYokohamaRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/blog': typeof DeBlogRoute
   '/de/catalogs': typeof DeCatalogsRoute
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
+  '/de/hi-tech': typeof DeHiTechRoute
   '/de/industries': typeof DeIndustriesRoute
   '/de/media': typeof DeMediaRoute
+  '/de/yokohama': typeof DeYokohamaRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
   '/fa/catalogs': typeof FaCatalogsRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
+  '/fa/hi-tech': typeof FaHiTechRoute
   '/fa/industries': typeof FaIndustriesRoute
   '/fa/media': typeof FaMediaRoute
+  '/fa/yokohama': typeof FaYokohamaRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
   '/fr/catalogs': typeof FrCatalogsRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
+  '/fr/hi-tech': typeof FrHiTechRoute
   '/fr/industries': typeof FrIndustriesRoute
   '/fr/media': typeof FrMediaRoute
-  '/products/hi-tech': typeof ProductsHiTechRoute
-  '/products/yokohama': typeof ProductsYokohamaRoute
+  '/fr/yokohama': typeof FrYokohamaRoute
+  '/hi-tech/$category': typeof HiTechCategoryRouteWithChildren
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
   '/ru/catalogs': typeof RuCatalogsRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
+  '/ru/hi-tech': typeof RuHiTechRoute
   '/ru/industries': typeof RuIndustriesRoute
   '/ru/media': typeof RuMediaRoute
+  '/ru/yokohama': typeof RuYokohamaRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
   '/tr/catalogs': typeof TrCatalogsRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
+  '/tr/hi-tech': typeof TrHiTechRoute
   '/tr/industries': typeof TrIndustriesRoute
   '/tr/media': typeof TrMediaRoute
+  '/tr/yokohama': typeof TrYokohamaRoute
+  '/yokohama/$category': typeof YokohamaCategoryRouteWithChildren
   '/ar': typeof ArIndexRoute
   '/de': typeof DeIndexRoute
   '/fa': typeof FaIndexRoute
@@ -844,51 +837,37 @@ export interface FileRoutesByTo {
   '/ru': typeof RuIndexRoute
   '/tr': typeof TrIndexRoute
   '/ar/blog/$slug': typeof ArBlogSlugRoute
-  '/ar/products/hi-tech': typeof ArProductsHiTechRoute
-  '/ar/products/yokohama': typeof ArProductsYokohamaRoute
+  '/ar/hi-tech/$category': typeof ArHiTechCategoryRouteWithChildren
+  '/ar/yokohama/$category': typeof ArYokohamaCategoryRouteWithChildren
   '/de/blog/$slug': typeof DeBlogSlugRoute
-  '/de/products/hi-tech': typeof DeProductsHiTechRoute
-  '/de/products/yokohama': typeof DeProductsYokohamaRoute
+  '/de/hi-tech/$category': typeof DeHiTechCategoryRouteWithChildren
+  '/de/yokohama/$category': typeof DeYokohamaCategoryRouteWithChildren
   '/fa/blog/$slug': typeof FaBlogSlugRoute
-  '/fa/products/hi-tech': typeof FaProductsHiTechRoute
-  '/fa/products/yokohama': typeof FaProductsYokohamaRoute
+  '/fa/hi-tech/$category': typeof FaHiTechCategoryRouteWithChildren
+  '/fa/yokohama/$category': typeof FaYokohamaCategoryRouteWithChildren
   '/fr/blog/$slug': typeof FrBlogSlugRoute
-  '/fr/products/hi-tech': typeof FrProductsHiTechRoute
-  '/fr/products/yokohama': typeof FrProductsYokohamaRoute
-  '/products/hi-tech/$category': typeof ProductsHiTechCategoryRouteWithChildren
-  '/products/yokohama/$category': typeof ProductsYokohamaCategoryRouteWithChildren
+  '/fr/hi-tech/$category': typeof FrHiTechCategoryRouteWithChildren
+  '/fr/yokohama/$category': typeof FrYokohamaCategoryRouteWithChildren
+  '/hi-tech/$category/$product': typeof HiTechCategoryProductRoute
   '/ru/blog/$slug': typeof RuBlogSlugRoute
-  '/ru/products/hi-tech': typeof RuProductsHiTechRoute
-  '/ru/products/yokohama': typeof RuProductsYokohamaRoute
+  '/ru/hi-tech/$category': typeof RuHiTechCategoryRouteWithChildren
+  '/ru/yokohama/$category': typeof RuYokohamaCategoryRouteWithChildren
   '/tr/blog/$slug': typeof TrBlogSlugRoute
-  '/tr/products/hi-tech': typeof TrProductsHiTechRoute
-  '/tr/products/yokohama': typeof TrProductsYokohamaRoute
-  '/ar/products/hi-tech/$category': typeof ArProductsHiTechCategoryRouteWithChildren
-  '/ar/products/yokohama/$category': typeof ArProductsYokohamaCategoryRouteWithChildren
-  '/de/products/hi-tech/$category': typeof DeProductsHiTechCategoryRouteWithChildren
-  '/de/products/yokohama/$category': typeof DeProductsYokohamaCategoryRouteWithChildren
-  '/fa/products/hi-tech/$category': typeof FaProductsHiTechCategoryRouteWithChildren
-  '/fa/products/yokohama/$category': typeof FaProductsYokohamaCategoryRouteWithChildren
-  '/fr/products/hi-tech/$category': typeof FrProductsHiTechCategoryRouteWithChildren
-  '/fr/products/yokohama/$category': typeof FrProductsYokohamaCategoryRouteWithChildren
-  '/products/hi-tech/$category/$product': typeof ProductsHiTechCategoryProductRoute
-  '/products/yokohama/$category/$product': typeof ProductsYokohamaCategoryProductRoute
-  '/ru/products/hi-tech/$category': typeof RuProductsHiTechCategoryRouteWithChildren
-  '/ru/products/yokohama/$category': typeof RuProductsYokohamaCategoryRouteWithChildren
-  '/tr/products/hi-tech/$category': typeof TrProductsHiTechCategoryRouteWithChildren
-  '/tr/products/yokohama/$category': typeof TrProductsYokohamaCategoryRouteWithChildren
-  '/ar/products/hi-tech/$category/$product': typeof ArProductsHiTechCategoryProductRoute
-  '/ar/products/yokohama/$category/$product': typeof ArProductsYokohamaCategoryProductRoute
-  '/de/products/hi-tech/$category/$product': typeof DeProductsHiTechCategoryProductRoute
-  '/de/products/yokohama/$category/$product': typeof DeProductsYokohamaCategoryProductRoute
-  '/fa/products/hi-tech/$category/$product': typeof FaProductsHiTechCategoryProductRoute
-  '/fa/products/yokohama/$category/$product': typeof FaProductsYokohamaCategoryProductRoute
-  '/fr/products/hi-tech/$category/$product': typeof FrProductsHiTechCategoryProductRoute
-  '/fr/products/yokohama/$category/$product': typeof FrProductsYokohamaCategoryProductRoute
-  '/ru/products/hi-tech/$category/$product': typeof RuProductsHiTechCategoryProductRoute
-  '/ru/products/yokohama/$category/$product': typeof RuProductsYokohamaCategoryProductRoute
-  '/tr/products/hi-tech/$category/$product': typeof TrProductsHiTechCategoryProductRoute
-  '/tr/products/yokohama/$category/$product': typeof TrProductsYokohamaCategoryProductRoute
+  '/tr/hi-tech/$category': typeof TrHiTechCategoryRouteWithChildren
+  '/tr/yokohama/$category': typeof TrYokohamaCategoryRouteWithChildren
+  '/yokohama/$category/$product': typeof YokohamaCategoryProductRoute
+  '/ar/hi-tech/$category/$product': typeof ArHiTechCategoryProductRoute
+  '/ar/yokohama/$category/$product': typeof ArYokohamaCategoryProductRoute
+  '/de/hi-tech/$category/$product': typeof DeHiTechCategoryProductRoute
+  '/de/yokohama/$category/$product': typeof DeYokohamaCategoryProductRoute
+  '/fa/hi-tech/$category/$product': typeof FaHiTechCategoryProductRoute
+  '/fa/yokohama/$category/$product': typeof FaYokohamaCategoryProductRoute
+  '/fr/hi-tech/$category/$product': typeof FrHiTechCategoryProductRoute
+  '/fr/yokohama/$category/$product': typeof FrYokohamaCategoryProductRoute
+  '/ru/hi-tech/$category/$product': typeof RuHiTechCategoryProductRoute
+  '/ru/yokohama/$category/$product': typeof RuYokohamaCategoryProductRoute
+  '/tr/hi-tech/$category/$product': typeof TrHiTechCategoryProductRoute
+  '/tr/yokohama/$category/$product': typeof TrYokohamaCategoryProductRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -898,54 +877,68 @@ export interface FileRoutesById {
   '/catalogs': typeof CatalogsRoute
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
+  '/hi-tech': typeof HiTechRoute
   '/industries': typeof IndustriesRoute
   '/media': typeof MediaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/yokohama': typeof YokohamaRoute
   '/ar/about': typeof ArAboutRoute
   '/ar/blog': typeof ArBlogRoute
   '/ar/catalogs': typeof ArCatalogsRoute
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
+  '/ar/hi-tech': typeof ArHiTechRoute
   '/ar/industries': typeof ArIndustriesRoute
   '/ar/media': typeof ArMediaRoute
+  '/ar/yokohama': typeof ArYokohamaRoute
   '/blog_/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/blog': typeof DeBlogRoute
   '/de/catalogs': typeof DeCatalogsRoute
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
+  '/de/hi-tech': typeof DeHiTechRoute
   '/de/industries': typeof DeIndustriesRoute
   '/de/media': typeof DeMediaRoute
+  '/de/yokohama': typeof DeYokohamaRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
   '/fa/catalogs': typeof FaCatalogsRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
+  '/fa/hi-tech': typeof FaHiTechRoute
   '/fa/industries': typeof FaIndustriesRoute
   '/fa/media': typeof FaMediaRoute
+  '/fa/yokohama': typeof FaYokohamaRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
   '/fr/catalogs': typeof FrCatalogsRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
+  '/fr/hi-tech': typeof FrHiTechRoute
   '/fr/industries': typeof FrIndustriesRoute
   '/fr/media': typeof FrMediaRoute
-  '/products/hi-tech': typeof ProductsHiTechRoute
-  '/products/yokohama': typeof ProductsYokohamaRoute
+  '/fr/yokohama': typeof FrYokohamaRoute
+  '/hi-tech_/$category': typeof HiTechCategoryRouteWithChildren
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
   '/ru/catalogs': typeof RuCatalogsRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
+  '/ru/hi-tech': typeof RuHiTechRoute
   '/ru/industries': typeof RuIndustriesRoute
   '/ru/media': typeof RuMediaRoute
+  '/ru/yokohama': typeof RuYokohamaRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
   '/tr/catalogs': typeof TrCatalogsRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
+  '/tr/hi-tech': typeof TrHiTechRoute
   '/tr/industries': typeof TrIndustriesRoute
   '/tr/media': typeof TrMediaRoute
+  '/tr/yokohama': typeof TrYokohamaRoute
+  '/yokohama_/$category': typeof YokohamaCategoryRouteWithChildren
   '/ar/': typeof ArIndexRoute
   '/de/': typeof DeIndexRoute
   '/fa/': typeof FaIndexRoute
@@ -953,51 +946,37 @@ export interface FileRoutesById {
   '/ru/': typeof RuIndexRoute
   '/tr/': typeof TrIndexRoute
   '/ar/blog_/$slug': typeof ArBlogSlugRoute
-  '/ar/products/hi-tech': typeof ArProductsHiTechRoute
-  '/ar/products/yokohama': typeof ArProductsYokohamaRoute
+  '/ar/hi-tech_/$category': typeof ArHiTechCategoryRouteWithChildren
+  '/ar/yokohama_/$category': typeof ArYokohamaCategoryRouteWithChildren
   '/de/blog_/$slug': typeof DeBlogSlugRoute
-  '/de/products/hi-tech': typeof DeProductsHiTechRoute
-  '/de/products/yokohama': typeof DeProductsYokohamaRoute
+  '/de/hi-tech_/$category': typeof DeHiTechCategoryRouteWithChildren
+  '/de/yokohama_/$category': typeof DeYokohamaCategoryRouteWithChildren
   '/fa/blog_/$slug': typeof FaBlogSlugRoute
-  '/fa/products/hi-tech': typeof FaProductsHiTechRoute
-  '/fa/products/yokohama': typeof FaProductsYokohamaRoute
+  '/fa/hi-tech_/$category': typeof FaHiTechCategoryRouteWithChildren
+  '/fa/yokohama_/$category': typeof FaYokohamaCategoryRouteWithChildren
   '/fr/blog_/$slug': typeof FrBlogSlugRoute
-  '/fr/products/hi-tech': typeof FrProductsHiTechRoute
-  '/fr/products/yokohama': typeof FrProductsYokohamaRoute
-  '/products/hi-tech_/$category': typeof ProductsHiTechCategoryRouteWithChildren
-  '/products/yokohama_/$category': typeof ProductsYokohamaCategoryRouteWithChildren
+  '/fr/hi-tech_/$category': typeof FrHiTechCategoryRouteWithChildren
+  '/fr/yokohama_/$category': typeof FrYokohamaCategoryRouteWithChildren
+  '/hi-tech_/$category/$product': typeof HiTechCategoryProductRoute
   '/ru/blog_/$slug': typeof RuBlogSlugRoute
-  '/ru/products/hi-tech': typeof RuProductsHiTechRoute
-  '/ru/products/yokohama': typeof RuProductsYokohamaRoute
+  '/ru/hi-tech_/$category': typeof RuHiTechCategoryRouteWithChildren
+  '/ru/yokohama_/$category': typeof RuYokohamaCategoryRouteWithChildren
   '/tr/blog_/$slug': typeof TrBlogSlugRoute
-  '/tr/products/hi-tech': typeof TrProductsHiTechRoute
-  '/tr/products/yokohama': typeof TrProductsYokohamaRoute
-  '/ar/products/hi-tech_/$category': typeof ArProductsHiTechCategoryRouteWithChildren
-  '/ar/products/yokohama_/$category': typeof ArProductsYokohamaCategoryRouteWithChildren
-  '/de/products/hi-tech_/$category': typeof DeProductsHiTechCategoryRouteWithChildren
-  '/de/products/yokohama_/$category': typeof DeProductsYokohamaCategoryRouteWithChildren
-  '/fa/products/hi-tech_/$category': typeof FaProductsHiTechCategoryRouteWithChildren
-  '/fa/products/yokohama_/$category': typeof FaProductsYokohamaCategoryRouteWithChildren
-  '/fr/products/hi-tech_/$category': typeof FrProductsHiTechCategoryRouteWithChildren
-  '/fr/products/yokohama_/$category': typeof FrProductsYokohamaCategoryRouteWithChildren
-  '/products/hi-tech_/$category/$product': typeof ProductsHiTechCategoryProductRoute
-  '/products/yokohama_/$category/$product': typeof ProductsYokohamaCategoryProductRoute
-  '/ru/products/hi-tech_/$category': typeof RuProductsHiTechCategoryRouteWithChildren
-  '/ru/products/yokohama_/$category': typeof RuProductsYokohamaCategoryRouteWithChildren
-  '/tr/products/hi-tech_/$category': typeof TrProductsHiTechCategoryRouteWithChildren
-  '/tr/products/yokohama_/$category': typeof TrProductsYokohamaCategoryRouteWithChildren
-  '/ar/products/hi-tech_/$category/$product': typeof ArProductsHiTechCategoryProductRoute
-  '/ar/products/yokohama_/$category/$product': typeof ArProductsYokohamaCategoryProductRoute
-  '/de/products/hi-tech_/$category/$product': typeof DeProductsHiTechCategoryProductRoute
-  '/de/products/yokohama_/$category/$product': typeof DeProductsYokohamaCategoryProductRoute
-  '/fa/products/hi-tech_/$category/$product': typeof FaProductsHiTechCategoryProductRoute
-  '/fa/products/yokohama_/$category/$product': typeof FaProductsYokohamaCategoryProductRoute
-  '/fr/products/hi-tech_/$category/$product': typeof FrProductsHiTechCategoryProductRoute
-  '/fr/products/yokohama_/$category/$product': typeof FrProductsYokohamaCategoryProductRoute
-  '/ru/products/hi-tech_/$category/$product': typeof RuProductsHiTechCategoryProductRoute
-  '/ru/products/yokohama_/$category/$product': typeof RuProductsYokohamaCategoryProductRoute
-  '/tr/products/hi-tech_/$category/$product': typeof TrProductsHiTechCategoryProductRoute
-  '/tr/products/yokohama_/$category/$product': typeof TrProductsYokohamaCategoryProductRoute
+  '/tr/hi-tech_/$category': typeof TrHiTechCategoryRouteWithChildren
+  '/tr/yokohama_/$category': typeof TrYokohamaCategoryRouteWithChildren
+  '/yokohama_/$category/$product': typeof YokohamaCategoryProductRoute
+  '/ar/hi-tech_/$category/$product': typeof ArHiTechCategoryProductRoute
+  '/ar/yokohama_/$category/$product': typeof ArYokohamaCategoryProductRoute
+  '/de/hi-tech_/$category/$product': typeof DeHiTechCategoryProductRoute
+  '/de/yokohama_/$category/$product': typeof DeYokohamaCategoryProductRoute
+  '/fa/hi-tech_/$category/$product': typeof FaHiTechCategoryProductRoute
+  '/fa/yokohama_/$category/$product': typeof FaYokohamaCategoryProductRoute
+  '/fr/hi-tech_/$category/$product': typeof FrHiTechCategoryProductRoute
+  '/fr/yokohama_/$category/$product': typeof FrYokohamaCategoryProductRoute
+  '/ru/hi-tech_/$category/$product': typeof RuHiTechCategoryProductRoute
+  '/ru/yokohama_/$category/$product': typeof RuYokohamaCategoryProductRoute
+  '/tr/hi-tech_/$category/$product': typeof TrHiTechCategoryProductRoute
+  '/tr/yokohama_/$category/$product': typeof TrYokohamaCategoryProductRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -1008,54 +987,68 @@ export interface FileRouteTypes {
     | '/catalogs'
     | '/contact'
     | '/export'
+    | '/hi-tech'
     | '/industries'
     | '/media'
     | '/sitemap.xml'
+    | '/yokohama'
     | '/ar/about'
     | '/ar/blog'
     | '/ar/catalogs'
     | '/ar/contact'
     | '/ar/export'
+    | '/ar/hi-tech'
     | '/ar/industries'
     | '/ar/media'
+    | '/ar/yokohama'
     | '/blog/$slug'
     | '/de/about'
     | '/de/blog'
     | '/de/catalogs'
     | '/de/contact'
     | '/de/export'
+    | '/de/hi-tech'
     | '/de/industries'
     | '/de/media'
+    | '/de/yokohama'
     | '/fa/about'
     | '/fa/blog'
     | '/fa/catalogs'
     | '/fa/contact'
     | '/fa/export'
+    | '/fa/hi-tech'
     | '/fa/industries'
     | '/fa/media'
+    | '/fa/yokohama'
     | '/fr/about'
     | '/fr/blog'
     | '/fr/catalogs'
     | '/fr/contact'
     | '/fr/export'
+    | '/fr/hi-tech'
     | '/fr/industries'
     | '/fr/media'
-    | '/products/hi-tech'
-    | '/products/yokohama'
+    | '/fr/yokohama'
+    | '/hi-tech/$category'
     | '/ru/about'
     | '/ru/blog'
     | '/ru/catalogs'
     | '/ru/contact'
     | '/ru/export'
+    | '/ru/hi-tech'
     | '/ru/industries'
     | '/ru/media'
+    | '/ru/yokohama'
     | '/tr/about'
     | '/tr/blog'
     | '/tr/catalogs'
     | '/tr/contact'
     | '/tr/export'
+    | '/tr/hi-tech'
     | '/tr/industries'
     | '/tr/media'
+    | '/tr/yokohama'
+    | '/yokohama/$category'
     | '/ar/'
     | '/de/'
     | '/fa/'
@@ -1063,51 +1056,37 @@ export interface FileRouteTypes {
     | '/ru/'
     | '/tr/'
     | '/ar/blog/$slug'
-    | '/ar/products/hi-tech'
-    | '/ar/products/yokohama'
+    | '/ar/hi-tech/$category'
+    | '/ar/yokohama/$category'
     | '/de/blog/$slug'
-    | '/de/products/hi-tech'
-    | '/de/products/yokohama'
+    | '/de/hi-tech/$category'
+    | '/de/yokohama/$category'
     | '/fa/blog/$slug'
-    | '/fa/products/hi-tech'
-    | '/fa/products/yokohama'
+    | '/fa/hi-tech/$category'
+    | '/fa/yokohama/$category'
     | '/fr/blog/$slug'
-    | '/fr/products/hi-tech'
-    | '/fr/products/yokohama'
-    | '/products/hi-tech/$category'
-    | '/products/yokohama/$category'
+    | '/fr/hi-tech/$category'
+    | '/fr/yokohama/$category'
+    | '/hi-tech/$category/$product'
     | '/ru/blog/$slug'
-    | '/ru/products/hi-tech'
-    | '/ru/products/yokohama'
+    | '/ru/hi-tech/$category'
+    | '/ru/yokohama/$category'
     | '/tr/blog/$slug'
-    | '/tr/products/hi-tech'
-    | '/tr/products/yokohama'
-    | '/ar/products/hi-tech/$category'
-    | '/ar/products/yokohama/$category'
-    | '/de/products/hi-tech/$category'
-    | '/de/products/yokohama/$category'
-    | '/fa/products/hi-tech/$category'
-    | '/fa/products/yokohama/$category'
-    | '/fr/products/hi-tech/$category'
-    | '/fr/products/yokohama/$category'
-    | '/products/hi-tech/$category/$product'
-    | '/products/yokohama/$category/$product'
-    | '/ru/products/hi-tech/$category'
-    | '/ru/products/yokohama/$category'
-    | '/tr/products/hi-tech/$category'
-    | '/tr/products/yokohama/$category'
-    | '/ar/products/hi-tech/$category/$product'
-    | '/ar/products/yokohama/$category/$product'
-    | '/de/products/hi-tech/$category/$product'
-    | '/de/products/yokohama/$category/$product'
-    | '/fa/products/hi-tech/$category/$product'
-    | '/fa/products/yokohama/$category/$product'
-    | '/fr/products/hi-tech/$category/$product'
-    | '/fr/products/yokohama/$category/$product'
-    | '/ru/products/hi-tech/$category/$product'
-    | '/ru/products/yokohama/$category/$product'
-    | '/tr/products/hi-tech/$category/$product'
-    | '/tr/products/yokohama/$category/$product'
+    | '/tr/hi-tech/$category'
+    | '/tr/yokohama/$category'
+    | '/yokohama/$category/$product'
+    | '/ar/hi-tech/$category/$product'
+    | '/ar/yokohama/$category/$product'
+    | '/de/hi-tech/$category/$product'
+    | '/de/yokohama/$category/$product'
+    | '/fa/hi-tech/$category/$product'
+    | '/fa/yokohama/$category/$product'
+    | '/fr/hi-tech/$category/$product'
+    | '/fr/yokohama/$category/$product'
+    | '/ru/hi-tech/$category/$product'
+    | '/ru/yokohama/$category/$product'
+    | '/tr/hi-tech/$category/$product'
+    | '/tr/yokohama/$category/$product'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -1116,54 +1095,68 @@ export interface FileRouteTypes {
     | '/catalogs'
     | '/contact'
     | '/export'
+    | '/hi-tech'
     | '/industries'
     | '/media'
     | '/sitemap.xml'
+    | '/yokohama'
     | '/ar/about'
     | '/ar/blog'
     | '/ar/catalogs'
     | '/ar/contact'
     | '/ar/export'
+    | '/ar/hi-tech'
     | '/ar/industries'
     | '/ar/media'
+    | '/ar/yokohama'
     | '/blog/$slug'
     | '/de/about'
     | '/de/blog'
     | '/de/catalogs'
     | '/de/contact'
     | '/de/export'
+    | '/de/hi-tech'
     | '/de/industries'
     | '/de/media'
+    | '/de/yokohama'
     | '/fa/about'
     | '/fa/blog'
     | '/fa/catalogs'
     | '/fa/contact'
     | '/fa/export'
+    | '/fa/hi-tech'
     | '/fa/industries'
     | '/fa/media'
+    | '/fa/yokohama'
     | '/fr/about'
     | '/fr/blog'
     | '/fr/catalogs'
     | '/fr/contact'
     | '/fr/export'
+    | '/fr/hi-tech'
     | '/fr/industries'
     | '/fr/media'
-    | '/products/hi-tech'
-    | '/products/yokohama'
+    | '/fr/yokohama'
+    | '/hi-tech/$category'
     | '/ru/about'
     | '/ru/blog'
     | '/ru/catalogs'
     | '/ru/contact'
     | '/ru/export'
+    | '/ru/hi-tech'
     | '/ru/industries'
     | '/ru/media'
+    | '/ru/yokohama'
     | '/tr/about'
     | '/tr/blog'
     | '/tr/catalogs'
     | '/tr/contact'
     | '/tr/export'
+    | '/tr/hi-tech'
     | '/tr/industries'
     | '/tr/media'
+    | '/tr/yokohama'
+    | '/yokohama/$category'
     | '/ar'
     | '/de'
     | '/fa'
@@ -1171,51 +1164,37 @@ export interface FileRouteTypes {
     | '/ru'
     | '/tr'
     | '/ar/blog/$slug'
-    | '/ar/products/hi-tech'
-    | '/ar/products/yokohama'
+    | '/ar/hi-tech/$category'
+    | '/ar/yokohama/$category'
     | '/de/blog/$slug'
-    | '/de/products/hi-tech'
-    | '/de/products/yokohama'
+    | '/de/hi-tech/$category'
+    | '/de/yokohama/$category'
     | '/fa/blog/$slug'
-    | '/fa/products/hi-tech'
-    | '/fa/products/yokohama'
+    | '/fa/hi-tech/$category'
+    | '/fa/yokohama/$category'
     | '/fr/blog/$slug'
-    | '/fr/products/hi-tech'
-    | '/fr/products/yokohama'
-    | '/products/hi-tech/$category'
-    | '/products/yokohama/$category'
+    | '/fr/hi-tech/$category'
+    | '/fr/yokohama/$category'
+    | '/hi-tech/$category/$product'
     | '/ru/blog/$slug'
-    | '/ru/products/hi-tech'
-    | '/ru/products/yokohama'
+    | '/ru/hi-tech/$category'
+    | '/ru/yokohama/$category'
     | '/tr/blog/$slug'
-    | '/tr/products/hi-tech'
-    | '/tr/products/yokohama'
-    | '/ar/products/hi-tech/$category'
-    | '/ar/products/yokohama/$category'
-    | '/de/products/hi-tech/$category'
-    | '/de/products/yokohama/$category'
-    | '/fa/products/hi-tech/$category'
-    | '/fa/products/yokohama/$category'
-    | '/fr/products/hi-tech/$category'
-    | '/fr/products/yokohama/$category'
-    | '/products/hi-tech/$category/$product'
-    | '/products/yokohama/$category/$product'
-    | '/ru/products/hi-tech/$category'
-    | '/ru/products/yokohama/$category'
-    | '/tr/products/hi-tech/$category'
-    | '/tr/products/yokohama/$category'
-    | '/ar/products/hi-tech/$category/$product'
-    | '/ar/products/yokohama/$category/$product'
-    | '/de/products/hi-tech/$category/$product'
-    | '/de/products/yokohama/$category/$product'
-    | '/fa/products/hi-tech/$category/$product'
-    | '/fa/products/yokohama/$category/$product'
-    | '/fr/products/hi-tech/$category/$product'
-    | '/fr/products/yokohama/$category/$product'
-    | '/ru/products/hi-tech/$category/$product'
-    | '/ru/products/yokohama/$category/$product'
-    | '/tr/products/hi-tech/$category/$product'
-    | '/tr/products/yokohama/$category/$product'
+    | '/tr/hi-tech/$category'
+    | '/tr/yokohama/$category'
+    | '/yokohama/$category/$product'
+    | '/ar/hi-tech/$category/$product'
+    | '/ar/yokohama/$category/$product'
+    | '/de/hi-tech/$category/$product'
+    | '/de/yokohama/$category/$product'
+    | '/fa/hi-tech/$category/$product'
+    | '/fa/yokohama/$category/$product'
+    | '/fr/hi-tech/$category/$product'
+    | '/fr/yokohama/$category/$product'
+    | '/ru/hi-tech/$category/$product'
+    | '/ru/yokohama/$category/$product'
+    | '/tr/hi-tech/$category/$product'
+    | '/tr/yokohama/$category/$product'
   id:
     | '__root__'
     | '/'
@@ -1224,54 +1203,68 @@ export interface FileRouteTypes {
     | '/catalogs'
     | '/contact'
     | '/export'
+    | '/hi-tech'
     | '/industries'
     | '/media'
     | '/sitemap.xml'
+    | '/yokohama'
     | '/ar/about'
     | '/ar/blog'
     | '/ar/catalogs'
     | '/ar/contact'
     | '/ar/export'
+    | '/ar/hi-tech'
     | '/ar/industries'
     | '/ar/media'
+    | '/ar/yokohama'
     | '/blog_/$slug'
     | '/de/about'
     | '/de/blog'
     | '/de/catalogs'
     | '/de/contact'
     | '/de/export'
+    | '/de/hi-tech'
     | '/de/industries'
     | '/de/media'
+    | '/de/yokohama'
     | '/fa/about'
     | '/fa/blog'
     | '/fa/catalogs'
     | '/fa/contact'
     | '/fa/export'
+    | '/fa/hi-tech'
     | '/fa/industries'
     | '/fa/media'
+    | '/fa/yokohama'
     | '/fr/about'
     | '/fr/blog'
     | '/fr/catalogs'
     | '/fr/contact'
     | '/fr/export'
+    | '/fr/hi-tech'
     | '/fr/industries'
     | '/fr/media'
-    | '/products/hi-tech'
-    | '/products/yokohama'
+    | '/fr/yokohama'
+    | '/hi-tech_/$category'
     | '/ru/about'
     | '/ru/blog'
     | '/ru/catalogs'
     | '/ru/contact'
     | '/ru/export'
+    | '/ru/hi-tech'
     | '/ru/industries'
     | '/ru/media'
+    | '/ru/yokohama'
     | '/tr/about'
     | '/tr/blog'
     | '/tr/catalogs'
     | '/tr/contact'
     | '/tr/export'
+    | '/tr/hi-tech'
     | '/tr/industries'
     | '/tr/media'
+    | '/tr/yokohama'
+    | '/yokohama_/$category'
     | '/ar/'
     | '/de/'
     | '/fa/'
@@ -1279,51 +1272,37 @@ export interface FileRouteTypes {
     | '/ru/'
     | '/tr/'
     | '/ar/blog_/$slug'
-    | '/ar/products/hi-tech'
-    | '/ar/products/yokohama'
+    | '/ar/hi-tech_/$category'
+    | '/ar/yokohama_/$category'
     | '/de/blog_/$slug'
-    | '/de/products/hi-tech'
-    | '/de/products/yokohama'
+    | '/de/hi-tech_/$category'
+    | '/de/yokohama_/$category'
     | '/fa/blog_/$slug'
-    | '/fa/products/hi-tech'
-    | '/fa/products/yokohama'
+    | '/fa/hi-tech_/$category'
+    | '/fa/yokohama_/$category'
     | '/fr/blog_/$slug'
-    | '/fr/products/hi-tech'
-    | '/fr/products/yokohama'
-    | '/products/hi-tech_/$category'
-    | '/products/yokohama_/$category'
+    | '/fr/hi-tech_/$category'
+    | '/fr/yokohama_/$category'
+    | '/hi-tech_/$category/$product'
     | '/ru/blog_/$slug'
-    | '/ru/products/hi-tech'
-    | '/ru/products/yokohama'
+    | '/ru/hi-tech_/$category'
+    | '/ru/yokohama_/$category'
     | '/tr/blog_/$slug'
-    | '/tr/products/hi-tech'
-    | '/tr/products/yokohama'
-    | '/ar/products/hi-tech_/$category'
-    | '/ar/products/yokohama_/$category'
-    | '/de/products/hi-tech_/$category'
-    | '/de/products/yokohama_/$category'
-    | '/fa/products/hi-tech_/$category'
-    | '/fa/products/yokohama_/$category'
-    | '/fr/products/hi-tech_/$category'
-    | '/fr/products/yokohama_/$category'
-    | '/products/hi-tech_/$category/$product'
-    | '/products/yokohama_/$category/$product'
-    | '/ru/products/hi-tech_/$category'
-    | '/ru/products/yokohama_/$category'
-    | '/tr/products/hi-tech_/$category'
-    | '/tr/products/yokohama_/$category'
-    | '/ar/products/hi-tech_/$category/$product'
-    | '/ar/products/yokohama_/$category/$product'
-    | '/de/products/hi-tech_/$category/$product'
-    | '/de/products/yokohama_/$category/$product'
-    | '/fa/products/hi-tech_/$category/$product'
-    | '/fa/products/yokohama_/$category/$product'
-    | '/fr/products/hi-tech_/$category/$product'
-    | '/fr/products/yokohama_/$category/$product'
-    | '/ru/products/hi-tech_/$category/$product'
-    | '/ru/products/yokohama_/$category/$product'
-    | '/tr/products/hi-tech_/$category/$product'
-    | '/tr/products/yokohama_/$category/$product'
+    | '/tr/hi-tech_/$category'
+    | '/tr/yokohama_/$category'
+    | '/yokohama_/$category/$product'
+    | '/ar/hi-tech_/$category/$product'
+    | '/ar/yokohama_/$category/$product'
+    | '/de/hi-tech_/$category/$product'
+    | '/de/yokohama_/$category/$product'
+    | '/fa/hi-tech_/$category/$product'
+    | '/fa/yokohama_/$category/$product'
+    | '/fr/hi-tech_/$category/$product'
+    | '/fr/yokohama_/$category/$product'
+    | '/ru/hi-tech_/$category/$product'
+    | '/ru/yokohama_/$category/$product'
+    | '/tr/hi-tech_/$category/$product'
+    | '/tr/yokohama_/$category/$product'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -1333,54 +1312,68 @@ export interface RootRouteChildren {
   CatalogsRoute: typeof CatalogsRoute
   ContactRoute: typeof ContactRoute
   ExportRoute: typeof ExportRoute
+  HiTechRoute: typeof HiTechRoute
   IndustriesRoute: typeof IndustriesRoute
   MediaRoute: typeof MediaRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  YokohamaRoute: typeof YokohamaRoute
   ArAboutRoute: typeof ArAboutRoute
   ArBlogRoute: typeof ArBlogRoute
   ArCatalogsRoute: typeof ArCatalogsRoute
   ArContactRoute: typeof ArContactRoute
   ArExportRoute: typeof ArExportRoute
+  ArHiTechRoute: typeof ArHiTechRoute
   ArIndustriesRoute: typeof ArIndustriesRoute
   ArMediaRoute: typeof ArMediaRoute
+  ArYokohamaRoute: typeof ArYokohamaRoute
   BlogSlugRoute: typeof BlogSlugRoute
   DeAboutRoute: typeof DeAboutRoute
   DeBlogRoute: typeof DeBlogRoute
   DeCatalogsRoute: typeof DeCatalogsRoute
   DeContactRoute: typeof DeContactRoute
   DeExportRoute: typeof DeExportRoute
+  DeHiTechRoute: typeof DeHiTechRoute
   DeIndustriesRoute: typeof DeIndustriesRoute
   DeMediaRoute: typeof DeMediaRoute
+  DeYokohamaRoute: typeof DeYokohamaRoute
   FaAboutRoute: typeof FaAboutRoute
   FaBlogRoute: typeof FaBlogRoute
   FaCatalogsRoute: typeof FaCatalogsRoute
   FaContactRoute: typeof FaContactRoute
   FaExportRoute: typeof FaExportRoute
+  FaHiTechRoute: typeof FaHiTechRoute
   FaIndustriesRoute: typeof FaIndustriesRoute
   FaMediaRoute: typeof FaMediaRoute
+  FaYokohamaRoute: typeof FaYokohamaRoute
   FrAboutRoute: typeof FrAboutRoute
   FrBlogRoute: typeof FrBlogRoute
   FrCatalogsRoute: typeof FrCatalogsRoute
   FrContactRoute: typeof FrContactRoute
   FrExportRoute: typeof FrExportRoute
+  FrHiTechRoute: typeof FrHiTechRoute
   FrIndustriesRoute: typeof FrIndustriesRoute
   FrMediaRoute: typeof FrMediaRoute
-  ProductsHiTechRoute: typeof ProductsHiTechRoute
-  ProductsYokohamaRoute: typeof ProductsYokohamaRoute
+  FrYokohamaRoute: typeof FrYokohamaRoute
+  HiTechCategoryRoute: typeof HiTechCategoryRouteWithChildren
   RuAboutRoute: typeof RuAboutRoute
   RuBlogRoute: typeof RuBlogRoute
   RuCatalogsRoute: typeof RuCatalogsRoute
   RuContactRoute: typeof RuContactRoute
   RuExportRoute: typeof RuExportRoute
+  RuHiTechRoute: typeof RuHiTechRoute
   RuIndustriesRoute: typeof RuIndustriesRoute
   RuMediaRoute: typeof RuMediaRoute
+  RuYokohamaRoute: typeof RuYokohamaRoute
   TrAboutRoute: typeof TrAboutRoute
   TrBlogRoute: typeof TrBlogRoute
   TrCatalogsRoute: typeof TrCatalogsRoute
   TrContactRoute: typeof TrContactRoute
   TrExportRoute: typeof TrExportRoute
+  TrHiTechRoute: typeof TrHiTechRoute
   TrIndustriesRoute: typeof TrIndustriesRoute
   TrMediaRoute: typeof TrMediaRoute
+  TrYokohamaRoute: typeof TrYokohamaRoute
+  YokohamaCategoryRoute: typeof YokohamaCategoryRouteWithChildren
   ArIndexRoute: typeof ArIndexRoute
   DeIndexRoute: typeof DeIndexRoute
   FaIndexRoute: typeof FaIndexRoute
@@ -1388,41 +1381,34 @@ export interface RootRouteChildren {
   RuIndexRoute: typeof RuIndexRoute
   TrIndexRoute: typeof TrIndexRoute
   ArBlogSlugRoute: typeof ArBlogSlugRoute
-  ArProductsHiTechRoute: typeof ArProductsHiTechRoute
-  ArProductsYokohamaRoute: typeof ArProductsYokohamaRoute
+  ArHiTechCategoryRoute: typeof ArHiTechCategoryRouteWithChildren
+  ArYokohamaCategoryRoute: typeof ArYokohamaCategoryRouteWithChildren
   DeBlogSlugRoute: typeof DeBlogSlugRoute
-  DeProductsHiTechRoute: typeof DeProductsHiTechRoute
-  DeProductsYokohamaRoute: typeof DeProductsYokohamaRoute
+  DeHiTechCategoryRoute: typeof DeHiTechCategoryRouteWithChildren
+  DeYokohamaCategoryRoute: typeof DeYokohamaCategoryRouteWithChildren
   FaBlogSlugRoute: typeof FaBlogSlugRoute
-  FaProductsHiTechRoute: typeof FaProductsHiTechRoute
-  FaProductsYokohamaRoute: typeof FaProductsYokohamaRoute
+  FaHiTechCategoryRoute: typeof FaHiTechCategoryRouteWithChildren
+  FaYokohamaCategoryRoute: typeof FaYokohamaCategoryRouteWithChildren
   FrBlogSlugRoute: typeof FrBlogSlugRoute
-  FrProductsHiTechRoute: typeof FrProductsHiTechRoute
-  FrProductsYokohamaRoute: typeof FrProductsYokohamaRoute
-  ProductsHiTechCategoryRoute: typeof ProductsHiTechCategoryRouteWithChildren
-  ProductsYokohamaCategoryRoute: typeof ProductsYokohamaCategoryRouteWithChildren
+  FrHiTechCategoryRoute: typeof FrHiTechCategoryRouteWithChildren
+  FrYokohamaCategoryRoute: typeof FrYokohamaCategoryRouteWithChildren
   RuBlogSlugRoute: typeof RuBlogSlugRoute
-  RuProductsHiTechRoute: typeof RuProductsHiTechRoute
-  RuProductsYokohamaRoute: typeof RuProductsYokohamaRoute
+  RuHiTechCategoryRoute: typeof RuHiTechCategoryRouteWithChildren
+  RuYokohamaCategoryRoute: typeof RuYokohamaCategoryRouteWithChildren
   TrBlogSlugRoute: typeof TrBlogSlugRoute
-  TrProductsHiTechRoute: typeof TrProductsHiTechRoute
-  TrProductsYokohamaRoute: typeof TrProductsYokohamaRoute
-  ArProductsHiTechCategoryRoute: typeof ArProductsHiTechCategoryRouteWithChildren
-  ArProductsYokohamaCategoryRoute: typeof ArProductsYokohamaCategoryRouteWithChildren
-  DeProductsHiTechCategoryRoute: typeof DeProductsHiTechCategoryRouteWithChildren
-  DeProductsYokohamaCategoryRoute: typeof DeProductsYokohamaCategoryRouteWithChildren
-  FaProductsHiTechCategoryRoute: typeof FaProductsHiTechCategoryRouteWithChildren
-  FaProductsYokohamaCategoryRoute: typeof FaProductsYokohamaCategoryRouteWithChildren
-  FrProductsHiTechCategoryRoute: typeof FrProductsHiTechCategoryRouteWithChildren
-  FrProductsYokohamaCategoryRoute: typeof FrProductsYokohamaCategoryRouteWithChildren
-  RuProductsHiTechCategoryRoute: typeof RuProductsHiTechCategoryRouteWithChildren
-  RuProductsYokohamaCategoryRoute: typeof RuProductsYokohamaCategoryRouteWithChildren
-  TrProductsHiTechCategoryRoute: typeof TrProductsHiTechCategoryRouteWithChildren
-  TrProductsYokohamaCategoryRoute: typeof TrProductsYokohamaCategoryRouteWithChildren
+  TrHiTechCategoryRoute: typeof TrHiTechCategoryRouteWithChildren
+  TrYokohamaCategoryRoute: typeof TrYokohamaCategoryRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/yokohama': {
+      id: '/yokohama'
+      path: '/yokohama'
+      fullPath: '/yokohama'
+      preLoaderRoute: typeof YokohamaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -1442,6 +1428,13 @@ declare module '@tanstack/react-router' {
       path: '/industries'
       fullPath: '/industries'
       preLoaderRoute: typeof IndustriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hi-tech': {
+      id: '/hi-tech'
+      path: '/hi-tech'
+      fullPath: '/hi-tech'
+      preLoaderRoute: typeof HiTechRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/export': {
@@ -1528,6 +1521,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/yokohama_/$category': {
+      id: '/yokohama_/$category'
+      path: '/yokohama/$category'
+      fullPath: '/yokohama/$category'
+      preLoaderRoute: typeof YokohamaCategoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tr/yokohama': {
+      id: '/tr/yokohama'
+      path: '/tr/yokohama'
+      fullPath: '/tr/yokohama'
+      preLoaderRoute: typeof TrYokohamaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tr/media': {
       id: '/tr/media'
       path: '/tr/media'
@@ -1540,6 +1547,13 @@ declare module '@tanstack/react-router' {
       path: '/tr/industries'
       fullPath: '/tr/industries'
       preLoaderRoute: typeof TrIndustriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tr/hi-tech': {
+      id: '/tr/hi-tech'
+      path: '/tr/hi-tech'
+      fullPath: '/tr/hi-tech'
+      preLoaderRoute: typeof TrHiTechRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tr/export': {
@@ -1577,6 +1591,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TrAboutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ru/yokohama': {
+      id: '/ru/yokohama'
+      path: '/ru/yokohama'
+      fullPath: '/ru/yokohama'
+      preLoaderRoute: typeof RuYokohamaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/ru/media': {
       id: '/ru/media'
       path: '/ru/media'
@@ -1589,6 +1610,13 @@ declare module '@tanstack/react-router' {
       path: '/ru/industries'
       fullPath: '/ru/industries'
       preLoaderRoute: typeof RuIndustriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ru/hi-tech': {
+      id: '/ru/hi-tech'
+      path: '/ru/hi-tech'
+      fullPath: '/ru/hi-tech'
+      preLoaderRoute: typeof RuHiTechRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ru/export': {
@@ -1626,18 +1654,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RuAboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/products/yokohama': {
-      id: '/products/yokohama'
-      path: '/products/yokohama'
-      fullPath: '/products/yokohama'
-      preLoaderRoute: typeof ProductsYokohamaRouteImport
+    '/hi-tech_/$category': {
+      id: '/hi-tech_/$category'
+      path: '/hi-tech/$category'
+      fullPath: '/hi-tech/$category'
+      preLoaderRoute: typeof HiTechCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/products/hi-tech': {
-      id: '/products/hi-tech'
-      path: '/products/hi-tech'
-      fullPath: '/products/hi-tech'
-      preLoaderRoute: typeof ProductsHiTechRouteImport
+    '/fr/yokohama': {
+      id: '/fr/yokohama'
+      path: '/fr/yokohama'
+      fullPath: '/fr/yokohama'
+      preLoaderRoute: typeof FrYokohamaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fr/media': {
@@ -1652,6 +1680,13 @@ declare module '@tanstack/react-router' {
       path: '/fr/industries'
       fullPath: '/fr/industries'
       preLoaderRoute: typeof FrIndustriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fr/hi-tech': {
+      id: '/fr/hi-tech'
+      path: '/fr/hi-tech'
+      fullPath: '/fr/hi-tech'
+      preLoaderRoute: typeof FrHiTechRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fr/export': {
@@ -1689,6 +1724,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FrAboutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/fa/yokohama': {
+      id: '/fa/yokohama'
+      path: '/fa/yokohama'
+      fullPath: '/fa/yokohama'
+      preLoaderRoute: typeof FaYokohamaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/fa/media': {
       id: '/fa/media'
       path: '/fa/media'
@@ -1701,6 +1743,13 @@ declare module '@tanstack/react-router' {
       path: '/fa/industries'
       fullPath: '/fa/industries'
       preLoaderRoute: typeof FaIndustriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fa/hi-tech': {
+      id: '/fa/hi-tech'
+      path: '/fa/hi-tech'
+      fullPath: '/fa/hi-tech'
+      preLoaderRoute: typeof FaHiTechRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fa/export': {
@@ -1738,6 +1787,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaAboutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/de/yokohama': {
+      id: '/de/yokohama'
+      path: '/de/yokohama'
+      fullPath: '/de/yokohama'
+      preLoaderRoute: typeof DeYokohamaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/de/media': {
       id: '/de/media'
       path: '/de/media'
@@ -1750,6 +1806,13 @@ declare module '@tanstack/react-router' {
       path: '/de/industries'
       fullPath: '/de/industries'
       preLoaderRoute: typeof DeIndustriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/de/hi-tech': {
+      id: '/de/hi-tech'
+      path: '/de/hi-tech'
+      fullPath: '/de/hi-tech'
+      preLoaderRoute: typeof DeHiTechRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/de/export': {
@@ -1794,6 +1857,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ar/yokohama': {
+      id: '/ar/yokohama'
+      path: '/ar/yokohama'
+      fullPath: '/ar/yokohama'
+      preLoaderRoute: typeof ArYokohamaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/ar/media': {
       id: '/ar/media'
       path: '/ar/media'
@@ -1806,6 +1876,13 @@ declare module '@tanstack/react-router' {
       path: '/ar/industries'
       fullPath: '/ar/industries'
       preLoaderRoute: typeof ArIndustriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ar/hi-tech': {
+      id: '/ar/hi-tech'
+      path: '/ar/hi-tech'
+      fullPath: '/ar/hi-tech'
+      preLoaderRoute: typeof ArHiTechRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ar/export': {
@@ -1843,18 +1920,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArAboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tr/products/yokohama': {
-      id: '/tr/products/yokohama'
-      path: '/tr/products/yokohama'
-      fullPath: '/tr/products/yokohama'
-      preLoaderRoute: typeof TrProductsYokohamaRouteImport
+    '/yokohama_/$category/$product': {
+      id: '/yokohama_/$category/$product'
+      path: '/$product'
+      fullPath: '/yokohama/$category/$product'
+      preLoaderRoute: typeof YokohamaCategoryProductRouteImport
+      parentRoute: typeof YokohamaCategoryRoute
+    }
+    '/tr/yokohama_/$category': {
+      id: '/tr/yokohama_/$category'
+      path: '/tr/yokohama/$category'
+      fullPath: '/tr/yokohama/$category'
+      preLoaderRoute: typeof TrYokohamaCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tr/products/hi-tech': {
-      id: '/tr/products/hi-tech'
-      path: '/tr/products/hi-tech'
-      fullPath: '/tr/products/hi-tech'
-      preLoaderRoute: typeof TrProductsHiTechRouteImport
+    '/tr/hi-tech_/$category': {
+      id: '/tr/hi-tech_/$category'
+      path: '/tr/hi-tech/$category'
+      fullPath: '/tr/hi-tech/$category'
+      preLoaderRoute: typeof TrHiTechCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tr/blog_/$slug': {
@@ -1864,18 +1948,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TrBlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/ru/products/yokohama': {
-      id: '/ru/products/yokohama'
-      path: '/ru/products/yokohama'
-      fullPath: '/ru/products/yokohama'
-      preLoaderRoute: typeof RuProductsYokohamaRouteImport
+    '/ru/yokohama_/$category': {
+      id: '/ru/yokohama_/$category'
+      path: '/ru/yokohama/$category'
+      fullPath: '/ru/yokohama/$category'
+      preLoaderRoute: typeof RuYokohamaCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/ru/products/hi-tech': {
-      id: '/ru/products/hi-tech'
-      path: '/ru/products/hi-tech'
-      fullPath: '/ru/products/hi-tech'
-      preLoaderRoute: typeof RuProductsHiTechRouteImport
+    '/ru/hi-tech_/$category': {
+      id: '/ru/hi-tech_/$category'
+      path: '/ru/hi-tech/$category'
+      fullPath: '/ru/hi-tech/$category'
+      preLoaderRoute: typeof RuHiTechCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ru/blog_/$slug': {
@@ -1885,32 +1969,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RuBlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/products/yokohama_/$category': {
-      id: '/products/yokohama_/$category'
-      path: '/products/yokohama/$category'
-      fullPath: '/products/yokohama/$category'
-      preLoaderRoute: typeof ProductsYokohamaCategoryRouteImport
+    '/hi-tech_/$category/$product': {
+      id: '/hi-tech_/$category/$product'
+      path: '/$product'
+      fullPath: '/hi-tech/$category/$product'
+      preLoaderRoute: typeof HiTechCategoryProductRouteImport
+      parentRoute: typeof HiTechCategoryRoute
+    }
+    '/fr/yokohama_/$category': {
+      id: '/fr/yokohama_/$category'
+      path: '/fr/yokohama/$category'
+      fullPath: '/fr/yokohama/$category'
+      preLoaderRoute: typeof FrYokohamaCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/products/hi-tech_/$category': {
-      id: '/products/hi-tech_/$category'
-      path: '/products/hi-tech/$category'
-      fullPath: '/products/hi-tech/$category'
-      preLoaderRoute: typeof ProductsHiTechCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fr/products/yokohama': {
-      id: '/fr/products/yokohama'
-      path: '/fr/products/yokohama'
-      fullPath: '/fr/products/yokohama'
-      preLoaderRoute: typeof FrProductsYokohamaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fr/products/hi-tech': {
-      id: '/fr/products/hi-tech'
-      path: '/fr/products/hi-tech'
-      fullPath: '/fr/products/hi-tech'
-      preLoaderRoute: typeof FrProductsHiTechRouteImport
+    '/fr/hi-tech_/$category': {
+      id: '/fr/hi-tech_/$category'
+      path: '/fr/hi-tech/$category'
+      fullPath: '/fr/hi-tech/$category'
+      preLoaderRoute: typeof FrHiTechCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fr/blog_/$slug': {
@@ -1920,18 +1997,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FrBlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/fa/products/yokohama': {
-      id: '/fa/products/yokohama'
-      path: '/fa/products/yokohama'
-      fullPath: '/fa/products/yokohama'
-      preLoaderRoute: typeof FaProductsYokohamaRouteImport
+    '/fa/yokohama_/$category': {
+      id: '/fa/yokohama_/$category'
+      path: '/fa/yokohama/$category'
+      fullPath: '/fa/yokohama/$category'
+      preLoaderRoute: typeof FaYokohamaCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/fa/products/hi-tech': {
-      id: '/fa/products/hi-tech'
-      path: '/fa/products/hi-tech'
-      fullPath: '/fa/products/hi-tech'
-      preLoaderRoute: typeof FaProductsHiTechRouteImport
+    '/fa/hi-tech_/$category': {
+      id: '/fa/hi-tech_/$category'
+      path: '/fa/hi-tech/$category'
+      fullPath: '/fa/hi-tech/$category'
+      preLoaderRoute: typeof FaHiTechCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fa/blog_/$slug': {
@@ -1941,18 +2018,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaBlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/de/products/yokohama': {
-      id: '/de/products/yokohama'
-      path: '/de/products/yokohama'
-      fullPath: '/de/products/yokohama'
-      preLoaderRoute: typeof DeProductsYokohamaRouteImport
+    '/de/yokohama_/$category': {
+      id: '/de/yokohama_/$category'
+      path: '/de/yokohama/$category'
+      fullPath: '/de/yokohama/$category'
+      preLoaderRoute: typeof DeYokohamaCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/de/products/hi-tech': {
-      id: '/de/products/hi-tech'
-      path: '/de/products/hi-tech'
-      fullPath: '/de/products/hi-tech'
-      preLoaderRoute: typeof DeProductsHiTechRouteImport
+    '/de/hi-tech_/$category': {
+      id: '/de/hi-tech_/$category'
+      path: '/de/hi-tech/$category'
+      fullPath: '/de/hi-tech/$category'
+      preLoaderRoute: typeof DeHiTechCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/de/blog_/$slug': {
@@ -1962,18 +2039,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DeBlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/ar/products/yokohama': {
-      id: '/ar/products/yokohama'
-      path: '/ar/products/yokohama'
-      fullPath: '/ar/products/yokohama'
-      preLoaderRoute: typeof ArProductsYokohamaRouteImport
+    '/ar/yokohama_/$category': {
+      id: '/ar/yokohama_/$category'
+      path: '/ar/yokohama/$category'
+      fullPath: '/ar/yokohama/$category'
+      preLoaderRoute: typeof ArYokohamaCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/ar/products/hi-tech': {
-      id: '/ar/products/hi-tech'
-      path: '/ar/products/hi-tech'
-      fullPath: '/ar/products/hi-tech'
-      preLoaderRoute: typeof ArProductsHiTechRouteImport
+    '/ar/hi-tech_/$category': {
+      id: '/ar/hi-tech_/$category'
+      path: '/ar/hi-tech/$category'
+      fullPath: '/ar/hi-tech/$category'
+      preLoaderRoute: typeof ArHiTechCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ar/blog_/$slug': {
@@ -1983,392 +2060,247 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArBlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tr/products/yokohama_/$category': {
-      id: '/tr/products/yokohama_/$category'
-      path: '/tr/products/yokohama/$category'
-      fullPath: '/tr/products/yokohama/$category'
-      preLoaderRoute: typeof TrProductsYokohamaCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tr/products/hi-tech_/$category': {
-      id: '/tr/products/hi-tech_/$category'
-      path: '/tr/products/hi-tech/$category'
-      fullPath: '/tr/products/hi-tech/$category'
-      preLoaderRoute: typeof TrProductsHiTechCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ru/products/yokohama_/$category': {
-      id: '/ru/products/yokohama_/$category'
-      path: '/ru/products/yokohama/$category'
-      fullPath: '/ru/products/yokohama/$category'
-      preLoaderRoute: typeof RuProductsYokohamaCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ru/products/hi-tech_/$category': {
-      id: '/ru/products/hi-tech_/$category'
-      path: '/ru/products/hi-tech/$category'
-      fullPath: '/ru/products/hi-tech/$category'
-      preLoaderRoute: typeof RuProductsHiTechCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/products/yokohama_/$category/$product': {
-      id: '/products/yokohama_/$category/$product'
+    '/tr/yokohama_/$category/$product': {
+      id: '/tr/yokohama_/$category/$product'
       path: '/$product'
-      fullPath: '/products/yokohama/$category/$product'
-      preLoaderRoute: typeof ProductsYokohamaCategoryProductRouteImport
-      parentRoute: typeof ProductsYokohamaCategoryRoute
+      fullPath: '/tr/yokohama/$category/$product'
+      preLoaderRoute: typeof TrYokohamaCategoryProductRouteImport
+      parentRoute: typeof TrYokohamaCategoryRoute
     }
-    '/products/hi-tech_/$category/$product': {
-      id: '/products/hi-tech_/$category/$product'
+    '/tr/hi-tech_/$category/$product': {
+      id: '/tr/hi-tech_/$category/$product'
       path: '/$product'
-      fullPath: '/products/hi-tech/$category/$product'
-      preLoaderRoute: typeof ProductsHiTechCategoryProductRouteImport
-      parentRoute: typeof ProductsHiTechCategoryRoute
+      fullPath: '/tr/hi-tech/$category/$product'
+      preLoaderRoute: typeof TrHiTechCategoryProductRouteImport
+      parentRoute: typeof TrHiTechCategoryRoute
     }
-    '/fr/products/yokohama_/$category': {
-      id: '/fr/products/yokohama_/$category'
-      path: '/fr/products/yokohama/$category'
-      fullPath: '/fr/products/yokohama/$category'
-      preLoaderRoute: typeof FrProductsYokohamaCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fr/products/hi-tech_/$category': {
-      id: '/fr/products/hi-tech_/$category'
-      path: '/fr/products/hi-tech/$category'
-      fullPath: '/fr/products/hi-tech/$category'
-      preLoaderRoute: typeof FrProductsHiTechCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fa/products/yokohama_/$category': {
-      id: '/fa/products/yokohama_/$category'
-      path: '/fa/products/yokohama/$category'
-      fullPath: '/fa/products/yokohama/$category'
-      preLoaderRoute: typeof FaProductsYokohamaCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fa/products/hi-tech_/$category': {
-      id: '/fa/products/hi-tech_/$category'
-      path: '/fa/products/hi-tech/$category'
-      fullPath: '/fa/products/hi-tech/$category'
-      preLoaderRoute: typeof FaProductsHiTechCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/de/products/yokohama_/$category': {
-      id: '/de/products/yokohama_/$category'
-      path: '/de/products/yokohama/$category'
-      fullPath: '/de/products/yokohama/$category'
-      preLoaderRoute: typeof DeProductsYokohamaCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/de/products/hi-tech_/$category': {
-      id: '/de/products/hi-tech_/$category'
-      path: '/de/products/hi-tech/$category'
-      fullPath: '/de/products/hi-tech/$category'
-      preLoaderRoute: typeof DeProductsHiTechCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ar/products/yokohama_/$category': {
-      id: '/ar/products/yokohama_/$category'
-      path: '/ar/products/yokohama/$category'
-      fullPath: '/ar/products/yokohama/$category'
-      preLoaderRoute: typeof ArProductsYokohamaCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ar/products/hi-tech_/$category': {
-      id: '/ar/products/hi-tech_/$category'
-      path: '/ar/products/hi-tech/$category'
-      fullPath: '/ar/products/hi-tech/$category'
-      preLoaderRoute: typeof ArProductsHiTechCategoryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tr/products/yokohama_/$category/$product': {
-      id: '/tr/products/yokohama_/$category/$product'
+    '/ru/yokohama_/$category/$product': {
+      id: '/ru/yokohama_/$category/$product'
       path: '/$product'
-      fullPath: '/tr/products/yokohama/$category/$product'
-      preLoaderRoute: typeof TrProductsYokohamaCategoryProductRouteImport
-      parentRoute: typeof TrProductsYokohamaCategoryRoute
+      fullPath: '/ru/yokohama/$category/$product'
+      preLoaderRoute: typeof RuYokohamaCategoryProductRouteImport
+      parentRoute: typeof RuYokohamaCategoryRoute
     }
-    '/tr/products/hi-tech_/$category/$product': {
-      id: '/tr/products/hi-tech_/$category/$product'
+    '/ru/hi-tech_/$category/$product': {
+      id: '/ru/hi-tech_/$category/$product'
       path: '/$product'
-      fullPath: '/tr/products/hi-tech/$category/$product'
-      preLoaderRoute: typeof TrProductsHiTechCategoryProductRouteImport
-      parentRoute: typeof TrProductsHiTechCategoryRoute
+      fullPath: '/ru/hi-tech/$category/$product'
+      preLoaderRoute: typeof RuHiTechCategoryProductRouteImport
+      parentRoute: typeof RuHiTechCategoryRoute
     }
-    '/ru/products/yokohama_/$category/$product': {
-      id: '/ru/products/yokohama_/$category/$product'
+    '/fr/yokohama_/$category/$product': {
+      id: '/fr/yokohama_/$category/$product'
       path: '/$product'
-      fullPath: '/ru/products/yokohama/$category/$product'
-      preLoaderRoute: typeof RuProductsYokohamaCategoryProductRouteImport
-      parentRoute: typeof RuProductsYokohamaCategoryRoute
+      fullPath: '/fr/yokohama/$category/$product'
+      preLoaderRoute: typeof FrYokohamaCategoryProductRouteImport
+      parentRoute: typeof FrYokohamaCategoryRoute
     }
-    '/ru/products/hi-tech_/$category/$product': {
-      id: '/ru/products/hi-tech_/$category/$product'
+    '/fr/hi-tech_/$category/$product': {
+      id: '/fr/hi-tech_/$category/$product'
       path: '/$product'
-      fullPath: '/ru/products/hi-tech/$category/$product'
-      preLoaderRoute: typeof RuProductsHiTechCategoryProductRouteImport
-      parentRoute: typeof RuProductsHiTechCategoryRoute
+      fullPath: '/fr/hi-tech/$category/$product'
+      preLoaderRoute: typeof FrHiTechCategoryProductRouteImport
+      parentRoute: typeof FrHiTechCategoryRoute
     }
-    '/fr/products/yokohama_/$category/$product': {
-      id: '/fr/products/yokohama_/$category/$product'
+    '/fa/yokohama_/$category/$product': {
+      id: '/fa/yokohama_/$category/$product'
       path: '/$product'
-      fullPath: '/fr/products/yokohama/$category/$product'
-      preLoaderRoute: typeof FrProductsYokohamaCategoryProductRouteImport
-      parentRoute: typeof FrProductsYokohamaCategoryRoute
+      fullPath: '/fa/yokohama/$category/$product'
+      preLoaderRoute: typeof FaYokohamaCategoryProductRouteImport
+      parentRoute: typeof FaYokohamaCategoryRoute
     }
-    '/fr/products/hi-tech_/$category/$product': {
-      id: '/fr/products/hi-tech_/$category/$product'
+    '/fa/hi-tech_/$category/$product': {
+      id: '/fa/hi-tech_/$category/$product'
       path: '/$product'
-      fullPath: '/fr/products/hi-tech/$category/$product'
-      preLoaderRoute: typeof FrProductsHiTechCategoryProductRouteImport
-      parentRoute: typeof FrProductsHiTechCategoryRoute
+      fullPath: '/fa/hi-tech/$category/$product'
+      preLoaderRoute: typeof FaHiTechCategoryProductRouteImport
+      parentRoute: typeof FaHiTechCategoryRoute
     }
-    '/fa/products/yokohama_/$category/$product': {
-      id: '/fa/products/yokohama_/$category/$product'
+    '/de/yokohama_/$category/$product': {
+      id: '/de/yokohama_/$category/$product'
       path: '/$product'
-      fullPath: '/fa/products/yokohama/$category/$product'
-      preLoaderRoute: typeof FaProductsYokohamaCategoryProductRouteImport
-      parentRoute: typeof FaProductsYokohamaCategoryRoute
+      fullPath: '/de/yokohama/$category/$product'
+      preLoaderRoute: typeof DeYokohamaCategoryProductRouteImport
+      parentRoute: typeof DeYokohamaCategoryRoute
     }
-    '/fa/products/hi-tech_/$category/$product': {
-      id: '/fa/products/hi-tech_/$category/$product'
+    '/de/hi-tech_/$category/$product': {
+      id: '/de/hi-tech_/$category/$product'
       path: '/$product'
-      fullPath: '/fa/products/hi-tech/$category/$product'
-      preLoaderRoute: typeof FaProductsHiTechCategoryProductRouteImport
-      parentRoute: typeof FaProductsHiTechCategoryRoute
+      fullPath: '/de/hi-tech/$category/$product'
+      preLoaderRoute: typeof DeHiTechCategoryProductRouteImport
+      parentRoute: typeof DeHiTechCategoryRoute
     }
-    '/de/products/yokohama_/$category/$product': {
-      id: '/de/products/yokohama_/$category/$product'
+    '/ar/yokohama_/$category/$product': {
+      id: '/ar/yokohama_/$category/$product'
       path: '/$product'
-      fullPath: '/de/products/yokohama/$category/$product'
-      preLoaderRoute: typeof DeProductsYokohamaCategoryProductRouteImport
-      parentRoute: typeof DeProductsYokohamaCategoryRoute
+      fullPath: '/ar/yokohama/$category/$product'
+      preLoaderRoute: typeof ArYokohamaCategoryProductRouteImport
+      parentRoute: typeof ArYokohamaCategoryRoute
     }
-    '/de/products/hi-tech_/$category/$product': {
-      id: '/de/products/hi-tech_/$category/$product'
+    '/ar/hi-tech_/$category/$product': {
+      id: '/ar/hi-tech_/$category/$product'
       path: '/$product'
-      fullPath: '/de/products/hi-tech/$category/$product'
-      preLoaderRoute: typeof DeProductsHiTechCategoryProductRouteImport
-      parentRoute: typeof DeProductsHiTechCategoryRoute
-    }
-    '/ar/products/yokohama_/$category/$product': {
-      id: '/ar/products/yokohama_/$category/$product'
-      path: '/$product'
-      fullPath: '/ar/products/yokohama/$category/$product'
-      preLoaderRoute: typeof ArProductsYokohamaCategoryProductRouteImport
-      parentRoute: typeof ArProductsYokohamaCategoryRoute
-    }
-    '/ar/products/hi-tech_/$category/$product': {
-      id: '/ar/products/hi-tech_/$category/$product'
-      path: '/$product'
-      fullPath: '/ar/products/hi-tech/$category/$product'
-      preLoaderRoute: typeof ArProductsHiTechCategoryProductRouteImport
-      parentRoute: typeof ArProductsHiTechCategoryRoute
+      fullPath: '/ar/hi-tech/$category/$product'
+      preLoaderRoute: typeof ArHiTechCategoryProductRouteImport
+      parentRoute: typeof ArHiTechCategoryRoute
     }
   }
 }
 
-interface ProductsHiTechCategoryRouteChildren {
-  ProductsHiTechCategoryProductRoute: typeof ProductsHiTechCategoryProductRoute
+interface HiTechCategoryRouteChildren {
+  HiTechCategoryProductRoute: typeof HiTechCategoryProductRoute
 }
 
-const ProductsHiTechCategoryRouteChildren: ProductsHiTechCategoryRouteChildren =
-  {
-    ProductsHiTechCategoryProductRoute: ProductsHiTechCategoryProductRoute,
-  }
-
-const ProductsHiTechCategoryRouteWithChildren =
-  ProductsHiTechCategoryRoute._addFileChildren(
-    ProductsHiTechCategoryRouteChildren,
-  )
-
-interface ProductsYokohamaCategoryRouteChildren {
-  ProductsYokohamaCategoryProductRoute: typeof ProductsYokohamaCategoryProductRoute
+const HiTechCategoryRouteChildren: HiTechCategoryRouteChildren = {
+  HiTechCategoryProductRoute: HiTechCategoryProductRoute,
 }
 
-const ProductsYokohamaCategoryRouteChildren: ProductsYokohamaCategoryRouteChildren =
-  {
-    ProductsYokohamaCategoryProductRoute: ProductsYokohamaCategoryProductRoute,
-  }
+const HiTechCategoryRouteWithChildren = HiTechCategoryRoute._addFileChildren(
+  HiTechCategoryRouteChildren,
+)
 
-const ProductsYokohamaCategoryRouteWithChildren =
-  ProductsYokohamaCategoryRoute._addFileChildren(
-    ProductsYokohamaCategoryRouteChildren,
-  )
-
-interface ArProductsHiTechCategoryRouteChildren {
-  ArProductsHiTechCategoryProductRoute: typeof ArProductsHiTechCategoryProductRoute
+interface YokohamaCategoryRouteChildren {
+  YokohamaCategoryProductRoute: typeof YokohamaCategoryProductRoute
 }
 
-const ArProductsHiTechCategoryRouteChildren: ArProductsHiTechCategoryRouteChildren =
-  {
-    ArProductsHiTechCategoryProductRoute: ArProductsHiTechCategoryProductRoute,
-  }
-
-const ArProductsHiTechCategoryRouteWithChildren =
-  ArProductsHiTechCategoryRoute._addFileChildren(
-    ArProductsHiTechCategoryRouteChildren,
-  )
-
-interface ArProductsYokohamaCategoryRouteChildren {
-  ArProductsYokohamaCategoryProductRoute: typeof ArProductsYokohamaCategoryProductRoute
+const YokohamaCategoryRouteChildren: YokohamaCategoryRouteChildren = {
+  YokohamaCategoryProductRoute: YokohamaCategoryProductRoute,
 }
 
-const ArProductsYokohamaCategoryRouteChildren: ArProductsYokohamaCategoryRouteChildren =
-  {
-    ArProductsYokohamaCategoryProductRoute:
-      ArProductsYokohamaCategoryProductRoute,
-  }
+const YokohamaCategoryRouteWithChildren =
+  YokohamaCategoryRoute._addFileChildren(YokohamaCategoryRouteChildren)
 
-const ArProductsYokohamaCategoryRouteWithChildren =
-  ArProductsYokohamaCategoryRoute._addFileChildren(
-    ArProductsYokohamaCategoryRouteChildren,
-  )
-
-interface DeProductsHiTechCategoryRouteChildren {
-  DeProductsHiTechCategoryProductRoute: typeof DeProductsHiTechCategoryProductRoute
+interface ArHiTechCategoryRouteChildren {
+  ArHiTechCategoryProductRoute: typeof ArHiTechCategoryProductRoute
 }
 
-const DeProductsHiTechCategoryRouteChildren: DeProductsHiTechCategoryRouteChildren =
-  {
-    DeProductsHiTechCategoryProductRoute: DeProductsHiTechCategoryProductRoute,
-  }
-
-const DeProductsHiTechCategoryRouteWithChildren =
-  DeProductsHiTechCategoryRoute._addFileChildren(
-    DeProductsHiTechCategoryRouteChildren,
-  )
-
-interface DeProductsYokohamaCategoryRouteChildren {
-  DeProductsYokohamaCategoryProductRoute: typeof DeProductsYokohamaCategoryProductRoute
+const ArHiTechCategoryRouteChildren: ArHiTechCategoryRouteChildren = {
+  ArHiTechCategoryProductRoute: ArHiTechCategoryProductRoute,
 }
 
-const DeProductsYokohamaCategoryRouteChildren: DeProductsYokohamaCategoryRouteChildren =
-  {
-    DeProductsYokohamaCategoryProductRoute:
-      DeProductsYokohamaCategoryProductRoute,
-  }
+const ArHiTechCategoryRouteWithChildren =
+  ArHiTechCategoryRoute._addFileChildren(ArHiTechCategoryRouteChildren)
 
-const DeProductsYokohamaCategoryRouteWithChildren =
-  DeProductsYokohamaCategoryRoute._addFileChildren(
-    DeProductsYokohamaCategoryRouteChildren,
-  )
-
-interface FaProductsHiTechCategoryRouteChildren {
-  FaProductsHiTechCategoryProductRoute: typeof FaProductsHiTechCategoryProductRoute
+interface ArYokohamaCategoryRouteChildren {
+  ArYokohamaCategoryProductRoute: typeof ArYokohamaCategoryProductRoute
 }
 
-const FaProductsHiTechCategoryRouteChildren: FaProductsHiTechCategoryRouteChildren =
-  {
-    FaProductsHiTechCategoryProductRoute: FaProductsHiTechCategoryProductRoute,
-  }
-
-const FaProductsHiTechCategoryRouteWithChildren =
-  FaProductsHiTechCategoryRoute._addFileChildren(
-    FaProductsHiTechCategoryRouteChildren,
-  )
-
-interface FaProductsYokohamaCategoryRouteChildren {
-  FaProductsYokohamaCategoryProductRoute: typeof FaProductsYokohamaCategoryProductRoute
+const ArYokohamaCategoryRouteChildren: ArYokohamaCategoryRouteChildren = {
+  ArYokohamaCategoryProductRoute: ArYokohamaCategoryProductRoute,
 }
 
-const FaProductsYokohamaCategoryRouteChildren: FaProductsYokohamaCategoryRouteChildren =
-  {
-    FaProductsYokohamaCategoryProductRoute:
-      FaProductsYokohamaCategoryProductRoute,
-  }
+const ArYokohamaCategoryRouteWithChildren =
+  ArYokohamaCategoryRoute._addFileChildren(ArYokohamaCategoryRouteChildren)
 
-const FaProductsYokohamaCategoryRouteWithChildren =
-  FaProductsYokohamaCategoryRoute._addFileChildren(
-    FaProductsYokohamaCategoryRouteChildren,
-  )
-
-interface FrProductsHiTechCategoryRouteChildren {
-  FrProductsHiTechCategoryProductRoute: typeof FrProductsHiTechCategoryProductRoute
+interface DeHiTechCategoryRouteChildren {
+  DeHiTechCategoryProductRoute: typeof DeHiTechCategoryProductRoute
 }
 
-const FrProductsHiTechCategoryRouteChildren: FrProductsHiTechCategoryRouteChildren =
-  {
-    FrProductsHiTechCategoryProductRoute: FrProductsHiTechCategoryProductRoute,
-  }
-
-const FrProductsHiTechCategoryRouteWithChildren =
-  FrProductsHiTechCategoryRoute._addFileChildren(
-    FrProductsHiTechCategoryRouteChildren,
-  )
-
-interface FrProductsYokohamaCategoryRouteChildren {
-  FrProductsYokohamaCategoryProductRoute: typeof FrProductsYokohamaCategoryProductRoute
+const DeHiTechCategoryRouteChildren: DeHiTechCategoryRouteChildren = {
+  DeHiTechCategoryProductRoute: DeHiTechCategoryProductRoute,
 }
 
-const FrProductsYokohamaCategoryRouteChildren: FrProductsYokohamaCategoryRouteChildren =
-  {
-    FrProductsYokohamaCategoryProductRoute:
-      FrProductsYokohamaCategoryProductRoute,
-  }
+const DeHiTechCategoryRouteWithChildren =
+  DeHiTechCategoryRoute._addFileChildren(DeHiTechCategoryRouteChildren)
 
-const FrProductsYokohamaCategoryRouteWithChildren =
-  FrProductsYokohamaCategoryRoute._addFileChildren(
-    FrProductsYokohamaCategoryRouteChildren,
-  )
-
-interface RuProductsHiTechCategoryRouteChildren {
-  RuProductsHiTechCategoryProductRoute: typeof RuProductsHiTechCategoryProductRoute
+interface DeYokohamaCategoryRouteChildren {
+  DeYokohamaCategoryProductRoute: typeof DeYokohamaCategoryProductRoute
 }
 
-const RuProductsHiTechCategoryRouteChildren: RuProductsHiTechCategoryRouteChildren =
-  {
-    RuProductsHiTechCategoryProductRoute: RuProductsHiTechCategoryProductRoute,
-  }
-
-const RuProductsHiTechCategoryRouteWithChildren =
-  RuProductsHiTechCategoryRoute._addFileChildren(
-    RuProductsHiTechCategoryRouteChildren,
-  )
-
-interface RuProductsYokohamaCategoryRouteChildren {
-  RuProductsYokohamaCategoryProductRoute: typeof RuProductsYokohamaCategoryProductRoute
+const DeYokohamaCategoryRouteChildren: DeYokohamaCategoryRouteChildren = {
+  DeYokohamaCategoryProductRoute: DeYokohamaCategoryProductRoute,
 }
 
-const RuProductsYokohamaCategoryRouteChildren: RuProductsYokohamaCategoryRouteChildren =
-  {
-    RuProductsYokohamaCategoryProductRoute:
-      RuProductsYokohamaCategoryProductRoute,
-  }
+const DeYokohamaCategoryRouteWithChildren =
+  DeYokohamaCategoryRoute._addFileChildren(DeYokohamaCategoryRouteChildren)
 
-const RuProductsYokohamaCategoryRouteWithChildren =
-  RuProductsYokohamaCategoryRoute._addFileChildren(
-    RuProductsYokohamaCategoryRouteChildren,
-  )
-
-interface TrProductsHiTechCategoryRouteChildren {
-  TrProductsHiTechCategoryProductRoute: typeof TrProductsHiTechCategoryProductRoute
+interface FaHiTechCategoryRouteChildren {
+  FaHiTechCategoryProductRoute: typeof FaHiTechCategoryProductRoute
 }
 
-const TrProductsHiTechCategoryRouteChildren: TrProductsHiTechCategoryRouteChildren =
-  {
-    TrProductsHiTechCategoryProductRoute: TrProductsHiTechCategoryProductRoute,
-  }
-
-const TrProductsHiTechCategoryRouteWithChildren =
-  TrProductsHiTechCategoryRoute._addFileChildren(
-    TrProductsHiTechCategoryRouteChildren,
-  )
-
-interface TrProductsYokohamaCategoryRouteChildren {
-  TrProductsYokohamaCategoryProductRoute: typeof TrProductsYokohamaCategoryProductRoute
+const FaHiTechCategoryRouteChildren: FaHiTechCategoryRouteChildren = {
+  FaHiTechCategoryProductRoute: FaHiTechCategoryProductRoute,
 }
 
-const TrProductsYokohamaCategoryRouteChildren: TrProductsYokohamaCategoryRouteChildren =
-  {
-    TrProductsYokohamaCategoryProductRoute:
-      TrProductsYokohamaCategoryProductRoute,
-  }
+const FaHiTechCategoryRouteWithChildren =
+  FaHiTechCategoryRoute._addFileChildren(FaHiTechCategoryRouteChildren)
 
-const TrProductsYokohamaCategoryRouteWithChildren =
-  TrProductsYokohamaCategoryRoute._addFileChildren(
-    TrProductsYokohamaCategoryRouteChildren,
-  )
+interface FaYokohamaCategoryRouteChildren {
+  FaYokohamaCategoryProductRoute: typeof FaYokohamaCategoryProductRoute
+}
+
+const FaYokohamaCategoryRouteChildren: FaYokohamaCategoryRouteChildren = {
+  FaYokohamaCategoryProductRoute: FaYokohamaCategoryProductRoute,
+}
+
+const FaYokohamaCategoryRouteWithChildren =
+  FaYokohamaCategoryRoute._addFileChildren(FaYokohamaCategoryRouteChildren)
+
+interface FrHiTechCategoryRouteChildren {
+  FrHiTechCategoryProductRoute: typeof FrHiTechCategoryProductRoute
+}
+
+const FrHiTechCategoryRouteChildren: FrHiTechCategoryRouteChildren = {
+  FrHiTechCategoryProductRoute: FrHiTechCategoryProductRoute,
+}
+
+const FrHiTechCategoryRouteWithChildren =
+  FrHiTechCategoryRoute._addFileChildren(FrHiTechCategoryRouteChildren)
+
+interface FrYokohamaCategoryRouteChildren {
+  FrYokohamaCategoryProductRoute: typeof FrYokohamaCategoryProductRoute
+}
+
+const FrYokohamaCategoryRouteChildren: FrYokohamaCategoryRouteChildren = {
+  FrYokohamaCategoryProductRoute: FrYokohamaCategoryProductRoute,
+}
+
+const FrYokohamaCategoryRouteWithChildren =
+  FrYokohamaCategoryRoute._addFileChildren(FrYokohamaCategoryRouteChildren)
+
+interface RuHiTechCategoryRouteChildren {
+  RuHiTechCategoryProductRoute: typeof RuHiTechCategoryProductRoute
+}
+
+const RuHiTechCategoryRouteChildren: RuHiTechCategoryRouteChildren = {
+  RuHiTechCategoryProductRoute: RuHiTechCategoryProductRoute,
+}
+
+const RuHiTechCategoryRouteWithChildren =
+  RuHiTechCategoryRoute._addFileChildren(RuHiTechCategoryRouteChildren)
+
+interface RuYokohamaCategoryRouteChildren {
+  RuYokohamaCategoryProductRoute: typeof RuYokohamaCategoryProductRoute
+}
+
+const RuYokohamaCategoryRouteChildren: RuYokohamaCategoryRouteChildren = {
+  RuYokohamaCategoryProductRoute: RuYokohamaCategoryProductRoute,
+}
+
+const RuYokohamaCategoryRouteWithChildren =
+  RuYokohamaCategoryRoute._addFileChildren(RuYokohamaCategoryRouteChildren)
+
+interface TrHiTechCategoryRouteChildren {
+  TrHiTechCategoryProductRoute: typeof TrHiTechCategoryProductRoute
+}
+
+const TrHiTechCategoryRouteChildren: TrHiTechCategoryRouteChildren = {
+  TrHiTechCategoryProductRoute: TrHiTechCategoryProductRoute,
+}
+
+const TrHiTechCategoryRouteWithChildren =
+  TrHiTechCategoryRoute._addFileChildren(TrHiTechCategoryRouteChildren)
+
+interface TrYokohamaCategoryRouteChildren {
+  TrYokohamaCategoryProductRoute: typeof TrYokohamaCategoryProductRoute
+}
+
+const TrYokohamaCategoryRouteChildren: TrYokohamaCategoryRouteChildren = {
+  TrYokohamaCategoryProductRoute: TrYokohamaCategoryProductRoute,
+}
+
+const TrYokohamaCategoryRouteWithChildren =
+  TrYokohamaCategoryRoute._addFileChildren(TrYokohamaCategoryRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
@@ -2377,54 +2309,68 @@ const rootRouteChildren: RootRouteChildren = {
   CatalogsRoute: CatalogsRoute,
   ContactRoute: ContactRoute,
   ExportRoute: ExportRoute,
+  HiTechRoute: HiTechRoute,
   IndustriesRoute: IndustriesRoute,
   MediaRoute: MediaRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  YokohamaRoute: YokohamaRoute,
   ArAboutRoute: ArAboutRoute,
   ArBlogRoute: ArBlogRoute,
   ArCatalogsRoute: ArCatalogsRoute,
   ArContactRoute: ArContactRoute,
   ArExportRoute: ArExportRoute,
+  ArHiTechRoute: ArHiTechRoute,
   ArIndustriesRoute: ArIndustriesRoute,
   ArMediaRoute: ArMediaRoute,
+  ArYokohamaRoute: ArYokohamaRoute,
   BlogSlugRoute: BlogSlugRoute,
   DeAboutRoute: DeAboutRoute,
   DeBlogRoute: DeBlogRoute,
   DeCatalogsRoute: DeCatalogsRoute,
   DeContactRoute: DeContactRoute,
   DeExportRoute: DeExportRoute,
+  DeHiTechRoute: DeHiTechRoute,
   DeIndustriesRoute: DeIndustriesRoute,
   DeMediaRoute: DeMediaRoute,
+  DeYokohamaRoute: DeYokohamaRoute,
   FaAboutRoute: FaAboutRoute,
   FaBlogRoute: FaBlogRoute,
   FaCatalogsRoute: FaCatalogsRoute,
   FaContactRoute: FaContactRoute,
   FaExportRoute: FaExportRoute,
+  FaHiTechRoute: FaHiTechRoute,
   FaIndustriesRoute: FaIndustriesRoute,
   FaMediaRoute: FaMediaRoute,
+  FaYokohamaRoute: FaYokohamaRoute,
   FrAboutRoute: FrAboutRoute,
   FrBlogRoute: FrBlogRoute,
   FrCatalogsRoute: FrCatalogsRoute,
   FrContactRoute: FrContactRoute,
   FrExportRoute: FrExportRoute,
+  FrHiTechRoute: FrHiTechRoute,
   FrIndustriesRoute: FrIndustriesRoute,
   FrMediaRoute: FrMediaRoute,
-  ProductsHiTechRoute: ProductsHiTechRoute,
-  ProductsYokohamaRoute: ProductsYokohamaRoute,
+  FrYokohamaRoute: FrYokohamaRoute,
+  HiTechCategoryRoute: HiTechCategoryRouteWithChildren,
   RuAboutRoute: RuAboutRoute,
   RuBlogRoute: RuBlogRoute,
   RuCatalogsRoute: RuCatalogsRoute,
   RuContactRoute: RuContactRoute,
   RuExportRoute: RuExportRoute,
+  RuHiTechRoute: RuHiTechRoute,
   RuIndustriesRoute: RuIndustriesRoute,
   RuMediaRoute: RuMediaRoute,
+  RuYokohamaRoute: RuYokohamaRoute,
   TrAboutRoute: TrAboutRoute,
   TrBlogRoute: TrBlogRoute,
   TrCatalogsRoute: TrCatalogsRoute,
   TrContactRoute: TrContactRoute,
   TrExportRoute: TrExportRoute,
+  TrHiTechRoute: TrHiTechRoute,
   TrIndustriesRoute: TrIndustriesRoute,
   TrMediaRoute: TrMediaRoute,
+  TrYokohamaRoute: TrYokohamaRoute,
+  YokohamaCategoryRoute: YokohamaCategoryRouteWithChildren,
   ArIndexRoute: ArIndexRoute,
   DeIndexRoute: DeIndexRoute,
   FaIndexRoute: FaIndexRoute,
@@ -2432,37 +2378,23 @@ const rootRouteChildren: RootRouteChildren = {
   RuIndexRoute: RuIndexRoute,
   TrIndexRoute: TrIndexRoute,
   ArBlogSlugRoute: ArBlogSlugRoute,
-  ArProductsHiTechRoute: ArProductsHiTechRoute,
-  ArProductsYokohamaRoute: ArProductsYokohamaRoute,
+  ArHiTechCategoryRoute: ArHiTechCategoryRouteWithChildren,
+  ArYokohamaCategoryRoute: ArYokohamaCategoryRouteWithChildren,
   DeBlogSlugRoute: DeBlogSlugRoute,
-  DeProductsHiTechRoute: DeProductsHiTechRoute,
-  DeProductsYokohamaRoute: DeProductsYokohamaRoute,
+  DeHiTechCategoryRoute: DeHiTechCategoryRouteWithChildren,
+  DeYokohamaCategoryRoute: DeYokohamaCategoryRouteWithChildren,
   FaBlogSlugRoute: FaBlogSlugRoute,
-  FaProductsHiTechRoute: FaProductsHiTechRoute,
-  FaProductsYokohamaRoute: FaProductsYokohamaRoute,
+  FaHiTechCategoryRoute: FaHiTechCategoryRouteWithChildren,
+  FaYokohamaCategoryRoute: FaYokohamaCategoryRouteWithChildren,
   FrBlogSlugRoute: FrBlogSlugRoute,
-  FrProductsHiTechRoute: FrProductsHiTechRoute,
-  FrProductsYokohamaRoute: FrProductsYokohamaRoute,
-  ProductsHiTechCategoryRoute: ProductsHiTechCategoryRouteWithChildren,
-  ProductsYokohamaCategoryRoute: ProductsYokohamaCategoryRouteWithChildren,
+  FrHiTechCategoryRoute: FrHiTechCategoryRouteWithChildren,
+  FrYokohamaCategoryRoute: FrYokohamaCategoryRouteWithChildren,
   RuBlogSlugRoute: RuBlogSlugRoute,
-  RuProductsHiTechRoute: RuProductsHiTechRoute,
-  RuProductsYokohamaRoute: RuProductsYokohamaRoute,
+  RuHiTechCategoryRoute: RuHiTechCategoryRouteWithChildren,
+  RuYokohamaCategoryRoute: RuYokohamaCategoryRouteWithChildren,
   TrBlogSlugRoute: TrBlogSlugRoute,
-  TrProductsHiTechRoute: TrProductsHiTechRoute,
-  TrProductsYokohamaRoute: TrProductsYokohamaRoute,
-  ArProductsHiTechCategoryRoute: ArProductsHiTechCategoryRouteWithChildren,
-  ArProductsYokohamaCategoryRoute: ArProductsYokohamaCategoryRouteWithChildren,
-  DeProductsHiTechCategoryRoute: DeProductsHiTechCategoryRouteWithChildren,
-  DeProductsYokohamaCategoryRoute: DeProductsYokohamaCategoryRouteWithChildren,
-  FaProductsHiTechCategoryRoute: FaProductsHiTechCategoryRouteWithChildren,
-  FaProductsYokohamaCategoryRoute: FaProductsYokohamaCategoryRouteWithChildren,
-  FrProductsHiTechCategoryRoute: FrProductsHiTechCategoryRouteWithChildren,
-  FrProductsYokohamaCategoryRoute: FrProductsYokohamaCategoryRouteWithChildren,
-  RuProductsHiTechCategoryRoute: RuProductsHiTechCategoryRouteWithChildren,
-  RuProductsYokohamaCategoryRoute: RuProductsYokohamaCategoryRouteWithChildren,
-  TrProductsHiTechCategoryRoute: TrProductsHiTechCategoryRouteWithChildren,
-  TrProductsYokohamaCategoryRoute: TrProductsYokohamaCategoryRouteWithChildren,
+  TrHiTechCategoryRoute: TrHiTechCategoryRouteWithChildren,
+  TrYokohamaCategoryRoute: TrYokohamaCategoryRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

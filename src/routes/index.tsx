@@ -79,7 +79,7 @@ function Hero() {
               </LocaleLink>
             </Button>
             <Button asChild variant="steel" size="xl">
-              <LocaleLink to="/products/hi-tech">{t.hero.exploreHiTech}</LocaleLink>
+              <LocaleLink to="/hi-tech">{t.hero.exploreHiTech}</LocaleLink>
             </Button>
           </div>
           <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-foreground/75">
@@ -129,7 +129,7 @@ function Flagship() {
               </LocaleLink>
             </Button>
             <Button asChild variant="steel" size="lg">
-              <LocaleLink to="/products/hi-tech" hash="kategorilerimiz">{t.flagship.viewRange}</LocaleLink>
+              <LocaleLink to="/hi-tech" hash="kategorilerimiz">{t.flagship.viewRange}</LocaleLink>
             </Button>
           </div>
         </div>

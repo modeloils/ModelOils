@@ -146,8 +146,8 @@ const YOKOHAMA_LANDING: Record<Locale, BrandLanding> = {
 /** Which brand the current URL sits under, plus the base path its links should use. */
 export function useBrand(): { key: BrandKey; base: string } {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const key: BrandKey = pathname.includes("/products/yokohama") ? "yokohama" : "hi-tech";
-  return { key, base: `/products/${key}` };
+  const key: BrandKey = pathname.includes("/yokohama") ? "yokohama" : "hi-tech";
+  return { key, base: `/${key}` };
 }
 
 /** Landing-page copy for the active brand, in the active locale. */

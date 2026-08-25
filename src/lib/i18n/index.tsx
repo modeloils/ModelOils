@@ -14,10 +14,10 @@ const PAGE_PATHS: Record<PageKey, string> = {
   about: "/about",
   contact: "/contact",
   export: "/export",
-  hitech: "/products/hi-tech",
+  hitech: "/hi-tech",
   industries: "/industries",
   products: "/products",
-  yokohama: "/products/yokohama",
+  yokohama: "/yokohama",
   media: "/media",
   blog: "/blog",
 };
@@ -31,8 +31,8 @@ export function localePath(to: string, locale: Locale): string {
 /** Remove a leading locale prefix, returning the base English path. */
 export function stripLocale(pathname: string): string {
   if (pathname === "/tr" || pathname === "/ru" || pathname === "/fa" || pathname === "/ar" || pathname === "/de" || pathname === "/fr") return "/";
-  if (pathname === "/tr/HI-TECH") return "/products/hi-tech";
-  if (pathname.startsWith("/tr/HI-TECH/")) return `/products/hi-tech${pathname.slice("/tr/HI-TECH".length)}`;
+  if (pathname === "/tr/HI-TECH") return "/hi-tech";
+  if (pathname.startsWith("/tr/HI-TECH/")) return `/hi-tech${pathname.slice("/tr/HI-TECH".length)}`;
   if (pathname.startsWith("/tr/") || pathname.startsWith("/ru/") || pathname.startsWith("/fa/") || pathname.startsWith("/ar/") || pathname.startsWith("/de/") || pathname.startsWith("/fr/")) return pathname.slice(3);
   return pathname;
 }

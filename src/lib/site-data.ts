@@ -18,8 +18,8 @@ export const NAV_LINKS: {
   highlight: boolean;
   brand?: "YOKOHAMA" | "HI-TECH";
 }[] = [
-  { key: "products", to: "/products/yokohama", highlight: true, brand: "YOKOHAMA" },
-  { key: "products", to: "/products/hi-tech", highlight: true, brand: "HI-TECH" },
+  { key: "products", to: "/yokohama", highlight: true, brand: "YOKOHAMA" },
+  { key: "products", to: "/hi-tech", highlight: true, brand: "HI-TECH" },
   { key: "catalogs", to: "/catalogs", highlight: false },
   { key: "industries", to: "/industries", highlight: false },
   { key: "export", to: "/export", highlight: false },

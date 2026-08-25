@@ -56,7 +56,7 @@ export function Footer() {
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
             {data.categories.slice(0, 6).map((c) => (
               <li key={c.name}>
-                <LocaleLink to={c.slug ? `/products/hi-tech/${c.slug}` : "/products/hi-tech"} className="hover:text-primary">
+                <LocaleLink to={c.slug ? `/hi-tech/${c.slug}` : "/hi-tech"} className="hover:text-primary">
                   {c.name}
                 </LocaleLink>
               </li>
