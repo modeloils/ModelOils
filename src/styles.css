@@ -241,6 +241,26 @@
   isolation: isolate;
 }
 
+.home-page-cream {
+  --background: oklch(0.955 0.016 78);
+  --foreground: oklch(0.24 0.022 65);
+  --card: oklch(0.975 0.012 78);
+  --card-foreground: oklch(0.24 0.022 65);
+  --popover: oklch(0.98 0.01 78);
+  --popover-foreground: oklch(0.24 0.022 65);
+  --secondary: oklch(0.925 0.018 78);
+  --secondary-foreground: oklch(0.27 0.022 65);
+  --muted: oklch(0.91 0.016 76);
+  --muted-foreground: oklch(0.43 0.025 65);
+  --border: oklch(0.79 0.025 74);
+  --input: oklch(0.79 0.025 74);
+  --gradient-panel: linear-gradient(160deg, oklch(0.985 0.01 78), oklch(0.925 0.018 76));
+  --gradient-steel: linear-gradient(145deg, oklch(0.96 0.012 78), oklch(0.88 0.022 74));
+  --shadow-card: 0 18px 40px -22px oklch(0.28 0.025 65 / 0.26);
+  --grid-line: oklch(0.3 0.025 65 / 0.045);
+  background: var(--background);
+}
+
 .home-hero-cream {
   --background: oklch(0.955 0.016 78);
   --foreground: oklch(0.24 0.022 65);
@@ -461,6 +481,17 @@
   background-image:
     radial-gradient(circle at 16% 88%, oklch(0.5 0.145 154 / 0.13), transparent 40%),
     linear-gradient(160deg, oklch(0.17 0.024 154), oklch(0.14 0.019 154));
+}
+
+.home-page-cream .brand-section-blue,
+.home-page-cream .brand-section-red,
+.home-page-cream .brand-section-green {
+  background-color: var(--background);
+  background-image: none;
+}
+
+.home-page-cream .brand-cta-glow {
+  opacity: 0.35;
 }
 
 .brand-section-neutral {

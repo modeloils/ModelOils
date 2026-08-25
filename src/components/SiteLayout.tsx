@@ -32,6 +32,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
   const isYokohamaRoute = /(^|\/)yokohama(?:\/|$)/.test(pathname);
   const isHiTechRoute = /(^|\/)hi-tech(?:\/|$)/.test(pathname);
   const isBlogRoute = /(^|\/)blog(?:\/|$)/.test(pathname);
+  const isHomeRoute = /^\/(?:tr|ru|fa|ar|de|fr)?\/?$/.test(pathname);
 
   return (
     <div
@@ -43,6 +44,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           "flex flex-1 flex-col",
           isYokohamaRoute && "yokohama-theme",
           isHiTechRoute && "hi-tech-theme",
+          isHomeRoute && "home-page-cream",
           !isYokohamaRoute && !isHiTechRoute && !isBlogRoute && "model-mix-theme",
         )}
       >
