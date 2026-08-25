@@ -21,7 +21,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
 import heroImg from "@/assets/yokohama-hero-cream.webp";
-import flagshipImg from "@/assets/flagship.png";
+import flagshipCreamImg from "@/assets/flagship-cream.webp";
 import exportImg from "@/assets/export.jpg";
 
 export function homeHead(locale: Locale) {
@@ -140,14 +140,13 @@ function Flagship() {
         </div>
         <div className="relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)] glow-blue">
           <img
-            src={flagshipImg}
+            src={flagshipCreamImg}
             alt={t.imgAlt.flagshipFamily}
             loading="lazy"
             width={1536}
-            height={1024}
+            height={864}
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_50%,oklch(0.14_0.02_255/0.7))]" />
         </div>
       </div>
     </section>
