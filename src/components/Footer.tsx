@@ -11,8 +11,8 @@ export function Footer() {
 
   return (
     <footer className="border-t border-border bg-[image:var(--gradient-panel)]">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
-        <div className="sm:col-span-2 lg:col-span-2">
+      <div className="mx-auto grid max-w-7xl gap-y-10 px-4 py-14 sm:grid-cols-2 sm:gap-x-8 sm:px-6 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] lg:gap-x-6 lg:px-8 xl:gap-x-10">
+        <div className="sm:col-span-2 lg:col-span-1">
           <img
             src="/model-oils/images/logo-main.png"
             alt="Model Oils"
@@ -55,6 +55,48 @@ export function Footer() {
 
         <div>
           <h4 className="font-display text-sm font-bold uppercase tracking-wider text-foreground">
+            <span className="block text-primary">HI-TECH</span>
+            <span className="mt-1 block text-xs text-foreground">
+              {t.footer.products}
+            </span>
+          </h4>
+          <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+            {data.categories.slice(0, 6).map((category) => (
+              <li key={category.name}>
+                <LocaleLink
+                  to={category.slug ? `/hi-tech/${category.slug}` : "/hi-tech"}
+                  className="transition-colors hover:text-primary"
+                >
+                  {category.name}
+                </LocaleLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-display text-sm font-bold uppercase tracking-wider">
+            <span className="block text-[oklch(0.7_0.22_27)]">YOKOHAMA</span>
+            <span className="mt-1 block text-xs text-[oklch(0.76_0.16_154)]">
+              {t.footer.products}
+            </span>
+          </h4>
+          <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+            {YOKOHAMA_CATEGORY_DEFINITIONS.slice(0, 6).map(({ slug }) => (
+              <li key={slug}>
+                <LocaleLink
+                  to={`/yokohama/${slug}`}
+                  className="transition-colors hover:text-[oklch(0.8_0.15_154)]"
+                >
+                  {getYokohamaCategoryName(slug, locale)}
+                </LocaleLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-display text-sm font-bold uppercase tracking-wider text-foreground">
             {t.footer.exportMarkets}
           </h4>
           <ul className="mt-4 flex flex-wrap gap-x-3 gap-y-2 text-sm text-muted-foreground">
@@ -62,73 +104,6 @@ export function Footer() {
               <li key={m}>{m}</li>
             ))}
           </ul>
-        </div>
-      </div>
-
-      <div className="border-t border-border/70">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 py-10 sm:px-6 md:grid-cols-2 lg:px-8">
-          <section className="hitech-footer-products p-6" aria-labelledby="hitech-footer-title">
-            <h4
-              id="hitech-footer-title"
-              className="relative font-display text-sm font-bold uppercase tracking-wider"
-            >
-              <span className="block text-primary">HI-TECH</span>
-              <span className="mt-1 block text-xs text-foreground">
-                {t.footer.products}
-              </span>
-            </h4>
-            <ul className="relative mt-5 grid gap-x-6 gap-y-3 text-sm text-muted-foreground sm:grid-cols-2">
-              {data.categories.slice(0, 6).map((category) => (
-                <li key={category.name}>
-                  <LocaleLink
-                    to={category.slug ? `/hi-tech/${category.slug}` : "/hi-tech"}
-                    className="flex items-start gap-2 transition-colors hover:text-primary"
-                  >
-                    <span
-                      className="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-primary"
-                      aria-hidden="true"
-                    />
-                    <span>{category.name}</span>
-                  </LocaleLink>
-                </li>
-              ))}
-            </ul>
-          </section>
-
-          <section
-            className="yokohama-footer-products p-6"
-            aria-labelledby="yokohama-footer-title"
-          >
-            <h4
-              id="yokohama-footer-title"
-              className="relative font-display text-sm font-bold uppercase tracking-wider"
-            >
-              <span className="block text-[oklch(0.7_0.22_27)]">YOKOHAMA</span>
-              <span className="mt-1 block text-xs text-[oklch(0.76_0.16_154)]">
-                {t.footer.products}
-              </span>
-            </h4>
-            <ul className="relative mt-5 grid gap-x-6 gap-y-3 text-sm text-muted-foreground sm:grid-cols-2">
-              {YOKOHAMA_CATEGORY_DEFINITIONS.slice(0, 6).map(({ slug }, index) => (
-                <li key={slug}>
-                  <LocaleLink
-                    to={`/yokohama/${slug}`}
-                    className="flex items-start gap-2 transition-colors hover:text-[oklch(0.8_0.15_154)]"
-                  >
-                    <span
-                      className={
-                        index % 2 === 0
-                          ? "mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[oklch(0.68_0.22_27)]"
-                          : "mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[oklch(0.7_0.17_154)]"
-                      }
-                      aria-hidden="true"
-                    />
-                    <span>{getYokohamaCategoryName(slug, locale)}</span>
-                  </LocaleLink>
-                </li>
-              ))}
-            </ul>
-          </section>
         </div>
       </div>
 
