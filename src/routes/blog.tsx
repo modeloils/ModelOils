@@ -22,7 +22,7 @@ function ArticleCard({ article }: { article: BlogArticle }) {
   return (
     <LocaleLink
       to={`/blog/${article.slug}`}
-      className="group flex flex-col rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6 transition-colors hover:border-primary/50"
+      className="brand-card group flex flex-col rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6 transition-colors hover:border-primary/50"
     >
       <h3 className="font-display text-base font-semibold leading-snug text-foreground group-hover:text-primary transition-colors">
         {article.title}

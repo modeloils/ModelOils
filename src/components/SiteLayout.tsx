@@ -34,13 +34,15 @@ export function SiteLayout({ children }: { children: ReactNode }) {
   const isBlogRoute = /(^|\/)blog(?:\/|$)/.test(pathname);
 
   return (
-    <div className="flex min-h-screen flex-col bg-background">
+    <div
+      className={cn("flex min-h-screen flex-col bg-background", isBlogRoute && "blog-mixed-theme")}
+    >
       <Header />
       <div
         className={cn(
           "flex flex-1 flex-col",
           isYokohamaRoute && "yokohama-theme",
-          (isHiTechRoute || isBlogRoute) && "hi-tech-theme",
+          isHiTechRoute && "hi-tech-theme",
           !isYokohamaRoute && !isHiTechRoute && !isBlogRoute && "model-mix-theme",
         )}
       >

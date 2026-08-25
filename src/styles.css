@@ -241,6 +241,74 @@
   isolation: isolate;
 }
 
+/* Blog routes intentionally retain the original combined three-brand-color treatment. */
+.blog-mixed-theme {
+  --accent: var(--brand-green);
+  --accent-foreground: oklch(0.985 0.004 150);
+  --gradient-brand: linear-gradient(
+    110deg,
+    var(--brand-blue) 0 42%,
+    var(--brand-red) 54% 72%,
+    var(--brand-green) 84% 100%
+  );
+  --gradient-action: var(--gradient-brand);
+  --gradient-panel:
+    radial-gradient(circle at 0% 0%, oklch(0.46 0.15 248 / 0.11), transparent 42%),
+    radial-gradient(circle at 100% 0%, oklch(0.46 0.17 27 / 0.085), transparent 34%),
+    radial-gradient(circle at 100% 100%, oklch(0.44 0.13 154 / 0.075), transparent 38%),
+    linear-gradient(160deg, oklch(0.225 0.02 258) 0%, oklch(0.18 0.016 258) 100%);
+  --shadow-glow:
+    -14px 0 38px -16px oklch(0.66 0.18 248 / 0.42), 12px 2px 38px -18px oklch(0.64 0.215 27 / 0.28),
+    0 14px 38px -20px oklch(0.64 0.16 154 / 0.24);
+  --brand-hero-glow:
+    radial-gradient(circle at 16% 0%, oklch(0.66 0.18 248 / 0.18), transparent 48%),
+    radial-gradient(circle at 82% 10%, oklch(0.64 0.215 27 / 0.12), transparent 36%),
+    radial-gradient(circle at 96% 74%, oklch(0.64 0.16 154 / 0.1), transparent 38%);
+  position: relative;
+  isolation: isolate;
+}
+
+.blog-mixed-theme::before {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 0% 14%, oklch(0.52 0.17 248 / 0.08), transparent 31%),
+    radial-gradient(circle at 100% 28%, oklch(0.52 0.19 27 / 0.065), transparent 26%),
+    radial-gradient(circle at 91% 82%, oklch(0.5 0.14 154 / 0.06), transparent 29%);
+}
+
+.blog-mixed-theme > * {
+  z-index: 1;
+}
+
+.blog-mixed-theme .mixed-header::after,
+.blog-mixed-theme .brand-footer::before {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  height: 2px;
+  content: "";
+  background: var(--gradient-brand);
+  box-shadow: var(--shadow-glow);
+  pointer-events: none;
+}
+
+.blog-mixed-theme .mixed-header::after {
+  bottom: -1px;
+}
+
+.blog-mixed-theme .brand-footer::before {
+  top: -1px;
+}
+
+.blog-mixed-theme .brand-card::before {
+  background: var(--gradient-brand);
+}
+
 .mixed-header {
   isolation: isolate;
 }
