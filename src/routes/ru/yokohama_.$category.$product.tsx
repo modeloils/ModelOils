@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { HiTechProduct } from "../hi-tech";
+import { YokohamaProduct } from "@/components/YokohamaRange";
 
 export const Route = createFileRoute("/ru/yokohama_/$category/$product")({
-  component: HiTechProduct,
+  component: YokohamaProduct,
 });

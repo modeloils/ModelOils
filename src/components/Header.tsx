@@ -30,7 +30,6 @@ export function Header() {
                 "relative rounded-md px-2 py-2 text-sm font-medium transition-colors hover:text-foreground",
                 l.highlight && "text-foreground",
                 l.brand === "YOKOHAMA" && "brand-nav-yokohama",
-                l.brand === "HI-TECH" && "brand-nav-hi-tech",
               )}
             >
               {l.brand ? (
@@ -80,7 +79,6 @@ export function Header() {
                 className={cn(
                   "flex min-h-[44px] items-center justify-between rounded-md px-3 py-3 text-sm font-medium text-foreground",
                   l.brand === "YOKOHAMA" && "brand-nav-yokohama",
-                  l.brand === "HI-TECH" && "brand-nav-hi-tech",
                 )}
               >
                 {l.brand ? (

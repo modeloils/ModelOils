@@ -127,29 +127,6 @@
   --ring: oklch(0.66 0.18 248);
 }
 
-/* HI-TECH routes stay blue-led while sharing the same component architecture. */
-.hi-tech-theme {
-  --background: oklch(0.17 0.02 255);
-  --card: oklch(0.21 0.022 255);
-  --popover: oklch(0.2 0.022 255);
-  --primary: var(--brand-blue);
-  --secondary: oklch(0.28 0.018 255);
-  --muted: oklch(0.26 0.018 255);
-  --accent: var(--brand-blue);
-  --accent-foreground: oklch(0.14 0.02 255);
-  --border: oklch(0.32 0.018 255);
-  --input: oklch(0.3 0.018 255);
-  --ring: var(--brand-blue);
-  --gradient-action: var(--gradient-blue);
-  --gradient-panel: linear-gradient(160deg, oklch(0.23 0.022 255) 0%, oklch(0.18 0.02 255) 100%);
-  --shadow-glow: 0 0 40px -8px oklch(0.66 0.18 248 / 0.45);
-  --brand-hero-glow: radial-gradient(
-    circle at 20% 0%,
-    oklch(0.66 0.18 248 / 0.16),
-    transparent 55%
-  );
-}
-
 /* Yokohama keeps the catalogue architecture while giving every route its own identity. */
 .yokohama-theme {
   --background: oklch(0.135 0.018 25);
@@ -376,10 +353,6 @@
   isolation: isolate;
 }
 
-.mixed-header .brand-nav-hi-tech {
-  color: var(--brand-blue);
-}
-
 .mixed-header .brand-nav-yokohama {
   color: var(--brand-red);
 }
@@ -388,7 +361,6 @@
   color: var(--brand-green);
 }
 
-.mixed-header .brand-nav-hi-tech:hover,
 .mixed-header .brand-nav-yokohama:hover {
   color: var(--foreground);
 }

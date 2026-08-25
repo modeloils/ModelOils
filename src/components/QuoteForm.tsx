@@ -2,9 +2,10 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { useTranslation } from "@/lib/i18n";
 import { PACKAGING } from "@/lib/site-data";
+import { getYokohamaCategoryName, YOKOHAMA_CATEGORY_DEFINITIONS } from "@/lib/yokohama-categories";
 
 export function QuoteForm() {
-  const { t, data } = useTranslation();
+  const { t, locale } = useTranslation();
   const [submitting, setSubmitting] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -58,9 +59,9 @@ export function QuoteForm() {
             className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
           >
             <option value="">{t.form.selectCategory}</option>
-            {data.categories.map((c) => (
-              <option key={c.slug ?? c.name} value={c.name}>
-                {c.name}
+            {YOKOHAMA_CATEGORY_DEFINITIONS.map(({ slug }) => (
+              <option key={slug} value={getYokohamaCategoryName(slug, locale)}>
+                {getYokohamaCategoryName(slug, locale)}
               </option>
             ))}
           </select>

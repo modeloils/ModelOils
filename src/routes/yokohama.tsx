@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Download } from "lucide-react";
+import { YokohamaRange } from "@/components/YokohamaRange";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { BRAND_IMAGES, YOKOHAMA_CATALOGS } from "@/lib/site-data";
 import { useTranslation, type Locale } from "@/lib/i18n";
 import { pageHead } from "@/lib/i18n";
-import { HiTech } from "./hi-tech";
 
 interface LineCopy {
   kicker: string;
@@ -334,13 +334,13 @@ function YokohamaLines() {
             image={BRAND_IMAGES.yokohama}
             imageClassName="object-[center_70%]"
             href={YOKOHAMA_CATALOGS.motorOil}
-            downloadLabel={t.hitech.downloadCatalog}
+            downloadLabel={t.productDetails.downloadCatalog}
           />
           <LineCard
             copy={copy.volt}
             image={BRAND_IMAGES.yokohamaVolt}
             href={YOKOHAMA_CATALOGS.volt}
-            downloadLabel={t.hitech.downloadCatalog}
+            downloadLabel={t.productDetails.downloadCatalog}
           />
         </div>
       </div>
@@ -357,7 +357,6 @@ export const Route = createFileRoute("/yokohama")({
   component: Yokohama,
 });
 
-/** Same range layout as HI-TECH, with the Yokohama catalogues appended. */
 export function Yokohama() {
-  return <HiTech extraSection={<YokohamaLines />} />;
+  return <YokohamaRange extraSection={<YokohamaLines />} />;
 }

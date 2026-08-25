@@ -8,7 +8,7 @@ export function Footer() {
 
   return (
     <footer className="brand-footer relative z-10 shrink-0 border-t border-border bg-[image:var(--gradient-panel)]">
-      <div className="mx-auto grid max-w-7xl gap-y-10 px-4 py-14 sm:grid-cols-2 sm:gap-x-8 sm:px-6 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] lg:gap-x-6 lg:px-8 xl:gap-x-10">
+      <div className="mx-auto grid max-w-7xl gap-y-10 px-4 py-14 sm:grid-cols-2 sm:gap-x-8 sm:px-6 lg:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-x-8 lg:px-8 xl:gap-x-12">
         <div className="sm:col-span-2 lg:col-span-1">
           <img
             src="/model-oils/images/logo-main.png"
@@ -16,8 +16,7 @@ export function Footer() {
             className="h-20 w-auto object-contain lg:h-28"
           />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            {t.footer.taglinePre} <span className="font-semibold text-foreground">HI-TECH</span>{" "}
-            {t.footer.taglinePost}
+            {t.about.heroSubtitle}
           </p>
           <div className="mt-5 space-y-2 text-sm text-muted-foreground">
             <a
@@ -52,25 +51,6 @@ export function Footer() {
               <li key={l.to}>
                 <LocaleLink to={l.to} className="hover:text-primary">
                   {t.nav[l.key]}
-                </LocaleLink>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-display text-sm font-bold uppercase tracking-wider text-foreground">
-            <span className="block text-brand-blue">HI-TECH</span>
-            <span className="mt-1 block text-xs text-foreground">{t.footer.products}</span>
-          </h4>
-          <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-            {data.categories.slice(0, 6).map((category) => (
-              <li key={category.name}>
-                <LocaleLink
-                  to={category.slug ? `/hi-tech/${category.slug}` : "/hi-tech"}
-                  className="transition-colors hover:text-primary"
-                >
-                  {category.name}
                 </LocaleLink>
               </li>
             ))}

@@ -11,12 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import {
-  LocaleLink,
-  useLocale,
-  useTranslation,
-  detectPreferredLocale,
-} from "../lib/i18n";
+import { LocaleLink, useLocale, useTranslation, detectPreferredLocale } from "../lib/i18n";
 
 function NotFoundComponent() {
   const { t } = useTranslation();
@@ -81,18 +76,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Model Oils | HI-TECH Lubricants & Motor Oils for Export" },
+      { title: "Model Oils | Yokohama Lubricants & Motor Oils for Export" },
       {
         name: "description",
         content:
-          "Model Oils is an international B2B lubricant exporter supplying HI-TECH motor oils, diesel oils, hydraulic oils, gear oils, greases and industrial lubricants to distributors and wholesalers worldwide.",
+          "Model Oils supplies and distributes Yokohama motor oils, automotive fluids and VOLT batteries to distributors, wholesalers and international buyers.",
       },
       { name: "author", content: "Model Oils" },
-      { property: "og:title", content: "Model Oils | HI-TECH Lubricants for Global Markets" },
+      { property: "og:title", content: "Model Oils | Yokohama Products for Global Markets" },
       {
         property: "og:description",
         content:
-          "Premium HI-TECH motor oils and industrial lubricants for distributors, wholesalers and international buyers. Bulk supply, flexible packaging, export ready.",
+          "Yokohama motor oils, automotive fluids and VOLT batteries for distributors, wholesalers and international buyers.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -117,8 +112,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 function RootShell({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const isRtl =
-    pathname === "/fa" || pathname.startsWith("/fa/") ||
-    pathname === "/ar" || pathname.startsWith("/ar/");
+    pathname === "/fa" ||
+    pathname.startsWith("/fa/") ||
+    pathname === "/ar" ||
+    pathname.startsWith("/ar/");
   const lang =
     pathname === "/tr" || pathname.startsWith("/tr/")
       ? "tr"
@@ -139,7 +136,6 @@ function RootShell({ children }: { children: ReactNode }) {
         <HeadContent />
       </head>
       <body>
-
         {children}
         <Scripts />
       </body>

@@ -1,15 +1,7 @@
-import { useRouterState } from "@tanstack/react-router";
 import { useTranslation } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
-import { BRAND_IMAGES } from "@/lib/site-data";
 
-/**
- * The two lubricant brands presented under /products. Both ranges are rendered by the
- * same components; only the copy, artwork and link base differ.
- */
-export type BrandKey = "hi-tech" | "yokohama";
-
-export interface BrandLanding {
+export interface YokohamaLanding {
   heroEyebrow: string;
   heroTitle: string;
   heroSubtitle: string;
@@ -21,7 +13,7 @@ export interface BrandLanding {
   rangeTitle: string;
 }
 
-const YOKOHAMA_LANDING: Record<Locale, BrandLanding> = {
+const YOKOHAMA_LANDING: Record<Locale, YokohamaLanding> = {
   en: {
     heroEyebrow: "Distributed Brand",
     heroTitle: "Yokohama — Japanese Quality, Supplied by Model Petrol",
@@ -143,43 +135,7 @@ const YOKOHAMA_LANDING: Record<Locale, BrandLanding> = {
   },
 };
 
-/** Which brand the current URL sits under, plus the base path its links should use. */
-export function useBrand(): { key: BrandKey; base: string } {
-  const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const key: BrandKey = pathname.includes("/yokohama") ? "yokohama" : "hi-tech";
-  return { key, base: `/${key}` };
-}
-
-/** Landing-page copy for the active brand, in the active locale. */
-export function useBrandLanding(): BrandLanding {
-  const { key } = useBrand();
-  const { t, locale } = useTranslation();
-
-  if (key === "yokohama") return YOKOHAMA_LANDING[locale];
-
-  return {
-    heroEyebrow: t.hitech.heroEyebrow,
-    heroTitle: t.hitech.heroTitle,
-    heroSubtitle: t.hitech.heroSubtitle,
-    becomeDistributor: t.hitech.becomeDistributor,
-    whyEyebrow: t.hitech.whyEyebrow,
-    whyTitle: t.hitech.whyTitle,
-    bullets: t.hitech.bullets,
-    rangeEyebrow: t.hitech.rangeEyebrow,
-    rangeTitle: t.hitech.rangeTitle,
-  };
-}
-
-/**
- * Backdrop and feature artwork for the active brand's range page.
- *
- * Yokohama uses its own red/green industrial backdrop while retaining the same proven
- * range-page structure as HI-TECH.
- */
-export function useBrandArtwork(hiTechBackdrop: string, hiTechFeature: string) {
-  const { key } = useBrand();
-  if (key === "yokohama") {
-    return { backdrop: BRAND_IMAGES.yokohamaBackground, feature: BRAND_IMAGES.yokohama };
-  }
-  return { backdrop: hiTechBackdrop, feature: hiTechFeature };
+export function useYokohamaLanding(): YokohamaLanding {
+  const { locale } = useTranslation();
+  return YOKOHAMA_LANDING[locale];
 }

@@ -1,33 +1,15 @@
-# Legacy uppercase Turkish paths from the original site structure.
-/tr/HI-TECH      /tr/hi-tech          301
-/tr/HI-TECH/*    /tr/hi-tech/:splat   301
-
 # Redirect the former nested brand URLs to the shorter canonical structure.
-/products/hi-tech         /hi-tech             301
-/products/hi-tech/*       /hi-tech/:splat      301
 /products/yokohama        /yokohama            301
 /products/yokohama/*      /yokohama/:splat     301
-/tr/products/hi-tech      /tr/hi-tech          301
-/tr/products/hi-tech/*    /tr/hi-tech/:splat   301
 /tr/products/yokohama     /tr/yokohama         301
 /tr/products/yokohama/*   /tr/yokohama/:splat  301
-/ru/products/hi-tech      /ru/hi-tech          301
-/ru/products/hi-tech/*    /ru/hi-tech/:splat   301
 /ru/products/yokohama     /ru/yokohama         301
 /ru/products/yokohama/*   /ru/yokohama/:splat  301
-/fa/products/hi-tech      /fa/hi-tech          301
-/fa/products/hi-tech/*    /fa/hi-tech/:splat   301
 /fa/products/yokohama     /fa/yokohama         301
 /fa/products/yokohama/*   /fa/yokohama/:splat  301
-/ar/products/hi-tech      /ar/hi-tech          301
-/ar/products/hi-tech/*    /ar/hi-tech/:splat   301
 /ar/products/yokohama     /ar/yokohama         301
 /ar/products/yokohama/*   /ar/yokohama/:splat  301
-/de/products/hi-tech      /de/hi-tech          301
-/de/products/hi-tech/*    /de/hi-tech/:splat   301
 /de/products/yokohama     /de/yokohama         301
 /de/products/yokohama/*   /de/yokohama/:splat  301
-/fr/products/hi-tech      /fr/hi-tech          301
-/fr/products/hi-tech/*    /fr/hi-tech/:splat   301
 /fr/products/yokohama     /fr/yokohama         301
 /fr/products/yokohama/*   /fr/yokohama/:splat  301

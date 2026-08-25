@@ -21,7 +21,6 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
 import heroImg from "@/assets/yokohama-hero-cream.webp";
-import flagshipCreamImg from "@/assets/flagship-cream.webp";
 import exportImg from "@/assets/export.jpg";
 
 export function homeHead(locale: Locale) {
@@ -100,23 +99,23 @@ function Hero() {
 }
 
 function Flagship() {
-  const { t, data } = useTranslation();
+  const { t } = useTranslation();
   return (
-    <section className="brand-section-blue relative overflow-hidden border-y border-border py-20 lg:py-28">
+    <section className="brand-section-red relative overflow-hidden border-y border-border py-20 lg:py-28">
       <div className="tech-grid absolute inset-0 opacity-30" />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div>
-          <span className="inline-flex items-center gap-2 rounded-sm bg-[image:var(--gradient-blue)] px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-primary-foreground">
+          <span className="inline-flex items-center gap-2 rounded-sm bg-[image:var(--gradient-red)] px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-primary-foreground">
             {t.flagship.badge}
           </span>
           <h2 className="mt-5 font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
-            HI-TECH
+            YOKOHAMA
           </h2>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
             {t.flagship.body}
           </p>
           <div className="mt-7 flex flex-wrap gap-2">
-            {data.hitechBadges.map((b) => (
+            {t.flagship.badges.map((b) => (
               <span
                 key={b}
                 className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary"
@@ -132,19 +131,19 @@ function Flagship() {
               </LocaleLink>
             </Button>
             <Button asChild variant="steel" size="lg">
-              <LocaleLink to="/hi-tech" hash="kategorilerimiz">
+              <LocaleLink to="/yokohama" hash="kategorilerimiz">
                 {t.flagship.viewRange}
               </LocaleLink>
             </Button>
           </div>
         </div>
-        <div className="relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)] glow-blue">
+        <div className="relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)]">
           <img
-            src={flagshipCreamImg}
+            src={heroImg}
             alt={t.imgAlt.flagshipFamily}
             loading="lazy"
-            width={1536}
-            height={864}
+            width={1672}
+            height={941}
             className="h-full w-full object-cover"
           />
         </div>

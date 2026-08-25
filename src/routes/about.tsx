@@ -5,10 +5,10 @@ import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
-import flagshipImg from "@/assets/flagship.png";
+import yokohamaImg from "@/assets/yokohama-hero-cream.webp";
 
 export function aboutHead(locale: Locale) {
-  return pageHead(locale, "about", [{ property: "og:image", content: flagshipImg }]);
+  return pageHead(locale, "about", [{ property: "og:image", content: yokohamaImg }]);
 }
 
 export const Route = createFileRoute("/about")({
@@ -45,11 +45,11 @@ export function About() {
           </div>
           <div className="relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-glow)]">
             <img
-              src={flagshipImg}
+              src={yokohamaImg}
               alt={t.imgAlt.productDisplay}
               loading="lazy"
-              width={1536}
-              height={1024}
+              width={1672}
+              height={941}
               className="h-full w-full object-cover"
             />
           </div>

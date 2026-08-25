@@ -14,9 +14,7 @@ const PAGE_PATHS: Record<PageKey, string> = {
   about: "/about",
   contact: "/contact",
   export: "/export",
-  hitech: "/hi-tech",
   industries: "/industries",
-  products: "/products",
   yokohama: "/yokohama",
   media: "/media",
   blog: "/blog",
@@ -39,8 +37,6 @@ export function stripLocale(pathname: string): string {
     pathname === "/fr"
   )
     return "/";
-  if (pathname === "/tr/HI-TECH") return "/hi-tech";
-  if (pathname.startsWith("/tr/HI-TECH/")) return `/hi-tech${pathname.slice("/tr/HI-TECH".length)}`;
   if (
     pathname.startsWith("/tr/") ||
     pathname.startsWith("/ru/") ||

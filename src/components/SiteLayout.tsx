@@ -30,7 +30,6 @@ function WhatsAppButton() {
 export function SiteLayout({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const isYokohamaRoute = /(^|\/)yokohama(?:\/|$)/.test(pathname);
-  const isHiTechRoute = /(^|\/)hi-tech(?:\/|$)/.test(pathname);
   const isBlogRoute = /(^|\/)blog(?:\/|$)/.test(pathname);
   const isHomeRoute = /^\/(?:tr|ru|fa|ar|de|fr)?\/?$/.test(pathname);
 
@@ -43,9 +42,8 @@ export function SiteLayout({ children }: { children: ReactNode }) {
         className={cn(
           "flex flex-1 flex-col",
           isYokohamaRoute && "yokohama-theme",
-          isHiTechRoute && "hi-tech-theme",
           isHomeRoute && "home-page-cream",
-          !isYokohamaRoute && !isHiTechRoute && !isBlogRoute && "model-mix-theme",
+          !isYokohamaRoute && !isBlogRoute && "model-mix-theme",
         )}
       >
         <main className="flex-1">
