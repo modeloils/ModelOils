@@ -2562,6 +2562,21 @@ const hitechCategoryBgs = [
   antifreezeRadiatorCategoryImg, // centered automotive radiator and coolant — antifriz
 ];
 
+const yokohamaCategoryBgs: Record<string, string> = {
+  "Binek-Arac-Motor-Yaglari": "/model-oils/brands/yokohama-categories/passenger-cars.jpg",
+  "Agir-Hizmet-Motor-Yaglari": "/model-oils/brands/yokohama-categories/heavy-duty.jpg",
+  "Otomatik-Transmisyon-Yaglari": "/model-oils/brands/yokohama-categories/transmission.jpg",
+  "Disli-ve-Transmisyon-Yaglari": "/model-oils/brands/yokohama-categories/transmission.jpg",
+  Antifrizler: "/model-oils/brands/yokohama-categories/antifreeze.jpg",
+  "Motosiklet-Yaglari": "/model-oils/brands/yokohama-categories/motorcycle.jpg",
+  "Traktor-ve-Tarim-Yaglari": "/model-oils/brands/yokohama-categories/light-commercial.jpg",
+  "Endustriyel-Yaglar": "/model-oils/brands/yokohama-categories/industrial.jpg",
+  Gresler: "/model-oils/brands/yokohama-categories/greases.jpg",
+  "Deniz-Yaglari": "/model-oils/brands/yokohama-categories/marine.jpg",
+  "Ozel-Urunler": "/model-oils/brands/yokohama-range.jpg",
+  Akuler: "/model-oils/brands/yokohama-volt.jpg",
+};
+
 const aviationCategoryNames: Record<Locale, string> = {
   en: "Aviation & Turbine Oils",
   tr: "Havacılık ve Türbin Yağları",
@@ -2597,9 +2612,7 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
     ? YOKOHAMA_CATEGORY_DEFINITIONS.map(({ slug }) => ({
         name: getYokohamaCategoryName(slug, locale),
         slug,
-        background:
-          YOKOHAMA_CATEGORY_DATA[slug]?.products[0]?.image ??
-          "/model-oils/brands/yokohama-range.jpg",
+        background: yokohamaCategoryBgs[slug] ?? "/model-oils/brands/yokohama-range.jpg",
       }))
     : hitechCategorySlugs.map((slug, index) => ({
         name:
@@ -2633,12 +2646,12 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading eyebrow={landing.rangeEyebrow} title={landing.rangeTitle} />
-            <div className="yokohama-accent-line mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-[repeat(20,minmax(0,1fr))]">
+            <div className="yokohama-accent-line mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {categories.map((category) => (
                 <LocaleLink
                   key={category.slug}
                   to={`${base}/${category.slug}`}
-                  className="group relative flex min-h-40 items-end overflow-hidden rounded-lg border border-border shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50 lg:col-span-4"
+                  className="group relative flex min-h-40 items-end overflow-hidden rounded-lg border border-border shadow-[var(--shadow-card)] transition-[transform,border-color] duration-150 ease-out hover:-translate-y-1 hover:border-primary/50"
                 >
                   <img
                     src={category.background}
@@ -2646,7 +2659,7 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
                     aria-hidden="true"
                     loading="lazy"
                     decoding="async"
-                    className={`absolute inset-0 h-full w-full transition-transform duration-200 ease-out group-hover:scale-[1.03] ${isYokohama ? "bg-white object-contain p-3" : "object-cover"}`}
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-200 ease-out group-hover:scale-[1.03]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
                   <h3 className="relative p-5 font-display text-base font-bold leading-snug text-white drop-shadow-sm">
