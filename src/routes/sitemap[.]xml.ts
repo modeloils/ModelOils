@@ -17,7 +17,6 @@ export const Route = createFileRoute("/sitemap.xml")({
         // Base (English) paths. Every locale mirrors this set.
         const pages: SitemapEntry[] = [
           { path: "/", changefreq: "weekly", priority: "1.0" },
-          { path: "/products", changefreq: "weekly", priority: "0.9" },
           { path: "/products/hi-tech", changefreq: "weekly", priority: "0.9" },
           { path: "/products/yokohama", changefreq: "weekly", priority: "0.8" },
           { path: "/catalogs", changefreq: "monthly", priority: "0.7" },

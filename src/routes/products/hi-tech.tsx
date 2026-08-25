@@ -2634,12 +2634,6 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
         }
         style={isYokohama ? undefined : { backgroundImage: `url(${art.backdrop})` }}
       >
-        <div className={`${isYokohama ? "bg-background/35" : "bg-background/80 backdrop-blur-[1px]"} pt-6`}>
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <BackToProducts />
-          </div>
-        </div>
-
         <section
           id="kategorilerimiz"
           className={`border-b border-border py-20 lg:py-24 ${isYokohama ? "bg-background/35" : "bg-background/80 backdrop-blur-[1px]"}`}
@@ -2731,20 +2725,6 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
         </div>
       </div>
     </SiteLayout>
-  );
-}
-
-/** Leaves the brand range entirely and returns to the two-brand chooser. */
-function BackToProducts() {
-  const { t } = useTranslation();
-  return (
-    <LocaleLink
-      to="/products"
-      className="inline-flex min-h-[44px] items-center gap-1.5 rounded-md border border-border bg-[image:var(--gradient-panel)] px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-colors hover:border-primary/50 hover:text-foreground"
-    >
-      <ChevronLeft className="h-4 w-4 shrink-0 rtl:rotate-180" />
-      {t.nav.products}
-    </LocaleLink>
   );
 }
 

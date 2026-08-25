@@ -20,7 +20,6 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as TrIndexRouteImport } from './routes/tr/index'
 import { Route as RuIndexRouteImport } from './routes/ru/index'
-import { Route as ProductsIndexRouteImport } from './routes/products/index'
 import { Route as FrIndexRouteImport } from './routes/fr/index'
 import { Route as FaIndexRouteImport } from './routes/fa/index'
 import { Route as DeIndexRouteImport } from './routes/de/index'
@@ -70,12 +69,6 @@ import { Route as ArContactRouteImport } from './routes/ar/contact'
 import { Route as ArCatalogsRouteImport } from './routes/ar/catalogs'
 import { Route as ArBlogRouteImport } from './routes/ar/blog'
 import { Route as ArAboutRouteImport } from './routes/ar/about'
-import { Route as TrProductsIndexRouteImport } from './routes/tr/products/index'
-import { Route as RuProductsIndexRouteImport } from './routes/ru/products/index'
-import { Route as FrProductsIndexRouteImport } from './routes/fr/products/index'
-import { Route as FaProductsIndexRouteImport } from './routes/fa/products/index'
-import { Route as DeProductsIndexRouteImport } from './routes/de/products/index'
-import { Route as ArProductsIndexRouteImport } from './routes/ar/products/index'
 import { Route as TrProductsYokohamaRouteImport } from './routes/tr/products/yokohama'
 import { Route as TrProductsHiTechRouteImport } from './routes/tr/products/hi-tech'
 import { Route as TrBlogSlugRouteImport } from './routes/tr/blog_.$slug'
@@ -176,11 +169,6 @@ const TrIndexRoute = TrIndexRouteImport.update({
 const RuIndexRoute = RuIndexRouteImport.update({
   id: '/ru/',
   path: '/ru/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProductsIndexRoute = ProductsIndexRouteImport.update({
-  id: '/products/',
-  path: '/products/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FrIndexRoute = FrIndexRouteImport.update({
@@ -426,36 +414,6 @@ const ArBlogRoute = ArBlogRouteImport.update({
 const ArAboutRoute = ArAboutRouteImport.update({
   id: '/ar/about',
   path: '/ar/about',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TrProductsIndexRoute = TrProductsIndexRouteImport.update({
-  id: '/tr/products/',
-  path: '/tr/products/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RuProductsIndexRoute = RuProductsIndexRouteImport.update({
-  id: '/ru/products/',
-  path: '/ru/products/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FrProductsIndexRoute = FrProductsIndexRouteImport.update({
-  id: '/fr/products/',
-  path: '/fr/products/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FaProductsIndexRoute = FaProductsIndexRouteImport.update({
-  id: '/fa/products/',
-  path: '/fa/products/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DeProductsIndexRoute = DeProductsIndexRouteImport.update({
-  id: '/de/products/',
-  path: '/de/products/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ArProductsIndexRoute = ArProductsIndexRouteImport.update({
-  id: '/ar/products/',
-  path: '/ar/products/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TrProductsYokohamaRoute = TrProductsYokohamaRouteImport.update({
@@ -775,7 +733,6 @@ export interface FileRoutesByFullPath {
   '/de/': typeof DeIndexRoute
   '/fa/': typeof FaIndexRoute
   '/fr/': typeof FrIndexRoute
-  '/products/': typeof ProductsIndexRoute
   '/ru/': typeof RuIndexRoute
   '/tr/': typeof TrIndexRoute
   '/ar/blog/$slug': typeof ArBlogSlugRoute
@@ -798,12 +755,6 @@ export interface FileRoutesByFullPath {
   '/tr/blog/$slug': typeof TrBlogSlugRoute
   '/tr/products/hi-tech': typeof TrProductsHiTechRoute
   '/tr/products/yokohama': typeof TrProductsYokohamaRoute
-  '/ar/products/': typeof ArProductsIndexRoute
-  '/de/products/': typeof DeProductsIndexRoute
-  '/fa/products/': typeof FaProductsIndexRoute
-  '/fr/products/': typeof FrProductsIndexRoute
-  '/ru/products/': typeof RuProductsIndexRoute
-  '/tr/products/': typeof TrProductsIndexRoute
   '/ar/products/hi-tech/$category': typeof ArProductsHiTechCategoryRouteWithChildren
   '/ar/products/yokohama/$category': typeof ArProductsYokohamaCategoryRouteWithChildren
   '/de/products/hi-tech/$category': typeof DeProductsHiTechCategoryRouteWithChildren
@@ -890,7 +841,6 @@ export interface FileRoutesByTo {
   '/de': typeof DeIndexRoute
   '/fa': typeof FaIndexRoute
   '/fr': typeof FrIndexRoute
-  '/products': typeof ProductsIndexRoute
   '/ru': typeof RuIndexRoute
   '/tr': typeof TrIndexRoute
   '/ar/blog/$slug': typeof ArBlogSlugRoute
@@ -913,12 +863,6 @@ export interface FileRoutesByTo {
   '/tr/blog/$slug': typeof TrBlogSlugRoute
   '/tr/products/hi-tech': typeof TrProductsHiTechRoute
   '/tr/products/yokohama': typeof TrProductsYokohamaRoute
-  '/ar/products': typeof ArProductsIndexRoute
-  '/de/products': typeof DeProductsIndexRoute
-  '/fa/products': typeof FaProductsIndexRoute
-  '/fr/products': typeof FrProductsIndexRoute
-  '/ru/products': typeof RuProductsIndexRoute
-  '/tr/products': typeof TrProductsIndexRoute
   '/ar/products/hi-tech/$category': typeof ArProductsHiTechCategoryRouteWithChildren
   '/ar/products/yokohama/$category': typeof ArProductsYokohamaCategoryRouteWithChildren
   '/de/products/hi-tech/$category': typeof DeProductsHiTechCategoryRouteWithChildren
@@ -1006,7 +950,6 @@ export interface FileRoutesById {
   '/de/': typeof DeIndexRoute
   '/fa/': typeof FaIndexRoute
   '/fr/': typeof FrIndexRoute
-  '/products/': typeof ProductsIndexRoute
   '/ru/': typeof RuIndexRoute
   '/tr/': typeof TrIndexRoute
   '/ar/blog_/$slug': typeof ArBlogSlugRoute
@@ -1029,12 +972,6 @@ export interface FileRoutesById {
   '/tr/blog_/$slug': typeof TrBlogSlugRoute
   '/tr/products/hi-tech': typeof TrProductsHiTechRoute
   '/tr/products/yokohama': typeof TrProductsYokohamaRoute
-  '/ar/products/': typeof ArProductsIndexRoute
-  '/de/products/': typeof DeProductsIndexRoute
-  '/fa/products/': typeof FaProductsIndexRoute
-  '/fr/products/': typeof FrProductsIndexRoute
-  '/ru/products/': typeof RuProductsIndexRoute
-  '/tr/products/': typeof TrProductsIndexRoute
   '/ar/products/hi-tech_/$category': typeof ArProductsHiTechCategoryRouteWithChildren
   '/ar/products/yokohama_/$category': typeof ArProductsYokohamaCategoryRouteWithChildren
   '/de/products/hi-tech_/$category': typeof DeProductsHiTechCategoryRouteWithChildren
@@ -1123,7 +1060,6 @@ export interface FileRouteTypes {
     | '/de/'
     | '/fa/'
     | '/fr/'
-    | '/products/'
     | '/ru/'
     | '/tr/'
     | '/ar/blog/$slug'
@@ -1146,12 +1082,6 @@ export interface FileRouteTypes {
     | '/tr/blog/$slug'
     | '/tr/products/hi-tech'
     | '/tr/products/yokohama'
-    | '/ar/products/'
-    | '/de/products/'
-    | '/fa/products/'
-    | '/fr/products/'
-    | '/ru/products/'
-    | '/tr/products/'
     | '/ar/products/hi-tech/$category'
     | '/ar/products/yokohama/$category'
     | '/de/products/hi-tech/$category'
@@ -1238,7 +1168,6 @@ export interface FileRouteTypes {
     | '/de'
     | '/fa'
     | '/fr'
-    | '/products'
     | '/ru'
     | '/tr'
     | '/ar/blog/$slug'
@@ -1261,12 +1190,6 @@ export interface FileRouteTypes {
     | '/tr/blog/$slug'
     | '/tr/products/hi-tech'
     | '/tr/products/yokohama'
-    | '/ar/products'
-    | '/de/products'
-    | '/fa/products'
-    | '/fr/products'
-    | '/ru/products'
-    | '/tr/products'
     | '/ar/products/hi-tech/$category'
     | '/ar/products/yokohama/$category'
     | '/de/products/hi-tech/$category'
@@ -1353,7 +1276,6 @@ export interface FileRouteTypes {
     | '/de/'
     | '/fa/'
     | '/fr/'
-    | '/products/'
     | '/ru/'
     | '/tr/'
     | '/ar/blog_/$slug'
@@ -1376,12 +1298,6 @@ export interface FileRouteTypes {
     | '/tr/blog_/$slug'
     | '/tr/products/hi-tech'
     | '/tr/products/yokohama'
-    | '/ar/products/'
-    | '/de/products/'
-    | '/fa/products/'
-    | '/fr/products/'
-    | '/ru/products/'
-    | '/tr/products/'
     | '/ar/products/hi-tech_/$category'
     | '/ar/products/yokohama_/$category'
     | '/de/products/hi-tech_/$category'
@@ -1469,7 +1385,6 @@ export interface RootRouteChildren {
   DeIndexRoute: typeof DeIndexRoute
   FaIndexRoute: typeof FaIndexRoute
   FrIndexRoute: typeof FrIndexRoute
-  ProductsIndexRoute: typeof ProductsIndexRoute
   RuIndexRoute: typeof RuIndexRoute
   TrIndexRoute: typeof TrIndexRoute
   ArBlogSlugRoute: typeof ArBlogSlugRoute
@@ -1492,12 +1407,6 @@ export interface RootRouteChildren {
   TrBlogSlugRoute: typeof TrBlogSlugRoute
   TrProductsHiTechRoute: typeof TrProductsHiTechRoute
   TrProductsYokohamaRoute: typeof TrProductsYokohamaRoute
-  ArProductsIndexRoute: typeof ArProductsIndexRoute
-  DeProductsIndexRoute: typeof DeProductsIndexRoute
-  FaProductsIndexRoute: typeof FaProductsIndexRoute
-  FrProductsIndexRoute: typeof FrProductsIndexRoute
-  RuProductsIndexRoute: typeof RuProductsIndexRoute
-  TrProductsIndexRoute: typeof TrProductsIndexRoute
   ArProductsHiTechCategoryRoute: typeof ArProductsHiTechCategoryRouteWithChildren
   ArProductsYokohamaCategoryRoute: typeof ArProductsYokohamaCategoryRouteWithChildren
   DeProductsHiTechCategoryRoute: typeof DeProductsHiTechCategoryRouteWithChildren
@@ -1589,13 +1498,6 @@ declare module '@tanstack/react-router' {
       path: '/ru'
       fullPath: '/ru/'
       preLoaderRoute: typeof RuIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/products/': {
-      id: '/products/'
-      path: '/products'
-      fullPath: '/products/'
-      preLoaderRoute: typeof ProductsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fr/': {
@@ -1939,48 +1841,6 @@ declare module '@tanstack/react-router' {
       path: '/ar/about'
       fullPath: '/ar/about'
       preLoaderRoute: typeof ArAboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tr/products/': {
-      id: '/tr/products/'
-      path: '/tr/products'
-      fullPath: '/tr/products/'
-      preLoaderRoute: typeof TrProductsIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ru/products/': {
-      id: '/ru/products/'
-      path: '/ru/products'
-      fullPath: '/ru/products/'
-      preLoaderRoute: typeof RuProductsIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fr/products/': {
-      id: '/fr/products/'
-      path: '/fr/products'
-      fullPath: '/fr/products/'
-      preLoaderRoute: typeof FrProductsIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/fa/products/': {
-      id: '/fa/products/'
-      path: '/fa/products'
-      fullPath: '/fa/products/'
-      preLoaderRoute: typeof FaProductsIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/de/products/': {
-      id: '/de/products/'
-      path: '/de/products'
-      fullPath: '/de/products/'
-      preLoaderRoute: typeof DeProductsIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ar/products/': {
-      id: '/ar/products/'
-      path: '/ar/products'
-      fullPath: '/ar/products/'
-      preLoaderRoute: typeof ArProductsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tr/products/yokohama': {
@@ -2569,7 +2429,6 @@ const rootRouteChildren: RootRouteChildren = {
   DeIndexRoute: DeIndexRoute,
   FaIndexRoute: FaIndexRoute,
   FrIndexRoute: FrIndexRoute,
-  ProductsIndexRoute: ProductsIndexRoute,
   RuIndexRoute: RuIndexRoute,
   TrIndexRoute: TrIndexRoute,
   ArBlogSlugRoute: ArBlogSlugRoute,
@@ -2592,12 +2451,6 @@ const rootRouteChildren: RootRouteChildren = {
   TrBlogSlugRoute: TrBlogSlugRoute,
   TrProductsHiTechRoute: TrProductsHiTechRoute,
   TrProductsYokohamaRoute: TrProductsYokohamaRoute,
-  ArProductsIndexRoute: ArProductsIndexRoute,
-  DeProductsIndexRoute: DeProductsIndexRoute,
-  FaProductsIndexRoute: FaProductsIndexRoute,
-  FrProductsIndexRoute: FrProductsIndexRoute,
-  RuProductsIndexRoute: RuProductsIndexRoute,
-  TrProductsIndexRoute: TrProductsIndexRoute,
   ArProductsHiTechCategoryRoute: ArProductsHiTechCategoryRouteWithChildren,
   ArProductsYokohamaCategoryRoute: ArProductsYokohamaCategoryRouteWithChildren,
   DeProductsHiTechCategoryRoute: DeProductsHiTechCategoryRouteWithChildren,
