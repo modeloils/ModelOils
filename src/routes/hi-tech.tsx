@@ -3051,23 +3051,6 @@ export function HiTechProduct() {
                 <p className="text-sm text-muted-foreground">{resolveText(detail.standards, locale)}</p>
               </div>
             )}
-
-            {/* Packaging */}
-            <div className="rounded border border-border bg-[image:var(--gradient-panel)] p-6">
-              <h3 className="mb-6 text-sm font-bold uppercase tracking-widest text-foreground">
-                {t.hitech.productPackaging}
-              </h3>
-              <div className="flex flex-wrap gap-3">
-                {detail.packaging.map((size) => (
-                  <span
-                    key={size}
-                    className="rounded border border-border bg-background/60 px-4 py-2 text-sm font-semibold text-foreground"
-                  >
-                    {size}
-                  </span>
-                ))}
-              </div>
-            </div>
           </div>
         )}
       </div>
