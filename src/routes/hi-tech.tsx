@@ -1,8 +1,7 @@
 ﻿import { createFileRoute, Outlet } from "@tanstack/react-router";
 import { useParams } from "@tanstack/react-router";
-import { useState, type ReactNode } from "react";
-import { createPortal } from "react-dom";
-import { ArrowRight, CheckCircle2, ChevronLeft, Flame, X, ZoomIn } from "lucide-react";
+import type { ReactNode } from "react";
+import { ArrowRight, CheckCircle2, ChevronLeft, Flame } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -2640,7 +2639,9 @@ export function HiTech({ extraSection }: { extraSection?: ReactNode } = {}) {
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading eyebrow={landing.rangeEyebrow} title={landing.rangeTitle} />
-            <div className="yokohama-accent-line mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div
+              className={`yokohama-accent-line mt-10 grid gap-4 sm:grid-cols-2 ${isYokohama ? "lg:grid-cols-4" : "lg:grid-cols-5"}`}
+            >
               {categories.map((category) => (
                 <LocaleLink
                   key={category.slug}
@@ -2954,8 +2955,6 @@ export function HiTechProduct() {
   const translatedSubcatTitle = parentSubcategorySlug ? (subcatTranslations[parentSubcategorySlug] ?? parentSubcategoryTitle) : parentSubcategoryTitle;
   const detail = productSlug ? catData?.details[productSlug] : undefined;
 
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-
   if (!product) {
     return (
       <SiteLayout>
@@ -2968,34 +2967,6 @@ export function HiTechProduct() {
 
   return (
     <SiteLayout>
-      {/* Lightbox */}
-      {lightboxOpen &&
-        createPortal(
-          <div
-            className="fixed inset-0 z-[100] grid h-[100dvh] w-screen cursor-pointer place-items-center overflow-hidden bg-black/90 p-4"
-            onClick={() => setLightboxOpen(false)}
-          >
-            <div
-              className="relative flex max-h-full max-w-full items-center justify-center"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <img
-                src={product.image}
-                alt={resolveName(product, locale)}
-                className="block h-auto max-h-[calc(100dvh-2rem)] w-auto max-w-[calc(100vw-2rem)] object-contain drop-shadow-2xl"
-              />
-              <button
-                onClick={() => setLightboxOpen(false)}
-                className="fixed right-4 top-4 z-[101] flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-100"
-                aria-label="Close"
-              >
-                <X className="h-5 w-5 text-gray-800" />
-              </button>
-            </div>
-          </div>,
-          document.body,
-        )}
-
       <div className={isYokohama ? "yokohama-theme yokohama-page-surface" : "bg-background"}>
         {/* Breadcrumb */}
         <div className="border-b border-border bg-background/80 py-3">
@@ -3015,21 +2986,15 @@ export function HiTechProduct() {
           <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
             {/* Circular product image — circle is the background, image floats on top */}
             <div className="flex w-full shrink-0 items-center justify-center lg:w-auto">
-              <button
-                type="button"
-                onClick={() => setLightboxOpen(true)}
-                className={`group relative flex h-64 w-64 cursor-zoom-in items-center justify-center rounded-full sm:h-72 sm:w-72 lg:h-80 lg:w-80 ${isYokohama ? "yokohama-product-halo" : ""}`}
-                aria-label={t.hitech.zoomImage}
+              <div
+                className={`group relative flex h-64 w-64 items-center justify-center rounded-full sm:h-72 sm:w-72 lg:h-80 lg:w-80 ${isYokohama ? "yokohama-product-halo" : ""}`}
               >
                 <img
                   src={product.image}
                   alt={resolveName(product, locale)}
                   className="relative z-10 h-56 w-auto max-w-[85%] object-contain transition-transform duration-300 group-hover:scale-105 sm:h-64 lg:h-72"
                 />
-                <span className="absolute bottom-5 right-5 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-white/80 shadow transition-opacity group-hover:opacity-100 sm:opacity-0">
-                  <ZoomIn className="h-4 w-4 text-gray-700" />
-                </span>
-              </button>
+              </div>
             </div>
 
             {/* Right: name + description */}
