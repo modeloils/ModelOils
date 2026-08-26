@@ -41,7 +41,7 @@
 :root {
   --radius: 0.5rem;
 
-  /* Model Oils: neutral industrial base shared by both product families. */
+  /* MODEL GRUP: neutral industrial base shared by both product families. */
   --brand-blue: oklch(0.66 0.18 248);
   --brand-red: oklch(0.64 0.215 27);
   --brand-green: oklch(0.64 0.16 154);

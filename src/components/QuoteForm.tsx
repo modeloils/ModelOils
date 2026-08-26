@@ -13,8 +13,8 @@ export function QuoteForm() {
     setSubmitting(true);
     const formData = new FormData(e.target as HTMLFormElement);
     formData.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY ?? "");
-    formData.append("subject", "Model Oils — New Quote Request");
-    formData.append("from_name", "Model Oils Website");
+    formData.append("subject", "MODEL GRUP — New Quote Request");
+    formData.append("from_name", "MODEL GRUP Website");
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",

@@ -1,6 +1,6 @@
 # HI-TECH retirement archive
 
-HI-TECH was removed from the public Model Oils website after commit `2748c58`.
+HI-TECH was removed from the public MODEL GRUP website after commit `2748c58`.
 Nothing was permanently deleted: the retired route source, catalog PDFs, product
 packshots, media galleries, and homepage artwork are stored below this directory.
 

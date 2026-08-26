@@ -1,4 +1,4 @@
-﻿import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
   createRootRouteWithContext,
@@ -76,14 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Model Oils | Yokohama Lubricants & Motor Oils for Export" },
+      { title: "MODEL GRUP | Yokohama Lubricants & Motor Oils for Export" },
       {
         name: "description",
         content:
-          "Model Oils supplies and distributes Yokohama motor oils, automotive fluids and VOLT batteries to distributors, wholesalers and international buyers.",
+          "MODEL GRUP supplies and distributes Yokohama motor oils, automotive fluids and VOLT batteries to distributors, wholesalers and international buyers.",
       },
-      { name: "author", content: "Model Oils" },
-      { property: "og:title", content: "Model Oils | Yokohama Products for Global Markets" },
+      { name: "author", content: "MODEL GRUP" },
+      { property: "og:title", content: "MODEL GRUP | Yokohama Products for Global Markets" },
       {
         property: "og:description",
         content:

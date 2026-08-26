@@ -5,7 +5,7 @@
 
 ## Goal
 
-Make the entire Model Oils site available in Turkish alongside English. English stays
+Make the entire MODEL GRUP site available in Turkish alongside English. English stays
 at the root (`/`, `/about`, …); Turkish lives under a `/tr` URL prefix so each language
 is independently indexable. Browser language auto-detects on first visit.
 

@@ -176,7 +176,7 @@ const brandCopy: Record<
 };
 
 export const Route = createFileRoute("/catalogs")({
-  head: () => ({ meta: [{ title: "Catalogues | Model Oils" }] }),
+  head: () => ({ meta: [{ title: "Catalogues | MODEL GRUP" }] }),
   component: Catalogs,
 });
 

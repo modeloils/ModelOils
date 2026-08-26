@@ -47,7 +47,7 @@ const en: SiteContent = {
   trustPoints: [
     {
       title: "International Supply Focus",
-      text: "Model Oils is oriented around B2B lubricant export and wholesale supply.",
+      text: "MODEL GRUP is oriented around B2B lubricant export and wholesale supply.",
     },
     {
       title: "Wide Lubricant Range",
@@ -137,7 +137,7 @@ const tr: SiteContent = {
   trustPoints: [
     {
       title: "Uluslararası Tedarik Odağı",
-      text: "Model Oils, B2B yağ ihracatı ve toptan tedarik etrafında konumlanmıştır.",
+      text: "MODEL GRUP, B2B yağ ihracatı ve toptan tedarik etrafında konumlanmıştır.",
     },
     {
       title: "Geniş Yağ Yelpazesi",
@@ -224,7 +224,7 @@ const ru: SiteContent = {
   trustPoints: [
     {
       title: "Фокус на международные поставки",
-      text: "Model Oils ориентирован на B2B экспорт и оптовые поставки смазочных материалов.",
+      text: "MODEL GRUP ориентирован на B2B экспорт и оптовые поставки смазочных материалов.",
     },
     {
       title: "Широкий ассортимент смазочных материалов",
@@ -314,7 +314,7 @@ const fa: SiteContent = {
   trustPoints: [
     {
       title: "تمرکز بر تأمین بین‌المللی",
-      text: "Model Oils حول صادرات B2B روانکار و تأمین عمده محور است.",
+      text: "MODEL GRUP حول صادرات B2B روانکار و تأمین عمده محور است.",
     },
     {
       title: "محدوده گسترده روانکار",
@@ -386,7 +386,7 @@ const ar: SiteContent = {
   trustPoints: [
     {
       title: "تركيز على التوريد الدولي",
-      text: "Model Oils موجهة حول تصدير B2B للمواد التشحيمية والتوريد بالجملة.",
+      text: "MODEL GRUP موجهة حول تصدير B2B للمواد التشحيمية والتوريد بالجملة.",
     },
     {
       title: "مجموعة واسعة من المواد التشحيمية",
@@ -458,7 +458,7 @@ const de: SiteContent = {
   trustPoints: [
     {
       title: "Internationaler Versorgungsfokus",
-      text: "Model Oils ist auf B2B-Schmierstoffexport und Großhandelsversorgung ausgerichtet.",
+      text: "MODEL GRUP ist auf B2B-Schmierstoffexport und Großhandelsversorgung ausgerichtet.",
     },
     {
       title: "Breites Schmierstoffsortiment",
@@ -545,7 +545,7 @@ const fr: SiteContent = {
   trustPoints: [
     {
       title: "Focus approvisionnement international",
-      text: "Model Oils est orienté autour de l'export B2B de lubrifiants et de l'approvisionnement en gros.",
+      text: "MODEL GRUP est orienté autour de l'export B2B de lubrifiants et de l'approvisionnement en gros.",
     },
     {
       title: "Large gamme de lubrifiants",

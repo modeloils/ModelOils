@@ -15,7 +15,7 @@ export function Header() {
         <LocaleLink to="/" className="flex min-w-0 items-center" onClick={() => setOpen(false)}>
           <img
             src="/model-oils/images/logo-main-2026-v2.png"
-            alt="Model Oils"
+            alt="MODEL GRUP"
             className="h-12 w-auto shrink-0 object-contain sm:h-16 lg:h-24"
           />
         </LocaleLink>

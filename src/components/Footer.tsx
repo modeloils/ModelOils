@@ -19,7 +19,7 @@ export function Footer({ variant = "default" }: { variant?: "default" | "yokoham
         <div className="sm:col-span-2 lg:col-span-1">
           <img
             src="/model-oils/images/logo-main-2026-v2.png"
-            alt="Model Oils"
+            alt="MODEL GRUP"
             className="h-20 w-auto object-contain lg:h-28"
           />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
@@ -91,7 +91,7 @@ export function Footer({ variant = "default" }: { variant?: "default" | "yokoham
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-7xl items-center justify-center px-4 py-5 text-center text-xs text-muted-foreground sm:px-6 lg:px-8">
           <p>
-            © {new Date().getFullYear()} Model Oils. {t.footer.rights}
+            © {new Date().getFullYear()} MODEL GRUP. {t.footer.rights}
           </p>
         </div>
       </div>
