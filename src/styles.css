@@ -398,8 +398,12 @@
     radial-gradient(circle at 91% 82%, oklch(0.5 0.14 154 / 0.06), transparent 29%);
 }
 
-.blog-mixed-theme > * {
+.blog-mixed-theme > :not(.mixed-header) {
   z-index: 1;
+}
+
+.blog-mixed-theme > .mixed-header {
+  z-index: 50;
 }
 
 .blog-mixed-theme .mixed-header::after,
