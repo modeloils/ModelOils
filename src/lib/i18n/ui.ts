@@ -251,10 +251,9 @@ const en: UIStrings = {
   },
   contact: {
     heroEyebrow: "Request a Quote",
-    heroTitle: "Let's Build Your Export Offer",
-    heroSubtitle:
-      "Tell us your target country, product type, packaging, and volume. Our team will prepare a suitable export offer.",
-    legalName: "Company",
+    heroTitle: "LET'S TALK BUSINESS",
+    heroSubtitle: "Contact our export team for product, pricing and distributorship inquiries.",
+    legalName: "Registered Company Name",
     email: "Email",
     whatsapp: "WhatsApp",
     exportInquiries: "Export Inquiries",
@@ -447,10 +446,9 @@ const tr: UIStrings = {
   },
   contact: {
     heroEyebrow: "Teklif Al",
-    heroTitle: "İhracat Teklifinizi Birlikte Oluşturalım",
-    heroSubtitle:
-      "Hedef ülkenizi, ürün tipini, ambalajı ve hacmi bize bildirin. Ekibimiz size uygun bir ihracat teklifi hazırlayacaktır.",
-    legalName: "Şirket",
+    heroTitle: "LET'S TALK BUSINESS",
+    heroSubtitle: "Contact our export team for product, pricing and distributorship inquiries.",
+    legalName: "Ticaret Ünvanı",
     email: "E-posta",
     whatsapp: "WhatsApp",
     exportInquiries: "İhracat Talepleri",
@@ -642,10 +640,9 @@ const ru: UIStrings = {
   },
   contact: {
     heroEyebrow: "Запросить цену",
-    heroTitle: "Давайте создадим ваше экспортное предложение",
-    heroSubtitle:
-      "Сообщите нам целевую страну, тип продукта, упаковку и объём. Наша команда подготовит подходящее экспортное предложение.",
-    legalName: "Компания",
+    heroTitle: "LET'S TALK BUSINESS",
+    heroSubtitle: "Contact our export team for product, pricing and distributorship inquiries.",
+    legalName: "Юридическое наименование",
     email: "Электронная почта",
     whatsapp: "WhatsApp",
     exportInquiries: "Экспортные запросы",
@@ -838,10 +835,9 @@ const fa: UIStrings = {
   },
   contact: {
     heroEyebrow: "درخواست قیمت",
-    heroTitle: "بیایید پیشنهاد صادراتی شما را بسازیم",
-    heroSubtitle:
-      "کشور هدف، نوع محصول، بسته‌بندی و حجم خود را به ما بگویید. تیم ما یک پیشنهاد صادراتی مناسب آماده خواهد کرد.",
-    legalName: "شرکت",
+    heroTitle: "LET'S TALK BUSINESS",
+    heroSubtitle: "Contact our export team for product, pricing and distributorship inquiries.",
+    legalName: "نام رسمی شرکت",
     email: "ایمیل",
     whatsapp: "واتساپ",
     exportInquiries: "استعلام صادرات",
@@ -1031,10 +1027,9 @@ const ar: UIStrings = {
   },
   contact: {
     heroEyebrow: "طلب عرض سعر",
-    heroTitle: "دعنا نبني عرض التصدير الخاص بك",
-    heroSubtitle:
-      "أخبرنا بالدولة المستهدفة ونوع المنتج والتغليف والحجم. سيعدّ فريقنا عرضاً مناسباً للتصدير.",
-    legalName: "الشركة",
+    heroTitle: "LET'S TALK BUSINESS",
+    heroSubtitle: "Contact our export team for product, pricing and distributorship inquiries.",
+    legalName: "الاسم القانوني للشركة",
     email: "البريد الإلكتروني",
     whatsapp: "واتساب",
     exportInquiries: "استفسارات التصدير",
@@ -1225,9 +1220,9 @@ const de: UIStrings = {
   },
   contact: {
     heroEyebrow: "Kontakt",
-    heroTitle: "Großhandelsangebot anfordern",
-    heroSubtitle: "Teilen Sie uns Ihr Zielland, Produkttyp, Verpackung und Volumen mit.",
-    legalName: "Unternehmen",
+    heroTitle: "LET'S TALK BUSINESS",
+    heroSubtitle: "Contact our export team for product, pricing and distributorship inquiries.",
+    legalName: "Eingetragener Firmenname",
     email: "E-Mail",
     whatsapp: "WhatsApp",
     exportInquiries: "Export-Anfragen",
@@ -1422,9 +1417,9 @@ const fr: UIStrings = {
   },
   contact: {
     heroEyebrow: "Contact",
-    heroTitle: "Demander un devis en gros",
-    heroSubtitle: "Indiquez-nous votre pays cible, le type de produit, l'emballage et le volume.",
-    legalName: "Société",
+    heroTitle: "LET'S TALK BUSINESS",
+    heroSubtitle: "Contact our export team for product, pricing and distributorship inquiries.",
+    legalName: "Raison sociale",
     email: "E-mail",
     whatsapp: "WhatsApp",
     exportInquiries: "Demandes d'export",

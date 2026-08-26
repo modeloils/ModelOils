@@ -7,6 +7,8 @@ export function PageHero({
   centered = false,
   compact = false,
   backgroundImage,
+  backgroundImageClassName = "opacity-40",
+  backgroundOverlayClassName = "bg-background/70",
   transparent = false,
   headingLevel: Heading = "h1",
   children,
@@ -17,6 +19,8 @@ export function PageHero({
   centered?: boolean;
   compact?: boolean;
   backgroundImage?: string;
+  backgroundImageClassName?: string;
+  backgroundOverlayClassName?: string;
   transparent?: boolean;
   headingLevel?: "h1" | "h2";
   children?: ReactNode;
@@ -36,10 +40,12 @@ export function PageHero({
           src={backgroundImage}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-40"
+          className={`pointer-events-none absolute inset-0 h-full w-full object-cover ${backgroundImageClassName}`}
         />
       )}
-      {backgroundImage && <div className="pointer-events-none absolute inset-0 bg-background/70" />}
+      {backgroundImage && (
+        <div className={`pointer-events-none absolute inset-0 ${backgroundOverlayClassName}`} />
+      )}
       {!transparent && (
         <div className="pointer-events-none tech-grid absolute inset-0 opacity-40" />
       )}

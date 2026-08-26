@@ -1,7 +1,7 @@
 export const ASSET_BASE = "/model-oils";
 
 export const CONTACT = {
-  legalName: "MODEL GRUP",
+  legalName: "MODEL PETROL ÜRÜNLERİ OTOMOTİV SANAYİ TİCARET LİMİTED ŞİRKETİ",
   email: "info@modelgrup.com",
   emailDisplay: "info [at] modelgrup.com",
   phone: "+90 533 456 7975",
