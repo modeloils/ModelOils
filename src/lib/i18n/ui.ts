@@ -446,8 +446,9 @@ const tr: UIStrings = {
   },
   contact: {
     heroEyebrow: "Teklif Al",
-    heroTitle: "LET'S TALK BUSINESS",
-    heroSubtitle: "Contact our export team for product, pricing and distributorship inquiries.",
+    heroTitle: "İŞ KONUŞALIM",
+    heroSubtitle:
+      "Ürün, fiyatlandırma ve distribütörlük talepleriniz için ihracat ekibimizle iletişime geçin.",
     legalName: "Ticaret Ünvanı",
     email: "E-posta",
     whatsapp: "WhatsApp",
@@ -640,8 +641,9 @@ const ru: UIStrings = {
   },
   contact: {
     heroEyebrow: "Запросить цену",
-    heroTitle: "LET'S TALK BUSINESS",
-    heroSubtitle: "Contact our export team for product, pricing and distributorship inquiries.",
+    heroTitle: "ОБСУДИМ СОТРУДНИЧЕСТВО",
+    heroSubtitle:
+      "Свяжитесь с нашей экспортной командой по вопросам продукции, цен и дистрибьюторства.",
     legalName: "Юридическое наименование",
     email: "Электронная почта",
     whatsapp: "WhatsApp",
@@ -835,8 +837,9 @@ const fa: UIStrings = {
   },
   contact: {
     heroEyebrow: "درخواست قیمت",
-    heroTitle: "LET'S TALK BUSINESS",
-    heroSubtitle: "Contact our export team for product, pricing and distributorship inquiries.",
+    heroTitle: "بیایید درباره همکاری تجاری صحبت کنیم",
+    heroSubtitle:
+      "برای پرسش‌های مربوط به محصولات، قیمت‌گذاری و اخذ نمایندگی با تیم صادرات ما تماس بگیرید.",
     legalName: "نام رسمی شرکت",
     email: "ایمیل",
     whatsapp: "واتساپ",
@@ -1027,8 +1030,8 @@ const ar: UIStrings = {
   },
   contact: {
     heroEyebrow: "طلب عرض سعر",
-    heroTitle: "LET'S TALK BUSINESS",
-    heroSubtitle: "Contact our export team for product, pricing and distributorship inquiries.",
+    heroTitle: "لنتحدث عن الأعمال",
+    heroSubtitle: "تواصل مع فريق التصدير لدينا للاستفسار عن المنتجات والأسعار وفرص التوزيع.",
     legalName: "الاسم القانوني للشركة",
     email: "البريد الإلكتروني",
     whatsapp: "واتساب",
@@ -1220,8 +1223,9 @@ const de: UIStrings = {
   },
   contact: {
     heroEyebrow: "Kontakt",
-    heroTitle: "LET'S TALK BUSINESS",
-    heroSubtitle: "Contact our export team for product, pricing and distributorship inquiries.",
+    heroTitle: "LASSEN SIE UNS ÜBER GESCHÄFTE SPRECHEN",
+    heroSubtitle:
+      "Kontaktieren Sie unser Exportteam für Anfragen zu Produkten, Preisen und Vertriebspartnerschaften.",
     legalName: "Eingetragener Firmenname",
     email: "E-Mail",
     whatsapp: "WhatsApp",
@@ -1417,8 +1421,9 @@ const fr: UIStrings = {
   },
   contact: {
     heroEyebrow: "Contact",
-    heroTitle: "LET'S TALK BUSINESS",
-    heroSubtitle: "Contact our export team for product, pricing and distributorship inquiries.",
+    heroTitle: "PARLONS AFFAIRES",
+    heroSubtitle:
+      "Contactez notre équipe export pour toute demande concernant les produits, les tarifs et les partenariats de distribution.",
     legalName: "Raison sociale",
     email: "E-mail",
     whatsapp: "WhatsApp",
