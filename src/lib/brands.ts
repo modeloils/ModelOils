@@ -19,7 +19,7 @@ const YOKOHAMA_LANDING: Record<Locale, YokohamaLanding> = {
     heroTitle: "Yokohama — Japanese Quality, Supplied by Model Petrol",
     heroSubtitle:
       "Japanese-quality lubricants and batteries, supplied to distributors and wholesalers through Model Petrol.",
-    becomeDistributor: "Become a Yokohama Distributor",
+    becomeDistributor: "Become a Yokohama Motor Oil Distributor",
     whyEyebrow: "Why Yokohama",
     whyTitle: "Japanese Engineering. Export-Ready Supply.",
     bullets: [
@@ -36,7 +36,7 @@ const YOKOHAMA_LANDING: Record<Locale, YokohamaLanding> = {
     heroTitle: "Yokohama — Japon Kalitesi, Model Petrol Güvencesiyle",
     heroSubtitle:
       "Model Petrol aracılığıyla distribütörlere ve toptancılara sunulan Japon kalitesinde yağlar ve aküler.",
-    becomeDistributor: "Yokohama Distribütörü Olun",
+    becomeDistributor: "Yokohama Motor Yağı Distribütörü Olun",
     whyEyebrow: "Neden Yokohama",
     whyTitle: "Japon Mühendisliği. İhracata Hazır Tedarik.",
     bullets: [
@@ -53,7 +53,7 @@ const YOKOHAMA_LANDING: Record<Locale, YokohamaLanding> = {
     heroTitle: "Yokohama — японское качество от Model Petrol",
     heroSubtitle:
       "Смазочные материалы и аккумуляторы японского качества, поставляемые дистрибьюторам и оптовикам через Model Petrol.",
-    becomeDistributor: "Стать дистрибьютором Yokohama",
+    becomeDistributor: "Стать дистрибьютором моторных масел Yokohama",
     whyEyebrow: "Почему Yokohama",
     whyTitle: "Японская инженерия. Готовность к экспорту.",
     bullets: [
@@ -70,7 +70,7 @@ const YOKOHAMA_LANDING: Record<Locale, YokohamaLanding> = {
     heroTitle: "یوکوهاما — کیفیت ژاپنی با Model Petrol",
     heroSubtitle:
       "روانکارها و باتری‌های با کیفیت ژاپنی، عرضه‌شده به توزیع‌کنندگان و عمده‌فروشان از طریق Model Petrol.",
-    becomeDistributor: "نماینده یوکوهاما شوید",
+    becomeDistributor: "نماینده روغن موتور یوکوهاما شوید",
     whyEyebrow: "چرا یوکوهاما",
     whyTitle: "مهندسی ژاپنی. آماده صادرات.",
     bullets: [
@@ -87,7 +87,7 @@ const YOKOHAMA_LANDING: Record<Locale, YokohamaLanding> = {
     heroTitle: "يوكوهاما — جودة يابانية عبر Model Petrol",
     heroSubtitle:
       "مواد تشحيم وبطاريات بجودة يابانية، تُورَّد للموزعين وتجار الجملة عبر Model Petrol.",
-    becomeDistributor: "كن موزعاً ليوكوهاما",
+    becomeDistributor: "كن موزعاً لزيوت محركات يوكوهاما",
     whyEyebrow: "لماذا يوكوهاما",
     whyTitle: "هندسة يابانية. جاهزية للتصدير.",
     bullets: [
@@ -104,7 +104,7 @@ const YOKOHAMA_LANDING: Record<Locale, YokohamaLanding> = {
     heroTitle: "Yokohama — japanische Qualität von Model Petrol",
     heroSubtitle:
       "Schmierstoffe und Batterien in japanischer Qualität, über Model Petrol an Distributoren und Großhändler geliefert.",
-    becomeDistributor: "Yokohama-Distributor werden",
+    becomeDistributor: "Yokohama Motoröl-Distributor werden",
     whyEyebrow: "Warum Yokohama",
     whyTitle: "Japanische Technik. Exportbereite Versorgung.",
     bullets: [
@@ -121,7 +121,7 @@ const YOKOHAMA_LANDING: Record<Locale, YokohamaLanding> = {
     heroTitle: "Yokohama — la qualité japonaise par Model Petrol",
     heroSubtitle:
       "Des lubrifiants et batteries de qualité japonaise, fournis aux distributeurs et grossistes via Model Petrol.",
-    becomeDistributor: "Devenir distributeur Yokohama",
+    becomeDistributor: "Devenir distributeur d'huiles moteur Yokohama",
     whyEyebrow: "Pourquoi Yokohama",
     whyTitle: "Ingénierie japonaise. Prêt pour l'export.",
     bullets: [

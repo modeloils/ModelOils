@@ -198,11 +198,11 @@ const en: UIStrings = {
   },
   flagship: {
     badge: "Distributed Brand",
-    body: "Yokohama is the lubricant and battery brand distributed by Model Oils for regional and international markets. Its broad portfolio supports passenger vehicles, heavy-duty transport, industry, marine operations and agriculture.",
+    body: "Model Oils is the authorized distributor of Yokohama motor oils for the Middle East and Europe. The motor oil portfolio supports passenger vehicles, heavy-duty transport, industry, marine operations and agriculture.",
     becomeDistributor: "Become a Distributor",
     viewRange: "View Yokohama Range",
     badges: [
-      "Distributed by Model Oils",
+      "Authorized Motor Oil Distributor",
       "Wide Product Range",
       "Export Ready",
       "Technical Support",
@@ -238,13 +238,13 @@ const en: UIStrings = {
   },
   about: {
     heroEyebrow: "About Model Oils",
-    heroTitle: "International Lubricant Exporter and Yokohama Distributor",
+    heroTitle: "International Lubricant Exporter and Authorized Yokohama Motor Oil Distributor",
     heroSubtitle:
-      "Model Oils is a B2B lubricant exporter, supplier and Yokohama distributor serving wholesalers, distributors and industrial buyers across international markets.",
+      "Model Oils is a B2B lubricant exporter and supplier, and the authorized distributor of Yokohama motor oils for the Middle East and Europe.",
     focusEyebrow: "Our Focus",
     focusTitle: "Built for International Supply",
     focusP1:
-      "We distribute Yokohama lubricants and batteries while supporting international buyers with container ordering, flexible supply and export documentation.",
+      "We distribute Yokohama motor oils while supporting international buyers with container ordering, flexible supply and export documentation.",
     focusP2:
       "Our team works with distributors, wholesalers, fleets and industrial buyers to match products and supply formats to each market.",
     partnerCta: "Partner With Model Oils",
@@ -398,11 +398,11 @@ const tr: UIStrings = {
   },
   flagship: {
     badge: "Distribütör Markamız",
-    body: "Yokohama, Model Oils'in bölgesel ve uluslararası pazarlar için distribütörlüğünü yaptığı yağ ve akü markasıdır. Geniş ürün portföyü; binek araçlardan ağır hizmete, endüstriyel uygulamalardan denizcilik ve tarıma kadar birçok ihtiyaca cevap verir.",
+    body: "Model Oils, Orta Doğu ve Avrupa için Yokohama motor yağlarının yetkili distribütörüdür. Motor yağı portföyü; binek araçlardan ağır hizmete, endüstriyel uygulamalardan denizcilik ve tarıma kadar birçok ihtiyaca cevap verir.",
     becomeDistributor: "Distribütörlük İçin İletişime Geçin",
     viewRange: "Yokohama Serisini Görün",
     badges: [
-      "Model Oils Distribütörlüğü",
+      "Yetkili Motor Yağı Distribütörü",
       "Geniş Ürün Yelpazesi",
       "İhracata Hazır",
       "Teknik Destek",
@@ -438,13 +438,13 @@ const tr: UIStrings = {
   },
   about: {
     heroEyebrow: "Model Oils Hakkında",
-    heroTitle: "Uluslararası Yağ İhracatçısı ve Yokohama Distribütörü",
+    heroTitle: "Uluslararası Yağ İhracatçısı ve Yetkili Yokohama Motor Yağı Distribütörü",
     heroSubtitle:
-      "Model Oils; uluslararası pazarlarda toptancılara, distribütörlere ve endüstriyel alıcılara hizmet veren bir B2B yağ ihracatçısı, tedarikçisi ve Yokohama distribütörüdür.",
+      "Model Oils; bir B2B yağ ihracatçısı ve tedarikçisi, ayrıca Orta Doğu ve Avrupa için Yokohama motor yağlarının yetkili distribütörüdür.",
     focusEyebrow: "Odağımız",
     focusTitle: "Uluslararası Tedarik İçin Hazır",
     focusP1:
-      "Yokohama yağ ve akü ürünlerinin distribütörlüğünü yaparken uluslararası alıcıları konteyner siparişi, esnek tedarik ve ihracat dokümantasyonuyla destekliyoruz.",
+      "Yokohama motor yağlarının distribütörlüğünü yaparken uluslararası alıcıları konteyner siparişi, esnek tedarik ve ihracat dokümantasyonuyla destekliyoruz.",
     focusP2:
       "Ekibimiz; ürün ve tedarik formatlarını her pazara uygun hale getirmek için distribütörler, toptancılar, filolar ve endüstriyel alıcılarla çalışır.",
     partnerCta: "Model Oils ile İş Ortağı Olun",
@@ -598,11 +598,11 @@ const ru: UIStrings = {
   },
   flagship: {
     badge: "Дистрибьюторский бренд",
-    body: "Yokohama — бренд смазочных материалов и аккумуляторов, дистрибьютором которого Model Oils является на региональных и международных рынках. Широкий ассортимент охватывает легковые автомобили, тяжелый транспорт, промышленность, судоходство и сельское хозяйство.",
+    body: "Model Oils — официальный дистрибьютор моторных масел Yokohama на Ближнем Востоке и в Европе. Ассортимент моторных масел охватывает легковые автомобили, тяжелый транспорт, промышленность, судоходство и сельское хозяйство.",
     becomeDistributor: "Стать дистрибьютором",
     viewRange: "Посмотреть линейку Yokohama",
     badges: [
-      "Дистрибуция Model Oils",
+      "Официальный дистрибьютор моторных масел",
       "Широкий ассортимент",
       "Готово к экспорту",
       "Техническая поддержка",
@@ -638,13 +638,13 @@ const ru: UIStrings = {
   },
   about: {
     heroEyebrow: "О Model Oils",
-    heroTitle: "Международный экспортёр смазочных материалов и дистрибьютор Yokohama",
+    heroTitle: "Международный экспортёр и официальный дистрибьютор моторных масел Yokohama",
     heroSubtitle:
-      "Model Oils — B2B-экспортёр, поставщик смазочных материалов и дистрибьютор Yokohama для оптовиков, дистрибьюторов и промышленных покупателей на международных рынках.",
+      "Model Oils — B2B-экспортёр и поставщик смазочных материалов, а также официальный дистрибьютор моторных масел Yokohama на Ближнем Востоке и в Европе.",
     focusEyebrow: "Наш фокус",
     focusTitle: "Создано для международных поставок",
     focusP1:
-      "Мы дистрибутируем смазочные материалы и аккумуляторы Yokohama и поддерживаем международных покупателей контейнерными заказами, гибкими поставками и экспортной документацией.",
+      "Мы дистрибутируем моторные масла Yokohama и поддерживаем международных покупателей контейнерными заказами, гибкими поставками и экспортной документацией.",
     focusP2: "Наша команда помогает подобрать продукцию и формат поставки для каждого рынка.",
     partnerCta: "Стать партнёром Model Oils",
     whyEyebrow: "Почему Model Oils",
@@ -799,11 +799,11 @@ const fa: UIStrings = {
   },
   flagship: {
     badge: "برند تحت توزیع",
-    body: "Yokohama برند روانکار و باتری تحت توزیع Model Oils برای بازارهای منطقه‌ای و بین‌المللی است. سبد گسترده آن خودروهای سواری، حمل‌ونقل سنگین، صنعت، دریانوردی و کشاورزی را پوشش می‌دهد.",
+    body: "Model Oils توزیع‌کننده رسمی روغن موتورهای Yokohama در خاورمیانه و اروپا است. سبد روغن موتور آن کاربردهای خودروهای سواری، حمل‌ونقل سنگین، صنعت، دریانوردی و کشاورزی را پوشش می‌دهد.",
     becomeDistributor: "درخواست نمایندگی",
     viewRange: "مشاهده محصولات Yokohama",
     badges: [
-      "توزیع توسط Model Oils",
+      "توزیع‌کننده رسمی روغن موتور",
       "سبد گسترده محصولات",
       "آماده صادرات",
       "پشتیبانی فنی",
@@ -839,13 +839,13 @@ const fa: UIStrings = {
   },
   about: {
     heroEyebrow: "درباره Model Oils",
-    heroTitle: "صادرکننده بین‌المللی روانکار و توزیع‌کننده Yokohama",
+    heroTitle: "صادرکننده بین‌المللی روانکار و توزیع‌کننده رسمی روغن موتور Yokohama",
     heroSubtitle:
-      "Model Oils صادرکننده و تأمین‌کننده B2B روانکار و توزیع‌کننده Yokohama برای عمده‌فروشان، توزیع‌کنندگان و خریداران صنعتی در بازارهای بین‌المللی است.",
+      "Model Oils صادرکننده و تأمین‌کننده B2B روانکار و توزیع‌کننده رسمی روغن موتورهای Yokohama در خاورمیانه و اروپا است.",
     focusEyebrow: "تمرکز ما",
     focusTitle: "آماده برای تأمین بین‌المللی",
     focusP1:
-      "ما روانکارها و باتری‌های Yokohama را توزیع می‌کنیم و با سفارش کانتینری، تأمین انعطاف‌پذیر و اسناد صادراتی از خریداران بین‌المللی پشتیبانی می‌کنیم.",
+      "ما روغن موتورهای Yokohama را توزیع می‌کنیم و با سفارش کانتینری، تأمین انعطاف‌پذیر و اسناد صادراتی از خریداران بین‌المللی پشتیبانی می‌کنیم.",
     focusP2: "تیم ما برای انتخاب محصول و روش تأمین مناسب هر بازار با شرکای تجاری همکاری می‌کند.",
     partnerCta: "همکاری با Model Oils",
     whyEyebrow: "چرا Model Oils",
@@ -997,10 +997,16 @@ const ar: UIStrings = {
   },
   flagship: {
     badge: "علامتنا الموزعة",
-    body: "Yokohama هي علامة الزيوت والبطاريات التي توزعها Model Oils للأسواق الإقليمية والدولية. تغطي مجموعتها الواسعة سيارات الركاب والنقل الثقيل والصناعة والعمليات البحرية والزراعة.",
+    body: "Model Oils هي الموزع المعتمد لزيوت محركات Yokohama في الشرق الأوسط وأوروبا. تغطي مجموعة زيوت المحركات سيارات الركاب والنقل الثقيل والصناعة والعمليات البحرية والزراعة.",
     becomeDistributor: "كن موزعاً",
     viewRange: "شاهد مجموعة Yokohama",
-    badges: ["توزيع Model Oils", "مجموعة واسعة", "جاهز للتصدير", "دعم فني", "توريد طويل الأمد"],
+    badges: [
+      "الموزع المعتمد لزيوت المحركات",
+      "مجموعة واسعة",
+      "جاهز للتصدير",
+      "دعم فني",
+      "توريد طويل الأمد",
+    ],
   },
   exportHome: {
     eyebrow: "التصدير والجملة",
@@ -1031,13 +1037,13 @@ const ar: UIStrings = {
   },
   about: {
     heroEyebrow: "عن Model Oils",
-    heroTitle: "مصدّر دولي للزيوت وموزع Yokohama",
+    heroTitle: "مصدّر دولي للزيوت وموزع معتمد لزيوت محركات Yokohama",
     heroSubtitle:
-      "Model Oils هي مصدّر ومورد B2B للزيوت وموزع Yokohama لخدمة تجار الجملة والموزعين والمشترين الصناعيين في الأسواق الدولية.",
+      "Model Oils هي مصدّر ومورد B2B للزيوت والموزع المعتمد لزيوت محركات Yokohama في الشرق الأوسط وأوروبا.",
     focusEyebrow: "تركيزنا",
     focusTitle: "جاهزون للتوريد الدولي",
     focusP1:
-      "نوزع زيوت وبطاريات Yokohama وندعم المشترين الدوليين بطلبات الحاويات والتوريد المرن ووثائق التصدير.",
+      "نوزع زيوت محركات Yokohama وندعم المشترين الدوليين بطلبات الحاويات والتوريد المرن ووثائق التصدير.",
     focusP2: "يعمل فريقنا مع الشركاء لاختيار المنتجات وصيغ التوريد الملائمة لكل سوق.",
     partnerCta: "كن شريكاً لـ Model Oils",
     whyEyebrow: "لماذا Model Oils",
@@ -1189,11 +1195,11 @@ const de: UIStrings = {
   },
   flagship: {
     badge: "Vertriebene Marke",
-    body: "Yokohama ist die von Model Oils für regionale und internationale Märkte vertriebene Schmierstoff- und Batteriemarke. Das breite Portfolio bedient Pkw, Schwertransport, Industrie, Schifffahrt und Landwirtschaft.",
+    body: "Model Oils ist autorisierter Distributor für Yokohama Motoröle im Nahen Osten und in Europa. Das Motorölportfolio bedient Pkw, Schwertransport, Industrie, Schifffahrt und Landwirtschaft.",
     becomeDistributor: "Distributor werden",
     viewRange: "Yokohama Sortiment ansehen",
     badges: [
-      "Vertrieb durch Model Oils",
+      "Autorisierter Motoröl-Distributor",
       "Breites Sortiment",
       "Exportbereit",
       "Technischer Support",
@@ -1229,13 +1235,14 @@ const de: UIStrings = {
   },
   about: {
     heroEyebrow: "Über Model Oils",
-    heroTitle: "Internationaler Schmierstoffexporteur und Yokohama Distributor",
+    heroTitle:
+      "Internationaler Schmierstoffexporteur und autorisierter Yokohama Motoröl-Distributor",
     heroSubtitle:
-      "Model Oils ist B2B-Schmierstoffexporteur, Lieferant und Yokohama Distributor für Großhändler, Distributoren und Industriekunden auf internationalen Märkten.",
+      "Model Oils ist B2B-Schmierstoffexporteur und Lieferant sowie autorisierter Distributor für Yokohama Motoröle im Nahen Osten und in Europa.",
     focusEyebrow: "Unser Fokus",
     focusTitle: "Für internationale Versorgung ausgelegt",
     focusP1:
-      "Wir vertreiben Yokohama Schmierstoffe und Batterien und unterstützen internationale Käufer mit Containerbestellungen, flexibler Versorgung und Exportdokumentation.",
+      "Wir vertreiben Yokohama Motoröle und unterstützen internationale Käufer mit Containerbestellungen, flexibler Versorgung und Exportdokumentation.",
     focusP2: "Unser Team stimmt Produkte und Lieferformate auf die Anforderungen jedes Marktes ab.",
     partnerCta: "Partner von Model Oils werden",
     whyEyebrow: "Warum Model Oils",
@@ -1389,11 +1396,11 @@ const fr: UIStrings = {
   },
   flagship: {
     badge: "Marque distribuée",
-    body: "Yokohama est la marque de lubrifiants et de batteries distribuée par Model Oils sur les marchés régionaux et internationaux. Sa large gamme couvre les véhicules particuliers, le transport lourd, l'industrie, le maritime et l'agriculture.",
+    body: "Model Oils est le distributeur agréé des huiles moteur Yokohama au Moyen-Orient et en Europe. La gamme d'huiles moteur couvre les véhicules particuliers, le transport lourd, l'industrie, le maritime et l'agriculture.",
     becomeDistributor: "Devenir distributeur",
     viewRange: "Voir la gamme Yokohama",
     badges: [
-      "Distribution Model Oils",
+      "Distributeur agréé d'huiles moteur",
       "Large gamme",
       "Prêt à l'export",
       "Support technique",
@@ -1429,13 +1436,13 @@ const fr: UIStrings = {
   },
   about: {
     heroEyebrow: "À propos de Model Oils",
-    heroTitle: "Exportateur international de lubrifiants et distributeur Yokohama",
+    heroTitle: "Exportateur international et distributeur agréé des huiles moteur Yokohama",
     heroSubtitle:
-      "Model Oils est un exportateur et fournisseur B2B de lubrifiants ainsi qu'un distributeur Yokohama pour les grossistes, distributeurs et acheteurs industriels internationaux.",
+      "Model Oils est un exportateur et fournisseur B2B de lubrifiants ainsi que le distributeur agréé des huiles moteur Yokohama au Moyen-Orient et en Europe.",
     focusEyebrow: "Notre priorité",
     focusTitle: "Conçu pour l'approvisionnement international",
     focusP1:
-      "Nous distribuons les lubrifiants et batteries Yokohama et accompagnons les acheteurs internationaux avec les commandes en conteneur, l'approvisionnement flexible et la documentation d'exportation.",
+      "Nous distribuons les huiles moteur Yokohama et accompagnons les acheteurs internationaux avec les commandes en conteneur, l'approvisionnement flexible et la documentation d'exportation.",
     focusP2:
       "Notre équipe adapte les produits et formats d'approvisionnement aux besoins de chaque marché.",
     partnerCta: "Devenir partenaire de Model Oils",
@@ -1582,7 +1589,7 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     ),
     about: pageMeta(
       "About Model Oils",
-      "International lubricant exporter, supplier and Yokohama distributor.",
+      "International lubricant exporter, supplier and authorized distributor of Yokohama motor oils.",
     ),
     contact: pageMeta(
       "Request a Quote | Model Oils",
@@ -1597,8 +1604,8 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "Lubricant solutions for automotive, industrial, fleet, agriculture and marine operations.",
     ),
     yokohama: pageMeta(
-      "Yokohama Motor Oil | Distributed by Model Oils",
-      "Explore Yokohama oils and VOLT batteries distributed by Model Oils.",
+      "Yokohama Motor Oils | Authorized Distributor Model Oils",
+      "Explore Yokohama motor oils distributed by Model Oils for the Middle East and Europe.",
     ),
     media: pageMeta("Media | Model Oils", "Company news and media updates from Model Oils."),
     blog: pageMeta(
@@ -1613,7 +1620,7 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     ),
     about: pageMeta(
       "Model Oils Hakkında",
-      "Uluslararası yağ ihracatçısı, tedarikçisi ve Yokohama distribütörü.",
+      "Uluslararası yağ ihracatçısı, tedarikçisi ve Yokohama motor yağları yetkili distribütörü.",
     ),
     contact: pageMeta(
       "Teklif Al | Model Oils",
@@ -1628,8 +1635,8 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "Otomotiv, endüstri, filo, tarım ve denizcilik için yağ çözümleri.",
     ),
     yokohama: pageMeta(
-      "Yokohama Motor Oil | Model Oils Distribütörlüğü",
-      "Model Oils distribütörlüğündeki Yokohama yağlarını ve VOLT akülerini keşfedin.",
+      "Yokohama Motor Yağları | Yetkili Distribütör Model Oils",
+      "Model Oils'in Orta Doğu ve Avrupa distribütörlüğündeki Yokohama motor yağlarını keşfedin.",
     ),
     media: pageMeta(
       "Medya | Model Oils",
@@ -1647,7 +1654,7 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     ),
     about: pageMeta(
       "О Model Oils",
-      "Международный экспортёр, поставщик смазочных материалов и дистрибьютор Yokohama.",
+      "Международный экспортёр, поставщик и официальный дистрибьютор моторных масел Yokohama.",
     ),
     contact: pageMeta(
       "Запросить предложение | Model Oils",
@@ -1662,8 +1669,8 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "Смазочные решения для транспорта, промышленности, сельского хозяйства и флота.",
     ),
     yokohama: pageMeta(
-      "Yokohama Motor Oil | Дистрибьютор Model Oils",
-      "Откройте масла Yokohama и аккумуляторы VOLT от Model Oils.",
+      "Моторные масла Yokohama | Официальный дистрибьютор Model Oils",
+      "Откройте моторные масла Yokohama от Model Oils для Ближнего Востока и Европы.",
     ),
     media: pageMeta("Медиа | Model Oils", "Новости компании и медиа-обновления Model Oils."),
     blog: pageMeta(
@@ -1678,7 +1685,7 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     ),
     about: pageMeta(
       "درباره Model Oils",
-      "صادرکننده و تأمین‌کننده بین‌المللی روانکار و توزیع‌کننده Yokohama.",
+      "صادرکننده و تأمین‌کننده بین‌المللی و توزیع‌کننده رسمی روغن موتور Yokohama.",
     ),
     contact: pageMeta(
       "درخواست قیمت | Model Oils",
@@ -1693,8 +1700,8 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "راهکارهای روانکاری برای خودرو، صنعت، ناوگان، کشاورزی و دریانوردی.",
     ),
     yokohama: pageMeta(
-      "Yokohama Motor Oil | توزیع Model Oils",
-      "روغن‌های Yokohama و باتری‌های VOLT را مشاهده کنید.",
+      "روغن موتور Yokohama | توزیع‌کننده رسمی Model Oils",
+      "روغن موتورهای Yokohama را با توزیع Model Oils در خاورمیانه و اروپا مشاهده کنید.",
     ),
     media: pageMeta("رسانه | Model Oils", "اخبار شرکت و به‌روزرسانی‌های رسانه‌ای Model Oils."),
     blog: pageMeta("وبلاگ | Model Oils", "راهنماهای فنی روانکار و منابع صنعتی Model Oils."),
@@ -1704,7 +1711,7 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "Model Oils | زيوت Yokohama للتصدير",
       "زيوت وبطاريات Yokohama للموزعين وتجار الجملة والمشترين الدوليين.",
     ),
-    about: pageMeta("عن Model Oils", "مصدّر ومورد دولي للزيوت وموزع Yokohama."),
+    about: pageMeta("عن Model Oils", "مصدّر ومورد دولي للزيوت وموزع معتمد لزيوت محركات Yokohama."),
     contact: pageMeta(
       "طلب عرض سعر | Model Oils",
       "تواصل مع Model Oils لمنتجات Yokohama والتوريد بالجملة للتصدير.",
@@ -1718,8 +1725,8 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "حلول زيوت للسيارات والصناعة والأساطيل والزراعة والبحرية.",
     ),
     yokohama: pageMeta(
-      "Yokohama Motor Oil | توزيع Model Oils",
-      "استكشف زيوت Yokohama وبطاريات VOLT من Model Oils.",
+      "زيوت محركات Yokohama | الموزع المعتمد Model Oils",
+      "استكشف زيوت محركات Yokohama التي توزعها Model Oils في الشرق الأوسط وأوروبا.",
     ),
     media: pageMeta("الوسائط | Model Oils", "أخبار الشركة وتحديثات Model Oils الإعلامية."),
     blog: pageMeta("المدونة | Model Oils", "أدلة فنية للزيوت وموارد صناعية من Model Oils."),
@@ -1731,7 +1738,7 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     ),
     about: pageMeta(
       "Über Model Oils",
-      "Internationaler Schmierstoffexporteur, Lieferant und Yokohama Distributor.",
+      "Internationaler Schmierstoffexporteur, Lieferant und autorisierter Distributor für Yokohama Motoröle.",
     ),
     contact: pageMeta(
       "Angebot anfordern | Model Oils",
@@ -1746,8 +1753,8 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "Schmierstofflösungen für Automotive, Industrie, Flotten, Landwirtschaft und Marine.",
     ),
     yokohama: pageMeta(
-      "Yokohama Motor Oil | Vertrieb durch Model Oils",
-      "Entdecken Sie Yokohama Öle und VOLT Batterien von Model Oils.",
+      "Yokohama Motoröle | Autorisierter Distributor Model Oils",
+      "Entdecken Sie Yokohama Motoröle von Model Oils für den Nahen Osten und Europa.",
     ),
     media: pageMeta(
       "Medien | Model Oils",
@@ -1765,7 +1772,7 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     ),
     about: pageMeta(
       "À propos de Model Oils",
-      "Exportateur international de lubrifiants, fournisseur et distributeur Yokohama.",
+      "Exportateur international, fournisseur et distributeur agréé des huiles moteur Yokohama.",
     ),
     contact: pageMeta(
       "Demander un devis | Model Oils",
@@ -1780,8 +1787,8 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "Solutions lubrifiantes pour l'automobile, l'industrie, les flottes, l'agriculture et le maritime.",
     ),
     yokohama: pageMeta(
-      "Yokohama Motor Oil | Distribué par Model Oils",
-      "Découvrez les huiles Yokohama et batteries VOLT distribuées par Model Oils.",
+      "Huiles moteur Yokohama | Distributeur agréé Model Oils",
+      "Découvrez les huiles moteur Yokohama distribuées par Model Oils au Moyen-Orient et en Europe.",
     ),
     media: pageMeta(
       "Médias | Model Oils",
