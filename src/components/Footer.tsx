@@ -2,12 +2,18 @@ import { Mail, MessageCircle, Globe, MapPin } from "lucide-react";
 import { CONTACT, NAV_LINKS } from "@/lib/site-data";
 import { LocaleLink, useTranslation } from "@/lib/i18n";
 import { getYokohamaCategoryName, YOKOHAMA_CATEGORY_DEFINITIONS } from "@/lib/yokohama-categories";
+import { cn } from "@/lib/utils";
 
-export function Footer() {
+export function Footer({ variant = "default" }: { variant?: "default" | "yokohama" }) {
   const { t, data, locale } = useTranslation();
 
   return (
-    <footer className="brand-footer relative z-10 shrink-0 border-t border-border bg-[image:var(--gradient-panel)]">
+    <footer
+      className={cn(
+        "brand-footer relative z-10 shrink-0 border-t border-border bg-[image:var(--gradient-panel)]",
+        variant === "yokohama" ? "yokohama-footer-theme" : "site-footer-sandstone",
+      )}
+    >
       <div className="mx-auto grid max-w-7xl gap-y-10 px-4 py-14 sm:grid-cols-2 sm:gap-x-8 sm:px-6 lg:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-x-8 lg:px-8 xl:gap-x-12">
         <div className="sm:col-span-2 lg:col-span-1">
           <img

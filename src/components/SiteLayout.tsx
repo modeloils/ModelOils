@@ -35,7 +35,10 @@ export function SiteLayout({ children }: { children: ReactNode }) {
 
   return (
     <div
-      className={cn("flex min-h-screen flex-col bg-background", isBlogRoute && "blog-mixed-theme")}
+      className={cn(
+        "site-cream-theme flex min-h-screen flex-col bg-background",
+        isBlogRoute && "blog-mixed-theme",
+      )}
     >
       <Header />
       <div
@@ -51,7 +54,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             {children}
           </div>
         </main>
-        <Footer />
+        <Footer variant={isYokohamaRoute ? "yokohama" : "default"} />
       </div>
       <Toaster position="top-center" />
       <WhatsAppButton />

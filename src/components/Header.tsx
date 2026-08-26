@@ -9,7 +9,7 @@ export function Header() {
   const { t } = useTranslation();
 
   return (
-    <header className="mixed-header sticky top-0 z-50 border-b border-border/70 bg-background/88 backdrop-blur-xl">
+    <header className="mixed-header site-header-sandstone sticky top-0 z-50 border-b border-border/70 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 sm:h-20 sm:px-6 lg:h-28 lg:px-8">
         <LocaleLink to="/" className="flex min-w-0 items-center" onClick={() => setOpen(false)}>
           <img

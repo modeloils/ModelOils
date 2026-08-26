@@ -156,7 +156,7 @@ function ExportSection() {
   const { t, data } = useTranslation();
   const icons = [Ship, Boxes, ShieldCheck, Boxes, Wrench, Truck];
   return (
-    <section className="brand-section-red relative overflow-hidden border-y border-border py-20 lg:py-28">
+    <section className="brand-section-neutral relative overflow-hidden border-y border-border py-20 lg:py-28">
       <img
         src={exportImg}
         alt={t.imgAlt.exportWarehouse}
