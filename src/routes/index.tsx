@@ -21,31 +21,9 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
 import { AUTHORIZED_DISTRIBUTOR_LABEL } from "@/lib/i18n/authorized-distributor";
+import { BRAND_IMAGES } from "@/lib/site-data";
 import heroImg from "@/assets/yokohama-hero-cream.webp";
 import exportImg from "@/assets/export.jpg";
-
-const FLAGSHIP_PRODUCTS = [
-  {
-    src: "/model-oils/images/yokohama-products/passenger-car-motor-oils--improve-0w-8-glv-1-transparent-clean.webp",
-    alt: "Yokohama Improve 0W-8 motor oil",
-  },
-  {
-    src: "/model-oils/images/yokohama-products/passenger-car-motor-oils--improve-0w-12-ms-bxfe-transparent-clean.webp",
-    alt: "Yokohama Improve 0W-12 motor oil",
-  },
-  {
-    src: "/model-oils/images/yokohama-products/passenger-car-motor-oils--improve-0w-16-g6-xfe-transparent-clean.webp",
-    alt: "Yokohama Improve 0W-16 motor oil",
-  },
-  {
-    src: "/model-oils/images/yokohama-products/passenger-car-motor-oils--improve-0w-20-sp-rc-transparent-clean.webp",
-    alt: "Yokohama Improve 0W-20 motor oil",
-  },
-  {
-    src: "/model-oils/images/yokohama-products/passenger-car-motor-oils--improve-5w-30-transparent-clean.webp",
-    alt: "Yokohama Improve 5W-30 motor oil",
-  },
-] as const;
 
 export function homeHead(locale: Locale) {
   return pageHead(locale, "home", [{ property: "og:image", content: heroImg }]);
@@ -161,20 +139,16 @@ function Flagship() {
             </Button>
           </div>
         </div>
-        <div className="yokohama-five-product-stage relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)]">
-          <div className="tech-grid pointer-events-none absolute inset-0 opacity-40" />
-          <div className="yokohama-five-product-lineup relative z-10 grid min-h-[28rem] grid-cols-6 items-end gap-y-3 px-3 pb-5 pt-8 sm:min-h-[25rem] sm:grid-cols-5 sm:gap-y-0 sm:px-5 sm:pt-12 lg:min-h-[31rem]">
-            {FLAGSHIP_PRODUCTS.map((product, index) => (
-              <img
-                key={product.src}
-                src={product.src}
-                alt={product.alt}
-                loading="lazy"
-                decoding="async"
-                className={`col-span-2 w-full object-contain drop-shadow-[0_18px_18px_rgba(54,38,24,0.22)] sm:col-span-1 ${index === 3 ? "col-start-2 sm:col-start-auto" : ""} ${index === 2 ? "h-52 sm:h-80 lg:h-[27rem]" : "h-44 sm:h-72 lg:h-96"}`}
-              />
-            ))}
-          </div>
+        <div className="relative min-h-[22rem] overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)] sm:min-h-[28rem] lg:min-h-[31rem]">
+          <img
+            src={BRAND_IMAGES.yokohamaFactory}
+            alt={t.imgAlt.yokohamaFactory}
+            loading="lazy"
+            decoding="async"
+            width={1448}
+            height={1086}
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          />
         </div>
       </div>
     </section>

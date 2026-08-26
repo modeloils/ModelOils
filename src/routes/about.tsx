@@ -3,12 +3,18 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
+import { FacilityShowcase } from "@/components/FacilityShowcase";
 import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
 import yokohamaImg from "@/assets/yokohama-hero-cream.webp";
 
 export function aboutHead(locale: Locale) {
-  return pageHead(locale, "about", [{ property: "og:image", content: yokohamaImg }]);
+  return pageHead(locale, "about", [
+    {
+      property: "og:image",
+      content: "/model-oils/brands/facility/facility-exterior-close.webp",
+    },
+  ]);
 }
 
 export const Route = createFileRoute("/about")({
@@ -55,6 +61,8 @@ export function About() {
           </div>
         </div>
       </section>
+
+      <FacilityShowcase />
 
       <section className="brand-section-green py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

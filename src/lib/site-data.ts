@@ -35,5 +35,11 @@ export const BRAND_IMAGES = {
   yokohama: `${ASSET_BASE}/brands/yokohama-range.jpg`,
   yokohamaBackground: `${ASSET_BASE}/brands/yokohama-page-bg.png`,
   yokohamaCover: `${ASSET_BASE}/brands/yokohama-cover.jpg`,
+  yokohamaFactory: `${ASSET_BASE}/brands/yokohama-factory-hero.webp`,
   yokohamaVolt: `${ASSET_BASE}/brands/yokohama-volt.jpg`,
+} as const;
+
+export const YOKOHAMA_CATALOGS = {
+  motorOil: `${ASSET_BASE}/docs/yokohama/yokohama-motor-oil-catalogue.pdf`,
+  volt: `${ASSET_BASE}/docs/yokohama/yokohama-volt-battery-catalogue.pdf`,
 } as const;

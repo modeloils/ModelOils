@@ -141,6 +141,7 @@ export interface UIStrings {
   imgAlt: {
     heroProducts: string;
     flagshipFamily: string;
+    yokohamaFactory: string;
     exportWarehouse: string;
     productDisplay: string;
   };
@@ -334,6 +335,7 @@ const en: UIStrings = {
   imgAlt: {
     heroProducts: "YOKOHAMA motor oils displayed in a warm cream industrial showroom",
     flagshipFamily: "Yokohama flagship lubricant product family display",
+    yokohamaFactory: "Yokohama Motor Oil production facility",
     exportWarehouse: "International lubricant export warehouse with oil drums",
     productDisplay: "Yokohama lubricant product display",
   },
@@ -529,6 +531,7 @@ const tr: UIStrings = {
   imgAlt: {
     heroProducts: "Sıcak krem tonlu endüstriyel bir alanda sergilenen YOKOHAMA motor yağları",
     flagshipFamily: "Yokohama amiral ürün ailesi sergisi",
+    yokohamaFactory: "Yokohama Motor Oil üretim tesisi",
     exportWarehouse: "Varillerle dolu uluslararası madeni yağ ihracat deposu",
     productDisplay: "Yokohama madeni yağ ürün sergisi",
   },
@@ -725,6 +728,7 @@ const ru: UIStrings = {
   imgAlt: {
     heroProducts: "Моторные масла YOKOHAMA в промышленном шоуруме тёплого кремового оттенка",
     flagshipFamily: "Витрина флагманского семейства смазочных материалов Yokohama",
+    yokohamaFactory: "Производственное предприятие Yokohama Motor Oil",
     exportWarehouse: "Международный склад экспорта смазочных материалов с бочками масла",
     productDisplay: "Витрина смазочных материалов Yokohama",
   },
@@ -918,6 +922,7 @@ const fa: UIStrings = {
   imgAlt: {
     heroProducts: "روغن‌های موتور YOKOHAMA در یک نمایشگاه صنعتی با رنگ کرم گرم",
     flagshipFamily: "نمایش خانواده محصولات پرچم‌دار روان‌کننده Yokohama",
+    yokohamaFactory: "تأسیسات تولیدی روغن موتور Yokohama",
     exportWarehouse: "انبار بین‌المللی صادرات روان‌کننده با بشکه‌های روغن",
     productDisplay: "نمایش محصول روان‌کننده Yokohama",
   },
@@ -1110,6 +1115,7 @@ const ar: UIStrings = {
   imgAlt: {
     heroProducts: "زيوت محركات YOKOHAMA معروضة في صالة صناعية بدرجات كريمية دافئة",
     flagshipFamily: "عرض عائلة منتجات Yokohama الرائدة لمواد التشحيم",
+    yokohamaFactory: "منشأة إنتاج زيوت محركات Yokohama",
     exportWarehouse: "مستودع دولي لتصدير مواد التشحيم مع براميل الزيت",
     productDisplay: "عرض منتج مواد التشحيم Yokohama",
   },
@@ -1304,6 +1310,7 @@ const de: UIStrings = {
   imgAlt: {
     heroProducts: "YOKOHAMA Motoröle in einem warmen cremefarbenen Industrie-Showroom",
     flagshipFamily: "Präsentation der Yokohama Flaggschiff-Schmierstoff-Produktfamilie",
+    yokohamaFactory: "Produktionsanlage von Yokohama Motor Oil",
     exportWarehouse: "Internationales Schmierstoff-Exportlager mit Ölfässern",
     productDisplay: "Yokohama Schmierstoff-Produktpräsentation",
   },
@@ -1501,6 +1508,7 @@ const fr: UIStrings = {
     heroProducts:
       "Huiles moteur YOKOHAMA présentées dans un showroom industriel aux tons crème chauds",
     flagshipFamily: "Présentation de la gamme phare de lubrifiants Yokohama",
+    yokohamaFactory: "Site de production des huiles moteur Yokohama",
     exportWarehouse: "Entrepôt international d'exportation de lubrifiants avec fûts d'huile",
     productDisplay: "Présentation de produits lubrifiants Yokohama",
   },
