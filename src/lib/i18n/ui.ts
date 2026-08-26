@@ -1,6 +1,6 @@
 import type { Locale } from "./types";
 
-export type NavKey = "products" | "industries" | "export" | "about" | "contact" | "media" | "blog";
+export type NavKey = "products" | "industries" | "export" | "about" | "contact" | "blog";
 
 export interface UIStrings {
   nav: {
@@ -10,7 +10,6 @@ export interface UIStrings {
     export: string;
     about: string;
     contact: string;
-    media: string;
     blog: string;
     brandBadge: string;
     requestQuote: string;
@@ -131,7 +130,6 @@ export interface UIStrings {
   };
   notFound: { title: string; body: string; goHome: string };
   errorPage: { title: string; body: string; tryAgain: string; goHome: string };
-  mediaPage: { heroTitle: string; heroSubtitle: string };
   common: {
     backToHome: string;
     backToBrands: string;
@@ -166,7 +164,6 @@ const en: UIStrings = {
     export: "Export",
     about: "About",
     contact: "Contact",
-    media: "Media",
     blog: "Blog",
     brandBadge: "Brand",
     requestQuote: "Request Quote",
@@ -326,10 +323,6 @@ const en: UIStrings = {
     tryAgain: "Try again",
     goHome: "Go home",
   },
-  mediaPage: {
-    heroTitle: "Media",
-    heroSubtitle: "Company news and media updates from Model Oils.",
-  },
   common: {
     backToHome: "Back to Home",
     backToBrands: "Back to Brands",
@@ -366,7 +359,6 @@ const tr: UIStrings = {
     export: "İhracat",
     about: "Hakkımızda",
     contact: "İletişim",
-    media: "Medya",
     blog: "Blog",
     brandBadge: "Marka",
     requestQuote: "Teklif Al",
@@ -526,10 +518,6 @@ const tr: UIStrings = {
     tryAgain: "Tekrar dene",
     goHome: "Ana sayfaya dön",
   },
-  mediaPage: {
-    heroTitle: "Medya",
-    heroSubtitle: "Model Oils'tan şirket haberleri ve medya güncellemeleri.",
-  },
   common: {
     backToHome: "Anasayfaya Dön",
     backToBrands: "Markalara Dön",
@@ -566,7 +554,6 @@ const ru: UIStrings = {
     export: "Экспорт",
     about: "О нас",
     contact: "Контакты",
-    media: "Медиа",
     blog: "Блог",
     brandBadge: "Бренд",
     requestQuote: "Запросить цену",
@@ -727,10 +714,6 @@ const ru: UIStrings = {
     tryAgain: "Попробовать снова",
     goHome: "На главную",
   },
-  mediaPage: {
-    heroTitle: "Медиа",
-    heroSubtitle: "Новости компании и медиа-обновления Model Oils.",
-  },
   common: {
     backToHome: "На главную",
     backToBrands: "К брендам",
@@ -767,7 +750,6 @@ const fa: UIStrings = {
     export: "صادرات",
     about: "درباره ما",
     contact: "تماس",
-    media: "رسانه",
     blog: "بلاگ",
     brandBadge: "برند",
     requestQuote: "درخواست قیمت",
@@ -926,10 +908,6 @@ const fa: UIStrings = {
     tryAgain: "دوباره تلاش کنید",
     goHome: "بازگشت به خانه",
   },
-  mediaPage: {
-    heroTitle: "رسانه",
-    heroSubtitle: "اخبار شرکت و به‌روزرسانی‌های رسانه‌ای Model Oils.",
-  },
   common: {
     backToHome: "بازگشت به خانه",
     backToBrands: "بازگشت به برندها",
@@ -965,7 +943,6 @@ const ar: UIStrings = {
     export: "التصدير",
     about: "من نحن",
     contact: "اتصل بنا",
-    media: "الوسائط",
     blog: "المدونة",
     brandBadge: "العلامة التجارية",
     requestQuote: "طلب عرض سعر",
@@ -1124,10 +1101,6 @@ const ar: UIStrings = {
     tryAgain: "حاول مرة أخرى",
     goHome: "العودة إلى الرئيسية",
   },
-  mediaPage: {
-    heroTitle: "الوسائط",
-    heroSubtitle: "أخبار الشركة وتحديثات Model Oils الإعلامية.",
-  },
   common: {
     backToHome: "العودة إلى الرئيسية",
     backToBrands: "العودة إلى العلامات التجارية",
@@ -1163,7 +1136,6 @@ const de: UIStrings = {
     export: "Export",
     about: "Über uns",
     contact: "Kontakt",
-    media: "Medien",
     blog: "Blog",
     brandBadge: "Marke",
     requestQuote: "Angebot anfordern",
@@ -1324,10 +1296,6 @@ const de: UIStrings = {
     tryAgain: "Erneut versuchen",
     goHome: "Zur Startseite",
   },
-  mediaPage: {
-    heroTitle: "Medien",
-    heroSubtitle: "Unternehmensnachrichten und Medien-Updates von Model Oils.",
-  },
   common: {
     backToHome: "Zur Startseite",
     backToBrands: "Zu den Marken",
@@ -1364,7 +1332,6 @@ const fr: UIStrings = {
     export: "Export",
     about: "À propos",
     contact: "Contact",
-    media: "Médias",
     blog: "Blog",
     brandBadge: "Marque",
     requestQuote: "Demander un devis",
@@ -1525,10 +1492,6 @@ const fr: UIStrings = {
     tryAgain: "Réessayer",
     goHome: "Retour à l'accueil",
   },
-  mediaPage: {
-    heroTitle: "Médias",
-    heroSubtitle: "Actualités de l'entreprise et mises à jour médias de Model Oils.",
-  },
   common: {
     backToHome: "Retour à l'accueil",
     backToBrands: "Retour aux marques",
@@ -1560,15 +1523,7 @@ const fr: UIStrings = {
 
 export const UI: Record<Locale, UIStrings> = { en, tr, ru, fa, ar, de, fr };
 
-export type PageKey =
-  | "home"
-  | "about"
-  | "contact"
-  | "export"
-  | "industries"
-  | "yokohama"
-  | "media"
-  | "blog";
+export type PageKey = "home" | "about" | "contact" | "export" | "industries" | "yokohama" | "blog";
 
 export interface PageMeta {
   title: string;
@@ -1607,7 +1562,6 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "Yokohama Motor Oils | Authorized Distributor Model Oils",
       "Explore Yokohama motor oils distributed by Model Oils for the Middle East and Europe.",
     ),
-    media: pageMeta("Media | Model Oils", "Company news and media updates from Model Oils."),
     blog: pageMeta(
       "Blog | Model Oils",
       "Technical lubricant guides and industry resources from Model Oils.",
@@ -1637,10 +1591,6 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     yokohama: pageMeta(
       "Yokohama Motor Yağları | Yetkili Distribütör Model Oils",
       "Model Oils'in Orta Doğu ve Avrupa distribütörlüğündeki Yokohama motor yağlarını keşfedin.",
-    ),
-    media: pageMeta(
-      "Medya | Model Oils",
-      "Model Oils'tan şirket haberleri ve medya güncellemeleri.",
     ),
     blog: pageMeta(
       "Blog | Model Oils",
@@ -1672,7 +1622,6 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "Моторные масла Yokohama | Официальный дистрибьютор Model Oils",
       "Откройте моторные масла Yokohama от Model Oils для Ближнего Востока и Европы.",
     ),
-    media: pageMeta("Медиа | Model Oils", "Новости компании и медиа-обновления Model Oils."),
     blog: pageMeta(
       "Блог | Model Oils",
       "Технические руководства и отраслевые материалы Model Oils.",
@@ -1703,7 +1652,6 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "روغن موتور Yokohama | توزیع‌کننده رسمی Model Oils",
       "روغن موتورهای Yokohama را با توزیع Model Oils در خاورمیانه و اروپا مشاهده کنید.",
     ),
-    media: pageMeta("رسانه | Model Oils", "اخبار شرکت و به‌روزرسانی‌های رسانه‌ای Model Oils."),
     blog: pageMeta("وبلاگ | Model Oils", "راهنماهای فنی روانکار و منابع صنعتی Model Oils."),
   },
   ar: {
@@ -1728,7 +1676,6 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "زيوت محركات Yokohama | الموزع المعتمد Model Oils",
       "استكشف زيوت محركات Yokohama التي توزعها Model Oils في الشرق الأوسط وأوروبا.",
     ),
-    media: pageMeta("الوسائط | Model Oils", "أخبار الشركة وتحديثات Model Oils الإعلامية."),
     blog: pageMeta("المدونة | Model Oils", "أدلة فنية للزيوت وموارد صناعية من Model Oils."),
   },
   de: {
@@ -1755,10 +1702,6 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     yokohama: pageMeta(
       "Yokohama Motoröle | Autorisierter Distributor Model Oils",
       "Entdecken Sie Yokohama Motoröle von Model Oils für den Nahen Osten und Europa.",
-    ),
-    media: pageMeta(
-      "Medien | Model Oils",
-      "Unternehmensnachrichten und Medien-Updates von Model Oils.",
     ),
     blog: pageMeta(
       "Blog | Model Oils",
@@ -1789,10 +1732,6 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     yokohama: pageMeta(
       "Huiles moteur Yokohama | Distributeur agréé Model Oils",
       "Découvrez les huiles moteur Yokohama distribuées par Model Oils au Moyen-Orient et en Europe.",
-    ),
-    media: pageMeta(
-      "Médias | Model Oils",
-      "Actualités de l'entreprise et mises à jour médias de Model Oils.",
     ),
     blog: pageMeta(
       "Blog | Model Oils",

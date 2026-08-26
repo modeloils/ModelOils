@@ -16,7 +16,6 @@ const PAGE_PATHS: Record<PageKey, string> = {
   export: "/export",
   industries: "/industries",
   yokohama: "/yokohama",
-  media: "/media",
   blog: "/blog",
 };
 

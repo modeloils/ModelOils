@@ -6,7 +6,7 @@ import { getYokohamaCategoryName, YOKOHAMA_CATEGORY_DEFINITIONS } from "@/lib/yo
 import { cn } from "@/lib/utils";
 
 export function Footer({ variant = "default" }: { variant?: "default" | "yokohama" }) {
-  const { t, data, locale } = useTranslation();
+  const { t, locale } = useTranslation();
 
   return (
     <footer
@@ -15,7 +15,7 @@ export function Footer({ variant = "default" }: { variant?: "default" | "yokoham
         variant === "yokohama" ? "yokohama-footer-theme" : "site-footer-sandstone",
       )}
     >
-      <div className="mx-auto grid max-w-7xl gap-y-10 px-4 py-14 sm:grid-cols-2 sm:gap-x-8 sm:px-6 lg:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-x-8 lg:px-8 xl:gap-x-12">
+      <div className="mx-auto grid max-w-7xl gap-y-10 px-4 py-14 sm:grid-cols-2 sm:gap-x-8 sm:px-6 lg:grid-cols-[2fr_1fr_1fr] lg:gap-x-8 lg:px-8 xl:gap-x-12">
         <div className="sm:col-span-2 lg:col-span-1">
           <img
             src="/model-oils/images/logo-main.png"
@@ -86,35 +86,13 @@ export function Footer({ variant = "default" }: { variant?: "default" | "yokoham
             ))}
           </ul>
         </div>
-
-        <div>
-          <h4 className="font-display text-sm font-bold uppercase tracking-wider text-foreground">
-            {t.footer.exportMarkets}
-          </h4>
-          <ul className="mt-4 flex flex-wrap gap-x-3 gap-y-2 text-sm text-muted-foreground">
-            {data.exportMarkets.map((m) => (
-              <li key={m}>{m}</li>
-            ))}
-          </ul>
-        </div>
       </div>
 
       <div className="border-t border-border">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-muted-foreground sm:flex-row sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl items-center justify-center px-4 py-5 text-center text-xs text-muted-foreground sm:px-6 lg:px-8">
           <p>
             © {new Date().getFullYear()} Model Oils. {t.footer.rights}
           </p>
-          <div className="flex gap-4">
-            <a href="#" className="hover:text-primary">
-              LinkedIn
-            </a>
-            <a href="#" className="hover:text-primary">
-              Instagram
-            </a>
-            <a href="#" className="hover:text-primary">
-              Facebook
-            </a>
-          </div>
         </div>
       </div>
     </footer>

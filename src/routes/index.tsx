@@ -24,6 +24,29 @@ import { AUTHORIZED_DISTRIBUTOR_LABEL } from "@/lib/i18n/authorized-distributor"
 import heroImg from "@/assets/yokohama-hero-cream.webp";
 import exportImg from "@/assets/export.jpg";
 
+const FLAGSHIP_PRODUCTS = [
+  {
+    src: "/model-oils/images/yokohama-products/passenger-car-motor-oils--improve-0w-8-glv-1-transparent-clean.webp",
+    alt: "Yokohama Improve 0W-8 motor oil",
+  },
+  {
+    src: "/model-oils/images/yokohama-products/passenger-car-motor-oils--improve-0w-12-ms-bxfe-transparent-clean.webp",
+    alt: "Yokohama Improve 0W-12 motor oil",
+  },
+  {
+    src: "/model-oils/images/yokohama-products/passenger-car-motor-oils--improve-0w-16-g6-xfe-transparent-clean.webp",
+    alt: "Yokohama Improve 0W-16 motor oil",
+  },
+  {
+    src: "/model-oils/images/yokohama-products/passenger-car-motor-oils--improve-0w-20-sp-rc-transparent-clean.webp",
+    alt: "Yokohama Improve 0W-20 motor oil",
+  },
+  {
+    src: "/model-oils/images/yokohama-products/passenger-car-motor-oils--improve-5w-30-transparent-clean.webp",
+    alt: "Yokohama Improve 5W-30 motor oil",
+  },
+] as const;
+
 export function homeHead(locale: Locale) {
   return pageHead(locale, "home", [{ property: "og:image", content: heroImg }]);
 }
@@ -138,15 +161,20 @@ function Flagship() {
             </Button>
           </div>
         </div>
-        <div className="relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)]">
-          <img
-            src={heroImg}
-            alt={t.imgAlt.flagshipFamily}
-            loading="lazy"
-            width={1672}
-            height={941}
-            className="h-full w-full object-cover"
-          />
+        <div className="yokohama-five-product-stage relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)]">
+          <div className="tech-grid pointer-events-none absolute inset-0 opacity-40" />
+          <div className="yokohama-five-product-lineup relative z-10 grid min-h-[25rem] grid-cols-5 items-end gap-0 px-2 pb-5 pt-12 sm:px-5 lg:min-h-[31rem]">
+            {FLAGSHIP_PRODUCTS.map((product, index) => (
+              <img
+                key={product.src}
+                src={product.src}
+                alt={product.alt}
+                loading="lazy"
+                decoding="async"
+                className={`w-full object-contain drop-shadow-[0_18px_18px_rgba(54,38,24,0.22)] ${index === 2 ? "h-80 lg:h-[27rem]" : "h-72 lg:h-96"}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -51,7 +51,11 @@ export function Export() {
 
           <section className="brand-section-red border-b border-border/30 py-20 lg:py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <SectionHeading eyebrow={t.exportPage.capEyebrow} title={t.exportPage.capTitle} />
+              <SectionHeading
+                eyebrow={t.exportPage.capEyebrow}
+                title={t.exportPage.capTitle}
+                className="[&_h2]:text-white"
+              />
               <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {data.exportCards.map((card, i) => {
                   const Icon = ICONS[i % ICONS.length];
@@ -77,38 +81,21 @@ export function Export() {
           </section>
 
           <section className="brand-section-green py-20 lg:py-24">
-            <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-              <div>
-                <SectionHeading
-                  eyebrow={t.exportPage.packagingEyebrow}
-                  title={t.exportPage.packagingTitle}
-                />
-                <div className="mt-8 flex flex-wrap gap-3">
-                  {PACKAGING.map((p) => (
-                    <span
-                      key={p}
-                      className="rounded-lg border border-border bg-secondary/50 px-4 py-2 text-sm font-semibold text-foreground"
-                    >
-                      {p}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <SectionHeading
-                  eyebrow={t.exportPage.marketsEyebrow}
-                  title={t.exportPage.marketsTitle}
-                />
-                <div className="mt-8 flex flex-wrap gap-3">
-                  {data.exportMarkets.map((m) => (
-                    <span
-                      key={m}
-                      className="rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary"
-                    >
-                      {m}
-                    </span>
-                  ))}
-                </div>
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <SectionHeading
+                eyebrow={t.exportPage.packagingEyebrow}
+                title={t.exportPage.packagingTitle}
+                className="[&_h2]:text-white"
+              />
+              <div className="mt-8 flex flex-wrap gap-3">
+                {PACKAGING.map((p) => (
+                  <span
+                    key={p}
+                    className="rounded-lg border border-border bg-secondary/50 px-4 py-2 text-sm font-semibold text-foreground"
+                  >
+                    {p}
+                  </span>
+                ))}
               </div>
             </div>
           </section>

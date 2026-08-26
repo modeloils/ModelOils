@@ -11,7 +11,6 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as YokohamaRouteImport } from './routes/yokohama'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as MediaRouteImport } from './routes/media'
 import { Route as IndustriesRouteImport } from './routes/industries'
 import { Route as ExportRouteImport } from './routes/export'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -26,35 +25,30 @@ import { Route as DeIndexRouteImport } from './routes/de/index'
 import { Route as ArIndexRouteImport } from './routes/ar/index'
 import { Route as YokohamaCategoryRouteImport } from './routes/yokohama_.$category'
 import { Route as TrYokohamaRouteImport } from './routes/tr/yokohama'
-import { Route as TrMediaRouteImport } from './routes/tr/media'
 import { Route as TrIndustriesRouteImport } from './routes/tr/industries'
 import { Route as TrExportRouteImport } from './routes/tr/export'
 import { Route as TrContactRouteImport } from './routes/tr/contact'
 import { Route as TrBlogRouteImport } from './routes/tr/blog'
 import { Route as TrAboutRouteImport } from './routes/tr/about'
 import { Route as RuYokohamaRouteImport } from './routes/ru/yokohama'
-import { Route as RuMediaRouteImport } from './routes/ru/media'
 import { Route as RuIndustriesRouteImport } from './routes/ru/industries'
 import { Route as RuExportRouteImport } from './routes/ru/export'
 import { Route as RuContactRouteImport } from './routes/ru/contact'
 import { Route as RuBlogRouteImport } from './routes/ru/blog'
 import { Route as RuAboutRouteImport } from './routes/ru/about'
 import { Route as FrYokohamaRouteImport } from './routes/fr/yokohama'
-import { Route as FrMediaRouteImport } from './routes/fr/media'
 import { Route as FrIndustriesRouteImport } from './routes/fr/industries'
 import { Route as FrExportRouteImport } from './routes/fr/export'
 import { Route as FrContactRouteImport } from './routes/fr/contact'
 import { Route as FrBlogRouteImport } from './routes/fr/blog'
 import { Route as FrAboutRouteImport } from './routes/fr/about'
 import { Route as FaYokohamaRouteImport } from './routes/fa/yokohama'
-import { Route as FaMediaRouteImport } from './routes/fa/media'
 import { Route as FaIndustriesRouteImport } from './routes/fa/industries'
 import { Route as FaExportRouteImport } from './routes/fa/export'
 import { Route as FaContactRouteImport } from './routes/fa/contact'
 import { Route as FaBlogRouteImport } from './routes/fa/blog'
 import { Route as FaAboutRouteImport } from './routes/fa/about'
 import { Route as DeYokohamaRouteImport } from './routes/de/yokohama'
-import { Route as DeMediaRouteImport } from './routes/de/media'
 import { Route as DeIndustriesRouteImport } from './routes/de/industries'
 import { Route as DeExportRouteImport } from './routes/de/export'
 import { Route as DeContactRouteImport } from './routes/de/contact'
@@ -62,7 +56,6 @@ import { Route as DeBlogRouteImport } from './routes/de/blog'
 import { Route as DeAboutRouteImport } from './routes/de/about'
 import { Route as BlogSlugRouteImport } from './routes/blog_.$slug'
 import { Route as ArYokohamaRouteImport } from './routes/ar/yokohama'
-import { Route as ArMediaRouteImport } from './routes/ar/media'
 import { Route as ArIndustriesRouteImport } from './routes/ar/industries'
 import { Route as ArExportRouteImport } from './routes/ar/export'
 import { Route as ArContactRouteImport } from './routes/ar/contact'
@@ -96,11 +89,6 @@ const YokohamaRoute = YokohamaRouteImport.update({
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MediaRoute = MediaRouteImport.update({
-  id: '/media',
-  path: '/media',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndustriesRoute = IndustriesRouteImport.update({
@@ -173,11 +161,6 @@ const TrYokohamaRoute = TrYokohamaRouteImport.update({
   path: '/tr/yokohama',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TrMediaRoute = TrMediaRouteImport.update({
-  id: '/tr/media',
-  path: '/tr/media',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const TrIndustriesRoute = TrIndustriesRouteImport.update({
   id: '/tr/industries',
   path: '/tr/industries',
@@ -206,11 +189,6 @@ const TrAboutRoute = TrAboutRouteImport.update({
 const RuYokohamaRoute = RuYokohamaRouteImport.update({
   id: '/ru/yokohama',
   path: '/ru/yokohama',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RuMediaRoute = RuMediaRouteImport.update({
-  id: '/ru/media',
-  path: '/ru/media',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RuIndustriesRoute = RuIndustriesRouteImport.update({
@@ -243,11 +221,6 @@ const FrYokohamaRoute = FrYokohamaRouteImport.update({
   path: '/fr/yokohama',
   getParentRoute: () => rootRouteImport,
 } as any)
-const FrMediaRoute = FrMediaRouteImport.update({
-  id: '/fr/media',
-  path: '/fr/media',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const FrIndustriesRoute = FrIndustriesRouteImport.update({
   id: '/fr/industries',
   path: '/fr/industries',
@@ -278,11 +251,6 @@ const FaYokohamaRoute = FaYokohamaRouteImport.update({
   path: '/fa/yokohama',
   getParentRoute: () => rootRouteImport,
 } as any)
-const FaMediaRoute = FaMediaRouteImport.update({
-  id: '/fa/media',
-  path: '/fa/media',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const FaIndustriesRoute = FaIndustriesRouteImport.update({
   id: '/fa/industries',
   path: '/fa/industries',
@@ -311,11 +279,6 @@ const FaAboutRoute = FaAboutRouteImport.update({
 const DeYokohamaRoute = DeYokohamaRouteImport.update({
   id: '/de/yokohama',
   path: '/de/yokohama',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DeMediaRoute = DeMediaRouteImport.update({
-  id: '/de/media',
-  path: '/de/media',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DeIndustriesRoute = DeIndustriesRouteImport.update({
@@ -351,11 +314,6 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
 const ArYokohamaRoute = ArYokohamaRouteImport.update({
   id: '/ar/yokohama',
   path: '/ar/yokohama',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ArMediaRoute = ArMediaRouteImport.update({
-  id: '/ar/media',
-  path: '/ar/media',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ArIndustriesRoute = ArIndustriesRouteImport.update({
@@ -492,7 +450,6 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
   '/industries': typeof IndustriesRoute
-  '/media': typeof MediaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/yokohama': typeof YokohamaRoute
   '/ar/about': typeof ArAboutRoute
@@ -500,7 +457,6 @@ export interface FileRoutesByFullPath {
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
   '/ar/industries': typeof ArIndustriesRoute
-  '/ar/media': typeof ArMediaRoute
   '/ar/yokohama': typeof ArYokohamaRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
@@ -508,35 +464,30 @@ export interface FileRoutesByFullPath {
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
   '/de/industries': typeof DeIndustriesRoute
-  '/de/media': typeof DeMediaRoute
   '/de/yokohama': typeof DeYokohamaRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
   '/fa/industries': typeof FaIndustriesRoute
-  '/fa/media': typeof FaMediaRoute
   '/fa/yokohama': typeof FaYokohamaRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
   '/fr/industries': typeof FrIndustriesRoute
-  '/fr/media': typeof FrMediaRoute
   '/fr/yokohama': typeof FrYokohamaRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
   '/ru/industries': typeof RuIndustriesRoute
-  '/ru/media': typeof RuMediaRoute
   '/ru/yokohama': typeof RuYokohamaRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
   '/tr/industries': typeof TrIndustriesRoute
-  '/tr/media': typeof TrMediaRoute
   '/tr/yokohama': typeof TrYokohamaRoute
   '/yokohama/$category': typeof YokohamaCategoryRouteWithChildren
   '/ar/': typeof ArIndexRoute
@@ -572,7 +523,6 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
   '/industries': typeof IndustriesRoute
-  '/media': typeof MediaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/yokohama': typeof YokohamaRoute
   '/ar/about': typeof ArAboutRoute
@@ -580,7 +530,6 @@ export interface FileRoutesByTo {
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
   '/ar/industries': typeof ArIndustriesRoute
-  '/ar/media': typeof ArMediaRoute
   '/ar/yokohama': typeof ArYokohamaRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
@@ -588,35 +537,30 @@ export interface FileRoutesByTo {
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
   '/de/industries': typeof DeIndustriesRoute
-  '/de/media': typeof DeMediaRoute
   '/de/yokohama': typeof DeYokohamaRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
   '/fa/industries': typeof FaIndustriesRoute
-  '/fa/media': typeof FaMediaRoute
   '/fa/yokohama': typeof FaYokohamaRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
   '/fr/industries': typeof FrIndustriesRoute
-  '/fr/media': typeof FrMediaRoute
   '/fr/yokohama': typeof FrYokohamaRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
   '/ru/industries': typeof RuIndustriesRoute
-  '/ru/media': typeof RuMediaRoute
   '/ru/yokohama': typeof RuYokohamaRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
   '/tr/industries': typeof TrIndustriesRoute
-  '/tr/media': typeof TrMediaRoute
   '/tr/yokohama': typeof TrYokohamaRoute
   '/yokohama/$category': typeof YokohamaCategoryRouteWithChildren
   '/ar': typeof ArIndexRoute
@@ -653,7 +597,6 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
   '/industries': typeof IndustriesRoute
-  '/media': typeof MediaRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/yokohama': typeof YokohamaRoute
   '/ar/about': typeof ArAboutRoute
@@ -661,7 +604,6 @@ export interface FileRoutesById {
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
   '/ar/industries': typeof ArIndustriesRoute
-  '/ar/media': typeof ArMediaRoute
   '/ar/yokohama': typeof ArYokohamaRoute
   '/blog_/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
@@ -669,35 +611,30 @@ export interface FileRoutesById {
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
   '/de/industries': typeof DeIndustriesRoute
-  '/de/media': typeof DeMediaRoute
   '/de/yokohama': typeof DeYokohamaRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
   '/fa/industries': typeof FaIndustriesRoute
-  '/fa/media': typeof FaMediaRoute
   '/fa/yokohama': typeof FaYokohamaRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
   '/fr/industries': typeof FrIndustriesRoute
-  '/fr/media': typeof FrMediaRoute
   '/fr/yokohama': typeof FrYokohamaRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
   '/ru/industries': typeof RuIndustriesRoute
-  '/ru/media': typeof RuMediaRoute
   '/ru/yokohama': typeof RuYokohamaRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
   '/tr/industries': typeof TrIndustriesRoute
-  '/tr/media': typeof TrMediaRoute
   '/tr/yokohama': typeof TrYokohamaRoute
   '/yokohama_/$category': typeof YokohamaCategoryRouteWithChildren
   '/ar/': typeof ArIndexRoute
@@ -735,7 +672,6 @@ export interface FileRouteTypes {
     | '/contact'
     | '/export'
     | '/industries'
-    | '/media'
     | '/sitemap.xml'
     | '/yokohama'
     | '/ar/about'
@@ -743,7 +679,6 @@ export interface FileRouteTypes {
     | '/ar/contact'
     | '/ar/export'
     | '/ar/industries'
-    | '/ar/media'
     | '/ar/yokohama'
     | '/blog/$slug'
     | '/de/about'
@@ -751,35 +686,30 @@ export interface FileRouteTypes {
     | '/de/contact'
     | '/de/export'
     | '/de/industries'
-    | '/de/media'
     | '/de/yokohama'
     | '/fa/about'
     | '/fa/blog'
     | '/fa/contact'
     | '/fa/export'
     | '/fa/industries'
-    | '/fa/media'
     | '/fa/yokohama'
     | '/fr/about'
     | '/fr/blog'
     | '/fr/contact'
     | '/fr/export'
     | '/fr/industries'
-    | '/fr/media'
     | '/fr/yokohama'
     | '/ru/about'
     | '/ru/blog'
     | '/ru/contact'
     | '/ru/export'
     | '/ru/industries'
-    | '/ru/media'
     | '/ru/yokohama'
     | '/tr/about'
     | '/tr/blog'
     | '/tr/contact'
     | '/tr/export'
     | '/tr/industries'
-    | '/tr/media'
     | '/tr/yokohama'
     | '/yokohama/$category'
     | '/ar/'
@@ -815,7 +745,6 @@ export interface FileRouteTypes {
     | '/contact'
     | '/export'
     | '/industries'
-    | '/media'
     | '/sitemap.xml'
     | '/yokohama'
     | '/ar/about'
@@ -823,7 +752,6 @@ export interface FileRouteTypes {
     | '/ar/contact'
     | '/ar/export'
     | '/ar/industries'
-    | '/ar/media'
     | '/ar/yokohama'
     | '/blog/$slug'
     | '/de/about'
@@ -831,35 +759,30 @@ export interface FileRouteTypes {
     | '/de/contact'
     | '/de/export'
     | '/de/industries'
-    | '/de/media'
     | '/de/yokohama'
     | '/fa/about'
     | '/fa/blog'
     | '/fa/contact'
     | '/fa/export'
     | '/fa/industries'
-    | '/fa/media'
     | '/fa/yokohama'
     | '/fr/about'
     | '/fr/blog'
     | '/fr/contact'
     | '/fr/export'
     | '/fr/industries'
-    | '/fr/media'
     | '/fr/yokohama'
     | '/ru/about'
     | '/ru/blog'
     | '/ru/contact'
     | '/ru/export'
     | '/ru/industries'
-    | '/ru/media'
     | '/ru/yokohama'
     | '/tr/about'
     | '/tr/blog'
     | '/tr/contact'
     | '/tr/export'
     | '/tr/industries'
-    | '/tr/media'
     | '/tr/yokohama'
     | '/yokohama/$category'
     | '/ar'
@@ -895,7 +818,6 @@ export interface FileRouteTypes {
     | '/contact'
     | '/export'
     | '/industries'
-    | '/media'
     | '/sitemap.xml'
     | '/yokohama'
     | '/ar/about'
@@ -903,7 +825,6 @@ export interface FileRouteTypes {
     | '/ar/contact'
     | '/ar/export'
     | '/ar/industries'
-    | '/ar/media'
     | '/ar/yokohama'
     | '/blog_/$slug'
     | '/de/about'
@@ -911,35 +832,30 @@ export interface FileRouteTypes {
     | '/de/contact'
     | '/de/export'
     | '/de/industries'
-    | '/de/media'
     | '/de/yokohama'
     | '/fa/about'
     | '/fa/blog'
     | '/fa/contact'
     | '/fa/export'
     | '/fa/industries'
-    | '/fa/media'
     | '/fa/yokohama'
     | '/fr/about'
     | '/fr/blog'
     | '/fr/contact'
     | '/fr/export'
     | '/fr/industries'
-    | '/fr/media'
     | '/fr/yokohama'
     | '/ru/about'
     | '/ru/blog'
     | '/ru/contact'
     | '/ru/export'
     | '/ru/industries'
-    | '/ru/media'
     | '/ru/yokohama'
     | '/tr/about'
     | '/tr/blog'
     | '/tr/contact'
     | '/tr/export'
     | '/tr/industries'
-    | '/tr/media'
     | '/tr/yokohama'
     | '/yokohama_/$category'
     | '/ar/'
@@ -976,7 +892,6 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   ExportRoute: typeof ExportRoute
   IndustriesRoute: typeof IndustriesRoute
-  MediaRoute: typeof MediaRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   YokohamaRoute: typeof YokohamaRoute
   ArAboutRoute: typeof ArAboutRoute
@@ -984,7 +899,6 @@ export interface RootRouteChildren {
   ArContactRoute: typeof ArContactRoute
   ArExportRoute: typeof ArExportRoute
   ArIndustriesRoute: typeof ArIndustriesRoute
-  ArMediaRoute: typeof ArMediaRoute
   ArYokohamaRoute: typeof ArYokohamaRoute
   BlogSlugRoute: typeof BlogSlugRoute
   DeAboutRoute: typeof DeAboutRoute
@@ -992,35 +906,30 @@ export interface RootRouteChildren {
   DeContactRoute: typeof DeContactRoute
   DeExportRoute: typeof DeExportRoute
   DeIndustriesRoute: typeof DeIndustriesRoute
-  DeMediaRoute: typeof DeMediaRoute
   DeYokohamaRoute: typeof DeYokohamaRoute
   FaAboutRoute: typeof FaAboutRoute
   FaBlogRoute: typeof FaBlogRoute
   FaContactRoute: typeof FaContactRoute
   FaExportRoute: typeof FaExportRoute
   FaIndustriesRoute: typeof FaIndustriesRoute
-  FaMediaRoute: typeof FaMediaRoute
   FaYokohamaRoute: typeof FaYokohamaRoute
   FrAboutRoute: typeof FrAboutRoute
   FrBlogRoute: typeof FrBlogRoute
   FrContactRoute: typeof FrContactRoute
   FrExportRoute: typeof FrExportRoute
   FrIndustriesRoute: typeof FrIndustriesRoute
-  FrMediaRoute: typeof FrMediaRoute
   FrYokohamaRoute: typeof FrYokohamaRoute
   RuAboutRoute: typeof RuAboutRoute
   RuBlogRoute: typeof RuBlogRoute
   RuContactRoute: typeof RuContactRoute
   RuExportRoute: typeof RuExportRoute
   RuIndustriesRoute: typeof RuIndustriesRoute
-  RuMediaRoute: typeof RuMediaRoute
   RuYokohamaRoute: typeof RuYokohamaRoute
   TrAboutRoute: typeof TrAboutRoute
   TrBlogRoute: typeof TrBlogRoute
   TrContactRoute: typeof TrContactRoute
   TrExportRoute: typeof TrExportRoute
   TrIndustriesRoute: typeof TrIndustriesRoute
-  TrMediaRoute: typeof TrMediaRoute
   TrYokohamaRoute: typeof TrYokohamaRoute
   YokohamaCategoryRoute: typeof YokohamaCategoryRouteWithChildren
   ArIndexRoute: typeof ArIndexRoute
@@ -1057,13 +966,6 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/media': {
-      id: '/media'
-      path: '/media'
-      fullPath: '/media'
-      preLoaderRoute: typeof MediaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/industries': {
@@ -1164,13 +1066,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TrYokohamaRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tr/media': {
-      id: '/tr/media'
-      path: '/tr/media'
-      fullPath: '/tr/media'
-      preLoaderRoute: typeof TrMediaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/tr/industries': {
       id: '/tr/industries'
       path: '/tr/industries'
@@ -1211,13 +1106,6 @@ declare module '@tanstack/react-router' {
       path: '/ru/yokohama'
       fullPath: '/ru/yokohama'
       preLoaderRoute: typeof RuYokohamaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ru/media': {
-      id: '/ru/media'
-      path: '/ru/media'
-      fullPath: '/ru/media'
-      preLoaderRoute: typeof RuMediaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ru/industries': {
@@ -1262,13 +1150,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FrYokohamaRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/fr/media': {
-      id: '/fr/media'
-      path: '/fr/media'
-      fullPath: '/fr/media'
-      preLoaderRoute: typeof FrMediaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/fr/industries': {
       id: '/fr/industries'
       path: '/fr/industries'
@@ -1311,13 +1192,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaYokohamaRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/fa/media': {
-      id: '/fa/media'
-      path: '/fa/media'
-      fullPath: '/fa/media'
-      preLoaderRoute: typeof FaMediaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/fa/industries': {
       id: '/fa/industries'
       path: '/fa/industries'
@@ -1358,13 +1232,6 @@ declare module '@tanstack/react-router' {
       path: '/de/yokohama'
       fullPath: '/de/yokohama'
       preLoaderRoute: typeof DeYokohamaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/de/media': {
-      id: '/de/media'
-      path: '/de/media'
-      fullPath: '/de/media'
-      preLoaderRoute: typeof DeMediaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/de/industries': {
@@ -1414,13 +1281,6 @@ declare module '@tanstack/react-router' {
       path: '/ar/yokohama'
       fullPath: '/ar/yokohama'
       preLoaderRoute: typeof ArYokohamaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ar/media': {
-      id: '/ar/media'
-      path: '/ar/media'
-      fullPath: '/ar/media'
-      preLoaderRoute: typeof ArMediaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ar/industries': {
@@ -1678,7 +1538,6 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   ExportRoute: ExportRoute,
   IndustriesRoute: IndustriesRoute,
-  MediaRoute: MediaRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   YokohamaRoute: YokohamaRoute,
   ArAboutRoute: ArAboutRoute,
@@ -1686,7 +1545,6 @@ const rootRouteChildren: RootRouteChildren = {
   ArContactRoute: ArContactRoute,
   ArExportRoute: ArExportRoute,
   ArIndustriesRoute: ArIndustriesRoute,
-  ArMediaRoute: ArMediaRoute,
   ArYokohamaRoute: ArYokohamaRoute,
   BlogSlugRoute: BlogSlugRoute,
   DeAboutRoute: DeAboutRoute,
@@ -1694,35 +1552,30 @@ const rootRouteChildren: RootRouteChildren = {
   DeContactRoute: DeContactRoute,
   DeExportRoute: DeExportRoute,
   DeIndustriesRoute: DeIndustriesRoute,
-  DeMediaRoute: DeMediaRoute,
   DeYokohamaRoute: DeYokohamaRoute,
   FaAboutRoute: FaAboutRoute,
   FaBlogRoute: FaBlogRoute,
   FaContactRoute: FaContactRoute,
   FaExportRoute: FaExportRoute,
   FaIndustriesRoute: FaIndustriesRoute,
-  FaMediaRoute: FaMediaRoute,
   FaYokohamaRoute: FaYokohamaRoute,
   FrAboutRoute: FrAboutRoute,
   FrBlogRoute: FrBlogRoute,
   FrContactRoute: FrContactRoute,
   FrExportRoute: FrExportRoute,
   FrIndustriesRoute: FrIndustriesRoute,
-  FrMediaRoute: FrMediaRoute,
   FrYokohamaRoute: FrYokohamaRoute,
   RuAboutRoute: RuAboutRoute,
   RuBlogRoute: RuBlogRoute,
   RuContactRoute: RuContactRoute,
   RuExportRoute: RuExportRoute,
   RuIndustriesRoute: RuIndustriesRoute,
-  RuMediaRoute: RuMediaRoute,
   RuYokohamaRoute: RuYokohamaRoute,
   TrAboutRoute: TrAboutRoute,
   TrBlogRoute: TrBlogRoute,
   TrContactRoute: TrContactRoute,
   TrExportRoute: TrExportRoute,
   TrIndustriesRoute: TrIndustriesRoute,
-  TrMediaRoute: TrMediaRoute,
   TrYokohamaRoute: TrYokohamaRoute,
   YokohamaCategoryRoute: YokohamaCategoryRouteWithChildren,
   ArIndexRoute: ArIndexRoute,

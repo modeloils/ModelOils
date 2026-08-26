@@ -23,7 +23,6 @@ export const NAV_LINKS: {
   { key: "industries", to: "/industries", highlight: false },
   { key: "export", to: "/export", highlight: false },
   { key: "about", to: "/about", highlight: false },
-  { key: "media", to: "/media", highlight: false },
   { key: "blog", to: "/blog", highlight: false },
   { key: "contact", to: "/contact", highlight: false },
 ];
