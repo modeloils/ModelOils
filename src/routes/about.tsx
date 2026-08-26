@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { FacilityShowcase } from "@/components/FacilityShowcase";
 import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
-import yokohamaImg from "@/assets/yokohama-hero-cream.webp";
+import yokohamaImg from "@/assets/yokohama-hero-cream-5w30.webp";
 
 export function aboutHead(locale: Locale) {
   return pageHead(locale, "about", [
