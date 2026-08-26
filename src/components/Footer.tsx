@@ -18,7 +18,7 @@ export function Footer({ variant = "default" }: { variant?: "default" | "yokoham
       <div className="mx-auto grid max-w-7xl gap-y-10 px-4 py-14 sm:grid-cols-2 sm:gap-x-8 sm:px-6 lg:grid-cols-[2fr_1fr_1fr] lg:gap-x-8 lg:px-8 xl:gap-x-12">
         <div className="sm:col-span-2 lg:col-span-1">
           <img
-            src="/model-oils/images/logo-main.png"
+            src="/model-oils/images/logo-main-2026.png"
             alt="Model Oils"
             className="h-20 w-auto object-contain lg:h-28"
           />
