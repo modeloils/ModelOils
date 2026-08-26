@@ -14,7 +14,7 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 sm:h-20 sm:px-6 lg:h-28 lg:px-8">
         <LocaleLink to="/" className="flex min-w-0 items-center" onClick={() => setOpen(false)}>
           <img
-            src="/model-oils/images/logo-main-2026.png"
+            src="/model-oils/images/logo-main-2026-v2.png"
             alt="Model Oils"
             className="h-12 w-auto shrink-0 object-contain sm:h-16 lg:h-24"
           />
