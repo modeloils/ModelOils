@@ -44,6 +44,18 @@ export function Blog() {
     <SiteLayout>
       <section className="border-b border-border bg-background py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-14 max-w-3xl">
+            <span className="brand-eyebrow inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em]">
+              <span className="brand-accent-rule h-px w-6" />
+              MODEL GRUP
+            </span>
+            <h1 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
+              {t.blogPage.heroTitle}
+            </h1>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              {t.blogPage.heroSubtitle}
+            </p>
+          </div>
           <SectionHeading title={t.blogPage.generalInfo} />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {generalArticles.map((article) => (

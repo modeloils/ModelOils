@@ -1,12 +1,15 @@
-import { Mail, MessageCircle, Globe, MapPin, ShieldCheck } from "lucide-react";
+import { Mail, MessageCircle, Globe, MapPin, ShieldCheck, Factory } from "lucide-react";
+import { SafeEmailLink } from "@/components/SafeEmailLink";
 import { CONTACT, NAV_LINKS } from "@/lib/site-data";
 import { LocaleLink, useTranslation } from "@/lib/i18n";
 import { AUTHORIZED_DISTRIBUTOR_LABEL } from "@/lib/i18n/authorized-distributor";
+import { getLegalContent } from "@/lib/legal";
 import { getYokohamaCategoryName, YOKOHAMA_CATEGORY_DEFINITIONS } from "@/lib/yokohama-categories";
 import { cn } from "@/lib/utils";
 
 export function Footer({ variant = "default" }: { variant?: "default" | "yokohama" }) {
   const { t, locale } = useTranslation();
+  const legal = getLegalContent(locale);
 
   return (
     <footer
@@ -20,22 +23,22 @@ export function Footer({ variant = "default" }: { variant?: "default" | "yokoham
           <img
             src="/model-oils/images/logo-main-2026-v2.png"
             alt="MODEL GRUP"
+            width={1536}
+            height={1024}
             className="h-20 w-auto object-contain lg:h-28"
           />
-          <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            {t.about.heroSubtitle}
-          </p>
           <div className="mt-4 inline-flex max-w-sm items-start gap-2 rounded-md border border-brand-green/35 bg-brand-green/10 px-3 py-2 text-xs font-bold leading-relaxed text-foreground">
             <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-brand-green" />
             <span>{AUTHORIZED_DISTRIBUTOR_LABEL[locale]}</span>
           </div>
           <div className="mt-5 space-y-2 text-sm text-muted-foreground">
-            <a
-              href={`mailto:${CONTACT.email}`}
-              className="flex min-h-[44px] items-center gap-2 hover:text-brand-red"
-            >
-              <Mail className="h-4 w-4 shrink-0" /> {CONTACT.email}
-            </a>
+            <SafeEmailLink className="flex min-h-[44px] items-center gap-2 hover:text-brand-red">
+              {(email) => (
+                <>
+                  <Mail className="h-4 w-4 shrink-0" /> {email}
+                </>
+              )}
+            </SafeEmailLink>
             <a
               href={CONTACT.whatsapp}
               target="_blank"
@@ -48,15 +51,26 @@ export function Footer({ variant = "default" }: { variant?: "default" | "yokoham
               <Globe className="h-4 w-4" /> {t.footer.exportWelcome}
             </span>
             <span className="flex items-start gap-2">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0" /> {CONTACT.address}
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
+              <span>
+                <strong className="text-foreground">{legal.labels.office}:</strong>{" "}
+                {CONTACT.address}
+              </span>
+            </span>
+            <span className="flex items-start gap-2">
+              <Factory className="mt-0.5 h-4 w-4 shrink-0" />
+              <span>
+                <strong className="text-foreground">{legal.labels.factory}:</strong>{" "}
+                {CONTACT.factoryAddress}
+              </span>
             </span>
           </div>
         </div>
 
         <div>
-          <h4 className="font-display text-sm font-bold uppercase tracking-wider text-foreground">
+          <h2 className="font-display text-sm font-bold uppercase tracking-wider text-foreground">
             {t.footer.company}
-          </h4>
+          </h2>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
             {NAV_LINKS.filter(({ brand }) => !brand).map((l) => (
               <li key={l.to}>
@@ -69,12 +83,12 @@ export function Footer({ variant = "default" }: { variant?: "default" | "yokoham
         </div>
 
         <div>
-          <h4 className="font-display text-sm font-bold uppercase tracking-wider">
+          <h2 className="font-display text-sm font-bold uppercase tracking-wider">
             <span className="block text-brand-red">YOKOHAMA</span>
             <span className="mt-1 block text-xs text-brand-green">{t.footer.products}</span>
-          </h4>
-          <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-            {YOKOHAMA_CATEGORY_DEFINITIONS.slice(0, 6).map(({ slug }) => (
+          </h2>
+          <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-muted-foreground lg:grid-cols-1 xl:grid-cols-2">
+            {YOKOHAMA_CATEGORY_DEFINITIONS.map(({ slug }) => (
               <li key={slug}>
                 <LocaleLink
                   to={`/yokohama/${slug}`}
@@ -89,10 +103,18 @@ export function Footer({ variant = "default" }: { variant?: "default" | "yokoham
       </div>
 
       <div className="border-t border-border">
-        <div className="mx-auto flex max-w-7xl items-center justify-center px-4 py-5 text-center text-xs text-muted-foreground sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-center text-xs text-muted-foreground sm:flex-row sm:px-6 sm:text-start lg:px-8">
           <p>
             © {new Date().getFullYear()} MODEL GRUP. {t.footer.rights}
           </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:justify-end">
+            <LocaleLink to="/privacy" className="hover:text-primary">
+              {legal.labels.privacy}
+            </LocaleLink>
+            <LocaleLink to="/kvkk" className="hover:text-primary">
+              {legal.labels.kvkk}
+            </LocaleLink>
+          </div>
         </div>
       </div>
     </footer>

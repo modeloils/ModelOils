@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { BlogArticle, blogArticleHead } from "../blog_.$slug";
+import { BlogArticle } from "../blog_.$slug";
+import { blogArticleHead, requireBlogArticle } from "@/lib/seo";
 export const Route = createFileRoute("/ru/blog_/$slug")({
-  head: () => blogArticleHead("ru"),
+  loader: ({ params }) => requireBlogArticle("ru", params.slug),
+  head: ({ params }) => blogArticleHead("ru", params.slug),
   component: BlogArticle,
 });

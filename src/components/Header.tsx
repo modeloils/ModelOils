@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useRouterState } from "@tanstack/react-router";
 import { Menu, X, Instagram, ShieldCheck } from "lucide-react";
 import { CONTACT, NAV_LINKS } from "@/lib/site-data";
 import { LocaleLink, LanguageSwitcher, useTranslation } from "@/lib/i18n";
@@ -8,6 +9,11 @@ import { cn } from "@/lib/utils";
 export function Header() {
   const [open, setOpen] = useState(false);
   const { t, locale } = useTranslation();
+  const pathname = useRouterState({ select: (state) => state.location.pathname });
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   return (
     <header className="mixed-header site-header-sandstone sticky top-0 z-50 border-b border-border/70 backdrop-blur-xl">
@@ -16,6 +22,8 @@ export function Header() {
           <img
             src="/model-oils/images/logo-main-2026-v2.png"
             alt="MODEL GRUP"
+            width={1536}
+            height={1024}
             className="h-12 w-auto shrink-0 object-contain sm:h-16 lg:h-24"
           />
         </LocaleLink>
@@ -61,6 +69,8 @@ export function Header() {
           <button
             className="grid h-11 w-11 place-items-center rounded-md border border-border text-foreground lg:hidden"
             aria-label={t.nav.toggleMenu}
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
             onClick={() => setOpen((v) => !v)}
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -76,7 +86,10 @@ export function Header() {
       </div>
 
       {open && (
-        <div className="border-t border-border/70 bg-background/95 lg:hidden">
+        <div
+          id="mobile-navigation"
+          className="border-t border-border/70 bg-background/95 lg:hidden"
+        >
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4 sm:px-6">
             {NAV_LINKS.map((l) => (
               <LocaleLink

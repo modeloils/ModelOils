@@ -8,6 +8,8 @@ import { type Locale, LOCALE_COOKIE, LOCALES } from "./types";
 export type { Locale } from "./types";
 export { LOCALE_COOKIE, DEFAULT_LOCALE, LOCALES } from "./types";
 
+export const SITE_URL = "https://modeloils.com";
+
 /** Base (English) path for each page, used for locale switching and hreflang. */
 const PAGE_PATHS: Record<PageKey, string> = {
   home: "/",
@@ -166,20 +168,26 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   );
 }
 
-/** Build a route `head()` payload (meta + hreflang) for a page in a locale. */
-export function pageHead(
-  locale: Locale,
-  key: PageKey,
-  extraMeta: Array<Record<string, string>> = [],
-) {
-  const m = PAGE_META[locale][key];
-  const enHref = PAGE_PATHS[key];
-  const trHref = localePath(PAGE_PATHS[key], "tr");
-  const ruHref = localePath(PAGE_PATHS[key], "ru");
-  const faHref = localePath(PAGE_PATHS[key], "fa");
-  const arHref = localePath(PAGE_PATHS[key], "ar");
-  const deHref = localePath(PAGE_PATHS[key], "de");
-  const frHref = localePath(PAGE_PATHS[key], "fr");
+export function absoluteUrl(path: string): string {
+  if (/^(?:https?:|data:)/i.test(path)) return path;
+  return new URL(path.startsWith("/") ? path : `/${path}`, SITE_URL).toString();
+}
+
+export interface CustomPageHeadOptions {
+  basePath: string;
+  title: string;
+  description: string;
+  image?: string;
+  type?: "website" | "article" | "product";
+  extraMeta?: Array<Record<string, string>>;
+  structuredData?: Record<string, unknown>;
+}
+
+/** Build absolute canonical, social and hreflang metadata for any localized route. */
+export function customPageHead(locale: Locale, options: CustomPageHeadOptions) {
+  const canonicalPath = localePath(options.basePath, locale);
+  const canonicalUrl = absoluteUrl(canonicalPath);
+  const imageUrl = absoluteUrl(options.image ?? "/model-oils/images/logo-main-2026-v2.png");
   const ogLocale =
     locale === "tr"
       ? "tr_TR"
@@ -195,25 +203,64 @@ export function pageHead(
                 ? "fr_FR"
                 : "en_US";
 
+  const extraMeta = (options.extraMeta ?? []).filter(
+    (meta) => meta.property !== "og:image" && meta.name !== "twitter:image",
+  );
+  const structuredMeta: Array<Record<string, string>> = options.structuredData
+    ? [
+        {
+          "script:ld+json": options.structuredData,
+        } as unknown as Record<string, string>,
+      ]
+    : [];
+
   return {
     meta: [
-      { title: m.title },
-      { name: "description", content: m.description },
-      { property: "og:title", content: m.ogTitle },
-      { property: "og:description", content: m.ogDescription },
-      { property: "og:type", content: "website" },
+      { title: options.title },
+      { name: "description", content: options.description },
+      { property: "og:title", content: options.title },
+      { property: "og:description", content: options.description },
+      { property: "og:type", content: options.type ?? "website" },
       { property: "og:locale", content: ogLocale },
+      { property: "og:url", content: canonicalUrl },
+      { property: "og:image", content: imageUrl },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: options.title },
+      { name: "twitter:description", content: options.description },
+      { name: "twitter:image", content: imageUrl },
+      ...structuredMeta,
       ...extraMeta,
     ],
     links: [
-      { rel: "alternate", hrefLang: "en", href: enHref },
-      { rel: "alternate", hrefLang: "tr", href: trHref },
-      { rel: "alternate", hrefLang: "ru", href: ruHref },
-      { rel: "alternate", hrefLang: "fa", href: faHref },
-      { rel: "alternate", hrefLang: "ar", href: arHref },
-      { rel: "alternate", hrefLang: "de", href: deHref },
-      { rel: "alternate", hrefLang: "fr", href: frHref },
-      { rel: "alternate", hrefLang: "x-default", href: enHref },
+      { rel: "canonical", href: canonicalUrl },
+      ...LOCALES.map((alternateLocale) => ({
+        rel: "alternate",
+        hrefLang: alternateLocale,
+        href: absoluteUrl(localePath(options.basePath, alternateLocale)),
+      })),
+      {
+        rel: "alternate",
+        hrefLang: "x-default",
+        href: absoluteUrl(options.basePath),
+      },
     ],
   };
+}
+
+/** Build a route `head()` payload for a known top-level page. */
+export function pageHead(
+  locale: Locale,
+  key: PageKey,
+  extraMeta: Array<Record<string, string>> = [],
+) {
+  const m = PAGE_META[locale][key];
+  const socialImage = extraMeta.find((meta) => meta.property === "og:image")?.content;
+
+  return customPageHead(locale, {
+    basePath: PAGE_PATHS[key],
+    title: m.title,
+    description: m.description,
+    image: socialImage,
+    extraMeta,
+  });
 }

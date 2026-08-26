@@ -11,6 +11,8 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as YokohamaRouteImport } from './routes/yokohama'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as KvkkRouteImport } from './routes/kvkk'
 import { Route as IndustriesRouteImport } from './routes/industries'
 import { Route as ExportRouteImport } from './routes/export'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -25,30 +27,40 @@ import { Route as DeIndexRouteImport } from './routes/de/index'
 import { Route as ArIndexRouteImport } from './routes/ar/index'
 import { Route as YokohamaCategoryRouteImport } from './routes/yokohama_.$category'
 import { Route as TrYokohamaRouteImport } from './routes/tr/yokohama'
+import { Route as TrPrivacyRouteImport } from './routes/tr/privacy'
+import { Route as TrKvkkRouteImport } from './routes/tr/kvkk'
 import { Route as TrIndustriesRouteImport } from './routes/tr/industries'
 import { Route as TrExportRouteImport } from './routes/tr/export'
 import { Route as TrContactRouteImport } from './routes/tr/contact'
 import { Route as TrBlogRouteImport } from './routes/tr/blog'
 import { Route as TrAboutRouteImport } from './routes/tr/about'
 import { Route as RuYokohamaRouteImport } from './routes/ru/yokohama'
+import { Route as RuPrivacyRouteImport } from './routes/ru/privacy'
+import { Route as RuKvkkRouteImport } from './routes/ru/kvkk'
 import { Route as RuIndustriesRouteImport } from './routes/ru/industries'
 import { Route as RuExportRouteImport } from './routes/ru/export'
 import { Route as RuContactRouteImport } from './routes/ru/contact'
 import { Route as RuBlogRouteImport } from './routes/ru/blog'
 import { Route as RuAboutRouteImport } from './routes/ru/about'
 import { Route as FrYokohamaRouteImport } from './routes/fr/yokohama'
+import { Route as FrPrivacyRouteImport } from './routes/fr/privacy'
+import { Route as FrKvkkRouteImport } from './routes/fr/kvkk'
 import { Route as FrIndustriesRouteImport } from './routes/fr/industries'
 import { Route as FrExportRouteImport } from './routes/fr/export'
 import { Route as FrContactRouteImport } from './routes/fr/contact'
 import { Route as FrBlogRouteImport } from './routes/fr/blog'
 import { Route as FrAboutRouteImport } from './routes/fr/about'
 import { Route as FaYokohamaRouteImport } from './routes/fa/yokohama'
+import { Route as FaPrivacyRouteImport } from './routes/fa/privacy'
+import { Route as FaKvkkRouteImport } from './routes/fa/kvkk'
 import { Route as FaIndustriesRouteImport } from './routes/fa/industries'
 import { Route as FaExportRouteImport } from './routes/fa/export'
 import { Route as FaContactRouteImport } from './routes/fa/contact'
 import { Route as FaBlogRouteImport } from './routes/fa/blog'
 import { Route as FaAboutRouteImport } from './routes/fa/about'
 import { Route as DeYokohamaRouteImport } from './routes/de/yokohama'
+import { Route as DePrivacyRouteImport } from './routes/de/privacy'
+import { Route as DeKvkkRouteImport } from './routes/de/kvkk'
 import { Route as DeIndustriesRouteImport } from './routes/de/industries'
 import { Route as DeExportRouteImport } from './routes/de/export'
 import { Route as DeContactRouteImport } from './routes/de/contact'
@@ -56,6 +68,8 @@ import { Route as DeBlogRouteImport } from './routes/de/blog'
 import { Route as DeAboutRouteImport } from './routes/de/about'
 import { Route as BlogSlugRouteImport } from './routes/blog_.$slug'
 import { Route as ArYokohamaRouteImport } from './routes/ar/yokohama'
+import { Route as ArPrivacyRouteImport } from './routes/ar/privacy'
+import { Route as ArKvkkRouteImport } from './routes/ar/kvkk'
 import { Route as ArIndustriesRouteImport } from './routes/ar/industries'
 import { Route as ArExportRouteImport } from './routes/ar/export'
 import { Route as ArContactRouteImport } from './routes/ar/contact'
@@ -89,6 +103,16 @@ const YokohamaRoute = YokohamaRouteImport.update({
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KvkkRoute = KvkkRouteImport.update({
+  id: '/kvkk',
+  path: '/kvkk',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndustriesRoute = IndustriesRouteImport.update({
@@ -161,6 +185,16 @@ const TrYokohamaRoute = TrYokohamaRouteImport.update({
   path: '/tr/yokohama',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TrPrivacyRoute = TrPrivacyRouteImport.update({
+  id: '/tr/privacy',
+  path: '/tr/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TrKvkkRoute = TrKvkkRouteImport.update({
+  id: '/tr/kvkk',
+  path: '/tr/kvkk',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TrIndustriesRoute = TrIndustriesRouteImport.update({
   id: '/tr/industries',
   path: '/tr/industries',
@@ -189,6 +223,16 @@ const TrAboutRoute = TrAboutRouteImport.update({
 const RuYokohamaRoute = RuYokohamaRouteImport.update({
   id: '/ru/yokohama',
   path: '/ru/yokohama',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RuPrivacyRoute = RuPrivacyRouteImport.update({
+  id: '/ru/privacy',
+  path: '/ru/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RuKvkkRoute = RuKvkkRouteImport.update({
+  id: '/ru/kvkk',
+  path: '/ru/kvkk',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RuIndustriesRoute = RuIndustriesRouteImport.update({
@@ -221,6 +265,16 @@ const FrYokohamaRoute = FrYokohamaRouteImport.update({
   path: '/fr/yokohama',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FrPrivacyRoute = FrPrivacyRouteImport.update({
+  id: '/fr/privacy',
+  path: '/fr/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FrKvkkRoute = FrKvkkRouteImport.update({
+  id: '/fr/kvkk',
+  path: '/fr/kvkk',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FrIndustriesRoute = FrIndustriesRouteImport.update({
   id: '/fr/industries',
   path: '/fr/industries',
@@ -251,6 +305,16 @@ const FaYokohamaRoute = FaYokohamaRouteImport.update({
   path: '/fa/yokohama',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FaPrivacyRoute = FaPrivacyRouteImport.update({
+  id: '/fa/privacy',
+  path: '/fa/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaKvkkRoute = FaKvkkRouteImport.update({
+  id: '/fa/kvkk',
+  path: '/fa/kvkk',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FaIndustriesRoute = FaIndustriesRouteImport.update({
   id: '/fa/industries',
   path: '/fa/industries',
@@ -279,6 +343,16 @@ const FaAboutRoute = FaAboutRouteImport.update({
 const DeYokohamaRoute = DeYokohamaRouteImport.update({
   id: '/de/yokohama',
   path: '/de/yokohama',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DePrivacyRoute = DePrivacyRouteImport.update({
+  id: '/de/privacy',
+  path: '/de/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DeKvkkRoute = DeKvkkRouteImport.update({
+  id: '/de/kvkk',
+  path: '/de/kvkk',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DeIndustriesRoute = DeIndustriesRouteImport.update({
@@ -314,6 +388,16 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
 const ArYokohamaRoute = ArYokohamaRouteImport.update({
   id: '/ar/yokohama',
   path: '/ar/yokohama',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArPrivacyRoute = ArPrivacyRouteImport.update({
+  id: '/ar/privacy',
+  path: '/ar/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArKvkkRoute = ArKvkkRouteImport.update({
+  id: '/ar/kvkk',
+  path: '/ar/kvkk',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ArIndustriesRoute = ArIndustriesRouteImport.update({
@@ -450,6 +534,8 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
   '/industries': typeof IndustriesRoute
+  '/kvkk': typeof KvkkRoute
+  '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/yokohama': typeof YokohamaRoute
   '/ar/about': typeof ArAboutRoute
@@ -457,6 +543,8 @@ export interface FileRoutesByFullPath {
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
   '/ar/industries': typeof ArIndustriesRoute
+  '/ar/kvkk': typeof ArKvkkRoute
+  '/ar/privacy': typeof ArPrivacyRoute
   '/ar/yokohama': typeof ArYokohamaRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
@@ -464,30 +552,40 @@ export interface FileRoutesByFullPath {
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
   '/de/industries': typeof DeIndustriesRoute
+  '/de/kvkk': typeof DeKvkkRoute
+  '/de/privacy': typeof DePrivacyRoute
   '/de/yokohama': typeof DeYokohamaRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
   '/fa/industries': typeof FaIndustriesRoute
+  '/fa/kvkk': typeof FaKvkkRoute
+  '/fa/privacy': typeof FaPrivacyRoute
   '/fa/yokohama': typeof FaYokohamaRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
   '/fr/industries': typeof FrIndustriesRoute
+  '/fr/kvkk': typeof FrKvkkRoute
+  '/fr/privacy': typeof FrPrivacyRoute
   '/fr/yokohama': typeof FrYokohamaRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
   '/ru/industries': typeof RuIndustriesRoute
+  '/ru/kvkk': typeof RuKvkkRoute
+  '/ru/privacy': typeof RuPrivacyRoute
   '/ru/yokohama': typeof RuYokohamaRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
   '/tr/industries': typeof TrIndustriesRoute
+  '/tr/kvkk': typeof TrKvkkRoute
+  '/tr/privacy': typeof TrPrivacyRoute
   '/tr/yokohama': typeof TrYokohamaRoute
   '/yokohama/$category': typeof YokohamaCategoryRouteWithChildren
   '/ar/': typeof ArIndexRoute
@@ -523,6 +621,8 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
   '/industries': typeof IndustriesRoute
+  '/kvkk': typeof KvkkRoute
+  '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/yokohama': typeof YokohamaRoute
   '/ar/about': typeof ArAboutRoute
@@ -530,6 +630,8 @@ export interface FileRoutesByTo {
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
   '/ar/industries': typeof ArIndustriesRoute
+  '/ar/kvkk': typeof ArKvkkRoute
+  '/ar/privacy': typeof ArPrivacyRoute
   '/ar/yokohama': typeof ArYokohamaRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
@@ -537,30 +639,40 @@ export interface FileRoutesByTo {
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
   '/de/industries': typeof DeIndustriesRoute
+  '/de/kvkk': typeof DeKvkkRoute
+  '/de/privacy': typeof DePrivacyRoute
   '/de/yokohama': typeof DeYokohamaRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
   '/fa/industries': typeof FaIndustriesRoute
+  '/fa/kvkk': typeof FaKvkkRoute
+  '/fa/privacy': typeof FaPrivacyRoute
   '/fa/yokohama': typeof FaYokohamaRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
   '/fr/industries': typeof FrIndustriesRoute
+  '/fr/kvkk': typeof FrKvkkRoute
+  '/fr/privacy': typeof FrPrivacyRoute
   '/fr/yokohama': typeof FrYokohamaRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
   '/ru/industries': typeof RuIndustriesRoute
+  '/ru/kvkk': typeof RuKvkkRoute
+  '/ru/privacy': typeof RuPrivacyRoute
   '/ru/yokohama': typeof RuYokohamaRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
   '/tr/industries': typeof TrIndustriesRoute
+  '/tr/kvkk': typeof TrKvkkRoute
+  '/tr/privacy': typeof TrPrivacyRoute
   '/tr/yokohama': typeof TrYokohamaRoute
   '/yokohama/$category': typeof YokohamaCategoryRouteWithChildren
   '/ar': typeof ArIndexRoute
@@ -597,6 +709,8 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
   '/industries': typeof IndustriesRoute
+  '/kvkk': typeof KvkkRoute
+  '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/yokohama': typeof YokohamaRoute
   '/ar/about': typeof ArAboutRoute
@@ -604,6 +718,8 @@ export interface FileRoutesById {
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
   '/ar/industries': typeof ArIndustriesRoute
+  '/ar/kvkk': typeof ArKvkkRoute
+  '/ar/privacy': typeof ArPrivacyRoute
   '/ar/yokohama': typeof ArYokohamaRoute
   '/blog_/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
@@ -611,30 +727,40 @@ export interface FileRoutesById {
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
   '/de/industries': typeof DeIndustriesRoute
+  '/de/kvkk': typeof DeKvkkRoute
+  '/de/privacy': typeof DePrivacyRoute
   '/de/yokohama': typeof DeYokohamaRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
   '/fa/industries': typeof FaIndustriesRoute
+  '/fa/kvkk': typeof FaKvkkRoute
+  '/fa/privacy': typeof FaPrivacyRoute
   '/fa/yokohama': typeof FaYokohamaRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
   '/fr/industries': typeof FrIndustriesRoute
+  '/fr/kvkk': typeof FrKvkkRoute
+  '/fr/privacy': typeof FrPrivacyRoute
   '/fr/yokohama': typeof FrYokohamaRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
   '/ru/industries': typeof RuIndustriesRoute
+  '/ru/kvkk': typeof RuKvkkRoute
+  '/ru/privacy': typeof RuPrivacyRoute
   '/ru/yokohama': typeof RuYokohamaRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
   '/tr/industries': typeof TrIndustriesRoute
+  '/tr/kvkk': typeof TrKvkkRoute
+  '/tr/privacy': typeof TrPrivacyRoute
   '/tr/yokohama': typeof TrYokohamaRoute
   '/yokohama_/$category': typeof YokohamaCategoryRouteWithChildren
   '/ar/': typeof ArIndexRoute
@@ -672,6 +798,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/export'
     | '/industries'
+    | '/kvkk'
+    | '/privacy'
     | '/sitemap.xml'
     | '/yokohama'
     | '/ar/about'
@@ -679,6 +807,8 @@ export interface FileRouteTypes {
     | '/ar/contact'
     | '/ar/export'
     | '/ar/industries'
+    | '/ar/kvkk'
+    | '/ar/privacy'
     | '/ar/yokohama'
     | '/blog/$slug'
     | '/de/about'
@@ -686,30 +816,40 @@ export interface FileRouteTypes {
     | '/de/contact'
     | '/de/export'
     | '/de/industries'
+    | '/de/kvkk'
+    | '/de/privacy'
     | '/de/yokohama'
     | '/fa/about'
     | '/fa/blog'
     | '/fa/contact'
     | '/fa/export'
     | '/fa/industries'
+    | '/fa/kvkk'
+    | '/fa/privacy'
     | '/fa/yokohama'
     | '/fr/about'
     | '/fr/blog'
     | '/fr/contact'
     | '/fr/export'
     | '/fr/industries'
+    | '/fr/kvkk'
+    | '/fr/privacy'
     | '/fr/yokohama'
     | '/ru/about'
     | '/ru/blog'
     | '/ru/contact'
     | '/ru/export'
     | '/ru/industries'
+    | '/ru/kvkk'
+    | '/ru/privacy'
     | '/ru/yokohama'
     | '/tr/about'
     | '/tr/blog'
     | '/tr/contact'
     | '/tr/export'
     | '/tr/industries'
+    | '/tr/kvkk'
+    | '/tr/privacy'
     | '/tr/yokohama'
     | '/yokohama/$category'
     | '/ar/'
@@ -745,6 +885,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/export'
     | '/industries'
+    | '/kvkk'
+    | '/privacy'
     | '/sitemap.xml'
     | '/yokohama'
     | '/ar/about'
@@ -752,6 +894,8 @@ export interface FileRouteTypes {
     | '/ar/contact'
     | '/ar/export'
     | '/ar/industries'
+    | '/ar/kvkk'
+    | '/ar/privacy'
     | '/ar/yokohama'
     | '/blog/$slug'
     | '/de/about'
@@ -759,30 +903,40 @@ export interface FileRouteTypes {
     | '/de/contact'
     | '/de/export'
     | '/de/industries'
+    | '/de/kvkk'
+    | '/de/privacy'
     | '/de/yokohama'
     | '/fa/about'
     | '/fa/blog'
     | '/fa/contact'
     | '/fa/export'
     | '/fa/industries'
+    | '/fa/kvkk'
+    | '/fa/privacy'
     | '/fa/yokohama'
     | '/fr/about'
     | '/fr/blog'
     | '/fr/contact'
     | '/fr/export'
     | '/fr/industries'
+    | '/fr/kvkk'
+    | '/fr/privacy'
     | '/fr/yokohama'
     | '/ru/about'
     | '/ru/blog'
     | '/ru/contact'
     | '/ru/export'
     | '/ru/industries'
+    | '/ru/kvkk'
+    | '/ru/privacy'
     | '/ru/yokohama'
     | '/tr/about'
     | '/tr/blog'
     | '/tr/contact'
     | '/tr/export'
     | '/tr/industries'
+    | '/tr/kvkk'
+    | '/tr/privacy'
     | '/tr/yokohama'
     | '/yokohama/$category'
     | '/ar'
@@ -818,6 +972,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/export'
     | '/industries'
+    | '/kvkk'
+    | '/privacy'
     | '/sitemap.xml'
     | '/yokohama'
     | '/ar/about'
@@ -825,6 +981,8 @@ export interface FileRouteTypes {
     | '/ar/contact'
     | '/ar/export'
     | '/ar/industries'
+    | '/ar/kvkk'
+    | '/ar/privacy'
     | '/ar/yokohama'
     | '/blog_/$slug'
     | '/de/about'
@@ -832,30 +990,40 @@ export interface FileRouteTypes {
     | '/de/contact'
     | '/de/export'
     | '/de/industries'
+    | '/de/kvkk'
+    | '/de/privacy'
     | '/de/yokohama'
     | '/fa/about'
     | '/fa/blog'
     | '/fa/contact'
     | '/fa/export'
     | '/fa/industries'
+    | '/fa/kvkk'
+    | '/fa/privacy'
     | '/fa/yokohama'
     | '/fr/about'
     | '/fr/blog'
     | '/fr/contact'
     | '/fr/export'
     | '/fr/industries'
+    | '/fr/kvkk'
+    | '/fr/privacy'
     | '/fr/yokohama'
     | '/ru/about'
     | '/ru/blog'
     | '/ru/contact'
     | '/ru/export'
     | '/ru/industries'
+    | '/ru/kvkk'
+    | '/ru/privacy'
     | '/ru/yokohama'
     | '/tr/about'
     | '/tr/blog'
     | '/tr/contact'
     | '/tr/export'
     | '/tr/industries'
+    | '/tr/kvkk'
+    | '/tr/privacy'
     | '/tr/yokohama'
     | '/yokohama_/$category'
     | '/ar/'
@@ -892,6 +1060,8 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   ExportRoute: typeof ExportRoute
   IndustriesRoute: typeof IndustriesRoute
+  KvkkRoute: typeof KvkkRoute
+  PrivacyRoute: typeof PrivacyRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   YokohamaRoute: typeof YokohamaRoute
   ArAboutRoute: typeof ArAboutRoute
@@ -899,6 +1069,8 @@ export interface RootRouteChildren {
   ArContactRoute: typeof ArContactRoute
   ArExportRoute: typeof ArExportRoute
   ArIndustriesRoute: typeof ArIndustriesRoute
+  ArKvkkRoute: typeof ArKvkkRoute
+  ArPrivacyRoute: typeof ArPrivacyRoute
   ArYokohamaRoute: typeof ArYokohamaRoute
   BlogSlugRoute: typeof BlogSlugRoute
   DeAboutRoute: typeof DeAboutRoute
@@ -906,30 +1078,40 @@ export interface RootRouteChildren {
   DeContactRoute: typeof DeContactRoute
   DeExportRoute: typeof DeExportRoute
   DeIndustriesRoute: typeof DeIndustriesRoute
+  DeKvkkRoute: typeof DeKvkkRoute
+  DePrivacyRoute: typeof DePrivacyRoute
   DeYokohamaRoute: typeof DeYokohamaRoute
   FaAboutRoute: typeof FaAboutRoute
   FaBlogRoute: typeof FaBlogRoute
   FaContactRoute: typeof FaContactRoute
   FaExportRoute: typeof FaExportRoute
   FaIndustriesRoute: typeof FaIndustriesRoute
+  FaKvkkRoute: typeof FaKvkkRoute
+  FaPrivacyRoute: typeof FaPrivacyRoute
   FaYokohamaRoute: typeof FaYokohamaRoute
   FrAboutRoute: typeof FrAboutRoute
   FrBlogRoute: typeof FrBlogRoute
   FrContactRoute: typeof FrContactRoute
   FrExportRoute: typeof FrExportRoute
   FrIndustriesRoute: typeof FrIndustriesRoute
+  FrKvkkRoute: typeof FrKvkkRoute
+  FrPrivacyRoute: typeof FrPrivacyRoute
   FrYokohamaRoute: typeof FrYokohamaRoute
   RuAboutRoute: typeof RuAboutRoute
   RuBlogRoute: typeof RuBlogRoute
   RuContactRoute: typeof RuContactRoute
   RuExportRoute: typeof RuExportRoute
   RuIndustriesRoute: typeof RuIndustriesRoute
+  RuKvkkRoute: typeof RuKvkkRoute
+  RuPrivacyRoute: typeof RuPrivacyRoute
   RuYokohamaRoute: typeof RuYokohamaRoute
   TrAboutRoute: typeof TrAboutRoute
   TrBlogRoute: typeof TrBlogRoute
   TrContactRoute: typeof TrContactRoute
   TrExportRoute: typeof TrExportRoute
   TrIndustriesRoute: typeof TrIndustriesRoute
+  TrKvkkRoute: typeof TrKvkkRoute
+  TrPrivacyRoute: typeof TrPrivacyRoute
   TrYokohamaRoute: typeof TrYokohamaRoute
   YokohamaCategoryRoute: typeof YokohamaCategoryRouteWithChildren
   ArIndexRoute: typeof ArIndexRoute
@@ -966,6 +1148,20 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kvkk': {
+      id: '/kvkk'
+      path: '/kvkk'
+      fullPath: '/kvkk'
+      preLoaderRoute: typeof KvkkRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/industries': {
@@ -1066,6 +1262,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TrYokohamaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tr/privacy': {
+      id: '/tr/privacy'
+      path: '/tr/privacy'
+      fullPath: '/tr/privacy'
+      preLoaderRoute: typeof TrPrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tr/kvkk': {
+      id: '/tr/kvkk'
+      path: '/tr/kvkk'
+      fullPath: '/tr/kvkk'
+      preLoaderRoute: typeof TrKvkkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tr/industries': {
       id: '/tr/industries'
       path: '/tr/industries'
@@ -1106,6 +1316,20 @@ declare module '@tanstack/react-router' {
       path: '/ru/yokohama'
       fullPath: '/ru/yokohama'
       preLoaderRoute: typeof RuYokohamaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ru/privacy': {
+      id: '/ru/privacy'
+      path: '/ru/privacy'
+      fullPath: '/ru/privacy'
+      preLoaderRoute: typeof RuPrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ru/kvkk': {
+      id: '/ru/kvkk'
+      path: '/ru/kvkk'
+      fullPath: '/ru/kvkk'
+      preLoaderRoute: typeof RuKvkkRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ru/industries': {
@@ -1150,6 +1374,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FrYokohamaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/fr/privacy': {
+      id: '/fr/privacy'
+      path: '/fr/privacy'
+      fullPath: '/fr/privacy'
+      preLoaderRoute: typeof FrPrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fr/kvkk': {
+      id: '/fr/kvkk'
+      path: '/fr/kvkk'
+      fullPath: '/fr/kvkk'
+      preLoaderRoute: typeof FrKvkkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/fr/industries': {
       id: '/fr/industries'
       path: '/fr/industries'
@@ -1192,6 +1430,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaYokohamaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/fa/privacy': {
+      id: '/fa/privacy'
+      path: '/fa/privacy'
+      fullPath: '/fa/privacy'
+      preLoaderRoute: typeof FaPrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fa/kvkk': {
+      id: '/fa/kvkk'
+      path: '/fa/kvkk'
+      fullPath: '/fa/kvkk'
+      preLoaderRoute: typeof FaKvkkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/fa/industries': {
       id: '/fa/industries'
       path: '/fa/industries'
@@ -1232,6 +1484,20 @@ declare module '@tanstack/react-router' {
       path: '/de/yokohama'
       fullPath: '/de/yokohama'
       preLoaderRoute: typeof DeYokohamaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/de/privacy': {
+      id: '/de/privacy'
+      path: '/de/privacy'
+      fullPath: '/de/privacy'
+      preLoaderRoute: typeof DePrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/de/kvkk': {
+      id: '/de/kvkk'
+      path: '/de/kvkk'
+      fullPath: '/de/kvkk'
+      preLoaderRoute: typeof DeKvkkRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/de/industries': {
@@ -1281,6 +1547,20 @@ declare module '@tanstack/react-router' {
       path: '/ar/yokohama'
       fullPath: '/ar/yokohama'
       preLoaderRoute: typeof ArYokohamaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ar/privacy': {
+      id: '/ar/privacy'
+      path: '/ar/privacy'
+      fullPath: '/ar/privacy'
+      preLoaderRoute: typeof ArPrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ar/kvkk': {
+      id: '/ar/kvkk'
+      path: '/ar/kvkk'
+      fullPath: '/ar/kvkk'
+      preLoaderRoute: typeof ArKvkkRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ar/industries': {
@@ -1538,6 +1818,8 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   ExportRoute: ExportRoute,
   IndustriesRoute: IndustriesRoute,
+  KvkkRoute: KvkkRoute,
+  PrivacyRoute: PrivacyRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   YokohamaRoute: YokohamaRoute,
   ArAboutRoute: ArAboutRoute,
@@ -1545,6 +1827,8 @@ const rootRouteChildren: RootRouteChildren = {
   ArContactRoute: ArContactRoute,
   ArExportRoute: ArExportRoute,
   ArIndustriesRoute: ArIndustriesRoute,
+  ArKvkkRoute: ArKvkkRoute,
+  ArPrivacyRoute: ArPrivacyRoute,
   ArYokohamaRoute: ArYokohamaRoute,
   BlogSlugRoute: BlogSlugRoute,
   DeAboutRoute: DeAboutRoute,
@@ -1552,30 +1836,40 @@ const rootRouteChildren: RootRouteChildren = {
   DeContactRoute: DeContactRoute,
   DeExportRoute: DeExportRoute,
   DeIndustriesRoute: DeIndustriesRoute,
+  DeKvkkRoute: DeKvkkRoute,
+  DePrivacyRoute: DePrivacyRoute,
   DeYokohamaRoute: DeYokohamaRoute,
   FaAboutRoute: FaAboutRoute,
   FaBlogRoute: FaBlogRoute,
   FaContactRoute: FaContactRoute,
   FaExportRoute: FaExportRoute,
   FaIndustriesRoute: FaIndustriesRoute,
+  FaKvkkRoute: FaKvkkRoute,
+  FaPrivacyRoute: FaPrivacyRoute,
   FaYokohamaRoute: FaYokohamaRoute,
   FrAboutRoute: FrAboutRoute,
   FrBlogRoute: FrBlogRoute,
   FrContactRoute: FrContactRoute,
   FrExportRoute: FrExportRoute,
   FrIndustriesRoute: FrIndustriesRoute,
+  FrKvkkRoute: FrKvkkRoute,
+  FrPrivacyRoute: FrPrivacyRoute,
   FrYokohamaRoute: FrYokohamaRoute,
   RuAboutRoute: RuAboutRoute,
   RuBlogRoute: RuBlogRoute,
   RuContactRoute: RuContactRoute,
   RuExportRoute: RuExportRoute,
   RuIndustriesRoute: RuIndustriesRoute,
+  RuKvkkRoute: RuKvkkRoute,
+  RuPrivacyRoute: RuPrivacyRoute,
   RuYokohamaRoute: RuYokohamaRoute,
   TrAboutRoute: TrAboutRoute,
   TrBlogRoute: TrBlogRoute,
   TrContactRoute: TrContactRoute,
   TrExportRoute: TrExportRoute,
   TrIndustriesRoute: TrIndustriesRoute,
+  TrKvkkRoute: TrKvkkRoute,
+  TrPrivacyRoute: TrPrivacyRoute,
   TrYokohamaRoute: TrYokohamaRoute,
   YokohamaCategoryRoute: YokohamaCategoryRouteWithChildren,
   ArIndexRoute: ArIndexRoute,

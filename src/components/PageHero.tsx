@@ -8,6 +8,7 @@ export function PageHero({
   compact = false,
   backgroundImage,
   transparent = false,
+  headingLevel: Heading = "h1",
   children,
 }: {
   eyebrow: string;
@@ -17,6 +18,7 @@ export function PageHero({
   compact?: boolean;
   backgroundImage?: string;
   transparent?: boolean;
+  headingLevel?: "h1" | "h2";
   children?: ReactNode;
 }) {
   const paddingClass = compact
@@ -47,11 +49,11 @@ export function PageHero({
           <span className="brand-accent-rule h-px w-6" />
           {eyebrow}
         </span>
-        <h1
+        <Heading
           className={`mt-4 font-sans text-3xl font-bold tracking-tight text-foreground sm:text-4xl ${compact ? "max-w-3xl" : centered ? "font-display font-extrabold mx-auto max-w-4xl sm:text-5xl lg:text-6xl" : "font-display font-extrabold max-w-3xl sm:text-5xl"}`}
         >
           {title}
-        </h1>
+        </Heading>
         {subtitle && (
           <p
             className={`mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg ${centered ? "mx-auto" : ""}`}

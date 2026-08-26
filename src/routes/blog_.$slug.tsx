@@ -1,15 +1,13 @@
-import { createFileRoute, useParams } from "@tanstack/react-router";
+import { createFileRoute, notFound, useParams } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
-import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
+import { LocaleLink, useTranslation } from "@/lib/i18n";
 import { getBlogArticle, type BlogLocale } from "@/lib/blog-data";
-
-export function blogArticleHead(locale: Locale) {
-  return pageHead(locale, "blog");
-}
+import { blogArticleHead, requireBlogArticle } from "@/lib/seo";
 
 export const Route = createFileRoute("/blog_/$slug")({
-  head: () => blogArticleHead("en"),
+  loader: ({ params }) => requireBlogArticle("en", params.slug),
+  head: ({ params }) => blogArticleHead("en", params.slug),
   component: BlogArticle,
 });
 
@@ -19,21 +17,7 @@ export function BlogArticle() {
   const article = getBlogArticle(slug, locale as BlogLocale);
 
   if (!article) {
-    return (
-      <SiteLayout>
-        <div className="flex min-h-[60vh] items-center justify-center px-4">
-          <div className="text-center">
-            <p className="text-lg font-semibold text-foreground">{t.notFound.title}</p>
-            <LocaleLink
-              to="/blog"
-              className="mt-4 inline-flex min-h-[44px] items-center gap-2 text-sm text-primary hover:underline"
-            >
-              <ArrowLeft className="h-4 w-4 rtl:rotate-180" /> {t.blogPage.backToBlog}
-            </LocaleLink>
-          </div>
-        </div>
-      </SiteLayout>
-    );
+    throw notFound();
   }
 
   return (
@@ -66,9 +50,7 @@ export function BlogArticle() {
           <h2 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
             {t.blogPage.ctaTitle}
           </h2>
-          <p className="mt-4 text-base text-muted-foreground">
-            {t.blogPage.ctaBody}
-          </p>
+          <p className="mt-4 text-base text-muted-foreground">{t.blogPage.ctaBody}</p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <LocaleLink
               to="/contact"

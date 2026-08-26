@@ -163,7 +163,7 @@ function Flagship() {
         </div>
         <div className="yokohama-five-product-stage relative overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-card)]">
           <div className="tech-grid pointer-events-none absolute inset-0 opacity-40" />
-          <div className="yokohama-five-product-lineup relative z-10 grid min-h-[25rem] grid-cols-5 items-end gap-0 px-2 pb-5 pt-12 sm:px-5 lg:min-h-[31rem]">
+          <div className="yokohama-five-product-lineup relative z-10 grid min-h-[28rem] grid-cols-6 items-end gap-y-3 px-3 pb-5 pt-8 sm:min-h-[25rem] sm:grid-cols-5 sm:gap-y-0 sm:px-5 sm:pt-12 lg:min-h-[31rem]">
             {FLAGSHIP_PRODUCTS.map((product, index) => (
               <img
                 key={product.src}
@@ -171,7 +171,7 @@ function Flagship() {
                 alt={product.alt}
                 loading="lazy"
                 decoding="async"
-                className={`w-full object-contain drop-shadow-[0_18px_18px_rgba(54,38,24,0.22)] ${index === 2 ? "h-80 lg:h-[27rem]" : "h-72 lg:h-96"}`}
+                className={`col-span-2 w-full object-contain drop-shadow-[0_18px_18px_rgba(54,38,24,0.22)] sm:col-span-1 ${index === 3 ? "col-start-2 sm:col-start-auto" : ""} ${index === 2 ? "h-52 sm:h-80 lg:h-[27rem]" : "h-44 sm:h-72 lg:h-96"}`}
               />
             ))}
           </div>

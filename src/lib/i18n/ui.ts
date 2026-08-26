@@ -235,9 +235,9 @@ const en: UIStrings = {
   },
   about: {
     heroEyebrow: "About MODEL GRUP",
-    heroTitle: "International Lubricant Exporter and Authorized Yokohama Motor Oil Distributor",
+    heroTitle: "Authorized Distributor of Yokohama Motor Oils",
     heroSubtitle:
-      "MODEL GRUP is a B2B lubricant exporter and supplier, and the authorized distributor of Yokohama motor oils for the Middle East and Europe.",
+      "MODEL GRUP is the authorized distributor of Yokohama motor oils for the Middle East and Europe.",
     focusEyebrow: "Our Focus",
     focusTitle: "Built for International Supply",
     focusP1:
@@ -253,7 +253,7 @@ const en: UIStrings = {
     heroTitle: "Let's Build Your Export Offer",
     heroSubtitle:
       "Tell us your target country, product type, packaging, and volume. Our team will prepare a suitable export offer.",
-    legalName: "Registered Company Name",
+    legalName: "Company",
     email: "Email",
     whatsapp: "WhatsApp",
     exportInquiries: "Export Inquiries",
@@ -310,7 +310,7 @@ const en: UIStrings = {
     toastBody: "Thank you. Our export team will prepare a suitable offer and get back to you.",
     errorTitle: "Error",
     errorBody: "Could not send your request. Please email us directly.",
-    networkError: "Network error. Please email us directly at info@modelgrup.com",
+    networkError: "Network error. Please use the contact details below.",
   },
   notFound: {
     title: "Page not found",
@@ -430,9 +430,9 @@ const tr: UIStrings = {
   },
   about: {
     heroEyebrow: "MODEL GRUP Hakkında",
-    heroTitle: "Uluslararası Yağ İhracatçısı ve Yetkili Yokohama Motor Yağı Distribütörü",
+    heroTitle: "Yokohama Motor Yağları Yetkili Distribütörü",
     heroSubtitle:
-      "MODEL GRUP; bir B2B yağ ihracatçısı ve tedarikçisi, ayrıca Orta Doğu ve Avrupa için Yokohama motor yağlarının yetkili distribütörüdür.",
+      "MODEL GRUP, Orta Doğu ve Avrupa için Yokohama motor yağlarının yetkili distribütörüdür.",
     focusEyebrow: "Odağımız",
     focusTitle: "Uluslararası Tedarik İçin Hazır",
     focusP1:
@@ -448,7 +448,7 @@ const tr: UIStrings = {
     heroTitle: "İhracat Teklifinizi Birlikte Oluşturalım",
     heroSubtitle:
       "Hedef ülkenizi, ürün tipini, ambalajı ve hacmi bize bildirin. Ekibimiz size uygun bir ihracat teklifi hazırlayacaktır.",
-    legalName: "Ticaret Ünvanı",
+    legalName: "Şirket",
     email: "E-posta",
     whatsapp: "WhatsApp",
     exportInquiries: "İhracat Talepleri",
@@ -505,7 +505,7 @@ const tr: UIStrings = {
     toastBody: "Teşekkürler. İhracat ekibimiz size uygun bir teklif hazırlayıp geri dönecektir.",
     errorTitle: "Hata",
     errorBody: "Talebiniz gönderilemedi. Lütfen bize doğrudan e-posta gönderin.",
-    networkError: "Ağ hatası. Lütfen bize doğrudan info@modelgrup.com adresinden e-posta gönderin.",
+    networkError: "Ağ hatası. Lütfen aşağıdaki iletişim bilgilerini kullanın.",
   },
   notFound: {
     title: "Sayfa bulunamadı",
@@ -625,9 +625,9 @@ const ru: UIStrings = {
   },
   about: {
     heroEyebrow: "О MODEL GRUP",
-    heroTitle: "Международный экспортёр и официальный дистрибьютор моторных масел Yokohama",
+    heroTitle: "Официальный дистрибьютор моторных масел Yokohama",
     heroSubtitle:
-      "MODEL GRUP — B2B-экспортёр и поставщик смазочных материалов, а также официальный дистрибьютор моторных масел Yokohama на Ближнем Востоке и в Европе.",
+      "MODEL GRUP — официальный дистрибьютор моторных масел Yokohama на Ближнем Востоке и в Европе.",
     focusEyebrow: "Наш фокус",
     focusTitle: "Создано для международных поставок",
     focusP1:
@@ -642,7 +642,7 @@ const ru: UIStrings = {
     heroTitle: "Давайте создадим ваше экспортное предложение",
     heroSubtitle:
       "Сообщите нам целевую страну, тип продукта, упаковку и объём. Наша команда подготовит подходящее экспортное предложение.",
-    legalName: "Юридическое наименование",
+    legalName: "Компания",
     email: "Электронная почта",
     whatsapp: "WhatsApp",
     exportInquiries: "Экспортные запросы",
@@ -701,7 +701,7 @@ const ru: UIStrings = {
     errorTitle: "Ошибка",
     errorBody:
       "Не удалось отправить запрос. Пожалуйста, напишите нам напрямую по электронной почте.",
-    networkError: "Ошибка сети. Пожалуйста, напишите нам на info@modelgrup.com",
+    networkError: "Ошибка сети. Используйте контактные данные ниже.",
   },
   notFound: {
     title: "Страница не найдена",
@@ -821,9 +821,8 @@ const fa: UIStrings = {
   },
   about: {
     heroEyebrow: "درباره MODEL GRUP",
-    heroTitle: "صادرکننده بین‌المللی روانکار و توزیع‌کننده رسمی روغن موتور Yokohama",
-    heroSubtitle:
-      "MODEL GRUP صادرکننده و تأمین‌کننده B2B روانکار و توزیع‌کننده رسمی روغن موتورهای Yokohama در خاورمیانه و اروپا است.",
+    heroTitle: "توزیع‌کننده رسمی روغن موتور Yokohama",
+    heroSubtitle: "MODEL GRUP توزیع‌کننده رسمی روغن موتورهای Yokohama در خاورمیانه و اروپا است.",
     focusEyebrow: "تمرکز ما",
     focusTitle: "آماده برای تأمین بین‌المللی",
     focusP1:
@@ -838,7 +837,7 @@ const fa: UIStrings = {
     heroTitle: "بیایید پیشنهاد صادراتی شما را بسازیم",
     heroSubtitle:
       "کشور هدف، نوع محصول، بسته‌بندی و حجم خود را به ما بگویید. تیم ما یک پیشنهاد صادراتی مناسب آماده خواهد کرد.",
-    legalName: "نام رسمی شرکت",
+    legalName: "شرکت",
     email: "ایمیل",
     whatsapp: "واتساپ",
     exportInquiries: "استعلام صادرات",
@@ -895,7 +894,7 @@ const fa: UIStrings = {
     toastBody: "متشکریم. تیم صادراتی ما یک پیشنهاد مناسب آماده کرده و با شما تماس خواهد گرفت.",
     errorTitle: "خطا",
     errorBody: "درخواست شما ارسال نشد. لطفاً مستقیماً با ما از طریق ایمیل تماس بگیرید.",
-    networkError: "خطای شبکه. لطفاً مستقیماً به آدرس info@modelgrup.com ایمیل بزنید.",
+    networkError: "خطای شبکه. لطفاً از اطلاعات تماس زیر استفاده کنید.",
   },
   notFound: {
     title: "صفحه یافت نشد",
@@ -1014,9 +1013,8 @@ const ar: UIStrings = {
   },
   about: {
     heroEyebrow: "عن MODEL GRUP",
-    heroTitle: "مصدّر دولي للزيوت وموزع معتمد لزيوت محركات Yokohama",
-    heroSubtitle:
-      "MODEL GRUP هي مصدّر ومورد B2B للزيوت والموزع المعتمد لزيوت محركات Yokohama في الشرق الأوسط وأوروبا.",
+    heroTitle: "الموزع المعتمد لزيوت محركات Yokohama",
+    heroSubtitle: "MODEL GRUP هي الموزع المعتمد لزيوت محركات Yokohama في الشرق الأوسط وأوروبا.",
     focusEyebrow: "تركيزنا",
     focusTitle: "جاهزون للتوريد الدولي",
     focusP1:
@@ -1031,7 +1029,7 @@ const ar: UIStrings = {
     heroTitle: "دعنا نبني عرض التصدير الخاص بك",
     heroSubtitle:
       "أخبرنا بالدولة المستهدفة ونوع المنتج والتغليف والحجم. سيعدّ فريقنا عرضاً مناسباً للتصدير.",
-    legalName: "الاسم القانوني للشركة",
+    legalName: "الشركة",
     email: "البريد الإلكتروني",
     whatsapp: "واتساب",
     exportInquiries: "استفسارات التصدير",
@@ -1088,7 +1086,7 @@ const ar: UIStrings = {
     toastBody: "شكراً لك. سيعدّ فريق التصدير لدينا عرضاً مناسباً ويتواصل معك.",
     errorTitle: "خطأ",
     errorBody: "تعذّر إرسال طلبك. يرجى مراسلتنا مباشرة عبر البريد الإلكتروني.",
-    networkError: "خطأ في الشبكة. يرجى مراسلتنا على info@modelgrup.com",
+    networkError: "خطأ في الشبكة. يرجى استخدام معلومات الاتصال أدناه.",
   },
   notFound: {
     title: "الصفحة غير موجودة",
@@ -1207,10 +1205,9 @@ const de: UIStrings = {
   },
   about: {
     heroEyebrow: "Über MODEL GRUP",
-    heroTitle:
-      "Internationaler Schmierstoffexporteur und autorisierter Yokohama Motoröl-Distributor",
+    heroTitle: "Autorisierter Distributor für Yokohama Motoröle",
     heroSubtitle:
-      "MODEL GRUP ist B2B-Schmierstoffexporteur und Lieferant sowie autorisierter Distributor für Yokohama Motoröle im Nahen Osten und in Europa.",
+      "MODEL GRUP ist autorisierter Distributor für Yokohama Motoröle im Nahen Osten und in Europa.",
     focusEyebrow: "Unser Fokus",
     focusTitle: "Für internationale Versorgung ausgelegt",
     focusP1:
@@ -1224,7 +1221,7 @@ const de: UIStrings = {
     heroEyebrow: "Kontakt",
     heroTitle: "Großhandelsangebot anfordern",
     heroSubtitle: "Teilen Sie uns Ihr Zielland, Produkttyp, Verpackung und Volumen mit.",
-    legalName: "Eingetragener Firmenname",
+    legalName: "Unternehmen",
     email: "E-Mail",
     whatsapp: "WhatsApp",
     exportInquiries: "Export-Anfragen",
@@ -1283,7 +1280,7 @@ const de: UIStrings = {
     errorTitle: "Fehler",
     errorBody:
       "Ihre Anfrage konnte nicht gesendet werden. Bitte schreiben Sie uns direkt eine E-Mail.",
-    networkError: "Netzwerkfehler. Bitte schreiben Sie uns direkt an info@modelgrup.com",
+    networkError: "Netzwerkfehler. Bitte verwenden Sie die Kontaktdaten unten.",
   },
   notFound: {
     title: "Seite nicht gefunden",
@@ -1403,9 +1400,9 @@ const fr: UIStrings = {
   },
   about: {
     heroEyebrow: "À propos de MODEL GRUP",
-    heroTitle: "Exportateur international et distributeur agréé des huiles moteur Yokohama",
+    heroTitle: "Distributeur agréé des huiles moteur Yokohama",
     heroSubtitle:
-      "MODEL GRUP est un exportateur et fournisseur B2B de lubrifiants ainsi que le distributeur agréé des huiles moteur Yokohama au Moyen-Orient et en Europe.",
+      "MODEL GRUP est le distributeur agréé des huiles moteur Yokohama au Moyen-Orient et en Europe.",
     focusEyebrow: "Notre priorité",
     focusTitle: "Conçu pour l'approvisionnement international",
     focusP1:
@@ -1420,7 +1417,7 @@ const fr: UIStrings = {
     heroEyebrow: "Contact",
     heroTitle: "Demander un devis en gros",
     heroSubtitle: "Indiquez-nous votre pays cible, le type de produit, l'emballage et le volume.",
-    legalName: "Raison sociale",
+    legalName: "Société",
     email: "E-mail",
     whatsapp: "WhatsApp",
     exportInquiries: "Demandes d'export",
@@ -1479,7 +1476,7 @@ const fr: UIStrings = {
     errorTitle: "Erreur",
     errorBody:
       "Votre demande n'a pas pu être envoyée. Veuillez nous contacter directement par e-mail.",
-    networkError: "Erreur réseau. Veuillez nous écrire directement à info@modelgrup.com",
+    networkError: "Erreur réseau. Veuillez utiliser les coordonnées ci-dessous.",
   },
   notFound: {
     title: "Page introuvable",
@@ -1540,11 +1537,11 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
   en: {
     home: pageMeta(
       "MODEL GRUP | Yokohama Lubricants for Export",
-      "Yokohama lubricants and batteries for distributors, wholesalers and international buyers.",
+      "Yokohama motor oils for distributors, wholesalers and international buyers.",
     ),
     about: pageMeta(
       "About MODEL GRUP",
-      "International lubricant exporter, supplier and authorized distributor of Yokohama motor oils.",
+      "Authorized distributor of Yokohama motor oils for the Middle East and Europe.",
     ),
     contact: pageMeta(
       "Request a Quote | MODEL GRUP",
@@ -1570,11 +1567,11 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
   tr: {
     home: pageMeta(
       "MODEL GRUP | İhracat için Yokohama Yağları",
-      "Distribütörler, toptancılar ve uluslararası alıcılar için Yokohama yağları ve aküleri.",
+      "Distribütörler, toptancılar ve uluslararası alıcılar için Yokohama motor yağları.",
     ),
     about: pageMeta(
       "MODEL GRUP Hakkında",
-      "Uluslararası yağ ihracatçısı, tedarikçisi ve Yokohama motor yağları yetkili distribütörü.",
+      "Orta Doğu ve Avrupa için Yokohama motor yağları yetkili distribütörü.",
     ),
     contact: pageMeta(
       "Teklif Al | MODEL GRUP",
@@ -1600,11 +1597,11 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
   ru: {
     home: pageMeta(
       "MODEL GRUP | Смазочные материалы Yokohama для экспорта",
-      "Смазочные материалы и аккумуляторы Yokohama для международных дистрибьюторов и оптовиков.",
+      "Моторные масла Yokohama для международных дистрибьюторов и оптовиков.",
     ),
     about: pageMeta(
       "О MODEL GRUP",
-      "Международный экспортёр, поставщик и официальный дистрибьютор моторных масел Yokohama.",
+      "Официальный дистрибьютор моторных масел Yokohama на Ближнем Востоке и в Европе.",
     ),
     contact: pageMeta(
       "Запросить предложение | MODEL GRUP",
@@ -1630,11 +1627,11 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
   fa: {
     home: pageMeta(
       "MODEL GRUP | روانکارهای Yokohama برای صادرات",
-      "روانکارها و باتری‌های Yokohama برای توزیع‌کنندگان و خریداران بین‌المللی.",
+      "روغن موتورهای Yokohama برای توزیع‌کنندگان و خریداران بین‌المللی.",
     ),
     about: pageMeta(
       "درباره MODEL GRUP",
-      "صادرکننده و تأمین‌کننده بین‌المللی و توزیع‌کننده رسمی روغن موتور Yokohama.",
+      "توزیع‌کننده رسمی روغن موتور Yokohama در خاورمیانه و اروپا.",
     ),
     contact: pageMeta(
       "درخواست قیمت | MODEL GRUP",
@@ -1657,9 +1654,12 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
   ar: {
     home: pageMeta(
       "MODEL GRUP | زيوت Yokohama للتصدير",
-      "زيوت وبطاريات Yokohama للموزعين وتجار الجملة والمشترين الدوليين.",
+      "زيوت محركات Yokohama للموزعين وتجار الجملة والمشترين الدوليين.",
     ),
-    about: pageMeta("عن MODEL GRUP", "مصدّر ومورد دولي للزيوت وموزع معتمد لزيوت محركات Yokohama."),
+    about: pageMeta(
+      "عن MODEL GRUP",
+      "الموزع المعتمد لزيوت محركات Yokohama في الشرق الأوسط وأوروبا.",
+    ),
     contact: pageMeta(
       "طلب عرض سعر | MODEL GRUP",
       "تواصل مع MODEL GRUP لمنتجات Yokohama والتوريد بالجملة للتصدير.",
@@ -1681,11 +1681,11 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
   de: {
     home: pageMeta(
       "MODEL GRUP | Yokohama Schmierstoffe für den Export",
-      "Yokohama Schmierstoffe und Batterien für Distributoren, Großhändler und internationale Käufer.",
+      "Yokohama Motoröle für Distributoren, Großhändler und internationale Käufer.",
     ),
     about: pageMeta(
       "Über MODEL GRUP",
-      "Internationaler Schmierstoffexporteur, Lieferant und autorisierter Distributor für Yokohama Motoröle.",
+      "Autorisierter Distributor für Yokohama Motoröle im Nahen Osten und in Europa.",
     ),
     contact: pageMeta(
       "Angebot anfordern | MODEL GRUP",
@@ -1711,11 +1711,11 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
   fr: {
     home: pageMeta(
       "MODEL GRUP | Lubrifiants Yokohama pour l'export",
-      "Lubrifiants et batteries Yokohama pour distributeurs, grossistes et acheteurs internationaux.",
+      "Huiles moteur Yokohama pour distributeurs, grossistes et acheteurs internationaux.",
     ),
     about: pageMeta(
       "À propos de MODEL GRUP",
-      "Exportateur international, fournisseur et distributeur agréé des huiles moteur Yokohama.",
+      "Distributeur agréé des huiles moteur Yokohama au Moyen-Orient et en Europe.",
     ),
     contact: pageMeta(
       "Demander un devis | MODEL GRUP",

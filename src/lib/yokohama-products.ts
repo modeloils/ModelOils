@@ -23,7 +23,7 @@ const PRODUCT_DETAILS_BY_SOURCE_KEY = YOKOHAMA_PRODUCT_DETAILS as Record<
   YokohamaProductDetail
 >;
 
-interface YokohamaSubcategoryGroup {
+export interface YokohamaSubcategoryGroup {
   title: string;
   products: YokohamaProductItem[];
 }
@@ -105,3 +105,32 @@ export const YOKOHAMA_CATEGORY_DATA = Object.fromEntries(
     ];
   }),
 ) as Record<string, YokohamaCategoryData>;
+
+export function findYokohamaProduct(
+  categorySlug: string,
+  productSlug: string,
+): YokohamaProductItem | undefined {
+  const category = YOKOHAMA_CATEGORY_DATA[categorySlug];
+  if (!category) return undefined;
+
+  const directProduct = category.products.find((product) => product.slug === productSlug);
+  if (directProduct) return directProduct;
+
+  for (const subcategory of Object.values(category.subcategories ?? {})) {
+    const product = subcategory.products.find((item) => item.slug === productSlug);
+    if (product) return product;
+  }
+
+  return undefined;
+}
+
+export function findYokohamaSubcategory(
+  categorySlug: string,
+  subcategorySlug: string,
+): YokohamaSubcategoryGroup | undefined {
+  return YOKOHAMA_CATEGORY_DATA[categorySlug]?.subcategories?.[subcategorySlug];
+}
+
+export function getYokohamaSubcategorySlugs(categorySlug: string): string[] {
+  return Object.keys(YOKOHAMA_CATEGORY_DATA[categorySlug]?.subcategories ?? {});
+}

@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { toast } from "sonner";
-import { useTranslation } from "@/lib/i18n";
+import { LocaleLink, useTranslation } from "@/lib/i18n";
+import { getLegalContent } from "@/lib/legal";
 import { PACKAGING } from "@/lib/site-data";
 import { getYokohamaCategoryName, YOKOHAMA_CATEGORY_DEFINITIONS } from "@/lib/yokohama-categories";
 
 export function QuoteForm() {
   const { t, locale } = useTranslation();
+  const legal = getLegalContent(locale);
   const [submitting, setSubmitting] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -37,24 +39,37 @@ export function QuoteForm() {
   return (
     <form
       onSubmit={handleSubmit}
+      aria-busy={submitting}
       className="brand-card space-y-4 rounded-2xl border border-border bg-[image:var(--gradient-panel)] p-6 lg:p-8"
     >
+      <input
+        type="checkbox"
+        name="botcheck"
+        className="hidden"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+      />
       <div className="grid gap-4 sm:grid-cols-2">
-        <Field label={t.form.name} name="name" required />
-        <Field label={t.form.company} name="company" />
+        <Field label={t.form.name} name="name" autoComplete="name" required />
+        <Field label={t.form.company} name="company" autoComplete="organization" />
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
-        <Field label={t.form.country} name="country" required />
-        <Field label={t.form.email} name="email" type="email" required />
+        <Field label={t.form.country} name="country" autoComplete="country-name" required />
+        <Field label={t.form.email} name="email" type="email" autoComplete="email" required />
       </div>
-      <Field label={t.form.phone} name="phone" type="tel" />
+      <Field label={t.form.phone} name="phone" type="tel" autoComplete="tel" />
 
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
-          <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          <label
+            htmlFor="quote-product-interest"
+            className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+          >
             {t.form.productInterest}
           </label>
           <select
+            id="quote-product-interest"
             name="product_interest"
             className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
           >
@@ -68,10 +83,14 @@ export function QuoteForm() {
         </div>
 
         <div>
-          <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          <label
+            htmlFor="quote-packaging"
+            className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+          >
             {t.form.packagingPref}
           </label>
           <select
+            id="quote-packaging"
             name="packaging"
             className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
           >
@@ -88,10 +107,14 @@ export function QuoteForm() {
       <Field label={t.form.quantity} name="quantity" placeholder={t.form.quantityPlaceholder} />
 
       <div>
-        <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+        <label
+          htmlFor="quote-message"
+          className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+        >
           {t.form.message}
         </label>
         <textarea
+          id="quote-message"
           name="message"
           rows={4}
           placeholder={t.form.messagePlaceholder}
@@ -99,10 +122,28 @@ export function QuoteForm() {
         />
       </div>
 
+      <p id="quote-privacy-note" className="text-xs leading-relaxed text-muted-foreground">
+        {legal.formNotice}{" "}
+        <LocaleLink
+          to="/privacy"
+          className="font-semibold text-foreground underline-offset-2 hover:underline"
+        >
+          {legal.labels.privacy}
+        </LocaleLink>{" "}
+        ·{" "}
+        <LocaleLink
+          to="/kvkk"
+          className="font-semibold text-foreground underline-offset-2 hover:underline"
+        >
+          {legal.labels.kvkk}
+        </LocaleLink>
+      </p>
+
       <button
         type="submit"
         disabled={submitting}
-        className="w-full rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 disabled:opacity-60"
+        aria-describedby="quote-privacy-note"
+        className="w-full rounded-lg bg-foreground px-6 py-3 text-sm font-semibold text-background transition-colors hover:bg-foreground/90 disabled:opacity-60"
       >
         {submitting ? t.form.submitting : t.form.submit}
       </button>
@@ -116,22 +157,31 @@ function Field({
   type = "text",
   required = false,
   placeholder,
+  autoComplete,
 }: {
   label: string;
   name: string;
   type?: string;
   required?: boolean;
   placeholder?: string;
+  autoComplete?: string;
 }) {
+  const id = `quote-${name.replace(/_/g, "-")}`;
+
   return (
     <div>
-      <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+      <label
+        htmlFor={id}
+        className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+      >
         {label}
         {required && <span className="ml-0.5 text-primary">*</span>}
       </label>
       <input
+        id={id}
         type={type}
         name={name}
+        autoComplete={autoComplete}
         required={required}
         placeholder={placeholder}
         className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary/50"

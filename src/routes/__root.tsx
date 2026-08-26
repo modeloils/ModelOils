@@ -80,14 +80,39 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "MODEL GRUP supplies and distributes Yokohama motor oils, automotive fluids and VOLT batteries to distributors, wholesalers and international buyers.",
+          "MODEL GRUP is the authorized distributor of Yokohama motor oils for the Middle East and Europe.",
       },
       { name: "author", content: "MODEL GRUP" },
+      {
+        "script:ld+json": {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "MODEL GRUP",
+          url: "https://modeloils.com/",
+          logo: "https://modeloils.com/model-oils/images/logo-main-2026-v2.png",
+          telephone: "+90 533 456 7975",
+          address: [
+            {
+              "@type": "PostalAddress",
+              streetAddress: "Ucevler Mah. Izmir Yolu Cad. No: 241/334",
+              addressLocality: "Nilüfer",
+              addressRegion: "Bursa",
+              addressCountry: "TR",
+            },
+            {
+              "@type": "PostalAddress",
+              streetAddress: "Yaylacık Mahallesi, Ferhan Sokak, A Blok No:20/1",
+              addressLocality: "Başiskele",
+              addressRegion: "Kocaeli",
+              addressCountry: "TR",
+            },
+          ],
+        },
+      } as never,
       { property: "og:title", content: "MODEL GRUP | Yokohama Products for Global Markets" },
       {
         property: "og:description",
-        content:
-          "Yokohama motor oils, automotive fluids and VOLT batteries for distributors, wholesalers and international buyers.",
+        content: "Authorized Yokohama motor oil distribution for the Middle East and Europe.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

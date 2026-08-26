@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Outlet, useParams } from "@tanstack/react-router";
+import { notFound, Outlet, useParams } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, ChevronLeft, Flame } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -87,7 +87,7 @@ export function YokohamaRange({ extraSection }: { extraSection?: ReactNode } = {
           className="border-b border-border bg-background/35 py-20 lg:py-24"
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <SectionHeading eyebrow={landing.rangeEyebrow} title={landing.rangeTitle} />
+            <SectionHeading eyebrow={landing.rangeEyebrow} title={landing.rangeTitle} as="h1" />
             <div className="yokohama-accent-line mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {categories.map((category) => (
                 <LocaleLink
@@ -150,6 +150,7 @@ export function YokohamaRange({ extraSection }: { extraSection?: ReactNode } = {
             title={landing.heroTitle}
             subtitle={landing.heroSubtitle}
             transparent
+            headingLevel="h2"
           >
             <div className="mt-7 flex flex-wrap gap-2">
               {t.flagship.badges.map((badge) => (
@@ -196,6 +197,8 @@ export function YokohamaSubcategory() {
   const translatedCategory = category ? getYokohamaCategoryName(category, locale) : "";
   const pageClassName = "yokohama-theme yokohama-page-surface min-h-[55vh] py-20 lg:py-24";
 
+  if (!category || !catData) throw notFound();
+
   if (product && catData?.subcategories) {
     const subcategory = catData.subcategories[product];
     if (subcategory) {
@@ -212,7 +215,7 @@ export function YokohamaSubcategory() {
                 <ChevronLeft className="h-4 w-4 shrink-0 rtl:rotate-180" />
                 {translatedCategory}
               </LocaleLink>
-              <SectionHeading eyebrow="YOKOHAMA" title={subcategory.title} />
+              <SectionHeading eyebrow="YOKOHAMA" title={subcategory.title} as="h1" />
               <div className={`mt-10 grid gap-6 sm:grid-cols-2 ${columns}`}>
                 {sortedProducts.map((item) => (
                   <ProductTile key={item.slug} product={item} category={category ?? ""} />
@@ -233,7 +236,7 @@ export function YokohamaSubcategory() {
         <div className={pageClassName}>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <BackToCategories />
-            <SectionHeading eyebrow="YOKOHAMA" title={translatedCategory} />
+            <SectionHeading eyebrow="YOKOHAMA" title={translatedCategory} as="h1" />
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {Object.entries(catData.subcategories).map(([slug, subcategory]) => (
                 <LocaleLink
@@ -273,7 +276,7 @@ export function YokohamaSubcategory() {
         <div className={pageClassName}>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <BackToCategories />
-            <SectionHeading eyebrow="YOKOHAMA" title={translatedCategory} />
+            <SectionHeading eyebrow="YOKOHAMA" title={translatedCategory} as="h1" />
             {catData.products.length > 0 ? (
               <div className={`mt-10 grid gap-6 sm:grid-cols-2 ${columns}`}>
                 {sortedProducts.map((item) => (
@@ -295,11 +298,7 @@ export function YokohamaSubcategory() {
     );
   }
 
-  return (
-    <SiteLayout>
-      <div className="yokohama-theme yokohama-page-surface min-h-[55vh]" />
-    </SiteLayout>
-  );
+  throw notFound();
 }
 
 function ProductTile({ product, category }: { product: YokohamaProductItem; category: string }) {
@@ -350,13 +349,7 @@ export function YokohamaProduct() {
   const detail = productSlug ? catData?.details[productSlug] : undefined;
 
   if (!product) {
-    return (
-      <SiteLayout>
-        <div className="yokohama-theme yokohama-page-surface flex min-h-[55vh] items-center justify-center">
-          <p className="text-muted-foreground">{t.productDetails.productNotFound}</p>
-        </div>
-      </SiteLayout>
-    );
+    throw notFound();
   }
 
   const backPath = parentSubcategorySlug
@@ -445,6 +438,14 @@ export function YokohamaProduct() {
                 </p>
               </div>
             )}
+
+            <div className="rounded-xl border border-border bg-[image:var(--gradient-panel)] p-6">
+              <Button asChild variant="hero" size="lg">
+                <LocaleLink to="/contact">
+                  {t.quoteCta.requestWholesale} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
+                </LocaleLink>
+              </Button>
+            </div>
           </div>
         )}
       </div>
