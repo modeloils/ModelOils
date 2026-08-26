@@ -432,6 +432,17 @@
   box-shadow: 0 8px 26px -22px oklch(0.25 0.025 60 / 0.7);
 }
 
+.authorized-distributor-strip {
+  background:
+    linear-gradient(
+      90deg,
+      oklch(0.64 0.16 154 / 0.08),
+      transparent 30% 70%,
+      oklch(0.64 0.215 27 / 0.07)
+    ),
+    oklch(0.89 0.016 74 / 0.9);
+}
+
 .site-footer-sandstone {
   --background: oklch(0.79 0.021 70);
   --foreground: oklch(0.23 0.022 62);

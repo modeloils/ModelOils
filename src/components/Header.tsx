@@ -1,12 +1,13 @@
 import { useState } from "react";
-import { Menu, X, Instagram } from "lucide-react";
+import { Menu, X, Instagram, ShieldCheck } from "lucide-react";
 import { CONTACT, NAV_LINKS } from "@/lib/site-data";
 import { LocaleLink, LanguageSwitcher, useTranslation } from "@/lib/i18n";
+import { AUTHORIZED_DISTRIBUTOR_LABEL } from "@/lib/i18n/authorized-distributor";
 import { cn } from "@/lib/utils";
 
 export function Header() {
   const [open, setOpen] = useState(false);
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
 
   return (
     <header className="mixed-header site-header-sandstone sticky top-0 z-50 border-b border-border/70 backdrop-blur-xl">
@@ -64,6 +65,13 @@ export function Header() {
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
+        </div>
+      </div>
+
+      <div className="authorized-distributor-strip border-t border-border/55">
+        <div className="mx-auto flex min-h-9 max-w-7xl items-center justify-center gap-2 px-4 py-1.5 text-center text-[10px] font-bold uppercase tracking-[0.08em] text-foreground/80 sm:px-6 sm:text-xs lg:px-8">
+          <ShieldCheck className="h-4 w-4 shrink-0 text-brand-green" />
+          <span>{AUTHORIZED_DISTRIBUTOR_LABEL[locale]}</span>
         </div>
       </div>
 

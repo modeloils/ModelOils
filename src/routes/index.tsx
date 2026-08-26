@@ -20,6 +20,7 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { LocaleLink, useTranslation, pageHead, type Locale } from "@/lib/i18n";
+import { AUTHORIZED_DISTRIBUTOR_LABEL } from "@/lib/i18n/authorized-distributor";
 import heroImg from "@/assets/yokohama-hero-cream.webp";
 import exportImg from "@/assets/export.jpg";
 
@@ -99,14 +100,14 @@ function Hero() {
 }
 
 function Flagship() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
   return (
     <section className="brand-section-red relative overflow-hidden border-y border-border py-20 lg:py-28">
       <div className="tech-grid absolute inset-0 opacity-30" />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div>
           <span className="inline-flex items-center gap-2 rounded-sm bg-[image:var(--gradient-red)] px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-primary-foreground">
-            {t.flagship.badge}
+            {AUTHORIZED_DISTRIBUTOR_LABEL[locale]}
           </span>
           <h2 className="mt-5 font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
             YOKOHAMA

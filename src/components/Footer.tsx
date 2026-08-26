@@ -1,6 +1,7 @@
-import { Mail, MessageCircle, Globe, MapPin } from "lucide-react";
+import { Mail, MessageCircle, Globe, MapPin, ShieldCheck } from "lucide-react";
 import { CONTACT, NAV_LINKS } from "@/lib/site-data";
 import { LocaleLink, useTranslation } from "@/lib/i18n";
+import { AUTHORIZED_DISTRIBUTOR_LABEL } from "@/lib/i18n/authorized-distributor";
 import { getYokohamaCategoryName, YOKOHAMA_CATEGORY_DEFINITIONS } from "@/lib/yokohama-categories";
 import { cn } from "@/lib/utils";
 
@@ -24,6 +25,10 @@ export function Footer({ variant = "default" }: { variant?: "default" | "yokoham
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
             {t.about.heroSubtitle}
           </p>
+          <div className="mt-4 inline-flex max-w-sm items-start gap-2 rounded-md border border-brand-green/35 bg-brand-green/10 px-3 py-2 text-xs font-bold leading-relaxed text-foreground">
+            <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-brand-green" />
+            <span>{AUTHORIZED_DISTRIBUTOR_LABEL[locale]}</span>
+          </div>
           <div className="mt-5 space-y-2 text-sm text-muted-foreground">
             <a
               href={`mailto:${CONTACT.email}`}

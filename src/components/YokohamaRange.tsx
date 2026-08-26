@@ -7,6 +7,7 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { useYokohamaLanding } from "@/lib/brands";
 import { LocaleLink, useTranslation, type Locale } from "@/lib/i18n";
+import { AUTHORIZED_DISTRIBUTOR_LABEL } from "@/lib/i18n/authorized-distributor";
 import {
   getYokohamaCategoryName,
   YOKOHAMA_CATEGORY_DATA,
@@ -145,7 +146,7 @@ export function YokohamaRange({ extraSection }: { extraSection?: ReactNode } = {
 
         <div className="bg-background/35">
           <PageHero
-            eyebrow={landing.heroEyebrow}
+            eyebrow={AUTHORIZED_DISTRIBUTOR_LABEL[locale]}
             title={landing.heroTitle}
             subtitle={landing.heroSubtitle}
             transparent
