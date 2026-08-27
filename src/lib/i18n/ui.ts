@@ -1528,7 +1528,15 @@ const fr: UIStrings = {
 
 export const UI: Record<Locale, UIStrings> = { en, tr, ru, fa, ar, de, fr };
 
-export type PageKey = "home" | "about" | "contact" | "export" | "industries" | "yokohama" | "blog";
+export type PageKey =
+  | "home"
+  | "about"
+  | "contact"
+  | "export"
+  | "industries"
+  | "yokohama"
+  | "catalogs"
+  | "blog";
 
 export interface PageMeta {
   title: string;
@@ -1567,6 +1575,10 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "Yokohama Motor Oils | Authorized Distributor MODEL GRUP",
       "Explore Yokohama motor oils distributed by MODEL GRUP for the Middle East and Europe.",
     ),
+    catalogs: pageMeta(
+      "Yokohama Catalogues | MODEL GRUP",
+      "Download the official Yokohama motor oil and VOLT battery catalogues.",
+    ),
     blog: pageMeta(
       "Blog | MODEL GRUP",
       "Technical lubricant guides and industry resources from MODEL GRUP.",
@@ -1596,6 +1608,10 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     yokohama: pageMeta(
       "Yokohama Motor Yağları | Yetkili Distribütör MODEL GRUP",
       "MODEL GRUP'in Orta Doğu ve Avrupa distribütörlüğündeki Yokohama motor yağlarını keşfedin.",
+    ),
+    catalogs: pageMeta(
+      "Yokohama Katalogları | MODEL GRUP",
+      "Resmi Yokohama motor yağı ve VOLT akü kataloglarını indirin.",
     ),
     blog: pageMeta(
       "Blog | MODEL GRUP",
@@ -1627,6 +1643,10 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "Моторные масла Yokohama | Официальный дистрибьютор MODEL GRUP",
       "Откройте моторные масла Yokohama от MODEL GRUP для Ближнего Востока и Европы.",
     ),
+    catalogs: pageMeta(
+      "Каталоги Yokohama | MODEL GRUP",
+      "Скачайте официальные каталоги моторных масел Yokohama и аккумуляторов VOLT.",
+    ),
     blog: pageMeta(
       "Блог | MODEL GRUP",
       "Технические руководства и отраслевые материалы MODEL GRUP.",
@@ -1657,6 +1677,10 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "روغن موتور Yokohama | توزیع‌کننده رسمی MODEL GRUP",
       "روغن موتورهای Yokohama را با توزیع MODEL GRUP در خاورمیانه و اروپا مشاهده کنید.",
     ),
+    catalogs: pageMeta(
+      "کاتالوگ‌های Yokohama | MODEL GRUP",
+      "کاتالوگ‌های رسمی روغن موتور Yokohama و باتری VOLT را دانلود کنید.",
+    ),
     blog: pageMeta("وبلاگ | MODEL GRUP", "راهنماهای فنی روانکار و منابع صنعتی MODEL GRUP."),
   },
   ar: {
@@ -1684,6 +1708,10 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "زيوت محركات Yokohama | الموزع المعتمد MODEL GRUP",
       "استكشف زيوت محركات Yokohama التي توزعها MODEL GRUP في الشرق الأوسط وأوروبا.",
     ),
+    catalogs: pageMeta(
+      "كتالوجات Yokohama | MODEL GRUP",
+      "حمّل الكتالوجات الرسمية لزيوت محركات Yokohama وبطاريات VOLT.",
+    ),
     blog: pageMeta("المدونة | MODEL GRUP", "أدلة فنية للزيوت وموارد صناعية من MODEL GRUP."),
   },
   de: {
@@ -1710,6 +1738,10 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     yokohama: pageMeta(
       "Yokohama Motoröle | Autorisierter Distributor MODEL GRUP",
       "Entdecken Sie Yokohama Motoröle von MODEL GRUP für den Nahen Osten und Europa.",
+    ),
+    catalogs: pageMeta(
+      "Yokohama Kataloge | MODEL GRUP",
+      "Laden Sie die offiziellen Kataloge für Yokohama Motoröle und VOLT Batterien herunter.",
     ),
     blog: pageMeta(
       "Blog | MODEL GRUP",
@@ -1740,6 +1772,10 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
     yokohama: pageMeta(
       "Huiles moteur Yokohama | Distributeur agréé MODEL GRUP",
       "Découvrez les huiles moteur Yokohama distribuées par MODEL GRUP au Moyen-Orient et en Europe.",
+    ),
+    catalogs: pageMeta(
+      "Catalogues Yokohama | MODEL GRUP",
+      "Téléchargez les catalogues officiels des huiles moteur Yokohama et des batteries VOLT.",
     ),
     blog: pageMeta(
       "Blog | MODEL GRUP",

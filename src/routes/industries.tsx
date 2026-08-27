@@ -46,7 +46,7 @@ export function Industries() {
         subtitle={t.industriesPage.heroSubtitle}
         backgroundImage="/model-oils/images/industries-hero.jpg"
       />
-      <section className="brand-section-red py-20 lg:py-24">
+      <section className="brand-section-red corporate-section-white py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {data.industries.map((ind, i) => {

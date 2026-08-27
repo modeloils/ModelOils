@@ -40,7 +40,7 @@ export function QuoteForm() {
     <form
       onSubmit={handleSubmit}
       aria-busy={submitting}
-      className="brand-card space-y-4 rounded-2xl border border-border bg-[image:var(--gradient-panel)] p-6 lg:p-8"
+      className="brand-card corporate-form-surface space-y-4 rounded-2xl border border-border bg-[image:var(--gradient-panel)] p-6 lg:p-8"
     >
       <input
         type="checkbox"
@@ -143,7 +143,7 @@ export function QuoteForm() {
         type="submit"
         disabled={submitting}
         aria-describedby="quote-privacy-note"
-        className="w-full rounded-lg bg-foreground px-6 py-3 text-sm font-semibold text-background transition-colors hover:bg-foreground/90 disabled:opacity-60"
+        className="w-full rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-[#B9141A] disabled:opacity-60"
       >
         {submitting ? t.form.submitting : t.form.submit}
       </button>

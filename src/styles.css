@@ -41,6 +41,25 @@
 :root {
   --radius: 0.5rem;
 
+  /* MODEL GRUP corporate palette */
+  --mg-navy: #101820;
+  --mg-navy-2: #18232b;
+  --mg-footer: #0b1217;
+  --mg-white: #ffffff;
+  --mg-off-white: #f7f7f5;
+  --mg-light-grey: #f0f2f3;
+  --mg-heading: #101820;
+  --mg-text: #454d52;
+  --mg-text-secondary: #687177;
+  --mg-dark-heading: #ffffff;
+  --mg-dark-text: #ccd2d6;
+  --mg-dark-secondary: #aab3b8;
+  --mg-red: #d71920;
+  --mg-red-hover: #b9141a;
+  --mg-red-dark-bg: #e1262d;
+  --mg-border: #e1e4e6;
+  --mg-dark-border: #29353d;
+
   /* MODEL GRUP: neutral industrial base shared by both product families. */
   --brand-blue: oklch(0.66 0.18 248);
   --brand-red: oklch(0.64 0.215 27);
@@ -639,6 +658,231 @@
 
 .brand-product-halo {
   background: var(--section-halo);
+}
+
+/* Corporate color system. Hero-specific colors are isolated below and remain unchanged. */
+.site-cream-theme {
+  --brand-blue: var(--mg-red);
+  --brand-red: var(--mg-red);
+  --brand-green: var(--mg-red);
+  --background: var(--mg-white);
+  --foreground: var(--mg-heading);
+  --card: var(--mg-white);
+  --card-foreground: var(--mg-heading);
+  --popover: var(--mg-white);
+  --popover-foreground: var(--mg-heading);
+  --primary: var(--mg-red);
+  --primary-foreground: var(--mg-white);
+  --secondary: var(--mg-off-white);
+  --secondary-foreground: var(--mg-heading);
+  --muted: var(--mg-light-grey);
+  --muted-foreground: var(--mg-text-secondary);
+  --accent: var(--mg-red);
+  --accent-foreground: var(--mg-white);
+  --border: var(--mg-border);
+  --input: #d9dee1;
+  --ring: var(--mg-red);
+  --gradient-action: linear-gradient(var(--mg-red), var(--mg-red));
+  --gradient-steel: linear-gradient(var(--mg-white), var(--mg-white));
+  --gradient-panel: linear-gradient(160deg, var(--mg-white), var(--mg-off-white));
+  --grid-line: rgb(16 24 32 / 0.045);
+  --brand-hero-glow: radial-gradient(circle at 16% 0%, rgb(215 25 32 / 0.08), transparent 48%);
+  --section-accent: var(--mg-red);
+  background-color: var(--mg-white);
+}
+
+.home-page-cream,
+.yokohama-theme {
+  --background: var(--mg-white);
+  --foreground: var(--mg-heading);
+  --card: var(--mg-white);
+  --card-foreground: var(--mg-heading);
+  --popover: var(--mg-white);
+  --popover-foreground: var(--mg-heading);
+  --primary: var(--mg-red);
+  --primary-foreground: var(--mg-white);
+  --secondary: var(--mg-off-white);
+  --secondary-foreground: var(--mg-heading);
+  --muted: var(--mg-light-grey);
+  --muted-foreground: var(--mg-text-secondary);
+  --accent: var(--mg-red);
+  --accent-foreground: var(--mg-white);
+  --border: var(--mg-border);
+  --input: #d9dee1;
+  --ring: var(--mg-red);
+  --gradient-action: linear-gradient(var(--mg-red), var(--mg-red));
+  --gradient-steel: linear-gradient(var(--mg-white), var(--mg-white));
+  --gradient-panel: linear-gradient(160deg, var(--mg-white), var(--mg-off-white));
+  --section-accent: var(--mg-red);
+  background-color: var(--mg-white);
+}
+
+/* The current top-page hero treatment is intentionally preserved. */
+.page-hero-preserved {
+  --background: oklch(0.965 0.012 78);
+  --foreground: oklch(0.24 0.022 65);
+  --card: oklch(0.985 0.009 78);
+  --card-foreground: oklch(0.24 0.022 65);
+  --secondary: oklch(0.925 0.018 76);
+  --secondary-foreground: oklch(0.27 0.022 65);
+  --muted: oklch(0.91 0.016 74);
+  --muted-foreground: oklch(0.43 0.025 65);
+  --border: oklch(0.79 0.022 72);
+  --gradient-panel: linear-gradient(160deg, oklch(0.992 0.006 78), oklch(0.925 0.018 74));
+  --grid-line: oklch(0.3 0.025 65 / 0.045);
+  --brand-hero-glow: radial-gradient(circle at 16% 0%, oklch(0.64 0.215 27 / 0.1), transparent 48%);
+}
+
+.site-header-sandstone {
+  --background: var(--mg-white);
+  --foreground: var(--mg-heading);
+  --secondary: var(--mg-off-white);
+  --secondary-foreground: var(--mg-heading);
+  --muted-foreground: var(--mg-text-secondary);
+  --border: var(--mg-border);
+  --primary: var(--mg-red);
+  --primary-foreground: var(--mg-white);
+  background-color: var(--mg-white);
+  background-image: none;
+}
+
+.authorized-distributor-strip {
+  --foreground: var(--mg-white);
+  --border: var(--mg-dark-border);
+  background: var(--mg-navy);
+  color: var(--mg-white);
+}
+
+.mixed-header .brand-nav-yokohama,
+.mixed-header .brand-nav-yokohama .brand-nav-subline,
+.mixed-header .brand-nav-yokohama:hover {
+  color: var(--mg-red);
+}
+
+.site-footer-corporate {
+  --background: var(--mg-footer);
+  --foreground: var(--mg-dark-heading);
+  --card: var(--mg-navy-2);
+  --card-foreground: var(--mg-dark-heading);
+  --primary: var(--mg-red-dark-bg);
+  --primary-foreground: var(--mg-white);
+  --secondary: var(--mg-navy-2);
+  --secondary-foreground: var(--mg-dark-heading);
+  --muted: var(--mg-navy-2);
+  --muted-foreground: #a8b0b5;
+  --border: var(--mg-dark-border);
+  --input: var(--mg-dark-border);
+  --ring: var(--mg-red);
+  --gradient-panel: linear-gradient(var(--mg-footer), var(--mg-footer));
+  background-color: var(--mg-footer);
+  color: var(--mg-dark-text);
+}
+
+.brand-section-blue,
+.brand-section-neutral {
+  --primary: var(--mg-red);
+  --primary-foreground: var(--mg-white);
+  --accent: var(--mg-red);
+  --section-accent: var(--mg-red);
+  --gradient-action: linear-gradient(var(--mg-red), var(--mg-red));
+  background-color: var(--mg-white);
+  background-image: none;
+}
+
+.brand-section-red,
+.brand-section-green {
+  --primary: var(--mg-red);
+  --primary-foreground: var(--mg-white);
+  --accent: var(--mg-red);
+  --section-accent: var(--mg-red);
+  --gradient-action: linear-gradient(var(--mg-red), var(--mg-red));
+  background-color: var(--mg-off-white);
+  background-image: none;
+}
+
+.home-page-cream .corporate-section-white,
+.corporate-section-white {
+  background-color: var(--mg-white);
+  background-image: none;
+}
+
+.home-page-cream .corporate-section-light,
+.corporate-section-light {
+  background-color: var(--mg-off-white);
+  background-image: none;
+}
+
+.home-page-cream .corporate-dark-section,
+.corporate-dark-section {
+  --background: var(--mg-navy);
+  --foreground: var(--mg-dark-heading);
+  --card: var(--mg-navy-2);
+  --card-foreground: var(--mg-dark-heading);
+  --popover: var(--mg-navy-2);
+  --popover-foreground: var(--mg-dark-heading);
+  --primary: var(--mg-red-dark-bg);
+  --primary-foreground: var(--mg-white);
+  --secondary: var(--mg-navy-2);
+  --secondary-foreground: var(--mg-dark-heading);
+  --muted: var(--mg-navy-2);
+  --muted-foreground: var(--mg-dark-text);
+  --accent: var(--mg-red-dark-bg);
+  --accent-foreground: var(--mg-white);
+  --border: var(--mg-dark-border);
+  --input: var(--mg-dark-border);
+  --ring: var(--mg-red-dark-bg);
+  --gradient-action: linear-gradient(var(--mg-red-dark-bg), var(--mg-red-dark-bg));
+  --gradient-panel: linear-gradient(var(--mg-navy-2), var(--mg-navy-2));
+  --gradient-steel: linear-gradient(transparent, transparent);
+  --section-accent: var(--mg-red-dark-bg);
+  background-color: var(--mg-navy);
+  background-image: none;
+}
+
+.blog-mixed-theme {
+  --background: var(--mg-off-white);
+  --foreground: var(--mg-heading);
+  --card: var(--mg-white);
+  --card-foreground: var(--mg-heading);
+  --muted-foreground: var(--mg-text-secondary);
+  --primary: var(--mg-red);
+  --primary-foreground: var(--mg-white);
+  --border: var(--mg-border);
+  --gradient-action: linear-gradient(var(--mg-red), var(--mg-red));
+  --gradient-panel: linear-gradient(var(--mg-white), var(--mg-white));
+  background-color: var(--mg-off-white);
+}
+
+.blog-mixed-theme::before {
+  background: transparent;
+}
+
+.blog-mixed-theme .mixed-header::after,
+.blog-mixed-theme .brand-footer::before,
+.blog-mixed-theme .brand-card::before {
+  background: var(--mg-red);
+}
+
+.corporate-form-surface {
+  background-color: var(--mg-off-white);
+  background-image: none;
+}
+
+.blog-article-surface {
+  --background: var(--mg-white);
+  background-color: var(--mg-white);
+}
+
+.corporate-dark-section .dark-secondary-action {
+  border-color: rgb(255 255 255 / 0.65);
+  background-color: transparent;
+  color: var(--mg-white);
+}
+
+.corporate-dark-section .dark-secondary-action:hover {
+  border-color: var(--mg-white);
+  background-color: var(--mg-white);
+  color: var(--mg-navy);
 }
 
 @layer base {

@@ -33,7 +33,7 @@ export function PageHero({
 
   return (
     <section
-      className={`relative overflow-hidden ${transparent ? "" : "border-b border-border bg-[image:var(--gradient-panel)]"}`}
+      className={`relative overflow-hidden ${transparent ? "" : "page-hero-preserved border-b border-border bg-[image:var(--gradient-panel)]"}`}
     >
       {backgroundImage && (
         <img

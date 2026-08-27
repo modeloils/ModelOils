@@ -22,7 +22,7 @@ export function BlogArticle() {
 
   return (
     <SiteLayout>
-      <div className="border-b border-border bg-background py-20 lg:py-24">
+      <div className="blog-article-surface border-b border-border bg-background py-20 lg:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <LocaleLink
             to="/blog"
@@ -45,7 +45,7 @@ export function BlogArticle() {
         </div>
       </div>
 
-      <section className="border-t border-border bg-background py-20 lg:py-24">
+      <section className="corporate-dark-section border-t border-border bg-background py-20 lg:py-24">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
             {t.blogPage.ctaTitle}
@@ -60,7 +60,7 @@ export function BlogArticle() {
             </LocaleLink>
             <LocaleLink
               to="/blog"
-              className="inline-flex min-h-[44px] items-center gap-2 rounded-md border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-accent"
+              className="dark-secondary-action inline-flex min-h-[44px] items-center gap-2 rounded-md border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-accent"
             >
               <ArrowLeft className="h-4 w-4 rtl:rotate-180" /> {t.blogPage.backToBlog}
             </LocaleLink>

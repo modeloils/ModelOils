@@ -4,7 +4,6 @@ import { ArrowRight, CheckCircle2, ChevronLeft, Flame } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { SiteLayout } from "@/components/SiteLayout";
-import { YokohamaCatalogs } from "@/components/YokohamaCatalogs";
 import { YokohamaBrandGallery } from "@/components/YokohamaBrandGallery";
 import { Button } from "@/components/ui/button";
 import { useYokohamaLanding } from "@/lib/brands";
@@ -116,8 +115,6 @@ export function YokohamaRange({ extraSection }: { extraSection?: ReactNode } = {
         </section>
 
         {extraSection}
-
-        <YokohamaCatalogs />
 
         <section className="border-b border-border bg-background/35 py-20 lg:py-24">
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">

@@ -29,7 +29,7 @@ export function Contact() {
         subtitle={t.contact.heroSubtitle}
       />
 
-      <section className="brand-section-green py-16 lg:py-20">
+      <section className="brand-section-green corporate-section-white py-16 lg:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.5fr] lg:px-8">
           <div className="space-y-4">
             <ContactItem

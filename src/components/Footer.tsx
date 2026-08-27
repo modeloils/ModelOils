@@ -1,105 +1,66 @@
-import { Mail, MessageCircle, Globe, MapPin, ShieldCheck, Factory } from "lucide-react";
-import { SafeEmailLink } from "@/components/SafeEmailLink";
-import { CONTACT, NAV_LINKS } from "@/lib/site-data";
+import { ShieldCheck } from "lucide-react";
+import { NAV_LINKS } from "@/lib/site-data";
 import { LocaleLink, useTranslation } from "@/lib/i18n";
 import { AUTHORIZED_DISTRIBUTOR_LABEL } from "@/lib/i18n/authorized-distributor";
 import { getLegalContent } from "@/lib/legal";
 import { getYokohamaCategoryName, YOKOHAMA_CATEGORY_DEFINITIONS } from "@/lib/yokohama-categories";
-import { cn } from "@/lib/utils";
 
-export function Footer({ variant = "default" }: { variant?: "default" | "yokohama" }) {
+export function Footer() {
   const { t, locale } = useTranslation();
   const legal = getLegalContent(locale);
 
   return (
-    <footer
-      className={cn(
-        "brand-footer relative z-10 shrink-0 border-t border-border bg-[image:var(--gradient-panel)]",
-        variant === "yokohama" ? "yokohama-footer-theme" : "site-footer-sandstone",
-      )}
-    >
-      <div className="mx-auto grid max-w-7xl gap-y-10 px-4 py-14 sm:grid-cols-2 sm:gap-x-8 sm:px-6 lg:grid-cols-[2fr_1fr_1fr] lg:gap-x-8 lg:px-8 xl:gap-x-12">
+    <footer className="brand-footer site-footer-corporate relative z-10 shrink-0 border-t border-border">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-[1.15fr_0.85fr_1.35fr] lg:gap-12 lg:px-8 lg:py-12">
         <div className="sm:col-span-2 lg:col-span-1">
           <img
             src="/model-oils/images/logo-main-2026-v2.png"
             alt="MODEL GRUP"
             width={1536}
             height={1024}
-            className="h-20 w-auto object-contain lg:h-28"
+            className="h-16 w-auto object-contain lg:h-20"
           />
-          <div className="mt-4 inline-flex max-w-sm items-start gap-2 rounded-md border border-brand-green/35 bg-brand-green/10 px-3 py-2 text-xs font-bold leading-relaxed text-foreground">
-            <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-brand-green" />
+          <div className="mt-4 inline-flex max-w-sm items-start gap-2 border-l-2 border-primary pl-3 text-xs font-semibold leading-relaxed text-muted-foreground rtl:border-l-0 rtl:border-r-2 rtl:pl-0 rtl:pr-3">
+            <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
             <span>{AUTHORIZED_DISTRIBUTOR_LABEL[locale]}</span>
-          </div>
-          <div className="mt-5 space-y-2 text-sm text-muted-foreground">
-            <SafeEmailLink className="flex min-h-[44px] items-center gap-2 hover:text-brand-red">
-              {(email) => (
-                <>
-                  <Mail className="h-4 w-4 shrink-0" /> {email}
-                </>
-              )}
-            </SafeEmailLink>
-            <a
-              href={CONTACT.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex min-h-[44px] items-center gap-2 hover:text-brand-green"
-            >
-              <MessageCircle className="h-4 w-4 shrink-0" /> WhatsApp: {CONTACT.phone}
-            </a>
-            <span className="flex items-center gap-2">
-              <Globe className="h-4 w-4" /> {t.footer.exportWelcome}
-            </span>
-            <span className="flex items-start gap-2">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
-              <span>
-                <strong className="text-foreground">{legal.labels.office}:</strong>{" "}
-                {CONTACT.address}
-              </span>
-            </span>
-            <span className="flex items-start gap-2">
-              <Factory className="mt-0.5 h-4 w-4 shrink-0" />
-              <span>
-                <strong className="text-foreground">{legal.labels.factory}:</strong>{" "}
-                {CONTACT.factoryAddress}
-              </span>
-            </span>
           </div>
         </div>
 
-        <div>
+        <nav aria-label={t.footer.company}>
           <h2 className="font-display text-sm font-bold uppercase tracking-wider text-foreground">
             {t.footer.company}
           </h2>
-          <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-            {NAV_LINKS.filter(({ brand }) => !brand).map((l) => (
-              <li key={l.to}>
-                <LocaleLink to={l.to} className="hover:text-primary">
-                  {t.nav[l.key]}
+          <ul className="mt-4 grid gap-2 text-sm text-muted-foreground">
+            {NAV_LINKS.filter(({ brand }) => !brand).map((link) => (
+              <li key={link.to}>
+                <LocaleLink
+                  to={link.to}
+                  className="inline-flex py-1 transition-colors hover:text-primary"
+                >
+                  {t.nav[link.key]}
                 </LocaleLink>
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
 
-        <div>
-          <h2 className="font-display text-sm font-bold uppercase tracking-wider">
-            <span className="block text-brand-red">YOKOHAMA</span>
-            <span className="mt-1 block text-xs text-brand-green">{t.footer.products}</span>
+        <nav aria-label={`YOKOHAMA ${t.footer.products}`}>
+          <h2 className="font-display text-sm font-bold uppercase tracking-wider text-foreground">
+            YOKOHAMA <span className="text-primary">{t.footer.products}</span>
           </h2>
-          <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-muted-foreground lg:grid-cols-1 xl:grid-cols-2">
+          <ul className="mt-4 grid grid-cols-2 gap-x-5 gap-y-2 text-sm text-muted-foreground">
             {YOKOHAMA_CATEGORY_DEFINITIONS.map(({ slug }) => (
               <li key={slug}>
                 <LocaleLink
                   to={`/yokohama/${slug}`}
-                  className="transition-colors hover:text-brand-green"
+                  className="inline-flex py-1 transition-colors hover:text-primary"
                 >
                   {getYokohamaCategoryName(slug, locale)}
                 </LocaleLink>
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
       </div>
 
       <div className="border-t border-border">
@@ -108,10 +69,10 @@ export function Footer({ variant = "default" }: { variant?: "default" | "yokoham
             © {new Date().getFullYear()} MODEL GRUP. {t.footer.rights}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:justify-end">
-            <LocaleLink to="/privacy" className="hover:text-primary">
+            <LocaleLink to="/privacy" className="transition-colors hover:text-primary">
               {legal.labels.privacy}
             </LocaleLink>
-            <LocaleLink to="/kvkk" className="hover:text-primary">
+            <LocaleLink to="/kvkk" className="transition-colors hover:text-primary">
               {legal.labels.kvkk}
             </LocaleLink>
           </div>

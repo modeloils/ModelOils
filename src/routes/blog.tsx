@@ -76,7 +76,7 @@ export function Blog() {
         </div>
       </section>
 
-      <section className="border-t border-border bg-background py-20 lg:py-24">
+      <section className="corporate-dark-section border-t border-border bg-background py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
             {t.blogPage.ctaTitle}

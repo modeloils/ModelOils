@@ -16,6 +16,7 @@ import { Route as KvkkRouteImport } from './routes/kvkk'
 import { Route as IndustriesRouteImport } from './routes/industries'
 import { Route as ExportRouteImport } from './routes/export'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CatalogsRouteImport } from './routes/catalogs'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -32,6 +33,7 @@ import { Route as TrKvkkRouteImport } from './routes/tr/kvkk'
 import { Route as TrIndustriesRouteImport } from './routes/tr/industries'
 import { Route as TrExportRouteImport } from './routes/tr/export'
 import { Route as TrContactRouteImport } from './routes/tr/contact'
+import { Route as TrCatalogsRouteImport } from './routes/tr/catalogs'
 import { Route as TrBlogRouteImport } from './routes/tr/blog'
 import { Route as TrAboutRouteImport } from './routes/tr/about'
 import { Route as RuYokohamaRouteImport } from './routes/ru/yokohama'
@@ -40,6 +42,7 @@ import { Route as RuKvkkRouteImport } from './routes/ru/kvkk'
 import { Route as RuIndustriesRouteImport } from './routes/ru/industries'
 import { Route as RuExportRouteImport } from './routes/ru/export'
 import { Route as RuContactRouteImport } from './routes/ru/contact'
+import { Route as RuCatalogsRouteImport } from './routes/ru/catalogs'
 import { Route as RuBlogRouteImport } from './routes/ru/blog'
 import { Route as RuAboutRouteImport } from './routes/ru/about'
 import { Route as FrYokohamaRouteImport } from './routes/fr/yokohama'
@@ -48,6 +51,7 @@ import { Route as FrKvkkRouteImport } from './routes/fr/kvkk'
 import { Route as FrIndustriesRouteImport } from './routes/fr/industries'
 import { Route as FrExportRouteImport } from './routes/fr/export'
 import { Route as FrContactRouteImport } from './routes/fr/contact'
+import { Route as FrCatalogsRouteImport } from './routes/fr/catalogs'
 import { Route as FrBlogRouteImport } from './routes/fr/blog'
 import { Route as FrAboutRouteImport } from './routes/fr/about'
 import { Route as FaYokohamaRouteImport } from './routes/fa/yokohama'
@@ -56,6 +60,7 @@ import { Route as FaKvkkRouteImport } from './routes/fa/kvkk'
 import { Route as FaIndustriesRouteImport } from './routes/fa/industries'
 import { Route as FaExportRouteImport } from './routes/fa/export'
 import { Route as FaContactRouteImport } from './routes/fa/contact'
+import { Route as FaCatalogsRouteImport } from './routes/fa/catalogs'
 import { Route as FaBlogRouteImport } from './routes/fa/blog'
 import { Route as FaAboutRouteImport } from './routes/fa/about'
 import { Route as DeYokohamaRouteImport } from './routes/de/yokohama'
@@ -64,6 +69,7 @@ import { Route as DeKvkkRouteImport } from './routes/de/kvkk'
 import { Route as DeIndustriesRouteImport } from './routes/de/industries'
 import { Route as DeExportRouteImport } from './routes/de/export'
 import { Route as DeContactRouteImport } from './routes/de/contact'
+import { Route as DeCatalogsRouteImport } from './routes/de/catalogs'
 import { Route as DeBlogRouteImport } from './routes/de/blog'
 import { Route as DeAboutRouteImport } from './routes/de/about'
 import { Route as BlogSlugRouteImport } from './routes/blog_.$slug'
@@ -73,6 +79,7 @@ import { Route as ArKvkkRouteImport } from './routes/ar/kvkk'
 import { Route as ArIndustriesRouteImport } from './routes/ar/industries'
 import { Route as ArExportRouteImport } from './routes/ar/export'
 import { Route as ArContactRouteImport } from './routes/ar/contact'
+import { Route as ArCatalogsRouteImport } from './routes/ar/catalogs'
 import { Route as ArBlogRouteImport } from './routes/ar/blog'
 import { Route as ArAboutRouteImport } from './routes/ar/about'
 import { Route as YokohamaCategoryProductRouteImport } from './routes/yokohama_.$category.$product'
@@ -128,6 +135,11 @@ const ExportRoute = ExportRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CatalogsRoute = CatalogsRouteImport.update({
+  id: '/catalogs',
+  path: '/catalogs',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogRoute = BlogRouteImport.update({
@@ -210,6 +222,11 @@ const TrContactRoute = TrContactRouteImport.update({
   path: '/tr/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TrCatalogsRoute = TrCatalogsRouteImport.update({
+  id: '/tr/catalogs',
+  path: '/tr/catalogs',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TrBlogRoute = TrBlogRouteImport.update({
   id: '/tr/blog',
   path: '/tr/blog',
@@ -248,6 +265,11 @@ const RuExportRoute = RuExportRouteImport.update({
 const RuContactRoute = RuContactRouteImport.update({
   id: '/ru/contact',
   path: '/ru/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RuCatalogsRoute = RuCatalogsRouteImport.update({
+  id: '/ru/catalogs',
+  path: '/ru/catalogs',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RuBlogRoute = RuBlogRouteImport.update({
@@ -290,6 +312,11 @@ const FrContactRoute = FrContactRouteImport.update({
   path: '/fr/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FrCatalogsRoute = FrCatalogsRouteImport.update({
+  id: '/fr/catalogs',
+  path: '/fr/catalogs',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FrBlogRoute = FrBlogRouteImport.update({
   id: '/fr/blog',
   path: '/fr/blog',
@@ -330,6 +357,11 @@ const FaContactRoute = FaContactRouteImport.update({
   path: '/fa/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FaCatalogsRoute = FaCatalogsRouteImport.update({
+  id: '/fa/catalogs',
+  path: '/fa/catalogs',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FaBlogRoute = FaBlogRouteImport.update({
   id: '/fa/blog',
   path: '/fa/blog',
@@ -368,6 +400,11 @@ const DeExportRoute = DeExportRouteImport.update({
 const DeContactRoute = DeContactRouteImport.update({
   id: '/de/contact',
   path: '/de/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DeCatalogsRoute = DeCatalogsRouteImport.update({
+  id: '/de/catalogs',
+  path: '/de/catalogs',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DeBlogRoute = DeBlogRouteImport.update({
@@ -413,6 +450,11 @@ const ArExportRoute = ArExportRouteImport.update({
 const ArContactRoute = ArContactRouteImport.update({
   id: '/ar/contact',
   path: '/ar/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArCatalogsRoute = ArCatalogsRouteImport.update({
+  id: '/ar/catalogs',
+  path: '/ar/catalogs',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ArBlogRoute = ArBlogRouteImport.update({
@@ -531,6 +573,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blog': typeof BlogRoute
+  '/catalogs': typeof CatalogsRoute
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
   '/industries': typeof IndustriesRoute
@@ -540,6 +583,7 @@ export interface FileRoutesByFullPath {
   '/yokohama': typeof YokohamaRoute
   '/ar/about': typeof ArAboutRoute
   '/ar/blog': typeof ArBlogRoute
+  '/ar/catalogs': typeof ArCatalogsRoute
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
   '/ar/industries': typeof ArIndustriesRoute
@@ -549,6 +593,7 @@ export interface FileRoutesByFullPath {
   '/blog/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/blog': typeof DeBlogRoute
+  '/de/catalogs': typeof DeCatalogsRoute
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
   '/de/industries': typeof DeIndustriesRoute
@@ -557,6 +602,7 @@ export interface FileRoutesByFullPath {
   '/de/yokohama': typeof DeYokohamaRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
+  '/fa/catalogs': typeof FaCatalogsRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
   '/fa/industries': typeof FaIndustriesRoute
@@ -565,6 +611,7 @@ export interface FileRoutesByFullPath {
   '/fa/yokohama': typeof FaYokohamaRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
+  '/fr/catalogs': typeof FrCatalogsRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
   '/fr/industries': typeof FrIndustriesRoute
@@ -573,6 +620,7 @@ export interface FileRoutesByFullPath {
   '/fr/yokohama': typeof FrYokohamaRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
+  '/ru/catalogs': typeof RuCatalogsRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
   '/ru/industries': typeof RuIndustriesRoute
@@ -581,6 +629,7 @@ export interface FileRoutesByFullPath {
   '/ru/yokohama': typeof RuYokohamaRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
+  '/tr/catalogs': typeof TrCatalogsRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
   '/tr/industries': typeof TrIndustriesRoute
@@ -618,6 +667,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blog': typeof BlogRoute
+  '/catalogs': typeof CatalogsRoute
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
   '/industries': typeof IndustriesRoute
@@ -627,6 +677,7 @@ export interface FileRoutesByTo {
   '/yokohama': typeof YokohamaRoute
   '/ar/about': typeof ArAboutRoute
   '/ar/blog': typeof ArBlogRoute
+  '/ar/catalogs': typeof ArCatalogsRoute
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
   '/ar/industries': typeof ArIndustriesRoute
@@ -636,6 +687,7 @@ export interface FileRoutesByTo {
   '/blog/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/blog': typeof DeBlogRoute
+  '/de/catalogs': typeof DeCatalogsRoute
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
   '/de/industries': typeof DeIndustriesRoute
@@ -644,6 +696,7 @@ export interface FileRoutesByTo {
   '/de/yokohama': typeof DeYokohamaRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
+  '/fa/catalogs': typeof FaCatalogsRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
   '/fa/industries': typeof FaIndustriesRoute
@@ -652,6 +705,7 @@ export interface FileRoutesByTo {
   '/fa/yokohama': typeof FaYokohamaRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
+  '/fr/catalogs': typeof FrCatalogsRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
   '/fr/industries': typeof FrIndustriesRoute
@@ -660,6 +714,7 @@ export interface FileRoutesByTo {
   '/fr/yokohama': typeof FrYokohamaRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
+  '/ru/catalogs': typeof RuCatalogsRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
   '/ru/industries': typeof RuIndustriesRoute
@@ -668,6 +723,7 @@ export interface FileRoutesByTo {
   '/ru/yokohama': typeof RuYokohamaRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
+  '/tr/catalogs': typeof TrCatalogsRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
   '/tr/industries': typeof TrIndustriesRoute
@@ -706,6 +762,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/blog': typeof BlogRoute
+  '/catalogs': typeof CatalogsRoute
   '/contact': typeof ContactRoute
   '/export': typeof ExportRoute
   '/industries': typeof IndustriesRoute
@@ -715,6 +772,7 @@ export interface FileRoutesById {
   '/yokohama': typeof YokohamaRoute
   '/ar/about': typeof ArAboutRoute
   '/ar/blog': typeof ArBlogRoute
+  '/ar/catalogs': typeof ArCatalogsRoute
   '/ar/contact': typeof ArContactRoute
   '/ar/export': typeof ArExportRoute
   '/ar/industries': typeof ArIndustriesRoute
@@ -724,6 +782,7 @@ export interface FileRoutesById {
   '/blog_/$slug': typeof BlogSlugRoute
   '/de/about': typeof DeAboutRoute
   '/de/blog': typeof DeBlogRoute
+  '/de/catalogs': typeof DeCatalogsRoute
   '/de/contact': typeof DeContactRoute
   '/de/export': typeof DeExportRoute
   '/de/industries': typeof DeIndustriesRoute
@@ -732,6 +791,7 @@ export interface FileRoutesById {
   '/de/yokohama': typeof DeYokohamaRoute
   '/fa/about': typeof FaAboutRoute
   '/fa/blog': typeof FaBlogRoute
+  '/fa/catalogs': typeof FaCatalogsRoute
   '/fa/contact': typeof FaContactRoute
   '/fa/export': typeof FaExportRoute
   '/fa/industries': typeof FaIndustriesRoute
@@ -740,6 +800,7 @@ export interface FileRoutesById {
   '/fa/yokohama': typeof FaYokohamaRoute
   '/fr/about': typeof FrAboutRoute
   '/fr/blog': typeof FrBlogRoute
+  '/fr/catalogs': typeof FrCatalogsRoute
   '/fr/contact': typeof FrContactRoute
   '/fr/export': typeof FrExportRoute
   '/fr/industries': typeof FrIndustriesRoute
@@ -748,6 +809,7 @@ export interface FileRoutesById {
   '/fr/yokohama': typeof FrYokohamaRoute
   '/ru/about': typeof RuAboutRoute
   '/ru/blog': typeof RuBlogRoute
+  '/ru/catalogs': typeof RuCatalogsRoute
   '/ru/contact': typeof RuContactRoute
   '/ru/export': typeof RuExportRoute
   '/ru/industries': typeof RuIndustriesRoute
@@ -756,6 +818,7 @@ export interface FileRoutesById {
   '/ru/yokohama': typeof RuYokohamaRoute
   '/tr/about': typeof TrAboutRoute
   '/tr/blog': typeof TrBlogRoute
+  '/tr/catalogs': typeof TrCatalogsRoute
   '/tr/contact': typeof TrContactRoute
   '/tr/export': typeof TrExportRoute
   '/tr/industries': typeof TrIndustriesRoute
@@ -795,6 +858,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/blog'
+    | '/catalogs'
     | '/contact'
     | '/export'
     | '/industries'
@@ -804,6 +868,7 @@ export interface FileRouteTypes {
     | '/yokohama'
     | '/ar/about'
     | '/ar/blog'
+    | '/ar/catalogs'
     | '/ar/contact'
     | '/ar/export'
     | '/ar/industries'
@@ -813,6 +878,7 @@ export interface FileRouteTypes {
     | '/blog/$slug'
     | '/de/about'
     | '/de/blog'
+    | '/de/catalogs'
     | '/de/contact'
     | '/de/export'
     | '/de/industries'
@@ -821,6 +887,7 @@ export interface FileRouteTypes {
     | '/de/yokohama'
     | '/fa/about'
     | '/fa/blog'
+    | '/fa/catalogs'
     | '/fa/contact'
     | '/fa/export'
     | '/fa/industries'
@@ -829,6 +896,7 @@ export interface FileRouteTypes {
     | '/fa/yokohama'
     | '/fr/about'
     | '/fr/blog'
+    | '/fr/catalogs'
     | '/fr/contact'
     | '/fr/export'
     | '/fr/industries'
@@ -837,6 +905,7 @@ export interface FileRouteTypes {
     | '/fr/yokohama'
     | '/ru/about'
     | '/ru/blog'
+    | '/ru/catalogs'
     | '/ru/contact'
     | '/ru/export'
     | '/ru/industries'
@@ -845,6 +914,7 @@ export interface FileRouteTypes {
     | '/ru/yokohama'
     | '/tr/about'
     | '/tr/blog'
+    | '/tr/catalogs'
     | '/tr/contact'
     | '/tr/export'
     | '/tr/industries'
@@ -882,6 +952,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/blog'
+    | '/catalogs'
     | '/contact'
     | '/export'
     | '/industries'
@@ -891,6 +962,7 @@ export interface FileRouteTypes {
     | '/yokohama'
     | '/ar/about'
     | '/ar/blog'
+    | '/ar/catalogs'
     | '/ar/contact'
     | '/ar/export'
     | '/ar/industries'
@@ -900,6 +972,7 @@ export interface FileRouteTypes {
     | '/blog/$slug'
     | '/de/about'
     | '/de/blog'
+    | '/de/catalogs'
     | '/de/contact'
     | '/de/export'
     | '/de/industries'
@@ -908,6 +981,7 @@ export interface FileRouteTypes {
     | '/de/yokohama'
     | '/fa/about'
     | '/fa/blog'
+    | '/fa/catalogs'
     | '/fa/contact'
     | '/fa/export'
     | '/fa/industries'
@@ -916,6 +990,7 @@ export interface FileRouteTypes {
     | '/fa/yokohama'
     | '/fr/about'
     | '/fr/blog'
+    | '/fr/catalogs'
     | '/fr/contact'
     | '/fr/export'
     | '/fr/industries'
@@ -924,6 +999,7 @@ export interface FileRouteTypes {
     | '/fr/yokohama'
     | '/ru/about'
     | '/ru/blog'
+    | '/ru/catalogs'
     | '/ru/contact'
     | '/ru/export'
     | '/ru/industries'
@@ -932,6 +1008,7 @@ export interface FileRouteTypes {
     | '/ru/yokohama'
     | '/tr/about'
     | '/tr/blog'
+    | '/tr/catalogs'
     | '/tr/contact'
     | '/tr/export'
     | '/tr/industries'
@@ -969,6 +1046,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/blog'
+    | '/catalogs'
     | '/contact'
     | '/export'
     | '/industries'
@@ -978,6 +1056,7 @@ export interface FileRouteTypes {
     | '/yokohama'
     | '/ar/about'
     | '/ar/blog'
+    | '/ar/catalogs'
     | '/ar/contact'
     | '/ar/export'
     | '/ar/industries'
@@ -987,6 +1066,7 @@ export interface FileRouteTypes {
     | '/blog_/$slug'
     | '/de/about'
     | '/de/blog'
+    | '/de/catalogs'
     | '/de/contact'
     | '/de/export'
     | '/de/industries'
@@ -995,6 +1075,7 @@ export interface FileRouteTypes {
     | '/de/yokohama'
     | '/fa/about'
     | '/fa/blog'
+    | '/fa/catalogs'
     | '/fa/contact'
     | '/fa/export'
     | '/fa/industries'
@@ -1003,6 +1084,7 @@ export interface FileRouteTypes {
     | '/fa/yokohama'
     | '/fr/about'
     | '/fr/blog'
+    | '/fr/catalogs'
     | '/fr/contact'
     | '/fr/export'
     | '/fr/industries'
@@ -1011,6 +1093,7 @@ export interface FileRouteTypes {
     | '/fr/yokohama'
     | '/ru/about'
     | '/ru/blog'
+    | '/ru/catalogs'
     | '/ru/contact'
     | '/ru/export'
     | '/ru/industries'
@@ -1019,6 +1102,7 @@ export interface FileRouteTypes {
     | '/ru/yokohama'
     | '/tr/about'
     | '/tr/blog'
+    | '/tr/catalogs'
     | '/tr/contact'
     | '/tr/export'
     | '/tr/industries'
@@ -1057,6 +1141,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   BlogRoute: typeof BlogRoute
+  CatalogsRoute: typeof CatalogsRoute
   ContactRoute: typeof ContactRoute
   ExportRoute: typeof ExportRoute
   IndustriesRoute: typeof IndustriesRoute
@@ -1066,6 +1151,7 @@ export interface RootRouteChildren {
   YokohamaRoute: typeof YokohamaRoute
   ArAboutRoute: typeof ArAboutRoute
   ArBlogRoute: typeof ArBlogRoute
+  ArCatalogsRoute: typeof ArCatalogsRoute
   ArContactRoute: typeof ArContactRoute
   ArExportRoute: typeof ArExportRoute
   ArIndustriesRoute: typeof ArIndustriesRoute
@@ -1075,6 +1161,7 @@ export interface RootRouteChildren {
   BlogSlugRoute: typeof BlogSlugRoute
   DeAboutRoute: typeof DeAboutRoute
   DeBlogRoute: typeof DeBlogRoute
+  DeCatalogsRoute: typeof DeCatalogsRoute
   DeContactRoute: typeof DeContactRoute
   DeExportRoute: typeof DeExportRoute
   DeIndustriesRoute: typeof DeIndustriesRoute
@@ -1083,6 +1170,7 @@ export interface RootRouteChildren {
   DeYokohamaRoute: typeof DeYokohamaRoute
   FaAboutRoute: typeof FaAboutRoute
   FaBlogRoute: typeof FaBlogRoute
+  FaCatalogsRoute: typeof FaCatalogsRoute
   FaContactRoute: typeof FaContactRoute
   FaExportRoute: typeof FaExportRoute
   FaIndustriesRoute: typeof FaIndustriesRoute
@@ -1091,6 +1179,7 @@ export interface RootRouteChildren {
   FaYokohamaRoute: typeof FaYokohamaRoute
   FrAboutRoute: typeof FrAboutRoute
   FrBlogRoute: typeof FrBlogRoute
+  FrCatalogsRoute: typeof FrCatalogsRoute
   FrContactRoute: typeof FrContactRoute
   FrExportRoute: typeof FrExportRoute
   FrIndustriesRoute: typeof FrIndustriesRoute
@@ -1099,6 +1188,7 @@ export interface RootRouteChildren {
   FrYokohamaRoute: typeof FrYokohamaRoute
   RuAboutRoute: typeof RuAboutRoute
   RuBlogRoute: typeof RuBlogRoute
+  RuCatalogsRoute: typeof RuCatalogsRoute
   RuContactRoute: typeof RuContactRoute
   RuExportRoute: typeof RuExportRoute
   RuIndustriesRoute: typeof RuIndustriesRoute
@@ -1107,6 +1197,7 @@ export interface RootRouteChildren {
   RuYokohamaRoute: typeof RuYokohamaRoute
   TrAboutRoute: typeof TrAboutRoute
   TrBlogRoute: typeof TrBlogRoute
+  TrCatalogsRoute: typeof TrCatalogsRoute
   TrContactRoute: typeof TrContactRoute
   TrExportRoute: typeof TrExportRoute
   TrIndustriesRoute: typeof TrIndustriesRoute
@@ -1183,6 +1274,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/catalogs': {
+      id: '/catalogs'
+      path: '/catalogs'
+      fullPath: '/catalogs'
+      preLoaderRoute: typeof CatalogsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog': {
@@ -1297,6 +1395,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TrContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tr/catalogs': {
+      id: '/tr/catalogs'
+      path: '/tr/catalogs'
+      fullPath: '/tr/catalogs'
+      preLoaderRoute: typeof TrCatalogsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tr/blog': {
       id: '/tr/blog'
       path: '/tr/blog'
@@ -1351,6 +1456,13 @@ declare module '@tanstack/react-router' {
       path: '/ru/contact'
       fullPath: '/ru/contact'
       preLoaderRoute: typeof RuContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ru/catalogs': {
+      id: '/ru/catalogs'
+      path: '/ru/catalogs'
+      fullPath: '/ru/catalogs'
+      preLoaderRoute: typeof RuCatalogsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ru/blog': {
@@ -1409,6 +1521,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FrContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/fr/catalogs': {
+      id: '/fr/catalogs'
+      path: '/fr/catalogs'
+      fullPath: '/fr/catalogs'
+      preLoaderRoute: typeof FrCatalogsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/fr/blog': {
       id: '/fr/blog'
       path: '/fr/blog'
@@ -1465,6 +1584,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/fa/catalogs': {
+      id: '/fa/catalogs'
+      path: '/fa/catalogs'
+      fullPath: '/fa/catalogs'
+      preLoaderRoute: typeof FaCatalogsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/fa/blog': {
       id: '/fa/blog'
       path: '/fa/blog'
@@ -1519,6 +1645,13 @@ declare module '@tanstack/react-router' {
       path: '/de/contact'
       fullPath: '/de/contact'
       preLoaderRoute: typeof DeContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/de/catalogs': {
+      id: '/de/catalogs'
+      path: '/de/catalogs'
+      fullPath: '/de/catalogs'
+      preLoaderRoute: typeof DeCatalogsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/de/blog': {
@@ -1582,6 +1715,13 @@ declare module '@tanstack/react-router' {
       path: '/ar/contact'
       fullPath: '/ar/contact'
       preLoaderRoute: typeof ArContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ar/catalogs': {
+      id: '/ar/catalogs'
+      path: '/ar/catalogs'
+      fullPath: '/ar/catalogs'
+      preLoaderRoute: typeof ArCatalogsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/ar/blog': {
@@ -1815,6 +1955,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   BlogRoute: BlogRoute,
+  CatalogsRoute: CatalogsRoute,
   ContactRoute: ContactRoute,
   ExportRoute: ExportRoute,
   IndustriesRoute: IndustriesRoute,
@@ -1824,6 +1965,7 @@ const rootRouteChildren: RootRouteChildren = {
   YokohamaRoute: YokohamaRoute,
   ArAboutRoute: ArAboutRoute,
   ArBlogRoute: ArBlogRoute,
+  ArCatalogsRoute: ArCatalogsRoute,
   ArContactRoute: ArContactRoute,
   ArExportRoute: ArExportRoute,
   ArIndustriesRoute: ArIndustriesRoute,
@@ -1833,6 +1975,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogSlugRoute: BlogSlugRoute,
   DeAboutRoute: DeAboutRoute,
   DeBlogRoute: DeBlogRoute,
+  DeCatalogsRoute: DeCatalogsRoute,
   DeContactRoute: DeContactRoute,
   DeExportRoute: DeExportRoute,
   DeIndustriesRoute: DeIndustriesRoute,
@@ -1841,6 +1984,7 @@ const rootRouteChildren: RootRouteChildren = {
   DeYokohamaRoute: DeYokohamaRoute,
   FaAboutRoute: FaAboutRoute,
   FaBlogRoute: FaBlogRoute,
+  FaCatalogsRoute: FaCatalogsRoute,
   FaContactRoute: FaContactRoute,
   FaExportRoute: FaExportRoute,
   FaIndustriesRoute: FaIndustriesRoute,
@@ -1849,6 +1993,7 @@ const rootRouteChildren: RootRouteChildren = {
   FaYokohamaRoute: FaYokohamaRoute,
   FrAboutRoute: FrAboutRoute,
   FrBlogRoute: FrBlogRoute,
+  FrCatalogsRoute: FrCatalogsRoute,
   FrContactRoute: FrContactRoute,
   FrExportRoute: FrExportRoute,
   FrIndustriesRoute: FrIndustriesRoute,
@@ -1857,6 +2002,7 @@ const rootRouteChildren: RootRouteChildren = {
   FrYokohamaRoute: FrYokohamaRoute,
   RuAboutRoute: RuAboutRoute,
   RuBlogRoute: RuBlogRoute,
+  RuCatalogsRoute: RuCatalogsRoute,
   RuContactRoute: RuContactRoute,
   RuExportRoute: RuExportRoute,
   RuIndustriesRoute: RuIndustriesRoute,
@@ -1865,6 +2011,7 @@ const rootRouteChildren: RootRouteChildren = {
   RuYokohamaRoute: RuYokohamaRoute,
   TrAboutRoute: TrAboutRoute,
   TrBlogRoute: TrBlogRoute,
+  TrCatalogsRoute: TrCatalogsRoute,
   TrContactRoute: TrContactRoute,
   TrExportRoute: TrExportRoute,
   TrIndustriesRoute: TrIndustriesRoute,

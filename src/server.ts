@@ -30,8 +30,6 @@ function redirectTarget(requestUrl: URL): string | undefined {
     targetPath = "/yokohama";
   } else if (path.startsWith("/products/yokohama/")) {
     targetPath = `/yokohama/${path.slice("/products/yokohama/".length)}`;
-  } else if (path === "/catalogs") {
-    targetPath = "/yokohama";
   } else if (path === "/media") {
     targetPath = "/blog";
   }

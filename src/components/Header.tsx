@@ -36,7 +36,7 @@ export function Header() {
               activeProps={{ className: "text-primary" }}
               inactiveProps={{ className: "text-muted-foreground" }}
               className={cn(
-                "relative rounded-md px-2 py-2 text-sm font-medium transition-colors hover:text-foreground",
+                "relative rounded-md px-2 py-2 text-sm font-medium transition-colors hover:text-primary",
                 l.highlight && "text-foreground",
                 l.brand === "YOKOHAMA" && "brand-nav-yokohama",
               )}
@@ -58,7 +58,7 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="ml-1 grid h-9 w-9 shrink-0 place-items-center rounded-md text-muted-foreground transition-colors hover:text-foreground"
+            className="ml-1 grid h-9 w-9 shrink-0 place-items-center rounded-md text-muted-foreground transition-colors hover:text-primary"
           >
             <Instagram className="h-[18px] w-[18px]" />
           </a>
@@ -80,7 +80,7 @@ export function Header() {
 
       <div className="authorized-distributor-strip border-t border-border/55">
         <div className="mx-auto flex min-h-9 max-w-7xl items-center justify-center gap-2 px-4 py-1.5 text-center text-[10px] font-bold uppercase tracking-[0.08em] text-foreground/80 sm:px-6 sm:text-xs lg:px-8">
-          <ShieldCheck className="h-4 w-4 shrink-0 text-brand-green" />
+          <ShieldCheck className="h-4 w-4 shrink-0 text-white" />
           <span>{AUTHORIZED_DISTRIBUTOR_LABEL[locale]}</span>
         </div>
       </div>

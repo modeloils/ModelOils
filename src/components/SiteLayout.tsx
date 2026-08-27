@@ -54,7 +54,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             {children}
           </div>
         </main>
-        <Footer variant={isYokohamaRoute ? "yokohama" : "default"} />
+        <Footer />
       </div>
       <Toaster position="top-center" />
       <WhatsAppButton />

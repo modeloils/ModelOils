@@ -103,7 +103,7 @@ function Hero() {
 function Flagship() {
   const { t, locale } = useTranslation();
   return (
-    <section className="brand-section-red relative overflow-hidden border-y border-border py-20 lg:py-28">
+    <section className="brand-section-red corporate-section-light relative overflow-hidden border-y border-border py-20 lg:py-28">
       <div className="tech-grid absolute inset-0 opacity-30" />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div>
@@ -159,7 +159,7 @@ function ExportSection() {
   const { t, data } = useTranslation();
   const icons = [Ship, Boxes, ShieldCheck, Boxes, Wrench, Truck];
   return (
-    <section className="brand-section-neutral relative overflow-hidden border-y border-border py-20 lg:py-28">
+    <section className="brand-section-neutral corporate-dark-section relative overflow-hidden border-y border-border py-20 lg:py-28">
       <img
         src={exportImg}
         alt={t.imgAlt.exportWarehouse}
@@ -213,7 +213,7 @@ const industryIcons: LucideIcon[] = [
 function Industries() {
   const { t, data } = useTranslation();
   return (
-    <section className="brand-section-green py-20 lg:py-28">
+    <section className="brand-section-green corporate-section-light py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow={t.industriesHome.eyebrow}
@@ -244,7 +244,7 @@ function Industries() {
 function WhyUs() {
   const { t, data } = useTranslation();
   return (
-    <section className="brand-section-blue border-t border-border py-20 lg:py-28">
+    <section className="brand-section-blue corporate-section-white border-t border-border py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow={t.whyUs.eyebrow} title={t.whyUs.title} />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -269,7 +269,7 @@ function WhyUs() {
 function QuoteCta() {
   const { t } = useTranslation();
   return (
-    <section className="brand-section-green relative overflow-hidden border-t border-border py-20 lg:py-24">
+    <section className="brand-section-green corporate-dark-section relative overflow-hidden border-t border-border py-20 lg:py-24">
       <div className="brand-cta-glow absolute inset-0" />
       <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
         <h2 className="font-display text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">

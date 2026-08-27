@@ -39,10 +39,14 @@ export function About() {
             <SectionHeading
               eyebrow={t.about.focusEyebrow}
               title={t.about.focusTitle}
-              className="[&_h2]:text-white"
+              className="[&_h2]:text-foreground"
             />
-            <p className="mt-6 text-base leading-relaxed text-white/85">{t.about.focusP1}</p>
-            <p className="mt-4 text-base leading-relaxed text-white/85">{t.about.focusP2}</p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              {t.about.focusP1}
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              {t.about.focusP2}
+            </p>
             <Button asChild variant="hero" size="lg" className="mt-8">
               <LocaleLink to="/contact">
                 {t.about.partnerCta} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
@@ -69,7 +73,7 @@ export function About() {
           <SectionHeading
             eyebrow={t.about.whyEyebrow}
             title={t.about.whyTitle}
-            className="[&_h2]:text-white"
+            className="[&_h2]:text-foreground"
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {data.trustPoints.map((tp) => (

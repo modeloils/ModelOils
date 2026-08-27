@@ -41,12 +41,12 @@ export function Export() {
         </div>
       </PageHero>
 
-      <section className="brand-section-red border-b border-border/30 py-20 lg:py-24">
+      <section className="brand-section-red corporate-dark-section border-b border-border/30 py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow={t.exportPage.capEyebrow}
             title={t.exportPage.capTitle}
-            className="[&_h2]:text-white"
+            className="[&_h2]:text-foreground"
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {data.exportCards.map((card, i) => {
@@ -75,7 +75,7 @@ export function Export() {
           <SectionHeading
             eyebrow={t.exportPage.packagingEyebrow}
             title={t.exportPage.packagingTitle}
-            className="[&_h2]:text-white"
+            className="[&_h2]:text-foreground"
           />
           <div className="mt-8 flex flex-wrap gap-3">
             {PACKAGING.map((p) => (

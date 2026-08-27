@@ -22,6 +22,7 @@ export const NAV_LINKS: {
   brand?: "YOKOHAMA";
 }[] = [
   { key: "products", to: "/yokohama", highlight: true, brand: "YOKOHAMA" },
+  { key: "catalogs", to: "/catalogs", highlight: false },
   { key: "industries", to: "/industries", highlight: false },
   { key: "export", to: "/export", highlight: false },
   { key: "about", to: "/about", highlight: false },
