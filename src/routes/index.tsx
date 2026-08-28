@@ -51,12 +51,23 @@ function Hero() {
   const { t } = useTranslation();
   return (
     <section className="home-hero-cream relative overflow-hidden">
+      <video
+        className="absolute inset-0 h-full w-full object-cover object-[68%_center] sm:object-center motion-reduce:hidden"
+        src="/model-oils/videos/home-hero.mp4"
+        poster={heroImg}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        aria-hidden="true"
+      />
       <img
         src={heroImg}
         alt={t.imgAlt.heroProducts}
         width={1920}
         height={1080}
-        className="absolute inset-0 h-full w-full object-cover object-[68%_center] sm:object-center"
+        className="absolute inset-0 hidden h-full w-full object-cover object-[68%_center] sm:object-center motion-reduce:block"
       />
       <div className="home-hero-overlay absolute inset-0" />
       <div className="tech-grid absolute inset-0 opacity-30" />
