@@ -53,7 +53,7 @@ function Hero() {
     <section className="home-hero-cream relative overflow-hidden">
       <video
         className="absolute inset-0 h-full w-full object-cover object-[68%_center] sm:object-center motion-reduce:hidden"
-        src="/model-oils/videos/home-hero.mp4"
+        src="/model-oils/videos/home-hero-model.mp4"
         poster={heroImg}
         autoPlay
         muted
