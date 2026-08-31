@@ -26,7 +26,7 @@ const categoryBackgrounds: Record<string, string> = {
   "Disli-ve-Transmisyon-Yaglari": "/model-oils/brands/yokohama-categories/transmission.jpg",
   Antifrizler: "/model-oils/brands/yokohama-categories/antifreeze.jpg",
   "Motosiklet-Yaglari": "/model-oils/brands/yokohama-categories/motorcycle.jpg",
-  "Traktor-ve-Tarim-Yaglari": "/model-oils/brands/yokohama-categories/light-commercial.jpg",
+  "Traktor-ve-Tarim-Yaglari": "/model-oils/brands/yokohama-categories/tractor-agricultural.jpg",
   "Endustriyel-Yaglar": "/model-oils/brands/yokohama-categories/industrial.jpg",
   Gresler: "/model-oils/brands/yokohama-categories/greases.jpg",
   "Deniz-Yaglari": "/model-oils/brands/yokohama-categories/marine.jpg",
