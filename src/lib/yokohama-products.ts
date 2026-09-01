@@ -2,6 +2,7 @@ import type { Locale } from "./i18n/types";
 import { YOKOHAMA_CATEGORY_DEFINITIONS } from "./yokohama-categories";
 import { YOKOHAMA_PRODUCT_DETAILS } from "./yokohama-product-details.generated";
 import { YOKOHAMA_PRODUCTS } from "./yokohama-products.generated";
+import { YOKOHAMA_ENHANCED_SPECIFICATIONS } from "./yokohama-specifications-enhanced";
 
 export { getYokohamaCategoryName, YOKOHAMA_CATEGORY_DEFINITIONS } from "./yokohama-categories";
 
@@ -87,10 +88,16 @@ export const YOKOHAMA_CATEGORY_DATA = Object.fromEntries(
       image: useTransparentPackshot(image, category.slug),
     }));
     const details = Object.fromEntries(
-      sourceProducts.map((product) => [
-        product.slug,
-        PRODUCT_DETAILS_BY_SOURCE_KEY[`${category.slug}:${product.slug}`],
-      ]),
+      sourceProducts.map((product) => {
+        const sourceKey = `${category.slug}:${product.slug}`;
+        const detail = PRODUCT_DETAILS_BY_SOURCE_KEY[sourceKey];
+        const enhancedStandards = YOKOHAMA_ENHANCED_SPECIFICATIONS[sourceKey];
+
+        return [
+          product.slug,
+          enhancedStandards ? { ...detail, standards: enhancedStandards } : detail,
+        ];
+      }),
     ) as Record<string, YokohamaProductDetail>;
     const usesSubcategories = SUBDIVIDED_MOTOR_OIL_CATEGORIES.has(category.slug);
 
