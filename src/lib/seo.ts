@@ -71,11 +71,19 @@ export function yokohamaSegmentHead(locale: Locale, categorySlug: string, segmen
   const name =
     product?.name ?? (subcategory ? `${categoryName} ${subcategory.title}` : categoryName);
   const basePath = `/yokohama/${categorySlug}/${segmentSlug}`;
+  const detail = product ? YOKOHAMA_CATEGORY_DATA[categorySlug]?.details[product.slug] : undefined;
+  const description = detail?.description[locale] ?? detail?.description.en;
+  const productDescription = description
+    ? `Yokohama ${name}: ${description}`
+    : YOKOHAMA_META_DESCRIPTION[locale](`Yokohama ${name}`);
 
   return customPageHead(locale, {
     basePath,
-    title: `${name} | YOKOHAMA | MODEL GRUP`,
-    description: YOKOHAMA_META_DESCRIPTION[locale](name),
+    title: `Yokohama ${name} | MODEL GRUP`,
+    description:
+      productDescription.length > 160
+        ? `${productDescription.slice(0, 157).replace(/\s+\S*$/, "")}…`
+        : productDescription,
     image: product?.image ?? "/model-oils/brands/yokohama-range.jpg",
     type: product ? "product" : "website",
     structuredData: product
@@ -83,6 +91,7 @@ export function yokohamaSegmentHead(locale: Locale, categorySlug: string, segmen
           "@context": "https://schema.org",
           "@type": "Product",
           name: product.name,
+          description: productDescription,
           image: absoluteUrl(product.image),
           category: categoryName,
           brand: { "@type": "Brand", name: "YOKOHAMA" },

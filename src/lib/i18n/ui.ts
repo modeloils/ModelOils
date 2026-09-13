@@ -1,6 +1,13 @@
 import type { Locale } from "./types";
 
-export type NavKey = "products" | "industries" | "export" | "about" | "contact" | "blog";
+export type NavKey =
+  | "products"
+  | "catalogs"
+  | "industries"
+  | "export"
+  | "about"
+  | "contact"
+  | "blog";
 
 export interface UIStrings {
   nav: {
@@ -1572,8 +1579,8 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "Lubricant solutions for automotive, industrial, fleet, agriculture and marine operations.",
     ),
     yokohama: pageMeta(
-      "Yokohama Motor Oils | Authorized Distributor MODEL GRUP",
-      "Explore Yokohama motor oils distributed by MODEL GRUP for the Middle East and Europe.",
+      "Yokohama Motor Oil & Engine Lubricants | MODEL GRUP",
+      "Explore Yokohama engine oils by SAE grade: passenger car, diesel and motorcycle motor oils. Contact MODEL GRUP for wholesale supply in Europe and the Middle East.",
     ),
     catalogs: pageMeta(
       "Yokohama Catalogues | MODEL GRUP",
@@ -1606,8 +1613,8 @@ export const PAGE_META: Record<Locale, Record<PageKey, PageMeta>> = {
       "Otomotiv, endüstri, filo, tarım ve denizcilik için yağ çözümleri.",
     ),
     yokohama: pageMeta(
-      "Yokohama Motor Yağları | Yetkili Distribütör MODEL GRUP",
-      "MODEL GRUP'in Orta Doğu ve Avrupa distribütörlüğündeki Yokohama motor yağlarını keşfedin.",
+      "Yokohama Motor Yağı | Yetkili Distribütör MODEL GRUP",
+      "Yokohama binek araç, dizel ve motosiklet motor yağlarını viskoziteye göre inceleyin. MODEL GRUP'tan toptan yağ fiyatı, katalog ve ihracat teklifi alın.",
     ),
     catalogs: pageMeta(
       "Yokohama Katalogları | MODEL GRUP",

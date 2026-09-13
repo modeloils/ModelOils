@@ -28,7 +28,7 @@ const YOKOHAMA_LANDING: Record<Locale, YokohamaLanding> = {
       "Authorized Yokohama motor oil distribution for the Middle East and Europe.",
     ],
     rangeEyebrow: "Yokohama Range",
-    rangeTitle: "Featured Yokohama Products",
+    rangeTitle: "Yokohama Motor Oil & Lubricants",
   },
   tr: {
     heroEyebrow: "Dağıtım Markası",
@@ -45,7 +45,7 @@ const YOKOHAMA_LANDING: Record<Locale, YokohamaLanding> = {
       "Orta Doğu ve Avrupa için yetkili Yokohama motor yağı distribütörlüğü.",
     ],
     rangeEyebrow: "Yokohama Serisi",
-    rangeTitle: "Öne Çıkan Yokohama Ürünleri",
+    rangeTitle: "Yokohama Motor Yağı ve Madeni Yağlar",
   },
   ru: {
     heroEyebrow: "Дистрибьютируемый бренд",

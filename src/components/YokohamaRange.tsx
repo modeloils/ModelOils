@@ -5,6 +5,7 @@ import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { SiteLayout } from "@/components/SiteLayout";
 import { YokohamaBrandGallery } from "@/components/YokohamaBrandGallery";
+import { YokohamaOilGuide } from "@/components/YokohamaOilGuide";
 import { Button } from "@/components/ui/button";
 import { useYokohamaLanding } from "@/lib/brands";
 import { LocaleLink, useTranslation, type Locale } from "@/lib/i18n";
@@ -89,6 +90,7 @@ export function YokohamaRange({ extraSection }: { extraSection?: ReactNode } = {
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading eyebrow={landing.rangeEyebrow} title={landing.rangeTitle} as="h1" />
+            <YokohamaOilGuide introOnly />
             <div className="yokohama-accent-line mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {categories.map((category) => (
                 <LocaleLink
@@ -115,6 +117,7 @@ export function YokohamaRange({ extraSection }: { extraSection?: ReactNode } = {
         </section>
 
         {extraSection}
+        <YokohamaOilGuide />
 
         <section className="border-b border-border bg-background/35 py-20 lg:py-24">
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">

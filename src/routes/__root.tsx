@@ -11,7 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { LocaleLink, useLocale, useTranslation, detectPreferredLocale } from "../lib/i18n";
+import { LocaleLink, useLocale, useTranslation } from "../lib/i18n";
 
 function NotFoundComponent() {
   const { t } = useTranslation();
@@ -170,20 +170,7 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
-  const router = useRouter();
   const locale = useLocale();
-  const pathname = useRouterState({ select: (s) => s.location.pathname });
-
-  // First-visit language detection: only redirect from the bare English home.
-  useEffect(() => {
-    if (pathname !== "/") return;
-    const preferred = detectPreferredLocale();
-    if (preferred !== "en") {
-      router.navigate({ to: `/${preferred}` });
-    }
-    // Run once on initial mount.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   // Keep <html lang> and dir in sync after client-side navigations.
   useEffect(() => {
