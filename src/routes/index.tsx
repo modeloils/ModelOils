@@ -51,27 +51,9 @@ function Hero() {
   const { t } = useTranslation();
   return (
     <section className="home-hero-cream relative overflow-hidden">
-      <video
-        className="absolute inset-0 h-full w-full object-cover object-[68%_center] sm:object-center motion-reduce:hidden"
-        src="/model-oils/videos/home-hero-20261001.mp4"
-        poster={heroImg}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        aria-hidden="true"
-      />
-      <img
-        src={heroImg}
-        alt={t.imgAlt.heroProducts}
-        width={1920}
-        height={1080}
-        className="absolute inset-0 hidden h-full w-full object-cover object-[68%_center] sm:object-center motion-reduce:block"
-      />
       <div className="home-hero-overlay absolute inset-0" />
       <div className="tech-grid absolute inset-0 opacity-30" />
-      <div className="relative mx-auto flex max-w-7xl flex-col justify-center px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-40">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,360px)] lg:gap-16 lg:px-8">
         <div className="max-w-2xl animate-float-up">
           <span className="brand-pill inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]">
             <Globe2 className="h-3.5 w-3.5" /> {t.hero.badge}
@@ -105,6 +87,26 @@ function Hero() {
               <CheckCircle2 className="h-4 w-4 text-primary" /> {t.hero.bulletExport}
             </span>
           </div>
+        </div>
+        <div className="mx-auto w-full max-w-[360px] overflow-hidden rounded-2xl border border-border bg-black shadow-xl">
+          <video
+            className="aspect-[9/16] w-full object-contain motion-reduce:hidden"
+            src="/model-oils/videos/home-hero-20261001.mp4"
+            poster={heroImg}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-hidden="true"
+          />
+          <img
+            src={heroImg}
+            alt={t.imgAlt.heroProducts}
+            width={1920}
+            height={1080}
+            className="hidden aspect-[9/16] w-full object-contain motion-reduce:block"
+          />
         </div>
       </div>
     </section>
