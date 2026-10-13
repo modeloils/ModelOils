@@ -106,6 +106,7 @@ export interface UIStrings {
     productStandards: string;
     productNotFound: string;
     downloadCatalog: string;
+    viewTds: string;
   };
   industriesPage: {
     heroEyebrow: string;
@@ -289,6 +290,7 @@ const en: UIStrings = {
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Product not found.",
     downloadCatalog: "Download Catalogue",
+    viewTds: "View Technical Data Sheet (PDF)",
   },
   industriesPage: {
     heroEyebrow: "Industries Served",
@@ -485,6 +487,7 @@ const tr: UIStrings = {
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Ürün bulunamadı.",
     downloadCatalog: "Kataloğu İndir",
+    viewTds: "Teknik Veri Formunu Görüntüle (PDF)",
   },
   industriesPage: {
     heroEyebrow: "Hizmet Verilen Sektörler",
@@ -680,6 +683,7 @@ const ru: UIStrings = {
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Продукт не найден.",
     downloadCatalog: "Скачать каталог",
+    viewTds: "Просмотреть технический паспорт (PDF)",
   },
   industriesPage: {
     heroEyebrow: "Обслуживаемые отрасли",
@@ -876,6 +880,7 @@ const fa: UIStrings = {
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "محصول یافت نشد.",
     downloadCatalog: "دانلود کاتالوگ",
+    viewTds: "مشاهده برگه اطلاعات فنی (PDF)",
   },
   industriesPage: {
     heroEyebrow: "صنایع تحت پوشش",
@@ -1068,6 +1073,7 @@ const ar: UIStrings = {
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "المنتج غير موجود.",
     downloadCatalog: "تحميل الكتالوج",
+    viewTds: "عرض ورقة البيانات الفنية (PDF)",
   },
   industriesPage: {
     heroEyebrow: "الصناعات المخدومة",
@@ -1262,6 +1268,7 @@ const de: UIStrings = {
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Produkt nicht gefunden.",
     downloadCatalog: "Katalog herunterladen",
+    viewTds: "Technisches Datenblatt anzeigen (PDF)",
   },
   industriesPage: {
     heroEyebrow: "Bediente Branchen",
@@ -1460,6 +1467,7 @@ const fr: UIStrings = {
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Produit introuvable.",
     downloadCatalog: "Télécharger le catalogue",
+    viewTds: "Voir la fiche technique (PDF)",
   },
   industriesPage: {
     heroEyebrow: "Secteurs desservis",

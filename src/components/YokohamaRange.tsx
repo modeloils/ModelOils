@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { notFound, Outlet, useParams } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, ChevronLeft, Flame } from "lucide-react";
+import { ArrowRight, CheckCircle2, ChevronLeft, FileText, Flame } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { SiteLayout } from "@/components/SiteLayout";
@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { useYokohamaLanding } from "@/lib/brands";
 import { LocaleLink, useTranslation, type Locale } from "@/lib/i18n";
 import { AUTHORIZED_DISTRIBUTOR_LABEL } from "@/lib/i18n/authorized-distributor";
+import { YOKOHAMA_TDS_DOCUMENTS } from "@/lib/yokohama-tds-documents.generated";
 import {
   getYokohamaCategoryName,
   YOKOHAMA_CATEGORY_DATA,
@@ -355,6 +356,8 @@ export function YokohamaProduct() {
   const detail = productSlug ? catData?.details[productSlug] : undefined;
   const description = detail ? resolveText(detail.description, locale) : "";
   const descriptionIncludesBrand = /^YOKOHAMA\b/i.test(description);
+  const tdsUrl =
+    category && productSlug ? YOKOHAMA_TDS_DOCUMENTS[`${category}:${productSlug}`] : undefined;
 
   if (!product) {
     throw notFound();
@@ -415,6 +418,14 @@ export function YokohamaProduct() {
                     )}
                     {description}
                   </p>
+                  {tdsUrl && (
+                    <Button asChild variant="outline" size="sm" className="mt-4">
+                      <a href={tdsUrl} target="_blank" rel="noreferrer">
+                        <FileText className="h-4 w-4" />
+                        {t.productDetails.viewTds}
+                      </a>
+                    </Button>
+                  )}
                 </div>
               )}
             </div>
