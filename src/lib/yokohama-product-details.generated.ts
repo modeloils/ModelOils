@@ -1,3 +1,5 @@
+import { YOKOHAMA_TDS_ENGLISH_DESCRIPTIONS } from "./yokohama-tds-descriptions.generated";
+
 // Generated from the supplied Yokohama oil and battery catalogues.
 // Product descriptions and usage features are localized for every supported site language.
 export const YOKOHAMA_PRODUCT_DETAILS = {
@@ -7329,4 +7331,10 @@ for (const detail of Object.values(YOKOHAMA_MUTABLE_DETAILS)) {
       buildLocalizedUsageFeatures(detail.description[locale]),
     ]),
   ) as YokohamaLocalizedTextArray;
+}
+
+for (const [key, description] of Object.entries(YOKOHAMA_TDS_ENGLISH_DESCRIPTIONS)) {
+  const detail = YOKOHAMA_MUTABLE_DETAILS[key];
+  if (!detail) throw new Error(`Unknown Yokohama TDS description key: ${key}`);
+  detail.description = { ...detail.description, en: description };
 }

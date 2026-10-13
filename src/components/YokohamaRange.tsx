@@ -353,6 +353,8 @@ export function YokohamaProduct() {
 
   const translatedCategory = category ? getYokohamaCategoryName(category, locale) : "";
   const detail = productSlug ? catData?.details[productSlug] : undefined;
+  const description = detail ? resolveText(detail.description, locale) : "";
+  const descriptionIncludesBrand = /^YOKOHAMA\b/i.test(description);
 
   if (!product) {
     throw notFound();
@@ -404,10 +406,14 @@ export function YokohamaProduct() {
                     {t.productDetails.productDescription}
                   </p>
                   <p className="text-sm leading-relaxed text-muted-foreground">
-                    <span className="font-semibold text-primary">
-                      YOKOHAMA {product.name.replace(/\s+\d+L$/i, "").toUpperCase()}
-                    </span>{" "}
-                    {resolveText(detail.description, locale)}
+                    {!descriptionIncludesBrand && (
+                      <>
+                        <span className="font-semibold text-primary">
+                          YOKOHAMA {product.name.replace(/\s+\d+L$/i, "").toUpperCase()}
+                        </span>{" "}
+                      </>
+                    )}
+                    {description}
                   </p>
                 </div>
               )}
