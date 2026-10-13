@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { useYokohamaLanding } from "@/lib/brands";
 import { LocaleLink, useTranslation, type Locale } from "@/lib/i18n";
 import { AUTHORIZED_DISTRIBUTOR_LABEL } from "@/lib/i18n/authorized-distributor";
+import { YOKOHAMA_TDS_ENGLISH_APPLICATIONS } from "@/lib/yokohama-tds-applications.generated";
 import { YOKOHAMA_TDS_DOCUMENTS } from "@/lib/yokohama-tds-documents.generated";
 import {
   getYokohamaCategoryName,
@@ -354,10 +355,15 @@ export function YokohamaProduct() {
 
   const translatedCategory = category ? getYokohamaCategoryName(category, locale) : "";
   const detail = productSlug ? catData?.details[productSlug] : undefined;
-  const description = detail ? resolveText(detail.description, locale) : "";
+  const productKey = category && productSlug ? `${category}:${productSlug}` : undefined;
+  const tdsUrl = productKey ? YOKOHAMA_TDS_DOCUMENTS[productKey] : undefined;
+  const applicationAreas = productKey ? YOKOHAMA_TDS_ENGLISH_APPLICATIONS[productKey] : undefined;
+  const description = detail
+    ? tdsUrl
+      ? detail.description.en
+      : resolveText(detail.description, locale)
+    : "";
   const descriptionIncludesBrand = /^YOKOHAMA\b/i.test(description);
-  const tdsUrl =
-    category && productSlug ? YOKOHAMA_TDS_DOCUMENTS[`${category}:${productSlug}`] : undefined;
 
   if (!product) {
     throw notFound();
@@ -418,6 +424,16 @@ export function YokohamaProduct() {
                     )}
                     {description}
                   </p>
+                  {applicationAreas && (
+                    <div className="mt-4 border-t border-border pt-4">
+                      <p className="mb-1 text-xs font-bold uppercase tracking-widest text-foreground">
+                        {t.productDetails.applicationAreas}
+                      </p>
+                      <p className="text-sm leading-relaxed text-muted-foreground">
+                        {applicationAreas}
+                      </p>
+                    </div>
+                  )}
                   {tdsUrl && (
                     <Button asChild variant="outline" size="sm" className="mt-4">
                       <a href={tdsUrl} target="_blank" rel="noreferrer">

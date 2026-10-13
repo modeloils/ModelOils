@@ -102,6 +102,7 @@ export interface UIStrings {
   };
   productDetails: {
     productDescription: string;
+    applicationAreas: string;
     productFeatures: string;
     productStandards: string;
     productNotFound: string;
@@ -286,6 +287,7 @@ const en: UIStrings = {
   },
   productDetails: {
     productDescription: "Product Description and Application Areas",
+    applicationAreas: "Application Areas",
     productFeatures: "Features and Benefits",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Product not found.",
@@ -483,6 +485,7 @@ const tr: UIStrings = {
   },
   productDetails: {
     productDescription: "Ürün Tanımı ve Kullanım Alanları",
+    applicationAreas: "Kullanım Alanları",
     productFeatures: "Özellikleri ve Faydaları",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Ürün bulunamadı.",
@@ -679,6 +682,7 @@ const ru: UIStrings = {
   },
   productDetails: {
     productDescription: "Описание продукта и области применения",
+    applicationAreas: "Области применения",
     productFeatures: "Характеристики и преимущества",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Продукт не найден.",
@@ -876,6 +880,7 @@ const fa: UIStrings = {
   },
   productDetails: {
     productDescription: "توضیحات محصول و حوزه‌های کاربرد",
+    applicationAreas: "حوزه‌های کاربرد",
     productFeatures: "ویژگی‌ها و مزایا",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "محصول یافت نشد.",
@@ -1069,6 +1074,7 @@ const ar: UIStrings = {
   },
   productDetails: {
     productDescription: "وصف المنتج ومجالات التطبيق",
+    applicationAreas: "مجالات التطبيق",
     productFeatures: "الميزات والفوائد",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "المنتج غير موجود.",
@@ -1264,6 +1270,7 @@ const de: UIStrings = {
   },
   productDetails: {
     productDescription: "Produktbeschreibung und Anwendungsbereiche",
+    applicationAreas: "Anwendungsbereiche",
     productFeatures: "Eigenschaften und Vorteile",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Produkt nicht gefunden.",
@@ -1463,6 +1470,7 @@ const fr: UIStrings = {
   },
   productDetails: {
     productDescription: "Description du produit et domaines d'application",
+    applicationAreas: "Domaines d'application",
     productFeatures: "Caractéristiques et avantages",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Produit introuvable.",
