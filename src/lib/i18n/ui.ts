@@ -286,7 +286,7 @@ const en: UIStrings = {
     marketsTitle: "Markets We Focus On",
   },
   productDetails: {
-    productDescription: "Product Description and Application Areas",
+    productDescription: "Product Description",
     applicationAreas: "Application Areas",
     productFeatures: "Features and Benefits",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
@@ -484,7 +484,7 @@ const tr: UIStrings = {
     marketsTitle: "Odaklandığımız Pazarlar",
   },
   productDetails: {
-    productDescription: "Ürün Tanımı ve Kullanım Alanları",
+    productDescription: "Ürün Tanımı",
     applicationAreas: "Kullanım Alanları",
     productFeatures: "Özellikleri ve Faydaları",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
@@ -681,7 +681,7 @@ const ru: UIStrings = {
     marketsTitle: "Рынки, на которые мы ориентируемся",
   },
   productDetails: {
-    productDescription: "Описание продукта и области применения",
+    productDescription: "Описание продукта",
     applicationAreas: "Области применения",
     productFeatures: "Характеристики и преимущества",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
@@ -879,7 +879,7 @@ const fa: UIStrings = {
     marketsTitle: "بازارهایی که روی آن‌ها تمرکز داریم",
   },
   productDetails: {
-    productDescription: "توضیحات محصول و حوزه‌های کاربرد",
+    productDescription: "توضیحات محصول",
     applicationAreas: "حوزه‌های کاربرد",
     productFeatures: "ویژگی‌ها و مزایا",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
@@ -1073,7 +1073,7 @@ const ar: UIStrings = {
     marketsTitle: "الأسواق التي نركز عليها",
   },
   productDetails: {
-    productDescription: "وصف المنتج ومجالات التطبيق",
+    productDescription: "وصف المنتج",
     applicationAreas: "مجالات التطبيق",
     productFeatures: "الميزات والفوائد",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
@@ -1269,7 +1269,7 @@ const de: UIStrings = {
     marketsTitle: "Globale Reichweite",
   },
   productDetails: {
-    productDescription: "Produktbeschreibung und Anwendungsbereiche",
+    productDescription: "Produktbeschreibung",
     applicationAreas: "Anwendungsbereiche",
     productFeatures: "Eigenschaften und Vorteile",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
@@ -1469,7 +1469,7 @@ const fr: UIStrings = {
     marketsTitle: "Portée mondiale",
   },
   productDetails: {
-    productDescription: "Description du produit et domaines d'application",
+    productDescription: "Description du produit",
     applicationAreas: "Domaines d'application",
     productFeatures: "Caractéristiques et avantages",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",

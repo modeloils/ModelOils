@@ -10,8 +10,11 @@ import { Button } from "@/components/ui/button";
 import { useYokohamaLanding } from "@/lib/brands";
 import { LocaleLink, useTranslation, type Locale } from "@/lib/i18n";
 import { AUTHORIZED_DISTRIBUTOR_LABEL } from "@/lib/i18n/authorized-distributor";
-import { YOKOHAMA_TDS_ENGLISH_APPLICATIONS } from "@/lib/yokohama-tds-applications.generated";
 import { YOKOHAMA_TDS_DOCUMENTS } from "@/lib/yokohama-tds-documents.generated";
+import {
+  YOKOHAMA_TDS_LOCALIZED_APPLICATIONS,
+  YOKOHAMA_TDS_LOCALIZED_DESCRIPTIONS,
+} from "@/lib/yokohama-tds-localized.generated";
 import {
   getYokohamaCategoryName,
   YOKOHAMA_CATEGORY_DATA,
@@ -357,12 +360,18 @@ export function YokohamaProduct() {
   const detail = productSlug ? catData?.details[productSlug] : undefined;
   const productKey = category && productSlug ? `${category}:${productSlug}` : undefined;
   const tdsUrl = productKey ? YOKOHAMA_TDS_DOCUMENTS[productKey] : undefined;
-  const applicationAreas = productKey ? YOKOHAMA_TDS_ENGLISH_APPLICATIONS[productKey] : undefined;
-  const description = detail
-    ? tdsUrl
-      ? detail.description.en
-      : resolveText(detail.description, locale)
-    : "";
+  const localizedTdsDescription = productKey
+    ? YOKOHAMA_TDS_LOCALIZED_DESCRIPTIONS[productKey]
+    : undefined;
+  const localizedApplicationAreas = productKey
+    ? YOKOHAMA_TDS_LOCALIZED_APPLICATIONS[productKey]
+    : undefined;
+  const description = localizedTdsDescription
+    ? localizedTdsDescription[locale]
+    : detail
+      ? resolveText(detail.description, locale)
+      : "";
+  const applicationAreas = localizedApplicationAreas?.[locale];
   const descriptionIncludesBrand = /^YOKOHAMA\b/i.test(description);
 
   if (!product) {
@@ -435,7 +444,7 @@ export function YokohamaProduct() {
                     </div>
                   )}
                   {tdsUrl && (
-                    <Button asChild variant="outline" size="sm" className="mt-4">
+                    <Button asChild variant="hero" size="sm" className="mt-4">
                       <a href={tdsUrl} target="_blank" rel="noreferrer">
                         <FileText className="h-4 w-4" />
                         {t.productDetails.viewTds}
