@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { notFound, Outlet, useParams } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, ChevronLeft, FileText, Flame } from "lucide-react";
+import { ArrowRight, CheckCircle2, ChevronLeft, FileText } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { SiteLayout } from "@/components/SiteLayout";
@@ -459,23 +459,6 @@ export function YokohamaProduct() {
 
         {detail && (
           <div className="mx-auto max-w-6xl space-y-8 px-4 pb-20 sm:px-6 lg:px-8">
-            <div>
-              <h3 className="mb-4 text-sm font-bold uppercase tracking-widest text-foreground">
-                {t.productDetails.productFeatures}
-              </h3>
-              <div className="space-y-2">
-                {(detail.features[locale] ?? detail.features.en ?? []).map((feature) => (
-                  <div
-                    key={feature}
-                    className="flex items-start gap-3 rounded border border-border bg-[image:var(--gradient-panel)] px-4 py-3"
-                  >
-                    <Flame className="mt-0.5 h-4 w-4 shrink-0 text-red-500" />
-                    <p className="text-sm text-muted-foreground">{feature}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
             {resolveText(detail.standards, locale) && (
               <div>
                 <h3 className="mb-3 text-sm font-bold uppercase tracking-widest text-foreground">

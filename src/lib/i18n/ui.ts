@@ -103,7 +103,6 @@ export interface UIStrings {
   productDetails: {
     productDescription: string;
     applicationAreas: string;
-    productFeatures: string;
     productStandards: string;
     productNotFound: string;
     downloadCatalog: string;
@@ -288,7 +287,6 @@ const en: UIStrings = {
   productDetails: {
     productDescription: "Product Description",
     applicationAreas: "Application Areas",
-    productFeatures: "Features and Benefits",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Product not found.",
     downloadCatalog: "Download Catalogue",
@@ -486,7 +484,6 @@ const tr: UIStrings = {
   productDetails: {
     productDescription: "Ürün Tanımı",
     applicationAreas: "Kullanım Alanları",
-    productFeatures: "Özellikleri ve Faydaları",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Ürün bulunamadı.",
     downloadCatalog: "Kataloğu İndir",
@@ -683,7 +680,6 @@ const ru: UIStrings = {
   productDetails: {
     productDescription: "Описание продукта",
     applicationAreas: "Области применения",
-    productFeatures: "Характеристики и преимущества",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Продукт не найден.",
     downloadCatalog: "Скачать каталог",
@@ -881,7 +877,6 @@ const fa: UIStrings = {
   productDetails: {
     productDescription: "توضیحات محصول",
     applicationAreas: "حوزه‌های کاربرد",
-    productFeatures: "ویژگی‌ها و مزایا",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "محصول یافت نشد.",
     downloadCatalog: "دانلود کاتالوگ",
@@ -1075,7 +1070,6 @@ const ar: UIStrings = {
   productDetails: {
     productDescription: "وصف المنتج",
     applicationAreas: "مجالات التطبيق",
-    productFeatures: "الميزات والفوائد",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "المنتج غير موجود.",
     downloadCatalog: "تحميل الكتالوج",
@@ -1271,7 +1265,6 @@ const de: UIStrings = {
   productDetails: {
     productDescription: "Produktbeschreibung",
     applicationAreas: "Anwendungsbereiche",
-    productFeatures: "Eigenschaften und Vorteile",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Produkt nicht gefunden.",
     downloadCatalog: "Katalog herunterladen",
@@ -1471,7 +1464,6 @@ const fr: UIStrings = {
   productDetails: {
     productDescription: "Description du produit",
     applicationAreas: "Domaines d'application",
-    productFeatures: "Caractéristiques et avantages",
     productStandards: "PERFORMANCE LEVEL / SPECIFICATIONS",
     productNotFound: "Produit introuvable.",
     downloadCatalog: "Télécharger le catalogue",
