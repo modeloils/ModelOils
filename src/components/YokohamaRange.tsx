@@ -460,11 +460,11 @@ export function YokohamaProduct() {
         {detail && (
           <div className="mx-auto max-w-6xl space-y-8 px-4 pb-20 sm:px-6 lg:px-8">
             {resolveText(detail.standards, locale) && (
-              <div>
-                <h3 className="mb-3 text-sm font-bold uppercase tracking-widest text-foreground">
+              <div className="rounded-xl border border-primary/30 bg-primary/5 p-5 sm:p-6">
+                <h3 className="mb-3 text-base font-bold uppercase tracking-widest text-primary">
                   {t.productDetails.productStandards}
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-lg font-semibold leading-relaxed text-foreground sm:text-xl">
                   {resolveText(detail.standards, locale)}
                 </p>
               </div>
